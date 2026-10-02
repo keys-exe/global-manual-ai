@@ -12,35 +12,36 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 import seedance_hooks as H
 LINE = H.LINE
 HERE = pathlib.Path(__file__).parent
+PLACE2 = ("@image3 is the place: the inside of the same metro carriage seen from the middle of its aisle, looking along it — blue patterned fabric seats along both sides, vertical steel grab poles standing in the aisle, closed double doors in each side wall, dark tunnel in the windows, exactly as shown. ")
 PLACE = ("@image3 is the place: the underground metro station seen from inside the train — the carriage's double sliding doors with a steel grab pole in the middle, blue fabric seats at each side, the narrow concrete platform with its yellow edge strip, and directly opposite the doors the wide straight fixed concrete staircase with steel handrails coming down from the concourse between beige tiled walls (no escalator), exactly as shown. ")
-def MAN(aud, n0):
+def MAN(aud, n0, place=None):
     return ("INGREDIENTS. @image1 is THE MOTHER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. "
       "@image2 is THE DAUGHTER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. "
       + ("@audio1 is THE DAUGHTER's voice, its timbre, pitch, accent and pace, for the line THE DAUGHTER speaks; it sets who she sounds like, never how she feels in this shot. " if aud else "")
-      + PLACE
+      + (place or PLACE)
       + "@image4 is an info card: THE MOTHER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. "
       "@image5 is an info card: THE DAUGHTER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. "
       "These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to.")
 SCENE = ("SCENE SO FAR: a Sunday afternoon; the mother, in her teal quilted jacket, cream knit top, charcoal trousers and white trainers, carries two big shopping bags, one in each hand; "
   "the daughter, in her olive utility jacket, grey hoodie, black jeans and black trainers, carries two big shopping bags too; the daughter is a little taller than her mother. ")
 LIGHT = ("cool-white fluorescent light over the platform and stairs, the carriage lit by its own slightly warmer ceiling strips, faces lit from above and from the left of frame. ")
-C1 = ("A phone propped at chest height inside the stopped metro carriage, a step back from the open doors, looking straight out through them across the platform to the staircase opposite, 24mm, 9:16, the whole flight of stairs framed by the open doorway, the steel grab pole at the right edge of the doorway; " + LIGHT +
+C1 = ("A phone propped at chest height inside the stopped metro carriage, a step back from the open doors, looking straight out through them across the platform to the staircase opposite, 24mm, 9:16, the whole flight of stairs framed by the open doorway, one steel grab pole standing floor to ceiling in the middle of the doorway, fixed and solid, splitting the opening into a left half and a right half; " + LIGHT +
   "Opening mid-descent: the mother is halfway down the staircase, hurrying, facing forwards, brisk quick light steps, one step per half-second, a bag in each hand, her hands never touching the handrail, head up, a small determined smile; "
   "she passes two women in their thirties who are walking down the same flight more slowly, one of them holding the rail. Three steps behind her the daughter comes down too, slower, a little out of breath. "
-  "The mother reaches the bottom, crosses the platform in four quick steps and steps in through the open doors, passing the camera on its right and out of frame. "
+  "The mother reaches the bottom, crosses the platform in four quick steps toward the LEFT half of the doorway and steps in through the left half, the steel pole staying to her right the whole time, a clear gap between her shoulder and bag and the pole; she never touches the pole and nothing passes through it; inside she keeps to the left and walks out of frame past the camera on its LEFT. "
   "Nobody speaks; every mouth stays closed. The doors stay open to the end; the train does not move.")
-C2 = ("A phone propped at chest height inside the metro carriage, looking across the carriage at its closed double doors and the steel grab pole in front of them, 24mm, 9:16, both women in frame from the knees up; "
-  "the train is moving through the tunnel: dark tunnel walls and passing lights slide by in the door windows, the carriage sways gently, the carriage lit by its own slightly warmer ceiling strips, faces lit from above and from the left of frame. "
-  "Opening a moment after they boarded: the mother stands at the right of the frame beside the pole, side-on to the camera, her two shopping bags at her feet, one hand resting on the pole, breathing easily, a small proud smile, looking ahead. "
-  "The daughter stands at the left of the frame facing her mother, side-on to the camera, her two bags at her feet, still catching her breath, one hand on her chest. "
+C2 = ("A phone propped at chest height in the middle of the moving metro carriage, in the centre of the aisle, looking straight along the aisle, 24mm, 9:16, both women in frame from the knees up, standing in the aisle a little more than a metre from the camera; "
+  "the train is moving through the tunnel: dark tunnel wall with faint passing light in the side windows, the carriage sways gently, lit by its own warm-white ceiling strips, faces lit from above and from the left of frame. "
+  "Opening a moment after they boarded: the mother stands at the right of the aisle, side-on to the camera, her two shopping bags at her feet, one hand holding the nearest vertical pole, breathing easily, a small proud smile, looking ahead along the carriage. "
+  "The daughter stands at the left of the aisle facing her mother, side-on to the camera, her two bags at her feet, still catching her breath, one hand on her chest. "
   "The mother never speaks. The daughter never looks at the camera and never stops to perform: her eyes on her mother, she says it to her — in the last three seconds, only these words and nothing else: \"" + LINE + "\" "
   "Her face stays natural — a small, real reaction, brows lifting slightly, no big expression, nothing played to the lens; the moment is caught, not staged. Her voice: " + H.VOICE_C2)
 ROOM = "Inside a metro carriage in a tunnel, a steady low rumble, hard steel and plastic, a short tail; her voice about a metre and a half from the phone, room in the signal, no boom."
 TAIL = H.TAIL.replace("both women keep", "both women keep")
-NEG1 = H.NEG.replace("the mother never speaks, the daughter says only her one line, ", "nobody speaks, no one's lips move, ").replace("the mother never touches the handrail, ", "the mother never touches the handrail, no one running, no one falling or slipping on the stairs, ").replace("no escalator, ", "no escalator, no doors closing, no train moving, no readable signs or lettering, ").replace("no music, no subtitles", "no subtitles").rstrip(".") + ", " + H.S("NEG-SOUND") + "."
-NEG2 = H.NEG.replace("the mother never touches the handrail, no empty-handed mother, ", "no empty-handed mother, ").replace("no escalator, ", "no doors opening, no station platform, no stairs, no readable signs or lettering, ").replace("no camera travelling with anyone, no running, no one falling or stumbling, ", "no camera travelling with anyone, no one falling or stumbling, ").replace("no music, no subtitles", "no subtitles").rstrip(".") + ", " + H.S("NEG-SOUND") + "."
+NEG1 = H.NEG.replace("the mother never speaks, the daughter says only her one line, ", "nobody speaks, no one's lips move, ").replace("the mother never touches the handrail, ", "the mother never touches the handrail, no one running, no one falling or slipping on the stairs, ").replace("no escalator, ", "no escalator, no doors closing, no train moving, no readable signs or lettering, no one walking through the pole, no body or bag passing through any pole, no one touching the pole, ").replace("no music, no subtitles", "no subtitles").rstrip(".") + ", " + H.S("NEG-SOUND") + "."
+NEG2 = H.NEG.replace("the mother never touches the handrail, no empty-handed mother, ", "no empty-handed mother, ").replace("no escalator, ", "no doors opening, no station platform, no stairs, no readable signs or lettering, no one passing through a pole, ").replace("no camera travelling with anyone, no running, no one falling or stumbling, ", "no camera travelling with anyone, no one falling or stumbling, ").replace("no music, no subtitles", "no subtitles").rstrip(".") + ", " + H.S("NEG-SOUND") + "."
 P1 = MAN(False, 3) + " " + SCENE + C1 + " " + TAIL + NEG1
-P2 = MAN(True, 3) + " " + SCENE + C2 + " " + H.S("AUD-A") + " " + ROOM + " " + TAIL + NEG2
+P2 = MAN(True, 3, PLACE2) + " " + SCENE + C2 + " " + H.S("AUD-A") + " " + ROOM + " " + TAIL + NEG2
 (HERE / "HK-C1.seedance.txt").write_text(P1); (HERE / "HK-C2.seedance.txt").write_text(P2)
 old = HERE / "HK-C.seedance.txt"
 if old.exists(): old.unlink()
