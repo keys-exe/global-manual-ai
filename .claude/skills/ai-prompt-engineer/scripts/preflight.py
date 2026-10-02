@@ -236,9 +236,14 @@ def run_image(c):
     if anatomy:   # §12A-1 (V7.81.0): a style per anatomy beat, never the glass body by habit
         st = c.get("anat_style")
         check("anatomy style named (S1-S7, §12A-1 V7.81.0)", st in {f"S{n}" for n in range(1, 8)}, f"anat_style {st!r}")
-        if st == "S1":   # V7.86.1 (user: "this style"): S1 Ghost is made against its reference picture, never from words alone (L25)
-            check("S1 Ghost reference attached as the style (§12A-1 V7.86.1)", "style" in kinds,
-                  "attach .claude/skills/ai-prompt-engineer/references/anatomy/S1_ghost.webp as kind 'style' — 'Image n is the style — copy its look exactly'")
+        if st == "S1":   # V7.89.2 (user: "i just want the style but i dont want the image to be the reference image", L32):
+            # the house picture's look travels in words; the picture itself is never attached
+            house = [r for r in refs if re.search(r"S1_ghost", json.dumps(r), re.I)]
+            check("S1 Ghost: the house picture is never attached (§12A-1 V7.89.2)", not house,
+                  "remove references/anatomy/S1_ghost.webp from the refs — write its look in words (ANAT-BASE + ANAT-STYLE-S1)" if house else "")
+            miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
+                                    ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
+            check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
         if st and st != "S1":
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
