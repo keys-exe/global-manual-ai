@@ -34,6 +34,20 @@
   - **T4 had MUSIC** (−23.6 dB of the mix). It was cleaned with `unmusic.py`: v2 re-checks CLEAN, voice and effects kept, 0 cr. The v1 with music went to the Old board.
   - All 5 are on the Current board **To check**. Kie balance is 84,116.6.
 
+- 2026-10-02 **Hook A consistency Fix** (user, chat: "make the hook consistent review the script guide"). Seen in the v1 frames:
+  - The table changed: food in T1/T4, cleared in T2, Roy eating in T4. The script says "the table cleared".
+  - The seats moved in every wide shot.
+  - Oscar's route differed: across the front of the table in T1, down the far side in T2.
+  - Hazel's background changed: the window, then bookshelves.
+  - My ROOM block had 3 chairs on one side, while the plate has 2 per side plus the ends.
+  - **Fix:** layout card `INFO-TABLE-SC01` (the cleared table from above, Sunburst edit-ref of L-DINING, 2.75 cr), now on the board To check. The take prompts were rewritten as gen 2 (all preflight PASS):
+    - the seats tied to the plate (Hazel at the far end; Emma and Oscar on the sideboard side; Roy and Dan on the fireplace side; the near-end chair empty);
+    - what is behind each person, named;
+    - the table fixed: empty plates, glasses, one jug, no food;
+    - Oscar's one route along the sideboard;
+    - the card attached to every take.
+  - SC01-T1…T5 are on `regenerate` and are sent once the card is confirmed. Each v1 moves to Old when its v2 lands.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 price (£30 for two) · F2 "two centimetres" · F3 "replace them at seventy-one" · F6 "Facebook copies" · F7 getstryde.co · F11 strap on under trousers vs FP13 (proposed: bare knee in her nightdress, trousers on after) · F12 one hook → one film · F15 close without the product in hand.
 
