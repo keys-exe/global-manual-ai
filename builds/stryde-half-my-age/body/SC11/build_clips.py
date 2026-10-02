@@ -41,7 +41,7 @@ CAFE_SO_FAR = ("THE SCENE SO FAR, a weekday late morning a few weeks later, one 
                "Her two friends sit at the round window table: the copper-haired friend in the chair facing into the room, the friend in the mustard jacket beside the window; the third chair, facing the window, is empty for Her. "
                "Two cups of coffee and a third cup waiting. THE POSITIONS NEVER CHANGE once she sits. THE CLOTHES NEVER SWAP: the copper-haired friend wears the NAVY PEA COAT over the red-and-cream Breton top; the friend with the salt-and-pepper afro wears the MUSTARD CORDUROY JACKET over the black polo-neck; Her wears only her terracotta jumper, no coat.")
 GO = "chat (2026-10-02): \"fix those and generate the videos\" — the ingredients confirmed on the board (OUT-N-A3, OUT-N-A4, PROD-BOX; OUT-C3-A2 v2 for SC11)"
-GO3 = "board Fix note + chat \"fix those\" (2026-10-02) — the user's go for SC13-T2 gen 3 (gen 4 waits for a new go)"
+GO3 = "board Fix note + chat \"fix those\" (2026-10-02) — the user's go for SC13-T2 gen 3; chat \"are you fixing the sc13t2\" (2026-10-02) — the go for gen 4"
 NOTES_ALL = {"SC13-T2": ["agent's check of v1 (L16): Her and her sister swapped places → Her inside, the sister outside until SHOT 3", "the user (board Fix): she should not hold the hand rail → hands free, nobody touches the banister", "agent's check of v3 (L16): places swapped again, a hand on the newel post"]}
 FIX = "first generation — every earlier note on this build kept: one strap only, small (12 × 5 cm), front side up, on the RIGHT knee, centred on the front of the knee; the box only in the offer (FP09, FP19); one take per place (L51); stairs foot by foot (FP16)"
 L058, L059 = "You were gone a long time.", "I know."
