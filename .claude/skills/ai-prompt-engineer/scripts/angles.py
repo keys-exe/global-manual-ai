@@ -268,7 +268,7 @@ def main():
     n = len(counted)
     used = {sty(r) for r in counted if sty(r)}
     need = 3 if n >= 6 else 2 if n >= 3 else 0   # fewer than three anatomy beats (none included): no range to check (LESSONS L19)
-    # the team's one-look call (§12A-1 rule 7, V7.89.3, LESSONS L33): every anatomy row carries anat.lock → the style checks step aside
+    # the team's one-look call (§12A-1 rule 7, V7.89.3, LESSONS L34): every anatomy row carries anat.lock → the style checks step aside
     locked = bool(counted) and all((r.get("anat") or {}).get("lock") for r in counted)
     if locked:
         need = 0

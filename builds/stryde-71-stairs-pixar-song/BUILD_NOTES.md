@@ -639,16 +639,16 @@ The unpicked image of each pair is now on **Old 2**: its file was copied server-
   - M-05b v3/v4: the strap seated, red fading to blue.
 - **Kept off (L16), all on Old 2:**
   - M-02a v2: the X-ray Fix for "fix the product and placement", superseded before it was shown.
-  - M-02a v3 pair: the worn-strap photo printed a real hairy leg and a room under the models. The worn photo is now dropped from anatomy beats (L33).
+  - M-02a v3 pair: the worn-strap photo printed a real hairy leg and a room under the models. The worn photo is now dropped from anatomy beats (L34).
   - M-05b first A: the strap alone on a table.
-- **System:** V7.89.3, §12A-1 rules 7–8, `angles.py` `anat.lock`, `preflight.py` (anatomy + worn photo fails). LESSONS L33.
+- **System:** V7.89.3, §12A-1 rules 7–8, `angles.py` `anat.lock`, `preflight.py` (anatomy + worn photo fails). LESSONS L34.
 
 **R-03b image Fix** "make her look like she is showing the stryde strap like flexing it": an image edit of her confirmed v1 A frame. Her right leg (frame left) stretches toward the lens, both hands present the strap, and she grins. The v4 pair is To check.
 - **Kept off, all on Old 2:**
   - v3 A: a different woman.
   - v3 B: the strap on her left knee (FP18).
   - v4 B: a different woman in a hinged brace. B was re-rendered once (B2) with the same prompt.
-- `preflight.py` could not pass an image edit that shows the product: product-first and edit-first conflicted. Now the edited picture is Image 1 and the product photo comes right after it (§6A, L34).
+- `preflight.py` could not pass an image edit that shows the product: product-first and edit-first conflicted. Now the edited picture is Image 1 and the product photo comes right after it (§6A, L35).
 - v1 A (the old pick) is on Old 2. Clip v2 stays as the card's video until a new pick gets its clip.
 
 **Clips from the picks (Kling 3.0, 1080p, silent), all To check:**

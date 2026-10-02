@@ -208,7 +208,7 @@ def run_image(c):
               len(kinds) > pi and kinds[pi] == "product", f"ref {pi + 1}: {kinds[pi] if len(kinds) > pi else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
     if c.get("anatomy"):
-        # §12A-1 rule 8 (V7.89.3, LESSONS L33): a worn photo shows a real leg — it printed one under the knee models
+        # §12A-1 rule 8 (V7.89.3, LESSONS L34): a worn photo shows a real leg — it printed one under the knee models
         worn = [r.get("label", "") for r in refs if re.search(r"\bworn\b", r.get("label", ""), re.I)]
         check("only the product photo on an anatomy beat (§12A-1 rule 8)", not worn, f"worn photo attached: {worn[0][:60]}" if worn else "")
     # §6A Part 2 — right on the first render (V7.74.0)
