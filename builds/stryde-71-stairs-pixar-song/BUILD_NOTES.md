@@ -746,3 +746,39 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on M-06a and on all seven Act 5 pairs, then their clips.
 - Confirm or Fix on the R-03b, M-02a and M-03a clips.
+
+### 2026-10-02 ~12:20–12:45 UTC — "fix those and generate the next act"
+
+**Image Fixes, new pairs To check:**
+- **M-06a** "wrong locastion": an image edit of her own staircase. The base is a crop of the confirmed R-07a v8 A frame round her legs (`body4/M06_base_R07crop.png`, Higgsfield media 6279fb3c). The strap is corrected from the front photo.
+  - The first A drew pale legs on another staircase, so it was kept off (Old 2) and re-rendered once.
+  - The new A and B are both her runner and brass rods, her skin and her slippers.
+- **PR-03a** "fwrong product" and **PR-06a** "wrong product": the peaks had been drawn as horns at the shell's ends, and the band coiled. The shape line now puts two matching peaks close together at the middle, sloping down to a slide at each end (FP22, L47). PR-06a's strap lies flat with the band out straight.
+- **PR-05b** "product placemetn is too low": the notch now cups the bottom of the kneecap, on the tendon. The trouser hem is still rolled above the knee.
+
+**Clips, To check (Kling 3.0, 1080p, silent):**
+- **M-02a** v3, 6 s. Fix "you should show blue glow to show that the stryde is better". The glow under the strap cools from amber to blue while the left knee keeps its amber. Locked camera; the strap keeps its shape. This is the shot's third generation; the user's "fix those" was the go. Clip v2 is on Old 2.
+- **M-05a** v1, 5 s: pressure pulses down the thigh into the tendon spot.
+- **PR-01a** v1, 4 s: he seats the strap.
+- **PR-02a** v1, 5 s: she swings the strap to the lens and seats it on the model. The end frame was waived by the user's 2026-10-01 words. Flagged: the strap flattens mid-swing, and she grins open-mouthed once.
+- **PR-04a** v1, 5 s: three jogging strides, one strap.
+- **PR-05a** v1, 5 s: she seats the strap.
+- The unused images of the picked pairs are on Old 2.
+
+**Act 6 (L-01a…L-03a), the store-walk day N-D6, first pairs To check:**
+- N wears a coral windbreaker, white T-shirt, light-blue jeans, white sneakers and a canvas tote, and goes in by her face-and-hair crop.
+- Street and store shots are edits of P6-STREET and P4-STORE.
+- L-03a's living room takes its materials from P0. The husband is a one-off, written in words.
+- L-01b A's first job failed on Higgsfield and was resubmitted.
+- L-03a A printed the line as a title, so it was kept off and re-rendered in the new form (below).
+
+**System (V7.90.7, L46):**
+- A picture prompt opens `For the line — … —:`, never with speech marks. This was the third caption from the opener's marks (R-06b, PR-01a, L-03a).
+- `preflight.py` now fails any speech mark in an image prompt; clip prompts keep theirs.
+- L47 / FP22: the short shape line keeps where the peaks sit.
+
+**Balances:** Higgsfield 5995.65 · Kling 37765.
+
+**Waiting on:**
+- Picks on M-06a, PR-03a, PR-05b, PR-06a and the five Act 6 pairs.
+- Confirm or Fix on the six new clips.

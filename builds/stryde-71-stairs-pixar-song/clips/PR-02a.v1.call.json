@@ -1,0 +1,60 @@
+{
+ "beat": "PR-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Sports doctors recommend it. Not the pharma companies. Sports doctors.\": From this frame: she turns the strap to the lens and seats it on the model — one turn, then one press, about three seconds; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. At her desk she turns the strap once so its front faces the lens, then lowers it onto the knee model and presses it in place under the model's kneecap, then rests; the strap stays rigid and exactly as in the frame — black shell, two peaks together at its middle, chrome slides; the knee model and desk stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_113413_e26c33e0-a524-414d-b98d-e29830006ca5.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Sports doctors recommend it. Not the pharma companies. Sports doctors.",
+ "motion_plan": "From this frame: she turns the strap to the lens and seats it on the model — one turn, then one press, about three seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one turn",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "product_angle",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "first",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push / locked"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v2)"
+}
