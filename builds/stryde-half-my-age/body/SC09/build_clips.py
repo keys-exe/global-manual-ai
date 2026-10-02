@@ -163,16 +163,16 @@ take("SC10-T3", 10, ["SC10-SH03"], 8, "Scene 10 · T3 — the high street: she o
 take("SC10-T4", 10, ["SC10-SH04", "SC10-SH05", "SC10-SH06"], 10, "Scene 10 · T4 — the checkout: You alright carrying those, love? / I am, actually. (SH04–SH06)",
      ["N-FACE", "X3-CASHIER", "OUT-N-A2", "L-SHOP"],
      [("@image1", FACE_N), ("@image2", ONEOFF("the cashier")), ("@image3", CARD_A2), ("@image4", PLACE("the supermarket checkout lane of the plate — the conveyor, the till, the bagging area, the chrome queue rail")), ("@audio1", VOICE("Her"))],
-     f"SHOT 1, [0s-4s]: MEDIUM, low three-quarter, Camera on a tripod, locked: Her, {HER_ID}, in {HER_A2}, stands square in the checkout queue, a full shopping basket in her right hand, weight even on both feet, completely still and easy, waiting her turn, lips sealed. "
-     "SHOT 2, [4s-7s]: MCU over Her's shoulder onto the young cashier of Image2 in her seat at the till, Camera on a tripod, locked: the cashier nods at two full shopping bags at the end of the counter, half-reaches toward them to help and says, kindly: " + L055 + " "
-     "SHOT 3, [7s-10s]: CU, eye level, three-quarter on Her, Camera on a tripod, locked: she lifts both full bags herself, one in each hand, easily, and says with a small smile: " + L056 + " "
+     f"SHOT 1, [0s-4s]: MEDIUM, low three-quarter, Camera on a tripod, locked: Her, {HER_ID}, in {HER_A2}, stands square in the checkout queue, a full shopping basket in her right hand, weight even on both feet, completely still and easy, waiting her turn; nobody speaks in this shot. "
+     "SHOT 2, [4s-7s]: MCU over Her's shoulder onto the young cashier of Image2 in her seat at the till, Camera on a tripod, locked: the cashier nods at the two full shopping bags packed at the end of the counter, half-reaches toward them to help and, only now, says kindly: " + L055 + " "
+     "SHOT 3, [7s-10s]: CU, eye level, three-quarter on Her, Camera on a tripod, locked: her basket is already set down empty on the floor; she takes the two full shopping bags from the end of the counter, one in her right hand and one in her left, lifts both easily to her sides, and says with a small smile: " + L056 + " "
      "Each cut lands on a completed action. The eyelines match across the counter. Nobody looks into the lens.",
      None, "FOCUS: SHOT 1 her eyes; SHOT 2 the cashier's eyes; SHOT 3 Her's nearest eye. The blur is optical: soft and round, never smeared.",
      (P["10D_S"], P["10D_E"], ("HER", "at the checkout in her A2 outfit", "she has lifted both bags herself")),
      [{"risk": "the voices swap", "prevented_by": "Audio1 is Her; the cashier's line named with her; speakers in order"},
       {"risk": "lettering or logos on packaging", "prevented_by": "the plate's blank labels, lettering negative"},
       {"risk": "she shifts her weight in the queue (the line says she didn't)", "prevented_by": "'completely still, weight even on both feet'"}],
-     "no lettering or logos on any packaging or sign, no Her shifting her weight or leaning, no cashier carrying the bags, no strap visible, no word left out, no voices swapped",
+     "no line spoken before 4 seconds, no basket in her hands in SHOT 3, no lettering or logos on any packaging or sign, no Her shifting her weight or leaning, no cashier carrying the bags, no strap visible, no word left out, no voices swapped",
      line=L055 + " " + L056, audios=["N-STOOD"], vo="L054", kind="multi",
      dlg=["THE EXCHANGE, word for word and in this order: " + L055 + " " + L056 + " — the cashier says the first line, Her answers with the second; nobody else speaks.",
           "Audio1 is only Her's voice: its words are never spoken in this clip.",
@@ -185,15 +185,18 @@ take("SC10-T5", 10, ["SC10-SH07"], 5, "Scene 10 · T5 — up her street to the f
      ["N-FACE", "OUT-N-A2", "P-HOUSE-EXT"],
      [("@image1", FACE_N), ("@image2", CARD_A2), ("@image3", PLACE("her street of the plate — the red-brick semis, the privet hedge, the green front door"))],
      f"WIDE, eye level, from behind her on the pavement, Camera on a tripod, locked: afternoon sun about 5000K on her street of Image3. Her, in {HER_A2}, walks away from the camera up the pavement toward her green front door, "
-     "a full shopping bag in each hand, arms easy, back straight, and turns in at her own gate by the privet hedge. " + BRISK,
+     "EXACTLY TWO full brown paper shopping bags in total — one bag in her right hand and one bag in her left hand, never two in either hand — arms easy, back straight, and turns in at her own gate by the privet hedge. " + BRISK,
      "MOVE: she travels away from the camera up the pavement; the camera never moves.",
      "FOCUS: deep — her and the house sharp. The blur is optical: soft and round, never smeared.",
      (P["10E_S"], P["10E_E"], ("HER", "on her street in her A2 outfit, two full bags", "she turns in at her gate")),
      [{"risk": "she drops or swaps the bags", "prevented_by": "a full bag in each hand throughout"},
       {"risk": "the house changes", "prevented_by": "the street plate, the green door named"},
       {"risk": "a limp or slow walk", "prevented_by": "BRISK"}],
-     "no dropping the bags, no third bag, no limping, no running, no house numbers or lettering, no strap visible, no talking, no mouth moving", vo="L057")
+     "no third or fourth bag, no two bags in one hand, no dropping the bags, no limping, no running, no house numbers or lettering, no strap visible, no talking, no mouth moving", vo="L057")
 
+GEN2 = {"SC10-T4": 2, "SC10-T5": 2}
+FIX2 = {"SC10-T4": "agent's check of v1 (not put up, L16): the cashier spoke in SHOT 1 and Her answered still holding her basket, never lifting the bags → the cashier speaks only in SHOT 2; in SHOT 3 the basket is down and she lifts the two bags herself",
+        "SC10-T5": "agent's check of v1 (not put up, L16): she carried four bags, two in each hand — the line is two bags → exactly two bags, one in each hand"}
 FILES = {"X4-DOCTOR": "body/SC09/ingredients/X4-DOCTOR_v1.png", "X5-HUSBAND": "body/SC09/ingredients/X5-HUSBAND_v1.png", "X6-NIECE": "body/SC09/ingredients/X6-NIECE_v1.png",
          "X3-CASHIER": "body/SC09/ingredients/X3-CASHIER_v1.png", "OUT-N-A2": "body/SC09/ingredients/OUT-N-A2_v1.png", "INFO-HIGHST": "body/SC09/ingredients/INFO-HIGHST_v1.png",
          "P-HOUSE-EXT": "body/SC09/ingredients/P-HOUSE-EXT_v1.png", "PROD-FRONT": "../../products/stryde/stryde_refs/front.webp", "INFO-KNEE-C1": "body/SC05/ingredients/INFO-KNEE-C1_v3.png",
@@ -211,7 +214,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": 1, "user_go": GO, "fix_note": FIX,
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": GEN2.get(s["beat"], 1), "user_go": GO, "fix_note": FIX2.get(s["beat"], FIX),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": s["scene"], "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "FP01", "FP02", "FP03", "FP10", "FP11", "FP12", "FP15", "FP17", "FP18", "FP19"]}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
