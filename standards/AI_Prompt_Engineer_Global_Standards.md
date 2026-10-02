@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.88.1 — supersedes all prior versions.** *(V7.88.1: no speech marks in a picture prompt — a quoted line prints on the frame as a caption (`preflight.py`); HT26's face-and-hair crop on every image model and a style frame free of other days' outfits — LESSONS L28; HT27 every cast member in the frame by a picture, feet-only shots too. V7.88.0: one take for connected action — a film scene's connected shots (same scene, place and story day) are generated in one Seedance call: a one-take for one continuous action (`TAKE-FILM`), a MULTI-SHOT take for coverage of one moment, its movement carried across the cut (`MULTI-FILM` MOVE); up to four shots and 15 s; split only for a named reason; every take writes where everyone is on its first and last frame; a Fix regenerates the whole take; `takes.py` checks it — §24K part 5, V7.88.0)*
+**Version 7.89.0 — supersedes all prior versions.** *(the wardrobe follows the day and its events, never the act: story days come from the script's events with their source, never one per act; talking heads are locked per recording day; the wardrobe map is written in story order, one block per day with its event, source, outfits and capture events, never grouped by act; `wardrobe.py` checks it — §14A, §19, §21, §30, V7.89.0)*
 
 ---
 
@@ -1607,7 +1607,7 @@ Which one a hook set is gets declared at the act map. It is not inferable from t
 ### Unchanged
 
 - Applies whether the subject is the narrator or an anonymous cast member.
-- Defaulting a B-roll beat to the talking-head wardrobe lock is an error, not a shortcut. The talking-head lock is per act (§19, §30); B-roll does not inherit it.
+- Defaulting a B-roll beat to the talking-head wardrobe lock is an error, not a shortcut. The talking-head lock is per recording day (§19, §30, V7.89.0); B-roll does not inherit it.
 - A matched before/after pair holds wardrobe across the pair, because the pair is arguing that only one thing changed.
 
 **Consequence:** the wardrobe map is a **per-capture-event table with per-beat rows** (§21) — the event carries the outfit, the row carries the beat, the subject and the visibility state.
@@ -1696,14 +1696,14 @@ Runs at §18 step 5, over the step-2 phrase inventory. Five channels:
 | # | Channel | What it surfaces |
 |---|---|---|
 | **D1** | **Stated** | The script says it — "that Tuesday", "three weeks later", "the next morning" |
-| **D2** | **Implied by the act** | **One story day per act is the default** (below). An act boundary is a day boundary unless the script joins them |
+| **D2** | **Implied by an event** *(V7.89.0 — was "implied by the act")* | A separate occasion the script shows — a wedding, a visit, a doctor's appointment, a walk into town, "last Sunday" — is its own day (or its own event within a day) wherever it falls in the acts. **An act boundary is never a day boundary by itself** |
 | **D3** | **Implied by contrast** | A before/after pair is two days by construction, and they are the two furthest apart in the build |
 | **D4** | **Implied by a timeframe claim** | "Within a fortnight" needs a visible start and a visible end, so it is at least two days and usually three |
 | **D5** | **Implied by ownership** | A GENERIC phrase is nobody's day (§30B Part 3). Anonymous subjects carry their own single day each and never share the narrator's |
 
-**Default: one story day per act** *(resolves the §19/§30 collision)*. §19 and §30 lock talking-head wardrobe **per act**; §14 keys wardrobe to the **story day**. One day per act makes the two rules the same rule, and it keeps the act boundary landing as a §31 pattern interrupt — a wardrobe change is among the cheapest interrupts available, and it is free here because the day changed anyway.
+**Acts never set the day or the outfit** *(V7.89.0, user 2026-10-02: "the wardrobe map too — it should not be per act, it should be per day / event"; was "one story day per act" by default)*. An act is a section of the edit (problem, mechanism, proof); a day is time in the story. A proof act that cuts between last Sunday, the wedding and this morning is three days in one act. A problem told across two acts on one bad morning is one day across two acts. Defaulting a day to each act changed her clothes at every act boundary, even when the script stayed on the same morning, and kept her in one outfit across separate occasions inside an act. **Story days and their events come from the script (D1–D5)**, each day written with the event it is ("the wedding, June evening") and the line or fact that makes it a day (`source`: "stated: 'last Sunday'", "event: the visit", "contrast: the before"). An act boundary may still land on a day change when the script puts one there; a wardrobe change is then free as a §31 interrupt, but it is never invented for one.
 
-**Two acts share a day only when the script joins them explicitly**, and then the wardrobe holds across the boundary and the interrupt has to come from the location instead. **One act spanning two days** is the other exception: it takes two outfit rows, and the day change lands inside the act on a stated line, never on a cut.
+**A day runs across act boundaries whenever the script stays in it**, and then the wardrobe holds across the boundary (the interrupt comes from the location or the shot). **An act that covers several days** takes one outfit per day, and each day change lands on the line that moves the story on, never on an arbitrary cut.
 
 The derived day count is recorded on the act map before any wardrobe is written. **A build with more outfits than story days has changed clothes for no reason; a build with fewer has two days in one shirt.**
 
@@ -1717,7 +1717,7 @@ One row per capture event, in the Build Sheet (Appendix C). This is the artefact
 
 | # | Audit | Counted over |
 |---|---|---|
-| **W1** | **Class repetition.** No BASE class twice in an act. No exact garment twice in the build except the one declared signature item | **Story days**, across the whole ledger — narrator and anonymous cast together |
+| **W1** | **Class repetition.** No BASE class on two consecutive story days of the same person *(V7.89.0 — was "twice in an act")*. No exact garment twice in the build except the one declared signature item | **Story days**, across the whole ledger — narrator and anonymous cast together |
 | **W2** | **Change depth.** Every consecutive pair of story days differs on two layers including BASE | **Consecutive story days** |
 | **W3** | **Colour rotation.** No two consecutive story days share a colour family; positive-valence days are not all in neutrals | **Consecutive story days** |
 | **W4** | **Day coverage.** Every capture event on the map resolves to a story day, and every story day resolves to exactly one outfit row | The act map against the ledger |
@@ -1862,7 +1862,7 @@ Every generated beat is accompanied by its **full prompt text in a fenced block*
 | Act map | 5 | **Navigator** — tabs per act, each act listing its beats with the six-slot row |
 | Phrase inventory + coverage ledger | 5 | **Navigator** — metric cards for BR / TH / MECH / MERGED / CUT and uncovered count, tabs per act, one row per `P-` with its disposition |
 | Location Sheets | 5 | **Spec card per location** — the five parts as rows, anchors listed, lighting profile in a copy block |
-| Wardrobe map | 5 | **Ledger** — talking head per act, then one row per B-roll beat with capture events marked |
+| Wardrobe map | 5 | **Ledger** — one outfit card per story day in story order, each person's outfit, the day's event and its capture events with their beats beneath; talking heads per recording day. **Never grouped by act** (V7.89.0) |
 | Seeds, beats, hooks, B-roll | 6–8 | **Prompt widget** + **beat card** |
 | CapCut block | 9 | **Ledger** — one row per cue with beat ID, type, timing, and the standing lines grouped |
 | Film Look Sheet (Mode 4) | 1–2 | **Spec card** — the nine fields as rows, the source of each (inspo measurement or script), and `LOOK-[BUILD]` in a copy block |
@@ -2402,7 +2402,7 @@ Always describe: face shape, eye shape, nose shape, lips, jawline, cheekbones, e
 
 **NORMATIVE — `AVATAR-SHEET`, `NEG-SHEET` — see Appendix A.** Never trimmed: the same-side-window clause and the nothing-on-the-skin-in-one-panel clause.
 
-- **Talking-head wardrobe lock** — locked per act for the entire build, and **per act means per story day** under §14A's default of one day per act. Where two acts are explicitly joined on one day the lock holds across the boundary; where one act spans two days it takes two entries. B-roll wardrobe does not follow this lock, but it does follow the same story day (§14).
+- **Talking-head wardrobe lock** — locked per **recording day** *(V7.89.0 — was per act)*: one sitting, one outfit, across every act it covers. A host filmed in one sitting wears one outfit for the whole build. A new outfit comes only with a new recording day the script signals (§30: a time jump, a new place), never at an act boundary. B-roll wardrobe does not follow this lock; it follows the story day and its events (§14).
 - **Voice lock** — a full `VOICE-[CHAR]` per §22D, generated with the reference sheet automatically and roster-cleared at three-plus axes; never inferred from the reference sheet (§7).
 - **`TEETH-A`** on every talking-head seed frame (§28F) — a teeth-strip seed produces a teeth strip in every frame.
 - **Vary the character across builds** — unless a recurring avatar is wanted, make each new build's character genuinely different.
@@ -2517,7 +2517,7 @@ Two fields carry consequences beyond themselves and must be checked against the 
 
 A table produced **after the act map** and confirmed **before beats are written.**
 
-**A. Talking-head wardrobe** — one entry per act. Locked within the act (§19, §30).
+**A. Talking-head wardrobe** — one entry per recording day (one sitting), locked across every act it covers (§19, §30, V7.89.0).
 
 **B. B-roll wardrobe** — **one outfit row per story day**, with each of that day's capture events listed beneath it (§14, §14A). **The day carries the outfit; the event carries the location, the visibility state and the beats.**
 
@@ -2525,7 +2525,9 @@ Outfit row: `story-day · subject · BASE · MID · OUTER · LOWER · FOOT · AC
 
 **The map ships with its four §14A audits** — class repetition, change depth, colour rotation, day coverage — stated as pass/fail counts under the table. A map delivered without them is undelivered.
 
-Two ways to get the granularity wrong, and they fail in opposite directions. **Per-beat with no grouping** forces a costume change inside a continuous scene. **Per capture event** forces one inside a single day, which is the error corrected at V7.48.8. **Per act** is the original failure and is still invalid. Regenerate keyed to the story day before any beat is built against it.
+Two ways to get the granularity wrong, and they fail in opposite directions. **Per-beat with no grouping** forces a costume change inside a continuous scene. **Per capture event** forces one inside a single day, which is the error corrected at V7.48.8. **Per act** is the original failure and is still invalid: acts are the edit's sections, not time (V7.89.0, user 2026-10-02: "it should not be per act, it should be per day / event"). No row, heading or group of the map is an act. Regenerate keyed to the story day before any beat is built against it.
+
+**The map is written in story order, one block per story day:** the day id, the event it is ("the wedding, June evening"), its `source` (the line or fact that makes it a day), each person's outfit, and its capture events (`event-id · location · visibility · beats`). The act a beat sits in may be shown beside the beat as information, never as the grouping. **`scripts/wardrobe.py <act_map.json> <wardrobe.json>`** checks it: every day has its event and source, and no source is an act; no day id, heading or group is an act; every act-map row's story day — a day, or one of its events by id (`B3d`, the drawer, on day B3, wears B3's outfit) — has an outfit for each person in it; talking heads are keyed by recording day. Any FAIL is fixed before a beat image is written. The same table goes to the Plan board as `docs/wardrobe`.
 
 ---
 
@@ -5314,7 +5316,7 @@ Each segment is its own generation with its own beat ID, `dialogue` and `deliver
 
 ## 30. Talking Head Continuity Rule
 
-Locked across every talking-head beat in a single act:
+Locked across every talking-head beat of one recording day — one sitting, whatever acts it covers (V7.89.0, was "in a single act"):
 
 - Same wardrobe, accessories, jewellery, watch, **glasses**
 - Same hair state
@@ -5329,7 +5331,7 @@ Locked across every talking-head beat in a single act:
 
 **Pacing:** brisk on all talking heads unless the constraint sheet says otherwise.
 
-**Multi-day / multi-location talking heads** are allowed only when the script explicitly signals a time jump. Treat as a deliberate act break: change wardrobe fully, change background, change light. **Half-changes read as errors.** The wardrobe change is a full §14A change — two layers including BASE — not a swapped cardigan.
+**Multi-day / multi-location talking heads** are allowed only when the script explicitly signals a time jump. Treat as a new recording day (never an act boundary by itself): change wardrobe fully, change background, change light. **Half-changes read as errors.** The wardrobe change is a full §14A change — two layers including BASE — not a swapped cardigan.
 
 **Eyeline continuity:** locked to lens for direct address, locked off-lens for reflective delivery. The §28E break — including the §28D product glance — is the only permitted exception, and it returns immediately.
 
@@ -6863,7 +6865,7 @@ Three tiers. Every numeric, clinical or comparative claim in a script is assigne
 
 **61. Wardrobe change → two layers, one of them BASE, between consecutive story days (§14A).** Every entry is a six-layer stack drawn from the character's own class register — or from the build-level GENERIC pool for anonymous cast — never an outfit description. A colour change is not a layer change. **The unit of count is the outfit, which is the story day**: no BASE class repeats within an act, no exact garment repeats in the build except one declared signature item per character, colour family rotates between consecutive days. Audits run across the whole ledger, narrator and anonymous cast together. The ledger ships with the wardrobe map and carries four audits — class repetition, change depth, colour rotation, day coverage.
 
-**62. Story days → derived, defaulted to one per act (§14A).** The five-channel derivation pass runs at step 5 over the phrase inventory. One story day per act unless the script explicitly joins two acts or splits one. `story_day` and `capture_event_id` are mandatory columns on every act-map row. **A build has as many outfits as it has story days** — more means it changed clothes for no reason, fewer means two days in one shirt.
+**62. Story days → derived from the script's events, never from the acts (§14A, V7.89.0).** The five-channel derivation pass runs at step 5 over the phrase inventory. Each day is written with its event and its `source`; an act boundary is not a day boundary by itself. `story_day` and `capture_event_id` are mandatory columns on every act-map row. **A build has as many outfits as it has story days** — more means it changed clothes for no reason, fewer means two days in one shirt.
 
 **70. Property → one house, one sheet, one plate, chained down (§30G).** Where a build's locations include two or more rooms of one dwelling, the Property Sheet is written and its plate checked at step 4 before any location plate. The plate attaches to every location-plate generation and to every interior beat including incidental and traversed ones, with `PROP-SHELL` naming the carried finishes and `NEG-PROP` in the negatives. Room orientation comes from the floor map, never from taste. Sightlines and the view out of every window are stated. One age of building, one decade of decoration, one standard of upkeep — no room newer or better kept than the rest.
 
@@ -8671,9 +8673,9 @@ One per build. Disposable.
 5a. **Phrase inventory + coverage ledger** — every phrase ID'd and dispositioned (§27B)
 5b. **Visual Instruction Ledger** — every script visual note (`VNxx`) and Loom instruction (`LMxx`), its spoken line, what carries it, its beat ID and its status (§27F, §18C)
 5c. **Music Register Map** *(V7.75.0, §40A)* — one row per script part: `part · lines · what the script is doing · register (MUS-OPEN · MUS-EXPOSE · MUS-EDU · MUS-TURN · MUS-AFTER · MUS-OFFER) · cue in plain words · entry / swell / drop / hand-over`, the build's one music family named above the rows, and any deviation from the reference's music noted; mirrored to the board's Plan tab as `docs/music`
-6. **Wardrobe map** — talking head per act, B-roll **per capture event** with per-beat rows and the full §14A ledger columns, shipped with its three audits (§21, §14A)
+6. **Wardrobe map** — **per story day and its events, in story order, never per act** (V7.89.0): each day's event and source, each person's outfit, its capture events with per-beat rows and the full §14A ledger columns; talking heads per recording day; shipped with its audits and `wardrobe.py` PASS (§21, §14A)
 6a. **Wardrobe Ledger** — one outfit row per story day (`story-day · subject · BASE · MID · OUTER · LOWER · FOOT · ACCENT · colour-family`) with its capture events listed beneath (`event-id · location · visibility · beats covered`), plus each character's available class subset, the **build-level GENERIC class pool** for anonymous cast, and each character's one declared signature item (§14A)
-6b. **Story-day map** — the output of the §14A five-channel derivation pass: day count, which acts fall on which day, and the two exceptions where a day spans acts or an act spans days
+6b. **Story-day map** — the output of the §14A five-channel derivation pass, in story order: day count, each day's event and `source`, and its beats (the acts they sit in shown only as information — V7.89.0)
 7. **Location Sheet library** — one per location: geometry, fixed dressing and anchors, loose props with states, palette, lighting profile (§22A, §30C)
 7a. **Scene Registry** — the plate job id per location, its anchor list, and the running prop-state ledger (§30C)
 7b. **Subject Registry** — every recurring subject (`S-01`, `S-02`…): the §19 reference-sheet job id, the §19A axis table, their named markers, and the beats they appear in (§30E). Declared at step 2, sheeted at step 3
@@ -8718,7 +8720,7 @@ Why the load-bearing rules exist. One lookup instead of a document search. **Whe
 | Mechanism lines never in held-product beats | Both §11 mirror gestures are two-handed |
 | Continuity in negatives | Measured: zero detectable cuts across 21 seconds and three independent generations |
 | Frame side alternates | Same side twice reads as one shot cut in half |
-| Wardrobe per beat, not per act | Two consecutive B-rolls in one outfit read as one day, collapsing the time span the build claims |
+| Wardrobe per story day and event, never per act | The clothes tell the viewer how much time has passed; an act is an edit section, so changing at act boundaries invents days the script never had and merges the ones it did (V7.89.0) |
 | Seating beats permitted, threading not | A reposition never changes the product's state, so geometry holds. Threading reconfigures it, which is where geometry fails |
 | Name the landmark's edge | An offset from a landmark with real extent is ambiguous — it can be measured from centre or top |
 | Prompt shipped even when generated | An image without its prompt cannot be re-run, iterated or handed on. §1's deliverable is the prompt |
@@ -8911,7 +8913,7 @@ Why the load-bearing rules exist. One lookup instead of a document search. **Whe
 | The start frame is already falling | A mug still on the table spends the clip getting off the table and the break never reaches the timeline — the hot-start-frame argument, applied to gravity |
 | Slow motion banned globally | It was guarded only on candid beats. A speed ramp is a decision somebody made, and the Mode 1 argument is the absence of decisions |
 | The unit of count is the outfit, not the event | One story day carries one outfit across every location it holds. Counting capture events demanded a new base class for every propped-phone setup inside a single day, which §14 forbids outright |
-| One story day per act, by default | It makes §19's per-act talking-head lock and §14's per-day rule the same rule, and it keeps the act boundary landing as a pattern interrupt — free, because the day changed anyway |
+| Story days from the script's events, never from the acts *(V7.89.0 — was "one story day per act, by default")* | A day is time in the story; an act is a section of the edit. The talking-head lock follows the recording day, B-roll follows the story day, and neither follows the act |
 | Anonymous cast draw from a build pool | They never get a constraint sheet and they are the majority of candid beats, so nothing else filters their classes. Per-character audits would report five clean sheets on a build where five people wore the same shirt |
 | Story days are derived, not residual | Most of them arrive through channels a plain read never surfaces — a contrast pair, a timeframe claim, an ownership switch. Left residual, the count is whatever the beats happened to imply |
 | The class list is filtered by the character | A cast that all dress out of middle-class knitwear has failed §19A at the wardrobe layer even when every outfit is technically different — the same convergence, arriving one step later |
@@ -9393,6 +9395,20 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 
 ---
 
+# CHANGELOG — V7.88.1 → V7.89.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **14A** | Channel D2 "implied by the act" becomes **implied by an event**. The "one story day per act" default becomes **acts never set the day or the outfit**: days come from the script's events, each with its event and `source`. A day runs across act boundaries when the script stays in it, and an act covering several days takes an outfit per day. W1 "no BASE class twice in an act" becomes "on two consecutive story days of the same person" |
+| **19**, **30**, **14** | The talking-head wardrobe lock moves from per act to **per recording day** (one sitting, whatever acts it covers). A new outfit comes only with a time jump the script signals, never at an act boundary |
+| **21** | A: talking heads per recording day. "Per act is invalid" restated, with no row, heading or group being an act. The map is written in story order, one block per day (event, source, outfits, capture events), and a row may name an event id of its day. `wardrobe.py` passes; `docs/wardrobe` on the Plan board |
+| **16**, **Appendix C** 6 / 6b, rule 62, rationale rows | Every "per act" wardrobe description rewritten to per story day and event |
+| Files | `scripts/wardrobe.py` (new: ACT, SOURCE, COVER, BEATS, TH; `--md` writes the docs/wardrobe table), both skills, CLAUDE.md, LESSONS.md |
+
+**Origin:** user, 2026-10-02 — "the wardrobe map too — it should not be per act, it should be per day / event". Measured, never changed: `stryde-half-my-age`'s wardrobe table, read against its act map, misses the events its act map uses (B3p physio, B3q, B3d the drawer, the A1 one-offs). Listed as events of their day, it passes. Tested: a map keyed "Act 1" with source "act boundary" fails ACT; a day without event or source fails SOURCE; two talking-head outfits on one recording day fail TH; an act map without people passes.
+
+---
+
 # CHANGELOG — V7.88.0 → V7.88.1 *(cut authorised — §34B, the agent's own error found on stryde-71-stairs-pixar-song Act 3)*
 
 | § | Change |
@@ -9401,6 +9417,8 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 | **24O** rule 9 *(new)*, **34A** HT26 | **The day's clothes never come from a sheet or a style frame**, on every image model: when a character's day outfit differs from the sheet, the sheet goes in as a face-and-hair crop of its close-up panel; the style frame never shows a character of the shot in another day's outfit (R-03a in the sheet's shorts, R-06b in the day-one dress, 2026-10-02) |
 | **34A** HT27 *(new)* | **Every cast member in the frame goes in by a picture** — the face crop or, better, a confirmed frame of her in the day's outfit, also on feet- and hands-only shots; the named person placed nearest the lens in a crowd (three "wrong person" Fix notes on stryde-71-stairs-pixar-song, 2026-10-02, `fix_patterns.py`) |
 | Files | `preflight.py` (speech-marks check, run on the empty case and on known-good prompts — L19), both skills, CLAUDE.md, `LESSONS.md` L28 |
+
+---
 
 # CHANGELOG — V7.87.0 → V7.88.0 *(cut authorised)*
 
