@@ -150,6 +150,23 @@ for _b, _t, _old in (("M-02a", "v6", " Image 2 sets the light only."), ("M-05a",
     assert _old in _pr
     _J[_b] = (_d, _t, _pr.replace(_old, ""), [r for r in _refs if r is not STH], *_rest[:-1], _rest[-1] + NOFR)
 J.update(_J)
+# ---- 2026-10-02 ~11:30 board Fixes: M-03a / M-05a "the point is the patellar tendon" (FP21), M-06a "i want a close up shot of the feet"
+PT = "the patellar tendon, drawn as a broad white ribbon from the bottom tip of the kneecap straight down to the bump at the front of the shin bone, about as long as the kneecap, with one small soft warm glow on the middle of that ribbon, below the kneecap and above the bump"
+M03P = ref("M-03a v5 A (your pick) — the Pixar anatomy frame, side profile", "frame", "19b8bce7-3e00-47e1-ac1d-d8b96ff50188", ID + "M-03a")
+J["M-03a"] = (H, "v7", f'''For the line "{L("M-03a")}": Keep this picture exactly as it is — the knee model, bones, kneecap, see-through outline and grey backdrop, the same side view — and change only the tendon and the glow. Image 1 is the picture, its anatomy drawn the way this film's own animators would draw it: simple, rounded, readable shapes, no muscle anywhere.
+At the front of the knee, {PT}. The kneecap itself plain ivory with no glow on it; the joint line between the two big bones plain, no glow there.
+In frame: the knee model, the tendon ribbon, the one glow; the rest as Image 1. Warm key, cool fill, rim. A final frame from a 3D animated feature film, stylized storybook render. No lettering, labels or arrows.''', [M03P], False, False, False, False, M03P, True, "S3",
+ 'user Fix "the poin is the patellar tendon" (on the pick v5) → an edit of v5: the tendon drawn as a broad ribbon from the kneecap tip to the shin bump, the glow on its middle, none on the kneecap (FP21)')
+J["M-05a"] = (H, "v5", f'''For the line "{L("M-05a")}": {ANAT_PIX}
+Side profile, mid-thigh to mid-shin, the knee a third of the frame wide: a faint grey sleeve outline round the whole joint; at the front of the knee, {PT}; three thin warm lines down the thigh into that glow. No glow on the kneecap.
+In frame: the leg model, the sleeve outline, the tendon, glow and lines; the rest plain grey. No lettering, labels or arrows.''', [], False, False, False, False, None, True, "S3",
+ 'user Fix "the point is the patellar tendon" → the tendon drawn as a broad ribbon from the kneecap tip to the shin bump, the glow on its middle, none on the kneecap (FP21)')
+N_R07F = ref("R-07a frame v8 A (confirmed) — N on her own stairs: her skin, tan slippers, denim skirt (HT27)", "frame", "11b8a6bb-8c4a-4739-86ce-0c779f413c53", ID + "R-07a")
+J["M-06a"] = (H, "v3", f'''For the line "{L("M-06a")}": Staircase of Image 2, tall 9:16. Image 1 is the strap. Image 3 is the woman — her deep brown skin, tan slippers and denim skirt exactly as in Image 3. Image 4 is the style.
+Close-up of her feet from the step below at ground level, she faces the lens, sharp on her feet: her right foot in its tan slipper landing flat on the step's carpet runner close to the lens, a brass rod beside it, her left slipper on the step above; her two bare shins rising up the frame, and at the top of the frame her right knee, on the left of the frame, with {SHAPE} 12 × 5 cm, a quarter of the frame wide, the kneecap's lower edge in its notch; her hands out of frame at her sides. Scale true to the set: each slipper as long as the tread is deep.
+In frame: two feet, two shins, one strap, two steps; the rest as Image 2, soft.
+{HALL} {SPLIT} {PLAIN}''', [FRONT, P0, N_R07F, STH], False, True, True, True, None, False, None,
+ 'user Fix "i want a close up shot of the feet" → a ground-level close-up of her slippered feet landing on the step, her shins and the strap on her right knee at the top of the frame; earlier Fix "wrong person" still in force: her own skin and slippers from her confirmed R-07a frame (HT27)')
 fails = 0
 ONLY = [x for x in sys.argv[1:]]
 for b, (d, tag, pr, refs, face, body, room, prod, eo, anat, st, fn) in J.items():

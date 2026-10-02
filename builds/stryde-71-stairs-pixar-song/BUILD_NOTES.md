@@ -695,3 +695,23 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on M-02a, M-03a, M-05a, M-05b, T-03a, M-06a and R-03b. After the picks come the clips.
 - Confirm or Fix on the clips To check.
+
+### 2026-10-02 ~11:25–11:35 UTC — "fix those and generate the videos"
+
+**Fixes, new pairs To check:**
+- **M-03a** "the poin is the patellar tendon" (on the pick v5): an image edit of v5 (v7/v8). The tendon is drawn as a broad ribbon from the kneecap tip to the shin bump, with the glow on its middle and none on the kneecap.
+- **M-05a** "the point is the patellar tendon": a new pair (v7/v8) with the same tendon wording. The first A put the glow on the kneecap again, so it was kept off and re-rendered once (A2).
+- **M-06a** "i want a close up shot of the feet": a ground-level close-up of her feet in tan slippers landing on the runner, with the strap on her right knee (frame left) at the top of the frame (v5/v6). Her R-07a v8 A frame is the reference ("wrong person" still in force). The first B drew a hinged brace, so it was kept off and re-rendered once (B2). The old clip v1 stays on the card until a new pick gets its clip.
+- The two repeated notes are now **FP21** (`products/stryde/fix_patterns.md`): the pain point sits on the patellar tendon ribbon, never on the kneecap.
+
+**Clips on the confirmed Pixar picks (Kling 3.0, 1080p, silent, slow R4 push), To check:**
+- **M-02a** v1, 6 s: the glow settles under the strap.
+- **M-05b** v1, 5 s: warm fades to cool blue down the tendon.
+- **T-03a** v2, 4 s: the bone-on-bone glow pulses once. The old X-ray clip v1 is on Old 2.
+- The unused images of those pairs (v6) are on Old 2.
+
+**Balances:** Higgsfield 6157.15 · Kling 38125.
+
+**Waiting on:**
+- Picks on M-03a, M-05a, M-06a and R-03b, then their clips.
+- Confirm or Fix on the new clips.
