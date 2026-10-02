@@ -1,0 +1,65 @@
+{
+ "beat": "M-06a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"First step. Pain gone. Just like that.\": From this frame: her left slipper steps down onto the next tread toward the lens, the strapped right leg straight and steady — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Nobody speaks or sings. Her left slipper, at frame right, lifts and lands flat, heel first, on the next tread down, nearer the lens, and her weight settles onto it, one step, then she holds; her right leg stays straight and steady; on her right knee, at frame left, the strap stays rigid and exactly as in the frame — black shell flat to the lens, two peaks together at its middle, chrome slides; the runner and brass rods stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://tempfile.aiquickdraw.com/workers/images/image_c40a4a3e59e596552d13cd347e7108e9.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "First step. Pain gone. Just like that.",
+ "motion_plan": "From this frame: her left slipper steps down onto the next tread toward the lens, the strapped right leg straight and steady — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "travel",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "user_go": "user 2026-10-02: \"fix that and generate the video\", then \"both confirmed\"",
+ "fix_note": "image Fix \"the product is distorted i need a new one thats why i said it should be straid leg\" → new start frame (image v13 A, front-on, both legs straight, shell flat to the lens); the motion now keeps the strapped leg straight and steps the bare left foot",
+ "fix_notes_all": [
+  "image Fix \"wrong locastion\" — her own staircase (kept: the runner and brass rods of her stairs)",
+  "image Fix \"the product is distorted… it should be straid leg\" — the strapped right leg stays straight, the shell rigid and flat to the lens"
+ ],
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "pilot_ref": "HK-01a/HK-02a stairs clips (confirmed)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v3 of this beat (from the confirmed image v13 A)"
+}

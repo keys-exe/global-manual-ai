@@ -259,6 +259,12 @@ def run_image(c):
     if c.get("product"):
         check("fidelity clause on the product (§6A rule 1)", bool(FIDELITY.search(p)), "e.g. 'the product in Image 1 copied exactly — same shape, same parts, same markings, nothing redesigned'")
         check("frame fraction beside the size anchor (§6A rule 2)", bool(FRACTION.search(p)), "e.g. 'about a third of the frame wide' — the subject at least a quarter of the frame")
+    # L59 (V7.92.1): a worn product a Fix called distorted / wrong is made fresh, never edited again — edits of a small angled crop wrap it round the body
+    if c.get("product") and c.get("edit_of"):
+        fx = " ".join([str(c.get("fix_note") or "")] + [str(x) for x in (c.get("fix_notes_all") or [])])
+        bad = re.search(r"distort|wrong (?:product|strap|brace|one)|f?wrong product", fx, re.I)
+        check("PRODEDIT: a product a Fix called distorted is made fresh, never edited again (§6A rule 3, L59)", not bad,
+              f"Fix note {bad.group(0)!r} — drop edit_of/match: a fresh front-on picture, the body part straight, the product flat to the lens about a third of the frame wide, product photo as Image 1" if bad else "")
     match = (c.get("match") or "").strip().lower()
     if match:
         check(f"edit_of set for a {match}-matched shot (§6A rule 3)", bool(c.get("edit_of")), "the plate / confirmed frame being edited")
@@ -350,6 +356,13 @@ def run_beat_video(c, p, check):
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§35A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
     mp = c.get("motion_plan")
+    # L60 (V7.92.2, HT28): the limb wearing the product makes the move the line credits it with — never the bare limb beside it
+    mv = re.search(r"\b(?:steps?|climbs?|bends?|lifts?|kneels?)\b", mp or "", re.I)
+    if mv and not c.get("limb_ok") and re.search(r"\b(?:strap|brace|sleeve)\b", p, re.I):
+        subj = re.split(r"[:;—]", mp[:mv.start()])[-1]       # the mover: the words before the move, back to the last clause break
+        limb = re.search(r"\b(?:legs?|foot|feet|slippers?|shoes?|knees?|heels?)\b", subj, re.I)   # only a plan that picks a limb can pick the wrong one
+        check("PRODLIMB: the limb wearing the product makes the move (HT28, L60)", not limb or bool(re.search(r"\b(?:strap|brace|sleeve|strapped|braced)\b", subj, re.I)),
+              "the motion plan names the limb that wears the product as the one that moves, e.g. 'her right leg, the one with the strap, steps down…' (limb_ok: true only when the line gives the move to the other limb)")
     check("the confirmed motion plan is the prompt's action (§35A)", bool(mp) and norm(mp) in norm(p), "motion_plan missing" if not mp else "")
     check("House Taste read (§34A)", isinstance(c.get("taste"), list), "list the HT / FP rules applied on the call as \"taste\" (may be empty)")
     check("motion confirmed at the image (§22X)", c.get("motion_confirmed") is True, "the user's pick of the image with its 'Video will show' line")

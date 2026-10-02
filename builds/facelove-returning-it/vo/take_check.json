@@ -1,0 +1,91 @@
+{
+ "T1": {
+  "diff": [
+   [
+    "replace",
+    "facelove",
+    "face love"
+   ],
+   [
+    "delete",
+    "sixty percent",
+    ""
+   ],
+   [
+    "delete",
+    "thirty",
+    ""
+   ]
+  ],
+  "end_db": -84.7,
+  "pass": false
+ },
+ "T2": {
+  "diff": [
+   [
+    "replace",
+    "facelove",
+    "face love"
+   ],
+   [
+    "delete",
+    "sixty percent",
+    ""
+   ],
+   [
+    "delete",
+    "thirty",
+    ""
+   ]
+  ],
+  "end_db": -83.6,
+  "pass": false
+ },
+ "T3": {
+  "diff": [
+   [
+    "replace",
+    "facelove",
+    "face love"
+   ],
+   [
+    "delete",
+    "sixty percent",
+    ""
+   ],
+   [
+    "delete",
+    "thirty",
+    ""
+   ]
+  ],
+  "end_db": -85.6,
+  "pass": false
+ },
+ "T4": {
+  "diff": [
+   [
+    "replace",
+    "facelove",
+    "face love"
+   ],
+   [
+    "replace",
+    "i am",
+    "i'm"
+   ],
+   [
+    "delete",
+    "sixty percent",
+    ""
+   ],
+   [
+    "delete",
+    "thirty",
+    ""
+   ]
+  ],
+  "end_db": -87.0,
+  "pass": false
+ }
+}

@@ -1,0 +1,406 @@
+{
+ "days": [
+  {
+   "day": "D1",
+   "event": "Sunday lunch in May, then the hall that night",
+   "source": "stated: 'The lunch. Sunday, the table cleared' + 'That night in the hall'",
+   "outfits": {
+    "N": "the cast-sheet outfit: oatmeal cable-knit cardigan buttoned over a navy round-neck top, mid-grey wool skirt just above the knee, navy loafers",
+    "C1": "the cast-sheet outfit: navy quilted gilet over a pale blue Oxford shirt, tan chinos, brown suede desert boots",
+    "C2": "the cast-sheet outfit: grey marl sweatshirt, dark straight jeans, white canvas trainers, thin gold chain (a navy wool coat on at night)",
+    "C3": "the cast-sheet outfit: dark green half-zip jumper over a white T-shirt, charcoal chinos, brown trainers",
+    "C4": "the cast-sheet outfit: red-and-navy striped long-sleeve T-shirt, navy shorts, white socks, blue Velcro trainers"
+   },
+   "events": [
+    {
+     "id": "D1-SC01",
+     "location": "L-DINING",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC01-SH01",
+      "SC01-SH02",
+      "SC01-SH03",
+      "SC01-SH04",
+      "SC01-SH05",
+      "SC01-SH06",
+      "SC01-SH07",
+      "SC01-SH08",
+      "SC01-SH09",
+      "SC01-SH10",
+      "SC01-SH11",
+      "SC01-SH12",
+      "SC01-SH13",
+      "SC01-SH14",
+      "SC01-SH15",
+      "SC01-SH16"
+     ]
+    },
+    {
+     "id": "D1-SC02",
+     "location": "P-HOUSE",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC02-SH01",
+      "SC02-SH02",
+      "SC02-SH03",
+      "SC02-SH03b",
+      "SC02-SH04",
+      "SC02-SH05",
+      "SC02-SH06",
+      "SC02-SH07",
+      "SC02-SH08",
+      "SC02-SH09",
+      "SC02-SH10"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D2",
+   "event": "the chemist, a weekday in May — the sleeve she buys on Tuesday",
+   "source": "event: the pharmacy ('as of Tuesday')",
+   "outfits": {
+    "N": "navy quilted jacket over a heather-grey crew-neck jumper, charcoal straight trousers, black flat shoes, a brown leather handbag",
+    "X1": "the cast-sheet outfit: navy short-sleeved pharmacy tunic over a white long-sleeve top, black trousers, black trainers, navy hijab"
+   },
+   "events": [
+    {
+     "id": "D2-SC03",
+     "location": "L-CHEMIST",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC03-SH01",
+      "SC03-SH02",
+      "SC03-SH03",
+      "SC03-SH04",
+      "SC03-SH05",
+      "SC03-SH06",
+      "SC03-SH07",
+      "SC03-SH08",
+      "SC03-SH09"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D3",
+   "event": "Emma finds the drawer, a few days later",
+   "source": "stated: 'Emma finds the drawer: twenty-four, as of Tuesday'",
+   "outfits": {
+    "N": "sage-green cardigan over a cream blouse, grey trousers, navy slippers",
+    "C2": "navy zip-up fleece over a white T-shirt, dark jeans, white canvas trainers"
+   },
+   "events": [
+    {
+     "id": "D3-SC04",
+     "location": "L-BEDROOM",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC04-SH01",
+      "SC04-SH02",
+      "SC04-SH03",
+      "SC04-SH04",
+      "SC04-SH05",
+      "SC04-SH06",
+      "SC04-SH07",
+      "SC04-SH08",
+      "SC04-SH09"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D4",
+   "event": "July, 8:40 — she tries the hill alone",
+   "source": "stated: 'July, 8:40, Hazel tries the hill alone'",
+   "outfits": {
+    "N": "stone-coloured lightweight mac over a pale blue blouse, navy trousers over number twenty-four, black flat walking shoes",
+    "X2": "the cast-sheet outfit: faded denim jacket over a white T-shirt, black leggings, grey trainers, cross-body bag; pushing a navy buggy with a toddler"
+   },
+   "events": [
+    {
+     "id": "D4-SC05",
+     "location": "L-HILL",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC05-SH01",
+      "SC05-SH02",
+      "SC05-SH03",
+      "SC05-SH04"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D5",
+   "event": "Roy's plan for the car, and that evening on the stairs",
+   "source": "stated: 'Roy has spoken to Emma' + 'Later, silent: Roy comes down the stairs'",
+   "outfits": {
+    "N": "lilac crew-neck jumper, grey trousers, navy slippers",
+    "C1": "grey wool cardigan over a blue checked shirt, tan chinos, brown slippers"
+   },
+   "events": [
+    {
+     "id": "D5-SC06",
+     "location": "L-KITCHEN",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC06-SH01",
+      "SC06-SH02",
+      "SC06-SH03",
+      "SC06-SH04",
+      "SC06-SH05"
+     ]
+    },
+    {
+     "id": "D5-SC07",
+     "location": "L-STAIRS",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC07-SH01",
+      "SC07-SH02"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D6",
+   "event": "last week of term: pick-up at the gate, Wendy, then the price that night",
+   "source": "stated: 'Last week of term, Hazel in Emma's car at pick-up' + 'Night, the kitchen, the phone'",
+   "outfits": {
+    "N": "soft blue cotton shirt, navy trousers, black flat shoes (reading glasses at night)",
+    "C1": "navy V-neck jumper over a white shirt, tan chinos, brown slippers",
+    "C5": "the cast-sheet outfit: cobalt-blue cotton mac open over a navy-and-white spotted shirt dress just below the knee, black walking shoes, a canvas bag",
+    "X3": "the cast-sheet outfit: long fluorescent yellow-green hi-vis coat, white peaked cap, black trousers, black lace-ups, round tortoiseshell glasses",
+    "X4": "two grandchildren, a girl of 8 and a boy of 6, in white polo shirts, plain red school sweatshirts with no badge and grey school shorts / a grey pinafore"
+   },
+   "events": [
+    {
+     "id": "D6-SC08",
+     "location": "L-CAR",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC08-SH01",
+      "SC08-SH02",
+      "SC08-SH03",
+      "SC08-SH04",
+      "SC08-SH05",
+      "SC08-SH06"
+     ]
+    },
+    {
+     "id": "D6-SC09",
+     "location": "L-GATE",
+     "visibility": "REVEAL",
+     "beats": [
+      "SC09-SH01",
+      "SC09-SH02",
+      "SC09-SH03",
+      "SC09-SH04",
+      "SC09-SH05",
+      "SC09-SH06",
+      "SC09-SH07",
+      "SC09-SH08",
+      "SC09-SH09",
+      "SC09-SH10",
+      "SC09-SH11",
+      "SC09-SH12",
+      "SC09-SH13",
+      "SC09-SH14",
+      "SC09-SH15",
+      "SC09-SH16",
+      "SC09-SH17",
+      "SC09-SH17b",
+      "SC09-SH18",
+      "SC09-SH19",
+      "SC09-SH20"
+     ]
+    },
+    {
+     "id": "D6-SC10",
+     "location": "L-KITCHEN",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC10-SH01",
+      "SC10-SH02",
+      "SC10-SH03",
+      "SC10-SH04",
+      "SC10-SH05",
+      "SC10-SH06",
+      "SC10-SH07",
+      "SC10-SH08"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D7",
+   "event": "the first morning with the strap",
+   "source": "stated: 'The stairs. Morning.'",
+   "outfits": {
+    "N": "a pale cotton nightdress to just above the knee while she puts the strap on (bedroom), then navy cotton trousers and a cream blouse pulled on over it (the stairs)",
+    "C1": "brown wool dressing gown over blue striped pyjamas, brown slippers"
+   },
+   "events": [
+    {
+     "id": "D7-SC11",
+     "location": "L-BEDROOM",
+     "visibility": "REVEAL",
+     "beats": [
+      "SC11-SH01",
+      "SC11-SH02",
+      "SC11-SH03",
+      "SC11-SH04",
+      "SC11-SH05",
+      "SC11-SH06"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D8",
+   "event": "August on the hill — past the postbox",
+   "source": "stated: 'August, the hill, the postbox goes by'",
+   "outfits": {
+    "N": "light green linen shirt, cream cotton trousers, white trainers",
+    "X2": "white vest top, khaki shorts, grey trainers, sunglasses pushed up on her head; the same navy buggy"
+   },
+   "events": [
+    {
+     "id": "D8-SC12",
+     "location": "L-HILL",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC12-SH01",
+      "SC12-SH02",
+      "SC12-SH03",
+      "SC12-SH04",
+      "SC12-SH05",
+      "SC12-SH06",
+      "SC12-SH07"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D9",
+   "event": "end of August — the second hall film",
+   "source": "stated: 'End of August, the hall: Emma films again'",
+   "outfits": {
+    "N": "honey-yellow cardigan over a white T-shirt, cream trousers, tan flat shoes",
+    "C2": "navy-and-white Breton striped top, dark jeans, white canvas trainers"
+   },
+   "events": [
+    {
+     "id": "D9-SC13",
+     "location": "P-HOUSE",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC13-SH01",
+      "SC13-SH02",
+      "SC13-SH03",
+      "SC13-SH04",
+      "SC13-SH05",
+      "SC13-SH06",
+      "SC13-SH07"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D10",
+   "event": "early September evening — Roy, the hall",
+   "source": "stated: 'Early September, the hall'",
+   "outfits": {
+    "N": "soft green cardigan over a white blouse, navy trousers, tan flat shoes",
+    "C1": "the cast-sheet outfit: navy quilted gilet over a pale blue Oxford shirt, tan chinos, brown suede desert boots"
+   },
+   "events": [
+    {
+     "id": "D10-SC14",
+     "location": "P-HOUSE",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC14-SH01",
+      "SC14-SH02",
+      "SC14-SH03",
+      "SC14-SH04",
+      "SC14-SH05",
+      "SC14-SH06",
+      "SC14-SH07",
+      "SC14-SH08",
+      "SC14-SH09",
+      "SC14-SH10",
+      "SC14-SH11",
+      "SC14-SH12",
+      "SC14-SH13",
+      "SC14-SH14",
+      "SC14-SH15"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D11",
+   "event": "the first day of school, 8:40 — the hill, the gate, and Hazel to camera",
+   "source": "stated: 'The first day. 8:40, the hill'",
+   "outfits": {
+    "N": "camel wool coat open over a cream crew-neck jumper, navy trousers, black flat shoes",
+    "C4": "school uniform: white polo shirt, plain red school jumper with no badge, grey shorts, grey socks, black school shoes, a plain red book bag",
+    "C2": "navy wool coat over a grey jumper (seen in the car)",
+    "C3": "the cast-sheet outfit: dark green half-zip jumper over a white T-shirt (seen in the car)"
+   },
+   "events": [
+    {
+     "id": "D11-SC15",
+     "location": "L-HILL",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC15-SH01",
+      "SC15-SH02",
+      "SC15-SH03",
+      "SC15-SH04",
+      "SC15-SH05",
+      "SC15-SH06",
+      "SC15-SH07",
+      "SC15-SH08"
+     ]
+    },
+    {
+     "id": "D11-SC16",
+     "location": "L-GATE",
+     "visibility": "CONCEALED",
+     "beats": [
+      "SC16-SH01",
+      "SC16-SH02",
+      "SC16-SH03",
+      "SC16-SH04",
+      "SC16-SH05",
+      "SC16-SH06",
+      "SC16-SH07",
+      "SC16-SH08",
+      "SC16-SH09",
+      "SC16-SH10",
+      "SC16-SH11",
+      "SC16-SH12",
+      "SC16-SH13",
+      "SC16-SH14"
+     ]
+    }
+   ]
+  }
+ ],
+ "talking_heads": [],
+ "names": {
+  "N": "Hazel",
+  "C1": "Roy",
+  "C2": "Emma",
+  "C3": "Dan",
+  "C4": "Oscar",
+  "C5": "Wendy",
+  "X1": "Assistant",
+  "X2": "Mum (buggy)",
+  "X3": "Lollipop lady",
+  "X4": "Wendy's grandchildren"
+ }
+}

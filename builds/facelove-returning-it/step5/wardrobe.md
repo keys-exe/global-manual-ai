@@ -13,7 +13,7 @@ One block per story day, in story order: the event, what makes it a day, each pe
 
 | Event | Place | Beats |
 |---|---|---|
-| D0-E1 | L-COUNTER · VISIBLE | B04, B05 |
+| D0-E1 | L-COUNTER · VISIBLE | B05 |
 
 ### D1 — coffee with three friends, this week
 
@@ -43,6 +43,18 @@ One block per story day, in story order: the event, what makes it a day, each pe
 | D2-E1 | L-HALL · VISIBLE | B11 |
 | D2-E2 | L-FRONT · VISIBLE | B12 |
 
+### D3 — the deal arrives on her doorstep, days later
+
+*Why it is a day:* stated: 'and buying the deal like I should have' — the bought bundle arriving
+
+| Who | Outfit |
+|---|---|
+| the creator | a soft heather-grey crewneck sweatshirt, black leggings, white leather sneakers, hair in a loose low bun (N-AFTER) |
+
+| Event | Place | Beats |
+|---|---|---|
+| D3-E1 | L-FRONT · VISIBLE | B15b |
+
 ### REC — today, the last day of the sale — filming at her vanity
 
 *Why it is a day:* stated: 'it is the last day of the Prime Sale… ends tonight'
@@ -53,10 +65,10 @@ One block per story day, in story order: the event, what makes it a day, each pe
 
 | Event | Place | Beats |
 |---|---|---|
-| REC-E1 | L-VANITY · VISIBLE | B01, B02, B03, B06, B07, B08, B13, B14, B15, B16 |
+| REC-E1 | L-VANITY · VISIBLE | B01, B02, B03, B06, B07, B08, B08b, B13, B14, B14b, B16 |
 
 ### Talking heads — per recording day
 
 | Recording day | Who | Outfit | Beats |
 |---|---|---|---|
-| REC | the creator | the cream-white sherpa robe over a white camisole (one sitting: bare face on the hooks, N-AFTER on the body) | TH-01, TH-02, TH-03, TH-04, TH-05, TH-06, TH-07, TH-08 |
+| REC | the creator | the cream-white sherpa robe over a white camisole (one sitting: bare face on the hooks, N-AFTER on the body) | TH-01, TH-04, TH-05, TH-06, TH-08 |

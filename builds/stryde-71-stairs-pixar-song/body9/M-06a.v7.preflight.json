@@ -1,0 +1,81 @@
+{
+ "beat": "M-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — First step. Pain gone. Just like that. —: Close-up from the front at knee height, sharp on the strap. Image 1 is the strap. Image 2 is her staircase, her denim skirt and tan slippers on this day.\nShe stands on her own staircase of Image 2, facing the lens, both legs straight, knees locked, feet flat side by side on one tread, hands out of frame above. On her right knee, at frame left, the strap of Image 1 copied exactly — same shape, same parts, same markings, nothing redesigned: a rigid black shell flat to the lens, its top edge rising into two rounded peaks together at the middle with a small notch between them, the notch seated against the bottom of her kneecap, a chrome slide at each end, the black band round the back of the knee. Scale true to the set: the shell 12 × 5 cm, a third of the frame wide, a little narrower than her knee.\nIn frame: two straight legs from the skirt hem to the slippers, exactly one strap on her right knee, the runner and two brass rods; nothing else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. No lettering, logos or labels but its wordmark.",
+ "script_line": "First step. Pain gone. Just like that.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "R-07a frame v4 (confirmed) — her own staircase, her denim skirt and tan slippers on this day",
+   "kind": "frame"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12",
+  "FP07",
+  "FP18",
+  "FP22"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "route": "Kie AI nano-banana-pro (true Pro; Higgsfield logs nano_banana_2 under the Pro name)",
+ "fix_note": "user image Fix \"the product is distorted i need a new one thats why i said it should be straid leg\" → a fresh front-on close of both straight legs, the shell flat to the lens a third of the frame wide, product photo first, on true nano-banana-pro (Kie)",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "motion_plan": "From this frame: her left slipper steps down onto the next tread toward the lens, the strapped right leg straight and steady — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "11b8a6bb-8c4a-4739-86ce-0c779f413c53"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "R-07a frame v4 (confirmed) — her own staircase, her denim skirt and tan slippers on this day",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-07a",
+   "role": "Image 2"
+  }
+ ]
+}

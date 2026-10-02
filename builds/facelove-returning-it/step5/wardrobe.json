@@ -21,7 +21,6 @@
      "location": "L-COUNTER",
      "visibility": "VISIBLE",
      "beats": [
-      "B04",
       "B05"
      ]
     }
@@ -76,6 +75,24 @@
    ]
   },
   {
+   "day": "D3",
+   "event": "the deal arrives on her doorstep, days later",
+   "source": "stated: 'and buying the deal like I should have' — the bought bundle arriving",
+   "outfits": {
+    "N": "a soft heather-grey crewneck sweatshirt, black leggings, white leather sneakers, hair in a loose low bun (N-AFTER)"
+   },
+   "events": [
+    {
+     "id": "D3-E1",
+     "location": "L-FRONT",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B15b"
+     ]
+    }
+   ]
+  },
+  {
    "day": "REC",
    "event": "today, the last day of the sale — filming at her vanity",
    "source": "stated: 'it is the last day of the Prime Sale… ends tonight'",
@@ -94,9 +111,10 @@
       "B06",
       "B07",
       "B08",
+      "B08b",
       "B13",
       "B14",
-      "B15",
+      "B14b",
       "B16"
      ]
     }
@@ -110,12 +128,9 @@
    "outfit": "the cream-white sherpa robe over a white camisole (one sitting: bare face on the hooks, N-AFTER on the body)",
    "beats": [
     "TH-01",
-    "TH-02",
-    "TH-03",
     "TH-04",
     "TH-05",
     "TH-06",
-    "TH-07",
     "TH-08"
    ]
   }
