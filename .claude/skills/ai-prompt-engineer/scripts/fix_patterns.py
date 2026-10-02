@@ -13,6 +13,12 @@ A Fix note is any of: `imageFault` / `fault` on a card, or the `note` on an
 Agent verdict notes (`Q<n>: …`) are the agent's own §22V/§22W reads, not the
 user's, and are listed apart. Notes are de-duplicated per build + beat + step.
 
+Only the owner's notes count (V7.90.6, user 2026-10-02: "only my fix notes should count"). A note counts only when
+the board marked it as written by its owner: `imageFaultOwner` / `faultOwner: true` on an open Fix (boards from template
+V7.90.6 write it on every Fix), or `noteOwner: true` on a version entry (the agent copies the flag from the Fix it
+answered). Unmarked notes (older boards, other viewers) are listed apart as "not counted" and never become rules.
+`--all-authors` shows them in the main table for reading only.
+
 Output: one row per note (build, beat, stage, step, v, model, note) and counts by
 a rough keyword class, as a starting point for the reading in §34A — the classes
 are a triage aid, never the lesson itself.
@@ -61,10 +67,10 @@ def notes_of(g):
         for x in g.get(vers) or []:
             n = clean(x.get("note"))
             if n and int(x.get("v") or 1) > 1 and n not in seen:
-                seen.add(n); out.append((step, x.get("v"), x.get("model") or g.get(model) or "", n))
+                seen.add(n); out.append((step, x.get("v"), x.get("model") or g.get(model) or "", n, x.get("noteOwner") is True))
         f = clean(g.get(fault))
         if f and f not in seen:
-            out.append((step, "open", g.get(model) or "", f))
+            out.append((step, "open", g.get(model) or "", f, g.get(fault + "Owner") is True))
     return out
 
 
@@ -73,6 +79,7 @@ def main():
     ap.add_argument("dirs", nargs="+")
     ap.add_argument("--md"); ap.add_argument("--json")
     ap.add_argument("--all-stages", action="store_true", help="include voice, VO, talking heads and edit (mostly process logs)")
+    ap.add_argument("--all-authors", action="store_true", help="show notes not marked as the owner's in the main table (for reading only — they never become rules)")
     a = ap.parse_args()
     rows, seen = [], set()
     for d in a.dirs:
@@ -86,21 +93,29 @@ def main():
             if not a.all_stages and g.get("stage") in ("voice", "vo", "talking", "edit"):
                 continue
             build = g.get("build") or Path(d).name
-            for step, v, model, n in notes_of(g):
+            for step, v, model, n, owner in notes_of(g):
                 key = (build, g["beat"], step, n)
                 if key in seen:
                     continue
                 seen.add(key)
                 rows.append({"build": build, "beat": g["beat"], "stage": g.get("stage", ""), "step": step, "v": v,
-                             "model": model, "who": "agent" if AGENT.match(n) else "user", "class": klass(n), "note": n})
+                             "model": model, "who": "agent" if AGENT.match(n) else ("user" if owner or a.all_authors else "unverified"),
+                             "class": klass(n), "note": n})
     user = [r for r in rows if r["who"] == "user"]
+    unverified = [r for r in rows if r["who"] == "unverified"]
     cnt = Counter((r["step"], r["class"]) for r in user)
-    lines = [f"# Fix notes — {len(user)} from the user, {len(rows) - len(user)} agent verdicts", "",
+    lines = [("# Fix notes — ALL AUTHORS shown, for reading only (only the owner's marked notes become rules): " if a.all_authors else "# Fix notes — ") + f"{len(user)} from the owner, {len(unverified)} not counted (not marked as the owner's), "
+             f"{len(rows) - len(user) - len(unverified)} agent verdicts", "",
              "| step | class | notes |", "|---|---|---|"]
     lines += [f"| {s} | {c} | {n} |" for (s, c), n in sorted(cnt.items(), key=lambda x: -x[1])]
     lines += ["", "| build | beat | stage | step | v | model | class | note |", "|---|---|---|---|---|---|---|---|"]
     for r in sorted(user, key=lambda r: (r["build"], r["beat"], r["step"])):
         lines.append("| {build} | {beat} | {stage} | {step} | {v} | {model} | {class} | {n} |".format(**r, n=r["note"].replace("|", "/").replace("\n", " ")))
+    if unverified:
+        lines += ["", f"### Not counted — {len(unverified)} notes not marked as the owner's (never a rule)", "",
+                  "| build | beat | step | v | note |", "|---|---|---|---|---|"]
+        lines += ["| {build} | {beat} | {step} | {v} | {n} |".format(**r, n=r["note"].replace("|", "/").replace("\n", " "))
+                  for r in sorted(unverified, key=lambda r: (r["build"], r["beat"], r["step"]))]
     md = "\n".join(lines) + "\n"
     if a.md:
         Path(a.md).write_text(md)
@@ -109,7 +124,7 @@ def main():
     if not a.md:
         sys.stdout.write(md)
     else:
-        print(f"{len(user)} user notes, {len(rows) - len(user)} agent verdicts → {a.md}")
+        print(f"{len(user)} owner notes, {len(unverified)} not counted, {len(rows) - len(user) - len(unverified)} agent verdicts → {a.md}")
 
 
 if __name__ == "__main__":

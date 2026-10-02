@@ -753,7 +753,7 @@ What moved to Old 2:
 - **M-06a** "wrong locastion": an image edit of her own staircase. The base is a crop of the confirmed R-07a v8 A frame round her legs (`body4/M06_base_R07crop.png`, Higgsfield media 6279fb3c). The strap is corrected from the front photo.
   - The first A drew pale legs on another staircase, so it was kept off (Old 2) and re-rendered once.
   - The new A and B are both her runner and brass rods, her skin and her slippers.
-- **PR-03a** "fwrong product" and **PR-06a** "wrong product": the peaks had been drawn as horns at the shell's ends, and the band coiled. The shape line now puts two matching peaks close together at the middle, sloping down to a slide at each end (FP22, L43). PR-06a's strap lies flat with the band out straight.
+- **PR-03a** "fwrong product" and **PR-06a** "wrong product": the peaks had been drawn as horns at the shell's ends, and the band coiled. The shape line now puts two matching peaks close together at the middle, sloping down to a slide at each end (FP22, L47). PR-06a's strap lies flat with the band out straight.
 - **PR-05b** "product placemetn is too low": the notch now cups the bottom of the kneecap, on the tendon. The trouser hem is still rolled above the knee.
 
 **Clips, To check (Kling 3.0, 1080p, silent):**
@@ -772,10 +772,10 @@ What moved to Old 2:
 - L-01b A's first job failed on Higgsfield and was resubmitted.
 - L-03a A printed the line as a title, so it was kept off and re-rendered in the new form (below).
 
-**System (V7.90.5, L42):**
+**System (V7.90.7, L46):**
 - A picture prompt opens `For the line — … —:`, never with speech marks. This was the third caption from the opener's marks (R-06b, PR-01a, L-03a).
 - `preflight.py` now fails any speech mark in an image prompt; clip prompts keep theirs.
-- L43 / FP22: the short shape line keeps where the peaks sit.
+- L47 / FP22: the short shape line keeps where the peaks sit.
 
 **Balances:** Higgsfield 5995.65 · Kling 37765.
 
