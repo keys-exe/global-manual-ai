@@ -43,6 +43,12 @@
    "prevented_by": "'nobody speaks; every mouth stays closed' + generated silent"
   }
  ],
- "ingredients_approved": false,
- "generate_audio": false
+ "ingredients_approved": true,
+ "generate_audio": false,
+ "taste": [
+  "HT22",
+  "HT23",
+  "HT24",
+  "HT25"
+ ]
 }
