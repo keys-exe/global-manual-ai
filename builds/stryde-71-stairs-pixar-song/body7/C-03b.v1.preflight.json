@@ -1,0 +1,76 @@
+{
+ "beat": "C-03b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — It's called Stryde Patellar Force Redirection. —: A final frame from a 3D animated feature film, stylized storybook render. The anatomy is drawn the way this film's own animators would draw it: simple, rounded, readable shapes. A clean model of the right knee on a soft plain pale grey backdrop, no muscle anywhere: smooth ivory bones with a soft inner glow, white ribbon tendons and ligaments, the kneecap, inside a soft see-through peach outline of the leg with a cool blue rim on one side; warm key, cool fill, rim. Image 1 is the strap. Image 2 is the style.\nFront-on close-up, sharp on the strap: the strap of Image 1 copied exactly — a black shell with two matching pointed peaks close together at the middle of its top edge, a notch between them, sloping down to a chrome slide at each end — 12 × 5 cm, a third of the frame wide, seated on the model's patellar tendon, its notch cupping the kneecap's bottom, wordmark to the lens; under the pad a calm soft blue glow along the tendon ribbon.\nIn frame: the knee model, exactly one strap; the rest plain grey. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "It's called Stryde Patellar Force Redirection.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "M-05b frame v5 (confirmed) — the Pixar knee model with the strap seated (the anatomy style, L36)",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": true,
+ "anat_style": "S3",
+ "pixar_anatomy": true,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "c97a3ad0-ad6c-455a-959d-3e6594eb62cb"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "M-05b frame v5 (confirmed) — the Pixar knee model with the strap seated (the anatomy style, L36)",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__M-05b",
+   "role": "Image 2"
+  }
+ ]
+}
