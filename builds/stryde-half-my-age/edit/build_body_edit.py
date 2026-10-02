@@ -16,7 +16,7 @@ B = H.B
 OUT = B / "edit" / "body"
 H.OUT = OUT
 FF = H.FF
-VERSION = 1
+VERSION = 2
 VO_DIR = OUT / "vo"
 VO_IN, VO_GAP, CLEAR = 0.3, 0.3, 0.15
 OFF = {"L034": 10.0}  # SC04-T2 marks its beats by time, not SHOT n: L034 sits on the silent beat [10s-14s]
@@ -122,9 +122,8 @@ def build():
     by_take = {}
     for x in place:
         by_take.setdefault(id(x["take"]), []).append(x)
-    for k in takes:
+    for i, k in enumerate(takes):
         k["at"] = t
-        hold = 0.0
         for x in by_take.get(id(k), []):
             want = t + (x["off"] if x["off"] is not None else 0.0) + VO_IN
             s = max(want, prev_end + VO_GAP)
@@ -136,8 +135,15 @@ def build():
                     if s < t + b + CLEAR and s + x["dur"] > t + a - CLEAR:
                         s = t + b + CLEAR; moved = True
             x["at"] = s; prev_end = s + x["dur"]
-            hold = max(hold, prev_end + 0.4 - (t + k["dur"]))
             report.append(f'{x["line"]} on {k["beat"]} at {s:6.2f}s ({x["dur"]:.2f}s)' + (f'  slid {s - want:+.2f}s' if s - want > 0.05 else ""))
+        # hold this take's last frame only when the narration still running would reach the next take's first spoken
+        # line or its own narration line; otherwise the narration runs on over the next shots (a montage line)
+        hold = 0.0
+        if i + 1 < len(takes):
+            nk = takes[i + 1]
+            ev = [a for a, _ in nk["spans"]] + [(x["off"] or 0.0) + VO_IN for x in by_take.get(id(nk), [])]
+            if ev:
+                hold = prev_end + VO_GAP - (t + k["dur"] + min(ev))
         k["hold"] = round(max(0.0, hold), 3)
         t += k["dur"] + k["hold"]
     total = t
