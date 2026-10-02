@@ -610,9 +610,8 @@ label.f textarea{font-family:var(--mono);font-size:12.5px;min-height:170px;resiz
 .step.cur{background:var(--sunk);box-shadow:inset 0 0 0 1px var(--ink)}
 .step .n{display:flex;align-items:center;gap:6px}
 .step .g-wait{margin-left:auto}
-@media (max-width:900px){#manualView .pipe,#planView .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){#planView .pipe{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .mtools{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap}
-#mbar.mbar{flex-direction:column;align-items:stretch;gap:8px}
 .mgroup.widget{scroll-margin-top:16px}
 .mgroup.all-done .w-num{background:var(--use-bg);color:var(--use)}
 .mgroup .box{background:transparent;border:0;box-shadow:none;padding:0;gap:8px}
@@ -732,6 +731,54 @@ button.ing .im{cursor:zoom-in}
 .fc .media video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
 .fc-open{position:absolute;top:8px;right:8px;z-index:2;background:rgba(0,0,0,.55);color:#fff;border-color:transparent}
 .fform input{flex:1;min-width:180px;background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
+
+/* the Board as the one working view (V7.94.0): beat rows, image and video side by side, grouped by hook / act / scene */
+#boardView>#pipe{position:sticky;top:calc(8px + env(safe-area-inset-top,0px));z-index:30;box-shadow:var(--shadow)}
+#grid{grid-template-columns:minmax(0,1fr)}
+.ajump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.ajchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600;color:var(--ink)}
+.ajchip:hover{background:var(--sunk)}
+.ajchip b{min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--review);color:#fff;font-size:10.5px;display:inline-grid;place-items:center}
+.ajchip.ok{color:var(--use);border-color:color-mix(in srgb,var(--use) 40%,var(--line))}
+.agroups{display:flex;flex-direction:column;gap:22px}
+.agroup{display:flex;flex-direction:column;gap:12px;scroll-margin-top:120px}
+.agroup+.agroup{border-top:1px solid var(--line);padding-top:18px}
+.ag-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ag-head h3{font-size:16px;font-weight:700}
+.ag-head .grow{flex:1}
+.ag-count{font-size:12.5px;color:var(--muted)}
+.ag-count b{color:var(--review)}
+.agroup.all-done .ag-count{color:var(--use)}
+.ag-tog{border:1px solid var(--line);background:var(--surface);border-radius:7px;width:28px;height:28px;display:grid;place-items:center;color:var(--muted);padding:0}
+.ag-tog svg{transition:transform .15s}
+.ag-tog[aria-expanded="true"] svg{transform:rotate(90deg)}
+.brows{display:flex;flex-direction:column;gap:10px}
+.bcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(138px,1fr));gap:12px}
+.bcards .brow{max-width:300px}
+.brow{display:grid;grid-template-columns:minmax(170px,250px) minmax(0,1fr);gap:16px;background:var(--sunk);border:1px solid var(--line);border-radius:12px;padding:12px;scroll-margin-top:120px;min-width:0}
+.brow.one{grid-template-columns:minmax(0,1fr);gap:10px;align-content:start}
+.brow.one .br-info{order:2}
+.br-info{display:flex;flex-direction:column;gap:6px;min-width:0}
+.br-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.br-beat{font-family:var(--mono);font-size:13px;font-weight:700}
+.br-title{font-size:13.5px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.br-line{font-size:12.5px;color:var(--muted);line-height:1.45;overflow-wrap:anywhere}
+.br-plan{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--muted);line-height:1.4}
+.br-foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto}
+.br-meta{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.br-panes{display:grid;grid-template-columns:repeat(var(--panes,2),minmax(0,200px));gap:12px;align-items:start;min-width:0}
+.brow.one .br-panes{grid-template-columns:minmax(0,1fr)}
+.pane{gap:8px;padding:8px}
+.pane-h{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap}
+.pane .media{max-height:400px}
+.brow.wide169 .pane .media{aspect-ratio:16/9}
+.pane .mc-verdict{grid-template-columns:repeat(auto-fit,minmax(84px,1fr))}
+.pane .mc-verdict .btn{padding:6px 8px;min-width:0;white-space:normal}
+.pane .mc-verdict.pair .wide{grid-column:1/-1}
+.brow.one .br-top .pill{display:none}
+.pane .linkbtn{display:inline-flex;align-items:center;gap:5px;align-self:flex-start}
+.ing-pane .ing-grid{grid-template-columns:repeat(auto-fill,minmax(64px,1fr))}
+@media (max-width:760px){.brow{grid-template-columns:minmax(0,1fr)}.br-panes{grid-template-columns:repeat(var(--panes,2),minmax(0,1fr))}#boardView>#pipe{position:static}}
 </style>
 
 <div class="wrap">
@@ -747,8 +794,7 @@ button.ing .im{cursor:zoom-in}
   </header>
 
   <div class="tabs" role="tablist" aria-label="View">
-    <button class="tab" role="tab" type="button" data-view="board" aria-selected="true"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1.2"/><rect x="9" y="2" width="5" height="5" rx="1.2"/><rect x="2" y="9" width="5" height="5" rx="1.2"/><rect x="9" y="9" width="5" height="5" rx="1.2"/></svg><span>Board</span></button>
-    <button class="tab" role="tab" type="button" data-view="manual" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 4.5 1.5 1.5 2.5-3M2.5 11l1.5 1.5 2.5-3M9 5h4.5M9 11.5h4.5"/></svg><span>Manual run</span><span class="tab-badge" id="needsBadge" hidden></span></button>
+    <button class="tab" role="tab" type="button" data-view="board" aria-selected="true"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1.2"/><rect x="9" y="2" width="5" height="5" rx="1.2"/><rect x="2" y="9" width="5" height="5" rx="1.2"/><rect x="9" y="9" width="5" height="5" rx="1.2"/></svg><span>Board</span><span class="tab-badge" id="needsBadge" hidden></span></button>
     <button class="tab" role="tab" type="button" data-view="plan" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 1.8h5.5l3 3v9.4H4z"/><path d="M6.5 8h4M6.5 10.8h4" stroke-linecap="round"/></svg><span>Plan</span></button>
     <button class="tab" role="tab" type="button" data-view="final" aria-selected="false"><svg class="ico16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="1.8" width="10" height="12.4" rx="1.8"/><path d="M6.8 5.6v4.8L10.6 8z" fill="currentColor"/></svg><span>Final output</span><span class="tab-badge" id="finalBadge" hidden></span></button>
     <span id="boardLinks" style="display:contents"></span>
@@ -768,10 +814,7 @@ button.ing .im{cursor:zoom-in}
 
   <div id="finalView" hidden style="flex-direction:column;gap:14px"></div>
 
-  <div id="manualView" hidden style="flex-direction:column;gap:14px">
-    <div class="mbar" id="mbar"></div>
-    <div id="mlist" style="display:flex;flex-direction:column;gap:14px"></div>
-  </div>
+  
 </div>
 <input type="file" id="picker" hidden>
 
@@ -791,7 +834,7 @@ button.ing .im{cursor:zoom-in}
 //   plans   — the absorption, act map, wardrobe map and other step documents (Plan)
 // The build doc's `boards` {current, old, final, plans} links the four; a board without it shows all tabs as before.
 const BOARD_ROLE = "current";
-const ROLE_VIEWS = {current:["board","manual","plan","final"], old:["board","manual"], final:["final"], plans:["plan"]};
+const ROLE_VIEWS = {current:["board","plan","final"], old:["board"], final:["final"], plans:["plan"]};
 const BOARD_NAMES = {current:"Current", old:"Old versions", final:"Final output", plans:"Plan"};
 const STAGES = [
   {key:"absorption", name:"Absorption", folder:"01_ABSORPTION", sub:"What the reference ad does, in plain words", kind:"doc"},
@@ -843,7 +886,7 @@ const OFFLINE = {
   gens:[]
 };
 
-const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", voSel:{}, docs:[], pdoc:null, pact:"all", psubj:"all", pmode:{}, mstage:"all", mneeds:false, faultOpen:null, busy:{}};
+const state = {builds:[], gens:[], build:null, filter:"all", q:"", live:false, readOnly:false, db:null, assets:null, downloads:null, editing:null, view:"board", voSel:{}, docs:[], pdoc:null, pact:"all", psubj:"all", pmode:{}, faultOpen:null, busy:{}, closed:{}};
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const num = n=>Number(n||0).toLocaleString("en-US");
@@ -891,7 +934,8 @@ function buildGens(){const b=currentBuild();return b?state.gens.filter(g=>g.buil
 // a VO take not picked for a part that already has its confirmed take: kept as a version, never counted as waiting
 function spareTake(g,gens){return g.stage==="vo"&&g.status!=="use"&&(gens||state.gens).some(o=>o.stage==="vo"&&o.id!==g.id&&o.build===g.build&&voPart(o)===voPart(g)&&o.status==="use")}
 function matches(g){
-  if(state.filter!=="all" && (g.status!==state.filter||spareTake(g))) return false;
+  if(state.filter==="needs"){if(g.stage==="vo"||!stepNeedsYou(g)) return false}
+  else if(state.filter!=="all" && (g.status!==state.filter||spareTake(g))) return false;
   if(state.q){const q=state.q.toLowerCase();return [g.beat,g.title,g.line,g.model].some(v=>String(v||"").toLowerCase().includes(q))}
   return true;
 }
@@ -1077,12 +1121,10 @@ function renderInner(){
   if(BOARD_ROLE==="old") showBanner("Old versions: every render that a Fix replaced or that wasn't chosen, kept at full quality. Nothing here needs checking. The confirmed ones and the ones to check are on the Current board.");
   {const n=BOARD_ROLE==="old"?0:needsYouCount(gens), bd=$("#needsBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} waiting for you`}
   $("#boardView").hidden=state.view!=="board";
-  $("#manualView").hidden=state.view!=="manual";
   $("#planView").hidden=state.view!=="plan";
   $("#finalView").hidden=state.view!=="final";
   $("#summary").hidden=state.view==="plan"||state.view==="final"||BOARD_ROLE==="old";
   {const n=gens.filter(g=>isFinal(g)&&stepState(g,"file")==="review").length, bd=$("#finalBadge"); bd.textContent=n; bd.hidden=!n; bd.title=`${n} finished video${n===1?"":"s"} to check`}
-  if(state.view==="manual"){renderManual(gens);return}
   if(state.view==="final"){renderFinal(gens);return}
   if(state.view==="plan"){
     const sig=JSON.stringify([state.pdoc,state.pmode,state.docs.map(d=>[d.id,d.updatedAt,(d.sections||[]).length]),gens.map(g=>g.id+":"+g.beat).sort()]);
@@ -1099,7 +1141,9 @@ function renderInner(){
       <span class="c">${stageCount(s,b,gens,sg)}</span></button>`}).join("");
 
   const counts=Object.fromEntries(STATUSES.map(s=>[s.key,by(s.key)]));
+  const nme=BOARD_ROLE==="old"?0:gens.filter(g=>g.stage!=="vo"&&stepNeedsYou(g)).length;
   $("#filters").innerHTML=`<div class="fbar" role="group" aria-label="Filter by status"><button class="fchip" type="button" data-f="all" aria-pressed="${state.filter==="all"}"><span>All</span><b>${total}</b></button>`+
+    (BOARD_ROLE==="old"?"":`<button class="fchip s-review needs${nme?"":" zero"}" type="button" data-f="needs" aria-pressed="${state.filter==="needs"}" ${nme||state.filter==="needs"?"":"disabled"}><i class="fdot"></i><span>Needs me</span><b>${nme}</b></button>`)+
     STATUSES.map(s=>`<button class="fchip s-${s.key}${counts[s.key]?"":" zero"}" type="button" data-f="${s.key}" aria-pressed="${state.filter===s.key}" ${counts[s.key]||state.filter===s.key?"":"disabled"}><i class="fdot"></i><span>${s.label}</span><b>${counts[s.key]}</b></button>`).join("")+`</div>`+
     `<span class="grow"></span><input class="field" id="search" type="search" placeholder="Search beat, line, model" value="${esc(state.q)}" aria-label="Search">`;
 
@@ -1109,26 +1153,16 @@ function renderInner(){
     const sg=all.filter(matches).sort(beatSort);
     const u=all.filter(g=>g.status==="use").length;
     const link=folders[s.folder]?`<a href="https://drive.google.com/drive/folders/${esc(folders[s.folder])}" target="_blank" rel="noopener">Drive ↗</a>`:"";
-    const vis=sg.filter(g=>!isAudio(g)), aud=sg.filter(isAudio);
-    let body=sg.length?(vis.length?`<div class="tiles">${vis.map(tile).join("")}</div>`:"")+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:""):
+    if((state.filter!=="all"||state.q)&&!sg.length) return "";   // a filter or search shows only the stages it finds something in
+    const grouped=!s.scene&&["hooks","broll","talking"].includes(s.key);
+    let body=sg.length?(grouped?groupedBody(sg,all):beatList(sg)):
       `<div class="empty">${all.length?"Nothing matches this filter.":"No generations yet."}</div>`;
     // Absorption makes a document, not renders: show the sheet's key numbers and open it in Plan
     if(s.key==="absorption"&&!all.length) body=absorptionSummary(b);
     if(s.key==="voice"&&voiceList(b).length) body=`<div class="vgrid"><div>${voiceChecklist(b)}</div>${all.length?`<div class="vbuild"><span class="lbl">Voice building</span>${body}</div>`:""}</div>`;
     if(s.key==="vo") body=all.length?`<div class="arows">${voRows(gens)}</div>`:body;
-    // a scene: its images first, then its clips
-    if(s.scene&&vis.length){const im=vis.filter(g=>!flow(g).includes("video")), cl=vis.filter(g=>flow(g).includes("video"));
-      body=`<div style="display:grid;gap:18px">`+[["Images",im,"Info cards and plates made for this scene"],["Clips",cl,"Each clip with the images it was made from"]].filter(x=>x[1].length).map(([h,l,n],i)=>`<div class="msec"><div class="msec-h"><h3>${i+1} · ${h}</h3><span class="note">${n}</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"")}
-    // more than one hook, or more than one body: each gets its own group (user, 2026-09-29)
-    if(!s.scene&&vis.length&&(s.key==="hooks"||s.key==="broll")){
-      const sub=new Map();
-      for(const g of vis){const ks=s.key==="hooks"?[hookNum(g)]:(state.multiBody?(bodiesOf(g).length?bodiesOf(g):[0]):[0]);for(const n of ks){if(!sub.has(n)) sub.set(n,[]);sub.get(n).push(g)}}
-      if(sub.size>1) body=`<div style="display:grid;gap:18px">`+[...sub.entries()].sort((a,b)=>(a[0]||999)-(b[0]||999)).map(([n,l])=>{
-        const ok=l.filter(g=>!needsMe(g)).length, name=s.key==="hooks"?(n?"Hook "+n:"Hook not set"):(n?"Body "+n:"Body not set");
-        return `<div class="msec"><div class="msec-h"><h3>${name}</h3><span class="note">${ok} of ${l.length} confirmed</span></div><div class="tiles">${l.map(tile).join("")}</div></div>`}).join("")+`</div>`+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"");
-    }
     if(s.key==="talking"&&!voLocked(b,gens)) body=`<p class="note" style="margin:0 0 10px">Talking heads start after the VO is locked.</p>`+body;
-    return `<section class="widget${s.wide?" wide":""}" id="w-${s.key}">
+    return `<section class="widget wide" id="w-${s.key}">
       <div class="w-head"><span class="w-num">${String(i+1).padStart(2,"0")}</span>
         <div class="w-title"><h2>${s.name}</h2><span class="sub">${s.sub}</span></div>
         <div class="w-actions">${BOARD_ROLE!=="old"&&s.key==="broll"?bankBtn(gens):BOARD_ROLE!=="old"&&s.key==="hooks"?bankBtn(gens,"hooks"):""}${link}</div></div>
@@ -1229,21 +1263,6 @@ async function fetchMedia(g,k){
   const p=partsOf(g,k);
   if(p){const bs=await Promise.all(p.map(fetchAsset));return new Blob(bs,{type:g[STEP[k].type]||bs[0].type})}
   return fetchAsset(g[STEP[k].asset]);
-}
-function tile(g){
-  const st=g.status||"planned", stage=STAGES.find(s=>s.key===g.stage)||STAGES[6];
-  const kind=g.kind||(isAudio(g)?"audio":String(g.videoType||"").startsWith("video/")?"video":g.flow&&!g.flow.includes("video")&&g.flow.includes("image")?"image":stage.kind);
-  const specs=[g.duration?`${g.duration}s`:"", g.regens?`R${g.regens}`:""].filter(Boolean);
-  const pk=flow(g).find(k=>pending(g,k));
-  const cv=coverOf(g), img=!pk&&cv?`<img class="bg" ${srcFrom(cv.asset,cv.parts,cv.type)} alt="" loading="lazy">`:"";
-  const first=flow(g).find(k=>g[STEP[k].asset])||flow(g)[0];
-  return `<div class="tile s-${st}">
-    <button class="frame${img?" has-img":""}${pk?" gen":""}" type="button" data-viewm="${esc(g.id)}" data-step="${pk||first}" aria-label="View ${esc(g.beat||"")}">${pk?genPanel(g,pk,true):img}<span class="stripe"></span>${ICONS[kind]||""}
-      <div><div class="kind">${esc(kind)}</div><div class="beat">${esc(g.beat||"—")}</div></div>
-      <div class="line">${esc(g.line||g.title||"")}</div>
-      <div class="dur"><span>${esc(g.model?shortModel(g.model):"")}</span><span>${specs.join(" · ")}</span></div></button>
-    <div class="cap"><span class="ttl" title="${esc(g.title||g.beat||"Untitled")}">${esc(g.title||g.beat||"Untitled")}</span>
-      <span class="caprow">${(x=>`<span class="pill ${x.c}">${esc(x.t)}</span>`)(BOARD_ROLE==="old"?{t:"Not used",c:"s-regenerate"}:todoLabel(g))}<button class="linkbtn" type="button" data-open="${esc(g.id)}">Edit</button></span></div></div>`;
 }
 function shortModel(m){return String(m).replace("kling-video-v3_0_omni","kling 3.0 omni").replace(/_/g," ")}
 
@@ -1471,160 +1490,90 @@ function groups(gens){
   for(const g of gens){const k=groupOf(g);if(!m.has(k.key)) m.set(k.key,{...k,items:[]});m.get(k.key).items.push(g)}
   return [...m.values()].sort((a,b)=>a.order-b.order).map(x=>(x.items.sort(beatSort),x));
 }
-function renderManual(gens){
-  const gs=groups(gens);
-  if(state.mstage!=="all"&&!gs.some(x=>x.key===state.mstage)) state.mstage="all";
-  const open=gens.filter(needsMe).length;
-  const prog=x=>{if(x.key==="stage-vo"){const p=voParts(gens);return [p.filter(y=>y.use).length,p.length,p.filter(y=>!y.use).length]}
-    return [x.items.filter(g=>!needsMe(g)).length,x.items.length,x.items.filter(stepNeedsYou).length]};
-  const allP=gs.reduce((a,x)=>{const [d,t]=prog(x);return [a[0]+d,a[1]+t]},[0,0]);
-  const stepM=(key,n,label,d,t,wait)=>{const done=d===t&&t>0;
-    return `<button class="step${done?" done":""}${state.mstage===key?" cur":""}" type="button" data-ms="${key}" aria-pressed="${state.mstage===key}">
-      <span class="n">${n}${done?" ✓":""}${!done&&wait?`<span class="g-wait" title="${wait} waiting for you">${wait}</span>`:""}</span><span class="t">${esc(label)}</span>
-      <div class="bar"><i style="width:${t?d/t*100:0}%;background:var(--use)"></i></div>
-      <span class="c">${d} of ${t} done</span></button>`};
-  $("#mbar").innerHTML=`<nav class="pipe" style="--n:${gs.length+1}" aria-label="Groups">${stepM("all","All","Everything",allP[0],allP[1],0)}${gs.map((x,i)=>{const [d,t,w]=prog(x);return stepM(x.key,String(i+1).padStart(2,"0"),x.label,d,t,w)}).join("")}</nav>
-    <div class="mtools"${BOARD_ROLE==="old"?" hidden":""}><label class="switch"><input type="checkbox" data-needs="1" ${state.mneeds?"checked":""}><span class="sw-track"><span class="sw-knob"></span></span><span>Only what needs me <b>${needsYouCount(gens)}</b></span></label>${bankBtn(gens)}</div>`;
-  const html=gs.map(x=>{
-    if(state.mstage!=="all"&&state.mstage!==x.key) return "";
-    const steps=["image","video","file"].filter(k=>x.items.some(g=>flow(g).includes(k)));
-    if(x.items.some(g=>flow(g).includes("video")&&isSeed(g))) steps.splice(steps.indexOf("video"),0,"ingredients");
-    const isVO=x.key==="stage-vo", vp=isVO?voParts(gens):null;
-    const done=isVO?vp.filter(y=>y.use).length:x.items.filter(g=>!needsMe(g)).length;
-    const beats=isVO?vp.map(y=>y.part):x.items.map(g=>g.beat).filter(Boolean);
-    const tot=isVO?vp.length:x.items.length, gi=gs.indexOf(x)+1;
-    const range=esc(!isVO&&beats.length>4?beats[0]+" – "+beats[beats.length-1]:beats.join(", "));
-    return `<section class="widget mgroup${done===tot&&tot?" all-done":""}" id="m-${x.key}">
-      <div class="w-head"><span class="w-num">${String(gi).padStart(2,"0")}</span>
-        <div class="w-title"><h2>${esc(x.label)}</h2><span class="sub">${esc(x.kicker)} · ${range} · ${done} of ${tot} ${isVO?"parts locked":"done"}</span></div>
-        <div class="w-actions">${done===tot&&tot?`<span class="pill s-use">Done</span>`:""}</div></div>
-      <div class="bar w-bar"><i style="width:${tot?done/tot*100:0}%;background:var(--use)"></i></div>
-      <div class="w-body">
-      ${x.note?`<p class="note" style="margin:0 0 10px">${esc(x.note)}</p>`:""}
-      ${x.key==="stage-vo"?`<div class="msec"><div class="msec-h"><h3>Takes</h3><span class="note">One row per part — pick a version and confirm it</span><span class="grow"></span>${voLocked(currentBuild(),gens)?`<span class="pill s-use">VO locked</span>`:""}</div><div class="arows">${voRows(gens)}</div></div>`:
-      `<div class="boxes${x.items.length<=2&&steps.length>1?" pair":""}">${steps.map(k=>k==="ingredients"?ingBox(x,x.items):stepBox(x,k,x.items)).join("")}</div>`}</div></section>`;
-  }).join("");
-  const fi=document.querySelector("[data-faultform] textarea"), draft=fi?fi.value:"", had=fi&&document.activeElement===fi;
-  $("#mlist").innerHTML=html||`<div class="empty">No generations in this build yet.</div>`;
-  const ni=document.querySelector("[data-faultform] textarea"); if(ni&&draft){ni.value=draft;if(had) ni.focus()}
+/* The Board is the one working view (V7.94.0, user 2026-10-02 — "i want the the brolls to show also like act 1 act 2 and show
+   the image and the video and remove the manual run panel, i want everything to shown much better and easier to navigate").
+   Every beat is one row: what it is on the left, then its image and its video side by side, each with Confirm and Fix.
+   Hooks, B-roll and talking heads are grouped by hook, act (body · act) or scene, each group with its own jump chip. */
+function fixFormFor(g,k){return `<form class="fixbox" data-faultform="${esc(g.id)}" data-step="${k}">
+    <label class="lbl" for="fault-${esc(g.id)}-${k}">What should be fixed?</label>
+    <textarea id="fault-${esc(g.id)}-${k}" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below, on the soft spot." required></textarea>
+    <div class="fix-actions"><button class="btn small bad solidbad" type="submit">Confirm &amp; regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></div></form>`}
+function paneOf(g,k){
+  const d=STEP[k], s=stepState(g,k), asset=g[d.asset], type=g[d.type]||"";
+  const old=BOARD_ROLE==="old", locked=!old&&k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g);
+  const isVid=type.startsWith("video/")||(k!=="image"&&!type), pend=pending(g,k);
+  const ro=state.readOnly||!state.assets, busy=state.busy[g.id+":"+k], pr=k==="image"&&pairOf(g);
+  const nm=isAudio(g)?"Audio":k==="video"?(seed?"Clip":"Video"):d.label, nv=versionsOf(g,k).length;
+  const chip=old?`<span class="pill s-regenerate">Not used</span>`:pr?`<span class="pill s-review">Pick A or B</span>`:locked?`<span class="pill s-planned">${seed?"Waiting for ingredients":"Waiting for image"}</span>`:stepChip(g,k,s)||`<span class="pill s-planned">${g[d.prompt]?"Prompt ready":"Planned"}</span>`;
+  const cov=locked&&coverOf(g);
+  const media=pr?`<div class="media filled pair" role="group" aria-label="Two options for ${esc(g.beat)}">${pr.map((x,i)=>`<button type="button" class="pair-opt" data-vpair="${esc(g.id)}" data-v="${x.v}" aria-label="View option ${"AB"[i]}"><img ${srcFrom(x.asset,x.parts,x.type)} alt="" loading="lazy"><span class="pl">${"AB"[i]}</span></button>`).join("")}</div>`:
+    `<div class="media${asset&&!pend?" filled":""}" ${ro||locked||old?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset&&!pend?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View the ${nm.toLowerCase()} of ${esc(g.beat)}"`:""}>${
+      pend?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:`<img ${srcAttr(g,k)} alt="" loading="lazy">`):
+      locked?`${cov?`<img class="ghost" ${srcFrom(cov.asset,cov.parts,cov.type)} alt="">`:""}<span class="lockmsg">🔒 ${seed?"Ingredients":"Image"} first</span>`:
+      `<span>${g[d.prompt]?"Waiting for render":"Not made yet"}</span>`}${busy?`<span class="busy">Uploading…</span>`:""}</div>`;
+  const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&!old&&!locked&&!pend;
+  const acts=fixing?fixFormFor(g,k):!canAct?"":pr?`<div class="mc-verdict pair">${pr.map((x,i)=>`<button class="btn small ok" type="button" data-pick="${esc(g.id)}" data-v="${x.v}">${I.ok} Use ${"AB"[i]}</button>`).join("")}<button class="btn small bad wide" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">${I.fix} Both wrong · Fix</button></div>`:
+    asset?`<div class="mc-verdict"><button class="btn small ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} ${s==="ok"?"Confirmed":"Confirm"}</button><button class="btn small bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">${I.fix} Fix</button></div>`:"";
+  return `<div class="mc pane${s==="ok"?" ok":s==="review"&&!locked?" now":s==="bad"||s==="gen"?" bad":locked?" locked":""}" id="mc-${esc(g.id)}-${k}">
+    <div class="pane-h"><span class="lbl">${nm}${nv>1?`<span class="vbadge" title="${nv} versions">v${currentV(g,k)}</span>`:""}</span>${chip}</div>
+    ${media}
+    ${g[d.fault]&&(s==="bad"||s==="gen")?`<div class="fault"><span class="lbl" style="color:var(--regen)">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
+    ${acts}
+    ${asset?`<button class="linkbtn" type="button" data-dl="${esc(g.id)}" data-step="${k}">${I.dl} Download</button>`:""}</div>`;
 }
-
-// One box per step: every image of the stage together, every video together.
-function stepBox(grp,k,all){
-  const d=STEP[k], items=all.filter(g=>flow(g).includes(k));
-  const list=state.mneeds?items.filter(g=>stepState(g,k)!=="ok"):items;
-  const ok=items.filter(g=>stepState(g,k)==="ok").length;
-  const fix=items.filter(g=>stepState(g,k)==="bad").length;
-  const check=items.filter(g=>stepState(g,k)==="review"&&!(k==="video"&&videoLocked(g))).length;
-  const files=items.filter(g=>g[d.asset]).length;
-  const plural=k==="image"?"Images":k==="video"?(grp.kicker==="Scene"?"Clips":"Videos"):"Files";
-  const sd=k==="video"?items.filter(isSeed).length:0;
-  const note=k==="video"?(sd===items.length?"Each Seedance video unlocks when all its ingredients are confirmed.":sd?"Each video unlocks when its image is confirmed — a Seedance video when all its ingredients are.":"Each video unlocks when its image is confirmed."):k==="image"&&items.some(g=>flow(g).includes("video"))?"Confirm an image to unlock its video.":"";
-  return `<div class="box">
-    <div class="box-head">
-      <span class="sn">${k==="video"?2:1}</span>
-      <div class="kv"><span class="lbl">${esc(grp.label)} · ${k==="video"?"step 2":"step 1"}</span><h3>${plural}</h3></div>
-      <div class="box-stats">
-        <div class="kv"><span class="lbl">Confirmed</span><span class="mono" style="color:var(--use)">${ok}/${items.length}</span></div>
-        <div class="kv"><span class="lbl">To check</span><span class="mono" style="color:var(--review)">${check}</span></div>
-        <div class="kv"><span class="lbl">Fixing</span><span class="mono" style="color:var(--regen)">${fix}</span></div></div>
-      <span class="grow"></span>
-      <button class="btn small" type="button" data-copyall="${grp.key}" data-field="${d.prompt}">Copy all prompts</button>
-      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="${k}" ${files?"":"disabled"}>${I.dl} Download all ${plural.toLowerCase()}</button>
-    </div>
-    ${note?`<p class="note box-note">${note}</p>`:""}
-    <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
-    ${list.length?(list.some(g=>!isAudio(g))?`<div class="cards">${list.filter(g=>!isAudio(g)).map(g=>mediaCard(g,k)).join("")}</div>`:"")+(list.some(isAudio)?`<div class="arows" style="padding:0 14px">${list.filter(isAudio).map(audioRow).join("")}</div>`:""):`<div class="empty" style="margin:14px">All ${plural.toLowerCase()} here are confirmed.</div>`}
-  </div>`;
+function ingPane(g){
+  const l=ingOf(g), done=l.filter(x=>x.st==="ok").length, ready=ingReady(g);
+  const chip=ready?`<span class="pill s-use">All confirmed</span>`:l.length?`<span class="pill s-review">${done} of ${l.length} confirmed</span>`:`<span class="pill s-planned">None listed</span>`;
+  return `<div class="mc pane ing-pane${ready?" ok":""}" id="mc-${esc(g.id)}-ingredients">
+    <div class="pane-h"><span class="lbl">Ingredients</span>${chip}</div>
+    ${l.length?`<div class="ing-grid">${l.map(x=>ingTile(g,x,"box","video")).join("")}</div>`:`<div class="media"><span>Not listed yet</span></div>`}
+    <p class="note" style="margin:0">Each ingredient is confirmed on its own card; the clip unlocks when all are.</p></div>`;
 }
-// Seedance beats: every ingredient image a video is made from, per beat, before the Videos box
-function ingBox(grp,all){
-  const items=all.filter(g=>flow(g).includes("video")&&isSeed(g));
-  const list=state.mneeds?items.filter(g=>!ingReady(g)):items;
-  const ok=items.filter(ingReady).length, n=items.reduce((a,g)=>a+ingOf(g).length,0);
-  const card=g=>{const l=ingOf(g), done=l.filter(x=>x.st==="ok").length, ready=ingReady(g);
-    const chip=ready?`<span class="pill s-use">All confirmed</span>`:l.length?`<span class="pill s-review">${done} of ${l.length} confirmed</span>`:`<span class="pill s-planned">None listed</span>`;
-    return `<article class="mc ${ready?"ok":l.some(x=>x.st==="review")?"now":""}" id="mc-${esc(g.id)}-ingredients">
-      <div class="mc-head"><div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}</span></div><div class="kv end"><span class="lbl">Ingredients</span>${chip}</div></div>
-      ${l.length?`<div class="ing-grid">${l.map(x=>ingTile(g,x,"box","video")).join("")}</div>`:`<div class="media"><span>Ingredients not listed yet</span></div>`}
-      <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
-      ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
-      <p class="note" style="margin:0">Confirm or fix each ingredient on its own card — the video unlocks when all are confirmed.</p></article>`};
-  return `<div class="box">
-    <div class="box-head">
-      <span class="sn">1</span>
-      <div class="kv"><span class="lbl">${esc(grp.label)} · step 1 · Seedance</span><h3>Ingredients</h3></div>
-      <div class="box-stats">
-        <div class="kv"><span class="lbl">Ready</span><span class="mono" style="color:var(--use)">${ok}/${items.length}</span></div>
-        <div class="kv"><span class="lbl">Ingredients</span><span class="mono">${n}</span></div></div>
-      <span class="grow"></span>
-      <button class="btn small primary" type="button" data-zip="${grp.key}" data-step="ingredients" ${n?"":"disabled"}>${I.dl} Download all ingredients</button>
+function beatRow(g){
+  const fl=flow(g), panes=[];
+  if(fl.includes("video")&&isSeed(g)) panes.push(ingPane(g));
+  for(const k of fl) panes.push(paneOf(g,k));
+  const t=BOARD_ROLE==="old"?{t:"Not used",c:"s-regenerate"}:todoLabel(g), one=panes.length===1;
+  const meta=[g.duration?g.duration+"s":"",g.model?shortModel(g.model):g.imageModel?shortModel(g.imageModel):""].filter(Boolean);
+  return `<article class="brow${one?" one":""}${g.stage==="locations"?" wide169":""}" id="b-${esc(g.id)}" style="--panes:${panes.length}">
+    <div class="br-info">
+      <div class="br-top"><span class="br-beat">${esc(g.beat||"—")}</span><span class="pill ${t.c}">${esc(t.t)}</span></div>
+      <div class="br-title">${esc(g.title||"Untitled")}</div>
+      ${g.line?`<div class="br-line">“${esc(g.line)}”</div>`:""}
+      ${!one&&g.motionPlan&&fl.includes("video")?`<div class="br-plan"><span class="lbl">Video will show</span><span>${esc(g.motionPlan)}</span></div>`:""}
+      <div class="br-foot">${meta.length?`<span class="br-meta">${meta.map(esc).join(" · ")}</span>`:""}<button class="linkbtn" type="button" data-open="${esc(g.id)}">Details</button></div>
     </div>
-    <p class="note box-note">Seedance makes each video from its ingredients — characters, voice, location, product and info cards, never frames — they show here, then the video.</p>
-    <div class="bar" style="margin:0 14px"><i style="width:${items.length?ok/items.length*100:0}%;background:var(--use)"></i></div>
-    ${list.length?`<div class="cards">${list.map(card).join("")}</div>`:`<div class="empty" style="margin:14px">All ingredients here are confirmed.</div>`}
-  </div>`;
+    <div class="br-panes">${panes.join("")}</div></article>`;
+}
+function beatList(list){
+  const vis=list.filter(g=>!isAudio(g)), aud=list.filter(isAudio);
+  const multi=vis.filter(g=>flow(g).length>1||isSeed(g)), single=vis.filter(g=>!(flow(g).length>1||isSeed(g)));
+  return (single.length?`<div class="bcards">${single.map(beatRow).join("")}</div>`:"")+(multi.length?`<div class="brows">${multi.map(beatRow).join("")}</div>`:"")+(aud.length?`<div class="arows">${aud.map(audioRow).join("")}</div>`:"");
+}
+// one hook, act, body · act or scene: its header, then its beats
+function groupBlock(x,all){
+  const full=all.filter(g=>groupOf(g).key===x.key), done=full.filter(g=>!needsMe(g)).length, wait=full.filter(stepNeedsYou).length;
+  const beats=x.items.map(g=>g.beat).filter(Boolean), range=beats.length>1?beats[0]+" – "+beats[beats.length-1]:beats[0]||"";
+  const has=k=>full.some(g=>flow(g).includes(k)&&g[STEP[k].asset]), seed=full.some(g=>isSeed(g)&&ingOf(g).some(y=>y.asset));
+  const closed=!!state.closed[x.key];
+  return `<section class="agroup${done===full.length&&full.length?" all-done":""}" id="g-${esc(x.key)}">
+    <div class="ag-head"><button class="ag-tog" type="button" data-gtog="${esc(x.key)}" aria-expanded="${!closed}" aria-label="${closed?"Show":"Hide"} ${esc(x.label)}">${I.r}</button>
+      <h3>${esc(x.label)}</h3>${range?`<span class="note">${esc(range)}</span>`:""}
+      <span class="ag-count">${done} of ${full.length} confirmed${wait?` · <b>${wait} to check</b>`:""}</span><span class="grow"></span>
+      ${BOARD_ROLE!=="old"&&seed?`<button class="btn small" type="button" data-zip="${esc(x.key)}" data-step="ingredients">${I.dl} Ingredients</button>`:""}
+      ${has("image")?`<button class="btn small" type="button" data-zip="${esc(x.key)}" data-step="image">${I.dl} Images</button>`:""}
+      ${has("video")?`<button class="btn small" type="button" data-zip="${esc(x.key)}" data-step="video">${I.dl} Videos</button>`:""}</div>
+    <div class="bar"><i style="width:${full.length?done/full.length*100:0}%;background:var(--use)"></i></div>
+    ${closed?"":(x.note?`<p class="note" style="margin:0">${esc(x.note)}</p>`:"")+beatList(x.items)}</section>`;
+}
+// the groups of a stage, with a jump chip each (Act 1 · 3 to check)
+function groupedBody(list,all){
+  const gs=groups(list); if(!gs.length) return "";
+  const chips=gs.length>1?`<nav class="ajump" aria-label="Jump to">${gs.map(x=>{const full=all.filter(g=>groupOf(g).key===x.key),w=full.filter(stepNeedsYou).length,ok=full.length&&full.every(g=>!needsMe(g));
+    return `<button type="button" class="ajchip${ok?" ok":""}" data-gjump="${esc(x.key)}">${esc(x.label)}${w?`<b>${w}</b>`:ok?" ✓":""}</button>`}).join("")}</nav>`:"";
+  return chips+`<div class="agroups">${gs.map(x=>groupBlock(x,all)).join("")}</div>`;
 }
 function when(ms){if(!ms) return "—";const d=new Date(ms);return isNaN(d)?"—":d.toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})}
-
-function mediaCard(g,k){
-  const d=STEP[k], s=stepState(g,k), ro=state.readOnly||!state.assets;
-  const locked=BOARD_ROLE!=="old"&&k==="video"&&videoLocked(g), seed=k==="video"&&isSeed(g), refs=refsOf(g,k);
-  const asset=g[d.asset], type=g[d.type]||"";
-  const prompt=g[d.prompt]||"", model=g[d.model]||d.defModel;
-  const busy=state.busy[g.id+":"+k];
-  const isVid=type.startsWith("video/")||(k==="video"&&!type);
-  const cov=locked&&coverOf(g), imgBehind=cov&&!pending(g,"image")?`<img class="ghost" ${srcFrom(cov.asset,cov.parts,cov.type)} alt="">`:"";
-  const media=pending(g,k)?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:type.startsWith("image/")||k==="image"?`<img ${srcAttr(g,k)} alt="${esc(g.beat)} ${d.label}">`:`<span>${esc(type||"file")}</span>`):
-    locked?`${imgBehind}<span class="lockmsg">🔒 Confirm the ${seed?"ingredients":"image"} first</span>`:
-    `<span>${s==="bad"?"Regenerating…":prompt?"Waiting for render":"Waiting for prompt"}${ro?"":`<br><small>drop a file here to add it</small>`}</span>`;
-  const limit=/kling/i.test(model)&&k!=="image"?2500:null;
-  const fixing=state.faultOpen===g.id+":"+k;
-  const cls=locked?"locked":s==="ok"?"ok":s==="bad"||s==="gen"?"bad":s==="review"?"now":"";
-  const chip=BOARD_ROLE==="old"?(g.restore&&g.restore.k===k?(g.restore.status==="done"?`<span class="pill s-use">v${g.restore.v} back on the main board</span>`:`<span class="pill s-generating">Moving v${g.restore.v} to the main board…</span>`):`<span class="pill s-regenerate">Not used</span>`):locked?`<span class="pill s-planned">${seed?"Waiting for ingredients":"Waiting for image"}</span>`:stepChip(g,k,s)||`<span class="pill s-planned">${d.label} ${prompt?"prompt ready":"planned"}</span>`;
-  const size=g[d.size]?(k==="image"?esc(g[d.size]):`${esc(g[d.size])}s`):"—";
-  const specs=[
-    ["Connector",esc(g[d.conn]||(seed?"Kie AI":d.defConn)||"—")],
-    [k==="image"?"Resolution":"Length",size],
-    ["Model",`<span class="mono">${esc(model||"—")}</span>`,"wide"],
-    ["Credits",g[d.credits]!=null&&g[d.credits]!==""?num(g[d.credits]):"—"],
-    ["Attempt",`${1+(Number(g[d.regens])||0)} of 3`],
-    ["Generated",when(g[d.at])],
-  ];
-  if(k==="video"&&g.videoOut!=null&&(g.videoOutV==null||g.videoOutV===currentV(g,"video"))) specs.push(["Clean part",`0–${Number(g.videoOut).toFixed(1)}s`,"wide"]);
-  const canAct=!state.readOnly&&!locked&&!pending(g,k);
-  const pr=k==="image"&&pairOf(g);
-  const pairMedia=pr?`<div class="media filled pair" role="group" aria-label="Two options for ${esc(g.beat)}">${pr.map((x,i)=>`<button type="button" class="pair-opt" data-vpair="${esc(g.id)}" data-v="${x.v}" aria-label="View option ${"AB"[i]}"><img ${srcFrom(x.asset,x.parts,x.type)} alt="${esc(g.beat)} option ${"AB"[i]}"><span class="pl">${"AB"[i]}</span><span class="pmod">${esc(shortModel(x.model||"—"))}</span></button>`).join("")}</div>`:"";
-  return `<article class="mc ${cls}" id="mc-${esc(g.id)}-${k}">
-    <div class="mc-head">
-      <div class="kv"><span class="lbl">Beat</span><span class="b">${esc(g.beat||"—")}${versionsOf(g,k).length>1?`<span class="vbadge" title="${versionsOf(g,k).length} versions">v${currentV(g,k)}</span>`:""}</span></div>
-      <div class="kv end"><span class="lbl">Status</span>${pr?`<span class="pill s-review">Pick image A or B</span>`:chip}</div></div>
-    ${pr?pairMedia:`<div class="media${asset?" filled":""}" ${ro||locked?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View ${d.label.toLowerCase()} for ${esc(g.beat)}"`:""}>${media}${busy?`<span class="busy">Uploading…</span>`:""}</div>`}
-    ${seed?`<div class="kv"><span class="lbl">Ingredients · ${refs.filter(x=>x.st==="ok").length}/${refs.length} confirmed</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")||`<span class="mc-l">None listed yet</span>`}</div></div>`:
-      refs.length?`<div class="kv"><span class="lbl">Reference images used · ${refs.length}</span><div class="ing-row">${refs.map(x=>ingTile(g,x,"row",k)).join("")}</div></div>`:""}
-    <div class="kv"><span class="lbl">Shot</span><span class="mc-t">${esc(g.title||"—")}</span></div>
-    ${g.line?`<div class="kv"><span class="lbl">Script line</span><span class="mc-l">“${esc(g.line)}”</span></div>`:""}
-    ${k==="image"&&g.motionPlan&&flow(g).includes("video")?`<div class="kv"><span class="lbl">Video will show</span><span class="mc-l">${esc(g.motionPlan)}</span></div>`:""}
-    <dl class="specs">${specs.map(([a,b,c])=>`<div${c?` class="${c}"`:""}><dt>${a}</dt><dd>${b}</dd></div>`).join("")}</dl>
-    <details class="pd"><summary><span class="lbl">Prompt</span><span class="pm">${num(prompt.length)} chars${limit?` / <span class="${prompt.length>limit?"over":""}">${num(limit)}</span>`:""}</span></summary>
-      <pre class="ptext${prompt?"":" none"}">${prompt?esc(prompt):"Prompt not written yet."}</pre></details>
-    ${g[d.fault]&&(s==="bad"||s==="gen")?`<div class="fault"><span class="lbl" style="color:var(--regen)">${s==="gen"?"Fixing now":"To fix"}</span><div>${esc(g[d.fault])}</div></div>`:""}
-    ${fixing?`<form class="fixbox" data-faultform="${esc(g.id)}" data-step="${k}">
-        <label class="lbl" for="fault-${esc(g.id)}-${k}">What should be fixed?</label>
-        <textarea id="fault-${esc(g.id)}-${k}" rows="3" placeholder="e.g. The strap sits above the kneecap. Move it just below, on the soft spot." required></textarea>
-        <div class="fix-actions"><button class="btn small bad solidbad" type="submit">Confirm &amp; regenerate</button><button class="btn small" type="button" data-faultcancel="1">Cancel</button></div></form>`:""}
-    ${canAct&&!fixing&&pr?`<div class="mc-verdict pair">
-      ${pr.map((x,i)=>`<button class="btn ok" type="button" data-pick="${esc(g.id)}" data-v="${x.v}">✓ Use ${"AB"[i]}</button>`).join("")}
-      <button class="btn bad wide" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">✎ Both wrong · Fix</button></div>`:
-    canAct&&!fixing?`<div class="mc-verdict">
-      <button class="btn ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✓ Confirm</button>
-      <button class="btn bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>✎ Fix</button></div>`:""}
-    <div class="mc-tools">
-      <button class="btn small" type="button" data-copy="${esc(g.id)}" data-field="${d.prompt}" ${prompt?"":"disabled"}>Copy prompt</button>
-      <button class="btn small" type="button" data-dl="${esc(g.id)}" data-step="${k}" ${asset?"":"disabled"}>${I.dl} Download</button>
-      <button class="btn small" type="button" data-open="${esc(g.id)}" style="grid-column:1/-1">Edit details</button>
-    </div></article>`;
-}
 
 function extFor(type,k){
   const m={"image/png":"png","image/jpeg":"jpg","image/webp":"webp","image/gif":"gif","video/mp4":"mp4","video/webm":"webm","video/quicktime":"mp4","application/pdf":"pdf","audio/mpeg":"mp3","audio/mp4":"m4a","audio/wav":"wav","text/plain":"txt","application/json":"json","text/markdown":"md"};
@@ -1777,19 +1726,15 @@ function advanceIfDone(g){
   const label=gs[i]?gs[i].label:"This group";
   if(!next){toast(`${label} done. Everything is confirmed.`);return}
   toast(`${label} done. On to ${next.label}.`);
-  if(state.view!=="manual") return;
-  setTimeout(()=>{
-    if(state.viewer) closeViewer();
-    if(state.mstage!=="all"){state.mstage=next.key;render();window.scrollTo({top:$("#mbar").offsetTop-12,behavior:"smooth"})}
-    else{const el=document.getElementById("m-"+next.key);if(el) el.scrollIntoView({behavior:"smooth",block:"start"})}
-  },700);
+  if(state.view!=="board"||state.viewer) return;
+  setTimeout(()=>{const el=document.getElementById("g-"+next.key);if(el) el.scrollIntoView({behavior:"smooth",block:"start"})},700);
 }
 function copyText(t,what){navigator.clipboard.writeText(t).then(()=>toast(what+" copied"),()=>toast("Copy was blocked. Select the text and copy it."))}
 
 
 /* viewer: clicking an image or video shows it, nothing else */
 /* only the group the clicked card sits in: its stage card on Board, its act or group in Manual run and Plan */
-function viewScope(g){return state.view==="final"?(isFinal(g)?"final":"x"):state.view==="board"?(sceneNum(g)&&["hooks","broll","talking"].includes(g.stage)?"sc:"+sceneNum(g):"s:"+g.stage):"g:"+groupOf(g).key}
+function viewScope(g){return state.view==="final"?(isFinal(g)?"final":"x"):state.view==="board"&&!["hooks","broll","talking"].includes(g.stage)?"s:"+g.stage:"g:"+groupOf(g).key}
 function viewerList(step){
   const sc=state.viewer&&state.viewer.scope;
   return groups(buildGens()).flatMap(x=>x.items).filter(g=>flow(g).includes(step)&&(!sc||viewScope(g)===sc));
@@ -2310,7 +2255,7 @@ function tocJump(i){
 let pickTarget=null;
 document.addEventListener("click",e=>{
   if(!e.target.closest(".vsel")) closeVsel();
-  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-promote],[data-promote-cancel],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-ms],[data-needs],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-pick],[data-vpair],[data-faultcancel],[data-drop]");
+  const t=e.target.closest("[data-fjump],[data-apt],[data-vsopen],[data-vspick],[data-takeok],[data-absok],[data-popen],[data-pdoc],[data-pjump],[data-psubj],[data-pmode],[data-pact],[data-ving],[data-vgo],[data-vdet],[data-vfix],[data-vseek],[data-vrate],[data-vout],[data-vmenu],[data-vpick],[data-vrestore],[data-promote],[data-promote-cancel],[data-sound],[data-viewm],[data-vnav],[data-vstep],[data-vclose],[data-open],[data-add],[data-f],[data-jump],[data-view],[data-gtog],[data-gjump],[data-copy],[data-copyall],[data-zip],[data-dl],[data-verdict],[data-pick],[data-vpair],[data-faultcancel],[data-drop]");
   if(!t) return;
   const ds=t.dataset, g=ds.id||ds.dl||ds.copy?state.gens.find(x=>x.id===(ds.id||ds.dl||ds.copy)):null;
   if(ds.fjump){const el=document.getElementById("fc-"+ds.fjump);if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"});return}
@@ -2350,8 +2295,8 @@ document.addEventListener("click",e=>{
   else if(ds.f){state.filter=ds.f;render()}
   else if(ds.jump){const w=$("#w-"+ds.jump);if(w) w.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
   else if(ds.view){state.planSig=null;state.view=ds.view;lsSet("gb.view",ds.view);render()}
-  else if(ds.ms){state.mstage=ds.ms;render()}
-  else if(ds.needs){state.mneeds=t.checked!==undefined?t.checked:!state.mneeds;render()}
+  else if(ds.gtog){state.closed[ds.gtog]=!state.closed[ds.gtog];render()}
+  else if(ds.gjump){if(state.closed[ds.gjump]){state.closed[ds.gjump]=false;render()}const el=document.getElementById("g-"+ds.gjump);if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"start"})}
   else if(ds.copy&&g){copyText(g[ds.field]||"",(g.beat||"")+" prompt")}
   else if(ds.copyall){
     const list=buildGens().filter(x=>groupOf(x).key===ds.copyall&&x[ds.field]).sort(beatSort);
