@@ -1,0 +1,161 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Lyric,DejaVu Sans,58,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,2,80,80,470,1
+Style: Over0,DejaVu Sans,64,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,3,16,0,2,80,80,560,1
+Style: Over1,DejaVu Sans,56,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,2,80,80,440,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.89,Lyric,,0,0,0,,I'm seventy-one,
+Dialogue: 0,0:00:01.89,0:00:04.38,Lyric,,0,0,0,,and I take\Nthe stairs
+Dialogue: 0,0:00:04.38,0:00:08.64,Lyric,,0,0,0,,faster than women\Nhalf my age.
+Dialogue: 0,0:00:08.64,0:00:09.59,Lyric,,0,0,0,,Last Sunday,
+Dialogue: 0,0:00:09.59,0:00:11.80,Lyric,,0,0,0,,my daughter\Nwalked behind me
+Dialogue: 0,0:00:11.80,0:00:13.20,Lyric,,0,0,0,,the whole way\Nup and said,
+Dialogue: 0,0:00:13.20,0:00:15.54,Lyric,,0,0,0,,"Mama, when did\Nthat happen?"
+Dialogue: 0,0:00:17.12,0:00:18.63,Lyric,,0,0,0,,Six weeks ago,\NI was going
+Dialogue: 0,0:00:18.63,0:00:20.08,Lyric,,0,0,0,,down my stairs\Nbackwards.
+Dialogue: 0,0:00:20.08,0:00:22.14,Lyric,,0,0,0,,One step\Nat a time.
+Dialogue: 0,0:00:22.14,0:00:23.12,Lyric,,0,0,0,,I ain't gonna lie,
+Dialogue: 0,0:00:23.12,0:00:24.24,Lyric,,0,0,0,,some days I wasn't
+Dialogue: 0,0:00:24.24,0:00:25.68,Lyric,,0,0,0,,going down\Nthem at all.
+Dialogue: 0,0:00:25.68,0:00:27.36,Lyric,,0,0,0,,I'd just stay\Nupstairs.
+Dialogue: 0,0:00:27.36,0:00:28.78,Lyric,,0,0,0,,That big knee\Nbrace I bought
+Dialogue: 0,0:00:28.78,0:00:30.48,Lyric,,0,0,0,,slid right\Ndown my leg.
+Dialogue: 0,0:00:30.48,0:00:31.13,Lyric,,0,0,0,,By evening,
+Dialogue: 0,0:00:31.13,0:00:32.48,Lyric,,0,0,0,,it was around\Nmy ankle.
+Dialogue: 0,0:00:33.28,0:00:35.36,Lyric,,0,0,0,,I done tried\Neverything.
+Dialogue: 0,0:00:35.36,0:00:36.66,Lyric,,0,0,0,,Physical therapy.
+Dialogue: 0,0:00:36.66,0:00:38.80,Lyric,,0,0,0,,Pain pills.\NCortisone shots.
+Dialogue: 0,0:00:38.80,0:00:40.60,Lyric,,0,0,0,,Every brace and\Nsleeve they make.
+Dialogue: 0,0:00:40.60,0:00:42.48,Lyric,,0,0,0,,Nothing worked.\NNothing lasted.
+Dialogue: 0,0:00:42.48,0:00:44.00,Lyric,,0,0,0,,Nothing gave me\Nmy life back.
+Dialogue: 0,0:00:44.00,0:00:45.04,Lyric,,0,0,0,,Then my grandbaby
+Dialogue: 0,0:00:45.04,0:00:46.26,Lyric,,0,0,0,,got married\Nin June.
+Dialogue: 0,0:00:46.26,0:00:48.00,Lyric,,0,0,0,,My cousin Loretta\Nwas there.
+Dialogue: 0,0:00:48.00,0:00:48.94,Lyric,,0,0,0,,She's\Nseventy-four,
+Dialogue: 0,0:00:48.94,0:00:50.60,Lyric,,0,0,0,,and she was\Nout on that
+Dialogue: 0,0:00:50.60,0:00:52.18,Lyric,,0,0,0,,dance floor\Nall night.
+Dialogue: 0,0:00:52.18,0:00:53.27,Lyric,,0,0,0,,Electric Slide,
+Dialogue: 0,0:00:53.27,0:00:55.08,Lyric,,0,0,0,,Cupid Shuffle,\Nall of it.
+Dialogue: 0,0:00:55.08,0:00:56.14,Lyric,,0,0,0,,Both her knees was
+Dialogue: 0,0:00:56.14,0:00:57.14,Lyric,,0,0,0,,bone on bone too.
+Dialogue: 0,0:00:57.14,0:00:58.65,Lyric,,0,0,0,,I always\Nfigured hers
+Dialogue: 0,0:00:58.65,0:01:00.24,Lyric,,0,0,0,,wasn't as\Nbad as mine.
+Dialogue: 0,0:01:01.02,0:01:02.48,Lyric,,0,0,0,,I always figured
+Dialogue: 0,0:01:02.48,0:01:04.40,Lyric,,0,0,0,,mine was\Npast fixing.
+Dialogue: 0,0:01:05.04,0:01:05.91,Lyric,,0,0,0,,Loretta came to
+Dialogue: 0,0:01:05.91,0:01:07.06,Lyric,,0,0,0,,stay the\Nweek after.
+Dialogue: 0,0:01:08.26,0:01:09.49,Lyric,,0,0,0,,She watched me at
+Dialogue: 0,0:01:09.49,0:01:10.80,Lyric,,0,0,0,,the kitchen table,
+Dialogue: 0,0:01:10.80,0:01:12.28,Lyric,,0,0,0,,going through my\Nmorning routine.
+Dialogue: 0,0:01:12.28,0:01:14.00,Lyric,,0,0,0,,Two\Nanti-inflammatories,
+Dialogue: 0,0:01:14.00,0:01:15.36,Lyric,,0,0,0,,the gel,\Nthe brace,
+Dialogue: 0,0:01:15.36,0:01:16.86,Lyric,,0,0,0,,an ice pack on\Nmy right knee.
+Dialogue: 0,0:01:16.86,0:01:18.22,Lyric,,0,0,0,,After a minute\Nshe said,
+Dialogue: 0,0:01:18.22,0:01:20.02,Lyric,,0,0,0,,"Baby, can I show\Nyou something?"
+Dialogue: 0,0:01:20.02,0:01:21.38,Lyric,,0,0,0,,She pulled up\Nher pant leg.
+Dialogue: 0,0:01:21.38,0:01:23.04,Lyric,,0,0,0,,She had on a\Nlittle black strap,
+Dialogue: 0,0:01:23.04,0:01:24.46,Lyric,,0,0,0,,right under\Nher kneecap.
+Dialogue: 0,0:01:24.50,0:01:26.28,Lyric,,0,0,0,,Stryde.
+Dialogue: 0,0:01:26.28,0:01:28.24,Lyric,,0,0,0,,She handed me one.
+Dialogue: 0,0:01:28.24,0:01:30.42,Lyric,,0,0,0,,It looked ridiculous.\NToo small.
+Dialogue: 0,0:01:30.42,0:01:31.47,Lyric,,0,0,0,,I said, "Loretta,
+Dialogue: 0,0:01:31.47,0:01:32.84,Lyric,,0,0,0,,you know\Ngood and well
+Dialogue: 0,0:01:32.84,0:01:33.96,Lyric,,0,0,0,,this ain't\Ngonna work
+Dialogue: 0,0:01:33.96,0:01:35.02,Lyric,,0,0,0,,on knees\Nlike mine."
+Dialogue: 0,0:01:35.02,0:01:37.28,Lyric,,0,0,0,,She said,\N"Just put it on
+Dialogue: 0,0:01:37.28,0:01:38.66,Lyric,,0,0,0,,and walk down\Nthem stairs."
+Dialogue: 0,0:01:38.66,0:01:39.30,Lyric,,0,0,0,,I did.
+Dialogue: 0,0:01:39.30,0:01:40.58,Lyric,,0,0,0,,Chile, the\Nfirst step,
+Dialogue: 0,0:01:40.58,0:01:41.56,Lyric,,0,0,0,,I didn't even have
+Dialogue: 0,0:01:41.56,0:01:42.48,Lyric,,0,0,0,,to hold the rail.
+Dialogue: 0,0:01:42.48,0:01:44.12,Lyric,,0,0,0,,Not the second.\NNot the third.
+Dialogue: 0,0:01:44.12,0:01:45.36,Lyric,,0,0,0,,All the way down.
+Dialogue: 0,0:01:45.36,0:01:46.56,Lyric,,0,0,0,,Both feet.\NForwards.
+Dialogue: 0,0:01:46.56,0:01:47.13,Lyric,,0,0,0,,She said,
+Dialogue: 0,0:01:47.13,0:01:48.78,Lyric,,0,0,0,,"Everything\Nelse you tried
+Dialogue: 0,0:01:48.78,0:01:51.18,Lyric,,0,0,0,,was made to keep\Nyou comfortable
+Dialogue: 0,0:01:51.18,0:01:53.00,Lyric,,0,0,0,,while your\Nknee got worse.
+Dialogue: 0,0:01:53.00,0:01:56.02,Lyric,,0,0,0,,This one fixes\Nwhy it hurts."
+Dialogue: 0,0:01:56.02,0:01:57.19,Lyric,,0,0,0,,She said,\N"There's one
+Dialogue: 0,0:01:57.19,0:01:58.36,Lyric,,0,0,0,,spot under\Nthe kneecap
+Dialogue: 0,0:01:58.36,0:01:59.78,Lyric,,0,0,0,,where every\Nstep lands.
+Dialogue: 0,0:01:59.78,0:02:00.76,Lyric,,0,0,0,,Every brace,\Nevery shot,
+Dialogue: 0,0:02:00.76,0:02:02.72,Lyric,,0,0,0,,every pill\Nyou ever tried
+Dialogue: 0,0:02:02.72,0:02:03.88,Lyric,,0,0,0,,treated the\Nwhole knee.
+Dialogue: 0,0:02:03.88,0:02:04.48,Lyric,,0,0,0,,Not that spot.
+Dialogue: 0,0:02:04.48,0:02:05.62,Lyric,,0,0,0,,That's why ain't\Nnothing worked.
+Dialogue: 0,0:02:05.62,0:02:07.10,Lyric,,0,0,0,,The pain is\Npressure.
+Dialogue: 0,0:02:07.10,0:02:08.30,Lyric,,0,0,0,,That's all it is.
+Dialogue: 0,0:02:08.30,0:02:09.98,Lyric,,0,0,0,,This strap sits\Nright on that spot
+Dialogue: 0,0:02:09.98,0:02:11.32,Lyric,,0,0,0,,and takes the\Nweight off."
+Dialogue: 0,0:02:11.32,0:02:13.18,Lyric,,0,0,0,,First step.\NPain gone.
+Dialogue: 0,0:02:13.18,0:02:14.22,Lyric,,0,0,0,,Just like that.
+Dialogue: 0,0:02:14.22,0:02:15.60,Lyric,,0,0,0,,Over two\Nhundred thousand
+Dialogue: 0,0:02:15.60,0:02:16.70,Lyric,,0,0,0,,people wear\None now.
+Dialogue: 0,0:02:16.70,0:02:18.56,Lyric,,0,0,0,,Sports doctors\Nrecommend it.
+Dialogue: 0,0:02:18.56,0:02:19.88,Lyric,,0,0,0,,Not the pharma\Ncompanies.
+Dialogue: 0,0:02:19.88,0:02:20.68,Lyric,,0,0,0,,Sports doctors.
+Dialogue: 0,0:02:20.68,0:02:22.30,Lyric,,0,0,0,,Loretta's husband\Nwears one.
+Dialogue: 0,0:02:22.30,0:02:23.37,Lyric,,0,0,0,,He's seventy-six,
+Dialogue: 0,0:02:23.37,0:02:25.32,Lyric,,0,0,0,,and he plays golf\Ntwice a week.
+Dialogue: 0,0:02:25.32,0:02:26.32,Lyric,,0,0,0,,Her niece\Nwears one
+Dialogue: 0,0:02:26.32,0:02:27.38,Lyric,,0,0,0,,when she\Nruns track.
+Dialogue: 0,0:02:27.38,0:02:28.28,Lyric,,0,0,0,,She's twenty-two.
+Dialogue: 0,0:02:28.28,0:02:29.96,Lyric,,0,0,0,,I've worn\Nmine every
+Dialogue: 0,0:02:29.96,0:02:31.48,Lyric,,0,0,0,,day for six weeks.
+Dialogue: 0,0:02:31.48,0:02:32.84,Lyric,,0,0,0,,Under my clothes.
+Dialogue: 0,0:02:32.84,0:02:33.82,Lyric,,0,0,0,,Don't nobody\Nknow it's there.
+Dialogue: 0,0:02:34.62,0:02:35.72,Lyric,,0,0,0,,No pills. No gel.
+Dialogue: 0,0:02:35.72,0:02:37.43,Lyric,,0,0,0,,No brace around my
+Dialogue: 0,0:02:37.43,0:02:39.24,Lyric,,0,0,0,,ankle by\Nlunchtime.
+Dialogue: 0,0:02:40.46,0:02:42.58,Lyric,,0,0,0,,Yesterday I walked\Nto the store.
+Dialogue: 0,0:02:42.58,0:02:44.90,Lyric,,0,0,0,,Two miles there.\NTwo miles back.
+Dialogue: 0,0:02:44.90,0:02:46.70,Lyric,,0,0,0,,Passed three\Nwomen half my age.
+Dialogue: 0,0:02:46.70,0:02:47.97,Lyric,,0,0,0,,Stood in\Nthat checkout
+Dialogue: 0,0:02:47.97,0:02:48.90,Lyric,,0,0,0,,line ten minutes
+Dialogue: 0,0:02:48.90,0:02:50.38,Lyric,,0,0,0,,without shifting\Nmy weight.
+Dialogue: 0,0:02:50.38,0:02:51.80,Lyric,,0,0,0,,Carried two\Nbags home.
+Dialogue: 0,0:02:51.80,0:02:53.40,Lyric,,0,0,0,,Didn't nobody\Nhelp me.
+Dialogue: 0,0:02:53.40,0:02:55.26,Lyric,,0,0,0,,When I got home,\Nmy husband said,
+Dialogue: 0,0:02:55.26,0:02:57.24,Lyric,,0,0,0,,"You was gone\Na long time."
+Dialogue: 0,0:02:57.24,0:02:58.06,Lyric,,0,0,0,,I said, "I know."
+Dialogue: 0,0:02:58.06,0:02:59.24,Lyric,,0,0,0,,That was six weeks
+Dialogue: 0,0:02:59.24,0:03:00.62,Lyric,,0,0,0,,of wearing\Nthe strap.
+Dialogue: 0,0:03:00.62,0:03:01.46,Lyric,,0,0,0,,Nothing else.
+Dialogue: 0,0:03:01.46,0:03:03.19,Lyric,,0,0,0,,Three ladies\Nfrom church
+Dialogue: 0,0:03:03.19,0:03:04.56,Lyric,,0,0,0,,already\Nordered one
+Dialogue: 0,0:03:04.56,0:03:05.78,Lyric,,0,0,0,,after they\Nwatched me come
+Dialogue: 0,0:03:05.78,0:03:06.82,Lyric,,0,0,0,,down the\Nchurch steps.
+Dialogue: 0,0:03:06.82,0:03:08.46,Lyric,,0,0,0,,So I'ma just say\Nit right here.
+Dialogue: 0,0:03:08.46,0:03:09.61,Lyric,,0,0,0,,It's called Stryde
+Dialogue: 0,0:03:09.61,0:03:11.34,Lyric,,0,0,0,,Patellar Force\NRedirection.
+Dialogue: 0,0:03:11.34,0:03:12.30,Lyric,,0,0,0,,They spent three
+Dialogue: 0,0:03:12.30,0:03:13.38,Lyric,,0,0,0,,years designing it
+Dialogue: 0,0:03:13.38,0:03:15.18,Lyric,,0,0,0,,with orthopedic\Nsurgeons.
+Dialogue: 0,0:03:15.18,0:03:16.28,Lyric,,0,0,0,,It's the\Nreal thing.
+Dialogue: 0,0:03:16.28,0:03:18.00,Lyric,,0,0,0,,Not them cheap\Nknock-offs
+Dialogue: 0,0:03:18.00,0:03:19.36,Lyric,,0,0,0,,they be selling\Non Amazon
+Dialogue: 0,0:03:19.36,0:03:20.92,Lyric,,0,0,0,,and them fake\Nwebsites.
+Dialogue: 0,0:03:20.92,0:03:22.54,Lyric,,0,0,0,,The link's right\Ndown below.
+Dialogue: 0,0:03:22.54,0:03:23.66,Lyric,,0,0,0,,Two straps for the
+Dialogue: 0,0:03:23.66,0:03:25.10,Lyric,,0,0,0,,price of one\Nright now.
+Dialogue: 0,0:03:25.10,0:03:26.92,Lyric,,0,0,0,,Sixty days to\Nsend them back
+Dialogue: 0,0:03:26.92,0:03:28.02,Lyric,,0,0,0,,if they\Ndon't work.
+Dialogue: 0,0:03:28.02,0:03:30.52,Lyric,,0,0,0,,Eleven years\Nof knee pain.
+Dialogue: 0,0:03:30.52,0:03:32.18,Lyric,,0,0,0,,Gone the\Nfirst step
+Dialogue: 0,0:03:32.18,0:03:33.76,Lyric,,0,0,0,,I took with it on.
+Dialogue: 0,0:03:34.80,0:03:36.54,Lyric,,0,0,0,,I bought\Nmy sister a
+Dialogue: 0,0:03:36.54,0:03:38.28,Lyric,,0,0,0,,pair that\Nsame week.
+Dialogue: 0,0:03:39.38,0:03:40.32,Lyric,,0,0,0,,She coming Sunday.
+Dialogue: 0,0:03:40.32,0:03:41.53,Lyric,,0,0,0,,She gon'\Nwalk up my
+Dialogue: 0,0:03:41.53,0:03:42.68,Lyric,,0,0,0,,stairs on her own.
+Dialogue: 0,0:03:42.93,0:03:48.02,Over0,,0,0,0,,Buy 1 Get 1 Free
+Dialogue: 0,0:03:43.43,0:03:48.02,Over1,,0,0,0,,60-day money-back guarantee
