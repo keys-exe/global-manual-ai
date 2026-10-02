@@ -1,0 +1,59 @@
+{
+ "beat": "R-05a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"She handed me one. It looked ridiculous. Too small.\": From this frame: she turns her hand a little to look at it — one small tilt, about a second; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. Her open hand stays flat, fingers straight, and only tilts a little toward the lens; the strap lies still on her flat palm, a rigid black shell with two peaks and a chrome slide at each end — it never bends, folds, curls or wraps, and her fingers never close round it; the table and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_094300_42fc0eb2-6254-4650-b016-465cf43ee217.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "She handed me one. It looked ridiculous. Too small.",
+ "motion_plan": "From this frame: she turns her hand a little to look at it — one small tilt, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one small tilt",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "clip v1 kept off (L16, FP rigid product): the strap bent and curled in her hand as her fingers closed → the palm stays flat, fingers straight, only a small tilt; the strap a rigid shell that never bends",
+ "fix_notes_all": [
+  "clip v1 kept off (L16, FP rigid product): the strap bent and curled in her hand as her fingers closed → the palm stays flat, fingers straight, only a small tilt; the strap a rigid shell that never bends"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image R-05a@fix3B, job 42fc0eb2-6254-4650-b016-465cf43ee217)"
+}

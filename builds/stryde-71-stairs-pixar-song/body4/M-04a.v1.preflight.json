@@ -1,0 +1,66 @@
+{
+ "beat": "M-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Every brace, every shot, every pill you ever tried treated the whole knee.\": Keep this photo exactly as it is — the kitchen table from above, the cloth, the light, the braces, sleeves, pill bottles and gel tube in their places — and take her hands out of it; add one small plain white box of syringes beside the pill bottles. Image 1 is the photo. Image 2 is the style.\nOverhead, sharp on the heap: the whole routine laid out on the table — braces, sleeves, pill bottles, the gel tube, an ice pack and the syringe box — the heap filling the middle half of the frame, nobody in the frame.\nIn frame: the table, the heap; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. Bottles, box and packs plain — no lettering, logos or labels.",
+ "script_line": "Every brace, every shot, every pill you ever tried treated the whole knee.",
+ "face": false,
+ "room": true,
+ "body": false,
+ "refs": [
+  {
+   "label": "P-04a frame v3 (confirmed) — the routine laid out on her kitchen table, from above",
+   "kind": "frame"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "e05783fd-e5e1-4e31-b247-3a8c950954b6",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P-04a frame v3 (confirmed) — the routine laid out on her kitchen table, from above",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 1"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 2"
+  }
+ ]
+}
