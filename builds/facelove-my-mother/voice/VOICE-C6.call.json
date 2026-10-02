@@ -1,0 +1,41 @@
+{
+ "beat": "VOICE-C6",
+ "build": "facelove-my-mother",
+ "connector": "seedance",
+ "mode": 4,
+ "kind": "voice_master",
+ "prompt": "INGREDIENTS. @image1 is Friend B: face, age and hair only. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to. A plain medium close-up of Friend B, a woman of fifty, standing against a plain pale blue wall, soft daylight from the left, the camera on a locked tripod, nothing else in frame. Friend B looks just off the lens at someone beside the camera and, starting straight away, says these sentences one after another, clearly and completely, with only an ordinary breath between them: \"Saturday. The same yard I'd been hiding from for months.\" She keeps speaking from the first second to the last; no long silences. Delivery: An American woman of fifty, a soft, gentle, light voice, careful and kind-sounding, plain General American, never sharp. Level, even and unhurried; conversational volume; no emotion coloured into the words; a person reading a sentence aloud to themselves. Audio is clean, close production dialogue sound: clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music and no sound effects anywhere in the clip — dialogue only. Dialogue only: no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack. One speaker only. NEGATIVES: no other people, no second voice, no looking into the lens, no text, no captions, no long pauses, no silent beats, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "duration": 7,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "ingredients_approved": true,
+ "files": [
+  "voice/C6_face.jpg"
+ ],
+ "audios": [],
+ "generate_audio": true,
+ "dialogue": "Saturday. The same yard I'd been hiding from for months.",
+ "script_line": "Saturday. The same yard I'd been hiding from for months.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "long silences — paid dead space",
+   "prevented_by": "duration fitted to the words (master_fit), 'keeps speaking from the first second to the last', no-long-pauses negatives"
+  },
+  {
+   "risk": "emotional colour in the master",
+   "prevented_by": "neutral, informational script sentences only; the neutral delivery clause after VOICE-[CHAR]"
+  },
+  {
+   "risk": "music or a second voice",
+   "prevented_by": "NEG-SOUND twice, one speaker only, no other people"
+  }
+ ]
+}
