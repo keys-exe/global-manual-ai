@@ -999,3 +999,8 @@ Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` /
 - Kie balance 94441.6 → 94405.6. Kling balance 36493 after the M-06a clip.
 - FINAL-HK1 v4 is re-cut with T-04a v3 and M-06a v4.
 - Hourly Fix check, 17:20 UTC: no cards on `regenerate`, so nothing was done.
+- **FINAL-HK1 v4** is on the Final board as To check: 228.04 s, 1080×1920, 24 fps, 9 parts, 64 rows.
+  - New in v4: T-04a clip v3 at 57.14 s and M-06a clip v4 at 131.28 s, both at 1x.
+  - Everything else is as in v3: cuts, captions and outro.
+  - v3 moved to Old 3 (all 9 parts).
+- Balances on the build docs: Kie AI 94405.6, Kling 36461. The old Kie AI value, 261969.8, was stale.
