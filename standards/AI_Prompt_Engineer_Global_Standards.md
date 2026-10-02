@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.90.0 — supersedes all prior versions.** *(Pixar anatomy: in Modes 2 and 5 every anatomy beat is drawn by the film itself — `ANAT-PIX` opens the prompt, then the style's `ANAT-PIX-S<n>` line (each realistic style's Pixar version, one for one), never the medical-CGI words; S5 stays on the stylised route; `preflight.py` checks it — §12A-1, V7.90.0; V7.89.3 before it: the team's anatomy look call wins (rule 7), only the product photo on an anatomy beat (rule 8))*
+**Version 7.90.1 — supersedes all prior versions.** *(V7.90.1: Pixar S3 "normal anatomy" locked to the team's pick B (`references/anatomy/S3_pixar_locked.jpg`, judged by, never attached) and described in words in `ANAT-PIX-S3`; a no-muscle option `S3-BONE` for lines about bone, tendon or the joint — §12A-1. V7.90.0: Pixar anatomy, each realistic style's Pixar version one for one)*
 
 ---
 
@@ -1236,7 +1236,7 @@ Until now rule 5 was one sentence, and the anatomy beats of the first Mode 2 bui
 |---|---|---|
 | **S1 Ghost** | The smoky see-through outline, ivory-peach bones, white tendons, navy field | The same leg and framing: a soft smoky see-through outline like glowing mist, rounded ivory-peach bones and white ribbon tendons inside, a deep navy-black field with soft floating sparkles |
 | **S2 X-ray** | A real radiograph: bone bright blue-white on black, soft tissue faint grey | The same X-ray frame, drawn by the film: rounded simplified bones glowing blue-white on black, soft tissue a faint grey haze, the product a crisp outline |
-| **S3 Clinical studio model** ("normal anatomy") | A clean 3D model on a pale grey field, natural colours, soft even light | The same model and grey field, drawn by the film: rounded simplified muscle in soft rose, white ribbon tendons and ligaments, smooth ivory bone, soft even light |
+| **S3 Clinical studio model** ("normal anatomy") | A clean 3D model on a pale grey field, natural colours, soft even light | **Locked to the team's pick** (`references/anatomy/S3_pixar_locked.jpg`, user 2026-10-02: "the b is locked i like this"). It is the same model and grey field, drawn by the film and framed close on the knee: rounded rose muscle bundles with a soft satin sheen wrapping the thigh and calf, clean white tendon bands, smooth ivory bones, a faint see-through skin edge with a cool blue rim on one side, the warm glow on the tendon below the kneecap. **No-muscle option `S3-BONE`** (user: "the a should not have muscles"): the same model with no muscle anywhere, only ivory bones, white tendon and ligament ribbons and the kneecap inside a soft see-through peach outline of the leg, used when the line is about bone, tendon or the joint and names no muscle |
 | **S4 On-body window** | The person's leg in the location, a glowing window on the skin at the true spot | The same: the character's own leg in the scene's set, in her outfit, a soft round glowing window centred on the spot showing the rounded bones and the tendon ribbon inside, the warm glow inside it |
 | **S5 Physical model** | A plastic model on a surface, real hands turning it | The same: a plastic knee model in the film's style held in the character's stylised hands (four chunky fingers and a thumb), a fingertip on `[SITE]` |
 | **S6 Scan** | A greyscale MRI slice with `[TARGET]` in one accent colour | The same slice, drawn by the film: rounded greyscale shapes, `[TARGET]` in one warm accent |
@@ -1247,7 +1247,7 @@ Until now rule 5 was one sentence, and the anatomy beats of the first Mode 2 bui
 5. **Never** `ANAT-BASE`, "premium 3D anatomical visualisation", "medical education", "broadcast-quality", photoreal, "natural tissue colours", fibre or fibrous detail, "textbook", or a grey seamless studio. Those words pull the model back to medical CGI.
 6. **The team's look call still wins (rule 7).** A Pixar build whose team names a look for its anatomy gets that look. If the call is for realistic anatomy in the Pixar film, the call carries `anat_lock` (the team's words) and the Pixar checks step aside.
 
-**First renders** *(2026-10-02, Higgsfield, three A/B pairs, 12 cr, no build; requested as `nano_banana_pro`, but Higgsfield's job status reports `nano_banana_2`, so check the logged model on a build's first anatomy job)*: S1, S3 and S4 came back as 3D-animated anatomy, rounded and warm, with nothing medical left. S3 B is the Pixar version of the "normal anatomy": the same clean model on grey, drawn by the film. Two faults were fixed in the strings before this cut. The word *ember* drew a cartoon flame icon on the knee, so the pain is now "a small soft warm glow of light" and nothing names a flame (L13). On S4 the glow landed below the window, so the window is now centred on `[SITE]` with the glow inside it. Kept as the team's first look at the style: `references/anatomy/pixar_samples/` is the look to judge by, never attached (L32).
+**First renders** *(2026-10-02, Higgsfield, four A/B pairs, 16 cr, no build; requested as `nano_banana_pro`, but Higgsfield's job status reports `nano_banana_2`, so check the logged model on a build's first anatomy job)*: S1, S3 and S4 came back as 3D-animated anatomy, rounded and warm, with nothing medical left. S3 B is the Pixar version of the "normal anatomy": the same clean model on grey, drawn by the film. Two faults were fixed in the strings before this cut. The word *ember* drew a cartoon flame icon on the knee, so the pain is now "a small soft warm glow of light" and nothing names a flame (L13). On S4 the glow landed below the window, so the window is now centred on `[SITE]` with the glow inside it. Kept as the team's first look at the style: `references/anatomy/pixar_samples/` is the look to judge by, never attached (L32). **The team locked S3 B** (2026-10-02, "the b is locked i like this"), now saved as `references/anatomy/S3_pixar_locked.jpg`: every Pixar S3 render is judged beside it before it goes up, and it is never attached. `ANAT-PIX-S3` describes it in words. For A the team asked for no muscles, which is `S3-BONE`; its first pair (`pixar_samples/PIX_S3BONE_A/B.jpg`) came back with none, B the cleaner, with the glow on the tendon below the kneecap.
 
 **Checked by `preflight.py`** on every Mode 2 / 5 anatomy image: `ANAT-PIX` within the prompt's first 400 characters, and none of the medical-CGI words above outside the negatives. The other Mode 2 / 5 checks still apply (render line, style reference, scale, facing, hands), and so do the S1 words (smoky see-through outline, ivory-peach, navy-black).
 
@@ -7473,7 +7473,8 @@ A final frame from a 3D animated feature film, stylized storybook render. The an
 ```
 S1  The [REGION] as a soft smoky see-through outline like glowing mist, rounded ivory-peach bones and white ribbon tendons inside, a deep navy-black field with soft floating sparkles.
 S2  An X-ray of the [REGION] drawn by the film: rounded simplified bones glowing blue-white on black, soft tissue a faint grey haze, the product a crisp outline.
-S3  A clean model of the [REGION] drawn by the film on a soft plain pale grey backdrop: rounded simplified muscle in soft rose, white ribbon tendons and ligaments, smooth ivory bone, soft even light.
+S3  A clean model of the [REGION] drawn by the film on a soft plain pale grey backdrop, framed close on the joint: rounded rose muscle bundles with a soft satin sheen wrapping it, clean white tendon bands, smooth ivory bones, a faint see-through skin edge with a cool blue rim on one side, soft even light.
+S3-BONE  A clean model of the [REGION] drawn by the film on a soft plain pale grey backdrop, with no muscle anywhere: only smooth ivory bones, white ribbon tendons and ligaments and the kneecap, inside a soft see-through peach outline of the leg with a cool blue rim on one side, soft even light.
 S4  [CHARACTER]'s own [REGION] in [SET], in the day's clothes, a soft round glowing window on the skin centred on [SITE] showing the rounded bones and the tendon ribbon inside, the warm glow inside the window, its rim a thin warm light.
 S5  A plastic model of the [REGION] in the film's style, held in [CHARACTER]'s stylized hands (four chunky fingers and a thumb each), a fingertip on [SITE].
 S6  A scan slice through the [REGION] drawn by the film: rounded greyscale shapes, [TARGET] picked out in one warm accent.
@@ -9438,6 +9439,17 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.90.0 → V7.90.1 *(patch — the team's pick on the new style)*
+
+| § | Change |
+|---|---|
+| **12A-1**, **Appendix A** | Pixar S3 ("normal anatomy") is locked to the team's pick B, saved as `references/anatomy/S3_pixar_locked.jpg`, which renders are judged against and which is never attached (L32). `ANAT-PIX-S3` now describes B: close on the joint, rounded rose muscle bundles with a satin sheen, white tendon bands, ivory bones, a see-through skin edge with a cool blue rim. New `S3-BONE`: the same model with no muscle, for lines about bone, tendon or the joint |
+| Files | `references/anatomy/S3_pixar_locked.jpg` and `pixar_samples/PIX_S3BONE_A/B.jpg` (new), both skills, CLAUDE.md |
+
+**Origin:** user, 2026-10-02 — "the b is locked i like this and the a should not have muscles". The no-muscle pair (4 cr) came back with no muscle in either render.
 
 ---
 
