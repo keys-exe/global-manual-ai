@@ -274,3 +274,13 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - **Kie balance:** 70,246.6.
 - **System:** V7.94.2, §22W Q5 (sets checked the right way round) and §24L (a slowed zoom or push keeps its slow-down), lesson L64.
 - **Disk:** local finals v1–v4 and the old edit renders were deleted to free disk; they remain on the boards.
+
+### 2026-10-02 — Hook C opener (user: "hook c i need you to add a clip before commuter talk so we dont have to slow him down make one just automate it")
+
+- **New opening shot:** HKC-SH00 (`body/INSERTS/`, Seedance 2.5, 5 s, 315 cr, silent). The commuter walks across the concourse up to the yellow barrier, looking at his phone, and stops where HKC-SH01 opens. It uses the same reverse angle, with no escalator in frame. Preflight PASS, judged USE. The first submit failed at Kie with 0 cr, because the full-size cast sheet and plate were missing locally; they were restored from the Current board.
+- **Announcement:** both halves of the station announcement (L009#1, L009#2) now play over SH00, so HKC-SH01 plays at its own speed. Hook C has no slow-down left.
+- **Captions:** the commuter's "You're joking" is at 7.92–8.50 s on the isolated track, and its caption lands there.
+- **Final:** FINAL-HKC is v6 (357.2 s, −14.3 LUFS); v5 moved to Old 4. A, B and E stay at v5.
+- **Current board:** HKC-SH00 card added, `use`.
+- **buildSpend:** 81,694 cr over 299 renders.
+- **Kie balance:** 69,931.6.

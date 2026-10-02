@@ -1,0 +1,7 @@
+{"taskId": "81aea425eb1c68cf6d96adcfb67214d3", "created": true}
+{
+  "taskId": "81aea425eb1c68cf6d96adcfb67214d3",
+  "state": "fail",
+  "credits": 0.0,
+  "failMsg": "'input.image_urls[0]' must use an http(s) URL or an asset:// reference."
+}
