@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.90.5 — supersedes all prior versions.** *(V7.90.5: learning from mistakes (§34B) runs only on the owner's account, `keys-exe`; on any other account a correction fixes that build's work and nothing else — no lesson, no rule change)*
+**Version 7.90.6 — supersedes all prior versions.** *(V7.90.6: only the owner's Fix notes teach the system — boards mark each Fix with `imageFaultOwner` / `faultOwner`, the agent carries it as `noteOwner`, and `fix_patterns.py` counts only those; V7.90.5: learning from mistakes runs only on the owner's account — §34A, §34B)*
 
 ---
 
@@ -6237,8 +6237,10 @@ When the user flags a problem with a specific shot:
 
 **Origin:** user, 2026-09-29 — "you should learn what are the things getting fixed on the board, learn the pattern so you know what type of image or videos we want". A Fix note is the user saying what they want. One note fixes one beat; the same note twice is a rule, and it is applied before the next render, not after the next Fix.
 
+**Only the owner's Fix notes count** *(V7.90.6 (user, 2026-10-02 — "only my fix notes should count"))*. A Fix note teaches the system only when the board marked it as written by its owner, the `keys-exe` owner's account that publishes the boards. A board from template V7.90.6 writes `imageFaultOwner` / `faultOwner` (`true` or `false`) with every Fix. When the agent answers that Fix, it copies the flag onto the new version entry as `noteOwner`. Notes from anyone else (teammates on the board, another account), and unmarked notes on older boards, are still answered for their build exactly as before. They never become a House Taste or fix-pattern rule, and `fix_patterns.py` lists them apart as "not counted". Fix requests the owner types in chat on the owner's account count as the owner's.
+
 **The loop — both run modes, every build:**
-1. **Harvest.** After every Fix round (and when a build starts or resumes), dump the build's boards (Current and Old, `ArtifactData list` with `out_dir`) and run `scripts/fix_patterns.py <dirs> --md <out>`: every user Fix note, by build, beat, step, model, with a rough class. Agent bookkeeping and agent verdicts are kept apart.
+1. **Harvest.** After every Fix round (and when a build starts or resumes), dump the build's boards (Current and Old, `ArtifactData list` with `out_dir`) and run `scripts/fix_patterns.py <dirs> --md <out>`: every Fix note the owner wrote, by build, beat, step, model, with a rough class (others listed apart, never counted). Agent bookkeeping and agent verdicts are kept apart.
 2. **Read and generalise.** A note that repeats — on two beats, or in two builds — becomes a rule, written as what to do, positively. **Generic** rules (any product, any build) go in the House Taste table below; **product-specific** ones (its shape, size, back, placement, packaging, copies) go in `products/<product>/fix_patterns.md`. Each rule carries its source count and the builds it came from. A one-off note stays a beat fix.
 3. **Apply.** Before writing any beat image or video prompt, read the House Taste and the product's `fix_patterns.md`. The §6A step 4 / §35A step 4 facts come from them first; the act map (§18 step 5) is checked against HT01–HT05 and HT10 before it is approved. `preflight.py` wants the rules applied listed on the call (`"taste": ["HT03", "FP02", …]`).
 4. **Report.** New or changed rules are listed to the user in one line at the next delivery; the user's notes are the authority, so a learned rule is written in the same turn (like a §34 correction), and the user can strike it. A system rule learned here never re-cuts an existing build (§34).
@@ -9443,6 +9445,18 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.90.5 → V7.90.6 *(patch — the owner's call)*
+
+| § | Change |
+|---|---|
+| **34A** | Only the owner's Fix notes count. The board marks each Fix (`imageFaultOwner` / `faultOwner`, from the viewer's `isOwner()`), and the agent copies the flag to the version entry as `noteOwner`. Others' notes and unmarked older notes are answered for their build but never become a rule. `fix_patterns.py` counts only marked notes and lists the rest as "not counted" |
+| **16A** template | `setVerdict` writes `<fault>Owner` on every Fix (new boards only, L05) |
+| Files | `dashboard/generation_board.html`, `scripts/fix_patterns.py` (`--all-authors` to read the rest), both skills, CLAUDE.md |
+
+**Origin:** user, 2026-10-02 — "only my fix notes should count". Tested: a dump with two owner-marked notes and two unmarked ones counts two, and lists the other two as "not counted"; the board's script parses (`node --check`).
 
 ---
 
