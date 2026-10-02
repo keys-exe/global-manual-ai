@@ -11,7 +11,13 @@ Drive task folder `1M1DbzCv_DwDnXnhwkztLtgEB69yjBUiZ` · cast pictures `1__Tfn0-
 - Plan https://claude.ai/artifact/VmUne7ypBrBQa52jVqXRrs
 - Hourly Fix check: `trig_01XaBTxvhuhW64zeHnySBmKR`, :52 UTC, session_01J4zbJqsKjmgPFMHmw3ibaJ
 
-## Where it stands (2026-10-02)
+## Where it stands (2026-10-02, after steps 4–5)
+- Steps 4–5 delivered on the user's "go" (cast sheets not yet confirmed/fixed — still To check): 8 plates (Sunburst 16:9, 24.92 credits) on the Current board To check; `STEP4_5.md` with Property/Location Sheets, act map (48 shots, 26 Seedance takes, ~3:51), wardrobe per story day (6 days), Visual Pitch, music register map, ingredient ledger; Plan board docs: locations, actmap, takes, wardrobe, visualplan, music.
+- Checks: angles.py PASS · wardrobe.py PASS · visual_plan.py PASS · takes.py 5 SPLIT lines that are false (shots-only count; each pair is 17–24 s > 15 s) — F19.
+- New flags: F16 (yard = the hosts' house), F17 (L-PORCH-IN shows a house through the glass, not the yard), F18 (~3:51 runtime), F19.
+- Next: the voices (§24I), straight through in Manual — needs the F6 ruling first.
+
+## Earlier (steps 1–3)
 - Steps 1–3 delivered: Absorption Sheet + Film Look Sheet, Visual Instruction Ledger (VN01–VN27), phrase inventory (L001–L027), claims, Mode & Model Lock → `BUILD_SHEET.md`.
 - 8 cast sheets generated (Sunburst, 22 Higgsfield credits, ODAQ B.V.), all on the Current board as **To check**. Five copy the client's cast pictures (Susan old → N-SUSAN, Susan new → N-SUSAN-AFTER, Greg, Paula, Beth); three are new (daughter, Friend A, Friend B).
 - **Stopped at the avatar gate** — waiting for the user's Confirm/Fix on the sheets and answers to the flags.
@@ -28,6 +34,7 @@ F3 hooks count · F4 Botox lines for paid Meta · F6 "reads your skin" / niacina
 ## For the owner (keys-exe) — system changes asked/needed, not made from this account
 - Add this build's row to the CLAUDE.md board table (four links above) and the Routine line (`trig_01XaBTxvhuhW64zeHnySBmKR`, :52 UTC).
 - Add the FACELOVE Product Sheet to `products/facelove/` (the client's `facelove_product_sheet.py` V7.49.5 + its `--md` prose and the product photos are in `builds/facelove-my-mother/product/`).
+- `takes.py` SPLIT "length" counts shots only (≤ 4) and ignores seconds, while its TAKE+ check holds a take to 15 s — so a split of two takes that together run over 15 s but hold ≤ 4 shots fails falsely. Suggest: a length split holds when the joined take would exceed --max-shots OR --max-seconds.
 - §19 has no rule for client-supplied cast pictures: this build attached each picture as Image 1 and copied the face onto the five-panel sheet (F1). Consider writing that into §19.
 
 ## Next (on the user's go)
