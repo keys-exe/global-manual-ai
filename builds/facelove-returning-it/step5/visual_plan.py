@@ -21,14 +21,10 @@ G = [
    ("REACTION", "two fingertips pat the finished cheek, then her eyes come to the lens, quietly pleased; her crow's feet still there", s(2, 2, 2, 2, 1, 2)),
    ("PROOF", "a slow look at the blended cheek in window light", s(1, 2, 1, 1, 1, 2)),
    ("SYMBOL", "the capped stick set down on the vanity", s(1, 0, 1, 1, 1, 2))]),
-  row("B04", "Even the woman at the makeup counter", [
-   ("STAKES", "over the saleswoman's shoulder: she holds a bottle up to the creator's red jaw and tilts her head — already doubtful", s(2, 2, 2, 2, 2, 2)),
-   ("WORLD", "the whole beauty hall, the creator small at one counter", s(1, 1, 1, 1, 2, 2)),
-   ("LITERAL", "an empty makeup counter", s(0, 1, 0, 1, 1, 2))]),
-  row("B05", "told me my redness was too tricky to match", [
-   ("DETAIL", "three beige swatch stripes on her red jaw, none of them matching, the sponge hand lowering away", s(2, 2, 2, 2, 2, 2)),
-   ("REACTION", "the saleswoman shaking her head", s(1, 1, 1, 1, 1, 2)),
-   ("STAKES", "the creator looking down at the counter, deflated", s(1, 1, 2, 1, 1, 2))])]),
+  row("B05", "told me my redness was too tricky to match and I should not bother.", [
+   ("STAKES", "over the saleswoman's shoulder: she holds a bottle beside the creator's red jaw, three swatch stripes matching nothing, and slowly shakes her head", s(2, 2, 2, 2, 2, 2)),
+   ("DETAIL", "three beige swatch stripes on her red jaw, none matching", s(2, 2, 1, 2, 1, 2)),
+   ("WORLD", "the whole beauty hall, the creator small at one counter", s(1, 1, 1, 1, 2, 2))])]),
  dict(group="Act 2", role="proof", idea="the reasons pile up: each problem named is covered on her face, then the world notices", rows=[
   row("B06", "It is not because it covered the redness,", [
    ("CONTRAST", "her cheek half done — even on one side, red on the other — the brush stopping right on the border", s(2, 2, 2, 2, 2, 2)),
@@ -42,6 +38,10 @@ G = [
    ("PROOF", "the brush pats under her eye: the dark circle evens out while the crow's feet stay exactly where they were", s(2, 2, 2, 2, 2, 1)),
    ("STAKES", "her tired eye in the mirror before", s(1, 1, 2, 1, 1, 2)),
    ("LITERAL", "a macro of the dark circle", s(1, 1, 1, 1, 1, 2))]),
+  row("B08b", "I have been hiding for years, in one swipe.", [
+   ("PROOF", "one brush swipe across her cheekbone, then her whole face even, every line still there, eyes to the lens", s(2, 2, 2, 2, 1, 2)),
+   ("REACTION", "her raised-eyebrow look to the lens", s(1, 1, 2, 1, 1, 2)),
+   ("SYMBOL", "the concealer and three bottles she used to hide it pushed into a drawer", s(1, 1, 1, 2, 2, 1))]),
   row("B09", "And it is definitely not because three of my friends this week", [
    ("WORLD", "over her shoulder at the café: three friends lean in at once, coffees in hand, eyes on her face", s(2, 2, 2, 2, 2, 2)),
    ("REACTION", "one friend's eyebrows going up", s(1, 1, 1, 1, 1, 2)),
@@ -65,13 +65,17 @@ G = [
    ("LITERAL", "two sticks on a white background", s(1, 2, 0, 1, 1, 2)),
    ("CONTRAST", "one stick, then two", s(1, 2, 1, 1, 1, 2))], hero=True),
   row("B14", "plus a free primer, a mystery gift,", [
-   ("PRODUCT", "level with the vanity: the primer and the small gift box set down beside the two sticks", s(2, 2, 1, 2, 2, 2)),
-   ("DETAIL", "the gift box lid lifted a crack", s(1, 1, 1, 1, 2, 1)),
+   ("PRODUCT", "level with the vanity: the primer and the small gift box set down beside the two sticks", s(2, 2, 1, 1, 1, 2)),
+   ("DETAIL", "level with the vanity: her hand sets the primer and the small gift box beside the two sticks, the box lid ajar on a fold of tissue paper", s(2, 2, 1, 2, 2, 2)),
    ("LITERAL", "the primer tube alone", s(1, 1, 0, 1, 1, 2))]),
-  row("B15", "So I am sending back my one,", [
-   ("SYMBOL", "straight down: her hands slide the one stick back into its carton and push it into a grey return mailer", s(2, 2, 2, 2, 2, 2)),
-   ("LITERAL", "a parcel on a doorstep", s(1, 1, 0, 1, 1, 2)),
-   ("REACTION", "her shrug to the lens", s(1, 1, 1, 0, 1, 2))])]),
+  row("B14b", "and a full thirty day money back guarantee.", [
+   ("PRODUCT", "low on the vanity: her hand slides the whole bundle — two sticks, primer, gift box — toward the lens", s(2, 2, 1, 2, 2, 2)),
+   ("SYMBOL", "a calendar page with thirty days", s(1, 1, 0, 1, 1, 1)),
+   ("REACTION", "her shrug — nothing to lose", s(1, 1, 1, 1, 1, 2))]),
+  row("B15b", "and buying the deal like I should have.", [
+   ("WORLD", "on her front step in the morning sun she picks up the delivery box and tucks it under her arm with a grin", s(2, 2, 2, 2, 2, 2)),
+   ("PRODUCT", "the bundle unboxed on the vanity", s(1, 2, 1, 1, 1, 2)),
+   ("LITERAL", "a parcel on a doorstep", s(1, 1, 0, 1, 1, 2))])]),
  dict(group="Act 5", role="offer", idea="the formula, not her skin: her finished face and the stick in one frame", rows=[
   row("B16", "It was never your skin. It was the formula.", [
    ("PROOF", "she lifts the stick beside her even cheek, wordmark to the lens, every line of her face still there", s(2, 2, 2, 2, 2, 2)),

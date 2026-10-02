@@ -40,8 +40,9 @@
   "plate": "P: her face from her left side, the stick in her right hand",
   "face_state": "N-BEFORE",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.67
  },
  {
   "beat": "B02",
@@ -84,8 +85,9 @@
   "plate": "profile of her right cheek, window behind the phone",
   "face_state": "N-BEFORE",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.29
  },
  {
   "beat": "B03",
@@ -128,60 +130,34 @@
   "plate": "her face three-quarter from below the chin",
   "face_state": "N-AFTER",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 6,
+  "max": null,
+  "on_screen_s": 4.21
  },
  {
-  "beat": "B04",
+  "beat": "TH-01",
   "group": "Act 1",
   "act": "Act 1",
-  "type": "BR",
+  "type": "TH",
   "line": "Even the woman at the makeup counter",
-  "story_day": "D0",
-  "location": "L-COUNTER",
+  "story_day": "REC",
+  "location": "L-VANITY",
   "cast": [
-   "N",
-   "C1"
+   "N"
   ],
   "subject": "N",
-  "height": "eye",
-  "side": "ots",
-  "scale": "MEDIUM",
-  "fg": "through",
-  "why": "over the saleswoman's shoulder — we stand on the side of the one judging her",
   "mode": 1,
-  "focus": {
-   "plane": "eyes",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "light": {
-   "source": "store ceiling downlights",
-   "key_side": "R",
-   "time": "afternoon",
-   "arc": "flat cool store light",
-   "kelvin": 4000
-  },
   "face": true,
-  "product_beat": false,
-  "action": "she sits on the stool at the counter; the saleswoman behind the counter, back of her shoulder in frame, holds a foundation bottle up beside her jaw and tilts her head",
-  "pace": "one slow head tilt",
-  "camera": "phone held by a friend at counter height, steady",
-  "staging": "",
-  "pin_end": false,
-  "plate": "L-COUNTER from behind the counter",
-  "face_state": "N-BEFORE",
-  "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "face_state": "N-AFTER",
+  "seed": "N-VOICE-IMG",
+  "layout": "full"
  },
  {
   "beat": "B05",
   "group": "Act 1",
   "act": "Act 1",
   "type": "BR",
-  "line": "told me my redness was too tricky to match",
+  "line": "told me my redness was too tricky to match and I should not bother.",
   "story_day": "D0",
   "location": "L-COUNTER",
   "cast": [
@@ -190,13 +166,13 @@
   ],
   "subject": "N",
   "height": "high",
-  "side": "three-quarter",
-  "scale": "CU",
-  "fg": "clean",
-  "why": "from above — she is being looked down on",
+  "side": "ots",
+  "scale": "MEDIUM",
+  "fg": "through",
+  "why": "over the saleswoman's shoulder, a little above — she is being looked down on",
   "mode": 1,
   "focus": {
-   "plane": "foreground",
+   "plane": "eyes",
    "dof": "medium",
    "rack": null,
    "moving_subject": false
@@ -210,34 +186,17 @@
   },
   "face": true,
   "product_beat": false,
-  "action": "three short swatch stripes of different beige foundations on her jawline, none matching the redness around them; the saleswoman's hand with a sponge lowers out of frame",
-  "pace": "the hand lowers, about 1 s",
-  "camera": "phone held still",
+  "action": "at the counter, the saleswoman, her back shoulder in frame, holds a beige foundation bottle beside the creator's red jaw, where three swatch stripes match nothing, and slowly shakes her head",
+  "pace": "one slow head shake, about 2 s",
+  "camera": "phone held by a friend at counter height, steady",
   "staging": "",
   "pin_end": false,
-  "plate": "her jaw and cheek from above her right shoulder",
+  "plate": "L-COUNTER from behind the counter",
   "face_state": "N-BEFORE",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
- },
- {
-  "beat": "TH-01",
-  "group": "Act 1",
-  "act": "Act 1",
-  "type": "TH",
-  "line": "and I should not bother.",
-  "story_day": "REC",
-  "location": "L-VANITY",
-  "cast": [
-   "N"
-  ],
-  "subject": "N",
-  "mode": 1,
-  "face": true,
-  "face_state": "N-AFTER",
-  "seed": "N-VOICE-IMG",
-  "layout": "full"
+  "duration": 5,
+  "max": null,
+  "on_screen_s": 3.88
  },
  {
   "beat": "B06",
@@ -280,8 +239,9 @@
   "plate": "front of her left cheek",
   "face_state": "mid",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.54
  },
  {
   "beat": "B07",
@@ -324,8 +284,9 @@
   "plate": "her right jaw from below",
   "face_state": "N-BEFORE",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.96
  },
  {
   "beat": "B08",
@@ -368,14 +329,15 @@
   "plate": "her right eye from above, three-quarter",
   "face_state": "mid",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.17
  },
  {
-  "beat": "TH-02",
+  "beat": "B08b",
   "group": "Act 2",
   "act": "Act 2",
-  "type": "TH",
+  "type": "BR",
   "line": "I have been hiding for years, in one swipe.",
   "story_day": "REC",
   "location": "L-VANITY",
@@ -383,11 +345,38 @@
    "N"
   ],
   "subject": "N",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "square to her finished face — one swipe, the whole result",
   "mode": 1,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "bedroom window, west wall",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "soft late-afternoon window light",
+   "kelvin": 5000
+  },
   "face": true,
+  "product_beat": false,
+  "action": "she draws the brush end once across her cheekbone and lowers it; her whole face is one even tone, every line still there; her eyes come to the lens",
+  "pace": "one swipe, about 2 s",
+  "camera": "handheld selfie distance, slight sway",
+  "staging": "",
+  "pin_end": false,
+  "plate": "her face square, window left",
   "face_state": "N-AFTER",
-  "seed": "N-VOICE-IMG",
-  "layout": "full"
+  "layout": "full",
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.92
  },
  {
   "beat": "B09",
@@ -433,8 +422,9 @@
   "plate": "L-CAFE from her chair",
   "face_state": "N-AFTER",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 5,
+  "max": null,
+  "on_screen_s": 3.38
  },
  {
   "beat": "B10",
@@ -477,26 +467,9 @@
   "plate": "C2 across the table, window on the left",
   "face_state": null,
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
- },
- {
-  "beat": "TH-03",
-  "group": "Act 2",
-  "act": "Act 2",
-  "type": "TH",
-  "line": "because my skin looks so even.",
-  "story_day": "REC",
-  "location": "L-VANITY",
-  "cast": [
-   "N"
-  ],
-  "subject": "N",
-  "mode": 1,
-  "face": true,
-  "face_state": "N-AFTER",
-  "seed": "N-VOICE-IMG",
-  "layout": "full"
+  "duration": 5,
+  "max": null,
+  "on_screen_s": 3.38
  },
  {
   "beat": "TH-04",
@@ -557,8 +530,9 @@
   "plate": "P-HOME, at the console and mirror",
   "face_state": "N-AFTER",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.46
  },
  {
   "beat": "B12",
@@ -601,8 +575,9 @@
   "plate": "L-FRONT from the path",
   "face_state": "N-AFTER",
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.83
  },
  {
   "beat": "TH-05",
@@ -663,15 +638,16 @@
   "plate": "vanity top",
   "face_state": null,
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 5,
+  "max": null,
+  "on_screen_s": 3.12
  },
  {
   "beat": "B14",
   "group": "Act 4",
   "act": "Act 4",
   "type": "BR",
-  "line": "plus a free primer, a mystery gift,",
+  "line": "plus a free primer, a mystery gift, free shipping,",
   "story_day": "REC",
   "location": "L-VANITY",
   "cast": [
@@ -707,44 +683,27 @@
   "plate": "vanity top, low and level",
   "face_state": null,
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 5,
+  "max": null,
+  "on_screen_s": 3.29
  },
  {
-  "beat": "TH-06",
-  "group": "Act 4",
-  "act": "Act 4",
-  "type": "TH",
-  "line": "free shipping, and a full thirty day money back guarantee.",
-  "story_day": "REC",
-  "location": "L-VANITY",
-  "cast": [
-   "N"
-  ],
-  "subject": "N",
-  "mode": 1,
-  "face": true,
-  "face_state": "N-AFTER",
-  "seed": "N-VOICE-IMG",
-  "layout": "full"
- },
- {
-  "beat": "B15",
+  "beat": "B14b",
   "group": "Act 4",
   "act": "Act 4",
   "type": "BR",
-  "line": "So I am sending back my one,",
+  "line": "and a full thirty day money back guarantee.",
   "story_day": "REC",
   "location": "L-VANITY",
   "cast": [
    "N"
   ],
   "subject": "N",
-  "height": "overhead",
+  "height": "low",
   "side": "front",
   "scale": "CU",
   "fg": "clean",
-  "why": "straight down — the return, as a task",
+  "why": "low and level with the vanity top — the whole deal, safe",
   "mode": 1,
   "focus": {
    "plane": "product",
@@ -761,23 +720,24 @@
   },
   "face": false,
   "product_beat": true,
-  "action": "her hands slide the one closed stick back into its carton and push the carton into a plain grey return mailer",
-  "pace": "one slide, one push, about 2 s",
-  "camera": "phone held above, still",
+  "action": "her hand slides the full bundle — two closed sticks, the primer and the gift box — a hand's width toward the lens and lets go",
+  "pace": "one slow slide, about 1 s",
+  "camera": "phone held still",
   "staging": "",
   "pin_end": true,
-  "plate": "vanity top from above",
+  "plate": "vanity top, low",
   "face_state": null,
   "layout": "full",
-  "duration": "pending-master",
-  "max": null
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.71
  },
  {
-  "beat": "TH-07",
+  "beat": "TH-06",
   "group": "Act 4",
   "act": "Act 4",
   "type": "TH",
-  "line": "and buying the deal like I should have.",
+  "line": "So I am sending back my one,",
   "story_day": "REC",
   "location": "L-VANITY",
   "cast": [
@@ -789,6 +749,51 @@
   "face_state": "N-AFTER",
   "seed": "N-VOICE-IMG",
   "layout": "full"
+ },
+ {
+  "beat": "B15b",
+  "group": "Act 4",
+  "act": "Act 4",
+  "type": "BR",
+  "line": "and buying the deal like I should have.",
+  "story_day": "D3",
+  "location": "L-FRONT",
+  "cast": [
+   "N"
+  ],
+  "subject": "N",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "from above on the step — the deal arrives",
+  "mode": 1,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "morning sun, east",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "clear morning sun, the delivery",
+   "kelvin": 5600
+  },
+  "face": true,
+  "product_beat": true,
+  "action": "on her front step she bends and picks up a plain brown delivery box, tucking it under her arm with a small grin",
+  "pace": "one pick-up, about 2 s",
+  "camera": "phone held still from the doorway",
+  "staging": "",
+  "pin_end": false,
+  "plate": "L-FRONT, the step by the rosemary pot",
+  "face_state": "N-AFTER",
+  "layout": "full",
+  "duration": 4,
+  "max": null,
+  "on_screen_s": 2.38
  },
  {
   "beat": "TH-08",
@@ -849,8 +854,9 @@
   "plate": "her face three-quarter, window left",
   "face_state": "N-AFTER",
   "layout": "full",
-  "duration": "pending-master",
+  "duration": 5,
   "max": null,
-  "whole": "the two short sentences make one picture (each under 2 s)"
+  "whole": "the two short sentences make one picture (each under 2 s)",
+  "on_screen_s": 3.21
  }
 ]

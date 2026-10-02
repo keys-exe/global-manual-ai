@@ -140,18 +140,30 @@
      "hero": false
     },
     {
-     "beat": "B04",
-     "line": "Even the woman at the makeup counter",
+     "beat": "B05",
+     "line": "told me my redness was too tricky to match and I should not bother.",
      "candidates": [
       {
        "route": "STAKES",
-       "picture": "over the saleswoman's shoulder: she holds a bottle up to the creator's red jaw and tilts her head — already doubtful",
+       "picture": "over the saleswoman's shoulder: she holds a bottle beside the creator's red jaw, three swatch stripes matching nothing, and slowly shakes her head",
        "score": {
         "stop": 2,
         "line": 2,
         "feel": 2,
         "specific": 2,
         "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "three beige swatch stripes on her red jaw, none matching",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
         "makeable": 2
        }
       },
@@ -164,62 +176,6 @@
         "feel": 1,
         "specific": 1,
         "fresh": 2,
-        "makeable": 2
-       }
-      },
-      {
-       "route": "LITERAL",
-       "picture": "an empty makeup counter",
-       "score": {
-        "stop": 0,
-        "line": 1,
-        "feel": 0,
-        "specific": 1,
-        "fresh": 1,
-        "makeable": 2
-       }
-      }
-     ],
-     "pick": 0,
-     "hero": false
-    },
-    {
-     "beat": "B05",
-     "line": "told me my redness was too tricky to match",
-     "candidates": [
-      {
-       "route": "DETAIL",
-       "picture": "three beige swatch stripes on her red jaw, none of them matching, the sponge hand lowering away",
-       "score": {
-        "stop": 2,
-        "line": 2,
-        "feel": 2,
-        "specific": 2,
-        "fresh": 2,
-        "makeable": 2
-       }
-      },
-      {
-       "route": "REACTION",
-       "picture": "the saleswoman shaking her head",
-       "score": {
-        "stop": 1,
-        "line": 1,
-        "feel": 1,
-        "specific": 1,
-        "fresh": 1,
-        "makeable": 2
-       }
-      },
-      {
-       "route": "STAKES",
-       "picture": "the creator looking down at the counter, deflated",
-       "score": {
-        "stop": 1,
-        "line": 1,
-        "feel": 2,
-        "specific": 1,
-        "fresh": 1,
         "makeable": 2
        }
       }
@@ -360,6 +316,50 @@
         "specific": 1,
         "fresh": 1,
         "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "B08b",
+     "line": "I have been hiding for years, in one swipe.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "one brush swipe across her cheekbone, then her whole face even, every line still there, eyes to the lens",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her raised-eyebrow look to the lens",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the concealer and three bottles she used to hide it pushed into a drawer",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
        }
       }
      ],
@@ -611,21 +611,21 @@
         "stop": 2,
         "line": 2,
         "feel": 1,
-        "specific": 2,
-        "fresh": 2,
+        "specific": 1,
+        "fresh": 1,
         "makeable": 2
        }
       },
       {
        "route": "DETAIL",
-       "picture": "the gift box lid lifted a crack",
+       "picture": "level with the vanity: her hand sets the primer and the small gift box beside the two sticks, the box lid ajar on a fold of tissue paper",
        "score": {
-        "stop": 1,
-        "line": 1,
+        "stop": 2,
+        "line": 2,
         "feel": 1,
-        "specific": 1,
+        "specific": 2,
         "fresh": 2,
-        "makeable": 1
+        "makeable": 2
        }
       },
       {
@@ -641,22 +641,78 @@
        }
       }
      ],
+     "pick": 1,
+     "hero": false
+    },
+    {
+     "beat": "B14b",
+     "line": "and a full thirty day money back guarantee.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "low on the vanity: her hand slides the whole bundle — two sticks, primer, gift box — toward the lens",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "a calendar page with thirty days",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her shrug — nothing to lose",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
      "pick": 0,
      "hero": false
     },
     {
-     "beat": "B15",
-     "line": "So I am sending back my one,",
+     "beat": "B15b",
+     "line": "and buying the deal like I should have.",
      "candidates": [
       {
-       "route": "SYMBOL",
-       "picture": "straight down: her hands slide the one stick back into its carton and push it into a grey return mailer",
+       "route": "WORLD",
+       "picture": "on her front step in the morning sun she picks up the delivery box and tucks it under her arm with a grin",
        "score": {
         "stop": 2,
         "line": 2,
         "feel": 2,
         "specific": 2,
         "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PRODUCT",
+       "picture": "the bundle unboxed on the vanity",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
         "makeable": 2
        }
       },
@@ -668,18 +724,6 @@
         "line": 1,
         "feel": 0,
         "specific": 1,
-        "fresh": 1,
-        "makeable": 2
-       }
-      },
-      {
-       "route": "REACTION",
-       "picture": "her shrug to the lens",
-       "score": {
-        "stop": 1,
-        "line": 1,
-        "feel": 1,
-        "specific": 0,
         "fresh": 1,
         "makeable": 2
        }
