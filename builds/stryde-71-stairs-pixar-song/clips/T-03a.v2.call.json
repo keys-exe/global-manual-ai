@@ -1,0 +1,61 @@
+{
+ "beat": "T-03a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Both her knees was bone on bone too.\": From this frame: the warm glow where the bones touch pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig. In both knee models the small warm glow where the bones touch swells once and settles back; the bones, the white tendon ribbons, the see-through peach outline and the pale grey backdrop stay exactly as in the frame; nobody in the frame, nobody speaks. Stylized 3D animated anatomy, exactly on model from the frame. The camera pushes in slowly on one straight axis, nothing more; no cut.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_111159_d97a0722-1ff3-42d0-8149-483408e54490.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Both her knees was bone on bone too.",
+ "motion_plan": "From this frame: the warm glow where the bones touch pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "one pulse",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user \"the t03a too\" → the image redone in the Pixar anatomy, so a new clip on the new frame (clip v1 was on the old X-ray frame)",
+ "fix_notes_all": [
+  "user \"the t03a too\" → the image redone in the Pixar anatomy, so a new clip on the new frame (clip v1 was on the old X-ray frame)"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image T-03a@v6A2, job d97a0722-1ff3-42d0-8149-483408e54490)"
+}
