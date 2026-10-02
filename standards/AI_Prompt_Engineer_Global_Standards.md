@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.89.2 — supersedes all prior versions.** *(V7.89.2: S1 Ghost keeps the house picture's look but never attaches the picture — the look in words on every S1 call, the picture the bar each render is judged against; `preflight.py` refuses an S1 call that attaches it — §12A-1, LESSONS L32)*
+**Version 7.90.0 — supersedes all prior versions.** *(Pixar anatomy: in Modes 2 and 5 every anatomy beat is drawn by the film itself — `ANAT-PIX` opens the prompt, then the style's `ANAT-PIX-S<n>` line (S1–S7 in Pixar form, the character's own leg in her world), never the medical-CGI words; S5 stays on the stylised route; `preflight.py` checks it — §12A-1, V7.90.0)*
 
 ---
 
@@ -1220,8 +1220,33 @@ Every anatomy or mechanism beat names its **style** on the act-map row (`anat.st
 2. **Picked by the line, never by habit.** The table above; the act map writes the reason (`anat.why`). A script visual note naming a style (`X-RAY:`) wins (§27F).
 3. **A matched pair stays matched.** A problem → relief match-cut pair (§12A duration) shares its style, angle and move on purpose (`pair_of` on the second row) and counts once.
 4. **What never changes across styles:** the same body (left or right as cast, the same `[REGION]`), the same `[SITE]` and product placement (§9A-P), the colour language (§11 — pain warm, relief cool — each style says it its own way: a warm glow on the X-ray film, the accent on the scan), the product at hero scale and true materials, the safety vocabulary, `NEG-FLOW` and `NEG-EXTERNAL`. `ANAT-LIGHT` and `ANAT-FIELD` belong to S1 (and S7's field); every other style carries its own light in its register line.
-5. **Modes 2, 3 and 5** render the same seven styles in the mode's own look (a Pixar-styled X-ray, a clay cross-section, `CLAY-DIAGRAM` for S7 in Mode 3) — never photoreal. Mode 4 enters any style through the world (§24G `MECH-SCREEN`: an X-ray on a lightbox, a scan on a monitor).
-6. **Routing (§18A):** anatomy styles S1–S4, S6, S7 are the anatomy route (two Nano Banana Pro renders); S5 is a Mode 1 capture (two Sunburst renders).
+5. **Modes 2, 3 and 5** render the same seven styles in the mode's own look — never photoreal. **Modes 2 and 5 use Pixar anatomy (below, V7.90.0)**; Mode 3 renders them in clay (`CLAY-DIAGRAM` for S7). Mode 4 enters any style through the world (§24G `MECH-SCREEN`: an X-ray on a lightbox, a scan on a monitor).
+6. **Routing (§18A):** anatomy styles S1–S4, S6, S7 are the anatomy route (two Nano Banana Pro renders); S5 is a Mode 1 capture (two Sunburst renders) — **in Modes 2, 3 and 5 it stays on the stylised route** (two Nano Banana Pro renders), since a photographed model would break the film's look.
+
+### Pixar anatomy — Modes 2 and 5 *(new V7.90.0, user 2026-10-02 — "do we have a pixar style anatomy?" → "lets make one")*
+
+Until now rule 5 was one sentence, and the anatomy beats of the first Mode 2 build came back as ordinary medical CGI: the misty realistic knee, a photoreal leg with a textbook muscle cutaway on a grey studio field (`stryde-71-stairs-pixar-song` M-03a, M-05a). The render line was there but sat at the end, so the realistic anatomy words ahead of it won. **In a Pixar build the anatomy is drawn by the same film as everything else.**
+
+1. **The world opens the prompt.** Straight after the line, every Mode 2 / 5 anatomy beat opens with **`ANAT-PIX`** (Appendix A): the render line, then the anatomy as the film's own animators would draw it. That means simplified, rounded, readable forms with no fibre detail, no medical texture and nothing textbook. Bones are smooth soft-edged shapes in warm ivory-peach, tendons are clean ribbon-like bands in pearly white, and muscle (only when the line names one) is a few soft rounded bundles in warm rose. The `PIX-LIGHT` sources light it, and pain and relief keep the colour language (a small soft warm glow of light at `[SITE]`, a soft cool blue for relief).
+2. **Then the style's Pixar line** (`ANAT-PIX-S1` … `ANAT-PIX-S7`), never the realistic `ANAT-STYLE-S<n>` and never `ANAT-BASE`:
+
+| Style | In a Pixar build |
+|---|---|
+| **S1 Ghost** | The character's leg turned into a soft smoky see-through outline like glowing mist, in her own proportions; rounded ivory-peach bones and white ribbon tendons inside; a deep navy-black storybook night with soft floating sparkles |
+| **S2 X-ray** | A storybook X-ray: her leg as a glowing blue-white silhouette on a lightbox in her world (the doctor's room), rounded simplified bones, the product a crisp outline |
+| **S3 Clinical model** | A friendly toy-like knee model on a desk or table in her world, chunky rounded parts in clean bright colours, soft warm light |
+| **S4 On-body window** | Her own leg in the scene's set, in her outfit, with a soft round glowing window on the skin centred on the true spot, showing the rounded bones and the tendon ribbon inside, the warm glow inside the window, its rim a thin warm light |
+| **S5 Physical model** | A plastic knee model in the film's style held in her stylised hands (four chunky fingers and a thumb), a fingertip on `[SITE]` |
+| **S6 Scan** | A stylised scan on a screen in her world, with rounded slice shapes, one warm accent on `[TARGET]` and a soft monitor glow |
+| **S7 Cross-section** | A storybook cut-away of her leg like a slice of layered cake: soft rounded layers in warm friendly colours (skin, a thin soft layer, the tendon ribbon, the bone) on a soft painted backdrop |
+
+3. **Her leg, not a body.** S1, S4, S5 and S7 show the character's own leg: her skin tone, proportions and the day's clothing from the wardrobe map, with her cast sheet or a confirmed frame attached for the character (never the S1 house picture, L32). S2, S3 and S6 sit in her world (the doctor's lightbox, her kitchen table, a screen in the clinic).
+4. **The product keeps `PIX-SPLIT`:** the strap stays the real product, at true scale on the stylised leg.
+5. **Never** `ANAT-BASE`, "premium 3D anatomical visualisation", "medical education", "broadcast-quality", photoreal, "natural tissue colours", fibre or fibrous detail, "textbook", or a grey seamless studio. Those words pull the model back to medical CGI.
+
+**First renders** *(2026-10-02, nano_banana route on Higgsfield, two A/B pairs, 8 cr, no build)*: S1 and S4 came back as storybook / 3D-animated anatomy, rounded and warm, with nothing medical left. Two faults were fixed in the strings before this cut. The word *ember* drew a cartoon flame icon on the knee, so the pain is now "a small soft warm glow of light" and nothing names a flame (L13). On S4 the glow landed below the window, so the window is now centred on `[SITE]` with the glow inside it. Kept as the team's first look at the style: `references/anatomy/pixar_samples/` is the look to judge by, never attached (L32).
+
+**Checked by `preflight.py`** on every Mode 2 / 5 anatomy image: `ANAT-PIX` within the prompt's first 400 characters, and none of the medical-CGI words above outside the negatives. The other Mode 2 / 5 checks still apply (render line, style reference, scale, facing, hands), and so do the S1 words (smoky see-through outline, ivory-peach, navy-black).
 
 ### Anatomy and mechanism camera — a range of angles and moves *(V7.81.0)*
 
@@ -7436,6 +7461,22 @@ S6  A medical scan image: a greyscale MRI slice through the [REGION], [TARGET] p
 S7  A clean 3D cross-section of the [REGION], cut along one plane like a layered cake on a neutral grey field: outer contour, soft tissue, [TARGET] and bone in order.
 ```
 
+**`ANAT-PIX`** — opens every Mode 2 / 5 anatomy beat, straight after the line (§12A-1 Pixar anatomy, V7.90.0); then the style's `ANAT-PIX-S<n>` line. Never with `ANAT-BASE`.
+```
+A final frame from a 3D animated feature film, stylized storybook render. The anatomy is drawn the way this film's own animators would draw it: simple, rounded, readable shapes, no fibre detail, no textbook look. Bones are smooth ivory-peach shapes with a soft inner glow; tendons are clean pearly-white ribbons; muscle, only where named, a few soft rose bundles. Three lights: warm key, cool fill, rim. Pain is a small soft warm glow of light at [SITE]; relief a soft cool blue.
+```
+
+**`ANAT-PIX-S1` … `ANAT-PIX-S7`** — the style's Pixar line (§12A-1 Pixar anatomy, V7.90.0), after `ANAT-PIX` on every Mode 2 / 5 anatomy beat; the video prompt keeps it word for word.
+```
+S1  [CHARACTER]'s [REGION] turned into a soft smoky see-through outline like glowing mist, in her own proportions; rounded ivory-peach bones and white ribbon tendons inside; a deep navy-black storybook night with soft floating sparkles.
+S2  A storybook X-ray: [CHARACTER]'s [REGION] as a glowing blue-white silhouette on a lightbox in [SET], rounded simplified bones, the product a crisp outline.
+S3  A friendly toy-like model of the [REGION] on [SURFACE] in [SET], chunky rounded parts in clean bright colours, soft warm light.
+S4  [CHARACTER]'s own [REGION] in [SET], in the day's clothes, with a soft round glowing window on the skin centred on [SITE], showing the rounded bones and the tendon ribbon inside, the warm glow inside the window, its rim a thin warm light.
+S5  A plastic model of the [REGION] in the film's style, held in [CHARACTER]'s stylized hands (four chunky fingers and a thumb each), a fingertip on [SITE].
+S6  A stylized scan of the [REGION] on a screen in [SET]: rounded slice shapes, one warm accent on [TARGET], a soft monitor glow.
+S7  A storybook cut-away of [CHARACTER]'s [REGION] like a slice of layered cake: soft rounded layers in warm friendly colours — skin, a thin soft layer, the tendon ribbon, the bone — on a soft painted backdrop.
+```
+
 **`ANAT-ANGLE-*`** — fills `[ANAT-ANGLE]` (V7.81.0): `FRONT` from directly in front of the joint, level · `LOW34` from a low three-quarter angle, foreshortened · `LAT` in true side profile, the limb running vertically, framed wide · `BACK` from behind the joint, level · `HIGH34` from above at three-quarters, looking down at the bent joint · `TOP` from directly above the bent knee · `WORM` from just below the joint, looking up along the shin · `MACRO` so close that [SITE] and [TARGET] fill the frame · `WIDE` the whole limb from hip to ankle.
 
 **`ANAT-REST`** — resting state. **Start frame only for a beat whose action is the onset itself** (§12A). *(158)*
@@ -9394,6 +9435,18 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.89.2 → V7.90.0 *(cut authorised)*
+
+| § | Change |
+|---|---|
+| **12A-1** | Rule 5 points to the new **Pixar anatomy** part (Modes 2 and 5). `ANAT-PIX` opens every anatomy beat straight after the line, then the style's Pixar line. S1–S7 each have a Pixar form; S1, S4, S5 and S7 show the character's own leg, while S2, S3 and S6 sit in her world. The product keeps `PIX-SPLIT`. The medical-CGI words are banned. Rule 6: S5 stays on the stylised route in Modes 2, 3 and 5 |
+| **Appendix A** | `ANAT-PIX` and `ANAT-PIX-S1` … `ANAT-PIX-S7` (new) |
+| Files | `preflight.py` (Mode 2 / 5 anatomy: `ANAT-PIX` near the top, no medical-CGI words; S5 stylised route), both skills, CLAUDE.md |
+
+**Origin:** user, 2026-10-02: "do we have a pixar style anatomy?" → "lets make one". Measured: `stryde-71-stairs-pixar-song` M-03a and M-05a (Mode 2) came back as medical CGI, with the render line at the end of the prompt. They are not changed; that build's team decides.
 
 ---
 

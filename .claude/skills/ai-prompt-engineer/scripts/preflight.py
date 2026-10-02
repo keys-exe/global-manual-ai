@@ -114,6 +114,8 @@ STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
 BANNED = re.compile(r"\bcinematic\b", re.I)
+# §12A-1 Pixar anatomy (V7.90.0): words that pull a Mode 2 / 5 anatomy frame back to medical CGI
+PIX_ANAT_BAN = re.compile(r"premium 3D anatomical visuali[sz]ation|medical education|broadcast-quality|photo-?real(?:istic)?|natural tissue colou?rs|fibrous|fibre detail|textbook|seamless (?:studio|background)|pale grey seamless", re.I)
 # Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
 # touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
 PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
@@ -187,7 +189,8 @@ def run_image(c):
                   "e.g. 'her head level with the 6th baluster, the door handle at her hip; the daughter a head taller' — 'too big' is this mode's most repeated Fix")
             check("which way each character faces, in picture terms (§24O rule 4)", bool(STYLE_FACING.search(p)),
                   "e.g. 'her back to the lens, facing the church doors' or 'in profile, facing frame left'")
-            if HANDS.search(p):
+            no_hands = re.search(r"\b(?:no hands?|(?:both )?hands? (?:are )?(?:out of|outside the) frame)\b", p, re.I)
+            if HANDS.search(NEG_CLAUSE.sub("", p)) and not no_hands:   # "no hands in frame" names hands only to keep them out
                 check("stylised hands spelled out (§24O rule 5)", bool(STYLE_HANDS.search(p)), "e.g. 'each hand four chunky fingers and a thumb'")
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
@@ -244,11 +247,18 @@ def run_image(c):
             miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
                                     ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
             check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
-        if st and st != "S1":
+        if mode in (2, 5):   # V7.90.0 (user: "lets make one"): Pixar anatomy — drawn by the film, never medical CGI
+            head = p[:400]
+            check("Pixar anatomy: ANAT-PIX opens the prompt (§12A-1 V7.90.0)",
+                  "drawn the way this film's own animators would draw it" in head,
+                  "" if "drawn the way this film's own animators would draw it" in head else "start with the line, then ANAT-PIX (render line + the film's anatomy), then the style's ANAT-PIX-S<n> line")
+            med = PIX_ANAT_BAN.findall(NEG_CLAUSE.sub("", p.split("NEGATIVES:")[0]))
+            check("Pixar anatomy: no medical-CGI words (§12A-1 V7.90.0)", not med, ", ".join(sorted(set(m.lower() for m in med))))
+        if st and st != "S1" and mode not in (2, 5):
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
-        if st == "S5":
-            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work
+        if st == "S5" and mode not in (2, 3, 5):
+            anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work (stylised modes keep the stylised route, V7.90.0)
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
     if anatomy or mode in (2, 3, 5):
         why = "anatomy" if anatomy else f"Mode {mode}"
