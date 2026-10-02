@@ -12,30 +12,38 @@
  ],
  "focus": "deep · deep",
  "framing": "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
- "imageAsset": "d218befd4be6398d8e714ae7f0eb79f9",
- "imageAt": 1790891943025,
+ "imageAsset": "e51fb1ba1d7b2ddc67dc802a002e61ed",
+ "imageAt": 1790931151369,
  "imageConnector": "Higgsfield",
  "imageCredits": 2.14,
- "imageJob": "6a70a99a-bb3e-4968-8c4e-ea129e3cd76d",
+ "imageFault": "this should be loreta",
+ "imageJob": "366e9056-44ad-4e5a-b53f-8eb8596098c2",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
  "imagePair": [
-  3,
-  4
+  5,
+  6
  ],
- "imagePrompt": "For the line \"and she was out on that dance floor all night.\": Keep this photo exactly as it is — the hall, the parquet dance floor, the tables, the string lights and chandeliers, the evening light — seen from high above the tables, a tall 9:16 crop, and add the dancers. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nWide shot from high, looking down on the floor, sharp on the line: seven wedding guests in a line on the parquet, all facing the lens, mid side-step to their right in unison; in the middle an older Black woman with a silver bob in a fuchsia satin dress to the knee and white slip-on sneakers; arms loose, every hand open, four chunky fingers and a thumb. Scale true to the set: the dancers come up to the bottom of the string lights.\nIn frame: seven dancers, the dance floor, the edge of the round tables and the lights of Image 1; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Clothing and decor plain — no lettering, logos or labels.",
+ "imageParts": [],
+ "imagePrompt": "For the line \"and she was out on that dance floor all night.\": Keep this photo exactly as it is — the hall, the parquet dance floor, the tables, the lights — seen from a little above the floor's edge, a tall 9:16 crop, and add the dancers. Image 1 is the hall. Image 2 is Loretta — the same woman, face, silver bob, build and fuchsia satin dress as in Image 2. Image 3 is the style — the same render, materials, light and proportions.\nWide shot from high, sharp on Loretta: the same woman as Image 2, seventy-four, leads a line dance at the front of the line, nearest the lens and largest in frame, facing the lens, mid side-step to her right, a big grin with lips closed, eyes on the floor ahead; white slip-on sneakers; four guests in a row behind her step with her. Arms loose, every hand open, four chunky fingers and a thumb. Scale true to the set: she comes up to the second row of string lights.\nIn frame: Loretta, four dancers behind her, the parquet, the lights of Image 1; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. No lettering, logos or labels.",
  "imageRefs": [
   {
-   "kind": "location",
    "label": "P3-RECEPTION plate (confirmed)",
+   "kind": "location",
    "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
   },
   {
-   "kind": "style",
+   "label": "T-01b frame v3 A (confirmed) — Loretta: face, silver bob, the fuchsia dress, her build",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__T-01b"
+  },
+  {
    "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
+ "imageRegens": 2,
  "imageRes": "1536×2752",
  "imageStatus": "review",
  "imageTaste": [
@@ -47,15 +55,18 @@
   "HT21",
   "HT22",
   "HT25",
+  "HT26",
   "FP13",
   "FP14",
-  "FP17",
-  "HT26"
+  "FP17"
  ],
  "imageType": "image/png",
- "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_6a70a99a-bb3e-4968-8c4e-ea129e3cd76d.png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084910_366e9056-44ad-4e5a-b53f-8eb8596098c2.png",
  "imageVersions": [
   {
+   "archiveAsset": "0da332385d9ceace73d198838bb2eb58",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "65334c609f4fba0eb7774350cca40671",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -78,12 +89,12 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_ef04c94b-37c7-4828-b4e5-2ba9325aad8a.png",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "0da332385d9ceace73d198838bb2eb58",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
+   "archiveAsset": "a84ec499f85a071643b980ff22b0e6e6",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "d6aaa6c949496cd7939c6cbde199d454",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -106,51 +117,47 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_5f0b48ab-f3c6-4f78-93db-8e26a034a283.png",
-   "v": 2,
+   "v": 2
+  },
+  {
+   "asset": "d218befd4be6398d8e714ae7f0eb79f9",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6a70a99a-bb3e-4968-8c4e-ea129e3cd76d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the line dance from high above the tables, Loretta in fuchsia and white slip-ons in the middle of the line — A six dancers, B seven (one more older woman in pale blue) · replaced on the user's Fix \"this should be loreta\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "res": "1536×2752",
+   "size": 9201982,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_6a70a99a-bb3e-4968-8c4e-ea129e3cd76d.png",
+   "v": 3,
    "archived": true,
-   "archiveAsset": "a84ec499f85a071643b980ff22b0e6e6",
+   "archiveAsset": "6dd123344027747e96b886eed4e7591a",
    "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   },
   {
-   "v": 3,
-   "pair": "A",
-   "asset": "d218befd4be6398d8e714ae7f0eb79f9",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_6a70a99a-bb3e-4968-8c4e-ea129e3cd76d.png",
-   "job": "6a70a99a-bb3e-4968-8c4e-ea129e3cd76d",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "asset": "1dd72107078ac6875a3a0a80e99e7441",
+   "at": 1790891943025,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 9201982,
-   "res": "1536×2752",
-   "at": 1790891943025,
-   "refs": [
-    {
-     "kind": "location",
-     "label": "P3-RECEPTION plate (confirmed)",
-     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
-    },
-    {
-     "kind": "style",
-     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
-     "ref": "stryde-71-stairs-pixar-song__P-05c"
-    }
-   ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the line dance from high above the tables, Loretta in fuchsia and white slip-ons in the middle of the line — A six dancers, B seven (one more older woman in pale blue)"
-  },
-  {
-   "v": 4,
-   "pair": "B",
-   "asset": "1dd72107078ac6875a3a0a80e99e7441",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_c7a5b0cb-f63a-4220-8b90-8f0467781ba6.png",
    "job": "c7a5b0cb-f63a-4220-8b90-8f0467781ba6",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 9058868,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the line dance from high above the tables, Loretta in fuchsia and white slip-ons in the middle of the line — A six dancers, B seven (one more older woman in pale blue) · replaced on the user's Fix \"this should be loreta\"; kept on Old versions 2",
+   "pair": "B",
    "refs": [
     {
      "kind": "location",
@@ -163,7 +170,78 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the line dance from high above the tables, Loretta in fuchsia and white slip-ons in the middle of the line — A six dancers, B seven (one more older woman in pale blue)"
+   "res": "1536×2752",
+   "size": 9058868,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_c7a5b0cb-f63a-4220-8b90-8f0467781ba6.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "d025b55a60bc08f7f15b75da2dafe1c1",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 5,
+   "pair": "A",
+   "asset": "e51fb1ba1d7b2ddc67dc802a002e61ed",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084910_366e9056-44ad-4e5a-b53f-8eb8596098c2.png",
+   "job": "366e9056-44ad-4e5a-b53f-8eb8596098c2",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7416710,
+   "res": "1536×2752",
+   "at": 1790931151369,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "T-01b frame v3 A (confirmed) — Loretta: face, silver bob, the fuchsia dress, her build",
+     "kind": "character",
+     "ref": "stryde-71-stairs-pixar-song__T-01b"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-02 Fix: \"this should be loreta\" → Loretta's confirmed T-01b frame as Image 2 (face, silver bob, the fuchsia dress, her build); she leads the line at the front, nearest the lens · what I see: Loretta (silver bob, the fuchsia dress, white slip-ons) leads the line nearest the lens, a closed-mouth grin, guests stepping behind her — A eye-level with the line in a row behind her, B a little wider with the DJ booth and couples behind"
+  },
+  {
+   "v": 6,
+   "pair": "B",
+   "asset": "8ea3315e415c233b832c1a3d74da80db",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_084909_bbf7c86d-7a79-4fd5-a747-54ca9537669d.png",
+   "job": "bbf7c86d-7a79-4fd5-a747-54ca9537669d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8090573,
+   "res": "1536×2752",
+   "at": 1790931151369,
+   "refs": [
+    {
+     "label": "P3-RECEPTION plate (confirmed)",
+     "kind": "location",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "label": "T-01b frame v3 A (confirmed) — Loretta: face, silver bob, the fuchsia dress, her build",
+     "kind": "character",
+     "ref": "stryde-71-stairs-pixar-song__T-01b"
+    },
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-02 Fix: \"this should be loreta\" → Loretta's confirmed T-01b frame as Image 2 (face, silver bob, the fuchsia dress, her build); she leads the line at the front, nearest the lens · what I see: Loretta (silver bob, the fuchsia dress, white slip-ons) leads the line nearest the lens, a closed-mouth grin, guests stepping behind her — A eye-level with the line in a row behind her, B a little wider with the DJ booth and couples behind"
   }
  ],
  "key": "floor",
@@ -183,9 +261,8 @@
  "songOut": 51.91,
  "stage": "broll",
  "staging": "dancing: wide, side step, camera still",
- "status": "ready",
+ "status": "planned",
  "storyDay": "N-D2",
  "title": "turn",
- "updatedAt": 1790891943025,
- "imageParts": []
+ "updatedAt": 1790931151369
 }

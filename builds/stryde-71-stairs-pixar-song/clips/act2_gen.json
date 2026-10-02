@@ -1,0 +1,66 @@
+{
+ "T-01a": {
+  "generationId": "AScXbHb7x83_nGWllm8-qMfDN9Y7QAmMZ2C5hlaKFXKIfXjd5COQ7wJvwo0krjCsrRbWpT8-",
+  "credits": 32,
+  "duration": 4,
+  "image": "T-01a@v3A",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6be50c56-2699-4732-8b19-ba58da60c5f8-8lyE6fYurufWOktMMI7u0g-output.mp4?x-kcdn-pid=112372",
+  "dur": 4.04,
+  "res": "1072\u00d71928"
+ },
+ "T-01b": {
+  "generationId": "AdWozUb1zQp67LysXeJS22WYg3AHiVu_b0eU1553lE7sn3uXt4Xl4vLOhn-R7ICsmL1T3qr6",
+  "credits": 40,
+  "duration": 5,
+  "image": "T-01b@v3A",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d02a3558-2486-46b4-963b-19229f2f3662-4lpeTe7ptGIDPuCoTQi0Zg-output.mp4?x-kcdn-pid=112372",
+  "dur": 5.04,
+  "res": "1072\u00d71928"
+ },
+ "T-03a": {
+  "generationId": "Ac7WoEpGdfSOAlv-h2Q07soDqZGWFzCCZ2yk6jcHo0P6vNJPXL1pPwAicofUXeVNCWuG6BOZ",
+  "credits": 32,
+  "duration": 4,
+  "image": "T-03a@v4B",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/41d83a18-fccd-43ab-8e7f-4273f6757c4f-9uEx3xbycQe8luNlpxhagQ-output.mp4?x-kcdn-pid=112372",
+  "dur": 4.04,
+  "res": "1072\u00d71928"
+ },
+ "T-04a": {
+  "generationId": "Ac_g4tlzdMoqu-u84v6INQHITgt9z84k4gxLwViYBiGBgvkJFRZuKDuPrk5--O6pECGE-3rK",
+  "credits": 40,
+  "duration": 5,
+  "image": "T-04a@v3A",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/d4087315-5cf0-4160-a876-ab18bbe67f8b-oroMmiKL9j8L0pvpHShSOQ-output.mp4?x-kcdn-pid=112372",
+  "dur": 5.04,
+  "res": "1072\u00d71928"
+ },
+ "T-04b": {
+  "generationId": "AbZ_O6vwryYnQ5oTfa4yTkuvsHRN2JBGWps1P5op-QFMoDpP7gQPwM31-22ixP14E46IyXaF",
+  "credits": 40,
+  "duration": 5,
+  "image": "T-04b@v3A",
+  "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/31c019d5-06f6-4da9-9208-5f40cb9f5f42-FzG76T2FM9MubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+  "dur": 5.04,
+  "res": "1072\u00d71928"
+ },
+ "_meta": {
+  "model": "kling-video-v3_0",
+  "resolution": "1080p",
+  "prefer_multi_shots": "false",
+  "enable_audio": "false",
+  "kling_credits_before": 39349.0
+ },
+ "T-02a": {
+  "generationId": "Aa_vipMio0CgihHkZ9PJVe7XnVrX6S_LUOO1tggz79cMwhgLMZxTAiVOlv00m6jyy_xZTiB5",
+  "credits": 40,
+  "duration": 5,
+  "image": "T-02a@v5A"
+ },
+ "T-02b": {
+  "generationId": "AZkm8DRQUdGCfPbY0D9-fOELmyLBeUqwAlfwcNN0XQr-wcismVpeCSEAF1QCLKU7YEFzmM7I",
+  "credits": 32,
+  "duration": 4,
+  "image": "T-02b@v5A"
+ }
+}

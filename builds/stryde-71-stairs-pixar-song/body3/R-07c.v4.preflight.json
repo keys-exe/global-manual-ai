@@ -1,0 +1,117 @@
+{
+ "beat": "R-07c",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Not the second. Not the third. All the way down. Both feet. Forwards.\": Staircase of Image 4, tall 9:16. Image 1 is the strap, Image 2 its back, Image 3 it worn. Image 5 is her face. Image 6 is the style.\nClose from the hall floor at knee height, three-quarter, legs large, sharp on her right knee: the same woman as Image 5, seventy-one, coming down the last steps facing the lens, right foot flat on the bottom step, hands at her sides, four chunky fingers and a thumb; a rose-pink short-sleeve blouse, a denim skirt ending above the knee, tan slippers; on her bare right knee the strap of Image 1 copied exactly — a black shell, two pointed peaks round a notch, a chrome slide at each end — 12 × 5 cm, a third of the frame wide, the kneecap's lower edge in its notch; a closed-mouth smile, eyes on the hall. Scale true to the set: the newel comes up to her waist.\nIn frame: her, the bottom steps, the newel; the rest as in Image 4.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark. Bare skin around the strap.",
+ "script_line": "Not the second. Not the third. All the way down. Both feet. Forwards.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P0-PROP-N plate (confirmed) — the hall and staircase",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "kept off (L16): A drew an open-kneecap sleeve brace (FP01, FP11) → face crop (HT26), the shell's shape named",
+ "product": true,
+ "risk_class": "stairs",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "377f63fd-7b11-4db2-a663-052e8c0637e8",
+  "d95762a8-ca34-4115-96ef-72a0279b4cd1",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 3"
+  },
+  {
+   "label": "P0-PROP-N plate (confirmed) — the hall and staircase",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 4"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 5"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 6"
+  }
+ ]
+}

@@ -4,7 +4,7 @@
  "bars": 1,
  "beat": "T-01a",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 4,
+ "duration": 4.04,
  "eg": "",
  "flow": [
   "image",
@@ -19,11 +19,9 @@
  "imageJob": "ffc3ebdb-7f13-4674-9df2-f882a54e6922",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  3,
-  4
- ],
+ "imagePair": [],
  "imageParts": [],
+ "imagePick": 3,
  "imagePrompt": "For the line \"Then my grandbaby got married in June.\": Keep this photo exactly as it is — the hall, the dance floor, the lights — at the edge of the floor, a tall 9:16 crop; add the bride and her grandmother. Image 1 is the hall. Image 2 is the grandmother — her face and silver twist-out only. Image 3 is the style — the same render, materials, light and proportions.\nMedium shot at eye level, sharp on both faces: a young Black bride in a white gown, in three-quarter view facing frame right, hugging the same woman as Image 2, seventy-one, in a burgundy chiffon dress with flutter sleeves, gold hoop earrings, her cheek on the bride's shoulder, facing frame left; both smiling, lips closed, eyes closed; the bride's arms round her, her hands on the bride's back, four chunky fingers and a thumb on each. Scale true to the set: the grandmother comes up to the bride's chin.\nIn frame: the two from the waist up, the lights soft behind; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, warm evening light. No lettering, logos or labels; not the mustard top or denim skirt of Image 2.",
  "imageRefs": [
   {
@@ -42,8 +40,8 @@
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
- "imageRes": "1536×2752",
- "imageStatus": "review",
+ "imageRes": 7279244,
+ "imageStatus": "confirmed",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -59,9 +57,13 @@
   "HT26"
  ],
  "imageType": "image/png",
+ "imageUnused": 4,
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_ffc3ebdb-7f13-4674-9df2-f882a54e6922.png",
  "imageVersions": [
   {
+   "archiveAsset": "4750568ea34725f5fc033eb90d2ae89a",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "3d47315c864ff0dfbd4087a2d1fc770e",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -84,12 +86,12 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214014_ec83a101-c506-42d1-951f-9fbcc3aad14c.png",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "4750568ea34725f5fc033eb90d2ae89a",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
+   "archiveAsset": "f57e5c099ef302918365b9bf38ff38e3",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "12d092069fcaf5578980cda851107d17",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -112,24 +114,17 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_26fcf4af-c31c-4e27-8105-cd590e3e9795.png",
-   "v": 2,
-   "archived": true,
-   "archiveAsset": "f57e5c099ef302918365b9bf38ff38e3",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 2
   },
   {
-   "v": 3,
-   "pair": "A",
    "asset": "e14ca154f72b257d370cba74b9920467",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_ffc3ebdb-7f13-4674-9df2-f882a54e6922.png",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "ffc3ebdb-7f13-4674-9df2-f882a54e6922",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 7279244,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier",
+   "pair": "A",
    "refs": [
     {
      "kind": "location",
@@ -147,21 +142,21 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier"
+   "res": "1536×2752",
+   "size": 7279244,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_ffc3ebdb-7f13-4674-9df2-f882a54e6922.png",
+   "v": 3
   },
   {
-   "v": 4,
-   "pair": "B",
    "asset": "e2ac252caaac508692ed82be661e5265",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_e0b0ad4a-86a1-408a-8271-266ed9caf725.png",
-   "job": "e0b0ad4a-86a1-408a-8271-266ed9caf725",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "at": 1790891943025,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 7213965,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "job": "e0b0ad4a-86a1-408a-8271-266ed9caf725",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
    "refs": [
     {
      "kind": "location",
@@ -179,7 +174,14 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: the bride in white hugging her grandmother (silver twist-out, burgundy chiffon with flutter sleeves, gold hoops) at the edge of the dance floor, both eyes closed, lips closed — A wider with the balloon arch behind, B closer under the chandelier"
+   "res": "1536×2752",
+   "size": 7213965,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_e0b0ad4a-86a1-408a-8271-266ed9caf725.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "f91592407a1864bfcb00e6e00147f58c",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   }
  ],
  "key": "married",
@@ -188,7 +190,7 @@
  "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
  "line": "Then my grandbaby got married in June.",
  "location": "L-RECEPTION",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: the two of them sway once in the hug — one slow sway, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-TURN",
  "onScreen": 2.44,
@@ -199,8 +201,44 @@
  "songOut": 45.41,
  "stage": "broll",
  "staging": "none",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D2",
  "title": "turn",
- "updatedAt": 1790891943025
+ "updatedAt": 1790931957895,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "c243d3a12d61e5ef5daa7ae8baff5293",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6be50c56-2699-4732-8b19-ba58da60c5f8-8lyE6fYurufWOktMMI7u0g-output.mp4?x-kcdn-pid=112372",
+   "job": "AScXbHb7x83_nGWllm8-qMfDN9Y7QAmMZ2C5hlaKFXKIfXjd5COQ7wJvwo0krjCsrRbWpT8-",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "res": "1072×1928",
+   "size": 3081573,
+   "fromImage": 3,
+   "at": 1790931957895,
+   "note": "the first clip on the picked frame v3 · what I see: the bride and her grandmother rock slowly together once in the hug, eyes closed, lips closed throughout; the hall stays put"
+  }
+ ],
+ "videoAsset": "c243d3a12d61e5ef5daa7ae8baff5293",
+ "videoParts": [],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/6be50c56-2699-4732-8b19-ba58da60c5f8-8lyE6fYurufWOktMMI7u0g-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AScXbHb7x83_nGWllm8-qMfDN9Y7QAmMZ2C5hlaKFXKIfXjd5COQ7wJvwo0krjCsrRbWpT8-",
+ "videoConnector": "Kling",
+ "videoAt": 1790931957895,
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "prompt": "For the line \"Then my grandbaby got married in June.\": From this frame: the two of them sway once in the hug — one slow sway, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Their lips stay closed and still from the first frame to the last — a silent clip, nobody speaks or sings. The bride and her grandmother rock together slowly once to one side and back in the hug, eyes closed, smiling, arms around each other; the hall, the lights and the balloon arch behind stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else moves; no cut.",
+ "credits": 32
 }
