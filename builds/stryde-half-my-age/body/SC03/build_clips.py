@@ -335,6 +335,42 @@ SHOTS.append(dict(beat="SC03-SH10", kind="broll", duration=6, line="", vo="L029"
            {"risk": "the drawer shut flat", "prevented_by": "proud bottom drawer written"},
            {"risk": "overplayed sadness", "prevented_by": "still, looking at nothing, NEG-DRAMA"}]))
 
+F6_LONG = ("Camera pulling back on a dolly, already moving on the first frame: a very slow, steady pull away from her covering about one and a half metres across the whole clip, "
+           "perfectly level, with no bounce and no sway, so the close shot of her on the bed slowly opens out to the room around her. She stays seated in place and never walks while the camera moves. Still pulling back on the final frame.")
+SHOTS.append(dict(beat="SC03-SH09-10", kind="dialogue", duration=12, line=L028, subject_motion="still", gen=1, vo="L029",
+    user_go="chat: \"THE 9 AND 10 TOO\" (2026-10-02) — SH09 and SH10 in one continuous take, as SH07-08",
+    fix_notes_all=["HERE SHE IS NOT USING THE SAME PHONE AS THE NEXT SHOT", "USE THE SH09 AS RERFERENCE FOR THE POSITION AND THE CELLPHONE", "SH09 v2 (not put up): green jumper from the cast sheet — the outfit card only"],
+    fix="user: SH09 and SH10 in one continuous take → one 12 s clip from the confirmed SH09 v3 framing (a still attached for her place on the bed, the phone and the outfit): she listens, answers \"Course, love. Easier.\", lowers the phone to her lap while the camera slowly pulls back to show her small in the room; no cut; her face from the cast sheet as a face-and-hair crop only (HT26/L21)",
+    files=["N-FACE", "L-BEDROOM", "OUT-N-B3", "REF-SH09"], audios=["N"],
+    title="Scene 3 · \"Course, love. Easier.\" — a life on one level (one take)",
+    prompt=" ".join([
+        manifest([("@image1", "is Her: her face and hair only, a close crop — her clothes come from the outfit card, never from this picture."), ("@image2", BEDROOM), ("@image3", CARD_N),
+                  ("@image4", "is a still from this same moment: the opening framing, where she sits on the bed, the phone in her hand and her outfit — copy them exactly; it is never a shot to cut to."),
+                  ("@audio1", VOICE("Her"))]),
+        SERIES, LOOK, INHERIT, BEDROOM_EVE.replace(" Her husband, in the outfit of his card, has come to the open bedroom door from the landing.", " Her husband has gone downstairs."),
+        "ONE CONTINUOUS TAKE, no cut: the camera never stops or jumps, and everything below happens inside the one clip.",
+        f"THE SHOT: it opens exactly on the framing of Image4 — a medium close-up from the front at her eye level: Her, {HER_ID}, in {HER_B3}, sits on the near edge of the bed in exactly the place of Image4, "
+        f"{PHONE} held flat to her right ear; the bedside lamp warm beside her, the chest of drawers with its bottom drawer half open and crammed soft behind.",
+        "For the first four seconds she listens: her sister is speaking on the phone, unheard; Her's eyes drop to the floor, a small breath, her face settling. "
+        "Then she answers, gently, and it costs her: \"" + L028 + "\" "
+        f"After the line she says nothing more; her mouth stays closed. She slowly lowers {PHONE_SHORT} from her ear to her lap and holds it there in both hands, still, looking at nothing. "
+        "As the camera pulls back she becomes small in the room: the bed, the lamp, the chest of drawers and the window with its net curtains open out around her. Nothing else moves.",
+        F6_LONG, PHYS,
+        "While the line is spoken, Her keeps doing one thing with their hands: her right hand holding the phone to her ear, at one steady hold through the line. It is ordinary and unhurried, and the hands never stop to gesture.",
+        "HER OUTFIT, exactly the card: the buttoned slate-grey wool cardigan with its row of small buttons down the front, the cream blouse's small round collar lying over its neckline — the same cardigan as every other shot of this evening.",
+        state("HER", "tired, in the outfit of the card, on the bed edge with the phone at her ear", "the phone is in her lap, held in both hands"),
+        "FOCUS: her nearest eye is in sharp focus at the start; as the camera pulls back the room comes into focus around her. The blur is optical: soft and round, never smeared.",
+        dialogue("Her", L028, VOICE_N, "her sister has just suggested the garden centre because it is all on one level. Speaking into the phone.",
+                 "agrees to make it easy for both of them. Opens warm; turns on 'Easier', where her eyes close for a moment; exits looking at the floor. Stress on 'Course'.",
+                 "soft and warm, a little tired, matching the face in this shot.",
+                 "she minds that their Sundays are planned around their knees, which leaks only through her eyes closing on 'Easier'."),
+        AUD,
+        negs(NEG_EQUIP, NEG_MORPH, "no cut, no second camera angle, no jumper, no green, no pullover, no cordless handset, no landline, no lit screen, no speaking before the fourth second, no speaking after her line, no second voice, no standing up, no walking, no tears falling", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "the model cuts from the close shot to a wide one", "prevented_by": "ONE CONTINUOUS TAKE first, one slow pull-back that opens the frame, NEG-SCENECUT, no-cut negative"},
+           {"risk": "a different phone or the green jumper (SH09 v1/v2)", "prevented_by": "the confirmed SH09 v3 still as Image4, the face crop (no clothes) as Image1, PHONE named, jumper/handset negatives"},
+           {"risk": "she speaks during the sister's line or after hers (the VO L029 is laid there)", "prevented_by": "four listening seconds, 'mouth stays closed' after the line, negatives"},
+           {"risk": "she stands or walks during the pull-back", "prevented_by": "seated in place, F6 subject still, negatives"}]))
+
 FILES = {"N": "cast/N-HER_v1.png", "N-FACE": "cast/N-HER_face.png", "PROP-BLISTER": "body/SC03/ingredients/PROP-BLISTER_v1.png", "C3": "cast/C3-HUSBAND_v1.png", "L-STAIRS": "plates/L-STAIRS_v4.png", "L-BEDROOM": "plates/L-BEDROOM_v1.png", "L-BEDROOM-REV": "plates/L-BEDROOM-REV_v1.png",
          "L-KITCHEN": "plates/L-KITCHEN_v1.png", "INFO-PHYSIO": "body/SC03/ingredients/INFO-PHYSIO_v1.png",
          "OUT-N-B3": "body/SC03/ingredients/OUT-N-B3_v1.png", "OUT-C3-B3": "body/SC03/ingredients/OUT-C3-B3_v2.png",
