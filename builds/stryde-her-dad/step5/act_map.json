@@ -1193,7 +1193,7 @@
   },
   "lines": "L016",
   "voice": "VO",
-  "action": "Tony goes down the steep narrow stairs sideways, both hands on the white handrail, leading with his left foot, bringing the stiff right leg down beside it, one step at a time",
+  "action": "Tony goes down the steep narrow stairs sideways, hands free at his sides and off the handrail, leading with his left foot, bringing the stiff right leg down beside it onto the same step, one step at a time",
   "pace": "one step every two seconds, foot then foot onto the same step",
   "rig": "F2",
   "cast": [
@@ -1212,7 +1212,7 @@
   "layout": "full",
   "take": "SC03-T2",
   "take_kind": "multi",
-  "start_pos": "Tony on the top step of the flight, side-on to the stairs facing the handrail, both hands on the white handrail"
+  "start_pos": "Tony on the top step of the flight, side-on to the stairs facing the handrail, hands free at his sides"
  },
  {
   "beat": "SC03-SH03",
@@ -1249,7 +1249,7 @@
   },
   "lines": "",
   "voice": "",
-  "action": "halfway down, still sideways, Tony lowers the stiff right leg onto the next step, his face tight; mouth closed",
+  "action": "halfway down, still sideways and hands free at his sides, Tony lowers the stiff right leg onto the next step, his face tight; mouth closed",
   "pace": "one step every two seconds",
   "rig": "F2",
   "cast": [
@@ -1267,7 +1267,7 @@
   "music": "MUS-EXPOSE",
   "layout": "full",
   "take": "SC03-T2",
-  "end_pos": "Tony halfway down the flight, side-on, both hands on the handrail"
+  "end_pos": "Tony halfway down the flight, side-on, hands free at his sides"
  },
  {
   "beat": "SC03-SH04",
