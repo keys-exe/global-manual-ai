@@ -1,0 +1,1361 @@
+{
+ "build": "stryde-the-impression",
+ "hooks": [
+  {
+   "hook": 1,
+   "line": "Oscar crosses the room the way Nana does. Dan laughs first. Then Emma. Roy looks at his plate.",
+   "concepts": [
+    {
+     "id": "A",
+     "frame1": "a four-year-old's small hand landing on a chair back as he hitches past the Sunday table, the family behind him laughing",
+     "stakes": "a child copying his grandmother's limp in front of everyone",
+     "where": "the dining room after Sunday lunch, the whole family at the table",
+     "turn": "the laugh dies on Emma's 'That's enough'",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "B",
+     "frame1": "Hazel's face in close-up at the head of the table, laughter all round her, before we see what they are laughing at",
+     "stakes": "she is the joke and hasn't been told",
+     "where": "the dining room, Sunday",
+     "turn": "cut wide: it's her walk",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 1,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "C",
+     "frame1": "Roy alone in frame, eyes down on his plate, pushing a pea, while the room laughs",
+     "stakes": "the one who knows",
+     "where": "the dining room, Sunday",
+     "turn": "the reveal of what he won't look at",
+     "score": {
+      "stop": 1,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "D",
+     "frame1": "ground level under the table: small trainers doing the hitch past the chair legs",
+     "stakes": "the walk, copied exactly",
+     "where": "under the Sunday table",
+     "turn": "tilt up to the family's faces",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 1,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 1
+     }
+    },
+    {
+     "id": "E",
+     "frame1": "the empty chair as Oscar slides off it, Emma reaching too late",
+     "stakes": "something is about to happen in front of everyone",
+     "where": "the Sunday table",
+     "turn": "he starts the walk",
+     "score": {
+      "stop": 1,
+      "line": 1,
+      "feel": 1,
+      "specific": 1,
+      "fresh": 1,
+      "makeable": 2
+     }
+    }
+   ],
+   "pick": "A"
+  }
+ ],
+ "groups": [
+  {
+   "group": "SC01",
+   "role": "problem",
+   "idea": "the walk everyone sees and nobody names, until a child copies it",
+   "rows": [
+    {
+     "beat": "SC01-SH01",
+     "line": "Oscar crosses the room the way Nana does",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "Oscar hitching behind the chairs, a small hand on every chair back, the family laughing behind him",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Hazel's still face at the head of the table while the room laughs",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "Oscar's small hand gripping a ladder-back chair, then the next",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC01-SH02",
+     "line": "Roy looks at his plate",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Roy, the only one not laughing, eyes down, moving one pea with his fork",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a plate of Sunday dinner leftovers",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "Roy's car keys by his plate",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH05",
+     "line": "He does it again. Nobody laughs.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the same walk in profile, end to end, the table silent now",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Dan's laugh dying on his face",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "Oscar's left shoulder dipping, exactly like hers",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH12",
+     "line": "I'll walk him.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Hazel in profile catching the look between Emma and Dan, then saying it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "the steep hill outside the bay window behind her head",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Hazel saying it to the table",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC02",
+   "role": "problem",
+   "idea": "she sees herself for the first time",
+   "rows": [
+    {
+     "beat": "SC02-SH04",
+     "line": "Film me. From the kitchen to the door.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "the phone's frame down the hall: Hazel coming toward it, a hand on the wall, the radiator, the newel post",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "POV",
+       "picture": "over Emma's hands holding the phone, the screen unseen",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "her hand sliding along the dado rail",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC02-SH05",
+     "line": "She watches it once.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Hazel's face lit by the phone, watching herself once",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the phone screen showing the clip",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "her reflection in the hall mirror behind her",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC03",
+   "role": "agitate",
+   "idea": "every remedy goes round the problem",
+   "rows": [
+    {
+     "beat": "SC03-SH01",
+     "line": "Something for a hill.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "Hazel steadying herself on the shelf edge at a wall of knee supports",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the high-street chemist from the door, the assistant coming over",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a rack of knee sleeves",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC03-SH07",
+     "line": "She takes the same beige sleeve off the hook.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "her hand taking the same beige sleeve off the hook, the habit of it",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the stand of walking sticks beside the till",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a packet on a hook",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC04",
+   "role": "agitate",
+   "idea": "the count: twenty-four things that go round",
+   "rows": [
+    {
+     "beat": "SC04-SH01",
+     "line": "What is all this?",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "overhead into the stuck drawer: packed with beige sleeves, most still in their packets",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Emma's face as the drawer opens",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "one sleeve on the bed",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC04-SH09",
+     "line": "They all go round.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "Hazel pulling a sleeve over her fist and letting it go slack",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the sleeve's empty tube in her lap",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a sleeve on a knee",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC05",
+   "role": "problem",
+   "idea": "the hill wins at the postbox",
+   "rows": [
+    {
+     "beat": "SC05-SH01",
+     "line": "July, 8:40, the hill alone",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "low from the bottom: Hazel small against the whole steep climb, a hand trailing the wall",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the street of terraces waking up, her the only one stopping",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a steep street",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC05-SH04",
+     "line": "She turns back.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "from above: she turns round at the red postbox and goes back down",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the red postbox alone in the wall after she's gone",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "the mum glancing back at her",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC07",
+   "role": "agitate",
+   "idea": "Roy has his own walk",
+   "rows": [
+    {
+     "beat": "SC07-SH01",
+     "line": "Roy comes down the stairs sideways",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "from the kitchen door: Roy coming down sideways, both feet on every step",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Hazel watching from the doorway with the tea towel",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "his slippers turned sideways on one tread",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC09",
+   "role": "mechanism",
+   "idea": "one spot under the kneecap, and the thing that takes the weight",
+   "rows": [
+    {
+     "beat": "SC09-SH01",
+     "line": "She gets out of the car",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Hazel's hitch across the pavement toward a woman her age who just walked the hill",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the school gate at pick-up, children everywhere",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a car door opening",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH09",
+     "line": "One spot. Two centimetres under the kneecap.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "Wendy's two fingers touching the spot under her own kneecap through her dress",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "MECHANISM",
+       "picture": "an anatomy cutaway of the knee",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "Wendy talking",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH13",
+     "line": "This takes the weight before it gets there.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Wendy lifting her hem: the thin strap with its rigid shell just under her right kneecap on bare skin",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Hazel looking down at it",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "MECHANISM",
+       "picture": "the load on the tendon lifting",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC09-SH20",
+     "line": "It goes round, it moves nothing.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "high wide: Wendy off down the steep hill with two children; Hazel left on the bench",
+       "score": {
+        "stop": 2,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "Hazel's hand on the bench beside her",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Hazel's face as Wendy goes",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC11",
+   "role": "proof",
+   "idea": "the first morning: the hand comes off on its own",
+   "rows": [
+    {
+     "beat": "SC11-SH01",
+     "line": "The strap goes on, just under the kneecap",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "both hands flat on the shell sliding the strap up her bare shin until it seats under the kneecap",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "the strap on the bedspread beside her",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "her knee",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC11-SH03",
+     "line": "On the third, my hand came off on its own.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "low from the hall: on the third step her hand lifts off the banister and she comes on down, hands free",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "her hand hovering above the rail",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "her face on the third step",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC11-SH04",
+     "line": "the A/B test on the stairs",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "strap off: the hitch is back, the hand is back on the banister",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "PROOF",
+       "picture": "two descents cut side by side",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "the strap in her hand",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC11-SH06",
+     "line": "Roy says nothing.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Roy in the kitchen doorway with his mug, watching, saying nothing",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "his mug going cold",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the hall in morning sun",
+       "score": {
+        "stop": 1,
+        "line": 0,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC12",
+   "role": "after",
+   "idea": "the hill doesn't win any more",
+   "rows": [
+    {
+     "beat": "SC12-SH01",
+     "line": "the postbox goes by",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "tracking beside her in profile: the red postbox passes behind her and she doesn't slow",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the same low wide as July, her higher up the hill",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "the mum stopping",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC13",
+   "role": "after",
+   "idea": "the second film, the same frame",
+   "rows": [
+    {
+     "beat": "SC13-SH01",
+     "line": "Emma films again",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "the same hall frame as the first film: Hazel coming toward the phone, even, hands free",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "CONTRAST",
+       "picture": "the two clips side by side (an edit device)",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Emma lowering the phone",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC14",
+   "role": "after",
+   "idea": "he knew the day",
+   "rows": [
+    {
+     "beat": "SC14-SH03",
+     "line": "Watch me.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "the hall frame a third time: she walks to the front door and back past him, even",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Roy's face watching her walk",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "the car keys in his hand",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC15",
+   "role": "after",
+   "idea": "'That's just walking, Nana.'",
+   "rows": [
+    {
+     "beat": "SC15-SH01",
+     "line": "8:40, the hill, hand in hand, his pace",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "beside them in profile: grandmother and boy hand in hand past the red postbox at his pace",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the school run on the hill, other families",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "their two hands",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC15-SH04",
+     "line": "He walks. Straight.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the same child's walk in profile along the railings, straight this time",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Hazel watching him",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "LITERAL",
+       "picture": "a boy walking",
+       "score": {
+        "stop": 0,
+        "line": 1,
+        "feel": 0,
+        "specific": 1,
+        "fresh": 0,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC15-SH08",
+     "line": "She stands at the gate with nothing in her hands.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "a slow pull-back: Hazel at the open gate, empty hands at her sides",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 2,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "WORLD",
+       "picture": "the playground filling with children",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "REACTION",
+       "picture": "Emma filming from the car",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  }
+ ]
+}

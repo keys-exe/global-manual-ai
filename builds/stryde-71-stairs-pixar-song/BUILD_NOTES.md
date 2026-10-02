@@ -945,3 +945,42 @@ All 61 act-map beats are confirmed (`use`). Their clips on disk match the board'
 - **On the board:** FINAL-HK1 v2 is on the Final board as To check: 128 MB in 9 parts, 3:48. v1 was copied to Old 3 (FINAL-HK1 doc there) and its parts were deleted from Final.
 
 **Waiting on:** your Confirm or Fix on FINAL-HK1 v2.
+
+### 2026-10-02 ~16:20 UTC — "Pain pills. Cortisone shots. we need brolls for these 2"
+
+Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` / `t0` fields cut a row on its own first sung word; 63 rows, all 108 lines covered, `angles.py` PASS; `docs/actmap` re-synced on Plan and Current):
+- **P-04b** keeps "Physical therapy." (its card's `line` is updated; its confirmed image and clip are unchanged).
+- **P-04c — "Pain pills."** At her kitchen table (N-D1c), close at table height: her right hand tips an amber bottle and two pills fall into her open left palm, with a glass of water beside. The confirmed P-04a frame is Image 1 (her table, her hands and cardigan cuffs). Motion plan: the pills tip into her palm, one tip, about a second.
+- **P-04d — "Cortisone shots."** In the clinic (N-D1b), close from low at the side of the table: a doctor's gloved hands, one steadying her knee and one holding a syringe at the side of the knee, her hand on the paper sheet. The confirmed P-04b frame is Image 1. Motion plan: the thumb presses the plunger, one slow press. Flagged: in both renders she sits on the edge of the table rather than lying as in P-04b.
+- Both are A/B pairs on Higgsfield, nano_banana_pro requested and logged as nano_banana_2, as on every image of this build. Preflight PASS (`body9/build_split15.py`). On the Current board as To check.
+- **Timing:** sung, "Pain pills." runs 36.96–37.92 s and "Cortisone shots." runs 38.14–38.84 s. On the V7.91.4 clock, P-04b, P-04c and P-04d are each on screen about 0.8–1.2 s (under the 2.0 s floor; your call, the song sings them that fast). The finished video takes them in once their clips are confirmed.
+- Credits: Higgsfield 5699.65 → 5667.65 (32 for 4 renders, measured; written as 8 per render). Kling unchanged at 36613.
+
+**Waiting on:** Use A / Use B (or Fix) on P-04c and P-04d. Then their clips, then FINAL-HK1 v3 with the three line-15 pictures.
+
+### 2026-10-02 ~16:30–16:55 UTC — "confirm" / "all confirmed proceed to the final" → FINAL-HK1 v3
+
+- You picked A on P-04c and P-04d. Their clips were made on Kling 3.0: 3 s each, 1080p, silent, 24 credits each, preflight PASS (`clips/build_split15_clips.py`).
+  - P-04c: the pills tip into her palm.
+  - P-04d: the gloved thumb presses the plunger at the side of her knee. The prompt has the sealed-lips clause because her chin is at the frame's top edge.
+- Both clips are on the board as `use`, on your word "all confirmed". The unused B pictures were copied to Old 3 and deleted from Current.
+- **FINAL-HK1 v3** is on the Final board as To check. It is 3:48, 64 rows, the cut sheet is `edit/cuts_v3.json` (PASS), and the board copy is 9 parts.
+  - Line 15 is now three pictures, each on its own sung word: P-04b "Physical therapy." at 35.65 s, P-04c "Pain pills." at 36.88 s, P-04d "Cortisone shots." at 38.09 s. They are on screen for 1.2, 1.2 and 0.8 s.
+  - Everything else is as v2. v2 was copied to Old 3 and its parts were deleted from Final.
+- **Balances:** Higgsfield 5667.65 · Kling 36565.
+
+**Waiting on:** your final review of FINAL-HK1 v3.
+
+### 2026-10-02 ~17:00 UTC — "fix those" (two board Fix notes)
+
+- **M-06a** image Fix: "wrong product and the knee that should be straight in the image is the one with the strap".
+  - Diagnosis: the strap had come out as a plain black band, without the twin-peak shell. The strapped right leg also wasn't clearly the straight, weight-bearing one.
+  - New pair, v11 (A) / v12 (B): an edit of the picked v9 A with the product photo as Image 2 and a tighter shape line (a wide shallow M, two peaks at the middle of the top edge cupping the kneecap, chrome slides). Her right leg (frame left) is straight on the upper tread taking her weight; her left leg bends, stepping down (`body9/build_fix14.py`, preflight PASS).
+  - Moved to Old 3: v9 A and the clip made from it (v2).
+- **T-04a** image Fix: "that is not loreta".
+  - Diagnosis: the dancer in fuchsia had been drawn without Loretta's references.
+  - New pair, v7 (A) / v8 (B): an edit of the picked v5 A in which only the dancer changes. She now takes Loretta from her confirmed wedding frame (T-02a v5 A, the day's outfit, HT27) plus her face-and-hair crop (HT26, L54).
+  - Moved to Old 3: v5 A and the clip made from it (v2).
+- Both pairs are on the Current board as To check. The clips follow your picks, then FINAL-HK1 v4.
+- `fix_patterns.py`: 0 notes from the owner (the boards are V7.79.1, which doesn't mark them), so no new rule.
+- Higgsfield balance 5667.65 → 5233.4. That is far more than 4 renders; the account is shared, so other work moved it. The cards carry 8 per render.

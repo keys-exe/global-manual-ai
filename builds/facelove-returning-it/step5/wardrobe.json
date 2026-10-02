@@ -1,0 +1,138 @@
+{
+ "names": {
+  "N": "the creator",
+  "C1": "counter saleswoman",
+  "C2": "auburn friend",
+  "C3": "friend 2",
+  "C4": "friend 3"
+ },
+ "days": [
+  {
+   "day": "D0",
+   "event": "the makeup-counter visit, weeks before",
+   "source": "stated: 'Even the woman at the makeup counter told me'",
+   "outfits": {
+    "N": "a camel wool-blend coat open over a cream ribbed sweater, dark straight jeans, bare face (N-BEFORE)",
+    "C1": "sheet outfit: black fitted short-sleeved work tunic, slim black trousers, black flats"
+   },
+   "events": [
+    {
+     "id": "D0-E1",
+     "location": "L-COUNTER",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D1",
+   "event": "coffee with three friends, this week",
+   "source": "stated: 'three of my friends this week asked what I am using'",
+   "outfits": {
+    "N": "a terracotta cotton knit top with three-quarter sleeves, small gold hoop earrings, white jeans, the stick on (N-AFTER)",
+    "C2": "sheet outfit: olive linen shirt, sleeves rolled, light-wash jeans",
+    "C3": "a navy-and-white Breton striped top (a Black American woman, 40s, short natural curls)",
+    "C4": "a mustard cardigan over a white T-shirt (a South Asian American woman, 50s, long grey-streaked braid)"
+   },
+   "events": [
+    {
+     "id": "D1-E1",
+     "location": "L-CAFE",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B09",
+      "B10"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D2",
+   "event": "the grocery-store morning, this week",
+   "source": "stated: 'throw this one stick on before the grocery store'",
+   "outfits": {
+    "N": "a plain white crew-neck T-shirt, an olive cotton utility jacket, light-wash jeans, white leather sneakers, a tan canvas tote (N-AFTER)"
+   },
+   "events": [
+    {
+     "id": "D2-E1",
+     "location": "L-HALL",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B11"
+     ]
+    },
+    {
+     "id": "D2-E2",
+     "location": "L-FRONT",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B12"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "D3",
+   "event": "the deal arrives on her doorstep, days later",
+   "source": "stated: 'and buying the deal like I should have' — the bought bundle arriving",
+   "outfits": {
+    "N": "a soft heather-grey crewneck sweatshirt, black leggings, white leather sneakers, hair in a loose low bun (N-AFTER)"
+   },
+   "events": [
+    {
+     "id": "D3-E1",
+     "location": "L-FRONT",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B15b"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "REC",
+   "event": "today, the last day of the sale — filming at her vanity",
+   "source": "stated: 'it is the last day of the Prime Sale… ends tonight'",
+   "outfits": {
+    "N": "sheet outfit: the cream-white sherpa robe over a white camisole"
+   },
+   "events": [
+    {
+     "id": "REC-E1",
+     "location": "L-VANITY",
+     "visibility": "VISIBLE",
+     "beats": [
+      "B01",
+      "B02",
+      "B03",
+      "B06",
+      "B07",
+      "B08",
+      "B08b",
+      "B13",
+      "B14",
+      "B14b",
+      "B16"
+     ]
+    }
+   ]
+  }
+ ],
+ "talking_heads": [
+  {
+   "day": "REC",
+   "subject": "N",
+   "outfit": "the cream-white sherpa robe over a white camisole (one sitting: bare face on the hooks, N-AFTER on the body)",
+   "beats": [
+    "TH-01",
+    "TH-04",
+    "TH-05",
+    "TH-06",
+    "TH-08"
+   ]
+  }
+ ]
+}

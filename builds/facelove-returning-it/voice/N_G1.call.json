@@ -1,0 +1,35 @@
+{
+ "beat": "N-VOICE-G1",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "dialogue",
+ "duration": 10,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "N-VOICE-IMG v1 (confirmed by the user; Higgsfield job f93cb289)",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "dialogue": "I am so mad, and this is exactly why you read the reviews before you buy another foundation.",
+ "script_line": "I am so mad, and this is exactly why you read the reviews before you buy another foundation.",
+ "pace": "brisk",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "risks": [
+  {
+   "risk": "hands distort when lifted at the vanity",
+   "prevented_by": "hands stay on or return to the vanity edge; a head movement carries the stress"
+  },
+  {
+   "risk": "late first word / dead air eats the 10s budget",
+   "prevented_by": "first word lands within the first half second of the clip, no settle"
+  },
+  {
+   "risk": "studio-clean or second voice / music in the take (bad clone source)",
+   "prevented_by": "phone microphone room audio clause + negatives no music, no second voice"
+  }
+ ],
+ "prompt": "{\"shot\":\"Voice take G1.\",\"dialogue\":\"I am so mad, and this is exactly why you read the reviews before you buy another foundation.\",\"delivery\":\"A Latina American woman of forty-six from San Antonio, Texas: a warm mid-low voice with a little natural rasp, quick and conversational, a light Texan-Latina lilt on the vowels — never a caricature, never an accent put on. Talks like she's venting to a close friend on a video call: animated, a little exasperated, a laugh not far under it. Statements fall at the end; stress comes by slowing a word, never by shouting. cross and fed-up; stress on 'so mad' and 'reviews'. Not a narrator, not an advert. Audio must sound like a phone microphone recording in a bedroom, not a studio voice track: audible breath before the first word and between phrases, mouth and lip noise, sibilance present and un-de-essed, plosives on hard consonants, level drifting slightly across the take. No studio compression, no noise gate, no reverb plate, no post EQ. Her bedroom, soft carpet, a quiet room.\",\"subject\":\"As in the start frame.\",\"camera\":{\"movement\":\"Propped on the vanity, not held, not tripod. Small settle at entry, then near-stillness with a slow unresolved drift. Slightly off-level and never corrected.\",\"framing\":\"PROPPED as in the start frame.\"},\"motion\":\"Take one small quick inhale and begin speaking as it finishes — the first word lands within the first half second of the clip, no settle, no glance, no held beat before speech. small head shake on 'so mad'; one hand lifts off the vanity edge and drops back on 'reviews'; eyes on lens. Jaw-carried speech, visibly dropping on open vowels, lips shaping over it. Lips fully close on the exact word 'reviews'. After the final word the lips close and the jaw settles. Everything in frame keeps the exact form, proportion and count it has in the start frame, first frame to last — nothing melts, merges, splits, grows or becomes something else. Subject fully in frame throughout.\",\"lighting\":\"Capture characteristics exactly as in the start frame — same tone-mapping, same noise, same colour temperature. No grading change across the clip.\",\"style\":\"As in the start frame.\",\"negatives\":\"no morphing, no warping, no melting, no shape shifting, no merging, no splitting, no parts detaching, no proportions changing, no duplicate objects, no background bending, no texture swimming, no smearing, no flickering geometry, no static camera, no camera coming to rest, no music, no second voice\"}"
+}

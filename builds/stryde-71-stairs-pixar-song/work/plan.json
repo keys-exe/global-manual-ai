@@ -104,14 +104,36 @@
   },
   {
    "beat": "P-04b",
-   "phrase": "Physical therapy. Pain pills. Cortisone shots.",
+   "phrase": "Physical therapy.",
    "key": "therapy",
    "max": 6,
    "layout": "full",
    "in_cut": 34.84,
    "section": "The low point and what failed — MUS-EXPOSE",
-   "bars": 1.0,
+   "bars": 0.5,
    "clip": "renders/P-04b.mp4"
+  },
+  {
+   "beat": "P-04c",
+   "phrase": "Pain pills.",
+   "key": "pills",
+   "max": 3,
+   "layout": "full",
+   "in_cut": 36.47,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 0.0,
+   "clip": "renders/P-04c.mp4"
+  },
+  {
+   "beat": "P-04d",
+   "phrase": "Cortisone shots.",
+   "key": "Cortisone",
+   "max": 3,
+   "layout": "full",
+   "in_cut": 37.28,
+   "section": "The low point and what failed — MUS-EXPOSE",
+   "bars": 0.0,
+   "clip": "renders/P-04d.mp4"
   },
   {
    "beat": "P-05a",

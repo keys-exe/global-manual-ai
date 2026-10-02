@@ -19,7 +19,7 @@ H = Path(__file__).parent; B = H.parent
 FPS, W, HH = 24, 1080, 1920
 SONG = B / "intake/song.mp3"
 VOCAL_END = 222.68
-cuts = json.load(open(H / "cuts_v2.json"))["rows"]
+cuts = json.load(open(H / "cuts_v3.json"))["rows"]   # v3 (2026-10-02): line 15 split — P-04b / P-04c / P-04d
 clips = json.load(open(H / "clips.json"))
 words = json.load(open(H / "lyric_words.json"))
 lines = [l["line"] for l in json.load(open(B / "work/lyrics.timed.json"))]

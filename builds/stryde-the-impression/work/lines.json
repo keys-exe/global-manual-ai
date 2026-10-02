@@ -1,0 +1,840 @@
+{
+ "lines": [
+  {
+   "n": 1,
+   "id": "L001",
+   "block": "HK-A1 The impression",
+   "speaker": "EMMA",
+   "text": "Oscar. That’s enough."
+  },
+  {
+   "n": 2,
+   "id": "L002",
+   "block": "HK-A1 The impression",
+   "speaker": "HAZEL",
+   "text": "No. Let him. Do it again, Oscar."
+  },
+  {
+   "n": 3,
+   "id": "L003",
+   "block": "HK-A1 The impression",
+   "speaker": "HAZEL",
+   "text": "Is that what I look like?"
+  },
+  {
+   "n": 4,
+   "id": "L004",
+   "block": "HK-A1 The impression",
+   "speaker": "EMMA",
+   "text": "He’s four, Mum. He doesn’t see it."
+  },
+  {
+   "n": 5,
+   "id": "L005",
+   "block": "HK-A1 The impression",
+   "speaker": "HAZEL",
+   "text": "Dan?"
+  },
+  {
+   "n": 6,
+   "id": "L006",
+   "block": "HK-A1 The impression",
+   "speaker": "DAN",
+   "text": "...A bit."
+  },
+  {
+   "n": 7,
+   "id": "L007",
+   "block": "HK-A2 The promise",
+   "speaker": "OSCAR",
+   "text": "Nana. Will you walk me to school? When I’m big."
+  },
+  {
+   "n": 8,
+   "id": "L008",
+   "block": "HK-A2 The promise",
+   "speaker": "EMMA",
+   "text": "Nana’ll wait in the car, love. Nana’ll see you at the gate."
+  },
+  {
+   "n": 9,
+   "id": "L009",
+   "block": "HK-A2 The promise",
+   "speaker": "HAZEL",
+   "text": "I’ll walk him."
+  },
+  {
+   "n": 10,
+   "id": "L010",
+   "block": "HK-A2 The promise",
+   "speaker": "EMMA",
+   "text": "Mum."
+  },
+  {
+   "n": 11,
+   "id": "L011",
+   "block": "HK-A2 The promise",
+   "speaker": "HAZEL",
+   "text": "I said I’ll walk him."
+  },
+  {
+   "n": 12,
+   "id": "L012",
+   "block": "HK-A2 The promise",
+   "speaker": "ROY",
+   "text": "Hazel. It’s a hill."
+  },
+  {
+   "n": 13,
+   "id": "L013",
+   "block": "HK-A2 The promise",
+   "speaker": "HAZEL",
+   "text": "I know what it is."
+  },
+  {
+   "n": 14,
+   "id": "L014",
+   "block": "B01 The film",
+   "speaker": "HAZEL",
+   "text": "Film me. From the kitchen to the door."
+  },
+  {
+   "n": 15,
+   "id": "L015",
+   "block": "B01 The film",
+   "speaker": "EMMA",
+   "text": "Why?"
+  },
+  {
+   "n": 16,
+   "id": "L016",
+   "block": "B01 The film",
+   "speaker": "HAZEL",
+   "text": "Because I’ve never seen it."
+  },
+  {
+   "n": 17,
+   "id": "L017",
+   "block": "B01 The film",
+   "speaker": "EMMA",
+   "text": "It’s not that bad."
+  },
+  {
+   "n": 18,
+   "id": "L018",
+   "block": "B01 The film",
+   "speaker": "HAZEL",
+   "text": "He got it exactly right, Emma. Down to the hand."
+  },
+  {
+   "n": 19,
+   "id": "L019",
+   "block": "B01 The film",
+   "speaker": "EMMA",
+   "text": "You’re all right, Mum."
+  },
+  {
+   "n": 20,
+   "id": "L020",
+   "block": "B01 The film",
+   "speaker": "HAZEL",
+   "text": "I’m not, though. Am I."
+  },
+  {
+   "n": 21,
+   "id": "L021",
+   "block": "B01 The film",
+   "speaker": "HAZEL",
+   "text": "He’s four. This knee’s three. He has never once seen me walk."
+  },
+  {
+   "n": 22,
+   "id": "L022",
+   "block": "B02 The pharmacy",
+   "speaker": "ASSISTANT",
+   "text": "Can I help at all?"
+  },
+  {
+   "n": 23,
+   "id": "L023",
+   "block": "B02 The pharmacy",
+   "speaker": "HAZEL",
+   "text": "Something for a hill. Ten minutes. With a four-year-old."
+  },
+  {
+   "n": 24,
+   "id": "L024",
+   "block": "B02 The pharmacy",
+   "speaker": "ASSISTANT",
+   "text": "Lovely. Have you thought about a stick? Just for the school run."
+  },
+  {
+   "n": 25,
+   "id": "L025",
+   "block": "B02 The pharmacy",
+   "speaker": "HAZEL",
+   "text": "A stick."
+  },
+  {
+   "n": 26,
+   "id": "L026",
+   "block": "B02 The pharmacy",
+   "speaker": "ASSISTANT",
+   "text": "A lot of our customers find..."
+  },
+  {
+   "n": 27,
+   "id": "L027",
+   "block": "B02 The pharmacy",
+   "speaker": "HAZEL",
+   "text": "He’d copy the stick as well."
+  },
+  {
+   "n": 28,
+   "id": "L028",
+   "block": "B02 The pharmacy",
+   "speaker": "ASSISTANT",
+   "text": "We do have that in a large."
+  },
+  {
+   "n": 29,
+   "id": "L029",
+   "block": "B02 The pharmacy",
+   "speaker": "HAZEL",
+   "text": "I know. I’ve got twenty-three of them."
+  },
+  {
+   "n": 30,
+   "id": "L030",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "EMMA",
+   "text": "Mum. What is all this?"
+  },
+  {
+   "n": 31,
+   "id": "L031",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "HAZEL",
+   "text": "Leave it."
+  },
+  {
+   "n": 32,
+   "id": "L032",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "EMMA",
+   "text": "There must be twenty in here."
+  },
+  {
+   "n": 33,
+   "id": "L033",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "HAZEL",
+   "text": "Twenty-four. As of Tuesday."
+  },
+  {
+   "n": 34,
+   "id": "L034",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "EMMA",
+   "text": "You’ve counted them?"
+  },
+  {
+   "n": 35,
+   "id": "L035",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "HAZEL",
+   "text": "I counted them in March. Then I bought another one."
+  },
+  {
+   "n": 36,
+   "id": "L036",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "EMMA",
+   "text": "Why?"
+  },
+  {
+   "n": 37,
+   "id": "L037",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "HAZEL",
+   "text": "Because the girl in the shop said it was supportive. They all say that. They all go round. And I still stop halfway up that hill."
+  },
+  {
+   "n": 38,
+   "id": "L038",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "MUM WITH BUGGY",
+   "text": "You all right, love?"
+  },
+  {
+   "n": 39,
+   "id": "L039",
+   "block": "B03 The drawer + the hill (July)",
+   "speaker": "HAZEL",
+   "text": "Fine. Just the knee."
+  },
+  {
+   "n": 40,
+   "id": "L040",
+   "block": "B04 The car",
+   "speaker": "ROY",
+   "text": "I’ve spoken to Emma. We’ll do it in the car. You walk him from the gate. It’s twenty yards."
+  },
+  {
+   "n": 41,
+   "id": "L041",
+   "block": "B04 The car",
+   "speaker": "HAZEL",
+   "text": "Twenty yards."
+  },
+  {
+   "n": 42,
+   "id": "L042",
+   "block": "B04 The car",
+   "speaker": "ROY",
+   "text": "It’s the same thing, love."
+  },
+  {
+   "n": 43,
+   "id": "L043",
+   "block": "B04 The car",
+   "speaker": "HAZEL",
+   "text": "It isn’t the same thing."
+  },
+  {
+   "n": 44,
+   "id": "L044",
+   "block": "B04 The car",
+   "speaker": "ROY",
+   "text": "It’s what we can do."
+  },
+  {
+   "n": 45,
+   "id": "L045",
+   "block": "B05 The gate",
+   "speaker": "HAZEL",
+   "text": "That woman. How long has she been doing that?"
+  },
+  {
+   "n": 46,
+   "id": "L046",
+   "block": "B05 The gate",
+   "speaker": "LOLLIPOP LADY",
+   "text": "Wendy? Every day since Reception. Both of them. Rain or shine."
+  },
+  {
+   "n": 47,
+   "id": "L047",
+   "block": "B05 The gate",
+   "speaker": "HAZEL",
+   "text": "How old is she?"
+  },
+  {
+   "n": 48,
+   "id": "L048",
+   "block": "B05 The gate",
+   "speaker": "LOLLIPOP LADY",
+   "text": "Seventy-four. Don’t tell her I told you."
+  },
+  {
+   "n": 49,
+   "id": "L049",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "Sorry. Can I ask you something ridiculous? How do you do that hill?"
+  },
+  {
+   "n": 50,
+   "id": "L050",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "Which bit?"
+  },
+  {
+   "n": 51,
+   "id": "L051",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "All of it. I get to the postbox."
+  },
+  {
+   "n": 52,
+   "id": "L052",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "What have you got on it?"
+  },
+  {
+   "n": 53,
+   "id": "L053",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "A sleeve."
+  },
+  {
+   "n": 54,
+   "id": "L054",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "Mine were bone on bone. Both. They wanted to replace them at seventy-one. A sleeve goes round. That’s all it does. It doesn’t change where the weight lands."
+  },
+  {
+   "n": 55,
+   "id": "L055",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "Where does it land?"
+  },
+  {
+   "n": 56,
+   "id": "L056",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "One spot. Two centimetres under the kneecap. Every step down that hill, seventeen times what you weigh goes through it."
+  },
+  {
+   "n": 57,
+   "id": "L057",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "Seventeen times."
+  },
+  {
+   "n": 58,
+   "id": "L058",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "That walk you do. I’ve watched you get out of that car. That’s your body keeping the weight off that spot. It’s doing the job. Badly."
+  },
+  {
+   "n": 59,
+   "id": "L059",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "Nobody’s ever put it like that."
+  },
+  {
+   "n": 60,
+   "id": "L060",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "This takes the weight before it gets there. So your body stops doing the walk."
+  },
+  {
+   "n": 61,
+   "id": "L061",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "That little thing?"
+  },
+  {
+   "n": 62,
+   "id": "L062",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "That’s what I said. Three years with orthopaedic surgeons, for that little thing."
+  },
+  {
+   "n": 63,
+   "id": "L063",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "Straps slide down on me. Every one."
+  },
+  {
+   "n": 64,
+   "id": "L064",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "The Facebook copies slide. Those go round as well. This has a pad. It stays on the spot. And I’m not a small woman."
+  },
+  {
+   "n": 65,
+   "id": "L065",
+   "block": "B06 Wendy",
+   "speaker": "HAZEL",
+   "text": "I’ve got twenty-four at home."
+  },
+  {
+   "n": 66,
+   "id": "L066",
+   "block": "B06 Wendy",
+   "speaker": "WENDY",
+   "text": "No. You’ve got twenty-four things that go round. It goes round, it moves nothing."
+  },
+  {
+   "n": 67,
+   "id": "L067",
+   "block": "B07 The price",
+   "speaker": "ROY",
+   "text": "What’s that?"
+  },
+  {
+   "n": 68,
+   "id": "L068",
+   "block": "B07 The price",
+   "speaker": "HAZEL",
+   "text": "Thirty pounds. For two."
+  },
+  {
+   "n": 69,
+   "id": "L069",
+   "block": "B07 The price",
+   "speaker": "ROY",
+   "text": "For what?"
+  },
+  {
+   "n": 70,
+   "id": "L070",
+   "block": "B07 The price",
+   "speaker": "HAZEL",
+   "text": "For the hill."
+  },
+  {
+   "n": 71,
+   "id": "L071",
+   "block": "B07 The price",
+   "speaker": "ROY",
+   "text": "Hazel. We’ve said the car."
+  },
+  {
+   "n": 72,
+   "id": "L072",
+   "block": "B07 The price",
+   "speaker": "HAZEL",
+   "text": "If it works, I’ve spent three years saying no to him for nothing."
+  },
+  {
+   "n": 73,
+   "id": "L073",
+   "block": "B07 The price",
+   "speaker": "ROY",
+   "text": "And if it doesn’t?"
+  },
+  {
+   "n": 74,
+   "id": "L074",
+   "block": "B07 The price",
+   "speaker": "HAZEL",
+   "text": "Sixty days. They take it back."
+  },
+  {
+   "n": 75,
+   "id": "L075",
+   "block": "B07 The price",
+   "speaker": "ROY",
+   "text": "Get the two."
+  },
+  {
+   "n": 76,
+   "id": "L076",
+   "block": "B08 The stairs (inner VO)",
+   "speaker": "HAZEL",
+   "text": "One more time, Hazel.",
+   "delivery": "VO, inner"
+  },
+  {
+   "n": 77,
+   "id": "L077",
+   "block": "B08 The stairs (inner VO)",
+   "speaker": "HAZEL",
+   "text": "First step, hand on the rail. Same as always. Second step. On the third, my hand came off on its own.",
+   "delivery": "VO, inner"
+  },
+  {
+   "n": 78,
+   "id": "L078",
+   "block": "B09 The witnesses — hill (August)",
+   "speaker": "MUM WITH BUGGY",
+   "text": "You got past the postbox."
+  },
+  {
+   "n": 79,
+   "id": "L079",
+   "block": "B09 The witnesses — hill (August)",
+   "speaker": "HAZEL",
+   "text": "I did."
+  },
+  {
+   "n": 80,
+   "id": "L080",
+   "block": "B09 The witnesses — hill (August)",
+   "speaker": "MUM WITH BUGGY",
+   "text": "What have you done?"
+  },
+  {
+   "n": 81,
+   "id": "L081",
+   "block": "B09 The witnesses — hill (August)",
+   "speaker": "HAZEL",
+   "text": "It’s called Stryde. It’s under my trousers."
+  },
+  {
+   "n": 82,
+   "id": "L082",
+   "block": "B09 The witnesses — hill (August)",
+   "speaker": "MUM WITH BUGGY",
+   "text": "Since when?"
+  },
+  {
+   "n": 83,
+   "id": "L083",
+   "block": "B09 The witnesses — hill (August)",
+   "speaker": "HAZEL",
+   "text": "Half seven this morning. Five weeks of mornings."
+  },
+  {
+   "n": 84,
+   "id": "L084",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "EMMA",
+   "text": "When did you stop doing that?"
+  },
+  {
+   "n": 85,
+   "id": "L085",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "HAZEL",
+   "text": "Five weeks ago."
+  },
+  {
+   "n": 86,
+   "id": "L086",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "EMMA",
+   "text": "You never said."
+  },
+  {
+   "n": 87,
+   "id": "L087",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "HAZEL",
+   "text": "You never asked. You said I was all right."
+  },
+  {
+   "n": 88,
+   "id": "L088",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "EMMA",
+   "text": "...You look like you. Before."
+  },
+  {
+   "n": 89,
+   "id": "L089",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "HAZEL",
+   "text": "Before what?"
+  },
+  {
+   "n": 90,
+   "id": "L090",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "EMMA",
+   "text": "I don’t know."
+  },
+  {
+   "n": 91,
+   "id": "L091",
+   "block": "B10 The witnesses — the hall (end of August)",
+   "speaker": "HAZEL",
+   "text": "No. Neither did I."
+  },
+  {
+   "n": 92,
+   "id": "L092",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "The car’s at eight."
+  },
+  {
+   "n": 93,
+   "id": "L093",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "I’m walking him."
+  },
+  {
+   "n": 94,
+   "id": "L094",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "Hazel."
+  },
+  {
+   "n": 95,
+   "id": "L095",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "Watch me."
+  },
+  {
+   "n": 96,
+   "id": "L096",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "You’ve not done that in three years."
+  },
+  {
+   "n": 97,
+   "id": "L097",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "Say it again."
+  },
+  {
+   "n": 98,
+   "id": "L098",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "You’ve not walked like that in three years."
+  },
+  {
+   "n": 99,
+   "id": "L099",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "When did I start, Roy?"
+  },
+  {
+   "n": 100,
+   "id": "L100",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "The March your knee went. The step outside the library. You grabbed the wall and you never let go of it."
+  },
+  {
+   "n": 101,
+   "id": "L101",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "You knew the day."
+  },
+  {
+   "n": 102,
+   "id": "L102",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "I’ve known every day. I didn’t know what to do except the car."
+  },
+  {
+   "n": 103,
+   "id": "L103",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "I’m not angry. I’d stopped looking as well."
+  },
+  {
+   "n": 104,
+   "id": "L104",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "There’s one in your drawer."
+  },
+  {
+   "n": 105,
+   "id": "L105",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "What for?"
+  },
+  {
+   "n": 106,
+   "id": "L106",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "You come down our stairs sideways, Roy."
+  },
+  {
+   "n": 107,
+   "id": "L107",
+   "block": "B11 Roy",
+   "speaker": "ROY",
+   "text": "I thought you’d not seen."
+  },
+  {
+   "n": 108,
+   "id": "L108",
+   "block": "B11 Roy",
+   "speaker": "HAZEL",
+   "text": "I’ve seen. It goes round, it moves nothing. That one doesn’t go round."
+  },
+  {
+   "n": 109,
+   "id": "L109",
+   "block": "B12 The first day",
+   "speaker": "HAZEL",
+   "text": "Oscar. Do the walk."
+  },
+  {
+   "n": 110,
+   "id": "L110",
+   "block": "B12 The first day",
+   "speaker": "OSCAR",
+   "text": "What walk?"
+  },
+  {
+   "n": 111,
+   "id": "L111",
+   "block": "B12 The first day",
+   "speaker": "HAZEL",
+   "text": "Is that what I look like?"
+  },
+  {
+   "n": 112,
+   "id": "L112",
+   "block": "B12 The first day",
+   "speaker": "OSCAR",
+   "text": "That’s just walking, Nana."
+  },
+  {
+   "n": 113,
+   "id": "L113",
+   "block": "B13 The close",
+   "speaker": "HAZEL",
+   "text": "Twenty-four of them in a drawer. Every one went round my knee. Not one of them took the weight off it. It goes round, it moves nothing. The walk my grandson copied wasn’t my knee. It was my body carrying seventeen times my weight onto one spot, and doing it badly. This takes the weight before it lands.",
+   "delivery": "to camera"
+  },
+  {
+   "n": 114,
+   "id": "L114",
+   "block": "B13 The close",
+   "speaker": "HAZEL",
+   "text": "I put it on at half seven this morning and I’ve not thought about it since. No wall. No stick. No car. He walked up that hill holding my hand and there was nothing to copy. He’s not why I’m telling you this. I’d stopped looking at myself walk.",
+   "delivery": "to camera"
+  },
+  {
+   "n": 115,
+   "id": "L115",
+   "block": "B13 The close",
+   "speaker": "HAZEL",
+   "text": "Two straps, under thirty pounds, today at getstryde.co. Sixty days to send them back. No awkward questions. Keep one. Give the other to whoever’s been driving you. Then put it on, walk to your own front gate, and ask the little one to do your walk. Your turn.",
+   "delivery": "to camera"
+  }
+ ],
+ "visual": [
+  {
+   "id": "VN01",
+   "block": "HK-A1 The impression",
+   "line": 1,
+   "speaker": null,
+   "note": "Oscar crosses the room the way Nana does. Dan laughs first. Then Emma. Roy looks at his plate.",
+   "kind": "parenthetical"
+  },
+  {
+   "id": "VN02",
+   "block": "HK-A1 The impression",
+   "line": 3,
+   "speaker": null,
+   "note": "He does it again. Nobody laughs.",
+   "kind": "parenthetical"
+  },
+  {
+   "id": "VN03",
+   "block": "B12 The first day",
+   "line": 110,
+   "speaker": null,
+   "note": "He looks at her. He walks. Straight. He turns round.",
+   "kind": "parenthetical"
+  }
+ ]
+}
