@@ -957,3 +957,16 @@ Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` /
 - Credits: Higgsfield 5699.65 → 5667.65 (32 for 4 renders, measured; written as 8 per render). Kling unchanged at 36613.
 
 **Waiting on:** Use A / Use B (or Fix) on P-04c and P-04d. Then their clips, then FINAL-HK1 v3 with the three line-15 pictures.
+
+### 2026-10-02 ~16:30–16:55 UTC — "confirm" / "all confirmed proceed to the final" → FINAL-HK1 v3
+
+- You picked A on P-04c and P-04d. Their clips were made on Kling 3.0: 3 s each, 1080p, silent, 24 credits each, preflight PASS (`clips/build_split15_clips.py`).
+  - P-04c: the pills tip into her palm.
+  - P-04d: the gloved thumb presses the plunger at the side of her knee. The prompt has the sealed-lips clause because her chin is at the frame's top edge.
+- Both clips are on the board as `use`, on your word "all confirmed". The unused B pictures were copied to Old 3 and deleted from Current.
+- **FINAL-HK1 v3** is on the Final board as To check. It is 3:48, 64 rows, the cut sheet is `edit/cuts_v3.json` (PASS), and the board copy is 9 parts.
+  - Line 15 is now three pictures, each on its own sung word: P-04b "Physical therapy." at 35.65 s, P-04c "Pain pills." at 36.88 s, P-04d "Cortisone shots." at 38.09 s. They are on screen for 1.2, 1.2 and 0.8 s.
+  - Everything else is as v2. v2 was copied to Old 3 and its parts were deleted from Final.
+- **Balances:** Higgsfield 5667.65 · Kling 36565.
+
+**Waiting on:** your final review of FINAL-HK1 v3.

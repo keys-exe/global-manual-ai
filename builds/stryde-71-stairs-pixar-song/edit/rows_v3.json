@@ -1,0 +1,388 @@
+[
+ {
+  "beat": "HK-01a",
+  "section": "Hook \u2014 MUS-OPEN",
+  "phrase": "I'm seventy-one, and I take the stairs",
+  "flash_ok": false
+ },
+ {
+  "beat": "HK-02a",
+  "section": "Hook \u2014 MUS-OPEN",
+  "phrase": "Last Sunday, my daughter walked behind me",
+  "flash_ok": false
+ },
+ {
+  "beat": "HK-03a",
+  "section": "Hook \u2014 MUS-OPEN",
+  "phrase": "\"Mama, when did that happen?\"",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-01a",
+  "section": "Hook \u2014 MUS-OPEN",
+  "phrase": "Six weeks ago, I was going down my stairs backwards.",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-01b",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "One step at a time.",
+  "flash_ok": true,
+  "flash_why": "the sung line itself is shorter than 2.0 s; the picture holds its whole line"
+ },
+ {
+  "beat": "P-02a",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "I ain't gonna lie,",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-03a",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "That big knee brace I bought",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-03b",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "By evening, it was around my ankle.",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-04a",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "I done tried everything.",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-04b",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Physical therapy.",
+  "flash_ok": true,
+  "flash_why": "user 2026-10-02: line 15 split, a picture per phrase"
+ },
+ {
+  "beat": "P-04c",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Pain pills.",
+  "flash_ok": true,
+  "flash_why": "user 2026-10-02: line 15 split, a picture per phrase"
+ },
+ {
+  "beat": "P-04d",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Cortisone shots.",
+  "flash_ok": true,
+  "flash_why": "user 2026-10-02: line 15 split, a picture per phrase"
+ },
+ {
+  "beat": "P-05a",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Every brace and sleeve they make.",
+  "flash_ok": true,
+  "flash_why": "user 2026-10-01: three P-05 shots"
+ },
+ {
+  "beat": "P-05b",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Nothing worked. Nothing lasted.",
+  "flash_ok": false
+ },
+ {
+  "beat": "P-05c",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Nothing gave me my life back.",
+  "flash_ok": true,
+  "flash_why": "user 2026-10-01: three P-05 shots"
+ },
+ {
+  "beat": "T-01a",
+  "section": "The low point and what failed \u2014 MUS-EXPOSE",
+  "phrase": "Then my grandbaby got married in June.",
+  "flash_ok": false
+ },
+ {
+  "beat": "T-01b",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "My cousin Loretta was there.",
+  "flash_ok": false
+ },
+ {
+  "beat": "T-02a",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "and she was out on that dance floor all night.",
+  "flash_ok": false
+ },
+ {
+  "beat": "T-02b",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "Electric Slide, Cupid Shuffle, all of it.",
+  "flash_ok": false
+ },
+ {
+  "beat": "T-03a",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "Both her knees was bone on bone too.",
+  "flash_ok": true,
+  "flash_why": "the sung line itself is shorter than 2.0 s; the picture holds its whole line"
+ },
+ {
+  "beat": "T-04a",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "I always figured hers wasn't as bad as mine.",
+  "flash_ok": false
+ },
+ {
+  "beat": "T-04b",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "I always figured mine was past fixing.",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-01a",
+  "section": "The turn \u2014 MUS-TURN",
+  "phrase": "Loretta came to stay the week after.",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-02a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "She watched me at the kitchen table,",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-02b",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "Two anti-inflammatories, the gel, the brace,",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-03a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "After a minute she said,",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-03b",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "She pulled up her pant leg.",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-04a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "right under her kneecap.",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-05a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "She handed me one.",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-06a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "I said, \"Loretta, you know good and well",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-06b",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "She said, \"Just put it on",
+  "flash_ok": false
+ },
+ {
+  "beat": "R-07a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "I did.",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-01a",
+  "section": "The reveal and payoff \u2014 MUS-TURN",
+  "phrase": "She said, \"Everything else you tried",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-02a",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "while your knee got worse.",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-03a",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "She said, \"There's one spot under the kneecap",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-04a",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "Every brace, every shot,",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-05a",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "Not that spot.",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-05b",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "This strap sits right on that spot",
+  "flash_ok": false
+ },
+ {
+  "beat": "M-06a",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "First step. Pain gone.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-01a",
+  "section": "Pure mechanism \u2014 MUS-EDU",
+  "phrase": "Over two hundred thousand people wear one now.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-02a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Sports doctors recommend it.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-03a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Loretta's husband wears one.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-04a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Her niece wears one when she runs track.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-05a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "I've worn mine every day for six weeks.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-05b",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Under my clothes.",
+  "flash_ok": false
+ },
+ {
+  "beat": "PR-06a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "No pills. No gel.",
+  "flash_ok": false
+ },
+ {
+  "beat": "L-01a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Yesterday I walked to the store.",
+  "flash_ok": false
+ },
+ {
+  "beat": "L-01b",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Passed three women half my age.",
+  "flash_ok": true,
+  "flash_why": "the sung line itself is shorter than 2.0 s; the picture holds its whole line"
+ },
+ {
+  "beat": "L-02a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Stood in that checkout line ten minutes",
+  "flash_ok": false
+ },
+ {
+  "beat": "L-02b",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "Carried two bags home.",
+  "flash_ok": false
+ },
+ {
+  "beat": "L-03a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "When I got home, my husband said,",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-01a",
+  "section": "Proof and the result \u2014 MUS-AFTER",
+  "phrase": "That was six weeks of wearing the strap.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-02a",
+  "section": "Name, authority, objection \u2014 MUS-AFTER",
+  "phrase": "Three ladies from church already ordered one",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-02b",
+  "section": "Name, authority, objection \u2014 MUS-AFTER",
+  "phrase": "after they watched me come down the church steps.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-03b",
+  "section": "Name, authority, objection \u2014 MUS-AFTER",
+  "phrase": "It's called Stryde Patellar Force Redirection.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-04a",
+  "section": "Name, authority, objection \u2014 MUS-AFTER",
+  "phrase": "They spent three years designing it",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-05a",
+  "section": "Name, authority, objection \u2014 MUS-AFTER",
+  "phrase": "Not them cheap knock-offs",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-06a",
+  "section": "Name, authority, objection \u2014 MUS-AFTER",
+  "phrase": "The link's right down below.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-07a",
+  "section": "Offer and close \u2014 MUS-OFFER",
+  "phrase": "Sixty days to send them back",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-08a",
+  "section": "Offer and close \u2014 MUS-OFFER",
+  "phrase": "Eleven years of knee pain.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-08b",
+  "section": "Offer and close \u2014 MUS-OFFER",
+  "phrase": "Gone the first step I took with it on.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-09a",
+  "section": "Offer and close \u2014 MUS-OFFER",
+  "phrase": "I bought my sister a pair that same week.",
+  "flash_ok": false
+ },
+ {
+  "beat": "C-09c",
+  "section": "Offer and close \u2014 MUS-OFFER",
+  "phrase": "She coming Sunday.",
+  "flash_ok": false
+ }
+]
