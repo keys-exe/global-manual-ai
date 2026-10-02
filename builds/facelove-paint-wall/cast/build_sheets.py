@@ -80,10 +80,24 @@ def build(k, c):
 if __name__ == "__main__":
     out = {}
     import sys
-    only = sys.argv[1:] or list(CAST)
+    only = [a for a in sys.argv[1:] if not a.startswith("--")] or list(CAST)
     for k, c in CAST.items():
         if k not in only: continue
         p = build(k, c); out[k] = {"prompt": p, "title": c["title"]}
         (pathlib.Path(__file__).parent / f"{k}.prompt.txt").write_text(p)
         print(k, len(p))
     json.dump(out, open(pathlib.Path(__file__).parent / "prompts.json", "w"), indent=1, ensure_ascii=False)
+
+# Fix round 2 (user's board Fix on N-BEFORE v2, 2026-10-02, owner-marked: "MAKE THE DARK CIRCLE AROUND THE EYES VISIBLE").
+# Cause: the dark circles were one item mid-list in AGE_V2 and the bright 45-degree window + Smart HDR lifted the under-eye shadow.
+# v2 is otherwise as asked, so v3 is an image edit of v2 (§6A rule 3) changing only the eye area, the circles named as a colour band.
+EDIT_DARK_CIRCLES = (
+ "Image 1 is a character sheet of one woman. Keep this picture exactly as it is — the same five panels, the same face, hair, wrinkles, "
+ "skin texture, clothes, pose, light, wall and floor, nothing moved, nothing redrawn — and change only the skin around her eyes, in every panel where her face shows. "
+ "Add clearly visible dark circles around both eyes: a deep brownish-plum band under each eye from the inner corner to the outer corner, "
+ "plainly darker than her cheek, a grey-violet shadow in the inner corners beside the nose and a faint brownish darkening on the upper lids, "
+ "with puffy bags and a hollow below the lower lids. The window light does not wash the dark circles out: they read even on the lit side of the face, "
+ "strongest in the face close-up, and are clearly visible in the front view. Bare skin, no makeup — the darkness is her own skin, never eyeshadow or a bruise. "
+ "No other change anywhere: no younger face, no smoothing, no new lines removed, no change of expression, no change of colour elsewhere.")
+if __name__ == "__main__" and "--edit-v3" in __import__("sys").argv:
+    (pathlib.Path(__file__).parent / "N-BEFORE.v3.edit.prompt.txt").write_text(EDIT_DARK_CIRCLES); print(len(EDIT_DARK_CIRCLES))
