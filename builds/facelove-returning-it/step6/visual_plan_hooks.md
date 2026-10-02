@@ -2,6 +2,36 @@
 
 The strongest picture for every line, picked from three (hooks from five). Scores out of 12: stop · line · feel · specific · fresh · makeable.
 
+### Hook 1 — I am so mad, and this is exactly why you read the reviews before you buy another foundation. Because I bought this FACELOVE stick that everyone would not stop raving about, and I am going to be returning it.
+
+| | First frame | Stakes | Where | Score |
+|---|---|---|---|---|
+| **▶ picked** | her bare, red-cheeked face close to the lens, the FACELOVE carton held up beside it and tapped twice, sticker 'I'm so mad 😡' | she is furious at a product everyone loves | her vanity, late afternoon | 11/12 |
+| B | the return mailer slapped down on the white vanity, the carton dropped into it from above | the product is already going back | her vanity top from above | 11/12 |
+| C | close on her red cheek, one finger pointing at the redness | the problem she has lived with | her vanity mirror | 10/12 |
+| E | a pile of half-used foundation bottles swept off the vanity into a bin | years of money on the wrong shades | her vanity | 10/12 |
+| D | she walks out of a department store beauty hall, shopping bag swinging, jaw set | another wasted purchase | a mall beauty hall | 7/12 |
+
+### Hook 2 — Okay, I need to vent. I finally found a foundation that actually matches my redness, and I am sending it back. Here is why.
+
+| | First frame | Stakes | Where | Score |
+|---|---|---|---|---|
+| **▶ picked** | screech of tape: her hands tape shut a grey return mailer with the FACELOVE carton inside, then she looks straight up at the lens | she's sending back the one that worked | her vanity, hands and face | 12/12 |
+| B | half her face: one cheek even, the other still red, she points at both | it worked — so why return it? | her vanity | 11/12 |
+| C | she rolls her eyes and drops into the vanity chair, bare-faced | she has had enough | her bedroom | 8/12 |
+| D | a post-office counter, the parcel slid across | it is really going back | a post office | 8/12 |
+| E | close on the stick in her fist, knuckles tight | the anger is real | her vanity | 8/12 |
+
+### Hook 3 — Every makeup counter told me nothing would ever match my redness. So why am I returning the one stick that finally did?
+
+| | First frame | Stakes | Where | Score |
+|---|---|---|---|---|
+| **▶ picked** | over the saleswoman's shoulder at the makeup counter: a bottle held to her red jaw, three wrong swatches, a slow head shake | the experts gave up on her skin | the department-store makeup counter | 12/12 |
+| B | macro: the white balm laid across her red cheek, the brush turning it to her exact shade | proof it did what the counter said was impossible | her vanity | 10/12 |
+| C | a row of wrong-shade bottles on the counter, each one too pink or too orange against her jaw | every match failed | the makeup counter | 10/12 |
+| D | she shrugs at the lens holding the stick, eyebrows up | the puzzle | her vanity | 8/12 |
+| E | a shopping bag of returned foundations on the bed | years of failed matches | her bedroom | 7/12 |
+
 ### Act 1 — the fake-out: every 'it's not because' is the stick working on her real skin, then the counter woman who said it couldn't
 
 | Beat | Line | Picked | Route | Score | Also considered |
