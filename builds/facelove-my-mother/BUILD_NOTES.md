@@ -14,7 +14,7 @@ Drive task folder `1M1DbzCv_DwDnXnhwkztLtgEB69yjBUiZ` · cast pictures `1__Tfn0-
 ## Where it stands (2026-10-02, after the user's board review)
 - **Confirmed by the user:** all 8 cast sheets; plates P-HOUSE, L-YARD, L-YARD-REV, L-GATHERING, L-VANITY, L-PORCH-IN (v1, as is), L-HOSTS-FRONT.
 - **L-VANITY-REV retired** on the user's Fix "dont use this": copied to the Old board, removed from Current; SC05-SH01/SH02 restaged on L-VANITY (Beth enters from the doorway behind the camera). Checks rerun: angles / wardrobe / visual plan PASS; takes.py now 6 false SPLIT lines (pairs 17–25 s).
-- An L-PORCH-IN v2 was generated (3.1 credits) before the board was read — v1 had already been confirmed, so v2 is kept off the board (`plates/unused.txt`). Lesson for this build: read the board before acting on a chat reply.
+- An L-PORCH-IN v2 was generated (5.67 credits) before the board was read — v1 had already been confirmed, so v2 is kept off the board (`plates/unused.txt`). Lesson for this build: read the board before acting on a chat reply.
 - Open: F6 (L015 wording: niacinamide, "settles into the lines", "reads your skin") before the voice stage; F3 hooks; F16 yard reading (kept).
 
 ## Steps 4–5 (2026-10-02)
