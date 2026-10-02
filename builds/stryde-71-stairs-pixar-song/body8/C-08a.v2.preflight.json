@@ -1,0 +1,67 @@
+{
+ "beat": "C-08a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — Eleven years of knee pain. —: Keep this photo exactly as it is — her own staircase, the runner, the brass rods, the dark oak rail, the newel post, the photo wall, the front door — and change only her clothes, her pose and the light. Image 1 is the photo. Image 2 is her face and silver twist-out.\nShe is the woman of Image 1 and Image 2 — the same round face, dark brown skin and silver twist-out, about 5.5 heads tall. The old way, years before: she wears a plum knit top, a long grey skirt and pink terry slippers, standing side-on on the 6th step from the bottom, in profile facing the rail, both hands gripping the dark oak rail, four chunky fingers and a thumb on each, one slipper reaching down for the step below, her face tight and careful, mouth closed, eyes on her foot. Scale true to the set: each step riser up to her shin.\nIn frame: her, the staircase and hall of Image 1; no strap anywhere, nobody else.\nA final frame from a 3D animated feature film, stylized storybook render, cool grey morning light from the landing window above. No lettering, logos or labels but its wordmark.",
+ "script_line": "Eleven years of knee pain.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "R-07a frame v8 A (confirmed) — her own staircase from the hall, she coming down in her day-three clothes, the strap on her right knee",
+   "kind": "frame"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "11b8a6bb-8c4a-4739-86ce-0c779f413c53",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"wrong avatar\" → the same edit with her face-and-hair crop attached and her face named (§24O rule 7, L54)",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "medias": [
+  "11b8a6bb-8c4a-4739-86ce-0c779f413c53",
+  "d95762a8-ca34-4115-96ef-72a0279b4cd1"
+ ],
+ "board_refs": [
+  {
+   "label": "R-07a frame v8 A (confirmed) — her own staircase from the hall, she coming down in her day-three clothes, the strap on her right knee",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__R-07a",
+   "role": "Image 1"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "beat": "PR-05b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Under my clothes. Don't nobody know it's there.\": From this frame: she takes one step down toward the lens, the basket steady at her waist — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels. Her lips stay sealed and her jaw still from the first frame to the last, her face holding the expression of the frame — a silent clip, nobody speaks or sings. Facing the lens in the middle of the runner, away from the rail, she takes exactly one easy step down onto the next tread with the laundry basket at her waist, then stands still; both her hands keep hold of the basket's two handles from the first frame to the last and never touch the rail; her navy trousers fall smooth over both knees; the runner, brass rods, rail and photo wall stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. The camera stays where it is; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_131240_4efeb531-6b4c-4596-9739-48aabc3be13c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Under my clothes. Don't nobody know it's there.",
+ "motion_plan": "From this frame: she takes one step down toward the lens, the basket steady at her waist — one step, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "travel",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user clip Fix \"she should not touch the hand rail\" → both hands stay on the basket handles the whole clip, she keeps to the middle of the runner away from the rail, exactly one step then still",
+ "fix_notes_all": null,
+ "risk_class": "stairs",
+ "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
+ "pilot": "confirmed",
+ "pilot_ref": "HK-01a/HK-02a stairs clips (confirmed)",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image v5)"
+}

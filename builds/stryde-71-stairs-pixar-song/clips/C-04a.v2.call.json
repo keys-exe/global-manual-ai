@@ -1,0 +1,62 @@
+{
+ "beat": "C-04a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"They spent three years designing it with orthopedic surgeons. It's the real thing.\": From this frame: her thumbs press the strap's shell flat under the kneecap — one gentle press, about a second; camera RV sway — the virtual camera breathes in place, never travels. Both their lips stay sealed and jaws still from the first frame to the last, each face holding the expression of the frame — a silent clip, nobody speaks or sings. Crouched at his knee, the surgeon rests both thumbs on the strap's black shell under his kneecap and gives it one gentle press flat, then her hands stay still on it; she never pulls, lifts or stretches the band — the strap keeps exactly its length, shape and place from the frame, black shell, two peaks together at its middle, chrome slides, exactly one strap on his right knee; he sits still, hands on the table; the room stays as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_131325_89231e64-c9f5-4102-907a-6432bf99659d.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "They spent three years designing it with orthopedic surgeons. It's the real thing.",
+ "motion_plan": "From this frame: her thumbs press the strap's shell flat under the kneecap — one gentle press, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one press",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user clip Fix \"she should not stretch it\" → only a thumb press on the shell, the band never pulled; the strap keeps its length",
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "pilot_ref": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21",
+  "FP22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "the camera stays where it is / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image v1)"
+}

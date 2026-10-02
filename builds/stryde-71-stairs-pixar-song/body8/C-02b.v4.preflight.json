@@ -1,0 +1,81 @@
+{
+ "beat": "C-02b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — after they watched me come down the church steps. So I'ma just say it right here. —: Keep this photo exactly as it is, a tall 9:16 crop of the steps; add four women. Image 1 is the church. Image 2 is the woman — face and silver twist-out only. Image 3 is the three church ladies and the style — copy each lady exactly: face, skin, hair, dress and hat.\nMedium shot from low at the foot of the steps, three-quarter, sharp on her: the woman of Image 2, about 5.5 heads tall, comes down facing the lens, mid-step on the third step from the bottom, hands free off the rail, in an emerald church dress, black pumps, a wide green hat, a proud closed-mouth smile, looking ahead; to one side at the foot the three ladies of Image 3 watch her side by side — the lady in lilac nearest, then coral, then cream — hands clasped, four chunky fingers and a thumb on each hand. Scale true to the set: each step a shin high.\nIn frame: exactly four women, the steps; nobody else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. No captions or subtitles; no lettering, logos or labels anywhere.",
+ "script_line": "after they watched me come down the church steps. So I'ma just say it right here.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P5-CHURCH plate (confirmed) — the church and its steps",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character"
+  },
+  {
+   "label": "C-02a frame v5 A (new) — the three church ladies to copy: faces, hair, dresses, hats",
+   "kind": "style",
+   "people": true
+  }
+ ],
+ "match": "plate",
+ "edit_of": "020f7d83-d6e2-4744-9595-bef39ecf8f9f",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"use the c02a as rerefence for all of them\" → the new C-02a frame attached as the ladies to copy (§24O rule 10, L55); earlier Fixes in force: \"not a pixar\", no captions",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": [
+  "three church ladies (copied from C-02a)"
+ ],
+ "medias": [
+  "020f7d83-d6e2-4744-9595-bef39ecf8f9f",
+  "d95762a8-ca34-4115-96ef-72a0279b4cd1",
+  "e2b5d84f-a062-4a71-96b1-07a654cb631f"
+ ],
+ "board_refs": [
+  {
+   "label": "P5-CHURCH plate (confirmed) — the church and its steps",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH",
+   "role": "Image 1"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "label": "C-02a frame v5 A (new) — the three church ladies to copy: faces, hair, dresses, hats",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__C-02a",
+   "role": "Image 3"
+  }
+ ]
+}

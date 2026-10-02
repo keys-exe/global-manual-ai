@@ -854,3 +854,51 @@ What moved to Old 2:
 - Picks on C-02a, C-02b and the six Act 8 pairs.
 - Confirm or Fix on the six new clips.
 - After Act 8's clips, every beat has its picture. The edit (CapCut / `music.py render`) comes next.
+
+### 2026-10-02 ~14:25–15:00 UTC — "fix those and generate the clips"
+
+**Board read first (L49).** Fix notes on the board:
+- C-07a image "dont cover the box stryde logo"
+- C-08a image "wrong avatar"
+- PR-06a image "the strap is too big"
+- PR-05b clip "she should not touch the hand rail"
+
+Clips were owed on the confirmed picks C-06a (v1), C-08b (v2), C-09a (v1) and C-09c (v1). C-02a and C-02b still wait on your pick.
+
+**Image Fixes (new pairs, To check):**
+- **C-07a v3/v4:** an edit of your picked v1 A frame. Her hand is off the lid and the stryde wordmark on the lid is in full view.
+- **C-08a v3/v4:** the same edit of R-07a v8 A, now with her face-and-hair crop attached and her face named ("the same round face, dark brown skin and silver twist-out"). Cause: an edit that changed her clothes and pose redrew a thinner, lighter-skinned woman.
+- **PR-06a v7/v8:** an edit of your picked v5 frame. Only the strap's size changes, to true size against the mug ("a little longer than the mug is tall"). Cause: my prompt asked for "a quarter of the frame wide" in a wide overhead, which enlarged the strap.
+  - Flagged: B is still on the large side.
+  - The PR-06a clip v1 (made from the replaced v5 frame) stays as a version until the new pick has its clip.
+
+**System (owner account, V7.91.2):**
+- §6A rule 2: the frame fraction never enlarges the product past true size beside known objects; reframe closer instead (L53).
+- §24O rule 7: an edit that changes a cast member's clothes or pose attaches her face crop. `preflight.py` checks it (L54).
+
+**Clips (Kling 3.0, 1080p, silent; To check):**
+- **PR-05b clip v2**, 5 s, your Fix "she should not touch the hand rail". Diagnosis: in v1 her right hand left the basket for the rail. Now both hands are named on the basket handles from the first frame to the last, she walks in the middle of the runner, and it's one step. The second generation of this shot; v1 is on Old 3. Flagged: she still walks a few steps.
+- **C-06a v1**, 6 s: she lifts the two straps on the sofa.
+- **C-08b v1**, 6 s: stairs class, end frame waived by your 2026-10-01 words, hands named off the rail. Flagged: several steps, not one.
+- **C-09a v1**, 5 s: she pulls the bow tight.
+- **C-09c v1**, 5 s: the sister climbs toward the lens with the gift.
+- The unused images of the picked pairs (C-06a v2, C-08b v1, C-09a v2, C-09c v2) are on Old 3.
+
+**Balances:** Higgsfield 5877.65 · Kling 36853.
+
+**Waiting on:**
+- Picks on C-02a, C-02b, C-07a, C-08a and PR-06a.
+- Confirm or Fix on the clips: C-03b, C-04a, C-05a, C-06a, C-08b, C-09a, C-09c, PR-05b v2.
+- Clips for C-07a, C-08a and PR-06a after their picks. Then every beat has its picture and the edit comes next.
+
+### 2026-10-02 ~14:35–14:45 UTC — hourly Fix check (three new Fix notes)
+
+- **C-02a** image Fix "make a new one the face looks the same" → v5/v6. Three different women, each written in her own clause:
+  - lilac: short, plump, round glasses, white curls
+  - coral: tall, slim, freckles, grey bun
+  - cream: broad, very dark skin, silver braids
+
+  Same Pixar ladder and jogger style frame. Cause: one shared description for the group. Fixed in V7.91.3 (§24O rule 10, L55, `preflight.py`).
+- **C-02b** image Fix "use the c02a as rerefence for all of them" → v5/v6. The new C-02a A frame is attached as the ladies to copy; her face crop is kept and there are no captions. Flagged: in B the lady in cream is cut at the right edge. If you pick C-02a B instead of A, the ladies match anyway (A and B carry the same three women).
+- **C-04a** clip Fix "she should not stretch it" → clip v2, the second generation. Diagnosis: v1 had her pulling the band. Now it's a thumb press on the shell only, the band never pulled, and the strap keeps its length. v1 is on Old 3.
+- Balances after: Higgsfield 5869.65 · Kling 36805. Waiting on: picks on C-02a, C-02b, C-07a, C-08a, PR-06a; Confirm/Fix on C-04a clip v2 and the other open clips.
