@@ -16,11 +16,11 @@ Dialogue: 0,0:00:06.60,0:00:06.94,Cap,,0,0,0,,{\c&H00FFFFFF&}mum {\c&H0000E6FF&}
 Dialogue: 0,0:00:06.94,0:00:07.23,Cap,,0,0,0,,{\c&H00FFFFFF&}mum {\c&H00FFFFFF&}wait {\c&H0000E6FF&}i’ll
 Dialogue: 0,0:00:07.23,0:00:07.32,Cap,,0,0,0,,{\c&H0000E6FF&}give {\c&H00FFFFFF&}you {\c&H00FFFFFF&}a
 Dialogue: 0,0:00:07.32,0:00:07.50,Cap,,0,0,0,,{\c&H00FFFFFF&}give {\c&H0000E6FF&}you {\c&H00FFFFFF&}a
-Dialogue: 0,0:00:07.50,0:00:12.07,Cap,,0,0,0,,{\c&H00FFFFFF&}give {\c&H00FFFFFF&}you {\c&H0000E6FF&}a
-Dialogue: 0,0:00:12.10,0:00:12.71,Cap,,0,0,0,,{\c&H0000E6FF&}when
-Dialogue: 0,0:00:14.41,0:00:14.84,Cap,,0,0,0,,{\c&H0000E6FF&}did {\c&H00FFFFFF&}that {\c&H00FFFFFF&}happen
-Dialogue: 0,0:00:14.84,0:00:15.04,Cap,,0,0,0,,{\c&H00FFFFFF&}did {\c&H0000E6FF&}that {\c&H00FFFFFF&}happen
-Dialogue: 0,0:00:15.04,0:00:15.74,Cap,,0,0,0,,{\c&H00FFFFFF&}did {\c&H00FFFFFF&}that {\c&H0000E6FF&}happen
+Dialogue: 0,0:00:07.50,0:00:08.48,Cap,,0,0,0,,{\c&H00FFFFFF&}give {\c&H00FFFFFF&}you {\c&H0000E6FF&}a
+Dialogue: 0,0:00:14.11,0:00:14.41,Cap,,0,0,0,,{\c&H0000E6FF&}when {\c&H00FFFFFF&}did {\c&H00FFFFFF&}that
+Dialogue: 0,0:00:14.41,0:00:14.84,Cap,,0,0,0,,{\c&H00FFFFFF&}when {\c&H0000E6FF&}did {\c&H00FFFFFF&}that
+Dialogue: 0,0:00:14.84,0:00:15.04,Cap,,0,0,0,,{\c&H00FFFFFF&}when {\c&H00FFFFFF&}did {\c&H0000E6FF&}that
+Dialogue: 0,0:00:15.04,0:00:15.74,Cap,,0,0,0,,{\c&H0000E6FF&}happen
 Dialogue: 0,0:00:16.54,0:00:17.20,Cap,,0,0,0,,{\c&H0000E6FF&}i’m
 Dialogue: 0,0:00:17.35,0:00:17.80,Cap,,0,0,0,,{\c&H0000E6FF&}71
 Dialogue: 0,0:00:18.16,0:00:18.44,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
@@ -545,7 +545,7 @@ Dialogue: 0,0:05:10.33,0:05:10.45,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}h
 Dialogue: 0,0:05:10.45,0:05:11.15,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}here
 Dialogue: 0,0:05:11.33,0:05:11.53,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}called {\c&H00FFFFFF&}stryde
 Dialogue: 0,0:05:11.53,0:05:11.61,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}called {\c&H00FFFFFF&}stryde
-Dialogue: 0,0:05:11.61,0:05:13.05,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}called {\c&H0000E6FF&}stryde
+Dialogue: 0,0:05:11.61,0:05:12.87,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}called {\c&H0000E6FF&}stryde
 Dialogue: 0,0:05:13.13,0:05:13.67,Cap,,0,0,0,,{\c&H0000E6FF&}patellar {\c&H00FFFFFF&}force {\c&H00FFFFFF&}redirection
 Dialogue: 0,0:05:13.67,0:05:13.97,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H0000E6FF&}force {\c&H00FFFFFF&}redirection
 Dialogue: 0,0:05:13.97,0:05:15.03,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H00FFFFFF&}force {\c&H0000E6FF&}redirection

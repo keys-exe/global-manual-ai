@@ -11,14 +11,14 @@ Style: Cap,Montserrat Thin ExtraBold,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:01.38,Cap,,0,0,0,,{\c&H0000E6FF&}mum
-Dialogue: 0,0:00:02.54,0:00:03.04,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}next {\c&H00FFFFFF&}one’s
-Dialogue: 0,0:00:03.04,0:00:03.22,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}next {\c&H00FFFFFF&}one’s
-Dialogue: 0,0:00:03.22,0:00:03.48,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}next {\c&H0000E6FF&}one’s
-Dialogue: 0,0:00:03.48,0:00:03.64,Cap,,0,0,0,,{\c&H0000E6FF&}in {\c&H00FFFFFF&}ten {\c&H00FFFFFF&}minutes
-Dialogue: 0,0:00:03.64,0:00:03.80,Cap,,0,0,0,,{\c&H00FFFFFF&}in {\c&H0000E6FF&}ten {\c&H00FFFFFF&}minutes
-Dialogue: 0,0:00:03.80,0:00:04.34,Cap,,0,0,0,,{\c&H00FFFFFF&}in {\c&H00FFFFFF&}ten {\c&H0000E6FF&}minutes
-Dialogue: 0,0:00:04.34,0:00:04.95,Cap,,0,0,0,,{\c&H0000E6FF&}we
+Dialogue: 0,0:00:02.24,0:00:02.54,Cap,,0,0,0,,{\c&H0000E6FF&}mum {\c&H00FFFFFF&}the {\c&H00FFFFFF&}next
+Dialogue: 0,0:00:02.54,0:00:03.04,Cap,,0,0,0,,{\c&H00FFFFFF&}mum {\c&H0000E6FF&}the {\c&H00FFFFFF&}next
+Dialogue: 0,0:00:03.04,0:00:03.22,Cap,,0,0,0,,{\c&H00FFFFFF&}mum {\c&H00FFFFFF&}the {\c&H0000E6FF&}next
+Dialogue: 0,0:00:03.22,0:00:03.48,Cap,,0,0,0,,{\c&H0000E6FF&}one’s {\c&H00FFFFFF&}in {\c&H00FFFFFF&}ten
+Dialogue: 0,0:00:03.48,0:00:03.64,Cap,,0,0,0,,{\c&H00FFFFFF&}one’s {\c&H0000E6FF&}in {\c&H00FFFFFF&}ten
+Dialogue: 0,0:00:03.64,0:00:03.80,Cap,,0,0,0,,{\c&H00FFFFFF&}one’s {\c&H00FFFFFF&}in {\c&H0000E6FF&}ten
+Dialogue: 0,0:00:03.80,0:00:04.34,Cap,,0,0,0,,{\c&H0000E6FF&}minutes {\c&H00FFFFFF&}we
+Dialogue: 0,0:00:04.34,0:00:04.95,Cap,,0,0,0,,{\c&H00FFFFFF&}minutes {\c&H0000E6FF&}we
 Dialogue: 0,0:00:06.44,0:00:07.05,Cap,,0,0,0,,{\c&H0000E6FF&}can
 Dialogue: 0,0:00:07.52,0:00:08.04,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}waiting {\c&H00FFFFFF&}ten
 Dialogue: 0,0:00:08.04,0:00:08.34,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}waiting {\c&H00FFFFFF&}ten
@@ -557,7 +557,7 @@ Dialogue: 0,0:05:13.28,0:05:13.40,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}h
 Dialogue: 0,0:05:13.40,0:05:14.10,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}here
 Dialogue: 0,0:05:14.28,0:05:14.48,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}called {\c&H00FFFFFF&}stryde
 Dialogue: 0,0:05:14.48,0:05:14.56,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}called {\c&H00FFFFFF&}stryde
-Dialogue: 0,0:05:14.56,0:05:16.00,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}called {\c&H0000E6FF&}stryde
+Dialogue: 0,0:05:14.56,0:05:15.82,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}called {\c&H0000E6FF&}stryde
 Dialogue: 0,0:05:16.08,0:05:16.62,Cap,,0,0,0,,{\c&H0000E6FF&}patellar {\c&H00FFFFFF&}force {\c&H00FFFFFF&}redirection
 Dialogue: 0,0:05:16.62,0:05:16.92,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H0000E6FF&}force {\c&H00FFFFFF&}redirection
 Dialogue: 0,0:05:16.92,0:05:17.98,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H00FFFFFF&}force {\c&H0000E6FF&}redirection
