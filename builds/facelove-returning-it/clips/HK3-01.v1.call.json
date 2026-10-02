@@ -1,0 +1,47 @@
+{
+ "beat": "HK3-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line — Every makeup counter told me nothing would ever match my redness. So why am I returning the one stick that finally did? —: From this frame: the saleswoman lowers the bottle from the customer's jaw and slowly shakes her head once — about 2 s; phone held still at counter height. Both women's lips sealed and jaws still, nobody speaks; each face holding the expression of the frame. The customer stays seated on the stool, hands in her lap, eyes on the saleswoman; the three swatch stripes stay on her red jaw. The counter, mirror and wall of bottles stay exactly as in the frame. The camera holds still with a slight handheld sway and never travels. No cut, no new people, no text.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK3-01 A (confirmed; Higgsfield job 7ef26b97-4509-464f-a262-7f4ea1ea5d77)",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Every makeup counter told me nothing would ever match my redness. So why am I returning the one stick that finally did?",
+ "motion_plan": "From this frame: the saleswoman lowers the bottle from the customer's jaw and slowly shakes her head once — about 2 s; phone held still at counter height.",
+ "motion_confirmed": true,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT20",
+  "HT22",
+  "HT25"
+ ],
+ "risks": [
+  {
+   "risk": "someone mouths the line",
+   "prevented_by": "lips sealed, nobody speaks (HT25), right after the motion plan"
+  },
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one head shake named, then still"
+  },
+  {
+   "risk": "the counter or people change",
+   "prevented_by": "counter, mirror, bottles and both women stay exactly as in the frame; no new people"
+  }
+ ]
+}
