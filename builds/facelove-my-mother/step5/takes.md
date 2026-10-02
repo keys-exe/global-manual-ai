@@ -13,8 +13,8 @@ Connected shots are generated in one take — one Seedance call (§24K part 5). 
 | SC04-T1 | None | SC04-SH01 | a plain invite card face-up on the kitchen island, her hand coming in | invite face-down under the phone, her hand leaving |  |
 | SC04-T2 | None | SC04-SH02 | the family on the grey sectional around the cake, the daughter in the middle; Susan standing in the clear floor with the phone | Susan one step further back, phone up |  |
 | SC04-T3 | multi | SC04-SH03, SC04-SH04, SC04-SH05 | Susan seated on the stool at the dressing table facing the mirror, a plain unlabelled foundation bottle and a sponge on the table | Susan at the dressing table, sponge lowered, still |  |
-| SC05-T1 | multi | SC05-SH01, SC05-SH02 | Susan sitting on the end of the bed in her cardigan; the bedroom door open; Beth coming through it | Susan on the end of the bed, Beth inside the door with the garment bag |  |
-| SC05-T2 | multi | SC05-SH03, SC05-SH04 | Beth standing by the bed with the garment bag; Susan on the end of the bed | Susan seated on the stool facing the mirror; Beth standing at her left shoulder |  |
+| SC05-T1 | multi | SC05-SH01, SC05-SH02 | Susan sitting on the end of the bed (frame left) in her sweatshirt, facing the room; the dressing table and mirror on the right under the window; Beth just behind the camera in the doorway | Susan on the end of the bed, Beth inside the door with the garment bag |  |
+| SC05-T2 | multi | SC05-SH03, SC05-SH04 | Beth standing by the bed with the garment bag; Susan on the end of the bed | Susan seated on the stool facing the mirror; Beth standing at her left shoulder | length |
 | SC05-T3 | multi | SC05-SH05 | Susan seated facing the mirror, Beth at her left shoulder | the balm end uncapped in Beth's right hand at Susan's cheek | length |
 | SC05-T4 | None | SC05-SH06 | the balm end at her cheekbone | a white stripe on her cheek, the stick lifting away | insert |
 | SC05-T5 | None | SC05-SH07 | a white stripe on her cheek, the brush end touching its lower end | the cheek evened, every line still there | insert |

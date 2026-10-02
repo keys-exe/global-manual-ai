@@ -20,9 +20,9 @@
 | SC04-SH03 | SC04-T3 | L-VANITY · D2 | SH-EYE | eye/front/MCU | L009 | Susan at the dressing table dabs foundation from a plain unlabelled bottle onto her cheek with a sponge | F2 | MUS-EXPOSE |
 | SC04-SH04 | SC04-T3 | L-VANITY · D2 | SH-MACRO | eye/three-quarter/ECU | L009 | the beige foundation sits grey and dry in the crease beside her mouth, flaking at the edges as she smiles slightly | F2 | MUS-EXPOSE |
 | SC04-SH05 | SC04-T3 | L-VANITY · D2 | SH-CU+SH-34 | eye/three-quarter/CU | L009 | the sponge stops halfway to her face; she lowers it slowly and just looks | F2 | none (drops out on the mirror — VN14) |
-| SC05-SH01 | SC05-T1 | L-VANITY-REV · D4 | SH-WIDE+SH-FGFOC | eye/front/WIDE | L010 | Beth walks in through the open bedroom door, garment bag over her shoulder, stops, looks at Susan, says it plainly | F2 | MUS-EDU |
-| SC05-SH02 | SC05-T1 | L-VANITY-REV · D4 | SH-HIGH+SH-34 | high/three-quarter/MCU | L011 | Susan doesn't get up; she says it to her hands | F2 | MUS-EDU |
-| SC05-SH03 | SC05-T2 | L-VANITY · D4 | SH-MED+SH-34 | eye/three-quarter/MEDIUM | L012 | Beth lays the garment bag on the bed and talks while she does it | F2 | MUS-EDU |
+| SC05-SH01 | SC05-T1 | L-VANITY · D4 | SH-WIDE+SH-PROFILE | eye/profile/WIDE | L010 | Beth walks in from behind the camera, garment bag over her shoulder, stops in profile between the bed and the dressing table, looks at Susan and says it plainly | F2 | MUS-EDU |
+| SC05-SH02 | SC05-T1 | L-VANITY · D4 | SH-HIGH+SH-34 | high/three-quarter/MCU | L011 | Susan doesn't get up; she says it to her hands | F2 | MUS-EDU |
+| SC05-SH03 | SC05-T2 (length) | L-VANITY · D4 | SH-MED+SH-34 | eye/three-quarter/MEDIUM | L012 | Beth lays the garment bag on the bed and talks while she does it | F2 | MUS-EDU |
 | SC05-SH04 | SC05-T2 | L-VANITY · D4 | SH-MED+SH-PROFILE | eye/profile/MEDIUM | L013 | Beth pulls the dressing-table stool out with one hand and nods Susan to it; Susan gets up from the bed and sits | F2 | MUS-EDU |
 | SC05-SH05 | SC05-T3 (length) | L-VANITY · D4 | SH-34+SH-HIGH | high/three-quarter/MCU | L014 | Beth tilts Susan's chin to the window with two fingers, takes the closed violet stick from her pocket, her palm over the wordmark, and pulls the cap off the balm end | F2 | MUS-TURN |
 | SC05-SH06 | SC05-T4 (insert) | L-VANITY · D4 | SH-MACRO+SH-PROFILE | eye/profile/ECU | L014 | the balm's flat crest draws one white stripe up Susan's cheekbone | F2 | MUS-AFTER |

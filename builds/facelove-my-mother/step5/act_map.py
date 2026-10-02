@@ -125,16 +125,16 @@ R("SC04-SH05", "SC04", "SC04-T3", lt="MIRROR", key="R", subject="N", cast=["N"],
   lines="L009", action="the sponge stops halfway to her face; she lowers it slowly and just looks", pace="one stop, held", end_pos="Susan at the dressing table, sponge lowered, still", cut="on 'the word he used.'")
 
 # ---------- SC05 BETH — D4 afternoon, L-VANITY / L-VANITY-REV ----------
-R("SC05-SH01", "SC05", "SC05-T1", take_kind="multi", lt="VANITY", key="L", subject="C3", cast=["C3", "N"], location="L-VANITY-REV", story_day="D4",
-  height="eye", side="front", scale="WIDE", fg="through", shot=["SH-WIDE", "SH-FGFOC"], speaking=True, face=True, product_beat=False, focus=F("background", "medium"),
-  why="from beside the dressing table toward the door: Beth comes in without knocking, garment bag over her shoulder (VN15)", rig="F2",
-  lines="L010", action="Beth walks in through the open bedroom door, garment bag over her shoulder, stops, looks at Susan, says it plainly", pace="three steps in, stops",
-  start_pos="Susan sitting on the end of the bed in her cardigan; the bedroom door open; Beth coming through it", cut="on 'You're coming.'", ingredients=["C3", "N", "L-VANITY-REV", "L-VANITY", "VOICE-C3"])
-R("SC05-SH02", "SC05", "SC05-T1", lt="VANITY", key="L", subject="N", cast=["N"], location="L-VANITY-REV", story_day="D4",
+R("SC05-SH01", "SC05", "SC05-T1", take_kind="multi", lt="VANITY", key="R", subject="C3", cast=["C3", "N"], location="L-VANITY", story_day="D4",
+  height="eye", side="profile", scale="WIDE", fg="clean", shot=["SH-WIDE", "SH-PROFILE"], speaking=True, face=True, product_beat=False, focus=F("deep", "medium"),
+  why="the plate's own view from the doorway: Beth walks in past the camera without knocking, garment bag over her shoulder, and stops in profile facing Susan (VN15)", rig="F2",
+  lines="L010", action="Beth walks in from behind the camera, garment bag over her shoulder, stops in profile between the bed and the dressing table, looks at Susan and says it plainly", pace="three steps in, stops",
+  start_pos="Susan sitting on the end of the bed (frame left) in her sweatshirt, facing the room; the dressing table and mirror on the right under the window; Beth just behind the camera in the doorway", cut="on 'You're coming.'", ingredients=["C3", "N", "L-VANITY", "VOICE-C3"])
+R("SC05-SH02", "SC05", "SC05-T1", lt="VANITY", key="R", subject="N", cast=["N"], location="L-VANITY", story_day="D4",
   height="high", side="three-quarter", scale="MCU", fg="clean", shot=["SH-HIGH", "SH-34"], speaking=True, face=True, product_beat=False, focus=F("eyes", "shallow"),
   why="high on her sitting on the bed: small, not moving — 'compare me to Paula again'", rig="F2",
   lines="L011", action="Susan doesn't get up; she says it to her hands", pace="still", end_pos="Susan on the end of the bed, Beth inside the door with the garment bag", cut="on 'Everyone saw it.'")
-R("SC05-SH03", "SC05", "SC05-T2", take_kind="multi", lt="VANITY", key="L", subject="C3", cast=["C3"], location="L-VANITY", story_day="D4",
+R("SC05-SH03", "SC05", "SC05-T2", split="length", take_kind="multi", lt="VANITY", key="L", subject="C3", cast=["C3"], location="L-VANITY", story_day="D4",
   height="eye", side="three-quarter", scale="MEDIUM", fg="clean", shot=["SH-MED", "SH-34"], speaking=True, face=True, product_beat=False, focus=F("eyes", "medium"),
   why="Beth easy and honest: agreeing with what Susan saw (the trust unlock)", rig="F2",
   lines="L012", action="Beth lays the garment bag on the bed and talks while she does it", pace="one lay-down",
