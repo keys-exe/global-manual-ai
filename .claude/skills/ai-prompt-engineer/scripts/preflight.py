@@ -60,6 +60,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
     "pixar_anatomy": false,            # a build from before V7.90 whose team asked for the Pixar anatomy: the Pixar anatomy checks run despite legacy_build (V7.90.3)
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
+    "anat_scope": null | "macro" | "close" | "pair" | "walking" | "load" | "whole",   # what the picture holds, from the row (V7.91.0)
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
   }
@@ -118,6 +119,13 @@ PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|
 BANNED = re.compile(r"\bcinematic\b", re.I)
 # §12A-1 Pixar anatomy (V7.90.0): words that pull a Mode 2 / 5 anatomy frame back to medical CGI
 PIX_ANAT_BAN = re.compile(r"premium 3D anatomical visuali[sz]ation|medical education|broadcast-quality|photo-?real(?:istic)?|natural tissue colou?rs|fibrous|fibre detail|textbook|seamless (?:studio|background)|pale grey seamless", re.I)
+# §12A-1 (V7.91.0): what an anatomy picture holds, and the words that say it in the prompt
+ANAT_SCOPE = {"macro": r"fills? the frame|so close|macro", "close": r"\bclose\b", "pair": r"\bboth (?:knees|legs|wrists|ankles|elbows|shoulders|hips|hands|feet|joints|sides)\b|\btwo (?:knees|legs|wrists|ankles|elbows|shoulders|hips|joints)\b|side by side",
+              "walking": r"\bwalk|mid-stride|\bstride", "load": r"\bstair|\bsteps? (?:up|down)|stand(?:s|ing)? up|squat|\blift|kneel|\bclimb|\btread",
+              "whole": r"whole (?:body|figure)|full (?:body|figure)|head to toe"}
+ANAT_SCOPE_SAY = {"macro": "the site so close it fills the frame", "close": "one joint close (the right knee, close)",
+                  "pair": "both knees side by side", "walking": "both legs walking, mid-stride", "load": "the leg on the stairs, stepping up",
+                  "whole": "the whole figure, the joint lit inside it"}
 # Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
 # touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
 PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
@@ -283,6 +291,13 @@ def run_image(c):
         if st and st != "S1" and (mode not in (2, 5) or c.get("anat_lock") or c.get("legacy_build")):
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
+        if not c.get("legacy_build"):
+            # V7.91.0 (user: "closeup on knee or two knees or both feet walking or with stairs"): the row's scope, said in the prompt
+            sc = c.get("anat_scope")
+            check("anatomy scope named (§12A-1 V7.91.0)", sc in ANAT_SCOPE, f"anat_scope {sc!r} — one of {' · '.join(ANAT_SCOPE)}")
+            if sc in ANAT_SCOPE:
+                check(f"anatomy scope {sc} said in the prompt (§12A-1 V7.91.0)", bool(re.search(ANAT_SCOPE[sc], p, re.I)),
+                      "" if re.search(ANAT_SCOPE[sc], p, re.I) else f"write what the picture holds — {ANAT_SCOPE_SAY[sc]}")
         if st == "S5" and mode not in (2, 3, 5):
             anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work (stylised modes keep the stylised route, V7.90.0)
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")
