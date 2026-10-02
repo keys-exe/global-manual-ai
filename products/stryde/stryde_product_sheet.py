@@ -1398,7 +1398,8 @@ PRODUCT_PHOTOS = {
     "back_ref_v2_band.png": ("2026-10-02, the user's pick ('i want this'): the back with the band closed into a "
                              "loop -- the shell and grey pad from behind, a chrome slide at each end, the band "
                              "running round to two black keepers at its centre. THE image for the back on the closed "
-                             "strap; back_ref_v2.png stays the flat back. Small (431x417): judge by it, attach it "
+                             "strap; back_ref_v2.png stays the flat back. 2222x2160 (Higgsfield 2K upscale of the user's "
+                             "431x417 pick, shape unchanged; the original is retired/back_ref_v2_band_431px.png). Attach it "
                              "only when the back is shown (FP20)"),
     "back_inner.jpg": ("V7.49.38, confirmed by the user: the studio reference of the inside, made from "
                        "inner_face.jpg (Kie nano-banana-pro, then one edit removing two loose band pieces). "
