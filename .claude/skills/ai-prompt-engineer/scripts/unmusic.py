@@ -94,7 +94,7 @@ def music_of(audio, hq=False):
 
 def level(y):
     import numpy as np
-    return 20 * np.log10(np.sqrt(np.mean(np.square(y))) + 1e-9)
+    return float(20 * np.log10(np.sqrt(np.mean(np.square(y))) + 1e-9))
 
 
 def peak_rel(music, mix, win):
