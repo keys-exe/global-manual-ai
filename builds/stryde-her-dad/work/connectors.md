@@ -1,0 +1,16 @@
+### Connector map
+
+What this account has, and the route each job takes (§5). The first route on each job's ladder that this account has is used; anything not the default is marked.
+
+| Job | Route | Model | Note |
+|---|---|---|---|
+| Images (sheets, plates, beat frames) | Higgsfield | nano_banana_pro · nano_banana_2 · gpt_image_2_5 Sunburst (§18A) | default |
+| Kling video (B-roll, mechanism, hooks) | Kling (Kling AI direct) | kling-video-v3_0_omni / kling-video-v3_0 (§44) | default |
+| Seedance 2.5 (films, ingredients) | Kie AI API (scripts/kie.py) | bytedance/seedance-2-5, 720p (kie.py seedance) | default |
+| Voice clone | ElevenLabs API (tts_api.py, elevenlabs_clone.py, music.py) | IVC clone (elevenlabs_clone.py) | default |
+| Voice-over (TTS) | ElevenLabs API (tts_api.py, elevenlabs_clone.py, music.py) | eleven_v4 with speed (tts_api.py) | default |
+| Talking heads | HeyGen API ⚠ | Avatar V | default HeyGen not on this account — using rung 2; unverified route: check the logged model on the first job (§5) |
+| Music (BGM, music videos) | ElevenLabs API (tts_api.py, elevenlabs_clone.py, music.py) | eleven_music_v2 composition plan (music.py) | default |
+| Sound effects, room tone, voice isolation | ElevenLabs API (tts_api.py, elevenlabs_clone.py, music.py) ⚠ | sound-generation / audio-isolation endpoints | default ElevenLabs connector not on this account — using rung 2; unverified route: check the logged model on the first job (§5) |
+| Drive intake | public Drive link ⚠ | fetch_drive.py on a link shared 'anyone with the link' | default Google Drive not on this account — using rung 2 |
+| File hosting for references (public URLs) | Kie AI API (scripts/kie.py) | kie.py upload | default |
