@@ -10,7 +10,8 @@
 ## State (2026-10-02)
 - Steps 1–3 delivered (`BUILD_SHEET.md`): intake, Absorption Sheet (the Lymphoria drama, a line-for-line port), Film Look Sheet (`LOOK-HERDAD`, `edit/LUT-HERDAD.cube` PASS), Edit Grammar EG01–EG07, Visual Instruction Ledger VN01–VN20, phrase inventory L001–L061 (702 words), claims, Mode & Model Lock.
 - Cast: 5 sheets on the Current board as To check — C1-TONY, C2-SUE, C3-GARY, C4-LAD, C5-GP (Sunburst high 2k, 2.75 cr each, 13.75 total; Higgsfield 5,869.65 → 5,855.90). Prompts `cast/*.prompt.txt`, builder `cast/build_sheets.py`.
-- **Waiting on the user:** Confirm / Fix the avatars; answers to F0 (mode), F1 (one hook → one film, or write two more), F2 (offer narrator), F3–F5 (claims).
+- **2026-10-02, avatars:** C1-TONY, C3-GARY, C4-LAD, C5-GP **confirmed**. C2-SUE Fix "change the avatar" → v2, a new person (honey-blonde jaw bob, camel coat; job `1ad76bc3…`, 2.75 cr; Higgsfield → 5,853.15) on the board To check; v1 moved to Old (asset `22c7d900…`), its file deleted from Current.
+- **Waiting on the user:** Confirm / Fix Sue v2; answers to F0 (mode), F1 (one hook → one film, or write two more), F2 (offer narrator), F3–F5 (claims).
 
 ## Next
 Steps 4–5 on the go: Property Sheet + plates (16:9) — the terraced house (stairs, bedroom drawer, kitchen, back garden), the garden-centre car park (one plate for SC01 and SC09), the car interior, the GP's room, the builders' yard, the street; act map with takes (`takes.py`), wardrobe per story day (`wardrobe.py`), Visual Pitch (`visual_plan.py`), music register map (§40A), placement; then the §24I voice masters; then the hook.
