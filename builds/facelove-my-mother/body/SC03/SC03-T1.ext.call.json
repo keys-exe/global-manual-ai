@@ -1,0 +1,60 @@
+{
+ "beat": "SC03-T1",
+ "build": "facelove-my-mother",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 4,
+ "kind": "take",
+ "prompt": "INGREDIENTS. @video1 is the shot to continue: Susan, alone against the shut back door in the dark hall, the party glow behind the glass, the camera creeping in on her face; her face, hair, blouse, the hall and the light exactly as shown. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — the low sun, the string-light bulbs, a candle — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the yard layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, real clothes and a lived-in set. Restrained, specific performances. Continue this exact shot forward with no cut: the same camera, the same lens, the same light and the same slow level dolly push toward her face, still creeping in. Frame 1: Susan against the door, eyes open, in close-up, the camera still creeping in. Susan stays against the shut door, her eyes open and level on nothing across the dark hall, her jaw set; she breathes once, slowly; nothing else moves. Last frame: Susan against the door, eyes open, a little closer, very still. The look exactly as set out here, from the first frame to the last: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. One continuous shot, never cut and never restarted, 4s, in one place with the same light, look and wardrobe throughout. Camera on a dolly, already moving on the first frame: a slow, steady push toward the subject covering about 15 centimetres across the whole clip, perfectly level, with no bounce and no sway. As the line lands the move eases and slows but never stops. Still creeping in on the final frame. The subject stays in place — seated, standing or speaking — and never walks while the camera moves. Everything in frame keeps the exact form, proportion and count it has from the first frame to the last — nothing melts, merges, splits, grows or becomes something else. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend. Mass and momentum in all movement: nothing at uniform speed, nothing stops instantly; weight transfers first and the hands arrive last; hair and fabric lag and settle after the body stops. SUSAN still carries exactly what this scene has done to them so far: the dusty-blue blouse, her back against the door, eyes open, jaw set. None of it resets: it is the same as in the previous shot, except nothing. It holds in every frame. FOCUS: Susan's nearest eye sharp throughout. The blur is optical: soft and round, never smeared. NEGATIVES: no film equipment, no crew in frame, no morphing, no warping, no melting, no merging, no splitting, no duplicate people, no background bending, no texture swimming, no flickering geometry, no one speaking, no Susan crying, no tears, no hall light switched on, no other person in the hall, no Susan stepping away from the door, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different place, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "take": "SC03-T1",
+ "covers": [
+  "SC03-SH02"
+ ],
+ "start_pos": "Susan against the door, eyes open, in close-up, the camera still creeping in",
+ "end_pos": "Susan against the door, eyes open, a little closer, very still",
+ "duration": 4,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "seedance_mode": "video_extension",
+ "extension_mode": "forward",
+ "extends_job": "07ad9d95-8f9c-4594-ae4a-09a03bdcbbec",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "body/SC03/SC03-T1_v1.mp4"
+ ],
+ "audios": [],
+ "generate_audio": false,
+ "dialogue": null,
+ "script_line": null,
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": "board Fix (user, 2026-10-02): VO are missing",
+ "fault": "VO are missing",
+ "fix_note": "plan fault: the clip was made silent with narration L008 left for the edit, and L008 runs 16.0 s against a 15.04 s clip → extend v1 forward 4 s (same F1 push carried on, silent) and lay VO-T1-L008 in from 0.0 s so every word sits on picture",
+ "risks": [
+  {
+   "risk": "the extension jumps or changes the look",
+   "prevented_by": "video_extension forward from v1, 'continue this exact shot forward with no cut', INHERIT"
+  },
+  {
+   "risk": "she speaks or mouths the narration",
+   "prevented_by": "silent, 'no one speaking'"
+  },
+  {
+   "risk": "the push stops or drifts",
+   "prevented_by": "F1 carried on at 15 cm, level"
+  }
+ ],
+ "scene": 3,
+ "title": "Scene 3 · T1 — extension (+4 s) for the narration",
+ "taste": [
+  "HT17",
+  "HT18",
+  "HT22",
+  "HT23",
+  "HT25"
+ ]
+}

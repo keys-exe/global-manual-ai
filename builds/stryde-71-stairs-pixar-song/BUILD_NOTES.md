@@ -919,3 +919,29 @@ You picked A on all five open pairs, and none of the cards had a Fix note waitin
 **Waiting on:**
 - Confirm or Fix on the open clips: C-02a, C-02b, C-03b, C-04a v2, C-05a, C-06a, C-07a, C-08a, C-08b, C-09a, C-09c, PR-05b v2, PR-06a v2.
 - Every beat now has its picture and clip. Once they're confirmed, the edit comes next (`music.py cuts --words` / `render`).
+
+### 2026-10-02 ~15:10–15:35 UTC — "all are locked finish this": the finished video
+
+All 61 act-map beats are confirmed (`use`). Their clips on disk match the board's current versions byte for byte.
+
+**FINAL-HK1** is on the Final board as To check (status `review`; the final review is yours). It's 3:48 (228.04 s), 1080×1920, 24 fps, 123 MB, uploaded as 9 × 15 MB parts that the board joins back into the exact file. It was made with `edit/build_final.py`; the cut list is `edit/cutlist_HK1.json` and the captions are `edit/captions_HK1.ass`.
+- **Picture:** the 61 confirmed clips cut on the act map's beat-snapped lyric cuts (`work/actmap_rows.json` t_in/t_out = `docs/actmap`), frame-exact on the 24 fps grid. Each clip enters 0.4 s in, except HK-01a (0.03 s) and HK-02a (0.11 s), whose clips are only a fraction longer than their slots. No speed change, nothing slowed.
+- **Sound:** the song, whole and untouched (the only soundtrack, §3C).
+- **Captions (EG01):** the 108 lyric lines verbatim, black on white boxes, one or two rows at ~72 % height, a long line split at its comma or into even halves. Line 37 "Stryde." is captioned at 84.5–86.3 s (F4).
+- **End card (F16):** the 5.3 s instrumental outro (222.7–228.0 s) shows the last frame of the C-07a clip (two straps in the box, the lid aside, the wordmark clear) with a slow 6 % push. The overlays are "Buy 1 Get 1 Free" and "60-day money-back guarantee", both held claims (§17), never generated.
+- Flagged: P-05a (1.6 s) and P-05c (0.8 s) run under the 2.0 s floor. This is the three-shot P-05 you asked for on 2026-10-01.
+- **This build's spend** (`build_spend.py` over the Current, Old, Old 2 and Old 3 boards; written as `buildSpend` on the Current and Final build docs): Kling 3,928 credits / 99 clips · Higgsfield 855.76 / 401 images · Kie AI 963 / 1 image. Total 5,746.76 credits over 501 renders.
+- **Balances:** Higgsfield 5869.65 · Kling 36613 (no generation this turn).
+
+**Waiting on:** your Confirm or Fix on FINAL-HK1 on the Final board.
+
+### 2026-10-02 ~15:40–16:10 UTC — FINAL-HK1 v2 ("the p01a reverse it to look walking backwards and slow it down, fix the broll placement also use a caption fitting for a music video and not the plain one")
+
+- **Placement.** Measured on v1 against medium.en sung word times (`edit/words_medium.py`, `edit/align_words.py`: 585 of the 615 lyric words matched; the rest are placed between their matched neighbours): v1 cut on average **0.77 s before** each line, and in 54 of 60 rows the new picture came in under the end of the previous line. Cause: §3C's "the beat at or before the word", plus small-model word times. Fixed at the source, **V7.91.4 / L57**: `music.py lyric_cuts` now cuts 2 frames before the first sung word, or on a beat ≤ 0.25 s before it. It never cuts under the line before (EARLY), times words with medium.en, and searches forward so a repeated phrase finds its own line (T-04b "I always figured…" had matched T-04a's line). The re-cut sheet `edit/cuts_v2.json` PASSes; the placement table is `edit/placement_HK1.md` and `docs/placement` on the Plan and Current boards.
+- **Short rows.** P-01b (1.34 s), L-01b (1.82 s) and T-03a (1.97 s) are under 2.0 s because their sung lines are; each picture holds exactly its line. P-05a and P-05c stay short, as before (your three P-05 shots).
+- **P-01a:** played in reverse, so she comes down the stairs backwards toward the lens (the clip was rendered climbing away). It runs at 0.65x, motion-interpolated.
+- **HK-01a** is 0.6 s shorter than its now-correct 8.64 s slot, so it plays at 0.93x, interpolated, with no frozen frame. C-05a runs at 0.998x.
+- **Lyrics:** music-video captions (§3C V7.91.4). Poppins ExtraBold (OFL, `edit/fonts/`), dark outline and soft shadow, no box. Each word fills gold as it is sung (ASS `\kf` on the aligned word times), and each line pops in. The end-card offer and guarantee use the same style.
+- **On the board:** FINAL-HK1 v2 is on the Final board as To check: 128 MB in 9 parts, 3:48. v1 was copied to Old 3 (FINAL-HK1 doc there) and its parts were deleted from Final.
+
+**Waiting on:** your Confirm or Fix on FINAL-HK1 v2.

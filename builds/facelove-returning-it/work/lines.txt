@@ -1,0 +1,88 @@
+{
+  "out": "builds/facelove-returning-it/intake/script.lines.txt",
+  "spoken_lines": 6,
+  "words": 284,
+  "chars": 1448,
+  "dropped": [
+    {
+      "line": 2,
+      "text": "VISUAL: Scene 1 \u00b7 Cold-Open Hook",
+      "reason": "title"
+    },
+    {
+      "line": 4,
+      "text": "VISUAL: Scene 2 \u00b7 The Fake-Out Begins",
+      "reason": "visual/editor note"
+    },
+    {
+      "line": 6,
+      "text": "VISUAL: Scene 3 \u00b7 The Reasons Pile Up",
+      "reason": "visual/editor note"
+    },
+    {
+      "line": 8,
+      "text": "VISUAL: Scene 4 \u00b7 The Last Reason",
+      "reason": "visual/editor note"
+    },
+    {
+      "line": 10,
+      "text": "VISUAL: Scene 5 \u00b7 The Real Twist",
+      "reason": "visual/editor note"
+    },
+    {
+      "line": 12,
+      "text": "VISUAL: Scene 6 \u00b7 CTA",
+      "reason": "visual/editor note"
+    }
+  ],
+  "visual_notes": [
+    {
+      "line": 4,
+      "text": "VISUAL: Scene 2 \u00b7 The Fake-Out Begins",
+      "kind": "visual/editor note",
+      "applies_to": 2,
+      "spoken": "And it is not because it goes on pure white and then turns into my exact shade and melts in like it was made for my skin. Even the woman at the makeup counter told me my redness was too tricky to match and I should not bother.",
+      "id": "VN01"
+    },
+    {
+      "line": 6,
+      "text": "VISUAL: Scene 3 \u00b7 The Reasons Pile Up",
+      "kind": "visual/editor note",
+      "applies_to": 3,
+      "spoken": "It is not because it covered the redness, the hyperpigmentation, the old post-acne marks, and every tired line and dark circle I have been hiding for years, in one swipe. And it is definitely not because three of my friends this week asked what I am using, because my skin looks so even.",
+      "id": "VN02"
+    },
+    {
+      "line": 8,
+      "text": "VISUAL: Scene 4 \u00b7 The Last Reason",
+      "kind": "visual/editor note",
+      "applies_to": 4,
+      "spoken": "It is not because I can finally skip a full face of makeup, throw this one stick on before the grocery store, and feel completely confident walking out the door.",
+      "id": "VN03"
+    },
+    {
+      "line": 10,
+      "text": "VISUAL: Scene 5 \u00b7 The Real Twist",
+      "kind": "visual/editor note",
+      "applies_to": 5,
+      "spoken": "No. I am returning this one, because after I bought it, I found out it is the last day of the Prime Sale. Sixty percent off. Two full Foundation Sticks for almost the price of one, plus a free primer, a mystery gift, free shipping, and a full thirty day money back guarantee. So I am sending back my one, and buying the deal like I should have.",
+      "id": "VN04"
+    },
+    {
+      "line": 12,
+      "text": "VISUAL: Scene 6 \u00b7 CTA",
+      "kind": "visual/editor note",
+      "applies_to": 6,
+      "spoken": "So do not do what I did and pay for one. If you have not tried this yet, tap the link and grab the deal before midnight, because once the Prime Sale ends tonight, it is gone. It was never your skin. It was the formula.",
+      "id": "VN05"
+    }
+  ],
+  "lines": [
+    "I am so mad, and this is exactly why you read the reviews before you buy another foundation. Because I bought this FACELOVE stick that everyone would not stop raving about, and I am going to be returning it.",
+    "And it is not because it goes on pure white and then turns into my exact shade and melts in like it was made for my skin. Even the woman at the makeup counter told me my redness was too tricky to match and I should not bother.",
+    "It is not because it covered the redness, the hyperpigmentation, the old post-acne marks, and every tired line and dark circle I have been hiding for years, in one swipe. And it is definitely not because three of my friends this week asked what I am using, because my skin looks so even.",
+    "It is not because I can finally skip a full face of makeup, throw this one stick on before the grocery store, and feel completely confident walking out the door.",
+    "No. I am returning this one, because after I bought it, I found out it is the last day of the Prime Sale. Sixty percent off. Two full Foundation Sticks for almost the price of one, plus a free primer, a mystery gift, free shipping, and a full thirty day money back guarantee. So I am sending back my one, and buying the deal like I should have.",
+    "So do not do what I did and pay for one. If you have not tried this yet, tap the link and grab the deal before midnight, because once the Prime Sale ends tonight, it is gone. It was never your skin. It was the formula."
+  ]
+}

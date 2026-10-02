@@ -1,1 +1,11 @@
 {"taskId": "b48ea78f5e8ee5db7389921b7d633570", "created": true}
+{
+  "taskId": "b48ea78f5e8ee5db7389921b7d633570",
+  "state": "success",
+  "credits": 630.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790953231220-gk3cko6a13.mp4"
+  ],
+  "saved": "body/SC09/SC10-T4_v3.mp4"
+}
