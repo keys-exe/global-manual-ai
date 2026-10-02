@@ -55,6 +55,25 @@
   - **Seen on extraction, written on each card as `seen`:** the table is cleared and holds; Hazel's window holds; Oscar walks the sideboard side. But T1's wide has Roy in the near-end chair, back to camera, and T2's wide has Emma at the far end and Hazel on the side.
   - The wides are where seats drift. If the user Fixes them, the next step is a third generation (needs their go, §22X). Option: start each wide from behind the empty near-end chair and name each person's seat by their clothes.
 
+- 2026-10-02 **"FIX THOSW"**: the board had T1 and T5 confirmed (`use`). T2, T3 and T4 were on regenerate with the owner's note "make the set up of the character same on the Hook A T1 to make consistent".
+  - **The seat plan is now the confirmed T1's:**
+    - Hazel at the far end, the bay window behind her.
+    - Roy in the near-end chair, his back to the doorway. Every doorway wide shows the back of his head and gilet in the foreground.
+    - Emma (next to Hazel) and Oscar on the sideboard side.
+    - Dan alone on the fireplace side, next to Hazel.
+  - **The gen-3 prompts for T2–T4** (`film/build_sc01.py`, `REDO`; preflight PASS; T1/T5 call files untouched):
+    - each person is named by their clothes;
+    - T2's wide is reframed as T1's (from the doorway past Roy), so Roy was added to T2's cast;
+    - every close shot names its background (Roy: the doorway and hall; Dan: the fireplace wall);
+    - the INFO-TABLE layout card is dropped, because it shows the earlier plan with the near-end chair empty.
+  - The third generation of each; the go is the board Fix plus the chat message (§22X).
+  - The hourly Routine `trig_01QYbXK5CcpCVJ8G5fXhgBfx` was switched off (L60: Routines only on the user's ask).
+  - **v3 rendered:** 2,142 Kie cr (T2 693, T3 882, T4 567). All three CLEAN on the music check. They went on as `review`, and the v2s moved to Old. What I saw is written on each card as `seen`:
+    - **T2:** the seats match T1. One slip: food on Dan's plate in the wides.
+    - **T3:** the closing shot holds the layout. But Dan's close has the doorway behind him, and Oscar's close has the fireplace behind him.
+    - **T4:** Roy is right, with the doorway behind him. But food is back on the plates, and Hazel's front close has the sideboard behind her.
+  - Any further fix is a fourth generation and waits for the user's go.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 price (£30 for two) · F2 "two centimetres" · F3 "replace them at seventy-one" · F6 "Facebook copies" · F7 getstryde.co · F11 strap on under trousers vs FP13 (proposed: bare knee in her nightdress, trousers on after) · F12 one hook → one film · F15 close without the product in hand.
 
@@ -62,5 +81,5 @@ F1 price (£30 for two) · F2 "two centimetres" · F3 "replace them at seventy-o
 Hook A gate (§18 step 6): the user's Confirm or Fix on SC01-T1…T5. Then SC02 (the hall film, D1 night), then the body scene by scene. Done before this: the §24I voice masters (9 speakers, Seedance, from face crops of the sheets) → Hook A (SC01, 5 takes: the D1 outfits are all the cast sheets', so no outfit cards; ingredients C4/C3/C2/C1/N + L-DINING + P-HOUSE + the voice masters). After that, the body scene by scene. ~~Steps 4–5 (Property Sheet — Hazel & Roy's stone terrace: dining room, hall kitchen→door, stairs, kitchen, bedroom — + 16:9 plates; the chemist, the hill + postbox, the school gate, Emma's car; scene list + Scene Bibles, act map with takes, wardrobe map per story day, ingredient lists, `angles.py` / `takes.py` / `wardrobe.py` / `visual_plan.py`), then §24I voice masters, then Hook A on Seedance.~~
 
 ## For the owner
-- Add this build's row to the CLAUDE.md board table (this account can't change CLAUDE.md): `stryde-the-impression` (STRYDE · The Impression, AI Drama VSL, Mode 4, Manual, British — Drive `1myOChLFKSUBiQqn-Z5EoZ7ROwJ9sXeq2`) | Current https://claude.ai/artifact/C7iJiu9zayETRq6wRpHERk · Old https://claude.ai/artifact/YHyjDG7UugdwLqpjL2Artq · Final https://claude.ai/artifact/7jESdNE8iA6sW9qtKVWMJr · Plan https://claude.ai/artifact/YR9p35toXVXK1EE1uPywym; hourly Fix check `trig_01QYbXK5CcpCVJ8G5fXhgBfx`, :43 UTC, session_01CmSgGcenFywMTJj8JuGiaB.
+- Add this build's row to the CLAUDE.md board table (this account can't change CLAUDE.md): `stryde-the-impression` (STRYDE · The Impression, AI Drama VSL, Mode 4, Manual, British — Drive `1myOChLFKSUBiQqn-Z5EoZ7ROwJ9sXeq2`) | Current https://claude.ai/artifact/C7iJiu9zayETRq6wRpHERk · Old https://claude.ai/artifact/YHyjDG7UugdwLqpjL2Artq · Final https://claude.ai/artifact/7jESdNE8iA6sW9qtKVWMJr · Plan https://claude.ai/artifact/YR9p35toXVXK1EE1uPywym (no hourly Routine — `trig_01QYbXK5CcpCVJ8G5fXhgBfx` switched off 2026-10-02).
 - `takes.py` SPLIT check: `split: "length"` fails whenever two takes together have ≤ 4 shots, even when they run over 15 s (it counts shots, not seconds — L51 says "length means the running time over 15 s"). On this build that forced extra coverage rows: SC04-SH09, SC09-SH17b, SC09-SH20, and the close cut into 14 phrase shots. Suggest the check also allows "length" when the joined seconds exceed `--max-seconds`.

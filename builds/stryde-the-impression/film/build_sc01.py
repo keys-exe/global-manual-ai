@@ -15,15 +15,16 @@ NAME = {"N": "Hazel", "C1": "Roy", "C2": "Emma", "C3": "Dan", "C4": "Oscar"}
 SHEETF = {"N": "cast/N-HAZEL_v1.png", "C1": "cast/C1-ROY_v1.png", "C2": "cast/C2-EMMA_v1.png", "C3": "cast/C3-DAN_v1.png", "C4": "cast/C4-OSCAR_v1.png"}
 VM = {k: f"voice/{k}_voice_master.mp3" for k in NAME}
 VOICES = {k: json.load(open(B / f"voice/VOICE-{k}.call.json"))["prompt"].split("Delivery: ")[1].split(" Level, even")[0] for k in NAME}
-ROOM = ("THE ROOM, fixed in every shot, exactly as in the place reference (Image of the dining room) and the layout card (Image of the table from above): the front room of a Victorian stone terraced house used as the dining room, seen from its doorway — "
+ROOM = ("THE ROOM, fixed in every shot, exactly as in the place reference (Image of the dining room): the front room of a Victorian stone terraced house used as the dining room, seen from its doorway — "
         "the long dark oak table runs straight AWAY from the doorway down the middle of the room under a cream cloth; the dark oak sideboard with a table lamp, a fruit bowl and framed photographs along the LEFT wall, a strip of carpet between it and the left-hand chair backs; "
         "the tiled Victorian fireplace with a wooden clock on its mantel and bookshelves in the corner on the RIGHT wall; the bay window with net curtains and green velvet curtains at the FAR end. "
-        "THE TABLE, exactly as the layout card shows it, the same in every shot: the Sunday meal is over and cleared of food — one empty white plate with its knife and fork laid together at each of the five places, a clear water glass by each plate, one white china jug in the middle; "
+        "THE TABLE, the same in every shot: the Sunday meal is over and cleared of food — one empty white plate with its knife and fork laid together at each of the five places, a clear water glass by each plate, one white china jug in the middle; "
         "no food anywhere, no serving dishes, nothing else on the cloth, and nothing on it changes from shot to shot. "
-        "THE SEATS NEVER CHANGE, exactly as in the plate's six chairs: Hazel in the single chair at the FAR end, her back to the bay window; on the LEFT side (the sideboard side) Emma in the far chair next to Hazel and Oscar's chair nearest the doorway; "
-        "on the RIGHT side (the fireplace side) Roy in the far chair next to Hazel and Dan in the chair nearest the doorway; the chair at the NEAR end, by the doorway, stays empty. "
-        "WHAT IS BEHIND EACH PERSON in their own close shots, every time: behind Hazel the bay window and net curtains with the grey street beyond; behind Roy the fireplace wall, the clock on the mantel and the corner bookshelves; "
-        "behind Dan the near end of the fireplace wall; behind Emma the oak sideboard, its lamp and framed photographs; behind Oscar the near end of the sideboard with the fruit bowl. "
+        "THE SEATS NEVER CHANGE: Hazel (oatmeal cardigan) in the single chair at the FAR end, facing down the table, her back to the bay window; Roy (navy gilet, pale blue shirt) in the single chair at the NEAR end, by the doorway, facing Hazel the whole length of the table, so a shot from the doorway sees the back of his head and his gilet in the foreground; "
+        "on the LEFT side (the sideboard side) Emma (grey sweatshirt, hair tied up) in the chair next to Hazel and Oscar (striped T-shirt) in the chair beside her, nearer Roy; on the RIGHT side (the fireplace side) Dan (dark green half-zip) alone in the chair next to Hazel, the chair beside him empty. "
+        "Emma and Dan face each other across the table near Hazel's end. No one else sits at either end, and no one ever changes seat. "
+        "WHAT IS BEHIND EACH PERSON in their own close shots, every time: behind Hazel the bay window and net curtains with the grey street beyond; behind Roy the open doorway and the hall; "
+        "behind Dan the fireplace wall and the corner bookshelves; behind Emma the oak sideboard, its lamp and framed photographs; behind Oscar the sideboard with the fruit bowl. "
         "THE LIGHT: overcast May afternoon daylight, about 6000K, through the bay window at the far end, soft and cool, with the warm cream pendant shade over the table lit; a soft shadow side on every face.")
 WALK = ("Oscar does an impression of his nana's walk, earnest, not mocking: on every step his right leg swings stiff and hitches out to the side, his left shoulder dips, "
         "and a small hand reaches out and rests on each ladder-back chair back as he passes it, one chair back about every second. HIS ROUTE, the only route: along the strip of carpet between the LEFT-hand chair backs and the sideboard, never across the front of the table, never round the far end.")
@@ -32,12 +33,14 @@ def mf(ids):
     return [("@image" + str(i + 1), x) for i, x in enumerate(ids)]
 
 CARD = "film/cards/INFO-TABLE-SC01_v1.png"
+# gen 3: the confirmed T1 is the seat plan (Roy at the near end); the layout card shows the earlier plan (near end empty), so it is not attached
+USE_CARD = False
 def files_for(cast):
-    return [SHEETF[c] for c in cast] + ["plates/L-DINING_v1.png", CARD]
+    return [SHEETF[c] for c in cast] + ["plates/L-DINING_v1.png"] + ([CARD] if USE_CARD else [])
 
 def pack(cast, speakers):
-    imgs = [SHEET(WHO[c], OUT[c]) for c in cast] + [PLACE("the dining room of the house, the Sunday table"),
-            "is the layout card: the same table from directly above — where the five empty plates, the glasses and the jug sit and which chair is empty; copy the table exactly as it shows, and never cut to this top view."]
+    imgs = [SHEET(WHO[c], OUT[c]) for c in cast] + [PLACE("the dining room of the house, the Sunday table")] + ([
+            "is the layout card: the same table from directly above — where the five empty plates, the glasses and the jug sit and which chair is empty; copy the table exactly as it shows, and never cut to this top view."] if USE_CARD else [])
     aud = [VOICE(NAME[s]) for s in speakers]
     items = [(f"@image{i+1}", x) for i, x in enumerate(imgs)] + [(f"@audio{i+1}", x) for i, x in enumerate(aud)]
     return manifest(items)
@@ -65,12 +68,19 @@ def make(beat, covers, cast, speakers, shots, rhythm, start, end, motion, state_
     auds = [VM[s] for s in speakers] if len(speakers) < 3 else [f"voice/{s}_voice_ref10.mp3" for s in speakers]
     c = call(beat, 1, covers, d, title, files_for(cast), auds, p, start, end, dl, risks, motion, TASTE, GO,
              ingredients=[{"label": NAME[c] + " (cast sheet)", "role": f"@image{i+1}", "kind": "character", "ref": f"stryde-the-impression__{pathlib.Path(SHEETF[c]).stem.replace('_v1','')}"} for i, c in enumerate(cast)]
-                        + [{"label": "L-DINING", "role": f"@image{len(cast)+1}", "kind": "location", "ref": "stryde-the-impression__L-DINING"},
-                           {"label": "INFO-TABLE-SC01 — the cleared table from above", "role": f"@image{len(cast)+2}", "kind": "info", "note": "the meal over: five empty plates, glasses, one jug, no food; near-end chair empty", "ref": "stryde-the-impression__INFO-TABLE-SC01"}]
+                        + [{"label": "L-DINING", "role": f"@image{len(cast)+1}", "kind": "location", "ref": "stryde-the-impression__L-DINING"}]
+                        + [{"label": "INFO-TABLE-SC01 — the cleared table from above", "role": f"@image{len(cast)+2}", "kind": "info", "note": "the meal over: five empty plates, glasses, one jug, no food; near-end chair empty", "ref": "stryde-the-impression__INFO-TABLE-SC01"} for _ in [0] if USE_CARD]
                         + [{"label": f"{NAME[s]}'s voice master", "role": f"@audio{i+1}", "kind": "voice", "ref": f"stryde-the-impression__VOICE-{s}"} for i, s in enumerate(speakers)])
     c["act"] = "Hook 1"; c["hook"] = 1; c["generation"] = GEN; c["fix_note"] = FIXN
+    if beat in REDO:
+        c["generation"] = 3; c["fix_note"] = GEN3; c["user_go"] = "board Fix on T2/T3/T4 + chat 'FIX THOSW' (2026-10-02) — the third generation (§22X)"
+        c["fix_notes_all"] = [FIXN, GEN3]
     CALLS.append(c)
 
+GEN3 = ("board Fix (owner, 2026-10-02) on T2, T3, T4: 'make the set up of the character same on the Hook A T1 to make consistent' + chat 'FIX THOSW' — "
+        "the confirmed T1 seats Roy at the near end (back to the doorway), Emma and Oscar on the sideboard side, Dan on the fireplace side, Hazel at the far end; v2 T2 put Dan and Hazel on the left, Emma at the far end, Oscar on the right; "
+        "v2 T4 put Roy on the right side → the seat block rewritten to T1's seating with each person named by their clothes, every wide shot from the doorway past Roy's back as T1's is, the old layout card dropped")
+REDO = {"SC01-T2", "SC01-T3", "SC01-T4"}
 HZ = "Hazel, at the far end of the table, both hands flat on the cloth, still, her face her own age, 67, never aged"
 GEN, FIXN = 2, ('chat (user, 2026-10-02): "make the hook consistent review the script guide" — v1 changed the table (food in T1/T4, cleared in T2), the seats (each wide put the family elsewhere), '
                  "Oscar's route (across the front in T1, the far side in T2) and Hazel's background (window, then bookshelves); the script: 'Sunday, the table cleared… crosses the room the way Nana does: the hitch, a hand on every chair back'. "
@@ -100,13 +110,13 @@ make("SC01-T1", ["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], ["C4", "C3
       {"risk": "the wrong person speaks a line (HT25)", "prevented_by": "each line named to its speaker and shot, one voice master per speaker, ONLY_SPEAKER"}],
      ["L001", "L002"])
 
-make("SC01-T2", ["SC01-SH05", "SC01-SH06", "SC01-SH07", "SC01-SH08"], ["C4", "C2", "C3", "N"], ["N", "C2"],
-     [(0, 4, "FULL, in profile from across the table on the fireplace side, the sideboard behind him: Oscar does it again, slower, coming back from the far end toward his own chair along the same strip of carpet by the sideboard. " + WALK + " Nobody laughs; the room is silent."),
+make("SC01-T2", ["SC01-SH05", "SC01-SH06", "SC01-SH07", "SC01-SH08"], ["C4", "C2", "C3", "C1", "N"], ["N", "C2"],
+     [(0, 4, "WIDE, the same framing as the first wide — from the doorway end past the back of Roy's head and gilet in the near foreground, Hazel at the far end before the bay window, Emma on the left, Dan on the right: Oscar does it again, slower, coming back from the far end toward his own chair along the same strip of carpet by the sideboard on the left, toward the camera. " + WALK + " Nobody laughs; the room is silent."),
       (4, 6, "CU, straight on Hazel at the far end: she has watched him all the way; she asks it quietly: \"Is that what I look like?\""),
       (6, 9, "MCU, from slightly above Emma: she puts a hand on Oscar's back as he climbs back onto his chair and says, too quickly: \"He’s four, Mum. He doesn’t see it.\""),
-      (9, 11, "MCU, over Emma's shoulder onto Hazel: Hazel turns her head from Emma to Dan and says only: \"Dan?\"")],
+      (9, 11, "MCU, over Emma's shoulder onto Hazel at the far end, the bay window behind her: Hazel turns her head from Emma, on her left, to Dan, on her right across the table, and says only: \"Dan?\"")],
      "a silent walk held without a sound, then the question, a quick answer, and a held beat before 'Dan?'",
-     "Oscar by the sideboard at the far end of the room, the family seated, silent",
+     "Oscar by the sideboard at the far end of the room on the left, the family seated in their places — Roy's back in the near foreground, Hazel at the far end, Emma left, Dan right — silent",
      "everyone seated; Oscar back on his chair beside Emma; Hazel looking at Dan", "travels",
      [state("OSCAR", "doing the walk again, back toward his chair"), state("HAZEL", "seated at the far end, hands flat on the cloth, the same stillness as before")],
      [delivery(VOICES["N"], "she has seen her own walk from the outside for the first time", "the family", "the laughing has stopped", "asks",
@@ -126,9 +136,9 @@ make("SC01-T2", ["SC01-SH05", "SC01-SH06", "SC01-SH07", "SC01-SH08"], ["C4", "C2
      ["L003", "L004", "L005"])
 
 make("SC01-T3", ["SC01-SH09", "SC01-SH10", "SC01-SH11"], ["C3", "C4", "C2", "N"], ["C3", "C4", "C2"],
-     [(0, 2, "MCU, from low on Dan across the table: he holds Hazel's look, puts his water glass down, and says it honestly: \"...A bit.\""),
-      (2, 6, "MCU, at Oscar's eye level: Oscar, leaning on the table on his elbows, looks up the table at his nana and asks: \"Nana. Will you walk me to school? When I’m big.\""),
-      (6, 12, "MCU, over Dan's shoulder onto Emma: Emma answers for her mother, bright: \"Nana’ll wait in the car, love. Nana’ll see you at the gate.\" Then she and Dan share a look across the table.")],
+     [(0, 2, "MCU, from low on Dan on the fireplace side, the fireplace wall behind him: he holds Hazel's look, puts his water glass down, and says it honestly: \"...A bit.\""),
+      (2, 6, "MCU, at Oscar's eye level on the sideboard side, the sideboard behind him: Oscar, leaning on the table on his elbows, looks up the table at his nana at the far end and asks: \"Nana. Will you walk me to school? When I’m big.\""),
+      (6, 12, "MCU, over Dan's shoulder across the table onto Emma, the sideboard behind her and Hazel at the far end at the edge of frame: Emma answers for her mother, bright: \"Nana’ll wait in the car, love. Nana’ll see you at the gate.\" Then she and Dan share a look across the table.")],
      "a pause before Dan's two words, the boy straight in, Emma quick and bright, then the silent look held",
      "everyone seated as before, Dan holding his water glass",
      "everyone seated; Emma and Dan holding a look across the table", "still",
@@ -150,10 +160,10 @@ make("SC01-T3", ["SC01-SH09", "SC01-SH10", "SC01-SH11"], ["C3", "C4", "C2", "N"]
      ["L006", "L007", "L008"])
 
 make("SC01-T4", ["SC01-SH12", "SC01-SH13", "SC01-SH14", "SC01-SH15"], ["N", "C2", "C1"], ["N", "C2", "C1"],
-     [(0, 2, "CU, in profile on Hazel: she has seen the look; she says it to the table: \"I’ll walk him.\""),
-      (2, 3, "MCU, straight on Emma: a warning: \"Mum.\""),
-      (3, 5, "MCU, from low on Hazel, three-quarter: louder, in front of everyone: \"I said I’ll walk him.\""),
-      (5, 7, "MCU, three-quarter on Roy: gently, not looking up from his plate: \"Hazel. It’s a hill.\"")],
+     [(0, 2, "CU, three-quarter on Hazel at the far end, the bay window behind her: she has seen the look; she says it down the table: \"I’ll walk him.\""),
+      (2, 3, "MCU, on Emma on the sideboard side, the sideboard and its lamp behind her: a warning: \"Mum.\""),
+      (3, 5, "MCU, from low on Hazel at the far end, the bay window behind her: louder, in front of everyone: \"I said I’ll walk him.\""),
+      (5, 7, "MCU, on Roy at the near end of the table, the open doorway and the hall behind him, Hazel down the table in front of him: gently, not looking up from his plate: \"Hazel. It’s a hill.\"")],
      "quick, overlapping-close but never at once: claim, warning, insistence, then Roy's gentle fact",
      "everyone seated, Emma and Dan just breaking their look",
      "everyone seated, eyes on Hazel", "still",
@@ -188,6 +198,8 @@ make("SC01-T5", ["SC01-SH16"], ["N", "C1"], ["N"],
      ["L013"], rig_extra=" " + F1(15))
 
 for c in CALLS:
+    if c["beat"] not in REDO:
+        continue  # T1 and T5 are confirmed: their gen-2 calls stay as rendered
     (H / "SC01").mkdir(exist_ok=True)
     (H / "SC01" / f"{c['beat']}.call.json").write_text(json.dumps(c, indent=1, ensure_ascii=False))
     (H / "SC01" / f"{c['beat']}.prompt.txt").write_text(c["prompt"])
