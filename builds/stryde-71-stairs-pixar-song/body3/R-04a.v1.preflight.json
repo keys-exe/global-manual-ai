@@ -1,0 +1,106 @@
+{
+ "beat": "R-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"right under her kneecap. Stryde.\": A tall 9:16 frame. Image 1 is the strap, Image 2 its back, Image 3 it worn front-on. Image 4 is the leg and skin to copy. Image 5 is the style — the same render, materials and light.\nExtreme close-up front-on at knee height, the knee facing the lens, sharp on the strap: a seated older woman's bare right knee, medium-brown skin, filling the frame; on it the strap of Image 1 copied exactly, 12 × 5 cm, the shell half the frame wide, the kneecap's lower edge in its notch, its top edge level with the kneecap's lower edge, the wordmark level; her right fingertip taps the top of the shell, four chunky fingers and a thumb; a soft warm kitchen far behind.\nIn frame: the knee, the strap, one hand; every other surface plain.\nA final frame from a 3D animated feature film, stylized storybook render, soft morning window light. The strap alone in real materials, matte shell, chrome slides, knit band, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "right under her kneecap. Stryde.",
+ "face": false,
+ "room": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed) — her legs and skin only (no face in this shot)",
+   "kind": "frame"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": "hand_product",
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "72a9acfd-439d-478b-916d-b4da8b6d2836",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "fce3f6cb-9ef5-47b5-996b-f9c62e893bc8",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "back.webp — the strap, back (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/back.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 3"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed) — her legs and skin only (no face in this shot)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__C1-LORETTA",
+   "role": "Image 4"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 5"
+  }
+ ]
+}

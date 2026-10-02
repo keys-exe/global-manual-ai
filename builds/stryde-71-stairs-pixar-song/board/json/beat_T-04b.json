@@ -4,7 +4,7 @@
  "bars": 1.5,
  "beat": "T-04b",
  "build": "stryde-71-stairs-pixar-song",
- "duration": 5,
+ "duration": 5.04,
  "eg": "",
  "flow": [
   "image",
@@ -19,11 +19,9 @@
  "imageJob": "8917816d-76f4-476b-a1bf-bd14eee8d03c",
  "imageMatch": "plate",
  "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
- "imagePair": [
-  3,
-  4
- ],
+ "imagePair": [],
  "imageParts": [],
+ "imagePick": 3,
  "imagePrompt": "For the line \"I always figured mine was past fixing.\": Keep this photo exactly as it is — the parquet floor, the gold chair legs, the evening light — low under a table edge, a tall 9:16 crop, and add her knee and hand. Image 1 is the hall. Image 2 is the style — the same render, materials, light and proportions.\nClose-up low and front-on, facing the lens, sharp on the knee: an older Black woman seated, her right knee under the burgundy chiffon of her dress, her brown right hand on the knee rubbing it through the fabric, four chunky fingers and a thumb; a gold heel on the parquet below; behind her chair, soft and out of focus, dancing feet on the parquet. Scale true to the set: the tablecloth hem comes down to just above her knee.\nIn frame: one knee, one hand on it, the tablecloth edge at the top, a chair leg, the dancers soft beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render in the warm glow of the string lights and chandeliers, evening. Dress and tablecloth plain — no lettering, logos or labels.",
  "imageRefs": [
   {
@@ -37,8 +35,8 @@
    "ref": "stryde-71-stairs-pixar-song__P-05c"
   }
  ],
- "imageRes": "1536×2752",
- "imageStatus": "review",
+ "imageRes": 6871431,
+ "imageStatus": "confirmed",
  "imageTaste": [
   "HT03",
   "HT04",
@@ -54,9 +52,13 @@
   "HT26"
  ],
  "imageType": "image/png",
+ "imageUnused": 4,
  "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_8917816d-76f4-476b-a1bf-bd14eee8d03c.png",
  "imageVersions": [
   {
+   "archiveAsset": "59cdadf15163a2f3bc0575f3dba00f4b",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "43360f814df5a11db6af7e87d1267d10",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -79,12 +81,12 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_41f9bcc8-d626-46c7-a1d0-4bd60c18bc1c.png",
-   "v": 1,
-   "archived": true,
-   "archiveAsset": "59cdadf15163a2f3bc0575f3dba00f4b",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 1
   },
   {
+   "archiveAsset": "4981a2a78dd669cd5888d6b0e5bf7900",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j",
+   "archived": true,
    "asset": "35ac26e169cf663115dd6768d71f73d5",
    "at": 1790890992104,
    "connector": "Higgsfield",
@@ -107,24 +109,17 @@
    ],
    "type": "image/png",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214030_31c7e1d7-184e-413c-bcd4-eddebaebe691.png",
-   "v": 2,
-   "archived": true,
-   "archiveAsset": "4981a2a78dd669cd5888d6b0e5bf7900",
-   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+   "v": 2
   },
   {
-   "v": 3,
-   "pair": "A",
    "asset": "903089ccf08d882bafb7f3559287b919",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_8917816d-76f4-476b-a1bf-bd14eee8d03c.png",
+   "at": 1790891943025,
+   "connector": "Higgsfield",
+   "credits": 2.14,
    "job": "8917816d-76f4-476b-a1bf-bd14eee8d03c",
    "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
-   "connector": "Higgsfield",
-   "credits": 2.14,
-   "size": 6871431,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: under the table: her hand on her knee through the burgundy chiffon, gold heels on the parquet, dancing feet soft beyond — A with her at frame left, B at frame right",
+   "pair": "A",
    "refs": [
     {
      "kind": "location",
@@ -137,21 +132,21 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: under the table: her hand on her knee through the burgundy chiffon, gold heels on the parquet, dancing feet soft beyond — A with her at frame left, B at frame right"
+   "res": "1536×2752",
+   "size": 6871431,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_8917816d-76f4-476b-a1bf-bd14eee8d03c.png",
+   "v": 3
   },
   {
-   "v": 4,
-   "pair": "B",
    "asset": "b9d358456c0d504b7a09088a978f25c2",
-   "type": "image/png",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_3c7ae833-d78d-41d2-ba9f-6b8e21d49f21.png",
-   "job": "3c7ae833-d78d-41d2-ba9f-6b8e21d49f21",
-   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "at": 1790891943025,
    "connector": "Higgsfield",
    "credits": 2.14,
-   "size": 7141476,
-   "res": "1536×2752",
-   "at": 1790891943025,
+   "job": "3c7ae833-d78d-41d2-ba9f-6b8e21d49f21",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: under the table: her hand on her knee through the burgundy chiffon, gold heels on the parquet, dancing feet soft beyond — A with her at frame left, B at frame right · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
    "refs": [
     {
      "kind": "location",
@@ -164,7 +159,14 @@
      "ref": "stryde-71-stairs-pixar-song__P-05c"
     }
    ],
-   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: under the table: her hand on her knee through the burgundy chiffon, gold heels on the parquet, dancing feet soft beyond — A with her at frame left, B at frame right"
+   "res": "1536×2752",
+   "size": 7141476,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215406_3c7ae833-d78d-41d2-ba9f-6b8e21d49f21.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "e16d4bf303a329ccf19638ab56535267",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
   }
  ],
  "key": "fixing",
@@ -173,7 +175,7 @@
  "light": "warm string lights and chandeliers · key L · evening · turn: warm party light · 3200K",
  "line": "I always figured mine was past fixing.",
  "location": "L-RECEPTION",
- "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "model": "kling-video-v3_0",
  "motionPlan": "From this frame: her hand rubs the knee once — one slow rub, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
  "music": "MUS-TURN",
  "onScreen": 4.07,
@@ -184,8 +186,44 @@
  "songOut": 64.11,
  "stage": "broll",
  "staging": "hands: one movement",
- "status": "ready",
+ "status": "review",
  "storyDay": "N-D2",
  "title": "turn — her doubt",
- "updatedAt": 1790891943025
+ "updatedAt": 1790931957895,
+ "videoVersions": [
+  {
+   "v": 1,
+   "asset": "1cc4d2587699c13a4b663fb6bd516924",
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/31c019d5-06f6-4da9-9208-5f40cb9f5f42-FzG76T2FM9MubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+   "job": "AbZ_O6vwryYnQ5oTfa4yTkuvsHRN2JBGWps1P5op-QFMoDpP7gQPwM31-22ixP14E46IyXaF",
+   "model": "kling-video-v3_0",
+   "connector": "Kling",
+   "credits": 40,
+   "duration": 5.04,
+   "res": "1072×1928",
+   "size": 5412553,
+   "fromImage": 3,
+   "at": 1790931957895,
+   "note": "the first clip on the picked frame v3 · what I see: her hand rubs slowly across her knee through the burgundy chiffon and rests; dancing feet soft beyond"
+  }
+ ],
+ "videoAsset": "1cc4d2587699c13a4b663fb6bd516924",
+ "videoParts": [],
+ "videoType": "video/mp4",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/31c019d5-06f6-4da9-9208-5f40cb9f5f42-FzG76T2FM9MubXoLDAVXfw-output.mp4?x-kcdn-pid=112372",
+ "videoJob": "AbZ_O6vwryYnQ5oTfa4yTkuvsHRN2JBGWps1P5op-QFMoDpP7gQPwM31-22ixP14E46IyXaF",
+ "videoConnector": "Kling",
+ "videoAt": 1790931957895,
+ "videoRes": "1072×1928",
+ "videoTaste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25"
+ ],
+ "prompt": "For the line \"I always figured mine was past fixing.\": From this frame: her hand rubs the knee once — one slow rub, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Her right hand rubs slowly across her knee once through the burgundy chiffon and rests on it; her gold heels stay on the parquet; the dancing feet beyond keep stepping, soft and out of focus; the tablecloth and the chair stay exactly as in the frame; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else in focus; no cut.",
+ "credits": 40
 }

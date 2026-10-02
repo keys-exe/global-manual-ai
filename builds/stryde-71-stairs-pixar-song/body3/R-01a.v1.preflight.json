@@ -1,0 +1,75 @@
+{
+ "beat": "R-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Loretta came to stay the week after.\": Keep this photo exactly as it is — the hall, the front door, the staircase, the photo wall, the floor — seen from the foot of the stairs toward the open front door, a tall 9:16 crop, and add the visitor. Image 1 is the hall. Image 2 is the visitor — her face and silver bob only. Image 3 is the style — the same render, materials, light and proportions.\nMedium shot at eye level, sharp on her: the same woman as Image 2, seventy-four, stepping in over the threshold of the open door, facing the lens, in a teal three-quarter-sleeve blouse, khaki trousers and white canvas slip-ons, a small brown overnight bag in her right hand, her left hand on the door edge, four chunky fingers and a thumb on each, a warm closed-mouth smile, eyes on the staircase. Scale true to the set: the door handle comes up to her hip.\nIn frame: her, the open door with sun in the sidelights, the coat stand and the newel of Image 1; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. No lettering, logos or labels; not the khaki shorts of Image 2.",
+ "script_line": "Loretta came to stay the week after.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — the hall and staircase",
+   "kind": "location"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "377f63fd-7b11-4db2-a663-052e8c0637e8",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "medias": [
+  "377f63fd-7b11-4db2-a663-052e8c0637e8",
+  "fce3f6cb-9ef5-47b5-996b-f9c62e893bc8",
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ],
+ "board_refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — the hall and staircase",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1"
+  },
+  {
+   "label": "C1-LORETTA sheet v2 (confirmed) — face and hair only (HT26)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C1-LORETTA",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c",
+   "role": "Image 3"
+  }
+ ]
+}
