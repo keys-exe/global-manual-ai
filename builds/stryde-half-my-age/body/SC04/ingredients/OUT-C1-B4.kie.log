@@ -1,0 +1,11 @@
+{"taskId": "a89fdfb1af8b00e762e9bf01ab36b1da", "created": true}
+{
+  "taskId": "a89fdfb1af8b00e762e9bf01ab36b1da",
+  "state": "success",
+  "credits": 10.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/a2/a89fdfb1af8b00e762e9bf01ab36b1da_1790933993647.png"
+  ],
+  "saved": "body/SC04/ingredients/OUT-C1-B4_v1.png"
+}
