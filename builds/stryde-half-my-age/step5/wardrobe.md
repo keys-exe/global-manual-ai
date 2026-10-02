@@ -52,9 +52,9 @@ One block per story day, in story order: the event, what makes it a day, each pe
 
 | Who | Outfit |
 |---|---|
-| HER | dusty-rose dress, cream jacket |
-| Barbara | royal-blue dress, silver cardigan |
-| Husband | navy suit, pale-blue shirt, tie |
+| HER | dusty-rose dress, cream bouclé jacket (OUT-N-B4) |
+| Barbara | royal-blue wrap dress, silver cardigan, silver shoes (OUT-C1-B4) |
+| Husband | navy suit, pale-blue shirt, burgundy tie (OUT-C3-B4) |
 
 | Event | Place | Beats |
 |---|---|---|
