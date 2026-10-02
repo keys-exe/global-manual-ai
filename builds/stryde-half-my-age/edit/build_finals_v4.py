@@ -55,10 +55,11 @@ def words_of(media, a=None, b=None):
     return [(x.word.strip(), x.start, x.end) for s in segs for x in s.words]
 
 
-def envelope(media):
-    """The voice-only track's level in dBFS every 10 ms."""
+def envelope(media, a=None, b=None):
+    """The level in dBFS every 10 ms (of media, or its [a, b] part)."""
     import numpy as np
-    raw = subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-i", str(media), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
+    cut = ["-ss", f"{a:.3f}", "-to", f"{b:.3f}"] if a is not None else []
+    raw = subprocess.run([FF, "-hide_banner", "-loglevel", "error", *cut, "-i", str(media), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
                          capture_output=True, check=True).stdout
     x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768
     n = len(x) // 160
@@ -66,19 +67,20 @@ def envelope(media):
     return 20 * np.log10(r)
 
 
-def snap(env, t0, t1):
+def snap(env, t0, t1, thr=None):
     """A word's start moved to its first sound: back through sound that runs straight into it (≤ 0.35 s), or forward
     to the first sound when the recogniser put it early (≤ 0.3 s)."""
+    THR_ = THR if thr is None else thr
     i = int(t0 * 100)
-    if 0 <= i < len(env) and env[i] > THR:
+    if 0 <= i < len(env) and env[i] > THR_:
         j = i
-        while j > 0 and i - j < 35 and env[j - 1] > THR:
+        while j > 0 and i - j < 35 and env[j - 1] > THR_:
             j -= 1
-        return j / 100
+        return j / 100 if (j == 0 or env[j - 1] <= THR_) and i - j < 35 else t0   # connected speech: keep its own start
     j = i
-    while j < len(env) - 1 and j - i < 30 and env[j] <= THR:
+    while j < len(env) - 1 and j / 100 < t1 and env[j] <= THR_:
         j += 1
-    return j / 100 if j - i < 30 and j / 100 < t1 else t0
+    return j / 100 if j / 100 < t1 else t0
 
 
 def sound_end(env, t1, limit):
@@ -125,9 +127,13 @@ def caption_words(media, line_ids, cache, items=()):
     # narration / off-screen lines: their own file, placed where the edit put it
     fc = cache.with_name(cache.stem + ".files.json")
     fcache = json.loads(fc.read_text()) if fc.exists() else {}
+    vo_lines = [L for L in line_ids if inv[L][0] == "VO"]
     by_line = {}
     for it in items:
-        by_line.setdefault(it["line"].split("#")[0], []).append(it)
+        L = it["line"].split("#")[0]
+        if L not in line_ids and vo_lines:   # a hook's narration file is named by its take (L004_v2): it speaks the hook's VO line
+            L = vo_lines[-1]
+        by_line.setdefault(L, []).append(it)
     for L, its in by_line.items():
         sw = [s for s in script if s["line"] == L]
         if not sw:
@@ -137,17 +143,62 @@ def caption_words(media, line_ids, cache, items=()):
             k = f"{it['file']}|{it['a']}|{it['b']}"
             if k not in fcache:
                 fcache[k] = words_of(Path(it["file"]), it["a"], it["b"])
-            heard_l += [(w, it["at"] + t0, it["at"] + t1) for w, t0, t1 in fcache[k] if t0 < it["b"] - it["a"]]
-        for s in sw:
-            s.pop("t0", None); s.pop("t1", None)
+            fenv = envelope(Path(it["file"]), it["a"], it["b"])
+            thr = float(fenv.max()) - 32
+            prev = -1.0
+            for w, t0, t1 in fcache[k]:
+                if t0 < it["b"] - it["a"]:
+                    t = max(snap(fenv, t0, t1, thr), prev + 0.08) if t0 - prev > 0.08 else t0   # snapped on its own clean file
+                    heard_l.append((w, it["at"] + t, it["at"] + t1)); prev = t
+        for x in sw:
+            x.pop("t0", None); x.pop("t1", None)
         align(sw, heard_l)
+        for x in sw:
+            if "t0" in x:
+                x["src"] = "file"
     fc.write_text(json.dumps(fcache))
     env = envelope(media)
-    floor = 0.0
-    for s in script:
-        if "t0" in s:
-            s["t0"] = max(snap(env, s["t0"], s["t1"]), min(floor, s["t0"]))   # never back into the word before
-            floor = s["t0"] + 0.08
+    # on-screen lines: timed on the scenes' isolated voice tracks (build_edit_v4.dialogue_words), mapped to this cut
+    dlf = cache.with_name(cache.name.replace(".words.json", ".dlg.json"))
+    if dlf.exists():
+        onscreen = [x for x in script if x.get("src") != "file"]
+        dl = json.loads(dlf.read_text())
+        old = {id(x): (x.get("t0"), x.get("t1"), x.get("src")) for x in onscreen}
+        for x in onscreen:
+            x.pop("t0", None); x.pop("t1", None); x.pop("src", None)
+        align(onscreen, dl)
+        for x in onscreen:
+            if "t0" in x:
+                x["src"] = "dlg"
+            elif old[id(x)][2] == "mix" and (old[id(x)][1] - old[id(x)][0]) < 0.8:   # the mix's time, only if it isn't smeared
+                x["t0"], x["t1"], x["src"] = old[id(x)]
+        # keep the order: a mix-timed word that lands out of order with its timed neighbours is dropped (refilled below)
+        last = -1.0
+        for x in script:
+            if "t0" not in x:
+                continue
+            if x["t0"] < last - 0.02:
+                for k in ("t0", "t1", "src"):
+                    x.pop(k, None)
+                continue
+            last = x["t0"]
+    # what is left on the mix: the recogniser chains each word onto the one before, so a word's start sits in the silence before
+    # it — moved to the start of the speech it belongs to (the edit's speech spans, in output time); its end to that
+    # speech's end when the silence after it is longer
+    spf = cache.with_name(cache.name.replace(".words.json", ".spans.json"))
+    spans = json.loads(spf.read_text()) if spf.exists() else []
+    for x in script:
+        if x.get("src") != "mix":
+            continue
+        inside = [sp for sp in spans if sp[0] - 0.05 <= x["t0"] <= sp[1]]
+        if not inside:
+            later = [sp for sp in spans if x["t0"] < sp[0] < x["t1"] + 0.3]
+            if later:
+                x["t0"] = later[0][0]
+                x["t1"] = max(x["t1"], x["t0"] + 0.15)
+                inside = [later[0]]
+        if inside and x["t1"] > inside[0][1] + 0.25 and not any(inside[0][1] < sp[0] < x["t1"] for sp in spans):
+            x["t1"] = inside[0][1]
     # words the recogniser missed: in the sound just before the next timed word
     i = 0
     while i < len(script):
@@ -186,6 +237,18 @@ def write_ass(words, path, end_at):
             "Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n"
             "Style: Cap,Montserrat Thin ExtraBold,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,4,1.5,2,40,40,268,1\n\n"
             "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
+    # words that start together (two words given one start) share the time up to the next start, so each one lights
+    i = 0
+    while i < len(words):
+        j = i + 1
+        while j < len(words) and words[j]["t0"] - words[i]["t0"] < 0.08 * (j - i):
+            j += 1
+        if j - i > 1:
+            end = words[j]["t0"] if j < len(words) and words[j]["t0"] - words[i]["t0"] < 2.0 else words[j - 1]["t1"]
+            end = max(end, words[i]["t0"] + 0.18 * (j - i))
+            for m in range(i, j):
+                words[m]["t0"] = words[i]["t0"] + (end - words[i]["t0"]) * (m - i) / (j - i)
+        i = j
     # chunks of up to 3 words: break at a sentence end, a change of speaker, or a pause over 0.5 s
     chunks, cur = [], []
     for i, w in enumerate(words):

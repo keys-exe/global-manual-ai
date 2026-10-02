@@ -119,15 +119,18 @@ INSERTS = {
         scene=("THE SCENE SO FAR, a weekday late morning a few weeks later, one continuous moment in the café: honeyed "
                "daylight about 4800K from the big front window on the left. One strap of the product photo lies flat on "
                "the round wooden table between the coffee cups, front side up."),
-        shot=("THE SHOT: a CU, eye level, over the round table: the hand of the friend in the mustard jacket comes in "
-              "from the right, picks up " + STRAP + ", by its two ends between finger and thumb, lifts it a hand's "
-              "height off the table and turns it once to look at the wordmark, then sets it back down flat between the "
-              "cups. Faces are out of frame. That is all that happens."),
+        shot=("THE SHOT: a CU looking down at a steep angle over the round table, wide enough that two coffee cups on "
+              "their saucers stand either side of " + STRAP + ", lying flat on the wood, front side up, its knit band one "
+              "small closed loop folded flat under the shell, smaller than either saucer. The fingertips of the friend in "
+              "the mustard jacket come in from the right, rest on the shell and slide the whole strap slowly a hand's "
+              "width across the wood toward the empty chair, flat the whole way, then lift off. Faces are out of frame. "
+              "That is all that happens."),
         state="the strap on the table between the cups",
         state_except="it has been lifted, looked at and set back",
         focus="the strap is sharp in her fingers; the cups and window fall soft",
-        neg="no strap bending, no strap stretching, no second strap, no box, no packaging, no face in frame",
-        risks=[("the shell bends in her hand", "'rigid… never bends', held by its two ends"),
+        neg="no strap bending, no strap stretching, no strap lifted off the table, no strap bigger than a saucer, no second strap, no box, no packaging, no face in frame",
+        fix="v1 (agent): the shell bent and the band stretched open as she lifted it, and the strap read bigger than the cups → it is never lifted: fingertips slide it flat across the wood; framed from above between two saucers so its size reads against them",
+        risks=[("the shell bends in her hand", "never lifted: fingertips slide it flat, 'no strap lifted' negative"),
                ("a second strap appears", "one strap, second-strap negative"),
                ("the strap grows", "'about 12 by 5 centimetres', smaller than the saucer")]),
     "INS-SC13": dict(
@@ -203,6 +206,8 @@ def make(iid):
                     "\"this feels like an image only\" (L049); \"automate them just give met the final one\"",
          "risks": [{"risk": r, "prevented_by": p} for r, p in d["risks"]], "scene": base.get("scene"),
          "title": f"Insert · {d['take']}", "taste": ["HT02", "HT17", "HT18", "HT22", "HT23"], "prompt": prompt}
+    if d.get("fix"):
+        c["generation"] = 2; c["fix_note"] = d["fix"]
     if iid == "INS-L049":
         c["generation"] = 5
         c["fix_note"] = ("the user (2026-10-02): this feels like an image only → v4's SHOT 2 is a locked ECU where the finger "
@@ -230,10 +235,11 @@ def write():
 def run(ids):
     for iid in ids:
         c = json.loads((DIR / f"{iid}.call.json").read_text())
-        out = DIR / f"{iid}_v1.mp4"
+        g = c["generation"] if iid != "INS-L049" else 1
+        out = DIR / f"{iid}_v{g}.mp4"
         if out.exists():
             continue
-        log = DIR / f"{iid}.v1.kie.log"
+        log = DIR / f"{iid}.v{g}.kie.log"
         with open(log, "w") as lf:
             subprocess.run([sys.executable, str(S / "kie.py"), "seedance", "--prompt-file", str(DIR / f"{iid}.prompt.txt"),
                             "--ref-image", *c["files"], "--duration", str(c["duration"]), "--no-audio", "--out", str(out)],

@@ -39,7 +39,7 @@ ONSET = 0.4                # a slowed stretch ends this far before the next spok
 INS = B / "body" / "INSERTS"
 CUT_BELOW = 0.75
 INSERTS = {"SC03-SH06": INS / "INS-SC03-A_v1.mp4", "SC03-SH09-10": INS / "INS-SC03-B_v1.mp4", "SC04-T2": INS / "INS-SC04_v1.mp4",
-           "SC0506-T1": INS / "INS-SC05_v1.mp4", "SC07-T": INS / "INS-SC07_v1.mp4", "SC12-T3": INS / "INS-SC12_v1.mp4",
+           "SC0506-T1": INS / "INS-SC05_v1.mp4", "SC07-T": INS / "INS-SC07_v1.mp4", "SC12-T3": INS / "INS-SC12_v2.mp4",
            "SC13-T1": INS / "INS-SC13_v1.mp4"}
 INSERT_IN = {}             # the insert's in-point, when its first second isn't the best (set after judging each clip)
 REPLACE = {"SC08-T3": (6.0, INS / "INS-L049_v1.mp4", 0.0)}   # SHOT 2 (the strap on her knee) → INS-L049, Barbara's line kept
@@ -376,6 +376,53 @@ def spans_for(takes, order):
             t0 += k["dur"]
 
 
+def dialogue_words(takes, order, name):
+    """The on-screen lines' words in output time, from each dialogue scene's isolated voice track (clean, so its word
+    times are exact) mapped through the take's slow-downs — the captions' timing for spoken lines."""
+    out = []
+    for scene, _ in order:
+        ks = [k for k in takes if k["scene"] == scene]
+        iso = H.OUT / "work" / f"body_{scene}.dialogue.iso.mp3"
+        if not any(k["dialogue"] for k in ks) or not iso.exists():
+            continue
+        cache = OUT / f"dlg_{scene}.words.json"
+        if cache.exists():
+            ws = json.loads(cache.read_text())
+        else:
+            from faster_whisper import WhisperModel
+            m = WhisperModel("medium.en", device="cpu", compute_type="int8")
+            ws = [(w.word.strip(), w.start, w.end) for sg in m.transcribe(str(iso), word_timestamps=True, language="en")[0] for w in sg.words]
+            cache.write_text(json.dumps(ws))
+        # the recogniser starts a word after a silence where the silence began: move each start to its first sound
+        pcm = subprocess.run([FF, "-loglevel", "error", "-i", str(iso), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
+        x = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768
+        n = len(x) // 160
+        env = 20 * np.log10(np.sqrt((x[:n * 160].reshape(n, 160) ** 2).mean(1) + 1e-12))
+        thr = float(env.max()) - 26
+        sc_spans, tt = [], 0.0
+        for k in ks:
+            sc_spans += [(tt + a, tt + b) for a, b in k.get("spans", [])]
+            tt += k["dur"]
+        fixed = []
+        for w, a, b in ws:
+            i, j = int(a * 100), int(b * 100)
+            while i < min(j, len(env)) and env[i] <= thr:
+                i += 1
+            a2 = i / 100 if i < j else a
+            sp = [sa for sa, sb in sc_spans if sa - 0.05 <= b and sb >= b - 0.05]   # never before the speech it ends in
+            if sp and sp[-1] > a2 and sp[-1] < b:
+                a2 = sp[-1]
+            fixed.append((w, a2, max(b, a2 + 0.25)))
+        ws = fixed
+        t0 = 0.0
+        for k in ks:
+            for w, a, b in ws:
+                if t0 <= (a + b) / 2 < t0 + k["dur"] and any(sa - 0.3 <= a <= sb + 0.3 for sa, sb in sc_spans):
+                    out.append([w, round(k["at"] + k["warp"].out(a - t0), 3), round(k["at"] + k["warp"].out(min(b - t0, k["dur"])), 3)])
+            t0 += k["dur"]
+    json.dump(sorted(out, key=lambda x: x[1]), open(OUT / f"{name}_v{EDIT_V}.dlg.json", "w"))
+
+
 def build(order, name, fixed=None, offscreen=(), ending=True, dry=False):
     OUT.mkdir(parents=True, exist_ok=True)
     E.OUT.mkdir(parents=True, exist_ok=True)
@@ -383,6 +430,10 @@ def build(order, name, fixed=None, offscreen=(), ending=True, dry=False):
     spans_for(takes, order)
     items = place_items(takes, fixed, offscreen)
     total, report = plan(takes, ending)
+    # on-screen speech in output time (for the captions: build_finals_v4.py)
+    json.dump([[round(k["at"] + k["warp"].out(a), 3), round(k["at"] + k["warp"].out(b), 3)] for k in takes for a, b in k.get("spans", [])],
+              open(OUT / f"{name}_v{EDIT_V}.spans.json", "w"))
+    dialogue_words(takes, order, name)
     if dry:
         print(name, f"{total:.1f}s")
         print("\n".join(report))

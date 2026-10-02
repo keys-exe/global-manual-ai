@@ -1,1 +1,11 @@
 {"taskId": "39b804b7675076aca0a3391234fac46f", "created": true}
+{
+  "taskId": "39b804b7675076aca0a3391234fac46f",
+  "state": "success",
+  "credits": 315.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790971721570-p95as1q09de.mp4"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-half-my-age/body/INSERTS/INS-SC04_v1.mp4"
+}
