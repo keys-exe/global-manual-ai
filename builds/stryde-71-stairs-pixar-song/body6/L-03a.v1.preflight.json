@@ -1,0 +1,78 @@
+{
+ "beat": "L-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"When I got home, my husband said, You was gone a long time. I said, I know.\": Her living room, tall 9:16 — the greige walls, white six-panel door and oak floor of Image 1. Image 2 is the woman — her face and silver twist-out only. Image 3 is the style.\nMedium shot at eye level from a three-quarter angle, sharp on his eyes: her husband, a Black man of about eighty, bald, white moustache, brown cardigan, sits in a brown recliner at frame left facing frame right, lowering a newspaper with blank pages onto his lap with both hands, looking up at her with a raised eyebrow, mouth closed; at frame right in the open doorway she stands in a coral windbreaker over a white T-shirt, light-blue straight jeans, white walking sneakers, a paper grocery bag in each hand at her sides, four chunky fingers and a thumb on each hand, looking at him with a small knowing closed-mouth smile. Scale true to the set: the door handle at her hip.\nIn frame: two people, one recliner, two bags, the doorway; every other surface plain.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon window light. No lettering, logos or labels but its wordmark.",
+ "script_line": "When I got home, my husband said, You was gone a long time. I said, I know.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "377f63fd-7b11-4db2-a663-052e8c0637e8",
+  "d95762a8-ca34-4115-96ef-72a0279b4cd1",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1"
+  },
+  {
+   "label": "N-NARR face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ],
+ "sent_note": "sent 12:26 UTC with the V7.90.4 opener For the line \"…\":"
+}

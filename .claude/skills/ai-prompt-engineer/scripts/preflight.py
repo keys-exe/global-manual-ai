@@ -145,7 +145,7 @@ SUNBURST = {"gpt_image_2_5", "gpt_image_2_5_sunburst", "gpt-image-2-5-sunburst-i
 # §6A Part 2 — right on the first render (V7.74.0)
 FRACTION = re.compile(r"\b(?:a |one |two |three |about a |about two |about three |roughly a |at least a |over a |nearly a )?(?:half|third|quarter|fifth|thirds|quarters|fifths|\d{2}\s?(?:%|percent))\s+(?:of\s+)?(?:the\s+)?frame(?:'s)?\b|\bfills?\s+(?:most of\s+)?the\s+frame\b|\bframe[- ]filling\b", re.I)
 FIDELITY = re.compile(r"\b(?:copied|reproduced|matched|exactly as|identical to|the same as)\b[^.]{0,80}\bexactly\b|\bexactly\b[^.]{0,40}\b(?:as|in|from)\s+Image\s*\d|\bcopied exactly\b|\bnothing redesigned\b", re.I)
-EDIT_OPEN = re.compile(r"^\s*(?:For the line \"[^\"]*\":\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
+EDIT_OPEN = re.compile(r"^\s*(?:For the line (?:\"[^\"]*\"|— .*? —):\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
 HANDS = re.compile(r"\b(?:hands?|palms?|fingers?|fingertips?|thumbs?|wrists?|arms? (?:at|by|folded|crossed))\b", re.I)
 GAZE = re.compile(r"\b(?:both eyes|eyes (?:on|to|toward|down|up|closed|fixed|level)|looking (?:at|down|up|ahead|away|into|toward|straight)|gaze|square to the lens|to the lens|into the lens|at the camera|to camera|face (?:to|turned|toward|square))\b", re.I)
 SURFACE = re.compile(r"\b(?:table|desk|counter|worktop|countertop|shelf|shelves|bench|dresser|sideboard|nightstand|floor)\b", re.I)
@@ -251,9 +251,9 @@ def run_image(c):
         counted = re.search(rf"\b(one|a single|exactly one)\s+(?:\w+\s+){{0,2}}{noun}", inv.group(1))
         check("the product counted in the frame inventory (§6A rule 4, L41)", bool(counted), f"name it once with its count in the In frame list — 'exactly one {noun} on her right knee'" if not counted else "")
     # L28 (V7.88.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
-    rest = re.sub(r'^\s*For the line "[^"]*":', "", p, count=1)
-    sm = re.search(r'["“”]', rest) or re.search(r'[“”]', p)
-    check("no speech marks in the picture prompt (§6A rule 5, L28)", not sm, "a quoted line or word prints as a caption — write the line without its speech marks" if sm else "")
+    # V7.90.7 (L46): the opener's own marks print too — "For the line — … —:" on a picture prompt, never "For the line \"…\":"
+    sm = re.search(r'["“”]', p)
+    check("no speech marks in the picture prompt (§6A rule 5, L28)", not sm, "a quoted line or word prints as a caption — open with For the line — … —: and write the line without speech marks" if sm else "")
     dev = DEVICE.search(p)
     check("no device named as an object in the picture (§6A rule 7)", not dev, dev.group(0) if dev else "")
     oof = [m for m in OUT_OF_FRAME.finditer(p) if not re.search(rf"\b{BODY_PART}\b", p[max(0, m.start() - 40):m.end()], re.I)]

@@ -1,0 +1,87 @@
+{
+ "beat": "PR-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Loretta's husband wears one. He's seventy-six, and he plays golf twice a week.\": A golf course, tall 9:16. Image 1 is the strap, Image 2 it worn. Image 3 is the style.\nMedium-full shot from low at his right front, facing frame left at his swing's finish, sharp on the strap: a Black man of seventy-six, grey hair and beard, lemon polo, khaki shorts, golf shoes — the club over his shoulder in both hands, four chunky fingers and a thumb on each, a closed-mouth smile, looking at the far green; on his bare right knee, nearest the lens, the strap of Image 1 copied exactly — a black shell with two matching pointed peaks close together at the middle of its top edge, a notch between them, sloping down to a chrome slide at each end — 12 × 5 cm, a fifth of the frame wide, its notch cupping the bottom of the kneecap. Scale true to the set: he fills two thirds of the frame height.\nIn frame: him, exactly one strap on his right knee, his left knee bare, fairway, sky; nobody else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "Loretta's husband wears one. He's seventy-six, and he plays golf twice a week.",
+ "face": true,
+ "room": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user Fix \"fwrong product\" → the peaks were drawn as horns at the shell's two ends; the shape line now puts two matching peaks close together at the middle, one kneecap wide, sloping down to a slide at each end",
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e5f263f1-108c-4084-bf56-035f7cf76409",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "worn_front.jpg — the strap worn, front-on (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/worn_front.jpg",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ],
+ "sent_note": "sent 12:26 UTC with the V7.90.4 opener For the line \"…\":"
+}

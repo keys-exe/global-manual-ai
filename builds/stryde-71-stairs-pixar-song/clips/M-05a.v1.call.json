@@ -1,0 +1,60 @@
+{
+ "beat": "M-05a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.\": From this frame: soft warm pressure pulses down the thigh lines into the spot — one pulse per second; camera R4 — slow single-axis push on a stabilised virtual rig. Soft warm pressure pulses down the faint lines of the thigh into the glowing spot on the tendon ribbon below the kneecap, one pulse per second; the bones, the white tendon ribbons, the see-through peach outline and the pale grey backdrop stay exactly as in the frame; the kneecap stays plain ivory; nobody in the frame, nobody speaks. Stylized 3D animated anatomy, exactly on model from the frame. The camera pushes in slowly on one straight axis, nothing more; no cut.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_112006_38ff8120-0288-4b70-a50e-dcaced23625d.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.",
+ "motion_plan": "From this frame: soft warm pressure pulses down the thigh lines into the spot — one pulse per second; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "one pulse per second",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push / locked"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v8)"
+}

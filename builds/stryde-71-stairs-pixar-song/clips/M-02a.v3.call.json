@@ -1,0 +1,63 @@
+{
+ "beat": "M-02a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"while your knee got worse. This one fixes why it hurts.\": From this frame: under the strap on the right knee model the warm glow cools into a calm soft blue and holds — about two seconds; camera locked, the frame holds still. Only the light changes: on the right knee the glow behind the strap turns from warm amber to a calm cool blue and settles, while the left knee in its sleeve keeps its amber haze; the strap is one rigid solid object, its outline identical in every frame — the black shell with its two pointed peaks round the notch, a chrome slide at each end, the band the same width; the bones, the white tendon ribbons, the see-through peach outline and the pale grey backdrop stay exactly as in the frame; nobody in the frame, nobody speaks. Stylized 3D animated anatomy, exactly on model from the frame. The camera does not move; no zoom; no cut.",
+ "duration": 6,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_111200_e2148ba2-e154-4ae6-8720-59489dc01597.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "while your knee got worse. This one fixes why it hurts.\"",
+ "motion_plan": "From this frame: under the strap on the right knee model the warm glow cools into a calm soft blue and holds — about two seconds; camera locked, the frame holds still",
+ "motion_confirmed": true,
+ "pace": "about two seconds",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 3,
+ "user_go": "user 2026-10-02: \"fix those and generate the next act\" (the Fix on the board)",
+ "fix_note": "user Fix \"you should show blue glow to show that the stryde is better\" → under the strap the warm glow cools to a calm blue (the relief colour), the left knee keeps its amber; camera still locked",
+ "fix_notes_all": [
+  "user Fix \"dont change the shape of the product\" → locked camera, only the light changes, the strap one rigid object identical in every frame",
+  "user Fix \"you should show blue glow to show that the stryde is better\" → under the strap the warm glow cools to a calm blue (the relief colour), the left knee keeps its amber; camera still locked"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18",
+  "FP21"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model / the strap redrawn",
+   "prevented_by": "exactly on model from the frame; the strap rigid"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push / locked"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v3 of this beat (from the confirmed image v5)"
+}
