@@ -56,3 +56,9 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 
 ## Next (on the user's go)
 Steps 4–5: the location plate 16:9 (her room — the talking-head set), product info cards, act map by phrase with the Visual Pitch, angles, wardrobe (one recording day), music register map, placement — then the voice (§22U) and talking heads.
+
+### Scene 1 (Hook 1) — 2026-10-02
+- User: "give me scene 1 first". Scene 1 = Hook 1 cold open (HK1-01 B-roll + TH-HK1, confirmed).
+- HK1-01-END: no A/B pick on the board yet; A is the default for the clip (pick B or Fix on the board to change it).
+- `clips/HK1-01.v1.call.json`: Kling 3.0, 4 s, pinned start HK1-01 A → end HK1-01-END A, hand_product pilot. Preflight PASS. Card set to `ready`.
+- **Blocked:** ODAQ B.V. has 1.69 Higgsfield credits (the clip needs 7). The rule allows no other workspace, and this account has no other Kling route. The clip runs once ODAQ is topped up.

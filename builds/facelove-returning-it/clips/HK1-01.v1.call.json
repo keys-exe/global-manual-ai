@@ -1,0 +1,47 @@
+{
+ "beat": "HK1-01",
+ "connector": "kling",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "For the line \u2014 I am so mad, and this is exactly why you read the reviews before you buy another foundation. \u2014: From this frame: she brings the closed stick down from beside her cheek and lays it flat across her open left palm at chest height, right fingers resting on it \u2014 one move, about 2 s; phone propped and still. Her lips stay sealed and her jaw still, she does not speak; brows drawn together, both eyes on the lens the whole time. The stick stays one capped violet stick with one wordmark, rigid and the same size throughout; every finger stays whole. She stays seated at the vanity; her hair, robe, the bed, door and window light stay exactly as in the frame. The camera holds still with a slight handheld sway and never travels. No cut, no new people, no text.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "HK1-01 A (confirmed; Higgsfield job e63abe33-fa37-44fa-81b3-ad83b4b3b4cf)",
+ "start_approved": true,
+ "pinned": true,
+ "end_image": "HK1-01-END A (Higgsfield job bdf44bf2-14fd-4907-9eab-c471b9bfda14) \u2014 default A on the user's 'give me scene 1 first'",
+ "end_approved": true,
+ "script_line": "I am so mad, and this is exactly why you read the reviews before you buy another foundation.",
+ "motion_plan": "From this frame: she brings the closed stick down from beside her cheek and lays it flat across her open left palm at chest height, right fingers resting on it \u2014 one move, about 2 s; phone propped and still.",
+ "motion_confirmed": true,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "hand_product",
+ "pin_waived": null,
+ "pilot": "first",
+ "taste": [
+  "HT20",
+  "HT22",
+  "HT25"
+ ],
+ "risks": [
+  {
+   "risk": "she mouths the line",
+   "prevented_by": "lips sealed, does not speak (HT25)"
+  },
+  {
+   "risk": "the stick bends, doubles or resizes in the hand",
+   "prevented_by": "rigid single capped stick, pinned end frame"
+  },
+  {
+   "risk": "a second action or loop",
+   "prevented_by": "one move named, end frame pinned"
+  }
+ ]
+}
