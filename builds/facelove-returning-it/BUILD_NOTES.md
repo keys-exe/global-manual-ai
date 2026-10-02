@@ -18,6 +18,12 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 - Note for the user: N-AFTER was confirmed with v1's lighter lines; the after keeps "every line", so if v2's deeper wrinkles are confirmed, the after face may read less lined than the before — their call (a Fix on N-AFTER would match it).
 - Still waiting: N-BEFORE v2 Confirm/Fix, and the flags F1–F9.
 
+## Steps 4–5 (2026-10-02, user: "confirm and proceed" — N-BEFORE v2 and N-AFTER v1 confirmed)
+- 5 plates at 16:9 (P-HOME hall, L-VANITY the talking-head set, L-COUNTER, L-CAFE, L-FRONT) + 2 side-cast sheets (C1-COUNTER, C2-FRIEND), Sunburst 2k, ODAQ B.V., ~2.75 cr each, on the Current board To check.
+- `STEP4_5.md`: location pass, property sheet PROP-H (San Antonio ranch house), light plans, act map (24 rows: 16 B-roll, 8 TH; hooks at step 6), wardrobe per story day (D0 counter, D1 café, D2 grocery morning, REC today), Visual Pitch (heroes B02, B06, B12, B13, B16), music register map (no music bed — the inspo has none).
+- Checks: angles.py PASS · wardrobe.py PASS · visual_plan.py PASS. Board: 24 planned beat cards; Plan docs locations, actmap, wardrobe, visualplan, music.
+- Flags F3/F7/F8/F9 unanswered — held on the defaults (3 hooks, voiced as written, avatar hair).
+
 ## Decisions
 - Mode 1 + UGC Ad from the inspo (no MODE/FORMAT in the message) — F2. Hooks 3 by default — F3.
 - The inspo file came with no extension (`inspo video`) — renamed `intake/inspo.mp4` and measured as the primary.
