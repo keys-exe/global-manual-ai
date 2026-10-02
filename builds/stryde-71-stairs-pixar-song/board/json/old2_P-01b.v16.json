@@ -1,0 +1,123 @@
+{
+ "imageVersions": [
+  {
+   "asset": "64f1a064896df50ddd652e645dd99ce6",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f0ab209-3648-407c-b1d0-c09e80f87576",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7564021,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195908_1f0ab209-3648-407c-b1d0-c09e80f87576.png",
+   "v": 11
+  },
+  {
+   "asset": "50a562ccc33e94e13fe6b06793bda917",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f57f9812-12bd-4a3f-8490-a95950e386f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6176505,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_f57f9812-12bd-4a3f-8490-a95950e386f0.png",
+   "v": 12
+  },
+  {
+   "asset": "e0b7ba5bd6df0ef3bdc22847f59f0b60",
+   "at": 1790888539033,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "51fe7903-2bab-4876-85b4-77207ba08a9d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205953_51fe7903-2bab-4876-85b4-77207ba08a9d.png",
+   "v": 14
+  },
+  {
+   "asset": "ecf835a3e11f483b6912dce25af3f860",
+   "at": 1790888539033,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "dd368a57-9f2e-4442-b110-ceb0d4ad63cb",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first · replaced on the user's Fix (NEW IMAGE PROPER FOOTING — toes pointed down the flight, the lower slipper half off its tread); kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205954_dd368a57-9f2e-4442-b110-ceb0d4ad63cb.png",
+   "v": 13
+  },
+  {
+   "v": "15 (first A, never shown)",
+   "pair": "A",
+   "asset": "1d43fe56a9c395d4d48202a32cbbc88d",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_212540_d4a6e82d-3758-42be-aa0f-05dcae0aeb02.png",
+   "job": "d4a6e82d-3758-42be-aa0f-05dcae0aeb02",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890168578,
+   "note": "kept off the board (L16): toes pointing down the flight, the upper slipper hanging off the step edge, a grey dress — broke the Fix note NEW IMAGE PROPER FOOTING; re-rendered with the direction tied to the handrail"
+  },
+  {
+   "asset": "62feeee173ae395cc4a92386b4a7ffbc",
+   "at": 1790890168578,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "a531d0b0-aa36-4cc8-aef2-70bf43813edd",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"NEW IMAGE PROPER FOOTING\" (v13 had her toes pointing down the flight and the upper slipper half off its tread) → a new pair facing UP the stairs — toes toward the landing, heels toward the lower steps, so she goes down backwards — each slipper whole and flat on its own tread; the stair plate + her confirmed P-01a frame as references · not chosen (the user picked A); copied to Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_212540_a531d0b0-aa36-4cc8-aef2-70bf43813edd.png",
+   "v": 16
+  }
+ ],
+ "updatedAt": 1790891028443
+}

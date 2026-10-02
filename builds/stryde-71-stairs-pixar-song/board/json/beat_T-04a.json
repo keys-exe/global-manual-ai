@@ -1,1 +1,216 @@
-{"build": "stryde-71-stairs-pixar-song", "act": "Act 2", "stage": "broll", "beat": "T-04a", "title": "turn — her doubt", "line": "I always figured hers wasn't as bad as mine.", "status": "planned", "flow": ["image", "video"], "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION", "imageModel": "nano_banana_pro · 2k · 9:16 · A/B pair", "duration": 5, "songIn": 56.79, "songOut": 60.04, "onScreen": 3.25, "section": "The turn — MUS-TURN", "bars": 1.0, "key": "mine", "location": "L-RECEPTION", "storyDay": "N-D2", "framing": "MEDIUM: N seated at a reception table in her lavender dress, watching Loretta dance across the room, a hand resting on her own right knee under the table edge", "motionPlan": "From this frame: she looks from the dance floor down to her knee — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels", "staging": "none", "pinEnd": "no", "angle": "high · three-quarter · through · MEDIUM — high, through the chairs = she's small and sitting it out", "focus": "eyes · deep", "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K", "product": "absent · —", "layout": "full", "eg": "", "music": "MUS-TURN", "ledger": "", "updatedAt": 1790851958758}
+{
+ "act": "Act 2",
+ "angle": "eye · ots · through · MEDIUM — over her shoulder = we see what she sees, the dance she sits out",
+ "bars": 1,
+ "beat": "T-04a",
+ "build": "stryde-71-stairs-pixar-song",
+ "duration": 5,
+ "eg": "",
+ "flow": [
+  "image",
+  "video"
+ ],
+ "focus": "eyes · deep",
+ "framing": "MEDIUM over her shoulder: N seated alone at a reception table in her burgundy dress, Loretta in fuchsia dancing in focus beyond, N's hand resting on her own right knee",
+ "imageAsset": "023b9d6be690813571d400a1936b39ff",
+ "imageAt": 1790891943025,
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageJob": "cecea849-ec9a-4bc4-86b6-ed76c3abf53c",
+ "imageMatch": "plate",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePair": [
+  3,
+  4
+ ],
+ "imagePrompt": "For the line \"I always figured hers wasn't as bad as mine.\": Keep this photo exactly as it is — the hall, the tables, the floor, the lights — from behind her seat, a tall 9:16 crop; add her and the dancer. Image 1 is the hall. Image 2 is the seated woman — her face and silver twist-out only. Image 3 is the style — the same render, materials, light and proportions.\nMedium shot over her right shoulder at eye level, sharp on the dancer: the same woman as Image 2, seventy-one, seated in a burgundy chiffon dress with flutter sleeves, gold hoop earrings, her back three-quarter to us, her face in lost profile facing frame right, looking at the dance floor, lips closed; her right hand on her right knee, four chunky fingers and a thumb. Beyond, in focus, an older Black woman with a silver bob in a fuchsia satin dress to the knee dancing, arms up. Scale true to the set: the table edge comes up to her waist.\nIn frame: her shoulder and hair, one table with two glasses, the dancer, the floor beyond; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, warm evening light. No lettering, logos or labels; not the mustard top of Image 2.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P3-RECEPTION plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+  },
+  {
+   "kind": "character",
+   "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR"
+  },
+  {
+   "kind": "style",
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageRes": "1536×2752",
+ "imageStatus": "review",
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17",
+  "HT26"
+ ],
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_cecea849-ec9a-4bc4-86b6-ed76c3abf53c.png",
+ "imageVersions": [
+  {
+   "asset": "dccebce98973f70ce57a88260a0c8530",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6bba4932-442b-4113-9c41-e8883d553a9f",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: N in lavender seated alone at a table, three-quarter view, looking off at the dance floor, Loretta small in blue dancing beyond · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_6bba4932-442b-4113-9c41-e8883d553a9f.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "0d7c1756e0c4fadf98e09b4151fb8843",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "asset": "67fc4f87e75a8915b35acf3dd1a347e5",
+   "at": 1790890992104,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "3b507b5f-6385-4616-a4e7-4bd78f67aa50",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "first pair · what I see: N in lavender seated alone at a table, three-quarter view, looking off at the dance floor, Loretta small in blue dancing beyond · replaced on the user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\"; kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_3b507b5f-6385-4616-a4e7-4bd78f67aa50.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "9973081d7a1d591fdbd16b39bb3a753a",
+   "archiveBoard": "https://claude.ai/artifact/SpS5N8dHyFM449QEpvgX4j"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "023b9d6be690813571d400a1936b39ff",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_cecea849-ec9a-4bc4-86b6-ed76c3abf53c.png",
+   "job": "cecea849-ec9a-4bc4-86b6-ed76c3abf53c",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7361077,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: over her shoulder: N's silver twist-out, gold hoop and burgundy flutter sleeve in the foreground, her hand on her knee; Loretta in fuchsia dancing with her arms up beyond the table — A with N at frame left, B at frame right"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "2dd1567ffc214e346627a681e620dc04",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_215354_516be55c-288c-481c-a1f9-197941a003a6.png",
+   "job": "516be55c-288c-481c-a1f9-197941a003a6",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7318268,
+   "res": "1536×2752",
+   "at": 1790891943025,
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P3-RECEPTION plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P3-RECEPTION"
+    },
+    {
+     "kind": "character",
+     "label": "N-NARR sheet v2 (confirmed) — face and hair only (HT26)",
+     "ref": "stryde-71-stairs-pixar-song__N-NARR"
+    },
+    {
+     "kind": "style",
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "user 2026-10-01: \"I WANT NEW IMAGES IN ALL OF THEM I WANT NEW WARDROBE TOO\" → new N-D2 wardrobe (N burgundy chiffon with flutter sleeves, gold hoops, gold heels; Loretta fuchsia satin, white slip-ons) and a new picture from the re-staged act-map row · what I see: over her shoulder: N's silver twist-out, gold hoop and burgundy flutter sleeve in the foreground, her hand on her knee; Loretta in fuchsia dancing with her arms up beyond the table — A with N at frame left, B at frame right"
+  }
+ ],
+ "key": "mine",
+ "layout": "full",
+ "ledger": "",
+ "light": "warm string lights and chandeliers · key R · evening · turn: warm party light · 3200K",
+ "line": "I always figured hers wasn't as bad as mine.",
+ "location": "L-RECEPTION",
+ "model": "Kling 3.0 (kling-video-v3_0_omni) · RV sway / R4 · PIX-MOTION",
+ "motionPlan": "From this frame: she looks from the dance floor down to her knee — one look down, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "music": "MUS-TURN",
+ "onScreen": 3.25,
+ "pinEnd": "no",
+ "product": "absent · —",
+ "section": "The turn — MUS-TURN",
+ "songIn": 56.79,
+ "songOut": 60.04,
+ "stage": "broll",
+ "staging": "none",
+ "status": "ready",
+ "storyDay": "N-D2",
+ "title": "turn — her doubt",
+ "updatedAt": 1790891943025,
+ "imageParts": []
+}

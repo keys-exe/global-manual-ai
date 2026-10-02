@@ -1,0 +1,49 @@
+{
+ "beat": "P-04b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Physical therapy. Pain pills. Cortisone shots.\": From this frame: the therapist bends the knee a little further — one slow bend, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. The therapist's two hands bend her right knee a little further toward her chest, slowly, and hold it there; she stays on her back, head on the pillow, eyes on the ceiling, hands folded on her stomach; the therapist's head stays out of frame above. Stylized 3D animation, both exactly on model from the frame. No camera travel; no third person; no cut; nobody turns to the lens.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_d6e85763-5356-4351-8f90-f4fc5eec9aa8.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Physical therapy. Pain pills. Cortisone shots.",
+ "motion_plan": "From this frame: the therapist bends the knee a little further — one slow bend, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one slow bend",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "first clip of this beat (from the confirmed image v3 A, job d6e85763-5356-4351-8f90-f4fc5eec9aa8)"
+}

@@ -1,0 +1,124 @@
+{
+ "imageVersions": [
+  {
+   "asset": "1248995b7a7627d8725e2a48adbc4c6f",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "58243361-f630-4185-97d1-fec7bd89b76c",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7158995,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "338908cdab95f2369f40d8dc93efd194"
+  },
+  {
+   "asset": "0d2406fbeaa7d8d11fada17a750f6134",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f776e47-cd64-4151-97ed-df6d215a7875",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7054645,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "3aab874af807455bbf2ebc29a96d12ca"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "9bbcd385146792a55c13dff4d825d60a",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_35250036-f365-4846-94ec-f1c0d86ba537.png",
+   "job": "35250036-f365-4846-94ec-f1c0d86ba537",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 8170271,
+   "res": "1536×2752",
+   "at": 1790883125026,
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "ccda2b89229e0b6416adbe3a761b626c",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_37be9669-e4cd-4806-b91f-61d4e05e0fa1.png",
+   "job": "37be9669-e4cd-4806-b91f-61d4e05e0fa1",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6426503,
+   "res": "1536×2752",
+   "at": 1790883125026,
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table"
+  }
+ ],
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "9bbcd385146792a55c13dff4d825d60a",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_35250036-f365-4846-94ec-f1c0d86ba537.png",
+ "imageJob": "35250036-f365-4846-94ec-f1c0d86ba537",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790883125026,
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table with the lace cloth, the chair, the window, the light — seen from behind the near chair, a tall 9:16 crop, and add the woman. Image 1 is the kitchen.\nMedium shot from behind her right shoulder, the lens high looking down over her at the table, sharp on the table. An older Black woman with short grey hair, seen only from behind, sitting at the table, head bowed, shoulders down, both hands slack in her lap; on the table before her a folded black hinged knee brace, two grey knee sleeves, three plain pill bottles, a white gel tube and a blue ice pack in a heap; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the back of her head and shoulders in the near foreground, the heap on the table, the chair back, the window of Image 1; every other surface bare. Two hands placed in her lap.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "imageFault": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: from behind her shoulder, high, her head bowed over the heap on the table",
+ "imageNote": {
+  "__delete__": true
+ },
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "status": "ready",
+ "shot": "high · ots · clean · MEDIUM",
+ "angle": "high · ots · clean · MEDIUM — high over her shoulder = looking at the heap with her; her face kept from us",
+ "framing": "MEDIUM from behind her shoulder, high: N at the table with her head bowed, both hands slack in her lap, the heap of braces, sleeves and pill bottles on the table in front of her, the window beyond (user Fix 2026-10-01: a different one)",
+ "motionPlan": "From this frame: her head sinks a little lower — one slow drop, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "location": "L-N-KITCHEN",
+ "line": "Nothing gave me my life back.",
+ "title": "low — her face, sat back (user 2026-10-01: three B-rolls)",
+ "act": "Hook 1",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "updatedAt": 1790883125026
+}

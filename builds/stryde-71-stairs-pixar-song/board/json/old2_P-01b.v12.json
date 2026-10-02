@@ -1,0 +1,69 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-01b",
+ "title": "problem",
+ "line": "One step at a time.",
+ "location": "L-N-STAIRS",
+ "shot": "ground · profile · clean · CU",
+ "angle": "ground · profile · clean · CU — ground from the side = the heel-first step down reads as backwards, which the view from below never did",
+ "framing": "CU from the side at step height on her legs going down backwards (user 2026-10-01: 'a close shot of the legs here going down backwards'): her body facing up the stairs, the left slipper on the step above, the right reaching back and down heel first onto the step below, one hand on the rail at the top edge",
+ "motionPlan": "From this frame: the right heel settles on the step below, the left foot joins it — about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "imagePrompt": "For the line \"One step at a time.\": Keep this photo exactly as it is — the staircase, its carpet runner and brass rods, the white balusters and oak rail, the light — in close on the top steps from the side, a tall 9:16 crop, and add her legs. Image 1 is the staircase.\nClose-up from the side at step height, sharp on the slippers: her legs from the knee down going down the stairs backwards — her body turned to face up the stairs, her left pink terry slipper flat on the step above, her right slipper reaching back and down heel first onto the step below, toes still pointing up to the landing; bare brown shins under the hem of a faded blue floral house dress; one hand gripping the oak rail at the top edge; her other hand and her head out of frame above.\nIn frame: two slippers, two legs below the knee, one hand on the rail, four steps of the flight of Image 1 with their runner and rods; every other surface bare. Each foot whole, heels toward the lower steps.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Slippers and hem plain — no lettering, logos or labels; nobody else.",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageRes": "1536×2752",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P0-PROP-N plate (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "flow": [
+  "image",
+  "video"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "asset": "64f1a064896df50ddd652e645dd99ce6",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f0ab209-3648-407c-b1d0-c09e80f87576",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7564021,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195908_1f0ab209-3648-407c-b1d0-c09e80f87576.png",
+   "v": 11
+  },
+  {
+   "asset": "50a562ccc33e94e13fe6b06793bda917",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f57f9812-12bd-4a3f-8490-a95950e386f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6176505,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_f57f9812-12bd-4a3f-8490-a95950e386f0.png",
+   "v": 12
+  }
+ ],
+ "imageAsset": "64f1a064896df50ddd652e645dd99ce6",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195908_1f0ab209-3648-407c-b1d0-c09e80f87576.png",
+ "imageFault": "user 2026-10-01: WRONG PERSON",
+ "note": "Old versions 2 (overflow board): P-01b v11/v12 (close side shots of the legs — the wrong woman's). v1–v10 and the clips are on the first Old board.",
+ "updatedAt": 1790888310210
+}

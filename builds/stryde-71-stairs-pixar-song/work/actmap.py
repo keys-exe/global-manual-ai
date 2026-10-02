@@ -70,26 +70,26 @@ R("HK-03a", A, (5, 5), "Mama", "hook — the line (a new angle on the user's cal
   "CU at eye level from inside the church's open front doorway, both heads filling the frame: N nearest the lens in three-quarter profile turned back to her daughter, a small smile; the daughter a step beyond, face up to her mother, mouth open mid-word; the door edge and the sunlit sidewalk soft",
   "the daughter's head tilts as she asks, N's smile widens", "a beat, about a second", "none", "worn (under the dress)", "HIDDEN",
   "eye", TQ, "through", "CU", "through the doorway in close = the line lands between the two faces; she has arrived, the daughter is still on the step (HT24)", "eyes", "shallow", "open sky, afternoon sun", 5600, "afternoon", "after: Sunday sun", True, "MUS-OPEN")
-R("P-01a", A, (6, 6), "backwards", "problem (HT02)", "N", "L-N-STAIRS", "N-D1",
-  "MEDIUM from the landing: N going down the stairs backwards, facing the steps, both hands gripping the rail",
-  "one careful step down backwards", "one step, about two seconds", "stairs: camera at the top, subject below, slow single step", "absent", "—",
-  "high", BH, "clean", "MEDIUM", "high = small against the drop, overwhelmed", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE", ledger="VN04")
+R("P-01a", A, (6, 6), "backwards", "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)", "N", "L-N-STAIRS", "N-D1",
+  "MEDIUM from the hall, the lens low on the top of the flight and the landing: N starting from the top — standing on the top step at the head of the stairs (user Fix 2026-10-01: starting from the top to show the moving backwards; never at the bottom), her back to the lens, face turned up to the landing, both hands gripping the oak rail, her first foot reaching back and down to the step below",
+  "one careful step down backwards, her back to the lens", "one step, about two seconds", "stairs: camera at the foot, subject above with her back to it, slow single step", "absent", "—",
+  "low", BH, "clean", "MEDIUM", "low from the hall, her back to us = going down the wrong way, small against the flight rising above her", "deep", "deep", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE", ledger="VN04")
 R("P-01b", A, (7, 7), "step", "problem", "N feet", "L-N-STAIRS", "N-D1",
-  "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
-  "one foot down, the other joins", "about two seconds", "stairs: feet only, side", "absent", "—",
-  "ground", PR, "clean", "CU", "ground = the steps themselves", "foreground", "medium", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE")
+  "CU from the side at step height on her legs going down backwards (user 2026-10-01: 'a close shot of the legs here going down backwards'): her body facing up the stairs, the left slipper on the step above, the right reaching back and down heel first onto the step below, one hand on the rail at the top edge",
+  "the right heel settles on the step below, the left foot joins it", "about two seconds", "stairs: legs only, side, going down backwards", "absent", "—",
+  "ground", PR, "clean", "CU", "ground from the side = the heel-first step down reads as backwards, which the view from below never did", "foreground", "medium", *STAIR_AM, "morning", "problem: grey", False, "MUS-EXPOSE")
 R("P-02a", A, (8, 10), "down", "problem (edit of P0: the top of the flight, HT17)", "N", "L-N-STAIRS (landing)", "N-D1",
-  "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
+  "MEDIUM from mid-flight looking up at the top step (an edit of the confirmed P-02a v6 frame — her own staircase; user Fix 2026-10-01: 'wrong location' after the over-the-shoulder try): N sitting on the top step in her house dress, one hand on the newel, looking down the flight toward the lens, the top steps and the photo wall around her",
   "she looks down the stairs and looks away", "one turn of the head, about two seconds", "none", "absent", "—",
-  "eye", TQ, "through", "MEDIUM", "through the balusters = trapped up here", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
+  "low", FR, "clean", "MEDIUM", "low from mid-flight = closer on her at the top, the steps between us; her own hall, not a new one", "eyes", "deep", *STAIR_AM, "morning", "problem: grey", True, "MUS-EXPOSE")
 R("P-03a", A, (11, 12), "brace", "failed fix", "N", "L-N-KITCHEN", "N-D1",
-  "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
-  "her hand pulls the brace up once and it slips back", "one pull, about two seconds", "hands: large in frame, one movement", "absent (generic brace, §10)", "—",
-  "high", TQ, "clean", "CU", "high = her own view of her knee", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
+  "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
+  "the brace drifts down her shin, then her hand pulls it back up over the knee", "one slide down, one pull up, about four seconds", "hands: large in frame, one movement, seated", "absent (generic brace, §10)", "—",
+  "low", PR, "clean", "CU", "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down, then: falling while drifting down; then: drifts down, then pull it up again", "hands", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE")
 R("P-03b", A, (13, 13), "ankle", "failed fix", "N feet", "L-N-KITCHEN", "N-D1",
-  "CU at floor level: the brace bunched around her right ankle above her slipper",
-  "she shifts her foot once", "one small shift, about a second", "feet only", "absent", "—",
-  "ground", TQ, "clean", "CU", "ground = where it ended up", "foreground", "medium", *KIT, "evening", "problem: grey", False, "MUS-EXPOSE")
+  "CU from the same side, the frame dropped to floor level: the same seat and chair as P-03a, the same brace now bunched around her right ankle above her slipper, both slippers on the floor; hands and head out of frame (edit of the P-03a frame, FP14)",
+  "she shifts her foot once", "one small shift, about a second", "feet only, seated", "absent", "—",
+  "ground", PR, "clean", "CU", "ground = where it ended up; the same side as P-03a so the two connect", "foreground", "medium", *KIT, "evening", "problem: grey", False, "MUS-EXPOSE")
 R("P-04a", A, (14, 14), "everything", "failed fix (HT10)", "N hands", "L-N-KITCHEN", "N-D1c",
   "overhead on the kitchen table: her two hands spread the whole arsenal across the wood — pill bottles, a gel tube, two sleeves, a hinged brace, an ice pack",
   "both hands push the pile apart", "one push, about two seconds", "hands: large in frame", "absent (generic, §10)", "—",
@@ -98,41 +98,50 @@ R("P-04b", A, (15, 15), "therapy", "failed fix", "N + one-off PT", "L-CLINIC", "
   "MEDIUM: N lying on a PT treatment table, a therapist's hands bending her right knee",
   "the therapist bends the knee a little further", "one slow bend, about two seconds", "hands: one movement, subject lying still", "absent", "—",
   "high", TQ, "clean", "MEDIUM", "high = done to her, passive", "hands", "medium", *CLIN, "afternoon", "problem: clinical", False, "MUS-EXPOSE")
-R("P-05a", A, (16, 18), "Nothing", "low", "N", "L-N-KITCHEN", "N-D1c",
-  "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand, then sits back, looking at nothing",
+# P-05 split into three B-rolls on the user's Fix (board, 2026-10-01: "make this into 3 brolls") — one line each; the push, the heap, her face
+R("P-05a", A, (16, 16), "Every", "low — the push (user 2026-10-01: three B-rolls, one per line)", "N", "L-N-KITCHEN", "N-D1c",
+  "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand",
   "one push away across the table", "one push, about two seconds", "hands: one movement, seated", "absent", "—",
-  "low", TQ, "clean", "MEDIUM", "low = the table edge, her giving up made big", "eyes", "deep", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE")
+  "low", TQ, "clean", "MEDIUM", "low = the table edge, her giving up made big", "eyes", "deep", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE", mx=3)
+R("P-05b", A, (17, 17), "worked", "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)", "N hands", "L-N-KITCHEN", "N-D1c",
+  "CU on a kitchen drawer pulled open under the counter, stuffed with knee sleeves, a hinged brace and pill bottles, N's hand on its front pushing it shut (an insert, a different kind of B-roll — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+  "her hand pushes the drawer shut", "one push, about a second", "hands: one movement, insert", "absent (generic, §10)", "—",
+  "eye", FR, "clean", "CU", "eye on the drawer = where it all ended up, shut away", "product", "medium", *KIT, "morning", "problem: grey", False, "MUS-EXPOSE", mx=3)
+R("P-05c", A, (18, 18), "life", "low — her face, sat back (user 2026-10-01: three B-rolls)", "N", "L-N-KITCHEN", "N-D1c",
+  "MEDIUM at the kitchen window: N in profile at the sink, both hands on its edge, looking out of the window at the street, the light on her face (a different kind of B-roll with her cast sheet — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+  "she looks out, then her eyes drop to the sink", "one look down, about two seconds", "face: one movement, standing still", "absent", "—",
+  "eye", PR, "clean", "MEDIUM", "profile at the window = the life outside she is not in", "eyes", "medium", *KIT, "morning", "problem: grey", True, "MUS-EXPOSE", mx=3)
 
 # ---------------- Act 2 — the turn (44.0–64.4 s), the wedding, N-D2
 A = "Act 2"
-R("T-01a", A, (19, 19), "married", "turn", "one-off bride + guests", "L-RECEPTION", "N-D2",
-  "MEDIUM: the bride in white laughing with guests at a reception table, string lights overhead",
-  "the bride throws her head back laughing", "one laugh, about two seconds", "none", "absent", "—",
-  "eye", TQ, "clean", "MEDIUM", "", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
+R("T-01a", A, (19, 19), "married", "turn", "N + one-off bride", "L-RECEPTION", "N-D2",
+  "MEDIUM: the bride in white hugging N (burgundy dress) at the edge of the dance floor, string lights overhead, both smiling with eyes closed (user 2026-10-01: new images, new wardrobe)",
+  "the two of them sway once in the hug", "one slow sway, about two seconds", "none", "absent", "—",
+  "eye", TQ, "clean", "MEDIUM", "eye level, close on the hug = her grandbaby, her day", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
 R("T-01b", A, (20, 21), "Loretta", "turn", "C1", "L-RECEPTION", "N-D2",
-  "MCU: Loretta at the edge of the dance floor in her satin dress, clapping on the beat, a big laugh",
-  "two claps on the beat", "about a second", "hands: one movement", "absent", "—",
+  "MCU: Loretta on the dance floor in her fuchsia satin dress, both hands up waving to the beat, a big closed-mouth grin",
+  "her raised hands wave once on the beat", "one wave, about a second", "hands: one movement", "absent", "—",
   "low", TQ, "clean", "MCU", "low = she's the one with the strength", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN", ledger="VN05")
 R("T-02a", A, (22, 22), "floor", "turn", "C1 + one-off guests", "L-RECEPTION", "N-D2",
-  "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
+  "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
   "one side step with the line", "one step per beat, about a second", "dancing: wide, side step, camera still", "worn (under her dress, hidden)", "HIDDEN",
-  "eye", FR, "through", "WIDE", "through the guests = we're watching from our table", "deep", "deep", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
+  "high", FR, "clean", "WIDE", "high over the floor = the whole line moving as one, her in the middle of it", "deep", "deep", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
 R("T-02b", A, (23, 23), "Slide", "turn", "C1 feet + line", "L-RECEPTION", "N-D2",
-  "CU at floor level: a row of dancing feet on the parquet, Loretta's white slip-ons among them, stepping together",
-  "one step back in unison", "one step, about a second", "feet only, one step", "absent", "—",
-  "ground", FR, "clean", "CU", "ground = the steps", "foreground", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
+  "CU at floor level from the side: the line's feet in profile on the parquet, Loretta's white slip-ons under a fuchsia hem, stepping together",
+  "one step forward in unison", "one step, about a second", "feet only, one step", "absent", "—",
+  "ground", PR, "clean", "CU", "ground from the side = the step reads as a step", "foreground", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN", ledger="VN05")
 R("T-03a", A, (24, 24), "bone", "mechanism — the worn joint", "—", "—", "—",
-  "ANAT-A: a knee in the anatomical register, the worn joint surfaces touching, glowing red where bone meets bone",
+  "ANAT-A: S2 X-ray of both knees front-on, the worn joint surfaces touching, glowing red where bone meets bone",
   "the red pulses once", "one pulse, about a second", "none", "absent", "—",
-  "eye", PR, "clean", "CU", "profile shows the joint gap gone", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-TURN", eg="EG04", camera=R4, mx=15)
+  "eye", FR, "clean", "CU", "front-on shows both knees and the gap gone on each side of the joint", "deep", "deep", *ANAT, "—", "mechanism", False, "MUS-TURN", eg="EG04", camera=R4, mx=15)
 R("T-04a", A, (25, 25), "mine", "turn — her doubt", "N + C1 (far)", "L-RECEPTION", "N-D2",
-  "MEDIUM: N seated at a reception table in her lavender dress, watching Loretta dance across the room, a hand resting on her own right knee under the table edge",
+  "MEDIUM over her shoulder: N seated alone at a reception table in her burgundy dress, Loretta in fuchsia dancing in focus beyond, N's hand resting on her own right knee",
   "she looks from the dance floor down to her knee", "one look down, about two seconds", "none", "absent", "—",
-  "high", TQ, "through", "MEDIUM", "high, through the chairs = she's small and sitting it out", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN")
+  "eye", OT, "through", "MEDIUM", "over her shoulder = we see what she sees, the dance she sits out", "eyes", "deep", *REC, "evening", "turn: warm party light", True, "MUS-TURN")
 R("T-04b", A, (26, 26), "fixing", "turn — her doubt", "N hand", "L-RECEPTION", "N-D2",
-  "CU under the table edge: N's hand rubbing her right knee through the lavender dress, the parquet and dancing feet soft beyond",
+  "CU under the table edge, front-on: N's hand rubbing her right knee through the burgundy dress, the parquet and dancing feet soft beyond",
   "her hand rubs the knee once", "one slow rub, about two seconds", "hands: one movement", "absent", "—",
-  "low", PR, "clean", "CU", "low = under the table, the thing she hides", "hands", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN")
+  "low", FR, "clean", "CU", "low = under the table, the thing she hides", "hands", "medium", *REC, "evening", "turn: warm party light", False, "MUS-TURN")
 
 # ---------------- Act 3 — the reveal + payoff (65.0–106.6 s), Loretta's visit, N-D3
 A = "Act 3"

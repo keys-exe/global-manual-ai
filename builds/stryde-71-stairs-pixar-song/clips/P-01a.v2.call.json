@@ -1,0 +1,49 @@
+{
+ "beat": "P-01a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. From the hall floor looking up the flight, she takes exactly one slow step down backwards: her right foot lowers onto the step just below and takes her weight, the left foot joins it on that same step, and she holds there, both hands on the rail, her back to the lens, her face to the landing; nobody speaks. Stylized 3D animation, exactly on model from the frame, the staircase exactly as in the frame. No camera travel; nobody else; no cut; never a second step.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_185749_c5f6bfae-2afa-42de-bc4c-d7063c3c5646.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Six weeks ago, I was going down my stairs backwards.",
+ "motion_plan": "From this frame: one careful step down backwards, her back to the lens — one step, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one step",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user Fix: SHOULD NOT BE STEPPING SO FAR DOWN, IT SHOULD BE 1 STEP AT A TIME → one slow step only: the right foot to the step just below, the left joins it on that same step, then she holds; never a second step (§22X)",
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v2 of this beat (from the confirmed image v12 B, job c5f6bfae-2afa-42de-bc4c-d7063c3c5646)"
+}

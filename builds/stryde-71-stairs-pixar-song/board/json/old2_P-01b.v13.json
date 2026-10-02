@@ -1,0 +1,124 @@
+{
+ "imageVersions": [
+  {
+   "asset": "64f1a064896df50ddd652e645dd99ce6",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "1f0ab209-3648-407c-b1d0-c09e80f87576",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7564021,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195908_1f0ab209-3648-407c-b1d0-c09e80f87576.png",
+   "v": 11
+  },
+  {
+   "asset": "50a562ccc33e94e13fe6b06793bda917",
+   "at": 1790885300814,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "f57f9812-12bd-4a3f-8490-a95950e386f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I WANT A CLOSE SHOT OF THE LEGS HERE GOING DOWN BACLWRDS\" → a close side shot at step height on her legs alone, an edit of the stair plate: the lower slipper on its step, the upper heel reaching back and down to the step below · replaced on the user's Fix (WRONG PERSON — a slim young woman's legs); kept on Old versions 2",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 6176505,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_f57f9812-12bd-4a3f-8490-a95950e386f0.png",
+   "v": 12
+  },
+  {
+   "asset": "e0b7ba5bd6df0ef3bdc22847f59f0b60",
+   "at": 1790888539033,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "51fe7903-2bab-4876-85b4-77207ba08a9d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first · not chosen (the user picked A); kept on Old versions 2",
+   "pair": "B",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205953_51fe7903-2bab-4876-85b4-77207ba08a9d.png",
+   "v": 14
+  },
+  {
+   "asset": "ecf835a3e11f483b6912dce25af3f860",
+   "at": 1790888539033,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "dd368a57-9f2e-4442-b110-ceb0d4ad63cb",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "note": "user Fix: \"WRONG PERSON\" (the v11/v12 legs were a slim young woman's) → the legs are hers: the confirmed P-01a frame (her on the top step from behind) attached as Image 2 — seventy-one, deep brown skin, heavy calves, thick ankles, her dress hem and pink slippers; a side close-up at step height, her right slipper reaching back and down heel first · replaced on the user's Fix (NEW IMAGE PROPER FOOTING — toes pointed down the flight, the lower slipper half off its tread); kept on Old versions 2",
+   "pair": "A",
+   "refs": [
+    {
+     "kind": "location",
+     "label": "P0-PROP-N plate (confirmed)",
+     "ref": "stryde-71-stairs-pixar-song__P0-PROP-N"
+    },
+    {
+     "kind": "frame",
+     "label": "P-01a frame v12 B (confirmed) — N on the top step from behind: the woman to copy",
+     "ref": "stryde-71-stairs-pixar-song__P-01a"
+    }
+   ],
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205954_dd368a57-9f2e-4442-b110-ceb0d4ad63cb.png",
+   "v": 13
+  }
+ ],
+ "videoVersions": [
+  {
+   "asset": "39ab7a3a35e7b9057388789be62b1157",
+   "at": 1790889169036,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 13,
+   "job": "Ad2ayckrDHYCj8Q6-LgaXEpNGzXpmmwU7Zaj9491-gVzyoTBLdFksu7N90d1HTx9PBR8pD0w",
+   "model": "kling-video-v3_0",
+   "note": "from the picked image v13 A (job dd368a57) · the first clip on this frame (the image was replaced on the user's Fixes — her own legs, from the side) · what I see: through the balusters her lower slipper settles on the step below, the upper foot follows down, her body facing up the stairs, the hand on the rail; nobody speaks · replaced on the user's Fix (FIX HER STEPS); kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 7074135,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/bc76d640-c02f-40cd-9499-d2e5d6eb7afb-A2GImGx9WJVZOY_o9ZKZYA-output.mp4?x-kcdn-pid=112372",
+   "v": 3
+  },
+  {
+   "asset": "0207f4443fee69cec8e456b2d4223bb0",
+   "at": 1790889730352,
+   "connector": "Kling",
+   "credits": 32,
+   "duration": 4.04,
+   "fromImage": 13,
+   "job": "Abn5jP7iIXJJfeojRxtEIp_209usdmIG_vKkU7lPrJuyQN0HVO7SV2yEKvd-6SNlb4reNUio",
+   "model": "kling-video-v3_0",
+   "note": "user Fix on v3: FIX HER STEPS → the step spelled foot by foot (§22X, FP16) · what I see: each slipper now lands flat on the next tread down, one at a time, no shuffling or crossing. Heads-up: in the picked frame (v13 A) her toes point down the stairs, so the clip reads as walking down forwards, not backwards — if backwards is wanted, the frame needs her facing up the stairs (a new image pair) · its image v13 was replaced on the user's Fix (proper footing); kept on Old versions 2",
+   "res": "1072×1928",
+   "size": 6414792,
+   "type": "video/mp4",
+   "url": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/48cdea7f-6ae2-419a-a80f-d32e1bf4a737-0Ai_D8-0l35_sWqvXWd0uQ-output.mp4?x-kcdn-pid=112372",
+   "v": 4
+  }
+ ],
+ "imageAsset": "ecf835a3e11f483b6912dce25af3f860",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205954_dd368a57-9f2e-4442-b110-ceb0d4ad63cb.png",
+ "videoAsset": "0207f4443fee69cec8e456b2d4223bb0",
+ "videoUrl": "https://v15-kling.klingai.com/bs2/upload-ylab-stunt-sgp/48cdea7f-6ae2-419a-a80f-d32e1bf4a737-0Ai_D8-0l35_sWqvXWd0uQ-output.mp4?x-kcdn-pid=112372",
+ "imageFault": "user 2026-10-01: NEW IMAGE PROPER FOOTING",
+ "updatedAt": 1790889979165
+}

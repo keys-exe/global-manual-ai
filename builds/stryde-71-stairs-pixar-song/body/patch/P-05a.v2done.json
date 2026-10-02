@@ -1,0 +1,128 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": null,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_f5869146-7f00-4920-94dc-1d7342fdf9bb.png",
+   "job": "f5869146-7f00-4920-94dc-1d7342fdf9bb",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7619624,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true,
+   "archiveAsset": "a4e5d66db5a9794dbccd1f440d0ee2f2"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": null,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_f55d8249-5d7d-4054-8af9-63806391ba6f.png",
+   "job": "f55d8249-5d7d-4054-8af9-63806391ba6f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 6973644,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true,
+   "archiveAsset": "e433e1a92d4bda94ad6bb33591505c9a"
+  },
+  {
+   "v": 3,
+   "pair": "A",
+   "asset": "3f9babc2e362a0fef87df89d10161b18",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_8545c58b-ddab-447e-a0ca-a18a56e716f0.png",
+   "job": "8545c58b-ddab-447e-a0ca-a18a56e716f0",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7641470,
+   "res": "1536×2752",
+   "at": 1790876674688,
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe"
+  },
+  {
+   "v": 4,
+   "pair": "B",
+   "asset": "5d3b7f257e678514a552f8f9fddc5344",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_14973fd3-3793-4b98-848b-4d72a9292491.png",
+   "job": "14973fd3-3793-4b98-848b-4d72a9292491",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 7856885,
+   "res": "1536×2752",
+   "at": 1790876674688,
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe"
+  }
+ ],
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "3f9babc2e362a0fef87df89d10161b18",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_8545c58b-ddab-447e-a0ca-a18a56e716f0.png",
+ "imageJob": "8545c58b-ddab-447e-a0ca-a18a56e716f0",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790876674688,
+ "imageStatus": "review",
+ "imagePick": {
+  "__delete__": true
+ },
+ "imageUnused": {
+  "__delete__": true
+ },
+ "imagePrompt": "For the line \"Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.\": Keep this photo exactly as it is — the kitchen, its table and chairs, the cabinets, the light — from across the table at its edge, a tall 9:16 crop, and add the woman. Image 1 is the kitchen. Image 2 is the woman.\nMedium shot from low across the table, the table edge in the near foreground, sharp on her face. The same woman as Image 2, seventy-one, seated at the table, the heap of braces, sleeves and pill bottles pushed to the far side with the back of her right hand, her left hand slack in her lap, sitting back in the chair, eyes on nothing past the lens; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn frame: the woman, the heap on the table, the table and chair of Image 1, the cabinets behind; every other surface bare. Two hands placed, two legs under the table.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink, a catchlight in each eye. Clothing and bottles plain — no lettering, logos or labels; no second person.",
+ "imageFault": null,
+ "imageMatch": "plate",
+ "imageRefs": [
+  {
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "shot": "low · three-quarter · clean · MEDIUM",
+ "angle": "low · three-quarter · clean · MEDIUM — low = the table edge, her giving up made big",
+ "framing": "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand, then sits back, looking at nothing",
+ "motionPlan": "From this frame: one push away across the table — one push, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "location": "L-N-KITCHEN",
+ "line": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
+ "title": "low",
+ "act": "Hook 1",
+ "imageTaste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "updatedAt": 1790876674688,
+ "imageRegens": 0,
+ "status": "planned"
+}

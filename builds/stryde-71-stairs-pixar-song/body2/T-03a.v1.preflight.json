@@ -1,0 +1,43 @@
+{
+ "beat": "T-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Both her knees was bone on bone too.\": An X-ray frame in the film's world: a glowing radiograph of an older woman's two knees in profile, facing frame left, one just behind the other, bright blue-white bone on a deep navy-black field, soft tissue a faint grey; in each knee the gap between thigh bone and shin bone is gone, the bones touching, and where bone meets bone a warm red-orange glow. Image 1 is the style — the same render, materials, light and proportions; a stylized storybook X-ray.\nClose-up, sharp on the two joints, the near knee about a third of the frame wide, the two knees level with each other.\nIn frame: two knees — the thigh-bone ends, the shin-bone tops, the kneecaps faint; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. Film plain — no lettering, logos, labels or measurement marks.",
+ "script_line": "Both her knees was bone on bone too.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": true,
+ "anat_style": "S2",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "medias": [
+  "5b40a12a-24f5-4d12-8650-016a8b0384ae"
+ ]
+}

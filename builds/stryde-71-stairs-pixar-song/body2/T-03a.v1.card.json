@@ -1,0 +1,86 @@
+{
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "b8bb8a0c2acf3cc5ff8c22377766558e",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_0e92e7e6-29cb-450f-b213-81660681158d.png",
+   "job": "0e92e7e6-29cb-450f-b213-81660681158d",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: S2 X-ray: two knees in profile, blue-white bone, the joint gap gone, a red-orange glow where bone meets bone · B has a stray small panel in its top-right corner"
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "438c6916c58d1b96d736a27d912b979c",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_c5479f4f-36a5-44e6-82ed-f515429aeff1.png",
+   "job": "c5479f4f-36a5-44e6-82ed-f515429aeff1",
+   "model": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "at": 1790890992104,
+   "refs": [
+    {
+     "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+     "kind": "style",
+     "ref": "stryde-71-stairs-pixar-song__P-05c"
+    }
+   ],
+   "note": "first pair · what I see: S2 X-ray: two knees in profile, blue-white bone, the joint gap gone, a red-orange glow where bone meets bone · B has a stray small panel in its top-right corner"
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageStatus": "review",
+ "status": "ready",
+ "imageAsset": "b8bb8a0c2acf3cc5ff8c22377766558e",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_214015_0e92e7e6-29cb-450f-b213-81660681158d.png",
+ "imageJob": "0e92e7e6-29cb-450f-b213-81660681158d",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageAt": 1790890992104,
+ "imagePrompt": "For the line \"Both her knees was bone on bone too.\": An X-ray frame in the film's world: a glowing radiograph of an older woman's two knees in profile, facing frame left, one just behind the other, bright blue-white bone on a deep navy-black field, soft tissue a faint grey; in each knee the gap between thigh bone and shin bone is gone, the bones touching, and where bone meets bone a warm red-orange glow. Image 1 is the style — the same render, materials, light and proportions; a stylized storybook X-ray.\nClose-up, sharp on the two joints, the near knee about a third of the frame wide, the two knees level with each other.\nIn frame: two knees — the thigh-bone ends, the shin-bone tops, the kneecaps faint; every other area plain dark.\nA final frame from a 3D animated feature film, stylized storybook render. Film plain — no lettering, logos, labels or measurement marks.",
+ "imageMatch": null,
+ "imageRefs": [
+  {
+   "label": "P-05c frame v5 A (confirmed) — the style: render, materials, light, proportions",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-05c"
+  }
+ ],
+ "imageTaste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "motionPlan": "From this frame: the red pulses once — one pulse, about a second; camera R4 — slow single-axis push on a stabilised virtual rig",
+ "framing": "ANAT-A: a knee in the anatomical register, the worn joint surfaces touching, glowing red where bone meets bone",
+ "updatedAt": 1790890992104,
+ "anatStyle": "S2",
+ "anatWhy": "\"bone on bone\" is a wear line — S2 X-ray (§12A-1)"
+}

@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "47f9286e49e102a00fc4c415b20e864d",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "4003e2aa-ceab-4cad-b8c6-5703cb6e254f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder) · replaced on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 8257136,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_4003e2aa-ceab-4cad-b8c6-5703cb6e254f.png",
+   "v": 7,
+   "archived": true,
+   "archiveAsset": "47f9286e49e102a00fc4c415b20e864d"
+  },
+  {
+   "asset": "0e3ca0fa903ac5cff4f4b4b5dd0c16c1",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "fa8e2af8-2d6d-4be9-b3dd-e8bb8a5a882f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"USE A DIFFERENT CAMERA ANGLES\" → from the landing behind her shoulder, high, looking down the whole flight past her (act map re-angled high · over-the-shoulder) · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 5754806,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192541_fa8e2af8-2d6d-4be9-b3dd-e8bb8a5a882f.png",
+   "v": 8,
+   "archived": true,
+   "archiveAsset": "0e3ca0fa903ac5cff4f4b4b5dd0c16c1"
+  }
+ ]
+}

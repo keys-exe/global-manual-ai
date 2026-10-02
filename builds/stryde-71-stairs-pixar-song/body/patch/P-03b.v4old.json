@@ -1,0 +1,38 @@
+{
+ "moved": [
+  {
+   "asset": "cfe4a555362c26e56cc082a3b0ac7a66",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "4cc85df5-8c36-4b2e-ae4e-674cf065d7a5",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"the brace here should be same as the p03a\" → the confirmed P-03a frame attached as Image 2 — the same brace, copied exactly, around the ankle · replaced by the next pair on the user's Fix; copied to Old versions",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7256877,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180143_4cc85df5-8c36-4b2e-ae4e-674cf065d7a5.png",
+   "v": 5,
+   "archived": true,
+   "archiveAsset": "cfe4a555362c26e56cc082a3b0ac7a66"
+  },
+  {
+   "asset": "f92aa283dc68e07d19657bf1374c72ea",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "fe1f5c77-8ab2-483d-97d2-6eea3d64d38f",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"the brace here should be same as the p03a\" → the confirmed P-03a frame attached as Image 2 — the same brace, copied exactly, around the ankle · replaced by the next pair on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7229252,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180141_fe1f5c77-8ab2-483d-97d2-6eea3d64d38f.png",
+   "v": 6,
+   "archived": true,
+   "archiveAsset": "f92aa283dc68e07d19657bf1374c72ea"
+  }
+ ]
+}

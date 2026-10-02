@@ -716,16 +716,15 @@ button.ing .im{cursor:zoom-in}
 /* Final output */
 #finalView:not([hidden]){display:flex}
 .spend-list{display:flex;flex-direction:column;gap:2px}
-.spend-row{display:grid;grid-template-columns:minmax(0,1.2fr) auto auto minmax(0,auto);align-items:baseline;gap:6px 16px;padding:10px 2px;border-bottom:1px solid var(--line)}
+.spend-row{display:grid;grid-template-columns:minmax(0,1.2fr) auto auto;align-items:baseline;gap:6px 16px;padding:10px 2px;border-bottom:1px solid var(--line)}
 .spend-row:last-child{border-bottom:0}
 .spend-row .spx-c{font-weight:600;font-size:14px}
 .spend-row .spx-v{font-family:var(--display);font-weight:700;font-size:20px;text-align:right}
 .spend-row .spx-n{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
-.spend-row .spx-l{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
 .spend-row .spx-m{grid-column:1/-1;font-family:var(--mono);font-size:11.5px;color:var(--muted);overflow-wrap:anywhere}
 .spend-note{font-size:12px;color:var(--muted);margin-top:8px}
 #w-spend .sub{white-space:normal}
-@media (max-width:560px){.spend-row{grid-template-columns:auto auto minmax(0,1fr)}.spend-row .spx-c{grid-column:1/-1}.spend-row .spx-v{text-align:left}}
+@media (max-width:560px){.spend-row{grid-template-columns:auto minmax(0,1fr)}.spend-row .spx-c{grid-column:1/-1}.spend-row .spx-v{text-align:left}}
 @media (max-width:560px){.tabs{display:grid;grid-template-columns:1fr 1fr;width:100%}.tabs .tab{justify-content:center}}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:14px}
 .fc .media{width:100%;cursor:default;border-style:solid;background:var(--frame)}
@@ -863,7 +862,8 @@ function spendRows(gens){
 }
 // The connector's recorded balance on the build doc (keys matched loosely: "Kie AI" ~ "kie").
 function balanceFor(b,conn){const bal=b&&b.balances||{};const c=String(conn||"").toLowerCase().replace(/[^a-z]/g,"");for(const [k,v] of Object.entries(bal)){const kk=String(k).toLowerCase().replace(/[^a-z]/g,"");if(kk&&c&&(kk===c||kk.includes(c)||c.includes(kk))&&v!=null&&v!=="")return Number(v)}return null}
-// The whole build's credits (V7.83.0, user 2026-10-01: "on the final output it should show all the points used on every connector"):
+// This build's credits (V7.83.0, user 2026-10-01: "on the final output it should show all the points used on every connector";
+// V7.83.1: "on that task and not as a whole" — this build only, never the account's total or balance):
 // a page reads only its own board, so the agent adds up every board (build_spend.py) into builds/<id>.buildSpend.
 // Falls back to this board's own renders until that is written.
 function buildSpendOf(b,gens){
@@ -1068,7 +1068,7 @@ function renderInner(){
     <div class="kpi"><span class="k">Confirmed</span><span class="v" style="color:var(--use)">${use}</span><span class="s">Passed the image and clip checks</span></div>
     <div class="kpi"><span class="k">To check</span><span class="v" style="color:var(--review)">${review}</span><span class="s">${gen} generating now</span></div>
     <div class="kpi"><span class="k">Fixing</span><span class="v" style="color:var(--regen)">${regen}</span><span class="s">Two tries per fault, then you</span></div>
-    ${BOARD_ROLE==="final"&&b&&b.buildSpend?`<div class="kpi"><span class="k">Credits spent · whole build</span><div class="cl">${buildSpendOf(b,gens).rows.map(t=>{const left=balanceFor(b,t.conn);return `<div class="cr" title="${esc(t.models.map(m=>m.model+" "+num(m.credits)).join(" · "))}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Every board, every render</span></div>`:`<div class="kpi"><span class="k">Credits spent</span>${byConn.length?`<div class="cl">${byConn.map(t=>{const left=balanceFor(b,t.conn);const models=spend.filter(r=>r.conn===t.conn).map(r=>`${r.model} ${num(r.credits)}`).join(" · ");return `<div class="cr" title="${esc(models)}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Spent on this board, every render counted</span>`:`<span class="v">0</span><span class="s">Logged on generations</span>`}</div>`}`;
+    ${BOARD_ROLE==="final"&&b&&b.buildSpend?`<div class="kpi"><span class="k">Credits spent · this build</span><div class="cl">${buildSpendOf(b,gens).rows.map(t=>`<div class="cr" title="${esc(t.models.map(m=>m.model+" "+num(m.credits)).join(" · "))}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${num(t.n)} render${t.n===1?"":"s"}</small></div>`).join("")}</div><span class="s">Only this build — never the account's total</span></div>`:`<div class="kpi"><span class="k">Credits spent</span>${byConn.length?`<div class="cl">${byConn.map(t=>{const left=balanceFor(b,t.conn);const models=spend.filter(r=>r.conn===t.conn).map(r=>`${r.model} ${num(r.credits)}`).join(" · ");return `<div class="cr" title="${esc(models)}"><span class="cn">${esc(t.conn)}</span><b>${num(t.credits)}</b><small>${left!=null?num(left)+" left":""}</small></div>`}).join("")}</div><span class="s">Spent on this board, every render counted</span>`:`<span class="v">0</span><span class="s">Logged on generations</span>`}</div>`}`;
 
   const vs=views(); if(!vs.includes(state.view)) state.view=vs[0];
   $("#eyebrow").textContent=BOARD_ROLE==="current"&&!Object.keys(boardsOf(b)).length?"AI Prompt Engineer · Generation Board":"Generation Board · "+BOARD_NAMES[BOARD_ROLE];
@@ -2009,12 +2009,13 @@ function finalCard(x){
 function spendWidget(b,gens){
   const s=buildSpendOf(b,gens);
   const when=s.at?new Date(s.at).toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):"";
-  const rows=s.rows.length?`<div class="spend-list">${s.rows.map(t=>{const left=balanceFor(b,t.conn);
-    return `<div class="spend-row"><span class="spx-c">${esc(t.conn)}</span><span class="spx-v">${num(t.credits)}</span><span class="spx-n">${num(t.n)} render${t.n===1?"":"s"}</span><span class="spx-l">${left!=null?num(left)+" left":""}</span>
+  // this build only (user, 2026-10-01: "the credit spent should be on that task and not as a whole") — no account balance here
+  const rows=s.rows.length?`<div class="spend-list">${s.rows.map(t=>{
+    return `<div class="spend-row"><span class="spx-c">${esc(t.conn)}</span><span class="spx-v">${num(t.credits)}</span><span class="spx-n">${num(t.n)} render${t.n===1?"":"s"}</span>
       <span class="spx-m">${t.models.map(m=>`${esc(m.model)} ${num(m.credits)}`).join(" · ")}</span></div>`}).join("")}</div>`:`<div class="empty">No credits logged yet.</div>`;
   return `<section class="widget wide" id="w-spend">
       <div class="w-head"><span class="w-num">02</span>
-        <div class="w-title"><h2>Credits spent on this build</h2><span class="sub">${s.whole?`Every connector, every render on every board of the build${s.boards?` (${s.boards} boards)`:""}${when?` · updated ${esc(when)}`:""}`:"This board's renders only — the whole build's total appears after the next update"}</span></div></div>
+        <div class="w-title"><h2>Credits spent on this build</h2><span class="sub">${s.whole?`Only this build — every render on its ${s.boards?s.boards+" ":""}boards, per connector${when?` · updated ${esc(when)}`:""}`:"This board's renders only — this build's full count appears after the next update"}</span></div></div>
       <div class="w-body">${rows}<div class="spend-note">Each connector is its own row — credits are never added across connectors.</div></div></section>`;
 }
 function renderFinal(gens){

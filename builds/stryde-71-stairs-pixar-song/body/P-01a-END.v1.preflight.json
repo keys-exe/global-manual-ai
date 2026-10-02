@@ -1,0 +1,31 @@
+{
+ "beat": "P-01a-END",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the hall floor, the whole flight, the oak rail and newel, the photo wall, the light — and only move the woman one step down. Image 1 is the picture; nothing in it changes but her place on the stairs.\nMedium shot from the hall floor looking up the whole flight, sharp on her. The woman of Image 1, seventy-one, now standing with both feet on the second step from the top, one step lower, a little larger in the frame, her back to the lens facing the landing, both hands gripping the oak rail a little lower, faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman from behind near the top of the flight of Image 1, two steps above her to the landing, every step between her and the lens, the rail, the newel, the photo wall; every other surface bare. Two hands on the rail, two legs.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the landing window. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "script_line": "Six weeks ago, I was going down my stairs backwards.",
+ "face": false,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P-01a frame v12 B (confirmed) — the start frame",
+   "kind": "frame"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "c5f6bfae-2afa-42de-bc4c-d7063c3c5646",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT17",
+  "FP14"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "SHOULD BE GOING BACK WARDS NOT UP → the pinned end frame (§27G rule 10): the same frame with her one step lower, so the clip has nowhere to go but down"
+}

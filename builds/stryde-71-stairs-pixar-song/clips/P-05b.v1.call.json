@@ -1,0 +1,50 @@
+{
+ "beat": "P-05b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"Nothing worked. Nothing lasted.\": From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels. In close on the open drawer, her hand pushes the drawer front once and the drawer slides shut until it jams on the stuffed sleeves and bottles inside, a sleeve cuff caught over its edge; the hand rests on the drawer front; the drawer, the cabinets and the counter stay exactly as in the frame; nobody speaks, nobody is in frame but the hand. Stylized 3D animation, exactly on model from the frame, every object rigid. No camera travel; nobody else; no cut; nothing new appears.",
+ "duration": 3,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_195907_cebeeb02-e3b3-49d6-9c4c-6f88af75251d.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "Nothing worked. Nothing lasted.",
+ "motion_plan": "From this frame: her hand pushes the drawer shut — one push, about a second; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one push",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image v7 A, job cebeeb02-e3b3-49d6-9c4c-6f88af75251d)"
+}

@@ -30,6 +30,7 @@ CALL.json describes one paid video call exactly as it will be sent:
     "generation": 1,                   # 1 = first try, 2 = the one fix; 3+ only with user_go (§22X)
     "user_go": null | "the user's words giving the go for a 3rd+ generation, and the date",
     "fix_note": "diagnosed fault → the change made (required on generation 2)",
+    "fix_notes_all": ["every Fix note written on this shot so far, one per earlier generation (required on generation 3+, §22X L18)"],
     "rack": null | {"from": "...", "to": "...", "cue": "..."},   # §30J focus change inside the clip
     "risks": [{"risk": "...", "prevented_by": "..."}]   # top three failure modes and the clause that prevents each
   }
@@ -48,6 +49,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "edit_of": null | "<asset id or file of the plate / frame being edited>",   # required when match is set; the prompt opens as an edit ("Keep this photo exactly…")
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
+    "first_frame": false,              # Modes 2/3/5 (§24O): the build's first beat image — every later one attaches a confirmed frame as kind "style"
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
@@ -75,7 +77,7 @@ SIG = {
     "PLAYING": "PLAYING:",
     "LISTEN-LINE": "The reaction arrives a beat after the words that cause it",
     "BUSINESS-LINE": "the hands never stop to gesture",
-    "AUD-FILM": "clean production sound from a boom microphone",
+    "AUD-FILM": "clean, close production dialogue sound",
     "AUD-ANIM": "clean studio voice performance recorded for animation",
     "NEG-SCENECUT": "no light direction changing within the scene",
     "NEG-DRAMA": "no theatrical acting",
@@ -85,6 +87,7 @@ SIG = {
     "NEG-SOUND": "no music, no score, no sound effects",
     "SERIES-LOOK": "The look of a high-end live-action drama series",
 }
+MIC_WORDS = re.compile(r"\b(?:boom|windshield|dead[- ]cat|(?<!phone-)(?<!phone )microphones?|mics?)\b", re.I)
 RIGS = {  # rig signature → F-rig (F6–F10: the Seedance move library, §24N)
     "F1": "steady push toward the subject", "F2": "Camera on a tripod", "F3": "Camera on an operator's shoulder",
     "F4": "Camera on a slider", "F5": "Camera on a stabiliser",
@@ -134,6 +137,13 @@ BODY_PART = r"(?:legs?|feet|foot|arms?|hands?|heads?|shoulders?|knees?|body|tors
 OUT_OF_FRAME = re.compile(r"(\b\w+\b)\s+(?:is |are |kept |cut |partly |just |half )?(?:out of|outside|off|beyond)\s+(?:the\s+)?(?:frame|shot|picture|screen)\b|\boff[- ]screen\b|\bnot in (?:the )?(?:frame|shot|picture)\b|\bunseen\b", re.I)
 
 
+# §24O — right first time in the stylised modes (V7.86.0)
+STYLE_PHOTO = re.compile(r"\b(?:i?phone|smartphone photo|photograph(?:ic|ed|y)?|photo-?real(?:istic)?|hyper-?real(?:istic)?|dslr|35 ?mm|film grain|skin pores|raw photo|documentary photo|candid photo)\b", re.I)
+STYLE_SCALE = re.compile(r"\b(?:level with|reaches?|comes? (?:up )?to|(?:at|to|below|above) (?:her|his|their|its) (?:hip|waist|chest|shoulder|knee|elbow)s?|(?:a |half a )?heads? (?:taller|shorter)|as tall as|taller than|shorter than|the height of|\d+ (?:steps?|treads?) (?:tall|high)|scale (?:matches|of)|true to (?:the )?(?:set|scale))\b", re.I)
+STYLE_FACING = re.compile(r"\b(?:facing|faces|back to (?:the )?(?:lens|camera|viewer)|toward(?:s)? the (?:lens|camera)|away from (?:the )?(?:lens|camera)|turned (?:toward|towards|away|to)|side-on|in profile|three-quarter (?:view|back|front))\b", re.I)
+STYLE_HANDS = re.compile(r"\b(?:four (?:chunky |simple |round(?:ed)? )?fingers and a thumb|five (?:chunky |simple )?fingers|fingers and (?:a|one) thumb)\b", re.I)
+
+
 def run_image(c):
     res = []
 
@@ -147,6 +157,23 @@ def run_image(c):
     kinds = [str(r.get("kind", "")).lower() for r in refs]
 
     check("≤ 1,200 characters (§6A)", len(p) <= IMG_MAX, f"{len(p)} chars")
+    # L10 (2026-10-01): a Mode 2/3/5 beat prompt carries the mode's render line, or the model returns a photograph of the plate edit
+    MODE_LINE = {2: r"3D animated|storybook|pixar", 3: r"claymation|stop-motion|clay", 5: r"3D animated|storybook|pixar"}
+    if mode in MODE_LINE:
+        check(f"the mode's render line is in the prompt (§12 lock, mode {mode})", bool(re.search(MODE_LINE[mode], p, re.I)), "e.g. 'A final frame from a 3D animated feature film, stylized storybook render'")
+    if mode in (2, 3, 5):   # §24O — right first time in the stylised modes (V7.86.0, user: "best Pixar style images with no distortion")
+        pos = NEG_CLAUSE.sub(" ", p)   # what the prompt asks for, negatives removed
+        ph = STYLE_PHOTO.search(pos)
+        check("no photograph words in a stylised render (§24O rule 1)", not ph, ph.group(0) if ph else "")
+        check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
+              "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
+        if c.get("body") or c.get("face"):
+            check("scale against the set and each other (§24O rule 3)", bool(STYLE_SCALE.search(p)),
+                  "e.g. 'her head level with the 6th baluster, the door handle at her hip; the daughter a head taller' — 'too big' is this mode's most repeated Fix")
+            check("which way each character faces, in picture terms (§24O rule 4)", bool(STYLE_FACING.search(p)),
+                  "e.g. 'her back to the lens, facing the church doors' or 'in profile, facing frame left'")
+            if HANDS.search(p):
+                check("stylised hands spelled out (§24O rule 5)", bool(STYLE_HANDS.search(p)), "e.g. 'each hand four chunky fingers and a thumb'")
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§6A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
     negs = NEG_WORD.findall(p)
@@ -215,6 +242,9 @@ BOILER = [  # the stacked paragraphs §35A retired: each adds motion or contradi
 FAST = re.compile(r"\b(?:run(?:s|ning)?|sprint\w*|jog\w*|rac(?:es|ing)|fast|quickly|hurr(?:y|ies|ying))\b", re.I)
 
 
+NOSPEAK = re.compile(r"\b(?:mouths? (?:closed|shut|still)|never (?:speaks?|sings?|talks?)|nobody (?:speaks?|sings?|talks?)|no one (?:speaks?|sings?)|lips (?:still|closed)|does not (?:speak|sing))\b", re.I)
+
+
 def run_beat_video(c, p, check):
     norm = lambda t: re.sub(r"[\s“”\"']+", " ", (t or "").strip().lower())
     check("≤ 1,000 characters (§35A)", len(p) <= VID_MAX, f"{len(p)} chars")
@@ -228,6 +258,8 @@ def run_beat_video(c, p, check):
     check(f"≤ {IMG_NEG_MAX} negatives (§35A)", len(negs) <= IMG_NEG_MAX, f"{len(negs)} no/never/without/avoid")
     hits = [b for b in BOILER if b.lower() in p.lower()]
     check("no retired boilerplate (§35A)", not hits, "; ".join(hits))
+    # L15 (2026-10-01, user: "you should never talk the lyrics/script in broll") — a B-roll is pictures under the voice; the prompt says so.
+    check("nobody mouths the line (§35A rule 6, HT25)", bool(NOSPEAK.search(p)), "e.g. 'mouth closed, she never speaks or sings' or 'nobody speaks'")
     rc = (c.get("risk_class") or "").lower() or None
     if rc in RISKY:
         check(f"{rc}: end frame pinned (§27G)", bool(c.get("pinned")) or bool((c.get("pin_waived") or "").strip()), "first-and-last frame, or the user's words in pin_waived")
@@ -327,6 +359,10 @@ def run(c):
     if gen >= 2:
         fn = c.get("fix_note", "")
         check("gen 2 has a diagnosed fix", "→" in fn or "->" in fn, fn or "missing fix_note")
+    if gen >= 3:
+        fa = c.get("fix_notes_all") or []
+        check("gen 3+ lists every earlier Fix note (fix_notes_all)", isinstance(fa, list) and len(fa) >= gen - 1,
+              f"generation {gen} needs {gen - 1} entries in fix_notes_all, one per earlier generation — every note stays in force (§22X, L18); got {len(fa) if isinstance(fa, list) else 'none'}")
 
     # 2. Frames — on Seedance, ingredients: information, never frames (§4, V7.68.0).
     #    Wan 3.0 in ingredients mode (V7.83.1, user 2026-10-01: "use wan 3.0 prime, the ingredients and not frames") — the same rule.
@@ -379,6 +415,10 @@ def run(c):
     ph = PLACEHOLDER.findall(p)
     check("no unfilled [SLOTS]", not ph, ", ".join(sorted(set(ph)))[:300])
     check("no banned word 'cinematic'", not BANNED.search(p))
+    if film:  # V7.83.2, LESSONS L13: the video model draws what the prompt names — a boom named "out of frame" lands in frame
+        _pos = p.split("NEGATIVES:")[0]
+        _mic = MIC_WORDS.findall(_pos)
+        check("MIC_PRIME — no microphone, boom or windshield named outside the negatives", not _mic, ",".join(sorted(set(m if isinstance(m, str) else m[0] for m in _mic))))
     check("no streamer, series or studio name (§24N, §10A)", not STREAMERS.search(p), ",".join(sorted(set(m.group(0) for m in STREAMERS.finditer(p)))))
 
     # 4a. §24I part 7 — a neutral film voice master: its own recipe, not a film shot

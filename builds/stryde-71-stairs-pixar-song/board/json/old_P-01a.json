@@ -1,0 +1,76 @@
+{
+ "build": "stryde-71-stairs-pixar-song",
+ "act": "Hook 1",
+ "stage": "broll",
+ "beat": "P-01a",
+ "title": "problem (HT02) — v1 pair (photoreal, replaced)",
+ "line": "Six weeks ago, I was going down my stairs backwards.",
+ "flow": [
+  "image"
+ ],
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "imageVersions": [
+  {
+   "v": 1,
+   "pair": "A",
+   "asset": "162bcb731ef282ae1b00c5fd1add634b",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_1476e222-c435-4d27-84c7-b8e3a8263abf.png",
+   "job": "1476e222-c435-4d27-84c7-b8e3a8263abf",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 9182492,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  },
+  {
+   "v": 2,
+   "pair": "B",
+   "asset": "94963077fca64bdf53703cfc56487302",
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_3e5c74ea-4d6f-43e6-9ec3-07f83260a7d7.png",
+   "job": "3e5c74ea-4d6f-43e6-9ec3-07f83260a7d7",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "size": 9316593,
+   "res": "1536×2752",
+   "at": 1790873674660,
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "archived": true
+  }
+ ],
+ "imagePair": [
+  1,
+  2
+ ],
+ "imageAsset": "162bcb731ef282ae1b00c5fd1add634b",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173519_1476e222-c435-4d27-84c7-b8e3a8263abf.png",
+ "imageConnector": "Higgsfield",
+ "imageCredits": 2.14,
+ "imageRes": "1536×2752",
+ "imageModel": "nano_banana_pro (requested) · Higgsfield logged nano_banana_2 · 2k · 9:16 · A/B pair",
+ "imagePrompt": "For the line \"Six weeks ago, I was going down my stairs backwards.\": Keep this photo exactly as it is — the hall, the staircase, its runner and oak rail, the photo wall, the light — but seen from the top landing looking down the flight, a tall 9:16 crop, and add the woman. Image 1 is the hall and staircase. Image 2 is the woman.\nMedium shot from the landing, the lens high looking down the steps, sharp on her. The same woman as Image 2, seventy-one, on the 4th step from the top, going down backwards — facing up the stairs toward the lens, both hands gripping the oak handrail, her right foot feeling for the step below, head down, eyes on the step under her; faded blue floral knee-length house dress, grey cardigan, pink terry slippers. Nobody else.\nIn the frame: the woman, the flight of Image 1, its rail and balusters, the photo wall, the hall floor far below; every other surface bare. Two hands on the rail, two legs, one foot per step.\nThe render of Image 1 in grey morning light from the landing window behind the lens. Clothing and frames plain — no lettering, logos or labels; no second person.",
+ "imageRefs": [
+  {
+   "label": "P0-PROP-N plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  }
+ ],
+ "imageFault": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+ "location": "L-N-STAIRS",
+ "updatedAt": 1790876674688
+}

@@ -1,0 +1,93 @@
+{
+ "imageVersions": [
+  {
+   "asset": "975fb58a1004e0994a8aaa116211ef87",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "9800c411-572c-44f7-9c9e-a9c4d439ffb8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push · replaced on the user's Fix",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6999690,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182543_9800c411-572c-44f7-9c9e-a9c4d439ffb8.png",
+   "v": 1,
+   "archived": true,
+   "archiveAsset": "975fb58a1004e0994a8aaa116211ef87"
+  },
+  {
+   "asset": "a99036cd6c4884188142c29840d78ff9",
+   "at": 1790879352102,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "3a4b129e-05cc-46c1-bc22-16971e888cfc",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05b = the heap at the far edge of the table after the push · replaced on the user's Fix",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7067499,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_3a4b129e-05cc-46c1-bc22-16971e888cfc.png",
+   "v": 2,
+   "archived": true,
+   "archiveAsset": "a99036cd6c4884188142c29840d78ff9"
+  },
+  {
+   "asset": "f2d1c2959307698ef732a58dae2bcf34",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "4d532437-2f36-49d9-a25b-f486d723b9d4",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: at floor level by her chair, a dropped knee sleeve and a pill bottle on the floor beside her slipper · replaced on the user's Fix: wrong person, a different type of B-roll",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 6724993,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192500_4d532437-2f36-49d9-a25b-f486d723b9d4.png",
+   "v": 3,
+   "archived": true,
+   "archiveAsset": "f2d1c2959307698ef732a58dae2bcf34"
+  },
+  {
+   "asset": "770c7e06528496c12e1911d28162c8fc",
+   "at": 1790883125026,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "2bf7176a-aebe-4101-bef0-2276a0a16a7e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"I NEED A DIFFERENT ONES HERE\" → a different picture: at floor level by her chair, a dropped knee sleeve and a pill bottle on the floor beside her slipper · replaced on the user's Fix: wrong person, a different type of B-roll",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7104725,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192500_2bf7176a-aebe-4101-bef0-2276a0a16a7e.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "770c7e06528496c12e1911d28162c8fc"
+  }
+ ],
+ "imagePair": [
+  3,
+  4
+ ],
+ "imageAsset": "770c7e06528496c12e1911d28162c8fc",
+ "imageType": "image/png",
+ "imageUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_192500_2bf7176a-aebe-4101-bef0-2276a0a16a7e.png",
+ "imageJob": "2bf7176a-aebe-4101-bef0-2276a0a16a7e",
+ "imagePrompt": "For the line \"Nothing worked. Nothing lasted.\": Keep this photo exactly as it is — the kitchen floor, the chair legs, the table above, the cabinets, the light — in close at floor level by the near chair, a tall 9:16 crop, and lay down the things. Image 1 is the kitchen.\nClose-up at floor level from the side, sharp on the floor: a grey knee sleeve dropped flat on the wooden floor beside a pink terry slipper, a plain pill bottle on its side next to it, a second slipper behind, the chair leg beside them; her feet still in the slippers, her legs out of frame above the ankle; nobody's hands in the frame.\nIn frame: one sleeve, one bottle, two slippers, the chair legs and floor of Image 1; every other surface bare, nothing else on the floor.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in grey morning light from the window over the sink. Sleeve and bottle plain — no lettering, logos or labels; nobody else.",
+ "imageRefs": [
+  {
+   "kind": "location",
+   "label": "P2-KITCHEN plate v2 (confirmed)",
+   "ref": "stryde-71-stairs-pixar-song__P2-KITCHEN",
+   "role": "Image 1 · edited (§6A rule 3, HT17)"
+  }
+ ],
+ "imageFault": "replaced on the user's Fix: wrong person, a different type of B-roll",
+ "status": "regenerate",
+ "imageStatus": "regenerate",
+ "updatedAt": 1790883718245
+}

@@ -1,0 +1,21 @@
+{
+ "moved": [
+  {
+   "asset": "52c696143b7e85fbfbfbd876ca2eb2f2",
+   "at": 1790877909563,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "04e4ff58-b639-4064-accc-908bc636261e",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "user Fix: \"this should be her at the top of the stairs looking down\" → from the hall floor looking up the whole flight — she sits on the top step looking down it (act map re-angled low · front) · replaced on the user's Fix; copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7769512,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_180142_04e4ff58-b639-4064-accc-908bc636261e.png",
+   "v": 6,
+   "archived": true,
+   "archiveAsset": "52c696143b7e85fbfbfbd876ca2eb2f2"
+  }
+ ]
+}

@@ -9,7 +9,7 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 - Inspo `MY INSPO VIDEO.mp4` → `intake/inspo.mp4` — the same STRYDE "Too bad" ad as `stryde-too-bad` (also in `facebook-ad-creatives.zip`, byte-identical); script `Untitled document.docx` → `intake/script.docx`; spoken parts `work/script_{HK1,HK2,HK3,BODY}.txt`.
 - Product Sheet in the folder is V7.49.32; the repo's V7.49.38 is used.
 - **Boards (account iamnotkeysi@gmail.com):** Current https://claude.ai/artifact/DUsxw9aB6Q4PE7uTa9FFLE · Old https://claude.ai/artifact/7qQDVB81c5s5JtejBqJZw1 · Final https://claude.ai/artifact/7bejwknnCQGFtV6AUN3Nxc · Plan https://claude.ai/artifact/7ntxnK1H2VmA62SndFADqW
-- **Hourly Fix check:** `trig_01VVKAYxpqHJqE5dcw86Tp94` (:37 UTC) → session_01RZU34LVeJoqim4KzeYh4ju
+- **Hourly Fix check:** `trig_01AcGzPWoEtW3TAUW56TE5B6` (:37 UTC) → session_019KSCNgFhmzaxRtq7NTCZR7 (moved 2026-10-01; old `trig_01VVKAYxpqHJqE5dcw86Tp94` deleted)
 
 ## Sessions
 - session_01RZU34LVeJoqim4KzeYh4ju (2026-09-29 ~12:40 UTC): steps 1–3. Absorption (inspo already measured for stryde-too-bad: 51.96s, 33 shots, ~180 wpm, male voice, no talking heads), ledger (VN-H1, VN-H2), phrase inventory (HK1–HK3 + B-01…B-14), claims (F4–F9), Mode & Model Lock.
@@ -79,6 +79,8 @@ Read this first when resuming. Build Sheet: `BUILD_SHEET.md` (steps 1–3).
 
 - 2026-09-30 (06:38 check): user confirmed B-03b v6 and B-09b v4 images. **B-03b** video gen 2 from the v6 frame (he tightens both hands on the rail and breathes out, no step; preflight PASS, 54 cr) → To check. **B-09b** video waits: it would be the shot's third video generation (v1 and v2 were made from earlier frames) — asked the user for the go (§22X).
 
+- 2026-10-01 (resume, session_019KSCNgFhmzaxRtq7NTCZR7, user "run manual british" with the Drive link → this build, Manual): board read. Since the last note the user confirmed B-03b video v2. Every image confirmed; 20 of 22 body videos + all 3 hooks confirmed. No Fix notes open, no Old-board restore requests. Hourly Fix check moved to this session.
+
 ## Where it stands
-- **Waiting on the user:** the go for B-09b's video (third generation of the shot); check videos B-03b v2, B-04 v2, B-11a v4; script flags F2, F5, F6, F7.
+- **Waiting on the user:** the go for B-09b's video (third generation of the shot); check videos B-04 v2, B-11a v4; script flags F2, F5, F6, F7.
 - **Next:** `assemble.py` rough cuts and `variants.py` (HK1/2/3 + BODY), CapCut block (step 8), finals on the Final board.

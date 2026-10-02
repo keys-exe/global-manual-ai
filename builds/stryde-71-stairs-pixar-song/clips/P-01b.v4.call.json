@@ -1,0 +1,53 @@
+{
+ "beat": "P-01b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"One step at a time.\": From this frame: the right heel settles on the step below, the left foot joins it — about two seconds; camera RV sway — the virtual camera breathes in place, never travels. In close at step height from the side, she steps backwards down exactly one step: her right slipper lifts off its tread, moves straight back and down, and lands flat on the very next tread below, heel first, then the sole; her weight shifts onto it; then her left slipper lifts and lands flat on that same tread beside the right one — the two feet side by side, a hand apart and parallel, each foot landing once and staying put, the step above left empty; she ends one step lower, both feet flat, toes pointing up the stairs; the hand stays on the rail; nobody speaks. Stylized 3D animation, exactly on model from the frame. No camera travel; nobody else; no cut.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_205954_dd368a57-9f2e-4442-b110-ceb0d4ad63cb.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "One step at a time.",
+ "motion_plan": "From this frame: the right heel settles on the step below, the left foot joins it — about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "about two seconds",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 2,
+ "user_go": null,
+ "fix_note": "user Fix on v3: FIX HER STEPS (the feet strip shows her slippers shuffling and crossing on the same tread, never landing step by step) → the step spelled out: one foot straight back and down, flat on the very next tread, the other joins it beside it, feet a hand apart, never crossing or sliding; exactly one step (§22X)",
+ "fix_notes_all": [
+  "v1–v2 (earlier frames): this should be stepping backwards; use the P-01a as reference",
+  "v3: FIX HER STEPS"
+ ],
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  }
+ ],
+ "note": "clip v4 of this beat (from the confirmed image v13 A, job dd368a57-9f2e-4442-b110-ceb0d4ad63cb)"
+}

@@ -1,0 +1,42 @@
+{
+ "beat": "P-04b",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Physical therapy. Pain pills. Cortisone shots.\": Keep this photo exactly as it is — the exam room, its treatment table, the window with the half-open blind, the light — a tall 9:16 crop on the table, and add two people. Image 1 is the exam room. Image 2 is the woman.\nMedium shot from above and to the side, sharp on her. The same woman as Image 2, seventy-one, lying on her back on the treatment table, head on the paper-covered pillow, eyes on the ceiling, hands folded on her stomach; faded blue floral house dress, the hem above the knee, pink terry slippers off on the floor. A physical therapist in a plain navy polo, seen only from the shoulders down, stands at the table's side, both hands on her bare right leg, bending the knee up. Nobody else.\nIn frame: the woman, the therapist's torso and two hands placed, the table and window of Image 1; every other surface bare. Two legs on her.\nA final frame from a 3D animated feature film, stylized storybook render — the render of Image 1 in afternoon light through the blind, a catchlight in each eye. Clothing and walls plain — no lettering, logos or labels; no third person.",
+ "script_line": "Physical therapy. Pain pills. Cortisone shots.",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "P7-CLINIC plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "N-NARR sheet v2",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "857c003a828c12e98bc42df4406cce57",
+ "taste": [
+  "HT02",
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT09",
+  "HT12",
+  "HT17",
+  "HT18",
+  "HT19",
+  "HT22"
+ ],
+ "anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null
+}

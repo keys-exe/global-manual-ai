@@ -1,0 +1,32 @@
+[
+ {
+  "asset": "1248995b7a7627d8725e2a48adbc4c6f",
+  "at": 1790879352102,
+  "connector": "Higgsfield",
+  "credits": 2.14,
+  "job": "58243361-f630-4185-97d1-fec7bd89b76c",
+  "model": "nano_banana_pro → logged nano_banana_2",
+  "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front",
+  "pair": "A",
+  "res": "1536×2752",
+  "size": 7158995,
+  "type": "image/png",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182542_58243361-f630-4185-97d1-fec7bd89b76c.png",
+  "v": 1
+ },
+ {
+  "asset": "0d2406fbeaa7d8d11fada17a750f6134",
+  "at": 1790879352102,
+  "connector": "Higgsfield",
+  "credits": 2.14,
+  "job": "1f776e47-cd64-4151-97ed-df6d215a7875",
+  "model": "nano_banana_pro → logged nano_banana_2",
+  "note": "user on P-05a: \"make this into 3 brolls\" → the beat split into P-05a / P-05b / P-05c, one line each; P-05c = her face, sat back, the heap soft in front",
+  "pair": "B",
+  "res": "1536×2752",
+  "size": 7054645,
+  "type": "image/png",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_182544_1f776e47-cd64-4151-97ed-df6d215a7875.png",
+  "v": 2
+ }
+]

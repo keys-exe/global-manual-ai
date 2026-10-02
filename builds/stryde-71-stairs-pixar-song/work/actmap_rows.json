@@ -198,15 +198,15 @@
   ],
   "line": "Six weeks ago, I was going down my stairs backwards.",
   "key": "backwards",
-  "function": "problem (HT02)",
+  "function": "problem (HT02; user Fix 2026-10-01: looking up the stairs, stepping backward — so the lens goes to the foot of the flight, edit of P0)",
   "subject": "N",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "MEDIUM from the landing: N going down the stairs backwards, facing the steps, both hands gripping the rail",
-  "action": "one careful step down backwards",
+  "framing": "MEDIUM from the hall, the lens low on the top of the flight and the landing: N starting from the top — standing on the top step at the head of the stairs (user Fix 2026-10-01: starting from the top to show the moving backwards; never at the bottom), her back to the lens, face turned up to the landing, both hands gripping the oak rail, her first foot reaching back and down to the step below",
+  "action": "one careful step down backwards, her back to the lens",
   "pace": "one step, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: camera at the top, subject below, slow single step",
+  "staging": "stairs: camera at the foot, subject above with her back to it, slow single step",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -218,11 +218,11 @@
   "ledger": "VN04",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "high",
+   "height": "low",
    "side": "behind",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": "high = small against the drop, overwhelmed"
+   "why": "low from the hall, her back to us = going down the wrong way, small against the flight rising above her"
   },
   "mirror_of": null,
   "focus": {
@@ -265,11 +265,11 @@
   "subject": "N feet",
   "location": "L-N-STAIRS",
   "story_day": "N-D1",
-  "framing": "CU from the side at step height: her slipper lowers onto the next step down, the other foot joins it on the same step",
-  "action": "one foot down, the other joins",
+  "framing": "CU from the side at step height on her legs going down backwards (user 2026-10-01: 'a close shot of the legs here going down backwards'): her body facing up the stairs, the left slipper on the step above, the right reaching back and down heel first onto the step below, one hand on the rail at the top edge",
+  "action": "the right heel settles on the step below, the left foot joins it",
   "pace": "about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "stairs: feet only, side",
+  "staging": "stairs: legs only, side, going down backwards",
   "pin_end": "no",
   "pin_waived": "user 2026-10-01: \"we dont need end frame\"",
   "max": 6,
@@ -285,7 +285,7 @@
    "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = the steps themselves"
+   "why": "ground from the side = the heel-first step down reads as backwards, which the view from below never did"
   },
   "mirror_of": null,
   "focus": {
@@ -328,7 +328,7 @@
   "subject": "N",
   "location": "L-N-STAIRS (landing)",
   "story_day": "N-D1",
-  "framing": "MEDIUM from the landing: N sitting on the top step in her house dress, looking down the flight, one hand on the newel, not going",
+  "framing": "MEDIUM from mid-flight looking up at the top step (an edit of the confirmed P-02a v6 frame — her own staircase; user Fix 2026-10-01: 'wrong location' after the over-the-shoulder try): N sitting on the top step in her house dress, one hand on the newel, looking down the flight toward the lens, the top steps and the photo wall around her",
   "action": "she looks down the stairs and looks away",
   "pace": "one turn of the head, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -344,11 +344,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "eye",
-   "side": "three-quarter",
-   "fg": "through",
+   "height": "low",
+   "side": "front",
+   "fg": "clean",
    "scale": "MEDIUM",
-   "why": "through the balusters = trapped up here"
+   "why": "low from mid-flight = closer on her at the top, the steps between us; her own hall, not a new one"
   },
   "mirror_of": null,
   "focus": {
@@ -359,7 +359,7 @@
   },
   "light": {
    "source": "landing window at the top of the stairs, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 6500
@@ -391,11 +391,11 @@
   "subject": "N",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
-  "framing": "CU seated at the kitchen table: a big black hinged knee brace over her bare right knee, sagging below the kneecap, her hand hauling it up",
-  "action": "her hand pulls the brace up once and it slips back",
-  "pace": "one pull, about two seconds",
+  "framing": "MEDIUM-CU from the side at knee height, N seated on the kitchen chair at the table, her right leg out a little: a short black hinged knee brace — a hand's length above and below the knee — sagging below the kneecap, her right hand hauling its top strap up, her left hand on the chair seat; head and shoulders out of frame (user 2026-10-01: the whole P-03 new; the brace a bit more short)",
+  "action": "the brace drifts down her shin, then her hand pulls it back up over the knee",
+  "pace": "one slide down, one pull up, about four seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "hands: large in frame, one movement",
+  "staging": "hands: large in frame, one movement, seated",
   "pin_end": "no",
   "pin_waived": null,
   "max": 6,
@@ -407,11 +407,11 @@
   "ledger": "",
   "music": "MUS-EXPOSE",
   "angle": {
-   "height": "high",
-   "side": "three-quarter",
+   "height": "low",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "high = her own view of her knee"
+   "why": "low at knee height from the side = the brace is the subject; seated, so P-03b can be the same seat (FP14); user Fix 2026-10-01 on the clip: it should feel like drifting down, then: falling while drifting down; then: drifts down, then pull it up again"
   },
   "mirror_of": null,
   "focus": {
@@ -422,7 +422,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "morning",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -454,11 +454,11 @@
   "subject": "N feet",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1",
-  "framing": "CU at floor level: the brace bunched around her right ankle above her slipper",
+  "framing": "CU from the same side, the frame dropped to floor level: the same seat and chair as P-03a, the same brace now bunched around her right ankle above her slipper, both slippers on the floor; hands and head out of frame (edit of the P-03a frame, FP14)",
   "action": "she shifts her foot once",
   "pace": "one small shift, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
-  "staging": "feet only",
+  "staging": "feet only, seated",
   "pin_end": "no",
   "pin_waived": null,
   "max": 6,
@@ -471,10 +471,10 @@
   "music": "MUS-EXPOSE",
   "angle": {
    "height": "ground",
-   "side": "three-quarter",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = where it ended up"
+   "why": "ground = where it ended up; the same side as P-03a so the two connect"
   },
   "mirror_of": null,
   "focus": {
@@ -485,7 +485,7 @@
   },
   "light": {
    "source": "window over the sink, south wall",
-   "key_side": "R",
+   "key_side": "L",
    "time": "evening",
    "arc": "problem: grey",
    "kelvin": 5600
@@ -635,22 +635,22 @@
   "type": "BR",
   "lines": [
    16,
-   18
+   16
   ],
-  "line": "Every brace and sleeve they make. Nothing worked. Nothing lasted. Nothing gave me my life back.",
-  "key": "Nothing",
-  "function": "low",
+  "line": "Every brace and sleeve they make.",
+  "key": "Every",
+  "function": "low — the push (user 2026-10-01: three B-rolls, one per line)",
   "subject": "N",
   "location": "L-N-KITCHEN",
   "story_day": "N-D1c",
-  "framing": "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand, then sits back, looking at nothing",
+  "framing": "MEDIUM across the table: N pushes the heap of braces, sleeves and bottles away from her with the back of her hand",
   "action": "one push away across the table",
   "pace": "one push, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "hands: one movement, seated",
   "pin_end": "no",
   "pin_waived": null,
-  "max": 6,
+  "max": 3,
   "product": "absent",
   "visibility": "—",
   "model": "NBP",
@@ -684,12 +684,138 @@
   "tin": 0.0,
   "lyric_cut": 38.55,
   "t_in": 38.09,
-  "t_out": 42.97,
-  "on_screen": 4.88,
-  "duration": 6,
+  "t_out": 39.72,
+  "on_screen": 1.63,
+  "duration": 3,
   "split": false,
+  "flash": true,
+  "bars": 0.5,
+  "section": "The low point and what failed — MUS-EXPOSE"
+ },
+ {
+  "beat": "P-05b",
+  "act": "Hook 1",
+  "type": "BR",
+  "lines": [
+   17,
+   17
+  ],
+  "line": "Nothing worked. Nothing lasted.",
+  "key": "worked",
+  "function": "low — the heap, pushed to the far edge (user 2026-10-01: three B-rolls)",
+  "subject": "N hands",
+  "location": "L-N-KITCHEN",
+  "story_day": "N-D1c",
+  "framing": "CU on a kitchen drawer pulled open under the counter, stuffed with knee sleeves, a hinged brace and pill bottles, N's hand on its front pushing it shut (an insert, a different kind of B-roll — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+  "action": "her hand pushes the drawer shut",
+  "pace": "one push, about a second",
+  "camera": "RV sway — the virtual camera breathes in place, never travels",
+  "staging": "hands: one movement, insert",
+  "pin_end": "no",
+  "pin_waived": null,
+  "max": 3,
+  "product": "absent (generic, §10)",
+  "visibility": "—",
+  "model": "NBP",
+  "layout": "full",
+  "eg": "",
+  "ledger": "",
+  "music": "MUS-EXPOSE",
+  "angle": {
+   "height": "eye",
+   "side": "front",
+   "fg": "clean",
+   "scale": "CU",
+   "why": "eye on the drawer = where it all ended up, shut away"
+  },
+  "mirror_of": null,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  },
+  "face": false,
+  "speaking": false,
+  "tin": 0.0,
+  "lyric_cut": 40.35,
+  "t_in": 39.72,
+  "t_out": 42.16,
+  "on_screen": 2.44,
+  "duration": 3,
+  "split": true,
   "flash": false,
-  "bars": 1.5,
+  "bars": 1.0,
+  "section": "The low point and what failed — MUS-EXPOSE"
+ },
+ {
+  "beat": "P-05c",
+  "act": "Hook 1",
+  "type": "BR",
+  "lines": [
+   18,
+   18
+  ],
+  "line": "Nothing gave me my life back.",
+  "key": "life",
+  "function": "low — her face, sat back (user 2026-10-01: three B-rolls)",
+  "subject": "N",
+  "location": "L-N-KITCHEN",
+  "story_day": "N-D1c",
+  "framing": "MEDIUM at the kitchen window: N in profile at the sink, both hands on its edge, looking out of the window at the street, the light on her face (a different kind of B-roll with her cast sheet — user Fix 2026-10-01: 'wrong person, a different type of broll')",
+  "action": "she looks out, then her eyes drop to the sink",
+  "pace": "one look down, about two seconds",
+  "camera": "RV sway — the virtual camera breathes in place, never travels",
+  "staging": "face: one movement, standing still",
+  "pin_end": "no",
+  "pin_waived": null,
+  "max": 3,
+  "product": "absent",
+  "visibility": "—",
+  "model": "NBP",
+  "layout": "full",
+  "eg": "",
+  "ledger": "",
+  "music": "MUS-EXPOSE",
+  "angle": {
+   "height": "eye",
+   "side": "profile",
+   "fg": "clean",
+   "scale": "MEDIUM",
+   "why": "profile at the window = the life outside she is not in"
+  },
+  "mirror_of": null,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  },
+  "face": true,
+  "speaking": false,
+  "tin": 0.0,
+  "lyric_cut": 42.23,
+  "t_in": 42.16,
+  "t_out": 42.97,
+  "on_screen": 0.81,
+  "duration": 3,
+  "split": false,
+  "flash": true,
+  "bars": 0.0,
   "section": "The low point and what failed — MUS-EXPOSE"
  },
  {
@@ -703,12 +829,12 @@
   "line": "Then my grandbaby got married in June.",
   "key": "married",
   "function": "turn",
-  "subject": "one-off bride + guests",
+  "subject": "N + one-off bride",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "MEDIUM: the bride in white laughing with guests at a reception table, string lights overhead",
-  "action": "the bride throws her head back laughing",
-  "pace": "one laugh, about two seconds",
+  "framing": "MEDIUM: the bride in white hugging N (burgundy dress) at the edge of the dance floor, string lights overhead, both smiling with eyes closed (user 2026-10-01: new images, new wardrobe)",
+  "action": "the two of them sway once in the hug",
+  "pace": "one slow sway, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "none",
   "pin_end": "no",
@@ -726,7 +852,7 @@
    "side": "three-quarter",
    "fg": "clean",
    "scale": "MEDIUM",
-   "why": ""
+   "why": "eye level, close on the hug = her grandbaby, her day"
   },
   "mirror_of": null,
   "focus": {
@@ -769,9 +895,9 @@
   "subject": "C1",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "MCU: Loretta at the edge of the dance floor in her satin dress, clapping on the beat, a big laugh",
-  "action": "two claps on the beat",
-  "pace": "about a second",
+  "framing": "MCU: Loretta on the dance floor in her fuchsia satin dress, both hands up waving to the beat, a big closed-mouth grin",
+  "action": "her raised hands wave once on the beat",
+  "pace": "one wave, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "hands: one movement",
   "pin_end": "no",
@@ -832,7 +958,7 @@
   "subject": "C1 + one-off guests",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "WIDE: a line of guests doing a line dance, Loretta in the middle of the line, stepping in time",
+  "framing": "WIDE from high: the line dance seen from above the tables, Loretta in fuchsia in the middle of the line, stepping in time",
   "action": "one side step with the line",
   "pace": "one step per beat, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -848,11 +974,11 @@
   "ledger": "VN05",
   "music": "MUS-TURN",
   "angle": {
-   "height": "eye",
+   "height": "high",
    "side": "front",
-   "fg": "through",
+   "fg": "clean",
    "scale": "WIDE",
-   "why": "through the guests = we're watching from our table"
+   "why": "high over the floor = the whole line moving as one, her in the middle of it"
   },
   "mirror_of": null,
   "focus": {
@@ -895,8 +1021,8 @@
   "subject": "C1 feet + line",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "CU at floor level: a row of dancing feet on the parquet, Loretta's white slip-ons among them, stepping together",
-  "action": "one step back in unison",
+  "framing": "CU at floor level from the side: the line's feet in profile on the parquet, Loretta's white slip-ons under a fuchsia hem, stepping together",
+  "action": "one step forward in unison",
   "pace": "one step, about a second",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
   "staging": "feet only, one step",
@@ -912,10 +1038,10 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "ground",
-   "side": "front",
+   "side": "profile",
    "fg": "clean",
    "scale": "CU",
-   "why": "ground = the steps"
+   "why": "ground from the side = the step reads as a step"
   },
   "mirror_of": null,
   "focus": {
@@ -958,7 +1084,7 @@
   "subject": "—",
   "location": "—",
   "story_day": "—",
-  "framing": "ANAT-A: a knee in the anatomical register, the worn joint surfaces touching, glowing red where bone meets bone",
+  "framing": "ANAT-A: S2 X-ray of both knees front-on, the worn joint surfaces touching, glowing red where bone meets bone",
   "action": "the red pulses once",
   "pace": "one pulse, about a second",
   "camera": "R4 — slow single-axis push on a stabilised virtual rig",
@@ -975,10 +1101,10 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "eye",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
-   "why": "profile shows the joint gap gone"
+   "why": "front-on shows both knees and the gap gone on each side of the joint"
   },
   "mirror_of": null,
   "focus": {
@@ -1021,7 +1147,7 @@
   "subject": "N + C1 (far)",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "MEDIUM: N seated at a reception table in her lavender dress, watching Loretta dance across the room, a hand resting on her own right knee under the table edge",
+  "framing": "MEDIUM over her shoulder: N seated alone at a reception table in her burgundy dress, Loretta in fuchsia dancing in focus beyond, N's hand resting on her own right knee",
   "action": "she looks from the dance floor down to her knee",
   "pace": "one look down, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1037,11 +1163,11 @@
   "ledger": "",
   "music": "MUS-TURN",
   "angle": {
-   "height": "high",
-   "side": "three-quarter",
+   "height": "eye",
+   "side": "ots",
    "fg": "through",
    "scale": "MEDIUM",
-   "why": "high, through the chairs = she's small and sitting it out"
+   "why": "over her shoulder = we see what she sees, the dance she sits out"
   },
   "mirror_of": null,
   "focus": {
@@ -1084,7 +1210,7 @@
   "subject": "N hand",
   "location": "L-RECEPTION",
   "story_day": "N-D2",
-  "framing": "CU under the table edge: N's hand rubbing her right knee through the lavender dress, the parquet and dancing feet soft beyond",
+  "framing": "CU under the table edge, front-on: N's hand rubbing her right knee through the burgundy dress, the parquet and dancing feet soft beyond",
   "action": "her hand rubs the knee once",
   "pace": "one slow rub, about two seconds",
   "camera": "RV sway — the virtual camera breathes in place, never travels",
@@ -1101,7 +1227,7 @@
   "music": "MUS-TURN",
   "angle": {
    "height": "low",
-   "side": "profile",
+   "side": "front",
    "fg": "clean",
    "scale": "CU",
    "why": "low = under the table, the thing she hides"

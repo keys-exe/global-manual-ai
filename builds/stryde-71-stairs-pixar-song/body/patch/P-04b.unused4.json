@@ -1,0 +1,72 @@
+{
+ "imageVersions": [
+  {
+   "archiveAsset": "854b06699e9e751c1342b125703d0305",
+   "archived": true,
+   "asset": null,
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "6f5a57c1-9db6-41e3-aa80-4048993c9eca",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7677836,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_6f5a57c1-9db6-41e3-aa80-4048993c9eca.png",
+   "v": 1
+  },
+  {
+   "archiveAsset": "b0d4437c86cb28a20b38ae8f085eb8fb",
+   "archived": true,
+   "asset": null,
+   "at": 1790873674660,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "e51bce27-b057-4cea-b2ad-c69a70a446c7",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "L09: the v1 pair came back as photographs — the body prompt had dropped the Mode 2 render line (agent error); kept here as a version, never shown as To check",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7502649,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_173549_e51bce27-b057-4cea-b2ad-c69a70a446c7.png",
+   "v": 2
+  },
+  {
+   "asset": "ba6765bb9e17135ea34bd310d9db5201",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "d6e85763-5356-4351-8f90-f4fc5eec9aa8",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe",
+   "pair": "A",
+   "res": "1536×2752",
+   "size": 7384964,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_d6e85763-5356-4351-8f90-f4fc5eec9aa8.png",
+   "v": 3
+  },
+  {
+   "asset": "5bf7023291d072a35d8da1fb16b15562",
+   "at": 1790876674688,
+   "connector": "Higgsfield",
+   "credits": 2.14,
+   "job": "0e49fdec-98da-4b6e-bf5f-58ecb40f7309",
+   "model": "nano_banana_pro → logged nano_banana_2",
+   "note": "Act 1 first pair (v2 prompt — the Mode 2 render line restored after the photoreal v1, L09): §6A edit of the confirmed plate, N-D1 wardrobe · not chosen (the user picked A); copied to Old versions",
+   "pair": "B",
+   "res": "1536×2752",
+   "size": 7379294,
+   "type": "image/png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261001_174039_0e49fdec-98da-4b6e-bf5f-58ecb40f7309.png",
+   "v": 4,
+   "archived": true,
+   "archiveAsset": "5471c9dde3ffc8150461f6ec2683cffc"
+  }
+ ],
+ "imageUnusedArchived": "5471c9dde3ffc8150461f6ec2683cffc",
+ "updatedAt": 1790877932602
+}
