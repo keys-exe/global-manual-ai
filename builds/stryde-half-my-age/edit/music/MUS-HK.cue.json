@@ -1,0 +1,54 @@
+{
+ "scene": "MUS-HK",
+ "length_s": 25.3,
+ "register": "MUS-OPEN",
+ "theme": [
+  "intimate British film score",
+  "felt piano and solo cello",
+  "a four-note rising motif",
+  "around 76 bpm",
+  "one continuous sustained bed from first second to last, never stopping",
+  "soft attacks, every note eased in"
+ ],
+ "avoid": [
+  "choir",
+  "clicks",
+  "drums",
+  "electric guitar",
+  "hits",
+  "percussion",
+  "silence",
+  "sudden stops",
+  "synthesizer leads",
+  "ticking"
+ ],
+ "tempo": "slow",
+ "bpm": 76,
+ "sections": [
+  {
+   "name": "Cold open \u2014 the stairs, the queue",
+   "start": 0,
+   "end": 12.0,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "low sustained cello drone",
+    "sparse felt piano notes",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "The hook line",
+   "start": 12.0,
+   "end": 25.3,
+   "energy": "mid",
+   "register": "MUS-OPEN",
+   "styles": [
+    "the four-note motif on piano, unresolved",
+    "plucked low strings under it",
+    "sustained, no gaps"
+   ]
+  }
+ ],
+ "fix_note": "v1 check FAIL: CLICK, DROPOUT, ENERGY order, TEMPO double (ticking percussion) -> no percussion, a continuous sustained bed, soft attacks; section loudness also set in the mix"
+}

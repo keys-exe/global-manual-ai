@@ -1,0 +1,44 @@
+{
+ "beat": "VOICE-X1",
+ "build": "stryde-half-my-age",
+ "connector": "seedance",
+ "model": "bytedance/seedance-2-5",
+ "mode": 4,
+ "kind": "voice_master",
+ "prompt": "INGREDIENTS. @image1 is the station announcer: face, age, hair and build only. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to. A plain medium close-up of a station announcer, a woman in her fifties in a navy railway uniform, seated in a small, plain control room with a grey wall behind her, soft overhead light, the camera on a locked tripod, nothing else in frame. She reads the announcement clearly and completely, in a calm, practised, slightly formal British announcer's voice, unhurried, every word distinct: \"...the escalator is out of service. Please use the stairs.\" Delivery: a woman in her fifties from the south of England, a clear, level, mid-range voice with careful public-address diction; level, even and unhurried; conversational volume; no emotion coloured into the words. Audio is clean, close production dialogue sound: clear and even, with a little of the room's natural tone behind the voice. Breath and mouth detail are present but never exaggerated. No phone-microphone proximity, no compression pumping, no music and no sound effects anywhere in the clip — dialogue only. Dialogue only: no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack. One speaker only. NEGATIVES: no other people, no second voice, no microphone in frame, no headset, no looking into the lens, no text, no captions, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "duration": 7,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "ingredients_approved": true,
+ "files": [
+  "voice/X1_face.png"
+ ],
+ "audios": [],
+ "generate_audio": true,
+ "dialogue": "...the escalator is out of service. Please use the stairs.",
+ "script_line": "...the escalator is out of service. Please use the stairs.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "fix_note": null,
+ "user_go": "chat (2026-10-02): \"fixes everything not just these… automate everything that you still needed\" — L009 (the tannoy, Hook C) was never voiced",
+ "rack": null,
+ "legacy_build": true,
+ "risks": [
+  {
+   "risk": "a second voice or music",
+   "prevented_by": "one speaker only, NEG-SOUND"
+  },
+  {
+   "risk": "words changed",
+   "prevented_by": "the line verbatim, careful diction"
+  },
+  {
+   "risk": "a microphone or headset in frame",
+   "prevented_by": "no equipment named, negatives"
+  }
+ ]
+}

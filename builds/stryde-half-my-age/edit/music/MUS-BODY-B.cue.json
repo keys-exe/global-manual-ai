@@ -1,0 +1,94 @@
+{
+ "scene": "MUS-BODY-B",
+ "length_s": 207.68,
+ "register": "MUS-TURN",
+ "theme": [
+  "intimate British film score",
+  "felt piano and solo cello",
+  "a four-note rising motif",
+  "around 76 bpm",
+  "one continuous sustained bed from first second to last, never stopping",
+  "soft attacks, every note eased in"
+ ],
+ "avoid": [
+  "choir",
+  "clicks",
+  "drums",
+  "electric guitar",
+  "hits",
+  "percussion",
+  "silence",
+  "sudden stops",
+  "synthesizer leads",
+  "ticking"
+ ],
+ "tempo": "moderate",
+ "bpm": 80,
+ "product_at": 0.0,
+ "sections": [
+  {
+   "name": "The strap shown, the sceptic (SC05\u2013SC06)",
+   "start": 0,
+   "end": 21.99,
+   "energy": "low",
+   "register": "MUS-TURN",
+   "styles": [
+    "the drone lifting",
+    "a first warm piano chord",
+    "quiet",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "The test \u2014 all the way down (SC07)",
+   "start": 21.99,
+   "end": 40.23,
+   "energy": "mid",
+   "register": "MUS-TURN",
+   "styles": [
+    "the four-note motif rising and resolving",
+    "cello carrying it",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "How it works (SC08)",
+   "start": 40.23,
+   "end": 79.42,
+   "energy": "low",
+   "register": "MUS-TURN",
+   "styles": [
+    "light repeating piano figure",
+    "soft cello pads",
+    "steady and clear",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "Proof and six weeks after (SC09\u2013SC12)",
+   "start": 79.42,
+   "end": 164.15,
+   "energy": "mid",
+   "register": "MUS-AFTER",
+   "styles": [
+    "warm forward strings and piano",
+    "the motif in a major key",
+    "dignified lift",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "The offer, the sister on the stairs (SC12\u2013SC13)",
+   "start": 164.15,
+   "end": 207.68,
+   "energy": "high",
+   "register": "MUS-OFFER",
+   "styles": [
+    "full strings with piano",
+    "held resolve ending",
+    "sustained, no gaps"
+   ]
+  }
+ ],
+ "fix_note": "v1 check FAIL: CLICK, DROPOUT, ENERGY order, TEMPO double (ticking percussion) -> no percussion, a continuous sustained bed, soft attacks; section loudness also set in the mix"
+}

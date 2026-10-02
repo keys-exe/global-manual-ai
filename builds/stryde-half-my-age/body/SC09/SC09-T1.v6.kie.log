@@ -1,1 +1,11 @@
 {"taskId": "a041b551ecad45c6a8d43c3d6211a653", "created": true}
+{
+  "taskId": "a041b551ecad45c6a8d43c3d6211a653",
+  "state": "success",
+  "credits": 504.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790956143021-npstop839p.mp4"
+  ],
+  "saved": "body/SC09/SC09-T1_v6.mp4"
+}

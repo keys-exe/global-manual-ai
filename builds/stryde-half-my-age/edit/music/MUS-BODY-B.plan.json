@@ -1,0 +1,122 @@
+{
+  "positive_global_styles": [
+    "release",
+    "the drone lifting",
+    "first warm chord",
+    "pulse opening into movement",
+    "new key arriving",
+    "intimate British film score",
+    "felt piano and solo cello",
+    "a four-note rising motif",
+    "around 76 bpm",
+    "one continuous sustained bed from first second to last, never stopping",
+    "soft attacks, every note eased in",
+    "instrumental",
+    "80 BPM"
+  ],
+  "negative_global_styles": [
+    "choir",
+    "clicks",
+    "drums",
+    "electric guitar",
+    "hits",
+    "percussion",
+    "silence",
+    "sudden stops",
+    "synthesizer leads",
+    "ticking",
+    "cute",
+    "cheerful",
+    "upbeat",
+    "ukulele",
+    "whistling",
+    "hand claps",
+    "corporate jingle",
+    "stock advert jingle",
+    "pop beat",
+    "vocals",
+    "lyrics",
+    "humming",
+    "singing"
+  ],
+  "sections": [
+    {
+      "section_name": "The strap shown, the sceptic (SC05\u2013SC06)",
+      "positive_local_styles": [
+        "release",
+        "the drone lifting",
+        "first warm chord",
+        "pulse opening into movement",
+        "new key arriving",
+        "a first warm piano chord",
+        "quiet",
+        "sustained, no gaps"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 21990,
+      "lines": []
+    },
+    {
+      "section_name": "The test \u2014 all the way down (SC07)",
+      "positive_local_styles": [
+        "release",
+        "the drone lifting",
+        "first warm chord",
+        "pulse opening into movement",
+        "new key arriving",
+        "the four-note motif rising and resolving",
+        "cello carrying it",
+        "sustained, no gaps"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 18240,
+      "lines": []
+    },
+    {
+      "section_name": "How it works (SC08)",
+      "positive_local_styles": [
+        "release",
+        "the drone lifting",
+        "first warm chord",
+        "pulse opening into movement",
+        "new key arriving",
+        "light repeating piano figure",
+        "soft cello pads",
+        "steady and clear",
+        "sustained, no gaps"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 39190,
+      "lines": []
+    },
+    {
+      "section_name": "Proof and six weeks after (SC09\u2013SC12)",
+      "positive_local_styles": [
+        "warm hopeful forward score",
+        "lifted or major",
+        "strings pads and piano with movement",
+        "dignified lift",
+        "warm forward strings and piano",
+        "the motif in a major key",
+        "sustained, no gaps"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 84730,
+      "lines": []
+    },
+    {
+      "section_name": "The offer, the sister on the stairs (SC12\u2013SC13)",
+      "positive_local_styles": [
+        "confident steady pulse",
+        "brighter",
+        "a little faster",
+        "held resolve ending",
+        "full strings with piano",
+        "sustained, no gaps"
+      ],
+      "negative_local_styles": [],
+      "duration_ms": 45530,
+      "lines": []
+    }
+  ]
+}

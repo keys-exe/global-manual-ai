@@ -1,0 +1,66 @@
+{
+ "scene": "MUS-BODY-A",
+ "length_s": 122.82,
+ "register": "MUS-OPEN",
+ "theme": [
+  "intimate British film score",
+  "felt piano and solo cello",
+  "a four-note rising motif",
+  "around 76 bpm",
+  "one continuous sustained bed from first second to last, never stopping",
+  "soft attacks, every note eased in"
+ ],
+ "avoid": [
+  "choir",
+  "clicks",
+  "drums",
+  "electric guitar",
+  "hits",
+  "percussion",
+  "silence",
+  "sudden stops",
+  "synthesizer leads",
+  "ticking"
+ ],
+ "tempo": "slow",
+ "bpm": 76,
+ "sections": [
+  {
+   "name": "Down the stairs backwards (SC02)",
+   "start": 0,
+   "end": 36.32,
+   "energy": "low",
+   "register": "MUS-OPEN",
+   "styles": [
+    "low drone",
+    "sparse piano, unresolved",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "Tried everything (SC03)",
+   "start": 36.32,
+   "end": 84.17,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "darker low cello drones",
+    "dissonant piano intervals",
+    "sustained, no gaps"
+   ]
+  },
+  {
+   "name": "The wedding, Barbara seen (SC04\u2013SC05)",
+   "start": 84.17,
+   "end": 122.82,
+   "energy": "mid",
+   "register": "MUS-OPEN",
+   "styles": [
+    "curious plucked strings",
+    "the four-note motif hinted, unresolved",
+    "sustained, no gaps"
+   ]
+  }
+ ],
+ "fix_note": "v1 check FAIL: CLICK, DROPOUT, ENERGY order, TEMPO double (ticking percussion) -> no percussion, a continuous sustained bed, soft attacks; section loudness also set in the mix"
+}
