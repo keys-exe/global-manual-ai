@@ -202,8 +202,15 @@ def run_image(c):
         hit = re.search(r"location plate", p, re.I)
         check("no room block on a no-room shot (§6A)", not hit and "location" not in kinds, hit.group(0) if hit else ("location ref attached" if "location" in kinds else ""))
     if c.get("product"):
-        check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
+        # an image edit (§6A rule 3) takes the picture being edited as Image 1, so the product photo comes right after it
+        pi = 1 if (c.get("match") or "").strip() else 0
+        check("product photo attached first (§6A)" if not pi else "product photo attached right after the picture being edited (§6A rules 1, 3)",
+              len(kinds) > pi and kinds[pi] == "product", f"ref {pi + 1}: {kinds[pi] if len(kinds) > pi else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
+    if c.get("anatomy"):
+        # §12A-1 rule 8 (V7.89.3, LESSONS L33): a worn photo shows a real leg — it printed one under the knee models
+        worn = [r.get("label", "") for r in refs if re.search(r"\bworn\b", r.get("label", ""), re.I)]
+        check("only the product photo on an anatomy beat (§12A-1 rule 8)", not worn, f"worn photo attached: {worn[0][:60]}" if worn else "")
     # §6A Part 2 — right on the first render (V7.74.0)
     if refs:
         missing = [i + 1 for i in range(len(refs)) if not re.search(rf"\b(?:Image|Photo|Picture)\s*{i + 1}\b", p, re.I)]

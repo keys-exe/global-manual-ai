@@ -55,6 +55,7 @@ Checks (any FAIL → exit 1):
            move; 3-5 rows use >= 2 styles, 6+ use >= 3; no style on over half (4+), never one style three in a row;
            no two in a row with the same style, height, side and scale; any four in a row have >= 3 setups; the low
            three-quarter on at most a third (3+); no move three in a row, none on over half (4+). pair_of exempts.
+           anat.lock on every anatomy row (the team's one-look call, V7.89.3) sets the style checks aside.
   MVCAM    (§3C camera, V7.86.0) music-video rows (rows with `section`): every row names a library `shot` (§24K part 7)
            and a camera `move` (push-in, pull-back, orbit, crane-up, crane-down, track, tilt, drift, locked); locked /
            drift on at most a third; no move three in a row; signature shots at most one in four, never two in a row;
@@ -267,10 +268,15 @@ def main():
     n = len(counted)
     used = {sty(r) for r in counted if sty(r)}
     need = 3 if n >= 6 else 2 if n >= 3 else 0   # fewer than three anatomy beats (none included): no range to check (LESSONS L19)
+    # the team's one-look call (§12A-1 rule 7, V7.89.3, LESSONS L33): every anatomy row carries anat.lock → the style checks step aside
+    locked = bool(counted) and all((r.get("anat") or {}).get("lock") for r in counted)
+    if locked:
+        need = 0
+        sty = lambda r: None
     if need and len(used) < need:
         fail("ANAT", [r["beat"] for r in counted], f"{n} anatomy beats in {len(used)} style(s) {sorted(used)} — use at least {need} (§12A-1)")
     if n >= 4:
-        for st in used:
+        for st in ([] if locked else used):
             k = sum(1 for r in counted if sty(r) == st)
             if k * 2 > n:
                 fail("ANAT", [st], f"style {st} on {k}/{n} anatomy beats — at most half")
