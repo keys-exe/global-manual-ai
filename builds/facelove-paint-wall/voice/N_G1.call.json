@@ -7,7 +7,7 @@
  "resolution": "1080p",
  "aspect_ratio": "9:16",
  "start_image": "N-VOICE-SHELF-B v1 (Higgsfield job e5dbc0bc)",
- "start_approved": false,
+ "start_approved": true,
  "pinned": false,
  "end_image": null,
  "end_approved": false,
