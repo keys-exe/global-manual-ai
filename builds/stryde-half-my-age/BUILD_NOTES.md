@@ -167,3 +167,6 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - SC05-T2 v2 (882 cr): Barbara's knee from the card, Her unimpressed, Barbara hands her one strap across the table (no box), "They come in twos. I never used the spare." (10.4 s). To check.
   - SC06-T1 v3 (819 cr, third generation on the user's "fix everything"): strap front side up throughout, never turned, back photo dropped; held resting in the hand / on the table edge; full lines. The shell looks large and curved in the first close-up — flagged on the card. To check.
   - LESSONS L39, FP20 amended (a product photo is a reference, never an instruction to show that side).
+- 2026-10-02 — User: "FIX THE SC05T2 CAUSE ITS SHOWING A STATIC IMAGE INSTEAD OF BARBARA SHOWING IT TO HER" / "SCENE 6 THE STRAP IS TOO BIG AND I DONT LIKE HOW THE RESULT CAME I NEED A NEW ONE".
+  - SC05-T2 v3 (gen 3 on the user's go, 882 cr): SHOT 1 is now Barbara swinging her knee up toward Her, pointing and tapping the strap (camera follows), then Her unimpressed, the one-strap hand-over, the line. To check.
+  - SC06-T1 v4 (gen 4 on the user's go, 819 cr): new staging — the strap small in her hand at the table edge (12 × 5 cm said against her hand, no overhead palm ECU), front side up, full lines. To check. FP02 extended.
