@@ -1656,6 +1656,8 @@ async function downloadOne(g,k,vnum){
   toast("Preparing "+fileName(g,k)+"…");
   try{await saveFile(fileName(g,k),await fetchMedia(g,k))}catch(e){toast("Couldn't fetch the file. Try again.")}
 }
+// anatomy / mechanism cards (§12A-1): marked on the doc (`anatomy: true`, `kind`, `anatStyle`) or by their beat id (MECH-…, ANAT-…, M-02a)
+function isAnat(g){return g.anatomy===true||/^(anatomy|mechanism)$/i.test(g.kind||"")||!!g.anatStyle||/^(MECH|ANAT|M)-?\d/i.test(g.beat||"")}
 // the B-roll bank: every confirmed hook and B-roll video, its current version at full quality
 function brollBank(gens,only){return gens.filter(g=>(only?[only]:["broll","hooks"]).includes(g.stage)&&!isAudio(g)&&flow(g).includes("video")&&stepState(g,"video")==="ok"&&g.videoAsset)}
 function bankBtn(gens,only){const n=brollBank(gens,only).length;return `<button class="btn small primary" type="button" data-zip="${only?"hookbank":"brollbank"}" data-step="video" ${n?"":"disabled"} title="${only?"Every confirmed hook video":"Every confirmed hook and B-roll video"}, full quality, for the B-roll bank">${I.dl} Download all ${only?"hooks":"B-rolls"} <b>${n}</b></button>`}
@@ -1664,8 +1666,13 @@ async function downloadBank(only){
   if(!gens.length) return;
   toast(`Packing ${gens.length} ${only?"hooks":"B-rolls"}… large files take a while`);
   const zip=new JSZip(); let md=`# ${b.name||b.id} · B-roll bank · ${gens.length} confirmed videos\n\n`, miss=0;
+  // the full bank keeps anatomy apart from the rest (V7.93.2): Hooks/, B-roll/ and Anatomy/, each with a folder per act
+  const top=g=>only?"":(isAnat(g)?"Anatomy/":g.stage==="hooks"?"Hooks/":"B-roll/");
+  if(!only) gens.sort((x,y)=>["Hooks/","B-roll/","Anatomy/"].indexOf(top(x))-["Hooks/","B-roll/","Anatomy/"].indexOf(top(y)));
+  let sec="";
   for(const g of gens){
-    const grp=groupOf(g).label, path=`${grp.replace(/\s+/g,"-")}/${fileName(g,"video")}`;
+    if(top(g)!==sec){sec=top(g);if(sec) md+=`# ${sec.slice(0,-1)}\n\n`}
+    const grp=groupOf(g).label, path=`${top(g)}${grp.replace(/\s+/g,"-")}/${fileName(g,"video")}`;
     md+=`## ${g.beat} · ${g.title||""}\n${grp} · ${path}`+(g.duration?` · ${g.duration}s`:"")+(g.videoOut&&g.videoOutV===currentV(g,"video")?` · clean up to ${g.videoOut}s`:"")+"\n\n"+(g.line?`> ${g.line}\n\n`:"");
     if(g[d.prompt]) md+=`Model: ${g[d.model]||d.defModel}\n\n\`\`\`\n${g[d.prompt]}\n\`\`\`\n\n`;
     try{zip.file(path,await fetchMedia(g,"video"))}catch(e){miss++;md+=`(file could not be fetched)\n\n`}
