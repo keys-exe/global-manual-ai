@@ -222,3 +222,33 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - **Board moves:** the v2 finals moved to a new **Old 2** board (https://claude.ai/artifact/UoDUwwo2G3zxiB648iGZUD), because the Old board is at 936 MB of 1 GB. MUS-BODY-A v1 went to Old 2. VOICE-X1 and MUS-BODY-A v3 cards are on Current, To check. buildSpend: 78,166 cr / 288 renders.
   - **System:** V7.93.1 §24L + L62 (PR #478, merged).
   - **Another session asked** (owner, "Merge to half my age while its running") for V7.93.0 on this build: the take fields are in `step5/act_map.json` and `takes.py --vo-words` was run. `step5/takes_report.md` and `docs/takes` on the Plan board hold the result: redoing every scene the new rule makes one take would be 13,356 cr for the body, 18,018 with hooks. Nothing is re-rendered without the team's go.
+
+### 2026-10-02 — finished videos v4 (Automatic, user: "automate them just give met the final one")
+
+- **What the user flagged on v3:**
+  - "the caption is late"
+  - the sister's "Sunday" cut at the start
+  - Her's "Course, love." glitchy, with the caption showing before she spoke
+  - "sometimes its noticable the slowdowns"
+  - L049 "this feels like an image only"
+- **Edit v5** (`edit/build_edit_v4.py`, `EDIT_V = 5`):
+  - **Cutaways:** every slow-down under ×0.75 now plays at its own speed, with a cutaway insert cut into its middle (`edit/inserts.py`, `body/INSERTS/`). The inserts are INS-SC03-A, INS-SC03-B, INS-SC04, INS-SC05, INS-SC07, INS-SC12 (v2: v1 bent the shell, now on Old 3), INS-SC13. They are Seedance 2.5, silent, preflight PASS and judged USE.
+  - **L049:** SHOT 2 of SC08-T3 is replaced by INS-L049, a moving knee shot, under Barbara's own line.
+  - **Slow-down margin:** a slowed stretch now ends 0.4 s before the next spoken word.
+  - **"Sunday":** the sister's line is cut from `C4_voice_master_raw.m4a` 3.62–9.55 s, so "Sunday" is whole.
+  - **Dialogue words:** the edit writes `*_v5.dlg.json` (on-screen words from the isolated voice tracks) and `*_v5.spans.json`.
+- **Finals v4** (`edit/build_finals_v4.py`, `VERSION = 4`):
+  - **Captions:** timed on clean sources, each word snapped to its first sound, ≤ 0.9 s per word, cleared when the speaking stops.
+  - **Format:** yuv420p. The v3 finals were 4:4:4, which phones don't play.
+  - **Lengths:** HKA 354.2 s · HKB 352.2 s · HKC 356.3 s · HKE 351.3 s.
+  - **Loudness:** −13.9 to −14.3 LUFS.
+  - **Words:** the body matches 601/611 script words; the rest are spelling differences.
+- **Boards:**
+  - **Final:** shows v4, `status: use`.
+  - **Old 3:** the v3 finals moved to a new overflow board, **Old 3** (https://claude.ai/artifact/KFwbJZCFnw6wnHhW4MT2hy).
+  - **Left on Final for the user:** one v3 part, HKB part 08 (`c31231cd69988ca7c254eacafea68952`, 8.5 MB), because its delete was refused by the permission check. Its copy is on Old 3, so it can be deleted from the Final board.
+  - **Current:** the eight insert cards are on, `use`.
+  - **buildSpend:** 81,064 cr over 297 renders. The inserts cost 2,898 cr.
+  - **Kie balance:** 70,561.6.
+- **Hourly Fix-check routine:** `trig_01UEW1qUaoYzJv9wMFUSwpja` switched off (V7.92.3).
+- **System:** V7.94.1 §24L + L63.
