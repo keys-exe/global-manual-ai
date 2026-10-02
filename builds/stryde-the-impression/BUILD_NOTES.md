@@ -74,11 +74,25 @@
     - **T4:** Roy is right, with the doorway behind him. But food is back on the plates, and Hazel's front close has the sideboard behind her.
   - Any further fix is a fourth generation and waits for the user's go.
 
+- 2026-10-02 **"FIX THE EXACT POSITION OF THE CHARACTHER SIITING LIKE ON THE HA T1"** (the go for a fourth generation of T2–T4).
+  - **T1's wide, read exactly:** the camera is in the hall, looking through the half-open door (its edge and brass knob at the left). Eight chairs:
+    - Roy at the near end, his back centred in frame, hiding Hazel at the far end;
+    - Emma in the left MIDDLE chair, Oscar in the left chair nearest the door;
+    - Dan in the right MIDDLE chair, facing Emma;
+    - the two chairs beside Hazel and the right near chair are empty.
+  - **Layout card v2** `INFO-TABLE-SC01_v2.png` (Sunburst edit of v1, Higgsfield job 4b06a861…, 2.75 cr): eight chairs, five places set where T1 seats them. It's on the board To check. v1 stays, because T1 and T5 were made with it.
+  - **Gen-4 prompts** (`film/build_sc01.py`, preflight PASS):
+    - the exact chairs, with the card attached;
+    - every plate empty in every shot, with no-food negatives;
+    - each close shot's background tied to the side the camera looks from (Dan: the fireplace; Oscar: the sideboard; Hazel: the window, never the sideboard);
+    - T2's wide framed through the half-open door as T1's is.
+  - T2–T4 are on `regenerate` and are sent once the card is confirmed.
+
 ## Open (Flags in BUILD_SHEET.md)
 F1 price (£30 for two) · F2 "two centimetres" · F3 "replace them at seventy-one" · F6 "Facebook copies" · F7 getstryde.co · F11 strap on under trousers vs FP13 (proposed: bare knee in her nightdress, trousers on after) · F12 one hook → one film · F15 close without the product in hand.
 
 ## Next
-Hook A gate (§18 step 6): the user's Confirm or Fix on SC01-T1…T5. Then SC02 (the hall film, D1 night), then the body scene by scene. Done before this: the §24I voice masters (9 speakers, Seedance, from face crops of the sheets) → Hook A (SC01, 5 takes: the D1 outfits are all the cast sheets', so no outfit cards; ingredients C4/C3/C2/C1/N + L-DINING + P-HOUSE + the voice masters). After that, the body scene by scene. ~~Steps 4–5 (Property Sheet — Hazel & Roy's stone terrace: dining room, hall kitchen→door, stairs, kitchen, bedroom — + 16:9 plates; the chemist, the hill + postbox, the school gate, Emma's car; scene list + Scene Bibles, act map with takes, wardrobe map per story day, ingredient lists, `angles.py` / `takes.py` / `wardrobe.py` / `visual_plan.py`), then §24I voice masters, then Hook A on Seedance.~~
+Confirm layout card v2 → render T2–T4 gen 4. Then the Hook A gate (§18 step 6): the user's Confirm or Fix on SC01-T1…T5. Then SC02 (the hall film, D1 night), then the body scene by scene. Done before this: the §24I voice masters (9 speakers, Seedance, from face crops of the sheets) → Hook A (SC01, 5 takes: the D1 outfits are all the cast sheets', so no outfit cards; ingredients C4/C3/C2/C1/N + L-DINING + P-HOUSE + the voice masters). After that, the body scene by scene. ~~Steps 4–5 (Property Sheet — Hazel & Roy's stone terrace: dining room, hall kitchen→door, stairs, kitchen, bedroom — + 16:9 plates; the chemist, the hill + postbox, the school gate, Emma's car; scene list + Scene Bibles, act map with takes, wardrobe map per story day, ingredient lists, `angles.py` / `takes.py` / `wardrobe.py` / `visual_plan.py`), then §24I voice masters, then Hook A on Seedance.~~
 
 ## For the owner
 - Add this build's row to the CLAUDE.md board table (this account can't change CLAUDE.md): `stryde-the-impression` (STRYDE · The Impression, AI Drama VSL, Mode 4, Manual, British — Drive `1myOChLFKSUBiQqn-Z5EoZ7ROwJ9sXeq2`) | Current https://claude.ai/artifact/C7iJiu9zayETRq6wRpHERk · Old https://claude.ai/artifact/YHyjDG7UugdwLqpjL2Artq · Final https://claude.ai/artifact/7jESdNE8iA6sW9qtKVWMJr · Plan https://claude.ai/artifact/YR9p35toXVXK1EE1uPywym (no hourly Routine — `trig_01QYbXK5CcpCVJ8G5fXhgBfx` switched off 2026-10-02).
