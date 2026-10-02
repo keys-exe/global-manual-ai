@@ -1,0 +1,62 @@
+[
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__P-HOUSE",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_P-HOUSE.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-STAIRS",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-STAIRS.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-BEDROOM",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-BEDROOM.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-KITCHEN",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-KITCHEN.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-GARDEN",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-GARDEN.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-CARPARK",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-CARPARK.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-CAR",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-CAR.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-GP",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-GP.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-YARD",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-YARD.json"
+ },
+ {
+  "op": "set",
+  "collection": "generations",
+  "doc_id": "stryde-her-dad__L-STREET",
+  "file_path": "/home/user/global-manual-ai/builds/stryde-her-dad/board/json/plate_L-STREET.json"
+ }
+]

@@ -1,0 +1,4933 @@
+[
+ {
+  "beat": "SC01-SH01",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high wide: Sue small at the open boot, the van's back doors already coming at her — the danger before anyone sees it",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Sue lifts a potted plant into the open boot of the silver hatchback; two bays along, the white van's reversing lights come on and it starts to roll back toward her; Tony stands ten feet behind her holding a potted plant",
+  "pace": "the van creeps back at walking pace",
+  "rig": "F2",
+  "cast": [
+   "C2",
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "as the van starts to roll",
+  "ingredients": [
+   "C2",
+   "C1",
+   "L-CARPARK"
+  ],
+  "mirror_of": null,
+  "duration": 2.1,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T1",
+  "take_kind": "multi",
+  "start_pos": "Sue at the open boot of the silver hatchback, back to the van, lifting a potted plant in; Tony ten feet behind her on the tarmac, facing her, a potted plant held in both hands at his waist; the white van two bays along, its back doors toward her"
+ },
+ {
+  "beat": "SC01-SH02",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "L001",
+  "voice": "lip-sync",
+  "action": "Tony sees the van and shouts her name, the plant still in his hands",
+  "pace": "sudden",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'SUE!'",
+  "ingredients": [
+   "C1",
+   "L-CARPARK",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T1"
+ },
+ {
+  "beat": "SC01-SH03",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low profile: the first step and the knee goes — the body betrays him at ground level",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Tony drops the plant (the pot cracks on the tarmac) and lunges one step toward her; on that step his right knee buckles and he goes down onto that knee, one hand to the ground",
+  "pace": "one step, then the drop, over two seconds",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "as his knee hits the tarmac",
+  "ingredients": [
+   "C1",
+   "L-CARPARK"
+  ],
+  "mirror_of": null,
+  "duration": 2.4,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T1"
+ },
+ {
+  "beat": "SC01-SH04",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C4",
+  "height": "eye",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "the young garden-centre worker in the green fleece runs past Tony from behind him and pulls Sue clear by the arm, two steps to the side, as the van stops short a metre from the boot",
+  "pace": "the lad runs four strides; the pull is one move",
+  "rig": "F5",
+  "cast": [
+   "C4",
+   "C2",
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "as the van's brake lights flare",
+  "ingredients": [
+   "C4",
+   "C2",
+   "C1",
+   "L-CARPARK"
+  ],
+  "mirror_of": null,
+  "duration": 2.2,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T1",
+  "end_pos": "the lad holding Sue by both upper arms beside the hatchback's rear wheel, both facing each other; the van stopped a metre short of the open boot; Tony down on his right knee ten feet away, the cracked pot beside him"
+ },
+ {
+  "beat": "SC01-SH05",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C4",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Sue's shoulder onto the lad — the stranger who got there",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "L002",
+  "voice": "lip-sync",
+  "action": "the lad, holding Sue by both upper arms, breathless, reassuring her",
+  "pace": "still, breathing hard",
+  "rig": "F2",
+  "cast": [
+   "C4",
+   "C2"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'got you.'",
+  "ingredients": [
+   "C4",
+   "C2",
+   "L-CARPARK",
+   "VOICE-C4"
+  ],
+  "mirror_of": null,
+  "duration": 3.3,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T2",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "the lad holding Sue by both upper arms beside the hatchback's rear wheel, facing each other; Tony down on his right knee ten feet away behind the lad"
+ },
+ {
+  "beat": "SC01-SH06a",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C4",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "L003",
+  "voice": "lip-sync",
+  "action": "the lad glances past Sue toward Tony on the ground, kind and concerned, and asks her",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C4"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'go over.'",
+  "ingredients": [
+   "C4",
+   "L-CARPARK",
+   "VOICE-C4"
+  ],
+  "mirror_of": null,
+  "duration": 3.1,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T2"
+ },
+ {
+  "beat": "SC01-SH06b",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "through",
+  "why": "high past the lad's shoulder: Tony still down on one knee ten feet away — what the lad is looking at",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "L003",
+  "voice": "off",
+  "action": "past the lad's shoulder, Tony is still down on his right knee on the tarmac beside the cracked pot, getting a hand to the ground to push up",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C4"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'go over.'",
+  "ingredients": [
+   "C1",
+   "C4",
+   "L-CARPARK",
+   "VOICE-C4"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T2"
+ },
+ {
+  "beat": "SC01-SH07",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "L004",
+  "voice": "lip-sync",
+  "action": "Sue, shaken, glances at Tony, then back to the lad, and doesn't correct him",
+  "pace": "a beat before she speaks",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'love.'",
+  "ingredients": [
+   "C2",
+   "L-CARPARK",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 2.9,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T2",
+  "end_pos": "Sue turned toward the lad, the lad letting go of her arms; Tony still on his right knee ten feet away"
+ },
+ {
+  "beat": "SC01-SH08",
+  "group": "SC01",
+  "scene": "SC01",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "low close on Tony on one knee: the ground he couldn't cross; his inner voice over his face",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky over the car park",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Hook — flat grey overcast, cold",
+   "kelvin": 6500
+  },
+  "lines": "L005",
+  "voice": "VO",
+  "action": "Tony, still down on his right knee on the wet tarmac beside the cracked pot, watches them; mouth closed, his face holding it; the camera eases in",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "end of VO",
+  "ingredients": [
+   "C1",
+   "L-CARPARK"
+  ],
+  "mirror_of": null,
+  "duration": 7.1,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC01-T3",
+  "split": "length",
+  "start_pos": "Tony down on his right knee on the tarmac, the cracked pot beside his left hand, looking toward Sue and the lad by the hatchback",
+  "end_pos": "the same, closer"
+ },
+ {
+  "beat": "SC02-SH01",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile: she stares out of the windscreen, not starting the car — what she saw stays inside",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L006",
+  "voice": "VO",
+  "action": "Sue in the driver's seat, both hands on the wheel, the key not turned, staring ahead; mouth closed, her own thought over her face",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "end of VO",
+  "ingredients": [
+   "C2",
+   "L-CAR"
+  ],
+  "mirror_of": null,
+  "duration": 4.8,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T1",
+  "take_kind": "multi",
+  "start_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH02",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L007",
+  "voice": "lip-sync",
+  "action": "Sue turns her head to him",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'about it?'",
+  "ingredients": [
+   "C2",
+   "L-CAR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 3.3,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T1"
+ },
+ {
+  "beat": "SC02-SH03",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L008",
+  "voice": "lip-sync",
+  "action": "Tony keeps looking out of the windscreen",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'say?'",
+  "ingredients": [
+   "C1",
+   "L-CAR",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 3.3,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T1",
+  "end_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH04",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over his shoulder onto her — she is pressing, he won't look",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L009",
+  "voice": "lip-sync",
+  "action": "Sue, at him, voice tight; she stops before the end of the sentence",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2",
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'Tony…'",
+  "ingredients": [
+   "C2",
+   "C1",
+   "L-CAR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 7.5,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T2",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH05",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "slightly low from the dashboard on Tony: the man digging in",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-LOW"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L010",
+  "voice": "lip-sync",
+  "action": "Tony, quiet, still facing ahead",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'you.'",
+  "ingredients": [
+   "C1",
+   "L-CAR",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T2"
+ },
+ {
+  "beat": "SC02-SH06",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L011",
+  "voice": "lip-sync",
+  "action": "Sue, flat",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'step.'",
+  "ingredients": [
+   "C2",
+   "L-CAR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 2.9,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T2",
+  "end_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH07",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over him onto her: the fear under the anger",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L012",
+  "voice": "lip-sync",
+  "action": "Sue, her eyes wet, holding it together",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2",
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'chair.'",
+  "ingredients": [
+   "C2",
+   "C1",
+   "L-CAR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 5.2,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T3",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH08",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile: he answers the windscreen, not her",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L013",
+  "voice": "lip-sync",
+  "action": "Tony, jaw set",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'anywhere.'",
+  "ingredients": [
+   "C1",
+   "L-CAR",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.1,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T3"
+ },
+ {
+  "beat": "SC02-SH09",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L014",
+  "voice": "lip-sync",
+  "action": "Sue, quietly — the line that lands",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'dad?'",
+  "ingredients": [
+   "C2",
+   "L-CAR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 4.1,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T3",
+  "end_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH10",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": true,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "L015",
+  "voice": "lip-sync",
+  "action": "Tony finally turns his head and looks at her",
+  "pace": "a slow turn of the head, then still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'like this.'",
+  "ingredients": [
+   "C1",
+   "L-CAR",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 3.7,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T4",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Sue in the driver's seat (right), hands on the wheel; Tony in the passenger seat (left), his trouser knee dirty from the tarmac, both facing the windscreen"
+ },
+ {
+  "beat": "SC02-SH11",
+  "group": "SC02",
+  "scene": "SC02",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "behind",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "from the back seat: two heads, the windscreen and the garden centre — the silence after",
+  "mode": 4,
+  "shot": [
+   "SH-REAR"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D1",
+  "face": false,
+  "light": {
+   "source": "the windscreen and side windows, overcast",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "Before — flat grey, close",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "the two of them sit side by side looking out at the garden centre; neither moves; Sue turns the key",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "as the engine starts",
+  "ingredients": [
+   "C1",
+   "C2",
+   "L-CAR"
+  ],
+  "mirror_of": null,
+  "duration": 2.6,
+  "music": "MUS-OPEN",
+  "layout": "full",
+  "take": "SC02-T4",
+  "end_pos": "both facing the windscreen, Sue's hand on the key"
+ },
+ {
+  "beat": "SC03-SH01",
+  "group": "SC03",
+  "scene": "SC03",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "high on him at the drawer: the pile of things that never worked, pressing down",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D2",
+  "face": true,
+  "light": {
+   "source": "the sash window over the chest of drawers, cool morning",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Problem — cool grey morning",
+   "kelvin": 6500
+  },
+  "lines": "L016",
+  "voice": "VO",
+  "action": "Tony, dressed for work, shoves a beige knee sleeve back into the top drawer of the pine chest of drawers; the drawer is full of knee sleeves and supports and won't shut; he leans on it with his palm until it closes; mouth closed",
+  "pace": "one push, then a second",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-BEDROOM",
+  "cut": "as the drawer bangs shut",
+  "ingredients": [
+   "C1",
+   "L-BEDROOM",
+   "P-HOUSE"
+  ],
+  "mirror_of": null,
+  "duration": 3.5,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC03-T1",
+  "start_pos": "Tony standing at the open top drawer of the pine chest of drawers under the window, a beige knee sleeve in his right hand",
+  "end_pos": "Tony's palm flat on the shut drawer"
+ },
+ {
+  "beat": "SC03-SH02",
+  "group": "SC03",
+  "scene": "SC03",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "high from the landing behind him: going down his own stairs sideways like a man of 85 — the low point",
+  "mode": 4,
+  "shot": [
+   "SH-REAR",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D2",
+  "face": false,
+  "light": {
+   "source": "the frosted front-door glass at the foot of the stairs",
+   "key_side": "front",
+   "time": "morning",
+   "arc": "Problem — cool grey morning",
+   "kelvin": 6500,
+   "why": "the only light in the stairwell comes up from the front door; he comes down into it"
+  },
+  "lines": "L016",
+  "voice": "VO",
+  "action": "Tony goes down the steep narrow stairs sideways, both hands on the white handrail, leading with his left foot, bringing the stiff right leg down beside it, one step at a time",
+  "pace": "one step every two seconds, foot then foot onto the same step",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on the third step",
+  "ingredients": [
+   "C1",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null,
+  "duration": 4.0,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC03-T2",
+  "take_kind": "multi",
+  "start_pos": "Tony on the top step of the flight, side-on to the stairs facing the handrail, both hands on the white handrail"
+ },
+ {
+  "beat": "SC03-SH03",
+  "group": "SC03",
+  "scene": "SC03",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low from the hall up the flight: his face tight on each step — the effort",
+  "mode": 4,
+  "shot": [
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D2",
+  "face": true,
+  "light": {
+   "source": "the frosted front-door glass at the foot of the stairs",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Problem — cool grey morning",
+   "kelvin": 6500,
+   "why": "the only light in the stairwell comes up from the front door; he comes down into it"
+  },
+  "lines": "",
+  "voice": "",
+  "action": "halfway down, still sideways, Tony lowers the stiff right leg onto the next step, his face tight; mouth closed",
+  "pace": "one step every two seconds",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STAIRS",
+  "cut": "as both feet land on the step",
+  "ingredients": [
+   "C1",
+   "L-STAIRS",
+   "P-HOUSE"
+  ],
+  "mirror_of": null,
+  "duration": 4.0,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC03-T2",
+  "end_pos": "Tony halfway down the flight, side-on, both hands on the handrail"
+ },
+ {
+  "beat": "SC03-SH04",
+  "group": "SC03",
+  "scene": "SC03",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "profile through the passenger window: he waits in the car while, behind him through the back window, she lifts the shopping in",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D2",
+  "face": true,
+  "light": {
+   "source": "the flat overcast sky through the car windows",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "Problem — flat grey",
+   "kelvin": 6500
+  },
+  "lines": "L017",
+  "voice": "VO",
+  "action": "Tony sits in the passenger seat of the parked hatchback, looking ahead; behind him, through the rear window, Sue lifts heavy shopping bags into the open boot on her own; mouth closed",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "as the boot slams",
+  "ingredients": [
+   "C1",
+   "C2",
+   "L-CAR",
+   "L-CARPARK"
+  ],
+  "mirror_of": null,
+  "duration": 8.7,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC03-T3",
+  "start_pos": "Tony in the passenger seat facing ahead; Sue at the open boot behind the car, lifting bags",
+  "end_pos": "the boot shut, Tony still facing ahead"
+ },
+ {
+  "beat": "SC04-SH01",
+  "group": "SC04",
+  "scene": "SC04",
+  "type": "SHOT",
+  "subject": "C5",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D3",
+  "face": true,
+  "light": {
+   "source": "the window with vertical blinds and the ceiling panel",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Problem — cool clinical white",
+   "kelvin": 4500
+  },
+  "lines": "L018",
+  "voice": "lip-sync",
+  "action": "the GP turns from her screen to Tony, brisk and kind",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C5"
+  ],
+  "location": "L-GP",
+  "cut": "on 'nick.'",
+  "ingredients": [
+   "C5",
+   "L-GP",
+   "VOICE-C5"
+  ],
+  "mirror_of": null,
+  "duration": 5.6,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC04-T1",
+  "take_kind": "multi",
+  "start_pos": "the GP in her office chair at the desk, turned to Tony; Tony in the patient chair at the desk's corner, hands on his knees"
+ },
+ {
+  "beat": "SC04-SH02",
+  "group": "SC04",
+  "scene": "SC04",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over the GP's shoulder onto Tony: he is the one under examination",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D3",
+  "face": true,
+  "light": {
+   "source": "the window with vertical blinds and the ceiling panel",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Problem — cool clinical white",
+   "kelvin": 4500
+  },
+  "lines": "L019",
+  "voice": "lip-sync",
+  "action": "Tony, flat, rubbing his right knee",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C5"
+  ],
+  "location": "L-GP",
+  "cut": "on '85.'",
+  "ingredients": [
+   "C1",
+   "C5",
+   "L-GP",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 3.7,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC04-T1"
+ },
+ {
+  "beat": "SC04-SH03",
+  "group": "SC04",
+  "scene": "SC04",
+  "type": "SHOT",
+  "subject": "C5",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "slightly low on the GP: the authority that says normal",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D3",
+  "face": true,
+  "light": {
+   "source": "the window with vertical blinds and the ceiling panel",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Problem — cool clinical white",
+   "kelvin": 4500
+  },
+  "lines": "L020",
+  "voice": "lip-sync",
+  "action": "the GP, reasonable, a small shrug",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C5"
+  ],
+  "location": "L-GP",
+  "cut": "on 'normal.'",
+  "ingredients": [
+   "C5",
+   "L-GP",
+   "VOICE-C5"
+  ],
+  "mirror_of": null,
+  "duration": 5.6,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC04-T1",
+  "end_pos": "the GP in her office chair at the desk, turned to Tony; Tony in the patient chair at the desk's corner, hands on his knees"
+ },
+ {
+  "beat": "SC04-SH04",
+  "group": "SC04",
+  "scene": "SC04",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D3",
+  "face": true,
+  "light": {
+   "source": "the window with vertical blinds and the ceiling panel",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Problem — cool clinical white",
+   "kelvin": 4500
+  },
+  "lines": "L021",
+  "voice": "lip-sync",
+  "action": "Tony, quiet, not accepting it",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-GP",
+  "cut": "on 'normal.'",
+  "ingredients": [
+   "C1",
+   "L-GP",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC04-T2",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "the GP in her office chair at the desk, turned to Tony; Tony in the patient chair at the desk's corner, hands on his knees"
+ },
+ {
+  "beat": "SC04-SH05",
+  "group": "SC04",
+  "scene": "SC04",
+  "type": "SHOT",
+  "subject": "C5",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "profile: she is already typing — the appointment is over",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-MED"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D3",
+  "face": true,
+  "light": {
+   "source": "the window with vertical blinds and the ceiling panel",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Problem — cool clinical white",
+   "kelvin": 4500
+  },
+  "lines": "L022",
+  "voice": "lip-sync",
+  "action": "the GP turns back to the screen and types as she speaks",
+  "pace": "still, typing",
+  "rig": "F2",
+  "cast": [
+   "C5"
+  ],
+  "location": "L-GP",
+  "cut": "on 'people.'",
+  "ingredients": [
+   "C5",
+   "L-GP",
+   "VOICE-C5"
+  ],
+  "mirror_of": null,
+  "duration": 6.4,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC04-T2"
+ },
+ {
+  "beat": "SC04-SH06",
+  "group": "SC04",
+  "scene": "SC04",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high wide from the corner: Tony small in the patient chair, alone with it",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D3",
+  "face": true,
+  "light": {
+   "source": "the window with vertical blinds and the ceiling panel",
+   "key_side": "R",
+   "time": "morning",
+   "arc": "Problem — cool clinical white",
+   "kelvin": 4500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Tony sits in the patient chair looking down at his right knee while the GP types",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C5"
+  ],
+  "location": "L-GP",
+  "cut": "hold",
+  "ingredients": [
+   "C1",
+   "C5",
+   "L-GP"
+  ],
+  "mirror_of": null,
+  "duration": 2.6,
+  "music": "MUS-EXPOSE",
+  "layout": "full",
+  "take": "SC04-T2",
+  "end_pos": "Tony looking down at his knee, the GP typing"
+ },
+ {
+  "beat": "SC05-SH01",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "low",
+  "side": "profile",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "low wide, Gary's left side to us: a man of 70 carrying a slab alone — the question before it is asked",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Gary lifts one grey paving slab off the pallet on his own and carries it to the flatbed truck; Tony walks in through the yard gate behind him",
+  "pace": "Gary walks four steady steps with the slab",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "as Gary sets the slab down",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD"
+  ],
+  "mirror_of": null,
+  "duration": 2.6,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T1",
+  "take_kind": "multi",
+  "start_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH02",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L023",
+  "voice": "lip-sync",
+  "action": "Tony, by the flatbed, shaking his head at him",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'than me.'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 5.2,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T1"
+ },
+ {
+  "beat": "SC05-SH03",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L024",
+  "voice": "lip-sync",
+  "action": "Gary, wiping his hands on a rag, amused",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'answer?'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T1",
+  "end_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH04",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Gary onto Tony: listing everything that failed",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L025",
+  "voice": "lip-sync",
+  "action": "Tony, counting it off, fed up",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'shifts it.'",
+  "ingredients": [
+   "C1",
+   "C3",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 6.8,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T2",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH05",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L026",
+  "voice": "lip-sync",
+  "action": "Gary, matter-of-fact",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'backside.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 7.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T2",
+  "end_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH06",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L027",
+  "voice": "lip-sync",
+  "action": "Tony, half a laugh",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'over.'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T3",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH07",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Tony onto Gary: he means it",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L028",
+  "voice": "lip-sync",
+  "action": "Gary, serious now",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'now.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 4.1,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T3"
+ },
+ {
+  "beat": "SC05-SH08",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L029",
+  "voice": "lip-sync",
+  "action": "Tony, leaning in",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'changed?'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T3"
+ },
+ {
+  "beat": "SC05-SH09a",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "profile two-shot as they sit on the slab pallet: the lesson begins",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-MED"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Gary sits on the edge of the pallet of slabs and nods Tony down beside him; Tony sits",
+  "pace": "one sit-down each",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'one spot?'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 4.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T3",
+  "end_pos": "Gary and Tony by the flatbed facing each other"
+ },
+ {
+  "beat": "SC05-SH09b",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L030",
+  "voice": "lip-sync",
+  "action": "Gary, seated, turns to Tony and asks",
+  "pace": "one sit-down each",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'one spot?'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 4.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T4",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary and Tony by the flatbed facing each other"
+ },
+ {
+  "beat": "SC05-SH10",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L031",
+  "voice": "lip-sync",
+  "action": "Tony, seated on the pallet, shrugs",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'know.'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T4"
+ },
+ {
+  "beat": "SC05-SH11",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L032",
+  "voice": "lip-sync",
+  "action": "Gary leans over and points two fingers just below Tony's right kneecap without touching it",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'down.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 4.1,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T4"
+ },
+ {
+  "beat": "SC05-SH12",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "INSERT",
+  "subject": "C1",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high, straight down onto the knee: the one spot, found by his own fingers",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": false,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L033",
+  "voice": "off",
+  "action": "Tony's two fingers press the soft spot just below his bare right kneecap; his leg flinches a little",
+  "pace": "one press",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'There.'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T4",
+  "end_pos": "Gary and Tony seated side by side on the edge of the slab pallet, Tony's fingers on his knee"
+ },
+ {
+  "beat": "SC05-SH13a",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L034",
+  "voice": "lip-sync",
+  "action": "Gary, seated, quiet and sure",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'changes.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 4.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T5",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary and Tony seated side by side on the edge of the slab pallet"
+ },
+ {
+  "beat": "SC05-SH13b",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Gary onto Tony, listening — it is his story being told",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L034",
+  "voice": "off",
+  "action": "Tony listening, looking at his knee, then at Gary; mouth closed",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C1",
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'changes.'",
+  "ingredients": [
+   "C1",
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 3.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T5"
+ },
+ {
+  "beat": "SC05-SH13c",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "slightly low on Gary: the man who got out",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L034",
+  "voice": "lip-sync",
+  "action": "Gary, seated, quiet and sure",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'changes.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 4.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T5"
+ },
+ {
+  "beat": "SC05-SH14",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Tony listening, looking at his knee; mouth closed",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "hold",
+  "ingredients": [
+   "C1",
+   "L-YARD"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T5",
+  "end_pos": "Gary and Tony seated on the pallet"
+ },
+ {
+  "beat": "SC05-SH15a",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile: the teacher talking to the side of the student's head",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L035",
+  "voice": "lip-sync",
+  "action": "Gary, seated, explaining, a hand making the size of a coin with finger and thumb",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'Nothing more.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 5.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T6",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary and Tony seated side by side on the pallet"
+ },
+ {
+  "beat": "SC05-SH15b",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "INSERT",
+  "subject": "C1",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high on the knee again: the spot the size of a coin, under his finger",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": false,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L035",
+  "voice": "off",
+  "action": "Tony's forefinger rests on the soft spot just below his bare right kneecap",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'Nothing more.'",
+  "ingredients": [
+   "C1",
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 3.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T6"
+ },
+ {
+  "beat": "SC05-SH15c",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L035",
+  "voice": "lip-sync",
+  "action": "Gary, seated, explaining, a hand making the size of a coin with finger and thumb",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'Nothing more.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 5.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T6",
+  "end_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH16",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "slightly low on Tony: it lands",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Tony looks up from his knee at Gary; mouth closed",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "hold",
+  "ingredients": [
+   "C1",
+   "L-YARD"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T7",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary at the pallet of grey slabs, his left side to the camera, lifting one slab; Tony entering at the yard gate in the background"
+ },
+ {
+  "beat": "SC05-SH17",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L036",
+  "voice": "lip-sync",
+  "action": "Tony asks",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'fix it?'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.9,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T7"
+ },
+ {
+  "beat": "SC05-SH18a",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Tony onto Gary: the list of what doesn't work",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L037",
+  "voice": "lip-sync",
+  "action": "Gary, counting the wrong answers on his fingers",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'that spot.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 5.7,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T7"
+ },
+ {
+  "beat": "SC05-SH18b",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L037",
+  "voice": "off",
+  "action": "Tony, a slow nod — every one of them is in his drawer; mouth closed",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'that spot.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 2.3,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T7",
+  "end_pos": "seated on the pallet"
+ },
+ {
+  "beat": "SC05-SH18c",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L037",
+  "voice": "lip-sync",
+  "action": "Gary, counting the wrong answers on his fingers",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'that spot.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 3.4,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T8",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "seated on the pallet"
+ },
+ {
+  "beat": "SC05-SH19",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L038",
+  "voice": "lip-sync",
+  "action": "Gary, warm, certain",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'paracetamol.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 7.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T8"
+ },
+ {
+  "beat": "SC05-SH20",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L039",
+  "voice": "lip-sync",
+  "action": "Tony, quiet",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'do?'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-EDU",
+  "layout": "full",
+  "take": "SC05-T8",
+  "end_pos": "seated on the pallet"
+ },
+ {
+  "beat": "SC05-SH21",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "low as he stands and puts his boot up: the reveal",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-MED"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L040",
+  "voice": "lip-sync",
+  "action": "Gary stands and puts his right boot up on the edge of the pallet, his bare right knee toward Tony",
+  "pace": "one move",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'strap.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3",
+   "front.webp"
+  ],
+  "mirror_of": null,
+  "duration": 3.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T9",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary and Tony seated side by side on the pallet"
+ },
+ {
+  "beat": "SC05-SH22",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "INSERT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "front-on at knee height: the strap where it sits — the hero insert",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": false,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L040",
+  "voice": "off",
+  "action": "Gary's bare right knee, front-on, the black strap on it, the notch cupping the bottom of his kneecap; his two fingers tap the shell once",
+  "pace": "one tap",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'the knee.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3",
+   "front.webp",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null,
+  "duration": 5.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T9"
+ },
+ {
+  "beat": "SC05-SH23",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L040",
+  "voice": "lip-sync",
+  "action": "Gary, boot still up on the pallet, to Tony",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'surgeons.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 3.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T9",
+  "end_pos": "Gary standing with his right boot up on the pallet edge, Tony seated beside it"
+ },
+ {
+  "beat": "SC05-SH24",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L041",
+  "voice": "lip-sync",
+  "action": "Gary, boot back down, wagging a finger",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'doesn't work.'",
+  "ingredients": [
+   "C3",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 6.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T10",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary standing by the pallet, Tony seated on its edge"
+ },
+ {
+  "beat": "SC05-SH25",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "slightly high on Tony, seated: the sceptic looking up",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-HIGH"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L042",
+  "voice": "lip-sync",
+  "action": "Tony, half a laugh, shaking his head",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'off it.'",
+  "ingredients": [
+   "C1",
+   "L-YARD",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T10"
+ },
+ {
+  "beat": "SC05-SH26a",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Tony onto Gary, grinning: he's been here",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L043",
+  "voice": "lip-sync",
+  "action": "Gary, grinning, then plain",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'a minute.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 5.1,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T10",
+  "end_pos": "Gary standing by the pallet, Tony seated on its edge"
+ },
+ {
+  "beat": "SC05-SH26b",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L043",
+  "voice": "off",
+  "action": "Tony, despite himself, half a smile; mouth closed",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'a minute.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 3.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T11",
+  "take_kind": "multi",
+  "split": "length",
+  "start_pos": "Gary standing by the pallet, Tony seated on its edge"
+ },
+ {
+  "beat": "SC05-SH26c",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C3",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "slightly low on Gary: the dare",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": true,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "L043",
+  "voice": "lip-sync",
+  "action": "Gary, plain now, nodding at Tony's knee",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C3",
+   "C1"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'a minute.'",
+  "ingredients": [
+   "C3",
+   "C1",
+   "L-YARD",
+   "VOICE-C3"
+  ],
+  "mirror_of": null,
+  "duration": 5.6,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T11"
+ },
+ {
+  "beat": "SC05-SH27",
+  "group": "SC05",
+  "scene": "SC05",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "behind",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "high wide: Gary back to work, Tony alone on the pallet with his knee",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D4",
+  "face": false,
+  "light": {
+   "source": "the bright overcast sky over the yard",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "Turn — bright, open overcast",
+   "kelvin": 6500
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Gary picks up another slab and walks off with it; Tony stays sitting on the pallet, looking down at his right knee",
+  "pace": "Gary walks four steps",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C3"
+  ],
+  "location": "L-YARD",
+  "cut": "hold",
+  "ingredients": [
+   "C1",
+   "C3",
+   "L-YARD"
+  ],
+  "mirror_of": null,
+  "duration": 2.6,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC05-T11",
+  "end_pos": "Tony alone seated on the pallet; Gary at the flatbed"
+ },
+ {
+  "beat": "SC06-SH01",
+  "group": "SC06",
+  "scene": "SC06",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D5",
+  "face": true,
+  "light": {
+   "source": "the warm glass pendant over the table",
+   "key_side": "R",
+   "time": "night",
+   "arc": "Turn — warm tungsten in the dark",
+   "kelvin": 2800
+  },
+  "lines": "L044",
+  "voice": "lip-sync",
+  "action": "Sue at the round table picks up a small black strap from beside the post, holding it flat in her palm front side up, and looks up at Tony in the doorway",
+  "pace": "one pick-up",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'that?'",
+  "ingredients": [
+   "C2",
+   "L-KITCHEN",
+   "P-HOUSE",
+   "VOICE-C2",
+   "front.webp"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC06-T1",
+  "take_kind": "multi",
+  "start_pos": "Sue seated at the small round oak table under the pendant, the strap lying beside the stack of post; Tony in the kitchen doorway from the hall"
+ },
+ {
+  "beat": "SC06-SH02",
+  "group": "SC06",
+  "scene": "SC06",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over Sue onto Tony in the doorway: caught",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D5",
+  "face": true,
+  "light": {
+   "source": "the warm glass pendant over the table",
+   "key_side": "R",
+   "time": "night",
+   "arc": "Turn — warm tungsten in the dark",
+   "kelvin": 2800
+  },
+  "lines": "L045",
+  "voice": "lip-sync",
+  "action": "Tony in the doorway, offhand",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C2"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'on.'",
+  "ingredients": [
+   "C1",
+   "C2",
+   "L-KITCHEN",
+   "P-HOUSE",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC06-T1"
+ },
+ {
+  "beat": "SC06-SH03",
+  "group": "SC06",
+  "scene": "SC06",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D5",
+  "face": true,
+  "light": {
+   "source": "the warm glass pendant over the table",
+   "key_side": "R",
+   "time": "night",
+   "arc": "Turn — warm tungsten in the dark",
+   "kelvin": 2800
+  },
+  "lines": "L046",
+  "voice": "lip-sync",
+  "action": "Sue, tired of hoping",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'before.'",
+  "ingredients": [
+   "C2",
+   "L-KITCHEN",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 2.1,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC06-T1"
+ },
+ {
+  "beat": "SC06-SH04",
+  "group": "SC06",
+  "scene": "SC06",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "slightly low: the first time he pushes back",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-LOW"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D5",
+  "face": true,
+  "light": {
+   "source": "the warm glass pendant over the table",
+   "key_side": "R",
+   "time": "night",
+   "arc": "Turn — warm tungsten in the dark",
+   "kelvin": 2800
+  },
+  "lines": "L047",
+  "voice": "lip-sync",
+  "action": "Tony, steady, holds out his hand for the strap",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-KITCHEN",
+  "cut": "on 'watch.'",
+  "ingredients": [
+   "C1",
+   "L-KITCHEN",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-TURN",
+  "layout": "full",
+  "take": "SC06-T1",
+  "end_pos": "Sue seated holding the strap out; Tony a step into the kitchen, hand out for it"
+ },
+ {
+  "beat": "SC07-SH01",
+  "group": "SC07",
+  "scene": "SC07",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "the same high angle behind him as SC03: forwards this time, hands off the rail",
+  "mode": 4,
+  "shot": [
+   "SH-REAR",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D6",
+  "face": false,
+  "light": {
+   "source": "the front-door glass, warm morning sun",
+   "key_side": "front",
+   "time": "morning",
+   "arc": "After — the light opens",
+   "kelvin": 5600,
+   "why": "the front door glass is the only light on the stairs; he comes down into it"
+  },
+  "lines": "L048",
+  "voice": "VO",
+  "action": "Tony walks down the steep narrow stairs facing forwards, hands free of the rail, one foot per step, at an easy pace",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STAIRS",
+  "cut": "on 'forwards.'",
+  "ingredients": [
+   "C1",
+   "L-STAIRS",
+   "P-HOUSE",
+   "front.webp"
+  ],
+  "mirror_of": "SC03-SH02",
+  "duration": 3.5,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC07-T1",
+  "take_kind": "multi",
+  "start_pos": "Tony at the top of the flight facing down the stairs, hands at his sides, the strap on his right knee"
+ },
+ {
+  "beat": "SC07-SH02",
+  "group": "SC07",
+  "scene": "SC07",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low from the hall: his face coming down into the light — and he says nothing",
+  "mode": 4,
+  "shot": [
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D6",
+  "face": true,
+  "light": {
+   "source": "the front-door glass, warm morning sun",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "After — the light opens",
+   "kelvin": 5600,
+   "why": "the front door glass is the only light on the stairs; he comes down into it"
+  },
+  "lines": "L048",
+  "voice": "VO",
+  "action": "Tony reaches the bottom steps facing forwards, the black strap visible on his bare right knee below the work shorts; a small private look; mouth closed",
+  "pace": "one step per second",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STAIRS",
+  "cut": "as he steps onto the hall floor",
+  "ingredients": [
+   "C1",
+   "L-STAIRS",
+   "P-HOUSE",
+   "front.webp"
+  ],
+  "mirror_of": "SC03-SH03",
+  "duration": 3.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC07-T1",
+  "end_pos": "Tony standing on the hall floor at the foot of the stairs"
+ },
+ {
+  "beat": "SC07-SH03",
+  "group": "SC07",
+  "scene": "SC07",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D6",
+  "face": true,
+  "light": {
+   "source": "bright morning sun over the yard",
+   "key_side": "L",
+   "time": "midday",
+   "arc": "After — sun on the yard",
+   "kelvin": 5600
+  },
+  "lines": "L049",
+  "voice": "off",
+  "action": "Tony carries a sandstone slab briskly across the yard to the flatbed; a young labourer loading bricks calls after him, grinning",
+  "pace": "brisk, one step per second",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "X2"
+  ],
+  "location": "L-YARD",
+  "cut": "on 'Tone.'",
+  "ingredients": [
+   "C1",
+   "X2",
+   "L-YARD",
+   "VOICE-X2"
+  ],
+  "mirror_of": null,
+  "duration": 2.1,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC07-T2",
+  "start_pos": "Tony walking across the yard with a slab, the labourer at the flatbed",
+  "end_pos": "Tony at the flatbed setting the slab down"
+ },
+ {
+  "beat": "SC07-SH04",
+  "group": "SC07",
+  "scene": "SC07",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "profile track beside him: a man walking at full pace down his own street",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D6",
+  "face": true,
+  "light": {
+   "source": "the low afternoon sun down the street",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm low sun",
+   "kelvin": 5000
+  },
+  "lines": "L050",
+  "voice": "off",
+  "action": "Tony walks home briskly along the pavement past the terraced fronts; an older neighbour putting her bin out turns as he passes and calls after him",
+  "pace": "brisk, one step per second, five steps",
+  "rig": "F9",
+  "cast": [
+   "C1",
+   "X3"
+  ],
+  "location": "L-STREET",
+  "cut": "on 'back.'",
+  "ingredients": [
+   "C1",
+   "X3",
+   "L-STREET",
+   "VOICE-X3"
+  ],
+  "mirror_of": null,
+  "duration": 2.9,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC07-T3",
+  "take_kind": "multi",
+  "start_pos": "Tony walking along the pavement past the terraced fronts, the neighbour at her gate with her bin ahead of him"
+ },
+ {
+  "beat": "SC07-SH05",
+  "group": "SC07",
+  "scene": "SC07",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D6",
+  "face": true,
+  "light": {
+   "source": "the low afternoon sun down the street",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm low sun",
+   "kelvin": 5000
+  },
+  "lines": "L051",
+  "voice": "VO",
+  "action": "Tony, still walking, a small smile he keeps to himself; mouth closed",
+  "pace": "walking",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STREET",
+  "cut": "end of VO",
+  "ingredients": [
+   "C1",
+   "L-STREET"
+  ],
+  "mirror_of": null,
+  "duration": 4.2,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC07-T3",
+  "end_pos": "Tony walking on down the street"
+ },
+ {
+  "beat": "SC08-SH01",
+  "group": "SC08",
+  "scene": "SC08",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "high",
+  "side": "three-quarter-back",
+  "scale": "FULL",
+  "fg": "through",
+  "why": "high past Sue at the back door: him on his knees on the patio he is laying — the trade back",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D7",
+  "face": true,
+  "light": {
+   "source": "the low west sun over the garden wall",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "After — honeyed low sun",
+   "kelvin": 4300
+  },
+  "lines": "L052",
+  "voice": "lip-sync",
+  "action": "Tony kneels on the half-laid sandstone patio, tapping a flag level with the rubber mallet; Sue steps into the back doorway and stops",
+  "pace": "two taps of the mallet",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C2"
+  ],
+  "location": "L-GARDEN",
+  "cut": "on 'Tony…'",
+  "ingredients": [
+   "C1",
+   "C2",
+   "L-GARDEN",
+   "P-HOUSE",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC08-T1",
+  "take_kind": "multi",
+  "start_pos": "Tony kneeling on the half-laid patio with the rubber mallet, his back three-quarter to the house; Sue stepping into the back doorway"
+ },
+ {
+  "beat": "SC08-SH02",
+  "group": "SC08",
+  "scene": "SC08",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D7",
+  "face": true,
+  "light": {
+   "source": "the low west sun over the garden wall",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "After — honeyed low sun",
+   "kelvin": 4300
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Sue in the back doorway, watching him; mouth closed, her eyes filling",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-GARDEN",
+  "cut": "hold",
+  "ingredients": [
+   "C2",
+   "L-GARDEN",
+   "P-HOUSE"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC08-T1"
+ },
+ {
+  "beat": "SC08-SH03",
+  "group": "SC08",
+  "scene": "SC08",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "low wide from the end of the garden, pulling back: the man on his knees, the woman in the doorway, the whole patio",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D7",
+  "face": true,
+  "light": {
+   "source": "the low west sun over the garden wall",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "After — honeyed low sun",
+   "kelvin": 4300
+  },
+  "lines": "L053",
+  "voice": "VO",
+  "action": "Tony, still kneeling, sets the next flag and taps it; Sue leans in the doorway watching; the camera pulls slowly back down the garden",
+  "pace": "slow pull-back",
+  "rig": "F6",
+  "cast": [
+   "C1",
+   "C2"
+  ],
+  "location": "L-GARDEN",
+  "cut": "end of VO",
+  "ingredients": [
+   "C1",
+   "C2",
+   "L-GARDEN"
+  ],
+  "mirror_of": null,
+  "duration": 7.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC08-T1",
+  "end_pos": "Tony kneeling on the patio, Sue leaning in the back doorway"
+ },
+ {
+  "beat": "SC09-SH01",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low sun through the windscreen",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "L054",
+  "voice": "lip-sync",
+  "action": "Sue in the passenger seat this time, as the car turns into the garden-centre car park",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C2"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'here?'",
+  "ingredients": [
+   "C2",
+   "L-CAR",
+   "VOICE-C2"
+  ],
+  "mirror_of": null,
+  "duration": 2.5,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T1",
+  "take_kind": "multi",
+  "start_pos": "Tony driving (right seat), Sue in the passenger seat (left), the car pulling into a bay"
+ },
+ {
+  "beat": "SC09-SH02",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "profile",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "profile at the wheel: he is driving now",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low sun through the windscreen",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "L055",
+  "voice": "lip-sync",
+  "action": "Tony at the wheel, easy",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "on 'compost.'",
+  "ingredients": [
+   "C1",
+   "L-CAR",
+   "VOICE-C1"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T1",
+  "end_pos": "the car parked, both in their seats"
+ },
+ {
+  "beat": "SC09-SH03",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "high",
+  "side": "three-quarter",
+  "scale": "WIDE",
+  "fg": "clean",
+  "why": "the same high wide as the hook: Sue at the boot, a car backing out at her — the mirror",
+  "mode": 4,
+  "shot": [
+   "SH-WIDE",
+   "SH-HIGH"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low late-afternoon sun across the car park",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Sue stands at the open boot of the silver hatchback; a car two bays along reverses out fast toward her; Tony is ten feet behind her",
+  "pace": "the car backs out quickly",
+  "rig": "F2",
+  "cast": [
+   "C2",
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "as the car starts back",
+  "ingredients": [
+   "C2",
+   "C1",
+   "L-CARPARK"
+  ],
+  "mirror_of": "SC01-SH01",
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T2",
+  "take_kind": "multi",
+  "start_pos": "Sue at the open boot of the silver hatchback, back to the row; Tony ten feet behind her facing her; a car two bays along starting to reverse"
+ },
+ {
+  "beat": "SC09-SH04",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "profile",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "the same low profile as the hook: three strides, no fall",
+  "mode": 4,
+  "shot": [
+   "SH-PROFILE",
+   "SH-LOW"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low late-afternoon sun across the car park",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Tony covers the ten feet to her in three long strides and steers her clear with an arm round her back as the car brakes and stops",
+  "pace": "three strides in two seconds",
+  "rig": "F5",
+  "cast": [
+   "C1",
+   "C2"
+  ],
+  "location": "L-CARPARK",
+  "cut": "as the car stops",
+  "ingredients": [
+   "C1",
+   "C2",
+   "L-CARPARK"
+  ],
+  "mirror_of": "SC01-SH03",
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T2"
+ },
+ {
+  "beat": "SC09-SH05",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C4",
+  "height": "eye",
+  "side": "three-quarter",
+  "scale": "MEDIUM",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-MED",
+   "SH-34"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low late-afternoon sun across the car park",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "L056",
+  "voice": "lip-sync",
+  "action": "the same garden-centre lad jogs up, stops a step away, to Tony",
+  "pace": "three jogging steps, then still",
+  "rig": "F2",
+  "cast": [
+   "C4"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'sir?'",
+  "ingredients": [
+   "C4",
+   "L-CARPARK",
+   "VOICE-C4"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T2"
+ },
+ {
+  "beat": "SC09-SH06",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "ots",
+  "scale": "MCU",
+  "fg": "through",
+  "why": "over the lad onto Tony, arm round Sue: the line given back",
+  "mode": 4,
+  "shot": [
+   "SH-OTS"
+  ],
+  "speaking": true,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low late-afternoon sun across the car park",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "L057",
+  "voice": "lip-sync",
+  "action": "Tony, his arm round Sue, easy",
+  "pace": "still",
+  "rig": "F2",
+  "cast": [
+   "C1",
+   "C2",
+   "C4"
+  ],
+  "location": "L-CARPARK",
+  "cut": "on 'love.'",
+  "ingredients": [
+   "C1",
+   "C2",
+   "C4",
+   "L-CARPARK",
+   "VOICE-C1"
+  ],
+  "mirror_of": "SC01-SH07",
+  "duration": 2.1,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T2",
+  "end_pos": "Tony with his arm round Sue beside the open boot, the lad a step away"
+ },
+ {
+  "beat": "SC09-SH07",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "low",
+  "side": "three-quarter",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "low: the 25-kilo bag goes in without a thought",
+  "mode": 4,
+  "shot": [
+   "SH-LOW",
+   "SH-34"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low late-afternoon sun across the car park",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "",
+  "voice": "",
+  "action": "Tony picks a 25-kilo bag of compost off the trolley with both hands and swings it into the boot in one move",
+  "pace": "one swing",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-CARPARK",
+  "cut": "as the bag lands",
+  "ingredients": [
+   "C1",
+   "L-CARPARK"
+  ],
+  "mirror_of": null,
+  "duration": 2.0,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T3",
+  "split": "length",
+  "start_pos": "Tony at the open boot beside a trolley with a plain bag of compost",
+  "end_pos": "the bag in the boot"
+ },
+ {
+  "beat": "SC09-SH08",
+  "group": "SC09",
+  "scene": "SC09",
+  "type": "SHOT",
+  "subject": "C2",
+  "height": "eye",
+  "side": "front",
+  "scale": "MCU",
+  "fg": "clean",
+  "why": "",
+  "mode": 4,
+  "shot": [
+   "SH-EYE"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "eyes",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D8",
+  "face": true,
+  "light": {
+   "source": "warm low sun through the windscreen",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm gold",
+   "kelvin": 4800
+  },
+  "lines": "",
+  "voice": "",
+  "action": "in the car, Sue leans across and kisses Tony on the cheek; he smiles at the windscreen",
+  "pace": "one lean",
+  "rig": "F2",
+  "cast": [
+   "C2",
+   "C1"
+  ],
+  "location": "L-CAR",
+  "cut": "hold",
+  "ingredients": [
+   "C2",
+   "C1",
+   "L-CAR"
+  ],
+  "mirror_of": null,
+  "duration": 2.6,
+  "music": "MUS-AFTER",
+  "layout": "full",
+  "take": "SC09-T4",
+  "start_pos": "Tony at the wheel, Sue in the passenger seat",
+  "end_pos": "Sue's head on his shoulder"
+ },
+ {
+  "beat": "SC10-SH01",
+  "group": "SC10",
+  "scene": "SC10",
+  "type": "INSERT",
+  "subject": "C1",
+  "height": "low",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "front-on at knee height in the garden: the strap on the spot",
+  "mode": 4,
+  "shot": [
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "shallow",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "D7",
+  "face": false,
+  "light": {
+   "source": "the low west sun over the garden wall",
+   "key_side": "L",
+   "time": "evening",
+   "arc": "After — honeyed low sun",
+   "kelvin": 4300
+  },
+  "lines": "L058",
+  "voice": "VO",
+  "action": "Tony's bare right knee as he kneels up on the patio, the black strap on it, the notch at the bottom of the kneecap; the low sun on the shell",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-GARDEN",
+  "cut": "on 'not your age.'",
+  "ingredients": [
+   "C1",
+   "L-GARDEN",
+   "front.webp",
+   "INFO-PLACEMENT"
+  ],
+  "mirror_of": null,
+  "duration": 11.0,
+  "music": "MUS-OFFER",
+  "layout": "full",
+  "take": "SC10-T1",
+  "start_pos": "Tony's bare right knee as he kneels up on the patio, the black strap on it, the notch at the bottom of the kneecap; the low sun on the shell",
+  "end_pos": "Tony's bare right knee as he kneels up on the patio, the black strap on it, the notch at the bottom of the kneecap; the low sun on the shell"
+ },
+ {
+  "beat": "SC10-SH02",
+  "group": "SC10",
+  "scene": "SC10",
+  "type": "SHOT",
+  "subject": "C1",
+  "height": "eye",
+  "side": "behind",
+  "scale": "FULL",
+  "fg": "clean",
+  "why": "from behind as he walks up his street in jeans: nobody knows it's there",
+  "mode": 4,
+  "shot": [
+   "SH-REAR"
+  ],
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "deep",
+   "dof": "deep",
+   "rack": null,
+   "moving_subject": true
+  },
+  "story_day": "D9",
+  "face": false,
+  "light": {
+   "source": "the low afternoon sun down the street",
+   "key_side": "R",
+   "time": "afternoon",
+   "arc": "After — warm low sun",
+   "kelvin": 5000
+  },
+  "lines": "L060",
+  "voice": "VO",
+  "action": "Tony in jeans walks briskly up the pavement of his street away from us, an ordinary man",
+  "pace": "brisk, one step per second",
+  "rig": "F2",
+  "cast": [
+   "C1"
+  ],
+  "location": "L-STREET",
+  "cut": "on 'there.'",
+  "ingredients": [
+   "C1",
+   "L-STREET"
+  ],
+  "mirror_of": null,
+  "duration": 6.0,
+  "music": "MUS-OFFER",
+  "layout": "full",
+  "take": "SC10-T2",
+  "start_pos": "Tony walking away up the pavement",
+  "end_pos": "further up the street"
+ },
+ {
+  "beat": "SC10-SH03",
+  "group": "SC10",
+  "scene": "SC10",
+  "type": "INSERT",
+  "subject": "PACK",
+  "height": "high",
+  "side": "front",
+  "scale": "CU",
+  "fg": "clean",
+  "why": "high on the open box: two straps, one for each knee",
+  "mode": 4,
+  "shot": [
+   "SH-HIGH",
+   "SH-CU"
+  ],
+  "speaking": false,
+  "product_beat": true,
+  "focus": {
+   "plane": "product",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": null,
+  "face": false,
+  "light": {
+   "source": "the warm pendant over the kitchen table",
+   "key_side": "R",
+   "time": "evening",
+   "arc": "Offer — warm",
+   "kelvin": 3200
+  },
+  "lines": "L061",
+  "voice": "VO",
+  "action": "the open matte-black box on the oak kitchen table, two straps lying flat side by side inside it, shells up",
+  "pace": "still; slow push-in",
+  "rig": "F1",
+  "cast": [],
+  "location": "L-KITCHEN",
+  "cut": "on 'grab it now.'",
+  "ingredients": [
+   "L-KITCHEN",
+   "package_open.jpg",
+   "front.webp"
+  ],
+  "mirror_of": null,
+  "duration": 12.1,
+  "music": "MUS-OFFER",
+  "layout": "full",
+  "take": "SC10-T3",
+  "start_pos": "the open matte-black box on the oak kitchen table, two straps lying flat side by side inside it, shells up",
+  "end_pos": "the open matte-black box on the oak kitchen table, two straps lying flat side by side inside it, shells up"
+ }
+]
