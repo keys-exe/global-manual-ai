@@ -18,7 +18,8 @@ WARDROBE.json:
              "outfits": {"N": "slate-grey cardigan, cream blouse, navy knee-length skirt", "C3": "..."},
              "events": [ {"id": "B3-E1", "location": "L-BEDROOM", "visibility": "VISIBLE", "beats": ["SC03-SH06", ...]} ]},
             ... ],                                   # in story order
-  "talking_heads": [ {"day": "H-D1", "subject": "H", "outfit": "...", "beats": ["TH-01", ...]} ]   # one per recording day
+  "talking_heads": [ {"day": "H-D1", "subject": "H", "outfit": "...", "beats": ["TH-01", ...]} ],  # one per recording day
+  "names": {"N": "HER", "C1": "Barbara"}          # optional: column labels for --md
 }
 The older shape {"<person>": {"<day>": "<outfit>"}} is read too; its days then have no event or source (SOURCE fails).
 
@@ -71,7 +72,9 @@ def main():
     a = ap.parse_args()
     am = json.loads(Path(a.actmap).read_text())
     rows = am if isinstance(am, list) else am.get("rows", [])
-    days, ths = load_days(json.loads(Path(a.wardrobe).read_text()))
+    wj = json.loads(Path(a.wardrobe).read_text())
+    days, ths = load_days(wj)
+    names = (wj.get("names") or {}) if isinstance(wj, dict) else {}
     out = []
 
     def fail(kind, where, detail):
@@ -136,19 +139,26 @@ def main():
             fail("TH", r.get("beat", "?"), "talking-head row on no recording day")
 
     if a.md:
+        # one block per story day, in story order (§21): what makes it a day, who wears what, its events and beats
+        order = list(names)
         md = ["### Wardrobe map — per story day and event", "",
-              "One outfit per person per story day, in story order; each day's event and what makes it a day. Never grouped by act (§21, V7.89.0).", "",
-              "| Day | Event | Source | " + " | ".join(sorted({p for d in days for p in (d.get('outfits') or {})})) + " | Events · beats |"]
-        persons = sorted({p for d in days for p in (d.get("outfits") or {})})
-        md.append("|" + "---|" * (len(persons) + 4))
+              "One block per story day, in story order: the event, what makes it a day, each person's outfit, and the "
+              "day's events with their beats. Never grouped by act (§21, V7.89.0).", ""]
         for d in days:
-            evs = " · ".join(f"{e.get('id', '')} {e.get('location', '')} {e.get('visibility', '')}: {', '.join(e.get('beats') or [])}".strip()
-                             for e in d.get("events") or [])
-            md.append(f"| {d.get('day')} | {d.get('event', '')} | {d.get('source', '')} | "
-                      + " | ".join((d.get("outfits") or {}).get(p, "—") for p in persons) + f" | {evs} |")
+            outfits = d.get("outfits") or {}
+            md += [f"### {d.get('day')} — {d.get('event', '')}", "", f"*Why it is a day:* {d.get('source', '')}", "",
+                   "| Who | Outfit |", "|---|---|"]
+            for pid in sorted(outfits, key=lambda x: (order.index(x) if x in order else len(order), x)):
+                md.append(f"| {names.get(pid, pid)} | {outfits[pid]} |")
+            evs = d.get("events") or []
+            if evs:
+                md += ["", "| Event | Place | Beats |", "|---|---|---|"]
+                md += [f"| {e.get('id', '')} | {e.get('location', '')}{' · ' + e['visibility'] if e.get('visibility') else ''} | "
+                       f"{', '.join(e.get('beats') or [])} |" for e in evs]
+            md.append("")
         if ths:
-            md += ["", "### Talking heads — per recording day", "", "| Recording day | Subject | Outfit | Beats |", "|---|---|---|---|"]
-            md += [f"| {t.get('day')} | {t.get('subject')} | {t.get('outfit', '')} | {', '.join(t.get('beats') or [])} |" for t in ths]
+            md += ["### Talking heads — per recording day", "", "| Recording day | Who | Outfit | Beats |", "|---|---|---|---|"]
+            md += [f"| {t.get('day')} | {names.get(t.get('subject'), t.get('subject'))} | {t.get('outfit', '')} | {', '.join(t.get('beats') or [])} |" for t in ths]
         Path(a.md).write_text("\n".join(md) + "\n", encoding="utf-8")
 
     if a.json:

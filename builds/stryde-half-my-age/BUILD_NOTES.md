@@ -127,3 +127,11 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
 - 2026-10-02 — SC03-SH08 v9 (Seedance gen 9, 252 cr) on L-BEDROOM-REV, framed exactly as the reverse plate: chest with its open drawer at the near-left edge, her in profile looking at him in the doorway, bed on the right, "It shuts." (user: "look the drawer is at the left side"). v8 moved to Old. To check.
 - 2026-10-02 — User: "THE SHOT 7 AND 8 MAKE IT IN ONE VIDEO SO IT IS A CONTINUES ONE" → new card SC03-SH07-08 (Seedance, 8 s, 504 cr) on the reverse plate: he says "That drawer won’t shut soon." from the doorway, she lifts her head, turns to him in profile and answers "It shuts." — one take, no cut. To check; once confirmed it replaces SH07 + SH08 in the edit (those two cards stay as they are until then). LESSONS L26 / HT23.
 - 2026-10-02 — User: "THE 9 AND 10 TOO" → new card SC03-SH09-10 (Seedance, 12 s, 756 cr): opens on SH09 v3's framing (still attached), she listens, says "Course, love. Easier." at 2.7–5.5 s, lowers the gold phone to her lap while the camera slowly pulls back to the room. One take. To check; once confirmed it replaces SH09 + SH10 in the edit; VO L029 and the sister's line L027 laid in the edit as before. L26 extended.
+
+## 2026-10-02 — wardrobe map re-laid per story day and event (V7.89.0, user: "put this new in the half my age")
+
+- `step5/wardrobe.json`: the same outfits, now one block per story day in story order (B1, B2, B3, B4, B5, A1, A1g, A1t, A2, A3, HA, HB, HC, HE, A4). Each block has its event, why it is a day (`source`), and its events with their beats. `wardrobe.py` PASS: 15 days, every act-map row with people covered.
+- The act map's sub-days are now named as events: B3p (physio), B3q (pills, kitchen) and B3d (the drawer evening) are events of B3, in B3's outfit. A1 / A1g / A1t are the one-off proof days; their outfits are not written yet (set at SC09).
+- Husband B3 now lists the brown lace-ups from OUT-C3-B3 v2.
+- `docs/wardrobe` rewritten on Plan (`HbGWTaJaW2wM8kpnutR922`) and Current (`H6zyYUirdmHdP4p5vwNAcU`, text only), v3 each. STEP4_5.md section replaced; no render, card or outfit changed.
+- Open for the team: the husband wears the same outfit on B1 (evening) and B2 (next morning), against §14A W2.
