@@ -1,0 +1,28 @@
+| Take | Kind | Shots | Seconds | Location | Ingredients | Start → end |
+|---|---|---|---|---|---|---|
+| SC01-T1 | multi | SH01, SH02, SH03 | 12 | L-YARD | C1, C2, C3, C5, C6, CAKE-CARD, L-YARD, N, VOICE-C1, X1 | the table full on both sides under the bulbs; Greg seated mid-table on the far side facing → Greg standing beside Susan on her left (frame right), glass raised; Su |
+| SC01-T2 | one-take | SH04 | 9 | L-YARD | L-YARD, N | Susan seated, Greg standing on her left just out of frame, the white cake soft in the near → Susan still, hand on the table edge, eyes level |
+| SC01-T3 | multi | SH05, SH06, SH07 | 13 | L-YARD | C2, L-YARD, N | Susan seated in profile facing frame left toward Greg standing just out of frame left → Susan still at the table, hand on the edge; Greg standing on her left |
+| SC01-T4 | multi | SH08, SH09 | 7 | L-YARD | C1, C2, CAKE-CARD, L-YARD, N, X1 | Greg standing beside Susan, the table frozen → Greg seated with his drink, Susan beside him still, the cake untouched |
+| SC02-T1 | multi | SH01, SH02, SH03, SH04 | 15 | L-YARD | C5, C6, CAKE-CARD, L-YARD, N | Susan seated at the table, napkin in her lap, the cake in front of her → the back door shut, Susan gone inside; the party behind the camera |
+| SC03-T1 | multi | SH01, SH02 | 15 | L-PORCH-IN | L-PORCH-IN, L-YARD, N | Susan just inside the shut back door, her back to the glass, the party glow behind her hea → Susan against the door, eyes open |
+| SC04-T1 | insert | SH01 | 5 | P-HOUSE | INVITE-CARD, N, P-HOUSE | a plain invite card face-up on the kitchen island, her hand coming in → invite face-down under the phone, her hand leaving |
+| SC04-T2 | single | SH02 | 4 | L-GATHERING | C4, L-GATHERING, N | the family on the grey sectional around the cake, the daughter in the middle; Susan standi → Susan one step further back, phone up |
+| SC04-T3 | multi | SH03, SH04, SH05 | 11 | L-VANITY | L-VANITY, N, OLD-FOUNDATION-CARD | Susan seated on the stool at the dressing table facing the mirror, a plain unlabelled foun → Susan at the dressing table, sponge lowered, still |
+| SC05-T1 | multi | SH01, SH02 | 11 | L-VANITY-REV | C3, L-VANITY, L-VANITY-REV, N, VOICE-C3 | Susan sitting on the end of the bed in her cardigan; the bedroom door open; Beth coming th → Susan on the end of the bed, Beth inside the door with the garment bag |
+| SC05-T2 | multi | SH03, SH04 | 14 | L-VANITY | C3, L-VANITY, N | Beth standing by the bed with the garment bag; Susan on the end of the bed → Susan seated on the stool facing the mirror; Beth standing at her left |
+| SC05-T3 | multi | SH05 | 10 | L-VANITY | C3, L-VANITY, N, PROD-BALM, PROD-CLOSED, PROD-HAND-CARD | Susan seated facing the mirror, Beth at her left shoulder → the balm end uncapped in Beth's right hand at Susan's cheek |
+| SC05-T4 | insert | SH06 | 3 | L-VANITY | COLOUR-FRONT-CARD, N, PROD-BALM | the balm end at her cheekbone → a white stripe on her cheek, the stick lifting away |
+| SC05-T5 | insert | SH07 | 8 | L-VANITY | COLOUR-FRONT-CARD, N, PROD-BRUSH | a white stripe on her cheek, the brush end touching its lower end → the cheek evened, every line still there |
+| SC05-T6 | multi | SH08, SH09, SH10 | 15 | L-VANITY | C3, L-VANITY, N | Susan seated facing the mirror, Beth at her left shoulder holding the closed stick → Susan turned a little toward Beth |
+| SC05-T7 | single | SH11 | 2 | L-VANITY | C3, L-VANITY | Susan seated at the mirror turned a little toward Beth behind her left shoulder → Susan seated at the mirror, Beth standing behind her left shoulder |
+| SC06-T1 | multi | SH01, SH02 | 8 | L-VANITY | C3, L-VANITY, N | Susan seated at the mirror, Beth behind her left shoulder → the two of them in the mirror, Beth's hand on Susan's shoulder |
+| SC07-T1 | multi | SH01, SH02 | 7 | L-HOSTS-FRONT | C3, L-HOSTS-FRONT, L-YARD, N | the car parked at the curb in front of the house, Susan at the wheel, Beth in the passenge → Susan and Beth in the car, about to get out |
+| SC07-T2 | multi | SH03, SH04 | 10 | L-YARD | C2, C3, C5, L-YARD, L-YARD-REV, N | the party at the long table under the bulbs, the cake on the table; Susan and Beth at the  → Paula and Susan facing each other on the lawn, holding hands |
+| SC07-T3 | multi | SH05, SH06, SH07 | 10 | L-YARD | C1, C2, CAKE-CARD, L-YARD, N | Paula and Susan facing each other on the lawn, holding hands → the party going on, Susan and Paula together on the lawn |
+| SC08-T1 | multi | SH01, SH02, SH03 | 11 | L-YARD | C1, C2, C3, L-YARD, N, VOICE-C1, VOICE-N | Susan standing on the lawn near the table with Beth and Paula a step away; Greg arriving a → Susan with Beth and Paula by the table, Greg alone two steps behind |
+| SC08-T2 | single | SH04 | 7 | L-YARD | C1, C2, C3, C5, C6, L-YARD, N, X1 | Susan with Beth and Paula by the table, friends around; Greg alone two steps behind → the same |
+| SC09-T1 | multi | SH01 | 6 | L-YARD | C2, C3, CAKE-CARD, L-YARD, N | Susan at the table between Beth and Paula → Susan with a plate of cake, laughing |
+| SC09-T2 | single | SH02 | 5 | L-YARD-REV | C2, C3, C5, C6, L-YARD-REV, N, X1 | the long table full under the bulbs, Susan in the middle between Beth and Paula → the table full |
+| SC09-T3 | insert | SH03 | 8 | PRODUCT | HERO-CARD, PROD-CLOSED, PROD-PRIMER | the three products on the surface, wordmarks to camera → the same, closer |
+| SC09-T4 | single | SH04 | 5 | L-YARD | L-YARD, N | Susan at the table under the bulbs, friends around her → the same, Susan smiling |
