@@ -1,0 +1,45 @@
+{
+ "beat": "HK3-01",
+ "kind": "image",
+ "mode": 1,
+ "prompt": "Keep this photo exactly as it is — Image 1, the makeup counter: the same glossy white counter, glass case, mirror and back wall of nude bottles. Add, for the line — Every makeup counter told me nothing would ever match my redness. So why am I returning the one stick that finally did? —: the counter woman judging her skin. Over the saleswoman's right shoulder, from behind the counter, at counter height. Image 2 is the saleswoman: the same face, sleek black low bun and black tunic; her shoulder and the back of her head fill the left third of the frame. Image 3 is the customer: the same woman, bare face with blotchy redness on both cheeks, seated on the stool facing us, in a camel coat over a cream sweater. Exactly two people; the saleswoman holds one unlabelled beige foundation bottle beside the customer's right jaw, where three short beige swatch stripes sit on the red skin, matching nothing; the customer's hands rest in her lap; her eyes on the saleswoman, mouth closed. No readable text, no logos, no other customers.",
+ "script_line": "Every makeup counter told me nothing would ever match my redness. So why am I returning the one stick that finally did?",
+ "face": true,
+ "room": true,
+ "product": false,
+ "body": true,
+ "refs": [
+  {
+   "label": "L-COUNTER plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "C1-COUNTER sheet (confirmed)",
+   "kind": "character"
+  },
+  {
+   "label": "N-BEFORE v2 sheet (confirmed)",
+   "kind": "character"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "L-COUNTER v1 (Higgsfield job 0a1ed1e5)",
+ "taste": [
+  "HT18",
+  "HT19",
+  "HT20",
+  "HT21",
+  "HT17"
+ ],
+ "anatomy": false,
+ "pair": [
+  "gpt_image_2_5",
+  "gpt_image_2_5"
+ ],
+ "motion_plan": "From this frame: the saleswoman lowers the bottle from her jaw and slowly shakes her head once — about 2 s; phone held still at counter height.",
+ "media": [
+  "0a1ed1e5-3ba1-40cb-b0e9-82858a419537",
+  "399b12ef-dd88-49c2-aaee-db48e4223da8",
+  "8861a293-49b2-4f55-b76d-2a2f9a20911b"
+ ]
+}
