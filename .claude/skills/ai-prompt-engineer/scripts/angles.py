@@ -24,7 +24,11 @@ ROWS.json is a list of shot/beat rows in cut order (talking heads may be include
               "moving_subject": false},               # the subject travels toward or away from the lens
     "story_day": 2,
     "anat": {"style": "S1".."S7", "why": "...", "move": "orbit-left" | "orbit-right" | "push-in" | "pull-back"
-             | "rise" | "tilt" | "locked"},           # anatomy / mechanism rows (type MECH or kind anatomy|mechanism)
+             | "rise" | "tilt" | "locked",
+             "scope": "macro" | "close" | "pair" | "walking" | "load" | "whole",   # what the picture holds (V7.91.0)
+             "lead": "the team's look call, in their words",  # that style leads; the range still runs (V7.91.0)
+             "only": false},                          # true only when the team ruled out every other style in words
+                                                      # anatomy / mechanism rows (type MECH or kind anatomy|mechanism)
     "pair_of": null,                                  # second row of a matched problem -> relief pair
     "face": true,                                     # a face is a subject of the shot
     "light": {"source": "kitchen window, east wall", "key_side": "L" | "R" | "back" | "front",
@@ -55,7 +59,13 @@ Checks (any FAIL → exit 1):
            move; 3-5 rows use >= 2 styles, 6+ use >= 3; no style on over half (4+), never one style three in a row;
            no two in a row with the same style, height, side and scale; any four in a row have >= 3 setups; the low
            three-quarter on at most a third (3+); no move three in a row, none on over half (4+). pair_of exempts.
-           anat.lock on every anatomy row (the team's one-look call, V7.89.3) sets the style checks aside.
+           SCOPE (V7.91.0, user 2026-10-02 — "closeup on knee or two knees or both feet walking or with stairs"): every
+           row names what the picture holds (macro · close · pair · walking · load · whole); 3-4 rows use >= 2 scopes,
+           5+ use >= 3; no scope on over half (4+), never three in a row; 4+ rows have a moving scope (walking or load).
+           A team's look call (anat.lead) makes its style the lead: it may take more than half and run three in a row,
+           but 3-5 rows keep >= 1 beat in another style and 6+ keep >= 2. Only anat.only (the team ruled out every other
+           style in so many words) sets the style count aside — scope, angle and move still vary. anat.lock (a build from
+           before V7.91.0) keeps its old meaning: the style checks set aside.
   MVCAM    (§3C camera, V7.86.0) music-video rows (rows with `section`): every row names a library `shot` (§24K part 7)
            and a camera `move` (push-in, pull-back, orbit, crane-up, crane-down, track, tilt, drift, locked); locked /
            drift on at most a third; no move three in a row; signature shots at most one in four, never two in a row;
@@ -93,6 +103,19 @@ NO_FACE = {"SH-WACU", "SH-FISHCU"}
 NO_LINE = {"SH-REAR", "SH-SIL", "SH-AERIAL", "SH-OVFISH"}
 NO_PRODUCT = {"SH-OVFISH", "SH-FISH", "SH-FISHCU", "SH-WACU", "SH-PRISM", "SH-DUTCH", "SH-AERIAL", "SH-SIL", "SH-MAGNIFY"}
 LOCKED = {"SH-DUTCH", "SH-PRISM", "SH-MAGNIFY", "SH-MACRO"}
+
+
+# Builds whose act maps were written before V7.91.0 keep them: no anatomy scope is required of them (a system update never
+# touches existing builds; re-planning their anatomy is their team's call). Recognised by the plan's path or a pre-V7.91 anat.lock.
+PRE_SCOPE = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
+             "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-identity", "stryde-lost-moments",
+             "stryde-not-your-cartilage", "stryde-regrets", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad",
+             "stryde-what-changed", "demo-ad"}
+
+
+def build_of(path):
+    parts = path.parts
+    return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
 
 
 def shots(r):
@@ -269,14 +292,49 @@ def main():
     used = {sty(r) for r in counted if sty(r)}
     need = 3 if n >= 6 else 2 if n >= 3 else 0   # fewer than three anatomy beats (none included): no range to check (LESSONS L19)
     # the team's one-look call (§12A-1 rule 7, V7.89.3, LESSONS L34): every anatomy row carries anat.lock → the style checks step aside
-    locked = bool(counted) and all((r.get("anat") or {}).get("lock") for r in counted)
+    # a pre-V7.91 build's lock or the team's explicit "only" (anat.only) sets the style checks aside; scope, angle and move still run
+    locked = bool(counted) and all((r.get("anat") or {}).get("lock") or (r.get("anat") or {}).get("only") for r in counted)
+    # V7.91.0 (user: "i dont want to be stuck in just one style of anatomy per task"): a look call leads, never the only look
+    leads = {(r.get("anat") or {}).get("style") for r in counted if (r.get("anat") or {}).get("lead")}
+    lead = next(iter(leads)) if len(leads) == 1 and not locked else None
+    if lead and n >= 3:
+        others = sum(1 for r in counted if sty(r) != lead)
+        want = 2 if n >= 6 else 1
+        if others < want:
+            fail("ANAT", [r["beat"] for r in counted], f"the team's look ({lead}) leads, but {n} anatomy beats need {want} in another "
+                 f"style ({others} now) — a look call is the lead, never the only look unless the team said 'only' (§12A-1 rule 7, V7.91.0)")
+        need = 0
     if locked:
         need = 0
         sty = lambda r: None
+    # SCOPE (V7.91.0): what the anatomy picture holds — one knee close, both knees, both legs walking, on the stairs
+    SCOPES = {"macro", "close", "pair", "walking", "load", "whole"}
+    scope = lambda r: (r.get("anat") or {}).get("scope")
+    pre = (build_of(Path(a.rows).resolve()) in PRE_SCOPE or any((r.get("anat") or {}).get("lock") for r in counted)) \
+        and not any(scope(r) for r in counted)
+    for r in ([] if pre else counted):
+        if scope(r) not in SCOPES:
+            fail("ANAT", [r.get("beat")], f"no scope ({' · '.join(sorted(SCOPES))}) — say what the picture holds, has {scope(r)!r}")
+    scopes = {scope(r) for r in counted if scope(r) in SCOPES}
+    sneed = 0 if pre else 3 if n >= 5 else 2 if n >= 3 else 0
+    if sneed and len(scopes) < sneed:
+        fail("ANAT", [r["beat"] for r in counted], f"{n} anatomy beats in {len(scopes)} scope(s) {sorted(scopes)} — use at least {sneed}: "
+             "one joint close, both sides, the limbs walking, under load on stairs (§12A-1 V7.91.0)")
+    if n >= 4 and not pre:
+        for sc in scopes:
+            k = sum(1 for r in counted if scope(r) == sc)
+            if k * 2 > n:
+                fail("ANAT", [sc], f"scope {sc} on {k}/{n} anatomy beats — at most half")
+        if not scopes & {"walking", "load"}:
+            fail("ANAT", [r["beat"] for r in counted], "no anatomy beat in motion — give one the walking or load scope (both legs walking, on the stairs)")
+    for i in range(2, len(counted)):
+        q, p, r = counted[i - 2:i + 1]
+        if scope(q) in SCOPES and scope(q) == scope(p) == scope(r):
+            fail("ANAT", [q["beat"], p["beat"], r["beat"]], f"scope {scope(r)} three in a row")
     if need and len(used) < need:
         fail("ANAT", [r["beat"] for r in counted], f"{n} anatomy beats in {len(used)} style(s) {sorted(used)} — use at least {need} (§12A-1)")
     if n >= 4:
-        for st in ([] if locked else used):
+        for st in ([] if locked else used - {lead}):
             k = sum(1 for r in counted if sty(r) == st)
             if k * 2 > n:
                 fail("ANAT", [st], f"style {st} on {k}/{n} anatomy beats — at most half")
@@ -290,11 +348,11 @@ def main():
             fail("ANAT", ["low/three-quarter"], f"the old default angle on {lo}/{n} anatomy beats — at most a third")
     for i in range(1, len(counted)):
         p, r = counted[i - 1], counted[i]
-        if look(p) == look(r):
+        if look(p) == look(r) and scope(p) == scope(r):
             fail("ANAT", [p["beat"], r["beat"]], f"same style, angle and scale back to back {look(r)}")
         if i >= 2:
             q = counted[i - 2]
-            if sty(q) and sty(q) == sty(p) == sty(r):
+            if sty(q) and sty(q) == sty(p) == sty(r) and sty(r) != lead:
                 fail("ANAT", [q["beat"], p["beat"], r["beat"]], f"style {sty(r)} three in a row")
             if mov(q) and mov(q) == mov(p) == mov(r):
                 fail("ANAT", [q["beat"], p["beat"], r["beat"]], f"move {mov(r)} three in a row")
