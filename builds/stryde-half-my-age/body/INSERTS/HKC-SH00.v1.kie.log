@@ -1,1 +1,11 @@
 {"taskId": "236b8290ae6de7872d527326ab240a80", "created": true}
+{
+  "taskId": "236b8290ae6de7872d527326ab240a80",
+  "state": "success",
+  "credits": 315.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790981731663-k61g77mr54.mp4"
+  ],
+  "saved": "/home/user/global-manual-ai/builds/stryde-half-my-age/body/INSERTS/HKC-SH00_v1.mp4"
+}

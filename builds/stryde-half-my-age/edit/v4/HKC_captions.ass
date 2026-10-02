@@ -16,641 +16,642 @@ Dialogue: 0,0:00:00.91,0:00:01.42,Cap,,0,0,0,,{\c&H0000E6FF&}escalator
 Dialogue: 0,0:00:01.73,0:00:02.00,Cap,,0,0,0,,{\c&H0000E6FF&}is {\c&H00FFFFFF&}out {\c&H00FFFFFF&}of
 Dialogue: 0,0:00:02.00,0:00:02.25,Cap,,0,0,0,,{\c&H00FFFFFF&}is {\c&H0000E6FF&}out {\c&H00FFFFFF&}of
 Dialogue: 0,0:00:02.25,0:00:02.74,Cap,,0,0,0,,{\c&H00FFFFFF&}is {\c&H00FFFFFF&}out {\c&H0000E6FF&}of
-Dialogue: 0,0:00:02.74,0:00:03.59,Cap,,0,0,0,,{\c&H0000E6FF&}service
+Dialogue: 0,0:00:02.74,0:00:03.50,Cap,,0,0,0,,{\c&H0000E6FF&}service
 Dialogue: 0,0:00:04.36,0:00:04.44,Cap,,0,0,0,,{\c&H0000E6FF&}please {\c&H00FFFFFF&}use {\c&H00FFFFFF&}the
 Dialogue: 0,0:00:04.44,0:00:05.45,Cap,,0,0,0,,{\c&H00FFFFFF&}please {\c&H0000E6FF&}use {\c&H00FFFFFF&}the
 Dialogue: 0,0:00:05.45,0:00:05.61,Cap,,0,0,0,,{\c&H00FFFFFF&}please {\c&H00FFFFFF&}use {\c&H0000E6FF&}the
-Dialogue: 0,0:00:05.61,0:00:05.79,Cap,,0,0,0,,{\c&H0000E6FF&}stairs
-Dialogue: 0,0:00:05.79,0:00:06.18,Cap,,0,0,0,,{\c&H0000E6FF&}you’re {\c&H00FFFFFF&}joking
-Dialogue: 0,0:00:06.18,0:00:07.10,Cap,,0,0,0,,{\c&H00FFFFFF&}you’re {\c&H0000E6FF&}joking
-Dialogue: 0,0:00:08.46,0:00:08.61,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}only {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:00:08.61,0:00:08.83,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}only {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:00:08.83,0:00:09.71,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}only {\c&H0000E6FF&}stairs
-Dialogue: 0,0:00:09.83,0:00:10.44,Cap,,0,0,0,,{\c&H0000E6FF&}love
-Dialogue: 0,0:00:17.79,0:00:18.21,Cap,,0,0,0,,{\c&H0000E6FF&}when {\c&H00FFFFFF&}did {\c&H00FFFFFF&}that
-Dialogue: 0,0:00:18.21,0:00:18.63,Cap,,0,0,0,,{\c&H00FFFFFF&}when {\c&H0000E6FF&}did {\c&H00FFFFFF&}that
-Dialogue: 0,0:00:18.63,0:00:18.81,Cap,,0,0,0,,{\c&H00FFFFFF&}when {\c&H00FFFFFF&}did {\c&H0000E6FF&}that
-Dialogue: 0,0:00:18.81,0:00:19.51,Cap,,0,0,0,,{\c&H0000E6FF&}happen
-Dialogue: 0,0:00:20.60,0:00:21.15,Cap,,0,0,0,,{\c&H0000E6FF&}i’m {\c&H00FFFFFF&}71 {\c&H00FFFFFF&}and
-Dialogue: 0,0:00:21.15,0:00:21.81,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H0000E6FF&}71 {\c&H00FFFFFF&}and
-Dialogue: 0,0:00:21.81,0:00:22.07,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}71 {\c&H0000E6FF&}and
-Dialogue: 0,0:00:22.07,0:00:22.26,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}take {\c&H00FFFFFF&}the
-Dialogue: 0,0:00:22.26,0:00:22.46,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}take {\c&H00FFFFFF&}the
-Dialogue: 0,0:00:22.46,0:00:22.64,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}take {\c&H0000E6FF&}the
-Dialogue: 0,0:00:22.67,0:00:23.28,Cap,,0,0,0,,{\c&H00FFFFFF&}stairs {\c&H0000E6FF&}faster {\c&H00FFFFFF&}than
-Dialogue: 0,0:00:23.28,0:00:23.50,Cap,,0,0,0,,{\c&H00FFFFFF&}stairs {\c&H00FFFFFF&}faster {\c&H0000E6FF&}than
-Dialogue: 0,0:00:23.50,0:00:23.73,Cap,,0,0,0,,{\c&H0000E6FF&}women {\c&H00FFFFFF&}half {\c&H00FFFFFF&}my
-Dialogue: 0,0:00:23.73,0:00:23.83,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H0000E6FF&}half {\c&H00FFFFFF&}my
-Dialogue: 0,0:00:23.83,0:00:24.15,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H00FFFFFF&}half {\c&H0000E6FF&}my
-Dialogue: 0,0:00:24.15,0:00:25.07,Cap,,0,0,0,,{\c&H0000E6FF&}age
-Dialogue: 0,0:00:25.13,0:00:25.21,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
-Dialogue: 0,0:00:25.21,0:00:25.67,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H0000E6FF&}weeks {\c&H00FFFFFF&}ago
-Dialogue: 0,0:00:25.67,0:00:25.75,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H00FFFFFF&}weeks {\c&H0000E6FF&}ago
-Dialogue: 0,0:00:25.75,0:00:26.20,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}couldn’t
-Dialogue: 0,0:00:26.20,0:00:26.80,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}couldn’t
-Dialogue: 0,0:00:29.70,0:00:29.86,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}leave {\c&H00FFFFFF&}it
-Dialogue: 0,0:00:29.86,0:00:30.06,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}leave {\c&H00FFFFFF&}it
-Dialogue: 0,0:00:30.06,0:00:30.23,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H00FFFFFF&}leave {\c&H0000E6FF&}it
-Dialogue: 0,0:00:30.23,0:00:30.38,Cap,,0,0,0,,{\c&H0000E6FF&}by {\c&H00FFFFFF&}the {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:00:30.38,0:00:30.66,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H0000E6FF&}the {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:00:30.66,0:00:31.13,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H00FFFFFF&}the {\c&H0000E6FF&}stairs
-Dialogue: 0,0:00:31.28,0:00:31.80,Cap,,0,0,0,,{\c&H0000E6FF&}love
-Dialogue: 0,0:00:31.80,0:00:31.98,Cap,,0,0,0,,{\c&H0000E6FF&}i’ll {\c&H00FFFFFF&}get {\c&H00FFFFFF&}it
-Dialogue: 0,0:00:31.98,0:00:32.10,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H0000E6FF&}get {\c&H00FFFFFF&}it
-Dialogue: 0,0:00:32.10,0:00:32.33,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H00FFFFFF&}get {\c&H0000E6FF&}it
-Dialogue: 0,0:00:32.33,0:00:33.16,Cap,,0,0,0,,{\c&H0000E6FF&}later
-Dialogue: 0,0:00:37.39,0:00:37.56,Cap,,0,0,0,,{\c&H0000E6FF&}i’ll {\c&H00FFFFFF&}bring {\c&H00FFFFFF&}it
-Dialogue: 0,0:00:37.56,0:00:37.70,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H0000E6FF&}bring {\c&H00FFFFFF&}it
-Dialogue: 0,0:00:37.70,0:00:37.84,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H00FFFFFF&}bring {\c&H0000E6FF&}it
-Dialogue: 0,0:00:37.84,0:00:38.62,Cap,,0,0,0,,{\c&H0000E6FF&}up
-Dialogue: 0,0:00:38.93,0:00:39.23,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
-Dialogue: 0,0:00:39.23,0:00:39.56,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H0000E6FF&}weeks {\c&H00FFFFFF&}ago
-Dialogue: 0,0:00:39.56,0:00:40.09,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H00FFFFFF&}weeks {\c&H0000E6FF&}ago
-Dialogue: 0,0:00:40.50,0:00:40.68,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}was {\c&H00FFFFFF&}going
-Dialogue: 0,0:00:40.68,0:00:40.73,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}was {\c&H00FFFFFF&}going
-Dialogue: 0,0:00:40.73,0:00:40.95,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}was {\c&H0000E6FF&}going
-Dialogue: 0,0:00:40.95,0:00:41.18,Cap,,0,0,0,,{\c&H0000E6FF&}down {\c&H00FFFFFF&}my {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:00:41.18,0:00:41.40,Cap,,0,0,0,,{\c&H00FFFFFF&}down {\c&H0000E6FF&}my {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:00:41.40,0:00:41.51,Cap,,0,0,0,,{\c&H00FFFFFF&}down {\c&H00FFFFFF&}my {\c&H0000E6FF&}stairs
-Dialogue: 0,0:00:41.51,0:00:42.70,Cap,,0,0,0,,{\c&H0000E6FF&}backwards
-Dialogue: 0,0:00:44.76,0:00:45.29,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}step {\c&H00FFFFFF&}at
-Dialogue: 0,0:00:45.29,0:00:45.87,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}step {\c&H00FFFFFF&}at
-Dialogue: 0,0:00:45.87,0:00:45.95,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}step {\c&H0000E6FF&}at
-Dialogue: 0,0:00:45.95,0:00:46.11,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}time
-Dialogue: 0,0:00:46.11,0:00:46.60,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}time
-Dialogue: 0,0:00:50.92,0:00:51.18,Cap,,0,0,0,,{\c&H0000E6FF&}sleep {\c&H00FFFFFF&}alright
-Dialogue: 0,0:00:51.18,0:00:51.59,Cap,,0,0,0,,{\c&H00FFFFFF&}sleep {\c&H0000E6FF&}alright
-Dialogue: 0,0:00:55.05,0:00:55.42,Cap,,0,0,0,,{\c&H0000E6FF&}fine {\c&H00FFFFFF&}love
-Dialogue: 0,0:00:55.42,0:00:56.03,Cap,,0,0,0,,{\c&H00FFFFFF&}fine {\c&H0000E6FF&}love
-Dialogue: 0,0:00:57.08,0:00:57.26,Cap,,0,0,0,,{\c&H0000E6FF&}if {\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}being
-Dialogue: 0,0:00:57.26,0:00:57.44,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H0000E6FF&}i’m {\c&H00FFFFFF&}being
-Dialogue: 0,0:00:57.44,0:00:57.66,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H00FFFFFF&}i’m {\c&H0000E6FF&}being
-Dialogue: 0,0:00:57.66,0:00:58.26,Cap,,0,0,0,,{\c&H0000E6FF&}honest
-Dialogue: 0,0:00:58.56,0:00:58.86,Cap,,0,0,0,,{\c&H0000E6FF&}some {\c&H00FFFFFF&}days {\c&H00FFFFFF&}i
-Dialogue: 0,0:00:58.86,0:00:59.16,Cap,,0,0,0,,{\c&H00FFFFFF&}some {\c&H0000E6FF&}days {\c&H00FFFFFF&}i
-Dialogue: 0,0:00:59.16,0:00:59.48,Cap,,0,0,0,,{\c&H00FFFFFF&}some {\c&H00FFFFFF&}days {\c&H0000E6FF&}i
-Dialogue: 0,0:00:59.48,0:00:59.76,Cap,,0,0,0,,{\c&H0000E6FF&}wasn’t {\c&H00FFFFFF&}going {\c&H00FFFFFF&}down
-Dialogue: 0,0:00:59.76,0:00:59.97,Cap,,0,0,0,,{\c&H00FFFFFF&}wasn’t {\c&H0000E6FF&}going {\c&H00FFFFFF&}down
-Dialogue: 0,0:00:59.97,0:01:00.18,Cap,,0,0,0,,{\c&H00FFFFFF&}wasn’t {\c&H00FFFFFF&}going {\c&H0000E6FF&}down
-Dialogue: 0,0:01:00.18,0:01:00.34,Cap,,0,0,0,,{\c&H0000E6FF&}them {\c&H00FFFFFF&}at {\c&H00FFFFFF&}all
-Dialogue: 0,0:01:00.34,0:01:00.43,Cap,,0,0,0,,{\c&H00FFFFFF&}them {\c&H0000E6FF&}at {\c&H00FFFFFF&}all
-Dialogue: 0,0:01:00.43,0:01:01.26,Cap,,0,0,0,,{\c&H00FFFFFF&}them {\c&H00FFFFFF&}at {\c&H0000E6FF&}all
-Dialogue: 0,0:01:01.68,0:01:02.20,Cap,,0,0,0,,{\c&H0000E6FF&}i’d {\c&H00FFFFFF&}just {\c&H00FFFFFF&}stay
-Dialogue: 0,0:01:02.20,0:01:02.28,Cap,,0,0,0,,{\c&H00FFFFFF&}i’d {\c&H0000E6FF&}just {\c&H00FFFFFF&}stay
-Dialogue: 0,0:01:02.28,0:01:02.51,Cap,,0,0,0,,{\c&H00FFFFFF&}i’d {\c&H00FFFFFF&}just {\c&H0000E6FF&}stay
-Dialogue: 0,0:01:02.51,0:01:03.44,Cap,,0,0,0,,{\c&H0000E6FF&}upstairs
-Dialogue: 0,0:01:04.03,0:01:04.25,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}full {\c&H00FFFFFF&}knee
-Dialogue: 0,0:01:04.25,0:01:04.46,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}full {\c&H00FFFFFF&}knee
-Dialogue: 0,0:01:04.46,0:01:04.68,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}full {\c&H0000E6FF&}knee
-Dialogue: 0,0:01:04.68,0:01:05.02,Cap,,0,0,0,,{\c&H0000E6FF&}brace {\c&H00FFFFFF&}i {\c&H00FFFFFF&}bought
-Dialogue: 0,0:01:05.02,0:01:05.18,Cap,,0,0,0,,{\c&H00FFFFFF&}brace {\c&H0000E6FF&}i {\c&H00FFFFFF&}bought
-Dialogue: 0,0:01:05.18,0:01:05.47,Cap,,0,0,0,,{\c&H00FFFFFF&}brace {\c&H00FFFFFF&}i {\c&H0000E6FF&}bought
-Dialogue: 0,0:01:05.47,0:01:05.86,Cap,,0,0,0,,{\c&H0000E6FF&}slipped {\c&H00FFFFFF&}down {\c&H00FFFFFF&}my
-Dialogue: 0,0:01:05.86,0:01:06.09,Cap,,0,0,0,,{\c&H00FFFFFF&}slipped {\c&H0000E6FF&}down {\c&H00FFFFFF&}my
-Dialogue: 0,0:01:06.09,0:01:06.31,Cap,,0,0,0,,{\c&H00FFFFFF&}slipped {\c&H00FFFFFF&}down {\c&H0000E6FF&}my
-Dialogue: 0,0:01:06.31,0:01:06.90,Cap,,0,0,0,,{\c&H0000E6FF&}leg
-Dialogue: 0,0:01:08.28,0:01:08.36,Cap,,0,0,0,,{\c&H0000E6FF&}by {\c&H00FFFFFF&}evening {\c&H00FFFFFF&}it
-Dialogue: 0,0:01:08.36,0:01:08.82,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H0000E6FF&}evening {\c&H00FFFFFF&}it
-Dialogue: 0,0:01:08.82,0:01:09.11,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H00FFFFFF&}evening {\c&H0000E6FF&}it
-Dialogue: 0,0:01:09.11,0:01:09.34,Cap,,0,0,0,,{\c&H0000E6FF&}was {\c&H00FFFFFF&}around {\c&H00FFFFFF&}my
-Dialogue: 0,0:01:09.34,0:01:09.58,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H0000E6FF&}around {\c&H00FFFFFF&}my
-Dialogue: 0,0:01:09.58,0:01:09.80,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H00FFFFFF&}around {\c&H0000E6FF&}my
-Dialogue: 0,0:01:09.80,0:01:10.02,Cap,,0,0,0,,{\c&H0000E6FF&}ankle
-Dialogue: 0,0:01:10.02,0:01:10.87,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}tried {\c&H00FFFFFF&}everything
-Dialogue: 0,0:01:10.87,0:01:11.01,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}tried {\c&H00FFFFFF&}everything
-Dialogue: 0,0:01:11.01,0:01:12.24,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}tried {\c&H0000E6FF&}everything
-Dialogue: 0,0:01:12.80,0:01:13.92,Cap,,0,0,0,,{\c&H0000E6FF&}physiotherapy
-Dialogue: 0,0:01:16.66,0:01:17.78,Cap,,0,0,0,,{\c&H0000E6FF&}painkillers
-Dialogue: 0,0:01:22.70,0:01:23.42,Cap,,0,0,0,,{\c&H0000E6FF&}cortisone {\c&H00FFFFFF&}injections
-Dialogue: 0,0:01:23.42,0:01:24.26,Cap,,0,0,0,,{\c&H00FFFFFF&}cortisone {\c&H0000E6FF&}injections
-Dialogue: 0,0:01:26.74,0:01:27.05,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}brace {\c&H00FFFFFF&}and
-Dialogue: 0,0:01:27.05,0:01:27.49,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}brace {\c&H00FFFFFF&}and
-Dialogue: 0,0:01:27.49,0:01:28.02,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H00FFFFFF&}brace {\c&H0000E6FF&}and
-Dialogue: 0,0:01:28.02,0:01:28.32,Cap,,0,0,0,,{\c&H0000E6FF&}sleeve {\c&H00FFFFFF&}on {\c&H00FFFFFF&}the
-Dialogue: 0,0:01:28.32,0:01:28.52,Cap,,0,0,0,,{\c&H00FFFFFF&}sleeve {\c&H0000E6FF&}on {\c&H00FFFFFF&}the
-Dialogue: 0,0:01:28.52,0:01:28.66,Cap,,0,0,0,,{\c&H00FFFFFF&}sleeve {\c&H00FFFFFF&}on {\c&H0000E6FF&}the
-Dialogue: 0,0:01:28.66,0:01:29.34,Cap,,0,0,0,,{\c&H0000E6FF&}market
-Dialogue: 0,0:01:29.84,0:01:30.22,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}worked
-Dialogue: 0,0:01:30.22,0:01:31.06,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}worked
-Dialogue: 0,0:01:31.27,0:01:31.62,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}lasted
-Dialogue: 0,0:01:31.62,0:01:32.52,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}lasted
-Dialogue: 0,0:01:32.83,0:01:33.28,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}gave {\c&H00FFFFFF&}me
-Dialogue: 0,0:01:33.28,0:01:33.54,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}gave {\c&H00FFFFFF&}me
-Dialogue: 0,0:01:33.54,0:01:33.76,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H00FFFFFF&}gave {\c&H0000E6FF&}me
-Dialogue: 0,0:01:33.76,0:01:33.98,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}life {\c&H00FFFFFF&}back
-Dialogue: 0,0:01:33.98,0:01:34.22,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}life {\c&H00FFFFFF&}back
-Dialogue: 0,0:01:34.22,0:01:34.67,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}life {\c&H0000E6FF&}back
-Dialogue: 0,0:01:35.19,0:01:35.70,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}drawer {\c&H00FFFFFF&}won’t
-Dialogue: 0,0:01:35.70,0:01:36.00,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}drawer {\c&H00FFFFFF&}won’t
-Dialogue: 0,0:01:36.00,0:01:36.18,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}drawer {\c&H0000E6FF&}won’t
-Dialogue: 0,0:01:36.18,0:01:36.25,Cap,,0,0,0,,{\c&H0000E6FF&}shut {\c&H00FFFFFF&}soon
-Dialogue: 0,0:01:36.25,0:01:36.78,Cap,,0,0,0,,{\c&H00FFFFFF&}shut {\c&H0000E6FF&}soon
-Dialogue: 0,0:01:40.53,0:01:40.66,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}shuts
-Dialogue: 0,0:01:40.66,0:01:41.28,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}shuts
-Dialogue: 0,0:01:43.23,0:01:44.18,Cap,,0,0,0,,{\c&H0000E6FF&}sunday {\c&H00FFFFFF&}shall {\c&H00FFFFFF&}we
-Dialogue: 0,0:01:44.18,0:01:45.01,Cap,,0,0,0,,{\c&H00FFFFFF&}sunday {\c&H0000E6FF&}shall {\c&H00FFFFFF&}we
-Dialogue: 0,0:01:45.01,0:01:45.38,Cap,,0,0,0,,{\c&H00FFFFFF&}sunday {\c&H00FFFFFF&}shall {\c&H0000E6FF&}we
-Dialogue: 0,0:01:45.38,0:01:45.56,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}do {\c&H00FFFFFF&}the
-Dialogue: 0,0:01:45.56,0:01:45.74,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}do {\c&H00FFFFFF&}the
-Dialogue: 0,0:01:45.72,0:01:46.19,Cap,,0,0,0,,{\c&H0000E6FF&}garden {\c&H00FFFFFF&}centre
-Dialogue: 0,0:01:46.19,0:01:46.90,Cap,,0,0,0,,{\c&H00FFFFFF&}garden {\c&H0000E6FF&}centre
-Dialogue: 0,0:01:47.77,0:01:47.95,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}all {\c&H00FFFFFF&}one
-Dialogue: 0,0:01:47.95,0:01:48.14,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}all {\c&H00FFFFFF&}one
-Dialogue: 0,0:01:48.14,0:01:48.40,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}all {\c&H0000E6FF&}one
-Dialogue: 0,0:01:48.40,0:01:49.12,Cap,,0,0,0,,{\c&H0000E6FF&}level
-Dialogue: 0,0:01:49.29,0:01:49.52,Cap,,0,0,0,,{\c&H0000E6FF&}course {\c&H00FFFFFF&}love
-Dialogue: 0,0:01:49.52,0:01:50.14,Cap,,0,0,0,,{\c&H00FFFFFF&}course {\c&H0000E6FF&}love
-Dialogue: 0,0:01:50.66,0:01:51.42,Cap,,0,0,0,,{\c&H0000E6FF&}easier
-Dialogue: 0,0:01:51.53,0:01:51.76,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}sister’s {\c&H00FFFFFF&}knees
-Dialogue: 0,0:01:51.76,0:01:52.00,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}sister’s {\c&H00FFFFFF&}knees
-Dialogue: 0,0:01:52.00,0:01:52.50,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}sister’s {\c&H0000E6FF&}knees
-Dialogue: 0,0:01:52.50,0:01:52.76,Cap,,0,0,0,,{\c&H0000E6FF&}are {\c&H00FFFFFF&}worse {\c&H00FFFFFF&}than
-Dialogue: 0,0:01:52.76,0:01:52.92,Cap,,0,0,0,,{\c&H00FFFFFF&}are {\c&H0000E6FF&}worse {\c&H00FFFFFF&}than
-Dialogue: 0,0:01:52.92,0:01:53.02,Cap,,0,0,0,,{\c&H00FFFFFF&}are {\c&H00FFFFFF&}worse {\c&H0000E6FF&}than
-Dialogue: 0,0:01:53.02,0:01:53.94,Cap,,0,0,0,,{\c&H0000E6FF&}mine
-Dialogue: 0,0:01:54.20,0:01:54.44,Cap,,0,0,0,,{\c&H0000E6FF&}we {\c&H00FFFFFF&}planned {\c&H00FFFFFF&}our
-Dialogue: 0,0:01:54.44,0:01:54.68,Cap,,0,0,0,,{\c&H00FFFFFF&}we {\c&H0000E6FF&}planned {\c&H00FFFFFF&}our
-Dialogue: 0,0:01:54.68,0:01:54.88,Cap,,0,0,0,,{\c&H00FFFFFF&}we {\c&H00FFFFFF&}planned {\c&H0000E6FF&}our
-Dialogue: 0,0:01:54.88,0:01:55.28,Cap,,0,0,0,,{\c&H0000E6FF&}sundays {\c&H00FFFFFF&}around {\c&H00FFFFFF&}one
-Dialogue: 0,0:01:55.28,0:01:55.68,Cap,,0,0,0,,{\c&H00FFFFFF&}sundays {\c&H0000E6FF&}around {\c&H00FFFFFF&}one
-Dialogue: 0,0:01:55.68,0:01:56.00,Cap,,0,0,0,,{\c&H00FFFFFF&}sundays {\c&H00FFFFFF&}around {\c&H0000E6FF&}one
-Dialogue: 0,0:01:56.00,0:01:56.68,Cap,,0,0,0,,{\c&H0000E6FF&}level
-Dialogue: 0,0:01:57.84,0:01:57.92,Cap,,0,0,0,,{\c&H0000E6FF&}then {\c&H00FFFFFF&}my {\c&H00FFFFFF&}granddaughter
-Dialogue: 0,0:01:57.92,0:01:58.26,Cap,,0,0,0,,{\c&H00FFFFFF&}then {\c&H0000E6FF&}my {\c&H00FFFFFF&}granddaughter
-Dialogue: 0,0:01:58.26,0:01:58.82,Cap,,0,0,0,,{\c&H00FFFFFF&}then {\c&H00FFFFFF&}my {\c&H0000E6FF&}granddaughter
-Dialogue: 0,0:01:58.82,0:01:58.97,Cap,,0,0,0,,{\c&H0000E6FF&}got {\c&H00FFFFFF&}married {\c&H00FFFFFF&}in
-Dialogue: 0,0:01:58.97,0:01:59.44,Cap,,0,0,0,,{\c&H00FFFFFF&}got {\c&H0000E6FF&}married {\c&H00FFFFFF&}in
-Dialogue: 0,0:01:59.44,0:01:59.70,Cap,,0,0,0,,{\c&H00FFFFFF&}got {\c&H00FFFFFF&}married {\c&H0000E6FF&}in
-Dialogue: 0,0:01:59.70,0:02:00.44,Cap,,0,0,0,,{\c&H0000E6FF&}june
-Dialogue: 0,0:02:00.55,0:02:00.74,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}cousin {\c&H00FFFFFF&}barbara
-Dialogue: 0,0:02:00.74,0:02:00.94,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}cousin {\c&H00FFFFFF&}barbara
-Dialogue: 0,0:02:00.94,0:02:01.29,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}cousin {\c&H0000E6FF&}barbara
-Dialogue: 0,0:02:01.29,0:02:01.66,Cap,,0,0,0,,{\c&H0000E6FF&}was {\c&H00FFFFFF&}there
-Dialogue: 0,0:02:01.66,0:02:02.24,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H0000E6FF&}there
-Dialogue: 0,0:02:02.84,0:02:03.22,Cap,,0,0,0,,{\c&H0000E6FF&}she’s {\c&H00FFFFFF&}74
-Dialogue: 0,0:02:03.22,0:02:03.73,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H0000E6FF&}74
-Dialogue: 0,0:02:03.73,0:02:04.38,Cap,,0,0,0,,{\c&H0000E6FF&}and {\c&H00FFFFFF&}she {\c&H00FFFFFF&}was
-Dialogue: 0,0:02:04.38,0:02:04.60,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H0000E6FF&}she {\c&H00FFFFFF&}was
-Dialogue: 0,0:02:04.60,0:02:04.82,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H00FFFFFF&}she {\c&H0000E6FF&}was
-Dialogue: 0,0:02:04.82,0:02:04.98,Cap,,0,0,0,,{\c&H0000E6FF&}on {\c&H00FFFFFF&}the {\c&H00FFFFFF&}dance
-Dialogue: 0,0:02:04.98,0:02:05.11,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H0000E6FF&}the {\c&H00FFFFFF&}dance
-Dialogue: 0,0:02:05.11,0:02:05.30,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H00FFFFFF&}the {\c&H0000E6FF&}dance
-Dialogue: 0,0:02:05.30,0:02:05.49,Cap,,0,0,0,,{\c&H0000E6FF&}floor {\c&H00FFFFFF&}all {\c&H00FFFFFF&}night
-Dialogue: 0,0:02:05.49,0:02:05.85,Cap,,0,0,0,,{\c&H00FFFFFF&}floor {\c&H0000E6FF&}all {\c&H00FFFFFF&}night
-Dialogue: 0,0:02:05.85,0:02:06.80,Cap,,0,0,0,,{\c&H00FFFFFF&}floor {\c&H00FFFFFF&}all {\c&H0000E6FF&}night
-Dialogue: 0,0:02:08.73,0:02:08.90,Cap,,0,0,0,,{\c&H0000E6FF&}her {\c&H00FFFFFF&}knees {\c&H00FFFFFF&}were
-Dialogue: 0,0:02:08.90,0:02:09.16,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H0000E6FF&}knees {\c&H00FFFFFF&}were
-Dialogue: 0,0:02:09.16,0:02:09.40,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H00FFFFFF&}knees {\c&H0000E6FF&}were
-Dialogue: 0,0:02:09.40,0:02:09.60,Cap,,0,0,0,,{\c&H0000E6FF&}worse {\c&H00FFFFFF&}than {\c&H00FFFFFF&}mine
-Dialogue: 0,0:02:09.60,0:02:09.88,Cap,,0,0,0,,{\c&H00FFFFFF&}worse {\c&H0000E6FF&}than {\c&H00FFFFFF&}mine
-Dialogue: 0,0:02:09.88,0:02:10.48,Cap,,0,0,0,,{\c&H00FFFFFF&}worse {\c&H00FFFFFF&}than {\c&H0000E6FF&}mine
-Dialogue: 0,0:02:11.18,0:02:11.28,Cap,,0,0,0,,{\c&H0000E6FF&}both {\c&H00FFFFFF&}of {\c&H00FFFFFF&}them
-Dialogue: 0,0:02:11.28,0:02:11.49,Cap,,0,0,0,,{\c&H00FFFFFF&}both {\c&H0000E6FF&}of {\c&H00FFFFFF&}them
-Dialogue: 0,0:02:11.49,0:02:12.14,Cap,,0,0,0,,{\c&H00FFFFFF&}both {\c&H00FFFFFF&}of {\c&H0000E6FF&}them
-Dialogue: 0,0:02:12.20,0:02:12.32,Cap,,0,0,0,,{\c&H0000E6FF&}bone {\c&H00FFFFFF&}on {\c&H00FFFFFF&}bone
-Dialogue: 0,0:02:12.32,0:02:12.52,Cap,,0,0,0,,{\c&H00FFFFFF&}bone {\c&H0000E6FF&}on {\c&H00FFFFFF&}bone
-Dialogue: 0,0:02:12.52,0:02:13.40,Cap,,0,0,0,,{\c&H00FFFFFF&}bone {\c&H00FFFFFF&}on {\c&H0000E6FF&}bone
-Dialogue: 0,0:02:14.02,0:02:14.48,Cap,,0,0,0,,{\c&H0000E6FF&}whose
-Dialogue: 0,0:02:15.88,0:02:17.00,Cap,,0,0,0,,{\c&H0000E6FF&}barbara’s
-Dialogue: 0,0:02:17.93,0:02:18.01,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}always {\c&H00FFFFFF&}assumed
-Dialogue: 0,0:02:18.01,0:02:18.36,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}always {\c&H00FFFFFF&}assumed
-Dialogue: 0,0:02:18.36,0:02:18.90,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}always {\c&H0000E6FF&}assumed
-Dialogue: 0,0:02:18.90,0:02:19.28,Cap,,0,0,0,,{\c&H0000E6FF&}hers {\c&H00FFFFFF&}weren’t {\c&H00FFFFFF&}as
-Dialogue: 0,0:02:19.28,0:02:19.38,Cap,,0,0,0,,{\c&H00FFFFFF&}hers {\c&H0000E6FF&}weren’t {\c&H00FFFFFF&}as
-Dialogue: 0,0:02:19.38,0:02:19.80,Cap,,0,0,0,,{\c&H00FFFFFF&}hers {\c&H00FFFFFF&}weren’t {\c&H0000E6FF&}as
-Dialogue: 0,0:02:19.80,0:02:19.98,Cap,,0,0,0,,{\c&H0000E6FF&}bad {\c&H00FFFFFF&}as {\c&H00FFFFFF&}mine
-Dialogue: 0,0:02:19.98,0:02:20.03,Cap,,0,0,0,,{\c&H00FFFFFF&}bad {\c&H0000E6FF&}as {\c&H00FFFFFF&}mine
-Dialogue: 0,0:02:20.03,0:02:20.92,Cap,,0,0,0,,{\c&H00FFFFFF&}bad {\c&H00FFFFFF&}as {\c&H0000E6FF&}mine
-Dialogue: 0,0:02:21.23,0:02:21.44,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}always {\c&H00FFFFFF&}assumed
-Dialogue: 0,0:02:21.44,0:02:21.66,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}always {\c&H00FFFFFF&}assumed
-Dialogue: 0,0:02:21.66,0:02:22.10,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}always {\c&H0000E6FF&}assumed
-Dialogue: 0,0:02:22.10,0:02:22.48,Cap,,0,0,0,,{\c&H0000E6FF&}mine {\c&H00FFFFFF&}were {\c&H00FFFFFF&}past
-Dialogue: 0,0:02:22.48,0:02:22.71,Cap,,0,0,0,,{\c&H00FFFFFF&}mine {\c&H0000E6FF&}were {\c&H00FFFFFF&}past
-Dialogue: 0,0:02:22.71,0:02:22.79,Cap,,0,0,0,,{\c&H00FFFFFF&}mine {\c&H00FFFFFF&}were {\c&H0000E6FF&}past
-Dialogue: 0,0:02:22.79,0:02:23.16,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}point {\c&H00FFFFFF&}of
-Dialogue: 0,0:02:23.16,0:02:23.24,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}point {\c&H00FFFFFF&}of
-Dialogue: 0,0:02:23.24,0:02:23.62,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}point {\c&H0000E6FF&}of
-Dialogue: 0,0:02:23.62,0:02:24.32,Cap,,0,0,0,,{\c&H0000E6FF&}fixing
-Dialogue: 0,0:02:24.69,0:02:25.05,Cap,,0,0,0,,{\c&H0000E6FF&}barbara {\c&H00FFFFFF&}came {\c&H00FFFFFF&}to
-Dialogue: 0,0:02:25.05,0:02:25.31,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara {\c&H0000E6FF&}came {\c&H00FFFFFF&}to
-Dialogue: 0,0:02:25.31,0:02:25.49,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara {\c&H00FFFFFF&}came {\c&H0000E6FF&}to
-Dialogue: 0,0:02:25.49,0:02:25.59,Cap,,0,0,0,,{\c&H0000E6FF&}stay {\c&H00FFFFFF&}the {\c&H00FFFFFF&}week
-Dialogue: 0,0:02:25.59,0:02:25.67,Cap,,0,0,0,,{\c&H00FFFFFF&}stay {\c&H0000E6FF&}the {\c&H00FFFFFF&}week
-Dialogue: 0,0:02:25.67,0:02:26.09,Cap,,0,0,0,,{\c&H00FFFFFF&}stay {\c&H00FFFFFF&}the {\c&H0000E6FF&}week
-Dialogue: 0,0:02:26.09,0:02:26.59,Cap,,0,0,0,,{\c&H0000E6FF&}after
-Dialogue: 0,0:02:29.94,0:02:30.02,Cap,,0,0,0,,{\c&H0000E6FF&}she {\c&H00FFFFFF&}watched {\c&H00FFFFFF&}me
-Dialogue: 0,0:02:30.02,0:02:30.42,Cap,,0,0,0,,{\c&H00FFFFFF&}she {\c&H0000E6FF&}watched {\c&H00FFFFFF&}me
-Dialogue: 0,0:02:30.42,0:02:30.63,Cap,,0,0,0,,{\c&H00FFFFFF&}she {\c&H00FFFFFF&}watched {\c&H0000E6FF&}me
-Dialogue: 0,0:02:30.63,0:02:30.84,Cap,,0,0,0,,{\c&H0000E6FF&}work {\c&H00FFFFFF&}through {\c&H00FFFFFF&}my
-Dialogue: 0,0:02:30.84,0:02:30.92,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H0000E6FF&}through {\c&H00FFFFFF&}my
-Dialogue: 0,0:02:30.92,0:02:31.27,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H00FFFFFF&}through {\c&H0000E6FF&}my
-Dialogue: 0,0:02:31.27,0:02:31.59,Cap,,0,0,0,,{\c&H0000E6FF&}morning {\c&H00FFFFFF&}routine
-Dialogue: 0,0:02:31.59,0:02:32.07,Cap,,0,0,0,,{\c&H00FFFFFF&}morning {\c&H0000E6FF&}routine
-Dialogue: 0,0:02:33.08,0:02:33.36,Cap,,0,0,0,,{\c&H0000E6FF&}can {\c&H00FFFFFF&}i
-Dialogue: 0,0:02:33.36,0:02:33.52,Cap,,0,0,0,,{\c&H00FFFFFF&}can {\c&H0000E6FF&}i
-Dialogue: 0,0:02:34.50,0:02:34.58,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}small {\c&H00FFFFFF&}black
-Dialogue: 0,0:02:34.58,0:02:34.77,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}small {\c&H00FFFFFF&}black
-Dialogue: 0,0:02:34.77,0:02:35.48,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H00FFFFFF&}small {\c&H0000E6FF&}black
-Dialogue: 0,0:02:35.48,0:02:36.47,Cap,,0,0,0,,{\c&H0000E6FF&}strap
-Dialogue: 0,0:02:36.62,0:02:36.80,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}below {\c&H00FFFFFF&}her
-Dialogue: 0,0:02:36.80,0:02:36.89,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}below {\c&H00FFFFFF&}her
-Dialogue: 0,0:02:36.89,0:02:37.33,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H00FFFFFF&}below {\c&H0000E6FF&}her
-Dialogue: 0,0:02:37.33,0:02:38.21,Cap,,0,0,0,,{\c&H0000E6FF&}kneecap
-Dialogue: 0,0:02:41.60,0:02:41.69,Cap,,0,0,0,,{\c&H0000E6FF&}they {\c&H00FFFFFF&}come {\c&H00FFFFFF&}in
-Dialogue: 0,0:02:41.69,0:02:41.91,Cap,,0,0,0,,{\c&H00FFFFFF&}they {\c&H0000E6FF&}come {\c&H00FFFFFF&}in
-Dialogue: 0,0:02:41.91,0:02:42.07,Cap,,0,0,0,,{\c&H00FFFFFF&}they {\c&H00FFFFFF&}come {\c&H0000E6FF&}in
-Dialogue: 0,0:02:42.07,0:02:42.65,Cap,,0,0,0,,{\c&H0000E6FF&}twos
-Dialogue: 0,0:02:42.99,0:02:43.09,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}never {\c&H00FFFFFF&}used
-Dialogue: 0,0:02:43.09,0:02:43.34,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}never {\c&H00FFFFFF&}used
-Dialogue: 0,0:02:43.34,0:02:43.64,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}never {\c&H0000E6FF&}used
-Dialogue: 0,0:02:43.64,0:02:43.84,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}spare
-Dialogue: 0,0:02:43.84,0:02:44.09,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}spare
-Dialogue: 0,0:02:44.09,0:02:44.32,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}looked {\c&H00FFFFFF&}absurd
-Dialogue: 0,0:02:44.32,0:02:44.55,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}looked {\c&H00FFFFFF&}absurd
-Dialogue: 0,0:02:44.55,0:02:44.78,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H00FFFFFF&}looked {\c&H0000E6FF&}absurd
-Dialogue: 0,0:02:44.78,0:02:45.01,Cap,,0,0,0,,{\c&H0000E6FF&}too {\c&H00FFFFFF&}small
-Dialogue: 0,0:02:45.01,0:02:45.25,Cap,,0,0,0,,{\c&H00FFFFFF&}too {\c&H0000E6FF&}small
-Dialogue: 0,0:02:45.25,0:02:45.93,Cap,,0,0,0,,{\c&H0000E6FF&}barbara
-Dialogue: 0,0:02:46.46,0:02:46.64,Cap,,0,0,0,,{\c&H0000E6FF&}this {\c&H00FFFFFF&}can’t {\c&H00FFFFFF&}possibly
-Dialogue: 0,0:02:46.64,0:02:46.97,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H0000E6FF&}can’t {\c&H00FFFFFF&}possibly
-Dialogue: 0,0:02:46.97,0:02:47.37,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H00FFFFFF&}can’t {\c&H0000E6FF&}possibly
-Dialogue: 0,0:02:47.37,0:02:47.66,Cap,,0,0,0,,{\c&H0000E6FF&}work {\c&H00FFFFFF&}on {\c&H00FFFFFF&}knees
-Dialogue: 0,0:02:47.66,0:02:47.82,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H0000E6FF&}on {\c&H00FFFFFF&}knees
-Dialogue: 0,0:02:47.82,0:02:48.03,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H00FFFFFF&}on {\c&H0000E6FF&}knees
-Dialogue: 0,0:02:48.03,0:02:48.33,Cap,,0,0,0,,{\c&H0000E6FF&}like {\c&H00FFFFFF&}mine
-Dialogue: 0,0:02:48.33,0:02:49.05,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H0000E6FF&}mine
-Dialogue: 0,0:02:49.83,0:02:50.16,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}put {\c&H00FFFFFF&}it
-Dialogue: 0,0:02:50.16,0:02:50.27,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}put {\c&H00FFFFFF&}it
-Dialogue: 0,0:02:50.27,0:02:50.45,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H00FFFFFF&}put {\c&H0000E6FF&}it
-Dialogue: 0,0:02:50.45,0:02:50.81,Cap,,0,0,0,,{\c&H0000E6FF&}on
-Dialogue: 0,0:02:51.12,0:02:51.25,Cap,,0,0,0,,{\c&H0000E6FF&}and {\c&H00FFFFFF&}walk {\c&H00FFFFFF&}down
-Dialogue: 0,0:02:51.25,0:02:51.45,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H0000E6FF&}walk {\c&H00FFFFFF&}down
-Dialogue: 0,0:02:51.45,0:02:51.69,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H00FFFFFF&}walk {\c&H0000E6FF&}down
-Dialogue: 0,0:02:51.69,0:02:51.93,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}stairs
-Dialogue: 0,0:02:51.93,0:02:52.63,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}stairs
-Dialogue: 0,0:02:56.03,0:02:56.26,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}first {\c&H00FFFFFF&}step
-Dialogue: 0,0:02:56.26,0:02:56.50,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}first {\c&H00FFFFFF&}step
-Dialogue: 0,0:02:56.50,0:02:57.30,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}first {\c&H0000E6FF&}step
-Dialogue: 0,0:02:57.30,0:02:57.44,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}didn’t {\c&H00FFFFFF&}have
-Dialogue: 0,0:02:57.44,0:02:57.62,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}didn’t {\c&H00FFFFFF&}have
-Dialogue: 0,0:02:57.62,0:02:57.80,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}didn’t {\c&H0000E6FF&}have
-Dialogue: 0,0:02:57.80,0:02:57.88,Cap,,0,0,0,,{\c&H0000E6FF&}to {\c&H00FFFFFF&}hold {\c&H00FFFFFF&}the
-Dialogue: 0,0:02:57.88,0:02:58.11,Cap,,0,0,0,,{\c&H00FFFFFF&}to {\c&H0000E6FF&}hold {\c&H00FFFFFF&}the
-Dialogue: 0,0:02:58.11,0:02:58.34,Cap,,0,0,0,,{\c&H00FFFFFF&}to {\c&H00FFFFFF&}hold {\c&H0000E6FF&}the
-Dialogue: 0,0:02:58.34,0:02:59.20,Cap,,0,0,0,,{\c&H0000E6FF&}banister
-Dialogue: 0,0:02:59.78,0:03:00.04,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the {\c&H00FFFFFF&}second
-Dialogue: 0,0:03:00.04,0:03:00.12,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the {\c&H00FFFFFF&}second
-Dialogue: 0,0:03:00.12,0:03:00.99,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}the {\c&H0000E6FF&}second
-Dialogue: 0,0:03:01.55,0:03:01.79,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the {\c&H00FFFFFF&}third
-Dialogue: 0,0:03:01.79,0:03:01.87,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the {\c&H00FFFFFF&}third
-Dialogue: 0,0:03:01.87,0:03:02.67,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}the {\c&H0000E6FF&}third
-Dialogue: 0,0:03:03.08,0:03:03.16,Cap,,0,0,0,,{\c&H0000E6FF&}all {\c&H00FFFFFF&}the {\c&H00FFFFFF&}way
-Dialogue: 0,0:03:03.16,0:03:03.61,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H0000E6FF&}the {\c&H00FFFFFF&}way
-Dialogue: 0,0:03:03.61,0:03:03.77,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H00FFFFFF&}the {\c&H0000E6FF&}way
-Dialogue: 0,0:03:03.77,0:03:04.69,Cap,,0,0,0,,{\c&H0000E6FF&}down
-Dialogue: 0,0:03:04.96,0:03:05.04,Cap,,0,0,0,,{\c&H0000E6FF&}both {\c&H00FFFFFF&}feet
-Dialogue: 0,0:03:05.04,0:03:06.05,Cap,,0,0,0,,{\c&H00FFFFFF&}both {\c&H0000E6FF&}feet
-Dialogue: 0,0:03:06.21,0:03:06.99,Cap,,0,0,0,,{\c&H0000E6FF&}forwards
-Dialogue: 0,0:03:07.56,0:03:07.99,Cap,,0,0,0,,{\c&H0000E6FF&}first {\c&H00FFFFFF&}step
-Dialogue: 0,0:03:07.99,0:03:08.41,Cap,,0,0,0,,{\c&H00FFFFFF&}first {\c&H0000E6FF&}step
-Dialogue: 0,0:03:08.41,0:03:09.07,Cap,,0,0,0,,{\c&H0000E6FF&}pain {\c&H00FFFFFF&}gone
-Dialogue: 0,0:03:09.07,0:03:09.75,Cap,,0,0,0,,{\c&H00FFFFFF&}pain {\c&H0000E6FF&}gone
-Dialogue: 0,0:03:09.75,0:03:10.22,Cap,,0,0,0,,{\c&H0000E6FF&}like {\c&H00FFFFFF&}a {\c&H00FFFFFF&}switch
-Dialogue: 0,0:03:10.22,0:03:10.57,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H0000E6FF&}a {\c&H00FFFFFF&}switch
-Dialogue: 0,0:03:10.57,0:03:10.95,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H00FFFFFF&}a {\c&H0000E6FF&}switch
-Dialogue: 0,0:03:11.58,0:03:12.07,Cap,,0,0,0,,{\c&H0000E6FF&}everything {\c&H00FFFFFF&}you’ve {\c&H00FFFFFF&}tried
-Dialogue: 0,0:03:12.07,0:03:12.47,Cap,,0,0,0,,{\c&H00FFFFFF&}everything {\c&H0000E6FF&}you’ve {\c&H00FFFFFF&}tried
-Dialogue: 0,0:03:12.47,0:03:12.83,Cap,,0,0,0,,{\c&H00FFFFFF&}everything {\c&H00FFFFFF&}you’ve {\c&H0000E6FF&}tried
-Dialogue: 0,0:03:12.83,0:03:13.34,Cap,,0,0,0,,{\c&H0000E6FF&}was {\c&H00FFFFFF&}designed {\c&H00FFFFFF&}to
-Dialogue: 0,0:03:13.34,0:03:13.73,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H0000E6FF&}designed {\c&H00FFFFFF&}to
-Dialogue: 0,0:03:13.73,0:03:13.99,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H00FFFFFF&}designed {\c&H0000E6FF&}to
-Dialogue: 0,0:03:13.99,0:03:14.24,Cap,,0,0,0,,{\c&H0000E6FF&}make {\c&H00FFFFFF&}you {\c&H00FFFFFF&}comfortable
-Dialogue: 0,0:03:14.24,0:03:14.43,Cap,,0,0,0,,{\c&H00FFFFFF&}make {\c&H0000E6FF&}you {\c&H00FFFFFF&}comfortable
-Dialogue: 0,0:03:14.43,0:03:14.94,Cap,,0,0,0,,{\c&H00FFFFFF&}make {\c&H00FFFFFF&}you {\c&H0000E6FF&}comfortable
-Dialogue: 0,0:03:14.94,0:03:15.59,Cap,,0,0,0,,{\c&H0000E6FF&}while {\c&H00FFFFFF&}your {\c&H00FFFFFF&}knee
-Dialogue: 0,0:03:15.59,0:03:15.93,Cap,,0,0,0,,{\c&H00FFFFFF&}while {\c&H0000E6FF&}your {\c&H00FFFFFF&}knee
-Dialogue: 0,0:03:15.93,0:03:16.15,Cap,,0,0,0,,{\c&H00FFFFFF&}while {\c&H00FFFFFF&}your {\c&H0000E6FF&}knee
-Dialogue: 0,0:03:16.15,0:03:16.59,Cap,,0,0,0,,{\c&H0000E6FF&}got {\c&H00FFFFFF&}worse
-Dialogue: 0,0:03:16.59,0:03:17.16,Cap,,0,0,0,,{\c&H00FFFFFF&}got {\c&H0000E6FF&}worse
-Dialogue: 0,0:03:18.32,0:03:18.51,Cap,,0,0,0,,{\c&H0000E6FF&}this {\c&H00FFFFFF&}one
-Dialogue: 0,0:03:18.51,0:03:19.27,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H0000E6FF&}one
-Dialogue: 0,0:03:19.50,0:03:19.91,Cap,,0,0,0,,{\c&H0000E6FF&}fixes {\c&H00FFFFFF&}why {\c&H00FFFFFF&}it
-Dialogue: 0,0:03:19.91,0:03:20.49,Cap,,0,0,0,,{\c&H00FFFFFF&}fixes {\c&H0000E6FF&}why {\c&H00FFFFFF&}it
-Dialogue: 0,0:03:20.49,0:03:20.75,Cap,,0,0,0,,{\c&H00FFFFFF&}fixes {\c&H00FFFFFF&}why {\c&H0000E6FF&}it
-Dialogue: 0,0:03:20.75,0:03:21.55,Cap,,0,0,0,,{\c&H0000E6FF&}hurts
-Dialogue: 0,0:03:23.21,0:03:23.47,Cap,,0,0,0,,{\c&H0000E6FF&}there’s {\c&H00FFFFFF&}one {\c&H00FFFFFF&}spot
-Dialogue: 0,0:03:23.47,0:03:23.71,Cap,,0,0,0,,{\c&H00FFFFFF&}there’s {\c&H0000E6FF&}one {\c&H00FFFFFF&}spot
-Dialogue: 0,0:03:23.71,0:03:24.15,Cap,,0,0,0,,{\c&H00FFFFFF&}there’s {\c&H00FFFFFF&}one {\c&H0000E6FF&}spot
-Dialogue: 0,0:03:24.15,0:03:24.49,Cap,,0,0,0,,{\c&H0000E6FF&}below {\c&H00FFFFFF&}the {\c&H00FFFFFF&}kneecap
-Dialogue: 0,0:03:24.49,0:03:24.71,Cap,,0,0,0,,{\c&H00FFFFFF&}below {\c&H0000E6FF&}the {\c&H00FFFFFF&}kneecap
-Dialogue: 0,0:03:24.71,0:03:25.43,Cap,,0,0,0,,{\c&H00FFFFFF&}below {\c&H00FFFFFF&}the {\c&H0000E6FF&}kneecap
-Dialogue: 0,0:03:25.43,0:03:25.59,Cap,,0,0,0,,{\c&H0000E6FF&}where {\c&H00FFFFFF&}every {\c&H00FFFFFF&}step
-Dialogue: 0,0:03:25.59,0:03:25.97,Cap,,0,0,0,,{\c&H00FFFFFF&}where {\c&H0000E6FF&}every {\c&H00FFFFFF&}step
-Dialogue: 0,0:03:25.97,0:03:26.38,Cap,,0,0,0,,{\c&H00FFFFFF&}where {\c&H00FFFFFF&}every {\c&H0000E6FF&}step
-Dialogue: 0,0:03:26.38,0:03:27.31,Cap,,0,0,0,,{\c&H0000E6FF&}lands
-Dialogue: 0,0:03:28.80,0:03:29.07,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}brace
-Dialogue: 0,0:03:29.07,0:03:29.91,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}brace
-Dialogue: 0,0:03:30.07,0:03:30.19,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}injection
-Dialogue: 0,0:03:30.19,0:03:30.90,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}injection
-Dialogue: 0,0:03:31.33,0:03:31.63,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}pill {\c&H00FFFFFF&}you’ve
-Dialogue: 0,0:03:31.63,0:03:31.97,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}pill {\c&H00FFFFFF&}you’ve
-Dialogue: 0,0:03:31.97,0:03:32.37,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H00FFFFFF&}pill {\c&H0000E6FF&}you’ve
-Dialogue: 0,0:03:32.37,0:03:32.60,Cap,,0,0,0,,{\c&H0000E6FF&}ever {\c&H00FFFFFF&}taken
-Dialogue: 0,0:03:32.60,0:03:33.22,Cap,,0,0,0,,{\c&H00FFFFFF&}ever {\c&H0000E6FF&}taken
-Dialogue: 0,0:03:33.62,0:03:33.91,Cap,,0,0,0,,{\c&H0000E6FF&}treated {\c&H00FFFFFF&}the {\c&H00FFFFFF&}whole
-Dialogue: 0,0:03:33.91,0:03:34.17,Cap,,0,0,0,,{\c&H00FFFFFF&}treated {\c&H0000E6FF&}the {\c&H00FFFFFF&}whole
-Dialogue: 0,0:03:34.17,0:03:34.41,Cap,,0,0,0,,{\c&H00FFFFFF&}treated {\c&H00FFFFFF&}the {\c&H0000E6FF&}whole
-Dialogue: 0,0:03:34.41,0:03:35.31,Cap,,0,0,0,,{\c&H0000E6FF&}knee
-Dialogue: 0,0:03:36.31,0:03:36.55,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}that {\c&H00FFFFFF&}spot
-Dialogue: 0,0:03:36.55,0:03:36.90,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}that {\c&H00FFFFFF&}spot
-Dialogue: 0,0:03:36.90,0:03:37.69,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}that {\c&H0000E6FF&}spot
-Dialogue: 0,0:03:38.73,0:03:39.01,Cap,,0,0,0,,{\c&H0000E6FF&}that’s {\c&H00FFFFFF&}why {\c&H00FFFFFF&}nothing
-Dialogue: 0,0:03:39.01,0:03:39.15,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H0000E6FF&}why {\c&H00FFFFFF&}nothing
-Dialogue: 0,0:03:39.15,0:03:39.49,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H00FFFFFF&}why {\c&H0000E6FF&}nothing
-Dialogue: 0,0:03:39.49,0:03:40.18,Cap,,0,0,0,,{\c&H0000E6FF&}worked
-Dialogue: 0,0:03:40.71,0:03:40.81,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}pain {\c&H00FFFFFF&}is
-Dialogue: 0,0:03:40.81,0:03:41.17,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}pain {\c&H00FFFFFF&}is
-Dialogue: 0,0:03:41.17,0:03:41.66,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}pain {\c&H0000E6FF&}is
-Dialogue: 0,0:03:41.67,0:03:42.43,Cap,,0,0,0,,{\c&H0000E6FF&}pressure
-Dialogue: 0,0:03:42.69,0:03:42.95,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}more
-Dialogue: 0,0:03:42.95,0:03:43.87,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}more
-Dialogue: 0,0:03:45.51,0:03:45.64,Cap,,0,0,0,,{\c&H0000E6FF&}this {\c&H00FFFFFF&}sits {\c&H00FFFFFF&}on
-Dialogue: 0,0:03:45.64,0:03:46.05,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H0000E6FF&}sits {\c&H00FFFFFF&}on
-Dialogue: 0,0:03:46.05,0:03:46.39,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H00FFFFFF&}sits {\c&H0000E6FF&}on
-Dialogue: 0,0:03:46.39,0:03:46.68,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}spot {\c&H00FFFFFF&}and
-Dialogue: 0,0:03:46.68,0:03:47.17,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}spot {\c&H00FFFFFF&}and
-Dialogue: 0,0:03:47.17,0:03:47.75,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}spot {\c&H0000E6FF&}and
-Dialogue: 0,0:03:47.75,0:03:48.13,Cap,,0,0,0,,{\c&H0000E6FF&}lifts {\c&H00FFFFFF&}the {\c&H00FFFFFF&}weight
-Dialogue: 0,0:03:48.13,0:03:48.39,Cap,,0,0,0,,{\c&H00FFFFFF&}lifts {\c&H0000E6FF&}the {\c&H00FFFFFF&}weight
-Dialogue: 0,0:03:48.39,0:03:48.63,Cap,,0,0,0,,{\c&H00FFFFFF&}lifts {\c&H00FFFFFF&}the {\c&H0000E6FF&}weight
-Dialogue: 0,0:03:48.63,0:03:49.41,Cap,,0,0,0,,{\c&H0000E6FF&}off
-Dialogue: 0,0:03:50.44,0:03:51.06,Cap,,0,0,0,,{\c&H0000E6FF&}over
-Dialogue: 0,0:03:51.46,0:03:51.97,Cap,,0,0,0,,{\c&H0000E6FF&}200000 {\c&H00FFFFFF&}people {\c&H00FFFFFF&}wear
-Dialogue: 0,0:03:51.97,0:03:52.19,Cap,,0,0,0,,{\c&H00FFFFFF&}200000 {\c&H0000E6FF&}people {\c&H00FFFFFF&}wear
-Dialogue: 0,0:03:52.19,0:03:52.54,Cap,,0,0,0,,{\c&H00FFFFFF&}200000 {\c&H00FFFFFF&}people {\c&H0000E6FF&}wear
-Dialogue: 0,0:03:52.54,0:03:52.76,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}now
-Dialogue: 0,0:03:52.76,0:03:53.54,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}now
-Dialogue: 0,0:03:53.66,0:03:53.96,Cap,,0,0,0,,{\c&H0000E6FF&}sports {\c&H00FFFFFF&}doctors {\c&H00FFFFFF&}recommend
-Dialogue: 0,0:03:53.96,0:03:54.14,Cap,,0,0,0,,{\c&H00FFFFFF&}sports {\c&H0000E6FF&}doctors {\c&H00FFFFFF&}recommend
-Dialogue: 0,0:03:54.14,0:03:54.46,Cap,,0,0,0,,{\c&H00FFFFFF&}sports {\c&H00FFFFFF&}doctors {\c&H0000E6FF&}recommend
-Dialogue: 0,0:03:54.46,0:03:55.42,Cap,,0,0,0,,{\c&H0000E6FF&}it
-Dialogue: 0,0:03:55.44,0:03:55.63,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the {\c&H00FFFFFF&}pharma
-Dialogue: 0,0:03:55.63,0:03:55.71,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the {\c&H00FFFFFF&}pharma
-Dialogue: 0,0:03:55.71,0:03:56.10,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}the {\c&H0000E6FF&}pharma
-Dialogue: 0,0:03:56.10,0:03:56.88,Cap,,0,0,0,,{\c&H0000E6FF&}companies
-Dialogue: 0,0:03:57.23,0:03:57.45,Cap,,0,0,0,,{\c&H0000E6FF&}sports {\c&H00FFFFFF&}doctors
-Dialogue: 0,0:03:57.45,0:03:58.32,Cap,,0,0,0,,{\c&H00FFFFFF&}sports {\c&H0000E6FF&}doctors
-Dialogue: 0,0:03:58.79,0:03:59.08,Cap,,0,0,0,,{\c&H0000E6FF&}barbara’s {\c&H00FFFFFF&}husband {\c&H00FFFFFF&}wears
-Dialogue: 0,0:03:59.08,0:03:59.57,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara’s {\c&H0000E6FF&}husband {\c&H00FFFFFF&}wears
-Dialogue: 0,0:03:59.57,0:03:59.98,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara’s {\c&H00FFFFFF&}husband {\c&H0000E6FF&}wears
-Dialogue: 0,0:03:59.98,0:04:00.41,Cap,,0,0,0,,{\c&H0000E6FF&}one
-Dialogue: 0,0:04:00.64,0:04:00.72,Cap,,0,0,0,,{\c&H0000E6FF&}he’s {\c&H00FFFFFF&}76
-Dialogue: 0,0:04:00.72,0:04:01.88,Cap,,0,0,0,,{\c&H00FFFFFF&}he’s {\c&H0000E6FF&}76
-Dialogue: 0,0:04:02.22,0:04:02.45,Cap,,0,0,0,,{\c&H0000E6FF&}he {\c&H00FFFFFF&}plays {\c&H00FFFFFF&}golf
-Dialogue: 0,0:04:02.45,0:04:02.67,Cap,,0,0,0,,{\c&H00FFFFFF&}he {\c&H0000E6FF&}plays {\c&H00FFFFFF&}golf
-Dialogue: 0,0:04:02.67,0:04:02.75,Cap,,0,0,0,,{\c&H00FFFFFF&}he {\c&H00FFFFFF&}plays {\c&H0000E6FF&}golf
-Dialogue: 0,0:04:02.75,0:04:03.12,Cap,,0,0,0,,{\c&H0000E6FF&}twice {\c&H00FFFFFF&}a {\c&H00FFFFFF&}week
-Dialogue: 0,0:04:03.12,0:04:03.50,Cap,,0,0,0,,{\c&H00FFFFFF&}twice {\c&H0000E6FF&}a {\c&H00FFFFFF&}week
-Dialogue: 0,0:04:03.50,0:04:04.08,Cap,,0,0,0,,{\c&H00FFFFFF&}twice {\c&H00FFFFFF&}a {\c&H0000E6FF&}week
-Dialogue: 0,0:04:04.45,0:04:04.61,Cap,,0,0,0,,{\c&H0000E6FF&}her {\c&H00FFFFFF&}niece {\c&H00FFFFFF&}wears
-Dialogue: 0,0:04:04.61,0:04:05.02,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H0000E6FF&}niece {\c&H00FFFFFF&}wears
-Dialogue: 0,0:04:05.02,0:04:05.11,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H00FFFFFF&}niece {\c&H0000E6FF&}wears
-Dialogue: 0,0:04:05.11,0:04:05.38,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}for {\c&H00FFFFFF&}tennis
-Dialogue: 0,0:04:05.38,0:04:05.71,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}for {\c&H00FFFFFF&}tennis
-Dialogue: 0,0:04:05.71,0:04:06.44,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}for {\c&H0000E6FF&}tennis
-Dialogue: 0,0:04:06.48,0:04:06.74,Cap,,0,0,0,,{\c&H0000E6FF&}she’s {\c&H00FFFFFF&}22
-Dialogue: 0,0:04:06.74,0:04:07.17,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H0000E6FF&}22
-Dialogue: 0,0:04:09.51,0:04:09.74,Cap,,0,0,0,,{\c&H0000E6FF&}i’ve {\c&H00FFFFFF&}worn {\c&H00FFFFFF&}mine
-Dialogue: 0,0:04:09.74,0:04:09.96,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ve {\c&H0000E6FF&}worn {\c&H00FFFFFF&}mine
-Dialogue: 0,0:04:09.96,0:04:10.28,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ve {\c&H00FFFFFF&}worn {\c&H0000E6FF&}mine
-Dialogue: 0,0:04:10.28,0:04:10.40,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}day {\c&H00FFFFFF&}for
-Dialogue: 0,0:04:10.40,0:04:10.98,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}day {\c&H00FFFFFF&}for
-Dialogue: 0,0:04:10.98,0:04:11.24,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H00FFFFFF&}day {\c&H0000E6FF&}for
-Dialogue: 0,0:04:11.24,0:04:11.43,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks
-Dialogue: 0,0:04:11.43,0:04:12.32,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H0000E6FF&}weeks
-Dialogue: 0,0:04:12.44,0:04:12.52,Cap,,0,0,0,,{\c&H0000E6FF&}under {\c&H00FFFFFF&}my {\c&H00FFFFFF&}clothes
-Dialogue: 0,0:04:12.52,0:04:12.80,Cap,,0,0,0,,{\c&H00FFFFFF&}under {\c&H0000E6FF&}my {\c&H00FFFFFF&}clothes
-Dialogue: 0,0:04:12.80,0:04:13.62,Cap,,0,0,0,,{\c&H00FFFFFF&}under {\c&H00FFFFFF&}my {\c&H0000E6FF&}clothes
-Dialogue: 0,0:04:13.68,0:04:13.76,Cap,,0,0,0,,{\c&H0000E6FF&}nobody {\c&H00FFFFFF&}knows {\c&H00FFFFFF&}it’s
-Dialogue: 0,0:04:13.76,0:04:14.30,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H0000E6FF&}knows {\c&H00FFFFFF&}it’s
-Dialogue: 0,0:04:14.30,0:04:14.56,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H00FFFFFF&}knows {\c&H0000E6FF&}it’s
-Dialogue: 0,0:04:14.56,0:04:14.89,Cap,,0,0,0,,{\c&H0000E6FF&}there
-Dialogue: 0,0:04:15.66,0:04:15.74,Cap,,0,0,0,,{\c&H0000E6FF&}no {\c&H00FFFFFF&}pills
-Dialogue: 0,0:04:15.74,0:04:16.52,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H0000E6FF&}pills
-Dialogue: 0,0:04:16.52,0:04:17.00,Cap,,0,0,0,,{\c&H0000E6FF&}no {\c&H00FFFFFF&}gel
-Dialogue: 0,0:04:17.00,0:04:17.44,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H0000E6FF&}gel
-Dialogue: 0,0:04:17.47,0:04:17.55,Cap,,0,0,0,,{\c&H0000E6FF&}no {\c&H00FFFFFF&}brace {\c&H00FFFFFF&}around
-Dialogue: 0,0:04:17.55,0:04:17.71,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H0000E6FF&}brace {\c&H00FFFFFF&}around
-Dialogue: 0,0:04:17.71,0:04:18.24,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H00FFFFFF&}brace {\c&H0000E6FF&}around
-Dialogue: 0,0:04:18.24,0:04:18.46,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}ankle {\c&H00FFFFFF&}by
-Dialogue: 0,0:04:18.46,0:04:18.74,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}ankle {\c&H00FFFFFF&}by
-Dialogue: 0,0:04:18.74,0:04:19.05,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}ankle {\c&H0000E6FF&}by
-Dialogue: 0,0:04:19.46,0:04:19.63,Cap,,0,0,0,,{\c&H0000E6FF&}lunchtime
-Dialogue: 0,0:04:20.18,0:04:20.50,Cap,,0,0,0,,{\c&H0000E6FF&}yesterday {\c&H00FFFFFF&}i {\c&H00FFFFFF&}walked
-Dialogue: 0,0:04:20.50,0:04:21.09,Cap,,0,0,0,,{\c&H00FFFFFF&}yesterday {\c&H0000E6FF&}i {\c&H00FFFFFF&}walked
-Dialogue: 0,0:04:21.09,0:04:21.33,Cap,,0,0,0,,{\c&H00FFFFFF&}yesterday {\c&H00FFFFFF&}i {\c&H0000E6FF&}walked
-Dialogue: 0,0:04:21.33,0:04:21.87,Cap,,0,0,0,,{\c&H0000E6FF&}into {\c&H00FFFFFF&}town
-Dialogue: 0,0:04:21.87,0:04:22.37,Cap,,0,0,0,,{\c&H00FFFFFF&}into {\c&H0000E6FF&}town
-Dialogue: 0,0:04:22.41,0:04:22.64,Cap,,0,0,0,,{\c&H0000E6FF&}two {\c&H00FFFFFF&}miles {\c&H00FFFFFF&}there
-Dialogue: 0,0:04:22.64,0:04:22.87,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H0000E6FF&}miles {\c&H00FFFFFF&}there
-Dialogue: 0,0:04:22.87,0:04:23.49,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H00FFFFFF&}miles {\c&H0000E6FF&}there
-Dialogue: 0,0:04:23.49,0:04:23.57,Cap,,0,0,0,,{\c&H0000E6FF&}two {\c&H00FFFFFF&}miles {\c&H00FFFFFF&}back
-Dialogue: 0,0:04:23.57,0:04:24.02,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H0000E6FF&}miles {\c&H00FFFFFF&}back
-Dialogue: 0,0:04:24.02,0:04:24.63,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H00FFFFFF&}miles {\c&H0000E6FF&}back
-Dialogue: 0,0:04:24.77,0:04:24.97,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}outwalked {\c&H00FFFFFF&}three
-Dialogue: 0,0:04:24.97,0:04:25.44,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}outwalked {\c&H00FFFFFF&}three
-Dialogue: 0,0:04:25.44,0:04:25.58,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}outwalked {\c&H0000E6FF&}three
-Dialogue: 0,0:04:25.58,0:04:26.21,Cap,,0,0,0,,{\c&H0000E6FF&}women {\c&H00FFFFFF&}half {\c&H00FFFFFF&}my
-Dialogue: 0,0:04:26.21,0:04:26.57,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H0000E6FF&}half {\c&H00FFFFFF&}my
-Dialogue: 0,0:04:26.57,0:04:26.71,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H00FFFFFF&}half {\c&H0000E6FF&}my
-Dialogue: 0,0:04:26.71,0:04:27.59,Cap,,0,0,0,,{\c&H0000E6FF&}age
-Dialogue: 0,0:04:28.24,0:04:28.32,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}stood {\c&H00FFFFFF&}in
-Dialogue: 0,0:04:28.32,0:04:28.51,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}stood {\c&H00FFFFFF&}in
-Dialogue: 0,0:04:28.51,0:04:28.79,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}stood {\c&H0000E6FF&}in
-Dialogue: 0,0:04:28.79,0:04:29.07,Cap,,0,0,0,,{\c&H0000E6FF&}line {\c&H00FFFFFF&}for {\c&H00FFFFFF&}ten
-Dialogue: 0,0:04:29.07,0:04:29.40,Cap,,0,0,0,,{\c&H00FFFFFF&}line {\c&H0000E6FF&}for {\c&H00FFFFFF&}ten
-Dialogue: 0,0:04:29.40,0:04:29.75,Cap,,0,0,0,,{\c&H00FFFFFF&}line {\c&H00FFFFFF&}for {\c&H0000E6FF&}ten
-Dialogue: 0,0:04:29.75,0:04:30.09,Cap,,0,0,0,,{\c&H0000E6FF&}minutes {\c&H00FFFFFF&}without {\c&H00FFFFFF&}shifting
-Dialogue: 0,0:04:30.09,0:04:30.28,Cap,,0,0,0,,{\c&H00FFFFFF&}minutes {\c&H0000E6FF&}without {\c&H00FFFFFF&}shifting
-Dialogue: 0,0:04:30.28,0:04:30.84,Cap,,0,0,0,,{\c&H00FFFFFF&}minutes {\c&H00FFFFFF&}without {\c&H0000E6FF&}shifting
-Dialogue: 0,0:04:30.84,0:04:31.53,Cap,,0,0,0,,{\c&H0000E6FF&}my
-Dialogue: 0,0:04:31.66,0:04:31.85,Cap,,0,0,0,,{\c&H0000E6FF&}weight
-Dialogue: 0,0:04:32.47,0:04:32.65,Cap,,0,0,0,,{\c&H0000E6FF&}you {\c&H00FFFFFF&}alright {\c&H00FFFFFF&}carrying
-Dialogue: 0,0:04:32.65,0:04:32.77,Cap,,0,0,0,,{\c&H00FFFFFF&}you {\c&H0000E6FF&}alright {\c&H00FFFFFF&}carrying
-Dialogue: 0,0:04:32.77,0:04:33.03,Cap,,0,0,0,,{\c&H00FFFFFF&}you {\c&H00FFFFFF&}alright {\c&H0000E6FF&}carrying
-Dialogue: 0,0:04:33.03,0:04:33.49,Cap,,0,0,0,,{\c&H0000E6FF&}those {\c&H00FFFFFF&}love
-Dialogue: 0,0:04:33.49,0:04:34.10,Cap,,0,0,0,,{\c&H00FFFFFF&}those {\c&H0000E6FF&}love
-Dialogue: 0,0:04:35.67,0:04:35.81,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}am {\c&H00FFFFFF&}actually
-Dialogue: 0,0:04:35.81,0:04:36.03,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}am {\c&H00FFFFFF&}actually
-Dialogue: 0,0:04:36.03,0:04:36.56,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}am {\c&H0000E6FF&}actually
-Dialogue: 0,0:04:37.78,0:04:38.05,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}carried {\c&H00FFFFFF&}two
-Dialogue: 0,0:04:38.05,0:04:38.31,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}carried {\c&H00FFFFFF&}two
-Dialogue: 0,0:04:38.31,0:04:38.46,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}carried {\c&H0000E6FF&}two
-Dialogue: 0,0:04:38.46,0:04:39.03,Cap,,0,0,0,,{\c&H0000E6FF&}bags {\c&H00FFFFFF&}home
-Dialogue: 0,0:04:39.03,0:04:39.81,Cap,,0,0,0,,{\c&H00FFFFFF&}bags {\c&H0000E6FF&}home
-Dialogue: 0,0:04:39.83,0:04:40.31,Cap,,0,0,0,,{\c&H0000E6FF&}nobody {\c&H00FFFFFF&}helped {\c&H00FFFFFF&}me
-Dialogue: 0,0:04:40.31,0:04:40.71,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H0000E6FF&}helped {\c&H00FFFFFF&}me
-Dialogue: 0,0:04:40.71,0:04:41.33,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H00FFFFFF&}helped {\c&H0000E6FF&}me
-Dialogue: 0,0:04:44.54,0:04:44.72,Cap,,0,0,0,,{\c&H0000E6FF&}you {\c&H00FFFFFF&}were {\c&H00FFFFFF&}gone
-Dialogue: 0,0:04:44.73,0:04:44.91,Cap,,0,0,0,,{\c&H00FFFFFF&}you {\c&H00FFFFFF&}were {\c&H0000E6FF&}gone
-Dialogue: 0,0:04:44.91,0:04:45.07,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}long {\c&H00FFFFFF&}time
-Dialogue: 0,0:04:45.07,0:04:45.19,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}long {\c&H00FFFFFF&}time
-Dialogue: 0,0:04:45.19,0:04:46.03,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H00FFFFFF&}long {\c&H0000E6FF&}time
-Dialogue: 0,0:04:47.02,0:04:47.11,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}know
-Dialogue: 0,0:04:47.11,0:04:47.72,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}know
-Dialogue: 0,0:04:48.88,0:04:49.06,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}was {\c&H00FFFFFF&}six
-Dialogue: 0,0:04:49.06,0:04:49.13,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}was {\c&H00FFFFFF&}six
-Dialogue: 0,0:04:49.13,0:04:49.55,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}was {\c&H0000E6FF&}six
-Dialogue: 0,0:04:49.55,0:04:49.93,Cap,,0,0,0,,{\c&H0000E6FF&}weeks {\c&H00FFFFFF&}of {\c&H00FFFFFF&}wearing
-Dialogue: 0,0:04:49.93,0:04:50.18,Cap,,0,0,0,,{\c&H00FFFFFF&}weeks {\c&H0000E6FF&}of {\c&H00FFFFFF&}wearing
-Dialogue: 0,0:04:50.18,0:04:50.43,Cap,,0,0,0,,{\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}of {\c&H0000E6FF&}wearing
-Dialogue: 0,0:04:50.43,0:04:50.63,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}strap
-Dialogue: 0,0:04:50.63,0:04:51.39,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}strap
-Dialogue: 0,0:04:51.54,0:04:51.62,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}else
-Dialogue: 0,0:04:51.62,0:04:52.51,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}else
-Dialogue: 0,0:04:53.00,0:04:53.22,Cap,,0,0,0,,{\c&H0000E6FF&}i’m {\c&H00FFFFFF&}not {\c&H00FFFFFF&}the
-Dialogue: 0,0:04:53.22,0:04:53.43,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H0000E6FF&}not {\c&H00FFFFFF&}the
-Dialogue: 0,0:04:53.43,0:04:53.65,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}not {\c&H0000E6FF&}the
-Dialogue: 0,0:04:53.65,0:04:53.87,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}everyone {\c&H00FFFFFF&}waits
-Dialogue: 0,0:04:53.87,0:04:54.09,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}everyone {\c&H00FFFFFF&}waits
-Dialogue: 0,0:04:54.09,0:04:54.45,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}everyone {\c&H0000E6FF&}waits
-Dialogue: 0,0:04:54.45,0:04:54.81,Cap,,0,0,0,,{\c&H0000E6FF&}for {\c&H00FFFFFF&}anymore
-Dialogue: 0,0:04:54.81,0:04:55.49,Cap,,0,0,0,,{\c&H00FFFFFF&}for {\c&H0000E6FF&}anymore
-Dialogue: 0,0:04:55.90,0:04:56.58,Cap,,0,0,0,,{\c&H0000E6FF&}right
-Dialogue: 0,0:04:56.83,0:04:57.15,Cap,,0,0,0,,{\c&H0000E6FF&}what’s {\c&H00FFFFFF&}changed
-Dialogue: 0,0:04:57.15,0:04:57.77,Cap,,0,0,0,,{\c&H00FFFFFF&}what’s {\c&H0000E6FF&}changed
-Dialogue: 0,0:04:57.77,0:04:57.87,Cap,,0,0,0,,{\c&H0000E6FF&}and {\c&H00FFFFFF&}don’t {\c&H00FFFFFF&}say
-Dialogue: 0,0:04:57.87,0:04:58.05,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H0000E6FF&}don’t {\c&H00FFFFFF&}say
-Dialogue: 0,0:04:58.05,0:04:58.27,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H00FFFFFF&}don’t {\c&H0000E6FF&}say
-Dialogue: 0,0:04:58.27,0:04:58.43,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}haircut
-Dialogue: 0,0:04:58.43,0:04:59.11,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}haircut
-Dialogue: 0,0:04:59.98,0:05:00.17,Cap,,0,0,0,,{\c&H0000E6FF&}three {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
-Dialogue: 0,0:05:00.17,0:05:00.43,Cap,,0,0,0,,{\c&H00FFFFFF&}three {\c&H0000E6FF&}weeks {\c&H00FFFFFF&}ago
-Dialogue: 0,0:05:00.43,0:05:00.69,Cap,,0,0,0,,{\c&H00FFFFFF&}three {\c&H00FFFFFF&}weeks {\c&H0000E6FF&}ago
-Dialogue: 0,0:05:00.69,0:05:00.87,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}couldn’t {\c&H00FFFFFF&}have
-Dialogue: 0,0:05:00.87,0:05:01.07,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}couldn’t {\c&H00FFFFFF&}have
-Dialogue: 0,0:05:01.07,0:05:01.23,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}couldn’t {\c&H0000E6FF&}have
-Dialogue: 0,0:05:01.23,0:05:01.47,Cap,,0,0,0,,{\c&H0000E6FF&}crossed {\c&H00FFFFFF&}this {\c&H00FFFFFF&}room
-Dialogue: 0,0:05:01.47,0:05:01.61,Cap,,0,0,0,,{\c&H00FFFFFF&}crossed {\c&H0000E6FF&}this {\c&H00FFFFFF&}room
-Dialogue: 0,0:05:01.61,0:05:01.85,Cap,,0,0,0,,{\c&H00FFFFFF&}crossed {\c&H00FFFFFF&}this {\c&H0000E6FF&}room
-Dialogue: 0,0:05:01.85,0:05:02.14,Cap,,0,0,0,,{\c&H0000E6FF&}like {\c&H00FFFFFF&}that
-Dialogue: 0,0:05:02.14,0:05:02.87,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H0000E6FF&}that
-Dialogue: 0,0:05:03.68,0:05:03.81,Cap,,0,0,0,,{\c&H0000E6FF&}so {\c&H00FFFFFF&}what {\c&H00FFFFFF&}is
-Dialogue: 0,0:05:03.81,0:05:04.04,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H0000E6FF&}what {\c&H00FFFFFF&}is
-Dialogue: 0,0:05:04.04,0:05:04.25,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H00FFFFFF&}what {\c&H0000E6FF&}is
-Dialogue: 0,0:05:04.25,0:05:04.91,Cap,,0,0,0,,{\c&H0000E6FF&}it
-Dialogue: 0,0:05:06.43,0:05:06.63,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}a {\c&H00FFFFFF&}strap
-Dialogue: 0,0:05:06.63,0:05:06.85,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}a {\c&H00FFFFFF&}strap
-Dialogue: 0,0:05:06.85,0:05:07.53,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}a {\c&H0000E6FF&}strap
-Dialogue: 0,0:05:09.14,0:05:09.32,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}little {\c&H00FFFFFF&}thing
-Dialogue: 0,0:05:09.32,0:05:09.55,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}little {\c&H00FFFFFF&}thing
-Dialogue: 0,0:05:09.55,0:05:10.21,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}little {\c&H0000E6FF&}thing
-Dialogue: 0,0:05:12.08,0:05:12.31,Cap,,0,0,0,,{\c&H0000E6FF&}that’s {\c&H00FFFFFF&}what {\c&H00FFFFFF&}i
-Dialogue: 0,0:05:12.31,0:05:12.43,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H0000E6FF&}what {\c&H00FFFFFF&}i
-Dialogue: 0,0:05:12.43,0:05:12.61,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H00FFFFFF&}what {\c&H0000E6FF&}i
-Dialogue: 0,0:05:12.61,0:05:13.31,Cap,,0,0,0,,{\c&H0000E6FF&}said
-Dialogue: 0,0:05:14.16,0:05:14.36,Cap,,0,0,0,,{\c&H0000E6FF&}so {\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}just
-Dialogue: 0,0:05:14.36,0:05:14.57,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H0000E6FF&}i’m {\c&H00FFFFFF&}just
-Dialogue: 0,0:05:14.57,0:05:14.75,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H00FFFFFF&}i’m {\c&H0000E6FF&}just
-Dialogue: 0,0:05:14.75,0:05:14.85,Cap,,0,0,0,,{\c&H0000E6FF&}going {\c&H00FFFFFF&}to {\c&H00FFFFFF&}say
-Dialogue: 0,0:05:14.85,0:05:15.11,Cap,,0,0,0,,{\c&H00FFFFFF&}going {\c&H0000E6FF&}to {\c&H00FFFFFF&}say
-Dialogue: 0,0:05:15.11,0:05:15.38,Cap,,0,0,0,,{\c&H00FFFFFF&}going {\c&H00FFFFFF&}to {\c&H0000E6FF&}say
-Dialogue: 0,0:05:15.38,0:05:15.50,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}here
-Dialogue: 0,0:05:15.50,0:05:16.20,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}here
-Dialogue: 0,0:05:16.38,0:05:16.58,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}called {\c&H00FFFFFF&}stryde
-Dialogue: 0,0:05:16.58,0:05:16.66,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}called {\c&H00FFFFFF&}stryde
-Dialogue: 0,0:05:16.66,0:05:17.92,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}called {\c&H0000E6FF&}stryde
-Dialogue: 0,0:05:18.18,0:05:18.72,Cap,,0,0,0,,{\c&H0000E6FF&}patellar {\c&H00FFFFFF&}force {\c&H00FFFFFF&}redirection
-Dialogue: 0,0:05:18.72,0:05:19.02,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H0000E6FF&}force {\c&H00FFFFFF&}redirection
-Dialogue: 0,0:05:19.02,0:05:20.08,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H00FFFFFF&}force {\c&H0000E6FF&}redirection
-Dialogue: 0,0:05:20.45,0:05:20.88,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}been {\c&H00FFFFFF&}designed
-Dialogue: 0,0:05:20.88,0:05:21.14,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}been {\c&H00FFFFFF&}designed
-Dialogue: 0,0:05:21.14,0:05:21.40,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}been {\c&H0000E6FF&}designed
-Dialogue: 0,0:05:21.40,0:05:21.62,Cap,,0,0,0,,{\c&H0000E6FF&}for {\c&H00FFFFFF&}three {\c&H00FFFFFF&}years
-Dialogue: 0,0:05:21.62,0:05:21.94,Cap,,0,0,0,,{\c&H00FFFFFF&}for {\c&H0000E6FF&}three {\c&H00FFFFFF&}years
-Dialogue: 0,0:05:21.94,0:05:22.34,Cap,,0,0,0,,{\c&H00FFFFFF&}for {\c&H00FFFFFF&}three {\c&H0000E6FF&}years
-Dialogue: 0,0:05:22.34,0:05:22.52,Cap,,0,0,0,,{\c&H0000E6FF&}with {\c&H00FFFFFF&}orthopaedic {\c&H00FFFFFF&}surgeons
-Dialogue: 0,0:05:22.52,0:05:23.17,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H0000E6FF&}orthopaedic {\c&H00FFFFFF&}surgeons
-Dialogue: 0,0:05:23.17,0:05:23.91,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H00FFFFFF&}orthopaedic {\c&H0000E6FF&}surgeons
-Dialogue: 0,0:05:24.14,0:05:24.35,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}the {\c&H00FFFFFF&}real
-Dialogue: 0,0:05:24.35,0:05:24.55,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}the {\c&H00FFFFFF&}real
-Dialogue: 0,0:05:24.55,0:05:24.76,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}the {\c&H0000E6FF&}real
-Dialogue: 0,0:05:24.76,0:05:24.93,Cap,,0,0,0,,{\c&H0000E6FF&}thing
-Dialogue: 0,0:05:24.93,0:05:25.63,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the {\c&H00FFFFFF&}cheap
-Dialogue: 0,0:05:25.63,0:05:25.93,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the {\c&H00FFFFFF&}cheap
-Dialogue: 0,0:05:25.93,0:05:26.22,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}the {\c&H0000E6FF&}cheap
-Dialogue: 0,0:05:26.22,0:05:26.50,Cap,,0,0,0,,{\c&H0000E6FF&}knockoffs {\c&H00FFFFFF&}they {\c&H00FFFFFF&}sell
-Dialogue: 0,0:05:26.50,0:05:26.80,Cap,,0,0,0,,{\c&H00FFFFFF&}knockoffs {\c&H0000E6FF&}they {\c&H00FFFFFF&}sell
-Dialogue: 0,0:05:26.80,0:05:27.06,Cap,,0,0,0,,{\c&H00FFFFFF&}knockoffs {\c&H00FFFFFF&}they {\c&H0000E6FF&}sell
-Dialogue: 0,0:05:27.06,0:05:27.32,Cap,,0,0,0,,{\c&H0000E6FF&}on {\c&H00FFFFFF&}amazon {\c&H00FFFFFF&}and
-Dialogue: 0,0:05:27.32,0:05:27.72,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H0000E6FF&}amazon {\c&H00FFFFFF&}and
-Dialogue: 0,0:05:27.72,0:05:27.98,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H00FFFFFF&}amazon {\c&H0000E6FF&}and
-Dialogue: 0,0:05:27.98,0:05:28.29,Cap,,0,0,0,,{\c&H0000E6FF&}fake {\c&H00FFFFFF&}shopify {\c&H00FFFFFF&}sites
-Dialogue: 0,0:05:28.29,0:05:28.58,Cap,,0,0,0,,{\c&H00FFFFFF&}fake {\c&H0000E6FF&}shopify {\c&H00FFFFFF&}sites
-Dialogue: 0,0:05:28.58,0:05:29.40,Cap,,0,0,0,,{\c&H00FFFFFF&}fake {\c&H00FFFFFF&}shopify {\c&H0000E6FF&}sites
-Dialogue: 0,0:05:29.94,0:05:30.02,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}link’s {\c&H00FFFFFF&}below
-Dialogue: 0,0:05:30.02,0:05:30.39,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}link’s {\c&H00FFFFFF&}below
-Dialogue: 0,0:05:30.39,0:05:31.08,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}link’s {\c&H0000E6FF&}below
-Dialogue: 0,0:05:31.12,0:05:31.42,Cap,,0,0,0,,{\c&H0000E6FF&}two {\c&H00FFFFFF&}straps {\c&H00FFFFFF&}for
-Dialogue: 0,0:05:31.42,0:05:31.73,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H0000E6FF&}straps {\c&H00FFFFFF&}for
-Dialogue: 0,0:05:31.73,0:05:31.91,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H00FFFFFF&}straps {\c&H0000E6FF&}for
-Dialogue: 0,0:05:31.91,0:05:32.07,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}price {\c&H00FFFFFF&}of
-Dialogue: 0,0:05:32.07,0:05:32.15,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}price {\c&H00FFFFFF&}of
-Dialogue: 0,0:05:32.15,0:05:32.56,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}price {\c&H0000E6FF&}of
-Dialogue: 0,0:05:32.56,0:05:32.74,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}right {\c&H00FFFFFF&}now
-Dialogue: 0,0:05:32.74,0:05:32.98,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}right {\c&H00FFFFFF&}now
-Dialogue: 0,0:05:32.98,0:05:33.62,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}right {\c&H0000E6FF&}now
-Dialogue: 0,0:05:33.62,0:05:33.99,Cap,,0,0,0,,{\c&H0000E6FF&}60 {\c&H00FFFFFF&}days {\c&H00FFFFFF&}to
-Dialogue: 0,0:05:33.99,0:05:34.20,Cap,,0,0,0,,{\c&H00FFFFFF&}60 {\c&H0000E6FF&}days {\c&H00FFFFFF&}to
-Dialogue: 0,0:05:34.20,0:05:34.41,Cap,,0,0,0,,{\c&H00FFFFFF&}60 {\c&H00FFFFFF&}days {\c&H0000E6FF&}to
-Dialogue: 0,0:05:34.41,0:05:34.76,Cap,,0,0,0,,{\c&H0000E6FF&}send {\c&H00FFFFFF&}them {\c&H00FFFFFF&}back
-Dialogue: 0,0:05:34.76,0:05:34.90,Cap,,0,0,0,,{\c&H00FFFFFF&}send {\c&H0000E6FF&}them {\c&H00FFFFFF&}back
-Dialogue: 0,0:05:34.90,0:05:35.14,Cap,,0,0,0,,{\c&H00FFFFFF&}send {\c&H00FFFFFF&}them {\c&H0000E6FF&}back
-Dialogue: 0,0:05:35.14,0:05:35.32,Cap,,0,0,0,,{\c&H0000E6FF&}if {\c&H00FFFFFF&}they {\c&H00FFFFFF&}don’t
-Dialogue: 0,0:05:35.32,0:05:35.40,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H0000E6FF&}they {\c&H00FFFFFF&}don’t
-Dialogue: 0,0:05:35.40,0:05:35.65,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H00FFFFFF&}they {\c&H0000E6FF&}don’t
-Dialogue: 0,0:05:35.65,0:05:36.30,Cap,,0,0,0,,{\c&H0000E6FF&}work
-Dialogue: 0,0:05:36.68,0:05:37.12,Cap,,0,0,0,,{\c&H0000E6FF&}eleven {\c&H00FFFFFF&}years {\c&H00FFFFFF&}of
-Dialogue: 0,0:05:37.12,0:05:37.68,Cap,,0,0,0,,{\c&H00FFFFFF&}eleven {\c&H0000E6FF&}years {\c&H00FFFFFF&}of
-Dialogue: 0,0:05:37.68,0:05:37.93,Cap,,0,0,0,,{\c&H00FFFFFF&}eleven {\c&H00FFFFFF&}years {\c&H0000E6FF&}of
-Dialogue: 0,0:05:37.93,0:05:38.54,Cap,,0,0,0,,{\c&H0000E6FF&}knee
-Dialogue: 0,0:05:38.62,0:05:39.00,Cap,,0,0,0,,{\c&H0000E6FF&}pain
-Dialogue: 0,0:05:39.32,0:05:39.40,Cap,,0,0,0,,{\c&H0000E6FF&}gone {\c&H00FFFFFF&}the {\c&H00FFFFFF&}first
-Dialogue: 0,0:05:39.40,0:05:39.72,Cap,,0,0,0,,{\c&H00FFFFFF&}gone {\c&H0000E6FF&}the {\c&H00FFFFFF&}first
-Dialogue: 0,0:05:39.72,0:05:39.98,Cap,,0,0,0,,{\c&H00FFFFFF&}gone {\c&H00FFFFFF&}the {\c&H0000E6FF&}first
-Dialogue: 0,0:05:39.98,0:05:40.31,Cap,,0,0,0,,{\c&H0000E6FF&}step {\c&H00FFFFFF&}i {\c&H00FFFFFF&}took
-Dialogue: 0,0:05:40.31,0:05:40.50,Cap,,0,0,0,,{\c&H00FFFFFF&}step {\c&H0000E6FF&}i {\c&H00FFFFFF&}took
-Dialogue: 0,0:05:40.50,0:05:40.71,Cap,,0,0,0,,{\c&H00FFFFFF&}step {\c&H00FFFFFF&}i {\c&H0000E6FF&}took
-Dialogue: 0,0:05:40.71,0:05:40.88,Cap,,0,0,0,,{\c&H0000E6FF&}with {\c&H00FFFFFF&}it {\c&H00FFFFFF&}on
-Dialogue: 0,0:05:40.88,0:05:40.96,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H0000E6FF&}it {\c&H00FFFFFF&}on
-Dialogue: 0,0:05:40.96,0:05:41.62,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H00FFFFFF&}it {\c&H0000E6FF&}on
-Dialogue: 0,0:05:41.97,0:05:42.05,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}bought {\c&H00FFFFFF&}a
-Dialogue: 0,0:05:42.05,0:05:42.26,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}bought {\c&H00FFFFFF&}a
-Dialogue: 0,0:05:42.26,0:05:42.48,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}bought {\c&H0000E6FF&}a
-Dialogue: 0,0:05:42.48,0:05:42.78,Cap,,0,0,0,,{\c&H0000E6FF&}second {\c&H00FFFFFF&}pair {\c&H00FFFFFF&}for
-Dialogue: 0,0:05:42.78,0:05:42.89,Cap,,0,0,0,,{\c&H00FFFFFF&}second {\c&H0000E6FF&}pair {\c&H00FFFFFF&}for
-Dialogue: 0,0:05:42.89,0:05:43.28,Cap,,0,0,0,,{\c&H00FFFFFF&}second {\c&H00FFFFFF&}pair {\c&H0000E6FF&}for
-Dialogue: 0,0:05:43.28,0:05:43.48,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}sister {\c&H00FFFFFF&}the
-Dialogue: 0,0:05:43.48,0:05:43.75,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}sister {\c&H00FFFFFF&}the
-Dialogue: 0,0:05:43.75,0:05:43.99,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}sister {\c&H0000E6FF&}the
-Dialogue: 0,0:05:43.99,0:05:44.24,Cap,,0,0,0,,{\c&H0000E6FF&}same {\c&H00FFFFFF&}week
-Dialogue: 0,0:05:44.24,0:05:44.98,Cap,,0,0,0,,{\c&H00FFFFFF&}same {\c&H0000E6FF&}week
-Dialogue: 0,0:05:45.05,0:05:45.28,Cap,,0,0,0,,{\c&H0000E6FF&}she’s {\c&H00FFFFFF&}coming {\c&H00FFFFFF&}sunday
-Dialogue: 0,0:05:45.28,0:05:45.36,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H0000E6FF&}coming {\c&H00FFFFFF&}sunday
-Dialogue: 0,0:05:45.36,0:05:46.34,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H00FFFFFF&}coming {\c&H0000E6FF&}sunday
-Dialogue: 0,0:05:46.61,0:05:46.74,Cap,,0,0,0,,{\c&H0000E6FF&}all {\c&H00FFFFFF&}the {\c&H00FFFFFF&}way
-Dialogue: 0,0:05:46.74,0:05:46.90,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H0000E6FF&}the {\c&H00FFFFFF&}way
-Dialogue: 0,0:05:46.90,0:05:47.06,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H00FFFFFF&}the {\c&H0000E6FF&}way
-Dialogue: 0,0:05:47.06,0:05:47.90,Cap,,0,0,0,,{\c&H0000E6FF&}up
-Dialogue: 0,0:05:48.86,0:05:49.02,Cap,,0,0,0,,{\c&H0000E6FF&}all {\c&H00FFFFFF&}the {\c&H00FFFFFF&}way
-Dialogue: 0,0:05:49.02,0:05:49.18,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H0000E6FF&}the {\c&H00FFFFFF&}way
-Dialogue: 0,0:05:49.18,0:05:49.36,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H00FFFFFF&}the {\c&H0000E6FF&}way
-Dialogue: 0,0:05:49.36,0:05:50.05,Cap,,0,0,0,,{\c&H0000E6FF&}up
-Dialogue: 0,0:05:51.59,0:05:51.96,Cap,,0,0,0,,{\c&H0000E6FF&}she’ll {\c&H00FFFFFF&}walk {\c&H00FFFFFF&}up
-Dialogue: 0,0:05:51.96,0:05:52.16,Cap,,0,0,0,,{\c&H00FFFFFF&}she’ll {\c&H0000E6FF&}walk {\c&H00FFFFFF&}up
-Dialogue: 0,0:05:52.16,0:05:52.34,Cap,,0,0,0,,{\c&H00FFFFFF&}she’ll {\c&H00FFFFFF&}walk {\c&H0000E6FF&}up
-Dialogue: 0,0:05:52.34,0:05:52.52,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}stairs {\c&H00FFFFFF&}on
-Dialogue: 0,0:05:52.52,0:05:52.68,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}stairs {\c&H00FFFFFF&}on
-Dialogue: 0,0:05:52.68,0:05:53.24,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}stairs {\c&H0000E6FF&}on
-Dialogue: 0,0:05:53.24,0:05:53.40,Cap,,0,0,0,,{\c&H0000E6FF&}her {\c&H00FFFFFF&}own
-Dialogue: 0,0:05:53.40,0:05:54.12,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H0000E6FF&}own
+Dialogue: 0,0:00:05.61,0:00:06.55,Cap,,0,0,0,,{\c&H0000E6FF&}stairs
+Dialogue: 0,0:00:07.89,0:00:08.08,Cap,,0,0,0,,{\c&H0000E6FF&}you’re {\c&H00FFFFFF&}joking
+Dialogue: 0,0:00:08.08,0:00:08.74,Cap,,0,0,0,,{\c&H00FFFFFF&}you’re {\c&H0000E6FF&}joking
+Dialogue: 0,0:00:08.93,0:00:09.54,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}only {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:00:09.54,0:00:09.76,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}only {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:00:09.76,0:00:10.26,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}only {\c&H0000E6FF&}stairs
+Dialogue: 0,0:00:10.26,0:00:11.32,Cap,,0,0,0,,{\c&H0000E6FF&}love
+Dialogue: 0,0:00:18.53,0:00:18.88,Cap,,0,0,0,,{\c&H0000E6FF&}when {\c&H00FFFFFF&}did {\c&H00FFFFFF&}that
+Dialogue: 0,0:00:18.88,0:00:19.51,Cap,,0,0,0,,{\c&H00FFFFFF&}when {\c&H0000E6FF&}did {\c&H00FFFFFF&}that
+Dialogue: 0,0:00:19.51,0:00:19.72,Cap,,0,0,0,,{\c&H00FFFFFF&}when {\c&H00FFFFFF&}did {\c&H0000E6FF&}that
+Dialogue: 0,0:00:19.72,0:00:20.44,Cap,,0,0,0,,{\c&H0000E6FF&}happen
+Dialogue: 0,0:00:21.51,0:00:22.06,Cap,,0,0,0,,{\c&H0000E6FF&}i’m {\c&H00FFFFFF&}71 {\c&H00FFFFFF&}and
+Dialogue: 0,0:00:22.06,0:00:22.72,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H0000E6FF&}71 {\c&H00FFFFFF&}and
+Dialogue: 0,0:00:22.72,0:00:22.98,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}71 {\c&H0000E6FF&}and
+Dialogue: 0,0:00:22.98,0:00:23.17,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}take {\c&H00FFFFFF&}the
+Dialogue: 0,0:00:23.17,0:00:23.37,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}take {\c&H00FFFFFF&}the
+Dialogue: 0,0:00:23.37,0:00:23.55,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}take {\c&H0000E6FF&}the
+Dialogue: 0,0:00:23.58,0:00:24.19,Cap,,0,0,0,,{\c&H00FFFFFF&}stairs {\c&H0000E6FF&}faster {\c&H00FFFFFF&}than
+Dialogue: 0,0:00:24.19,0:00:24.42,Cap,,0,0,0,,{\c&H00FFFFFF&}stairs {\c&H00FFFFFF&}faster {\c&H0000E6FF&}than
+Dialogue: 0,0:00:24.42,0:00:24.64,Cap,,0,0,0,,{\c&H0000E6FF&}women {\c&H00FFFFFF&}half {\c&H00FFFFFF&}my
+Dialogue: 0,0:00:24.64,0:00:24.74,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H0000E6FF&}half {\c&H00FFFFFF&}my
+Dialogue: 0,0:00:24.74,0:00:25.06,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H00FFFFFF&}half {\c&H0000E6FF&}my
+Dialogue: 0,0:00:25.06,0:00:25.98,Cap,,0,0,0,,{\c&H0000E6FF&}age
+Dialogue: 0,0:00:26.04,0:00:26.12,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
+Dialogue: 0,0:00:26.12,0:00:26.58,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H0000E6FF&}weeks {\c&H00FFFFFF&}ago
+Dialogue: 0,0:00:26.58,0:00:26.85,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H00FFFFFF&}weeks {\c&H0000E6FF&}ago
+Dialogue: 0,0:00:26.85,0:00:27.11,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}couldn’t
+Dialogue: 0,0:00:27.11,0:00:27.71,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}couldn’t
+Dialogue: 0,0:00:30.65,0:00:30.81,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}leave {\c&H00FFFFFF&}it
+Dialogue: 0,0:00:30.81,0:00:31.01,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}leave {\c&H00FFFFFF&}it
+Dialogue: 0,0:00:31.01,0:00:31.18,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H00FFFFFF&}leave {\c&H0000E6FF&}it
+Dialogue: 0,0:00:31.18,0:00:31.33,Cap,,0,0,0,,{\c&H0000E6FF&}by {\c&H00FFFFFF&}the {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:00:31.33,0:00:31.61,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H0000E6FF&}the {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:00:31.61,0:00:32.23,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H00FFFFFF&}the {\c&H0000E6FF&}stairs
+Dialogue: 0,0:00:32.23,0:00:32.75,Cap,,0,0,0,,{\c&H0000E6FF&}love
+Dialogue: 0,0:00:32.75,0:00:32.93,Cap,,0,0,0,,{\c&H0000E6FF&}i’ll {\c&H00FFFFFF&}get {\c&H00FFFFFF&}it
+Dialogue: 0,0:00:32.93,0:00:33.05,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H0000E6FF&}get {\c&H00FFFFFF&}it
+Dialogue: 0,0:00:33.05,0:00:33.28,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H00FFFFFF&}get {\c&H0000E6FF&}it
+Dialogue: 0,0:00:33.28,0:00:33.84,Cap,,0,0,0,,{\c&H0000E6FF&}later
+Dialogue: 0,0:00:38.34,0:00:38.51,Cap,,0,0,0,,{\c&H0000E6FF&}i’ll {\c&H00FFFFFF&}bring {\c&H00FFFFFF&}it
+Dialogue: 0,0:00:38.51,0:00:38.65,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H0000E6FF&}bring {\c&H00FFFFFF&}it
+Dialogue: 0,0:00:38.65,0:00:38.79,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ll {\c&H00FFFFFF&}bring {\c&H0000E6FF&}it
+Dialogue: 0,0:00:38.79,0:00:39.46,Cap,,0,0,0,,{\c&H0000E6FF&}up
+Dialogue: 0,0:00:39.88,0:00:40.18,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
+Dialogue: 0,0:00:40.18,0:00:40.51,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H0000E6FF&}weeks {\c&H00FFFFFF&}ago
+Dialogue: 0,0:00:40.51,0:00:41.31,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H00FFFFFF&}weeks {\c&H0000E6FF&}ago
+Dialogue: 0,0:00:41.45,0:00:41.63,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}was {\c&H00FFFFFF&}going
+Dialogue: 0,0:00:41.63,0:00:41.68,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}was {\c&H00FFFFFF&}going
+Dialogue: 0,0:00:41.68,0:00:41.76,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}was {\c&H0000E6FF&}going
+Dialogue: 0,0:00:41.76,0:00:42.13,Cap,,0,0,0,,{\c&H0000E6FF&}down {\c&H00FFFFFF&}my {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:00:42.13,0:00:42.35,Cap,,0,0,0,,{\c&H00FFFFFF&}down {\c&H0000E6FF&}my {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:00:42.35,0:00:42.46,Cap,,0,0,0,,{\c&H00FFFFFF&}down {\c&H00FFFFFF&}my {\c&H0000E6FF&}stairs
+Dialogue: 0,0:00:42.46,0:00:43.37,Cap,,0,0,0,,{\c&H0000E6FF&}backwards
+Dialogue: 0,0:00:45.71,0:00:46.24,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}step {\c&H00FFFFFF&}at
+Dialogue: 0,0:00:46.24,0:00:46.82,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}step {\c&H00FFFFFF&}at
+Dialogue: 0,0:00:46.82,0:00:46.90,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}step {\c&H0000E6FF&}at
+Dialogue: 0,0:00:46.90,0:00:47.06,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}time
+Dialogue: 0,0:00:47.06,0:00:47.54,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}time
+Dialogue: 0,0:00:51.87,0:00:52.13,Cap,,0,0,0,,{\c&H0000E6FF&}sleep {\c&H00FFFFFF&}alright
+Dialogue: 0,0:00:52.13,0:00:52.54,Cap,,0,0,0,,{\c&H00FFFFFF&}sleep {\c&H0000E6FF&}alright
+Dialogue: 0,0:00:56.00,0:00:56.37,Cap,,0,0,0,,{\c&H0000E6FF&}fine {\c&H00FFFFFF&}love
+Dialogue: 0,0:00:56.37,0:00:56.90,Cap,,0,0,0,,{\c&H00FFFFFF&}fine {\c&H0000E6FF&}love
+Dialogue: 0,0:00:58.03,0:00:58.11,Cap,,0,0,0,,{\c&H0000E6FF&}if {\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}being
+Dialogue: 0,0:00:58.11,0:00:58.39,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H0000E6FF&}i’m {\c&H00FFFFFF&}being
+Dialogue: 0,0:00:58.39,0:00:58.61,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H00FFFFFF&}i’m {\c&H0000E6FF&}being
+Dialogue: 0,0:00:58.61,0:00:59.22,Cap,,0,0,0,,{\c&H0000E6FF&}honest
+Dialogue: 0,0:00:59.51,0:00:59.81,Cap,,0,0,0,,{\c&H0000E6FF&}some {\c&H00FFFFFF&}days {\c&H00FFFFFF&}i
+Dialogue: 0,0:00:59.81,0:01:00.11,Cap,,0,0,0,,{\c&H00FFFFFF&}some {\c&H0000E6FF&}days {\c&H00FFFFFF&}i
+Dialogue: 0,0:01:00.11,0:01:00.43,Cap,,0,0,0,,{\c&H00FFFFFF&}some {\c&H00FFFFFF&}days {\c&H0000E6FF&}i
+Dialogue: 0,0:01:00.43,0:01:00.71,Cap,,0,0,0,,{\c&H0000E6FF&}wasn’t {\c&H00FFFFFF&}going {\c&H00FFFFFF&}down
+Dialogue: 0,0:01:00.71,0:01:00.92,Cap,,0,0,0,,{\c&H00FFFFFF&}wasn’t {\c&H0000E6FF&}going {\c&H00FFFFFF&}down
+Dialogue: 0,0:01:00.92,0:01:01.13,Cap,,0,0,0,,{\c&H00FFFFFF&}wasn’t {\c&H00FFFFFF&}going {\c&H0000E6FF&}down
+Dialogue: 0,0:01:01.13,0:01:01.29,Cap,,0,0,0,,{\c&H0000E6FF&}them {\c&H00FFFFFF&}at {\c&H00FFFFFF&}all
+Dialogue: 0,0:01:01.29,0:01:01.38,Cap,,0,0,0,,{\c&H00FFFFFF&}them {\c&H0000E6FF&}at {\c&H00FFFFFF&}all
+Dialogue: 0,0:01:01.38,0:01:01.94,Cap,,0,0,0,,{\c&H00FFFFFF&}them {\c&H00FFFFFF&}at {\c&H0000E6FF&}all
+Dialogue: 0,0:01:02.63,0:01:03.15,Cap,,0,0,0,,{\c&H0000E6FF&}i’d {\c&H00FFFFFF&}just {\c&H00FFFFFF&}stay
+Dialogue: 0,0:01:03.15,0:01:03.23,Cap,,0,0,0,,{\c&H00FFFFFF&}i’d {\c&H0000E6FF&}just {\c&H00FFFFFF&}stay
+Dialogue: 0,0:01:03.23,0:01:03.46,Cap,,0,0,0,,{\c&H00FFFFFF&}i’d {\c&H00FFFFFF&}just {\c&H0000E6FF&}stay
+Dialogue: 0,0:01:03.46,0:01:04.39,Cap,,0,0,0,,{\c&H0000E6FF&}upstairs
+Dialogue: 0,0:01:04.98,0:01:05.06,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}full {\c&H00FFFFFF&}knee
+Dialogue: 0,0:01:05.06,0:01:05.41,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}full {\c&H00FFFFFF&}knee
+Dialogue: 0,0:01:05.41,0:01:05.63,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}full {\c&H0000E6FF&}knee
+Dialogue: 0,0:01:05.63,0:01:05.97,Cap,,0,0,0,,{\c&H0000E6FF&}brace {\c&H00FFFFFF&}i {\c&H00FFFFFF&}bought
+Dialogue: 0,0:01:05.97,0:01:06.13,Cap,,0,0,0,,{\c&H00FFFFFF&}brace {\c&H0000E6FF&}i {\c&H00FFFFFF&}bought
+Dialogue: 0,0:01:06.13,0:01:06.42,Cap,,0,0,0,,{\c&H00FFFFFF&}brace {\c&H00FFFFFF&}i {\c&H0000E6FF&}bought
+Dialogue: 0,0:01:06.42,0:01:06.81,Cap,,0,0,0,,{\c&H0000E6FF&}slipped {\c&H00FFFFFF&}down {\c&H00FFFFFF&}my
+Dialogue: 0,0:01:06.81,0:01:07.04,Cap,,0,0,0,,{\c&H00FFFFFF&}slipped {\c&H0000E6FF&}down {\c&H00FFFFFF&}my
+Dialogue: 0,0:01:07.04,0:01:07.23,Cap,,0,0,0,,{\c&H00FFFFFF&}slipped {\c&H00FFFFFF&}down {\c&H0000E6FF&}my
+Dialogue: 0,0:01:07.26,0:01:07.58,Cap,,0,0,0,,{\c&H0000E6FF&}leg
+Dialogue: 0,0:01:09.23,0:01:09.31,Cap,,0,0,0,,{\c&H0000E6FF&}by {\c&H00FFFFFF&}evening {\c&H00FFFFFF&}it
+Dialogue: 0,0:01:09.31,0:01:09.77,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H0000E6FF&}evening {\c&H00FFFFFF&}it
+Dialogue: 0,0:01:09.77,0:01:10.06,Cap,,0,0,0,,{\c&H00FFFFFF&}by {\c&H00FFFFFF&}evening {\c&H0000E6FF&}it
+Dialogue: 0,0:01:10.06,0:01:10.30,Cap,,0,0,0,,{\c&H0000E6FF&}was {\c&H00FFFFFF&}around {\c&H00FFFFFF&}my
+Dialogue: 0,0:01:10.30,0:01:10.53,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H0000E6FF&}around {\c&H00FFFFFF&}my
+Dialogue: 0,0:01:10.53,0:01:10.75,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H00FFFFFF&}around {\c&H0000E6FF&}my
+Dialogue: 0,0:01:10.75,0:01:10.97,Cap,,0,0,0,,{\c&H0000E6FF&}ankle
+Dialogue: 0,0:01:10.97,0:01:11.82,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}tried {\c&H00FFFFFF&}everything
+Dialogue: 0,0:01:11.82,0:01:11.96,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}tried {\c&H00FFFFFF&}everything
+Dialogue: 0,0:01:11.96,0:01:13.19,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}tried {\c&H0000E6FF&}everything
+Dialogue: 0,0:01:13.75,0:01:14.87,Cap,,0,0,0,,{\c&H0000E6FF&}physiotherapy
+Dialogue: 0,0:01:17.61,0:01:18.73,Cap,,0,0,0,,{\c&H0000E6FF&}painkillers
+Dialogue: 0,0:01:23.65,0:01:24.37,Cap,,0,0,0,,{\c&H0000E6FF&}cortisone {\c&H00FFFFFF&}injections
+Dialogue: 0,0:01:24.37,0:01:25.21,Cap,,0,0,0,,{\c&H00FFFFFF&}cortisone {\c&H0000E6FF&}injections
+Dialogue: 0,0:01:27.69,0:01:28.00,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}brace {\c&H00FFFFFF&}and
+Dialogue: 0,0:01:28.00,0:01:28.44,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}brace {\c&H00FFFFFF&}and
+Dialogue: 0,0:01:28.44,0:01:28.97,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H00FFFFFF&}brace {\c&H0000E6FF&}and
+Dialogue: 0,0:01:28.97,0:01:29.27,Cap,,0,0,0,,{\c&H0000E6FF&}sleeve {\c&H00FFFFFF&}on {\c&H00FFFFFF&}the
+Dialogue: 0,0:01:29.27,0:01:29.47,Cap,,0,0,0,,{\c&H00FFFFFF&}sleeve {\c&H0000E6FF&}on {\c&H00FFFFFF&}the
+Dialogue: 0,0:01:29.47,0:01:29.61,Cap,,0,0,0,,{\c&H00FFFFFF&}sleeve {\c&H00FFFFFF&}on {\c&H0000E6FF&}the
+Dialogue: 0,0:01:29.61,0:01:30.04,Cap,,0,0,0,,{\c&H0000E6FF&}market
+Dialogue: 0,0:01:30.79,0:01:31.17,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}worked
+Dialogue: 0,0:01:31.17,0:01:32.01,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}worked
+Dialogue: 0,0:01:32.22,0:01:32.57,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}lasted
+Dialogue: 0,0:01:32.57,0:01:33.47,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}lasted
+Dialogue: 0,0:01:33.78,0:01:34.23,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}gave {\c&H00FFFFFF&}me
+Dialogue: 0,0:01:34.23,0:01:34.49,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}gave {\c&H00FFFFFF&}me
+Dialogue: 0,0:01:34.49,0:01:34.71,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H00FFFFFF&}gave {\c&H0000E6FF&}me
+Dialogue: 0,0:01:34.71,0:01:34.93,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}life {\c&H00FFFFFF&}back
+Dialogue: 0,0:01:34.93,0:01:35.17,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}life {\c&H00FFFFFF&}back
+Dialogue: 0,0:01:35.17,0:01:35.83,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}life {\c&H0000E6FF&}back
+Dialogue: 0,0:01:36.14,0:01:36.65,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}drawer {\c&H00FFFFFF&}won’t
+Dialogue: 0,0:01:36.65,0:01:36.95,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}drawer {\c&H00FFFFFF&}won’t
+Dialogue: 0,0:01:36.95,0:01:37.13,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}drawer {\c&H0000E6FF&}won’t
+Dialogue: 0,0:01:37.13,0:01:37.20,Cap,,0,0,0,,{\c&H0000E6FF&}shut {\c&H00FFFFFF&}soon
+Dialogue: 0,0:01:37.20,0:01:37.92,Cap,,0,0,0,,{\c&H00FFFFFF&}shut {\c&H0000E6FF&}soon
+Dialogue: 0,0:01:41.48,0:01:41.61,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}shuts
+Dialogue: 0,0:01:41.61,0:01:42.50,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}shuts
+Dialogue: 0,0:01:44.18,0:01:45.13,Cap,,0,0,0,,{\c&H0000E6FF&}sunday {\c&H00FFFFFF&}shall {\c&H00FFFFFF&}we
+Dialogue: 0,0:01:45.13,0:01:45.96,Cap,,0,0,0,,{\c&H00FFFFFF&}sunday {\c&H0000E6FF&}shall {\c&H00FFFFFF&}we
+Dialogue: 0,0:01:45.96,0:01:46.33,Cap,,0,0,0,,{\c&H00FFFFFF&}sunday {\c&H00FFFFFF&}shall {\c&H0000E6FF&}we
+Dialogue: 0,0:01:46.33,0:01:46.51,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}do {\c&H00FFFFFF&}the
+Dialogue: 0,0:01:46.51,0:01:46.69,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}do {\c&H00FFFFFF&}the
+Dialogue: 0,0:01:46.67,0:01:47.14,Cap,,0,0,0,,{\c&H0000E6FF&}garden {\c&H00FFFFFF&}centre
+Dialogue: 0,0:01:47.14,0:01:47.82,Cap,,0,0,0,,{\c&H00FFFFFF&}garden {\c&H0000E6FF&}centre
+Dialogue: 0,0:01:48.72,0:01:48.91,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}all {\c&H00FFFFFF&}one
+Dialogue: 0,0:01:48.91,0:01:49.09,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}all {\c&H00FFFFFF&}one
+Dialogue: 0,0:01:49.09,0:01:49.35,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}all {\c&H0000E6FF&}one
+Dialogue: 0,0:01:49.35,0:01:50.07,Cap,,0,0,0,,{\c&H0000E6FF&}level
+Dialogue: 0,0:01:50.24,0:01:50.47,Cap,,0,0,0,,{\c&H0000E6FF&}course {\c&H00FFFFFF&}love
+Dialogue: 0,0:01:50.47,0:01:51.23,Cap,,0,0,0,,{\c&H00FFFFFF&}course {\c&H0000E6FF&}love
+Dialogue: 0,0:01:51.61,0:01:52.37,Cap,,0,0,0,,{\c&H0000E6FF&}easier
+Dialogue: 0,0:01:52.48,0:01:52.71,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}sister’s {\c&H00FFFFFF&}knees
+Dialogue: 0,0:01:52.71,0:01:52.95,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}sister’s {\c&H00FFFFFF&}knees
+Dialogue: 0,0:01:52.95,0:01:53.45,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}sister’s {\c&H0000E6FF&}knees
+Dialogue: 0,0:01:53.45,0:01:53.71,Cap,,0,0,0,,{\c&H0000E6FF&}are {\c&H00FFFFFF&}worse {\c&H00FFFFFF&}than
+Dialogue: 0,0:01:53.71,0:01:53.87,Cap,,0,0,0,,{\c&H00FFFFFF&}are {\c&H0000E6FF&}worse {\c&H00FFFFFF&}than
+Dialogue: 0,0:01:53.87,0:01:53.97,Cap,,0,0,0,,{\c&H00FFFFFF&}are {\c&H00FFFFFF&}worse {\c&H0000E6FF&}than
+Dialogue: 0,0:01:53.97,0:01:54.89,Cap,,0,0,0,,{\c&H0000E6FF&}mine
+Dialogue: 0,0:01:55.15,0:01:55.39,Cap,,0,0,0,,{\c&H0000E6FF&}we {\c&H00FFFFFF&}planned {\c&H00FFFFFF&}our
+Dialogue: 0,0:01:55.39,0:01:55.63,Cap,,0,0,0,,{\c&H00FFFFFF&}we {\c&H0000E6FF&}planned {\c&H00FFFFFF&}our
+Dialogue: 0,0:01:55.63,0:01:55.83,Cap,,0,0,0,,{\c&H00FFFFFF&}we {\c&H00FFFFFF&}planned {\c&H0000E6FF&}our
+Dialogue: 0,0:01:55.83,0:01:56.23,Cap,,0,0,0,,{\c&H0000E6FF&}sundays {\c&H00FFFFFF&}around {\c&H00FFFFFF&}one
+Dialogue: 0,0:01:56.23,0:01:56.63,Cap,,0,0,0,,{\c&H00FFFFFF&}sundays {\c&H0000E6FF&}around {\c&H00FFFFFF&}one
+Dialogue: 0,0:01:56.63,0:01:56.95,Cap,,0,0,0,,{\c&H00FFFFFF&}sundays {\c&H00FFFFFF&}around {\c&H0000E6FF&}one
+Dialogue: 0,0:01:56.95,0:01:57.63,Cap,,0,0,0,,{\c&H0000E6FF&}level
+Dialogue: 0,0:01:58.79,0:01:58.87,Cap,,0,0,0,,{\c&H0000E6FF&}then {\c&H00FFFFFF&}my {\c&H00FFFFFF&}granddaughter
+Dialogue: 0,0:01:58.87,0:01:59.21,Cap,,0,0,0,,{\c&H00FFFFFF&}then {\c&H0000E6FF&}my {\c&H00FFFFFF&}granddaughter
+Dialogue: 0,0:01:59.21,0:01:59.77,Cap,,0,0,0,,{\c&H00FFFFFF&}then {\c&H00FFFFFF&}my {\c&H0000E6FF&}granddaughter
+Dialogue: 0,0:01:59.77,0:01:59.92,Cap,,0,0,0,,{\c&H0000E6FF&}got {\c&H00FFFFFF&}married {\c&H00FFFFFF&}in
+Dialogue: 0,0:01:59.92,0:02:00.39,Cap,,0,0,0,,{\c&H00FFFFFF&}got {\c&H0000E6FF&}married {\c&H00FFFFFF&}in
+Dialogue: 0,0:02:00.39,0:02:00.65,Cap,,0,0,0,,{\c&H00FFFFFF&}got {\c&H00FFFFFF&}married {\c&H0000E6FF&}in
+Dialogue: 0,0:02:00.65,0:02:01.39,Cap,,0,0,0,,{\c&H0000E6FF&}june
+Dialogue: 0,0:02:01.50,0:02:01.69,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}cousin {\c&H00FFFFFF&}barbara
+Dialogue: 0,0:02:01.69,0:02:01.89,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}cousin {\c&H00FFFFFF&}barbara
+Dialogue: 0,0:02:01.89,0:02:02.24,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}cousin {\c&H0000E6FF&}barbara
+Dialogue: 0,0:02:02.24,0:02:02.61,Cap,,0,0,0,,{\c&H0000E6FF&}was {\c&H00FFFFFF&}there
+Dialogue: 0,0:02:02.61,0:02:03.19,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H0000E6FF&}there
+Dialogue: 0,0:02:03.79,0:02:04.17,Cap,,0,0,0,,{\c&H0000E6FF&}she’s {\c&H00FFFFFF&}74
+Dialogue: 0,0:02:04.17,0:02:04.68,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H0000E6FF&}74
+Dialogue: 0,0:02:04.68,0:02:05.33,Cap,,0,0,0,,{\c&H0000E6FF&}and {\c&H00FFFFFF&}she {\c&H00FFFFFF&}was
+Dialogue: 0,0:02:05.33,0:02:05.55,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H0000E6FF&}she {\c&H00FFFFFF&}was
+Dialogue: 0,0:02:05.55,0:02:05.77,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H00FFFFFF&}she {\c&H0000E6FF&}was
+Dialogue: 0,0:02:05.77,0:02:05.93,Cap,,0,0,0,,{\c&H0000E6FF&}on {\c&H00FFFFFF&}the {\c&H00FFFFFF&}dance
+Dialogue: 0,0:02:05.93,0:02:06.06,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H0000E6FF&}the {\c&H00FFFFFF&}dance
+Dialogue: 0,0:02:06.06,0:02:06.25,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H00FFFFFF&}the {\c&H0000E6FF&}dance
+Dialogue: 0,0:02:06.25,0:02:06.44,Cap,,0,0,0,,{\c&H0000E6FF&}floor {\c&H00FFFFFF&}all {\c&H00FFFFFF&}night
+Dialogue: 0,0:02:06.44,0:02:06.80,Cap,,0,0,0,,{\c&H00FFFFFF&}floor {\c&H0000E6FF&}all {\c&H00FFFFFF&}night
+Dialogue: 0,0:02:06.80,0:02:07.75,Cap,,0,0,0,,{\c&H00FFFFFF&}floor {\c&H00FFFFFF&}all {\c&H0000E6FF&}night
+Dialogue: 0,0:02:09.68,0:02:09.85,Cap,,0,0,0,,{\c&H0000E6FF&}her {\c&H00FFFFFF&}knees {\c&H00FFFFFF&}were
+Dialogue: 0,0:02:09.85,0:02:10.11,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H0000E6FF&}knees {\c&H00FFFFFF&}were
+Dialogue: 0,0:02:10.11,0:02:10.35,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H00FFFFFF&}knees {\c&H0000E6FF&}were
+Dialogue: 0,0:02:10.35,0:02:10.55,Cap,,0,0,0,,{\c&H0000E6FF&}worse {\c&H00FFFFFF&}than {\c&H00FFFFFF&}mine
+Dialogue: 0,0:02:10.55,0:02:10.83,Cap,,0,0,0,,{\c&H00FFFFFF&}worse {\c&H0000E6FF&}than {\c&H00FFFFFF&}mine
+Dialogue: 0,0:02:10.83,0:02:11.57,Cap,,0,0,0,,{\c&H00FFFFFF&}worse {\c&H00FFFFFF&}than {\c&H0000E6FF&}mine
+Dialogue: 0,0:02:12.13,0:02:12.23,Cap,,0,0,0,,{\c&H0000E6FF&}both {\c&H00FFFFFF&}of {\c&H00FFFFFF&}them
+Dialogue: 0,0:02:12.23,0:02:12.44,Cap,,0,0,0,,{\c&H00FFFFFF&}both {\c&H0000E6FF&}of {\c&H00FFFFFF&}them
+Dialogue: 0,0:02:12.44,0:02:12.81,Cap,,0,0,0,,{\c&H00FFFFFF&}both {\c&H00FFFFFF&}of {\c&H0000E6FF&}them
+Dialogue: 0,0:02:13.15,0:02:13.27,Cap,,0,0,0,,{\c&H0000E6FF&}bone {\c&H00FFFFFF&}on {\c&H00FFFFFF&}bone
+Dialogue: 0,0:02:13.27,0:02:13.47,Cap,,0,0,0,,{\c&H00FFFFFF&}bone {\c&H0000E6FF&}on {\c&H00FFFFFF&}bone
+Dialogue: 0,0:02:13.47,0:02:14.07,Cap,,0,0,0,,{\c&H00FFFFFF&}bone {\c&H00FFFFFF&}on {\c&H0000E6FF&}bone
+Dialogue: 0,0:02:14.97,0:02:15.60,Cap,,0,0,0,,{\c&H0000E6FF&}whose
+Dialogue: 0,0:02:16.83,0:02:17.67,Cap,,0,0,0,,{\c&H0000E6FF&}barbara’s
+Dialogue: 0,0:02:18.88,0:02:18.96,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}always {\c&H00FFFFFF&}assumed
+Dialogue: 0,0:02:18.96,0:02:19.31,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}always {\c&H00FFFFFF&}assumed
+Dialogue: 0,0:02:19.31,0:02:19.85,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}always {\c&H0000E6FF&}assumed
+Dialogue: 0,0:02:19.85,0:02:20.23,Cap,,0,0,0,,{\c&H0000E6FF&}hers {\c&H00FFFFFF&}weren’t {\c&H00FFFFFF&}as
+Dialogue: 0,0:02:20.23,0:02:20.33,Cap,,0,0,0,,{\c&H00FFFFFF&}hers {\c&H0000E6FF&}weren’t {\c&H00FFFFFF&}as
+Dialogue: 0,0:02:20.33,0:02:20.75,Cap,,0,0,0,,{\c&H00FFFFFF&}hers {\c&H00FFFFFF&}weren’t {\c&H0000E6FF&}as
+Dialogue: 0,0:02:20.75,0:02:20.93,Cap,,0,0,0,,{\c&H0000E6FF&}bad {\c&H00FFFFFF&}as {\c&H00FFFFFF&}mine
+Dialogue: 0,0:02:20.93,0:02:20.98,Cap,,0,0,0,,{\c&H00FFFFFF&}bad {\c&H0000E6FF&}as {\c&H00FFFFFF&}mine
+Dialogue: 0,0:02:20.98,0:02:21.76,Cap,,0,0,0,,{\c&H00FFFFFF&}bad {\c&H00FFFFFF&}as {\c&H0000E6FF&}mine
+Dialogue: 0,0:02:22.18,0:02:22.39,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}always {\c&H00FFFFFF&}assumed
+Dialogue: 0,0:02:22.39,0:02:22.61,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}always {\c&H00FFFFFF&}assumed
+Dialogue: 0,0:02:22.61,0:02:23.05,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}always {\c&H0000E6FF&}assumed
+Dialogue: 0,0:02:23.05,0:02:23.43,Cap,,0,0,0,,{\c&H0000E6FF&}mine {\c&H00FFFFFF&}were {\c&H00FFFFFF&}past
+Dialogue: 0,0:02:23.43,0:02:23.66,Cap,,0,0,0,,{\c&H00FFFFFF&}mine {\c&H0000E6FF&}were {\c&H00FFFFFF&}past
+Dialogue: 0,0:02:23.66,0:02:23.88,Cap,,0,0,0,,{\c&H00FFFFFF&}mine {\c&H00FFFFFF&}were {\c&H0000E6FF&}past
+Dialogue: 0,0:02:23.88,0:02:24.11,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}point {\c&H00FFFFFF&}of
+Dialogue: 0,0:02:24.11,0:02:24.34,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}point {\c&H00FFFFFF&}of
+Dialogue: 0,0:02:24.34,0:02:24.57,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}point {\c&H0000E6FF&}of
+Dialogue: 0,0:02:24.57,0:02:25.27,Cap,,0,0,0,,{\c&H0000E6FF&}fixing
+Dialogue: 0,0:02:25.64,0:02:26.00,Cap,,0,0,0,,{\c&H0000E6FF&}barbara {\c&H00FFFFFF&}came {\c&H00FFFFFF&}to
+Dialogue: 0,0:02:26.00,0:02:26.26,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara {\c&H0000E6FF&}came {\c&H00FFFFFF&}to
+Dialogue: 0,0:02:26.26,0:02:26.44,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara {\c&H00FFFFFF&}came {\c&H0000E6FF&}to
+Dialogue: 0,0:02:26.44,0:02:26.54,Cap,,0,0,0,,{\c&H0000E6FF&}stay {\c&H00FFFFFF&}the {\c&H00FFFFFF&}week
+Dialogue: 0,0:02:26.54,0:02:26.79,Cap,,0,0,0,,{\c&H00FFFFFF&}stay {\c&H0000E6FF&}the {\c&H00FFFFFF&}week
+Dialogue: 0,0:02:26.79,0:02:27.04,Cap,,0,0,0,,{\c&H00FFFFFF&}stay {\c&H00FFFFFF&}the {\c&H0000E6FF&}week
+Dialogue: 0,0:02:27.04,0:02:27.54,Cap,,0,0,0,,{\c&H0000E6FF&}after
+Dialogue: 0,0:02:30.89,0:02:30.97,Cap,,0,0,0,,{\c&H0000E6FF&}she {\c&H00FFFFFF&}watched {\c&H00FFFFFF&}me
+Dialogue: 0,0:02:30.97,0:02:31.37,Cap,,0,0,0,,{\c&H00FFFFFF&}she {\c&H0000E6FF&}watched {\c&H00FFFFFF&}me
+Dialogue: 0,0:02:31.37,0:02:31.58,Cap,,0,0,0,,{\c&H00FFFFFF&}she {\c&H00FFFFFF&}watched {\c&H0000E6FF&}me
+Dialogue: 0,0:02:31.58,0:02:31.79,Cap,,0,0,0,,{\c&H0000E6FF&}work {\c&H00FFFFFF&}through {\c&H00FFFFFF&}my
+Dialogue: 0,0:02:31.79,0:02:32.00,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H0000E6FF&}through {\c&H00FFFFFF&}my
+Dialogue: 0,0:02:32.00,0:02:32.22,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H00FFFFFF&}through {\c&H0000E6FF&}my
+Dialogue: 0,0:02:32.22,0:02:32.54,Cap,,0,0,0,,{\c&H0000E6FF&}morning {\c&H00FFFFFF&}routine
+Dialogue: 0,0:02:32.54,0:02:33.30,Cap,,0,0,0,,{\c&H00FFFFFF&}morning {\c&H0000E6FF&}routine
+Dialogue: 0,0:02:34.03,0:02:34.11,Cap,,0,0,0,,{\c&H0000E6FF&}can {\c&H00FFFFFF&}i {\c&H00FFFFFF&}show
+Dialogue: 0,0:02:34.11,0:02:34.44,Cap,,0,0,0,,{\c&H00FFFFFF&}can {\c&H0000E6FF&}i {\c&H00FFFFFF&}show
+Dialogue: 0,0:02:35.11,0:02:35.22,Cap,,0,0,0,,{\c&H0000E6FF&}something
+Dialogue: 0,0:02:35.45,0:02:35.53,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}small {\c&H00FFFFFF&}black
+Dialogue: 0,0:02:35.53,0:02:35.72,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}small {\c&H00FFFFFF&}black
+Dialogue: 0,0:02:35.72,0:02:36.43,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H00FFFFFF&}small {\c&H0000E6FF&}black
+Dialogue: 0,0:02:36.43,0:02:37.14,Cap,,0,0,0,,{\c&H0000E6FF&}strap
+Dialogue: 0,0:02:37.57,0:02:37.75,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}below {\c&H00FFFFFF&}her
+Dialogue: 0,0:02:37.75,0:02:37.84,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}below {\c&H00FFFFFF&}her
+Dialogue: 0,0:02:37.84,0:02:38.28,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H00FFFFFF&}below {\c&H0000E6FF&}her
+Dialogue: 0,0:02:38.28,0:02:39.16,Cap,,0,0,0,,{\c&H0000E6FF&}kneecap
+Dialogue: 0,0:02:42.55,0:02:42.64,Cap,,0,0,0,,{\c&H0000E6FF&}they {\c&H00FFFFFF&}come {\c&H00FFFFFF&}in
+Dialogue: 0,0:02:42.64,0:02:42.86,Cap,,0,0,0,,{\c&H00FFFFFF&}they {\c&H0000E6FF&}come {\c&H00FFFFFF&}in
+Dialogue: 0,0:02:42.86,0:02:43.02,Cap,,0,0,0,,{\c&H00FFFFFF&}they {\c&H00FFFFFF&}come {\c&H0000E6FF&}in
+Dialogue: 0,0:02:43.02,0:02:43.82,Cap,,0,0,0,,{\c&H0000E6FF&}twos
+Dialogue: 0,0:02:43.94,0:02:44.04,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}never {\c&H00FFFFFF&}used
+Dialogue: 0,0:02:44.04,0:02:44.29,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}never {\c&H00FFFFFF&}used
+Dialogue: 0,0:02:44.29,0:02:44.59,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}never {\c&H0000E6FF&}used
+Dialogue: 0,0:02:44.59,0:02:44.79,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}spare
+Dialogue: 0,0:02:44.79,0:02:45.04,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}spare
+Dialogue: 0,0:02:45.04,0:02:45.27,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}looked {\c&H00FFFFFF&}absurd
+Dialogue: 0,0:02:45.27,0:02:45.50,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}looked {\c&H00FFFFFF&}absurd
+Dialogue: 0,0:02:45.50,0:02:45.73,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H00FFFFFF&}looked {\c&H0000E6FF&}absurd
+Dialogue: 0,0:02:45.73,0:02:45.96,Cap,,0,0,0,,{\c&H0000E6FF&}too {\c&H00FFFFFF&}small
+Dialogue: 0,0:02:45.96,0:02:46.20,Cap,,0,0,0,,{\c&H00FFFFFF&}too {\c&H0000E6FF&}small
+Dialogue: 0,0:02:46.20,0:02:46.88,Cap,,0,0,0,,{\c&H0000E6FF&}barbara
+Dialogue: 0,0:02:47.41,0:02:47.59,Cap,,0,0,0,,{\c&H0000E6FF&}this {\c&H00FFFFFF&}can’t {\c&H00FFFFFF&}possibly
+Dialogue: 0,0:02:47.59,0:02:47.92,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H0000E6FF&}can’t {\c&H00FFFFFF&}possibly
+Dialogue: 0,0:02:47.92,0:02:48.32,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H00FFFFFF&}can’t {\c&H0000E6FF&}possibly
+Dialogue: 0,0:02:48.32,0:02:48.61,Cap,,0,0,0,,{\c&H0000E6FF&}work {\c&H00FFFFFF&}on {\c&H00FFFFFF&}knees
+Dialogue: 0,0:02:48.61,0:02:48.77,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H0000E6FF&}on {\c&H00FFFFFF&}knees
+Dialogue: 0,0:02:48.77,0:02:48.98,Cap,,0,0,0,,{\c&H00FFFFFF&}work {\c&H00FFFFFF&}on {\c&H0000E6FF&}knees
+Dialogue: 0,0:02:48.98,0:02:49.28,Cap,,0,0,0,,{\c&H0000E6FF&}like {\c&H00FFFFFF&}mine
+Dialogue: 0,0:02:49.28,0:02:50.00,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H0000E6FF&}mine
+Dialogue: 0,0:02:50.78,0:02:51.11,Cap,,0,0,0,,{\c&H0000E6FF&}just {\c&H00FFFFFF&}put {\c&H00FFFFFF&}it
+Dialogue: 0,0:02:51.11,0:02:51.22,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H0000E6FF&}put {\c&H00FFFFFF&}it
+Dialogue: 0,0:02:51.22,0:02:51.40,Cap,,0,0,0,,{\c&H00FFFFFF&}just {\c&H00FFFFFF&}put {\c&H0000E6FF&}it
+Dialogue: 0,0:02:51.40,0:02:51.90,Cap,,0,0,0,,{\c&H0000E6FF&}on
+Dialogue: 0,0:02:52.07,0:02:52.20,Cap,,0,0,0,,{\c&H0000E6FF&}and {\c&H00FFFFFF&}walk {\c&H00FFFFFF&}down
+Dialogue: 0,0:02:52.20,0:02:52.40,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H0000E6FF&}walk {\c&H00FFFFFF&}down
+Dialogue: 0,0:02:52.40,0:02:52.64,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H00FFFFFF&}walk {\c&H0000E6FF&}down
+Dialogue: 0,0:02:52.64,0:02:52.88,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}stairs
+Dialogue: 0,0:02:52.88,0:02:53.58,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}stairs
+Dialogue: 0,0:02:56.98,0:02:57.21,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}first {\c&H00FFFFFF&}step
+Dialogue: 0,0:02:57.21,0:02:57.45,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}first {\c&H00FFFFFF&}step
+Dialogue: 0,0:02:57.45,0:02:58.12,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}first {\c&H0000E6FF&}step
+Dialogue: 0,0:02:58.25,0:02:58.39,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}didn’t {\c&H00FFFFFF&}have
+Dialogue: 0,0:02:58.39,0:02:58.57,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}didn’t {\c&H00FFFFFF&}have
+Dialogue: 0,0:02:58.57,0:02:58.75,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}didn’t {\c&H0000E6FF&}have
+Dialogue: 0,0:02:58.75,0:02:58.83,Cap,,0,0,0,,{\c&H0000E6FF&}to {\c&H00FFFFFF&}hold {\c&H00FFFFFF&}the
+Dialogue: 0,0:02:58.83,0:02:59.06,Cap,,0,0,0,,{\c&H00FFFFFF&}to {\c&H0000E6FF&}hold {\c&H00FFFFFF&}the
+Dialogue: 0,0:02:59.06,0:02:59.29,Cap,,0,0,0,,{\c&H00FFFFFF&}to {\c&H00FFFFFF&}hold {\c&H0000E6FF&}the
+Dialogue: 0,0:02:59.29,0:02:59.91,Cap,,0,0,0,,{\c&H0000E6FF&}banister
+Dialogue: 0,0:03:00.73,0:03:00.99,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the
+Dialogue: 0,0:03:00.99,0:03:01.36,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the
+Dialogue: 0,0:03:01.74,0:03:01.94,Cap,,0,0,0,,{\c&H0000E6FF&}second
+Dialogue: 0,0:03:02.50,0:03:02.74,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the
+Dialogue: 0,0:03:02.74,0:03:03.26,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the
+Dialogue: 0,0:03:03.38,0:03:03.62,Cap,,0,0,0,,{\c&H0000E6FF&}third
+Dialogue: 0,0:03:04.03,0:03:04.29,Cap,,0,0,0,,{\c&H0000E6FF&}all {\c&H00FFFFFF&}the {\c&H00FFFFFF&}way
+Dialogue: 0,0:03:04.29,0:03:04.56,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H0000E6FF&}the {\c&H00FFFFFF&}way
+Dialogue: 0,0:03:04.56,0:03:04.72,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H00FFFFFF&}the {\c&H0000E6FF&}way
+Dialogue: 0,0:03:04.72,0:03:05.64,Cap,,0,0,0,,{\c&H0000E6FF&}down
+Dialogue: 0,0:03:05.91,0:03:06.22,Cap,,0,0,0,,{\c&H0000E6FF&}both
+Dialogue: 0,0:03:06.53,0:03:07.00,Cap,,0,0,0,,{\c&H0000E6FF&}feet
+Dialogue: 0,0:03:07.16,0:03:07.85,Cap,,0,0,0,,{\c&H0000E6FF&}forwards
+Dialogue: 0,0:03:08.51,0:03:08.94,Cap,,0,0,0,,{\c&H0000E6FF&}first {\c&H00FFFFFF&}step
+Dialogue: 0,0:03:08.94,0:03:09.36,Cap,,0,0,0,,{\c&H00FFFFFF&}first {\c&H0000E6FF&}step
+Dialogue: 0,0:03:09.36,0:03:10.02,Cap,,0,0,0,,{\c&H0000E6FF&}pain {\c&H00FFFFFF&}gone
+Dialogue: 0,0:03:10.02,0:03:10.70,Cap,,0,0,0,,{\c&H00FFFFFF&}pain {\c&H0000E6FF&}gone
+Dialogue: 0,0:03:10.70,0:03:11.17,Cap,,0,0,0,,{\c&H0000E6FF&}like {\c&H00FFFFFF&}a {\c&H00FFFFFF&}switch
+Dialogue: 0,0:03:11.17,0:03:11.52,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H0000E6FF&}a {\c&H00FFFFFF&}switch
+Dialogue: 0,0:03:11.52,0:03:12.18,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H00FFFFFF&}a {\c&H0000E6FF&}switch
+Dialogue: 0,0:03:12.53,0:03:13.02,Cap,,0,0,0,,{\c&H0000E6FF&}everything {\c&H00FFFFFF&}you’ve {\c&H00FFFFFF&}tried
+Dialogue: 0,0:03:13.02,0:03:13.42,Cap,,0,0,0,,{\c&H00FFFFFF&}everything {\c&H0000E6FF&}you’ve {\c&H00FFFFFF&}tried
+Dialogue: 0,0:03:13.42,0:03:13.78,Cap,,0,0,0,,{\c&H00FFFFFF&}everything {\c&H00FFFFFF&}you’ve {\c&H0000E6FF&}tried
+Dialogue: 0,0:03:13.78,0:03:14.29,Cap,,0,0,0,,{\c&H0000E6FF&}was {\c&H00FFFFFF&}designed {\c&H00FFFFFF&}to
+Dialogue: 0,0:03:14.29,0:03:14.68,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H0000E6FF&}designed {\c&H00FFFFFF&}to
+Dialogue: 0,0:03:14.68,0:03:14.94,Cap,,0,0,0,,{\c&H00FFFFFF&}was {\c&H00FFFFFF&}designed {\c&H0000E6FF&}to
+Dialogue: 0,0:03:14.94,0:03:15.19,Cap,,0,0,0,,{\c&H0000E6FF&}make {\c&H00FFFFFF&}you {\c&H00FFFFFF&}comfortable
+Dialogue: 0,0:03:15.19,0:03:15.38,Cap,,0,0,0,,{\c&H00FFFFFF&}make {\c&H0000E6FF&}you {\c&H00FFFFFF&}comfortable
+Dialogue: 0,0:03:15.38,0:03:15.89,Cap,,0,0,0,,{\c&H00FFFFFF&}make {\c&H00FFFFFF&}you {\c&H0000E6FF&}comfortable
+Dialogue: 0,0:03:15.89,0:03:16.54,Cap,,0,0,0,,{\c&H0000E6FF&}while {\c&H00FFFFFF&}your {\c&H00FFFFFF&}knee
+Dialogue: 0,0:03:16.54,0:03:16.88,Cap,,0,0,0,,{\c&H00FFFFFF&}while {\c&H0000E6FF&}your {\c&H00FFFFFF&}knee
+Dialogue: 0,0:03:16.88,0:03:17.10,Cap,,0,0,0,,{\c&H00FFFFFF&}while {\c&H00FFFFFF&}your {\c&H0000E6FF&}knee
+Dialogue: 0,0:03:17.10,0:03:17.54,Cap,,0,0,0,,{\c&H0000E6FF&}got {\c&H00FFFFFF&}worse
+Dialogue: 0,0:03:17.54,0:03:18.11,Cap,,0,0,0,,{\c&H00FFFFFF&}got {\c&H0000E6FF&}worse
+Dialogue: 0,0:03:19.27,0:03:19.46,Cap,,0,0,0,,{\c&H0000E6FF&}this {\c&H00FFFFFF&}one
+Dialogue: 0,0:03:19.46,0:03:20.22,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H0000E6FF&}one
+Dialogue: 0,0:03:20.45,0:03:20.86,Cap,,0,0,0,,{\c&H0000E6FF&}fixes {\c&H00FFFFFF&}why {\c&H00FFFFFF&}it
+Dialogue: 0,0:03:20.86,0:03:21.44,Cap,,0,0,0,,{\c&H00FFFFFF&}fixes {\c&H0000E6FF&}why {\c&H00FFFFFF&}it
+Dialogue: 0,0:03:21.44,0:03:21.70,Cap,,0,0,0,,{\c&H00FFFFFF&}fixes {\c&H00FFFFFF&}why {\c&H0000E6FF&}it
+Dialogue: 0,0:03:21.70,0:03:22.23,Cap,,0,0,0,,{\c&H0000E6FF&}hurts
+Dialogue: 0,0:03:24.16,0:03:24.42,Cap,,0,0,0,,{\c&H0000E6FF&}there’s {\c&H00FFFFFF&}one {\c&H00FFFFFF&}spot
+Dialogue: 0,0:03:24.42,0:03:24.66,Cap,,0,0,0,,{\c&H00FFFFFF&}there’s {\c&H0000E6FF&}one {\c&H00FFFFFF&}spot
+Dialogue: 0,0:03:24.66,0:03:25.10,Cap,,0,0,0,,{\c&H00FFFFFF&}there’s {\c&H00FFFFFF&}one {\c&H0000E6FF&}spot
+Dialogue: 0,0:03:25.10,0:03:25.44,Cap,,0,0,0,,{\c&H0000E6FF&}below {\c&H00FFFFFF&}the {\c&H00FFFFFF&}kneecap
+Dialogue: 0,0:03:25.44,0:03:25.66,Cap,,0,0,0,,{\c&H00FFFFFF&}below {\c&H0000E6FF&}the {\c&H00FFFFFF&}kneecap
+Dialogue: 0,0:03:25.66,0:03:26.38,Cap,,0,0,0,,{\c&H00FFFFFF&}below {\c&H00FFFFFF&}the {\c&H0000E6FF&}kneecap
+Dialogue: 0,0:03:26.38,0:03:26.54,Cap,,0,0,0,,{\c&H0000E6FF&}where {\c&H00FFFFFF&}every {\c&H00FFFFFF&}step
+Dialogue: 0,0:03:26.54,0:03:26.92,Cap,,0,0,0,,{\c&H00FFFFFF&}where {\c&H0000E6FF&}every {\c&H00FFFFFF&}step
+Dialogue: 0,0:03:26.92,0:03:27.33,Cap,,0,0,0,,{\c&H00FFFFFF&}where {\c&H00FFFFFF&}every {\c&H0000E6FF&}step
+Dialogue: 0,0:03:27.33,0:03:27.99,Cap,,0,0,0,,{\c&H0000E6FF&}lands
+Dialogue: 0,0:03:29.75,0:03:30.02,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}brace
+Dialogue: 0,0:03:30.02,0:03:30.86,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}brace
+Dialogue: 0,0:03:31.02,0:03:31.14,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}injection
+Dialogue: 0,0:03:31.14,0:03:32.12,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}injection
+Dialogue: 0,0:03:32.28,0:03:32.58,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}pill {\c&H00FFFFFF&}you’ve
+Dialogue: 0,0:03:32.58,0:03:32.92,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}pill {\c&H00FFFFFF&}you’ve
+Dialogue: 0,0:03:32.92,0:03:33.32,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H00FFFFFF&}pill {\c&H0000E6FF&}you’ve
+Dialogue: 0,0:03:33.32,0:03:33.55,Cap,,0,0,0,,{\c&H0000E6FF&}ever {\c&H00FFFFFF&}taken
+Dialogue: 0,0:03:33.55,0:03:34.44,Cap,,0,0,0,,{\c&H00FFFFFF&}ever {\c&H0000E6FF&}taken
+Dialogue: 0,0:03:34.57,0:03:34.86,Cap,,0,0,0,,{\c&H0000E6FF&}treated {\c&H00FFFFFF&}the {\c&H00FFFFFF&}whole
+Dialogue: 0,0:03:34.86,0:03:35.12,Cap,,0,0,0,,{\c&H00FFFFFF&}treated {\c&H0000E6FF&}the {\c&H00FFFFFF&}whole
+Dialogue: 0,0:03:35.12,0:03:35.36,Cap,,0,0,0,,{\c&H00FFFFFF&}treated {\c&H00FFFFFF&}the {\c&H0000E6FF&}whole
+Dialogue: 0,0:03:35.36,0:03:36.26,Cap,,0,0,0,,{\c&H0000E6FF&}knee
+Dialogue: 0,0:03:37.26,0:03:37.50,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}that {\c&H00FFFFFF&}spot
+Dialogue: 0,0:03:37.50,0:03:37.85,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}that {\c&H00FFFFFF&}spot
+Dialogue: 0,0:03:37.85,0:03:38.64,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}that {\c&H0000E6FF&}spot
+Dialogue: 0,0:03:39.68,0:03:39.96,Cap,,0,0,0,,{\c&H0000E6FF&}that’s {\c&H00FFFFFF&}why {\c&H00FFFFFF&}nothing
+Dialogue: 0,0:03:39.96,0:03:40.10,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H0000E6FF&}why {\c&H00FFFFFF&}nothing
+Dialogue: 0,0:03:40.10,0:03:40.44,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H00FFFFFF&}why {\c&H0000E6FF&}nothing
+Dialogue: 0,0:03:40.44,0:03:41.05,Cap,,0,0,0,,{\c&H0000E6FF&}worked
+Dialogue: 0,0:03:41.66,0:03:41.76,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}pain {\c&H00FFFFFF&}is
+Dialogue: 0,0:03:41.76,0:03:42.12,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}pain {\c&H00FFFFFF&}is
+Dialogue: 0,0:03:42.12,0:03:42.62,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}pain {\c&H0000E6FF&}is
+Dialogue: 0,0:03:42.62,0:03:43.38,Cap,,0,0,0,,{\c&H0000E6FF&}pressure
+Dialogue: 0,0:03:43.64,0:03:43.90,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}more
+Dialogue: 0,0:03:43.90,0:03:44.82,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}more
+Dialogue: 0,0:03:46.46,0:03:46.59,Cap,,0,0,0,,{\c&H0000E6FF&}this {\c&H00FFFFFF&}sits {\c&H00FFFFFF&}on
+Dialogue: 0,0:03:46.59,0:03:47.00,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H0000E6FF&}sits {\c&H00FFFFFF&}on
+Dialogue: 0,0:03:47.00,0:03:47.34,Cap,,0,0,0,,{\c&H00FFFFFF&}this {\c&H00FFFFFF&}sits {\c&H0000E6FF&}on
+Dialogue: 0,0:03:47.34,0:03:47.63,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}spot {\c&H00FFFFFF&}and
+Dialogue: 0,0:03:47.63,0:03:48.12,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}spot {\c&H00FFFFFF&}and
+Dialogue: 0,0:03:48.12,0:03:48.70,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}spot {\c&H0000E6FF&}and
+Dialogue: 0,0:03:48.70,0:03:49.08,Cap,,0,0,0,,{\c&H0000E6FF&}lifts {\c&H00FFFFFF&}the {\c&H00FFFFFF&}weight
+Dialogue: 0,0:03:49.08,0:03:49.34,Cap,,0,0,0,,{\c&H00FFFFFF&}lifts {\c&H0000E6FF&}the {\c&H00FFFFFF&}weight
+Dialogue: 0,0:03:49.34,0:03:49.58,Cap,,0,0,0,,{\c&H00FFFFFF&}lifts {\c&H00FFFFFF&}the {\c&H0000E6FF&}weight
+Dialogue: 0,0:03:49.58,0:03:50.36,Cap,,0,0,0,,{\c&H0000E6FF&}off
+Dialogue: 0,0:03:51.39,0:03:52.01,Cap,,0,0,0,,{\c&H0000E6FF&}over
+Dialogue: 0,0:03:52.41,0:03:52.92,Cap,,0,0,0,,{\c&H0000E6FF&}200000 {\c&H00FFFFFF&}people {\c&H00FFFFFF&}wear
+Dialogue: 0,0:03:52.92,0:03:53.14,Cap,,0,0,0,,{\c&H00FFFFFF&}200000 {\c&H0000E6FF&}people {\c&H00FFFFFF&}wear
+Dialogue: 0,0:03:53.14,0:03:53.49,Cap,,0,0,0,,{\c&H00FFFFFF&}200000 {\c&H00FFFFFF&}people {\c&H0000E6FF&}wear
+Dialogue: 0,0:03:53.49,0:03:53.71,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}now
+Dialogue: 0,0:03:53.71,0:03:54.49,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}now
+Dialogue: 0,0:03:54.61,0:03:54.91,Cap,,0,0,0,,{\c&H0000E6FF&}sports {\c&H00FFFFFF&}doctors {\c&H00FFFFFF&}recommend
+Dialogue: 0,0:03:54.91,0:03:55.09,Cap,,0,0,0,,{\c&H00FFFFFF&}sports {\c&H0000E6FF&}doctors {\c&H00FFFFFF&}recommend
+Dialogue: 0,0:03:55.09,0:03:55.41,Cap,,0,0,0,,{\c&H00FFFFFF&}sports {\c&H00FFFFFF&}doctors {\c&H0000E6FF&}recommend
+Dialogue: 0,0:03:55.41,0:03:56.10,Cap,,0,0,0,,{\c&H0000E6FF&}it
+Dialogue: 0,0:03:56.39,0:03:56.58,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the {\c&H00FFFFFF&}pharma
+Dialogue: 0,0:03:56.58,0:03:56.66,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the {\c&H00FFFFFF&}pharma
+Dialogue: 0,0:03:56.66,0:03:57.05,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}the {\c&H0000E6FF&}pharma
+Dialogue: 0,0:03:57.05,0:03:57.83,Cap,,0,0,0,,{\c&H0000E6FF&}companies
+Dialogue: 0,0:03:58.18,0:03:58.40,Cap,,0,0,0,,{\c&H0000E6FF&}sports {\c&H00FFFFFF&}doctors
+Dialogue: 0,0:03:58.40,0:03:59.27,Cap,,0,0,0,,{\c&H00FFFFFF&}sports {\c&H0000E6FF&}doctors
+Dialogue: 0,0:03:59.74,0:04:00.03,Cap,,0,0,0,,{\c&H0000E6FF&}barbara’s {\c&H00FFFFFF&}husband {\c&H00FFFFFF&}wears
+Dialogue: 0,0:04:00.03,0:04:00.52,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara’s {\c&H0000E6FF&}husband {\c&H00FFFFFF&}wears
+Dialogue: 0,0:04:00.52,0:04:00.93,Cap,,0,0,0,,{\c&H00FFFFFF&}barbara’s {\c&H00FFFFFF&}husband {\c&H0000E6FF&}wears
+Dialogue: 0,0:04:00.93,0:04:01.59,Cap,,0,0,0,,{\c&H0000E6FF&}one
+Dialogue: 0,0:04:01.59,0:04:02.27,Cap,,0,0,0,,{\c&H0000E6FF&}he’s
+Dialogue: 0,0:04:02.38,0:04:02.83,Cap,,0,0,0,,{\c&H0000E6FF&}76
+Dialogue: 0,0:04:03.17,0:04:03.40,Cap,,0,0,0,,{\c&H0000E6FF&}he {\c&H00FFFFFF&}plays {\c&H00FFFFFF&}golf
+Dialogue: 0,0:04:03.40,0:04:03.62,Cap,,0,0,0,,{\c&H00FFFFFF&}he {\c&H0000E6FF&}plays {\c&H00FFFFFF&}golf
+Dialogue: 0,0:04:03.62,0:04:03.70,Cap,,0,0,0,,{\c&H00FFFFFF&}he {\c&H00FFFFFF&}plays {\c&H0000E6FF&}golf
+Dialogue: 0,0:04:03.70,0:04:04.07,Cap,,0,0,0,,{\c&H0000E6FF&}twice {\c&H00FFFFFF&}a {\c&H00FFFFFF&}week
+Dialogue: 0,0:04:04.07,0:04:04.45,Cap,,0,0,0,,{\c&H00FFFFFF&}twice {\c&H0000E6FF&}a {\c&H00FFFFFF&}week
+Dialogue: 0,0:04:04.45,0:04:05.03,Cap,,0,0,0,,{\c&H00FFFFFF&}twice {\c&H00FFFFFF&}a {\c&H0000E6FF&}week
+Dialogue: 0,0:04:05.40,0:04:05.56,Cap,,0,0,0,,{\c&H0000E6FF&}her {\c&H00FFFFFF&}niece {\c&H00FFFFFF&}wears
+Dialogue: 0,0:04:05.56,0:04:05.97,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H0000E6FF&}niece {\c&H00FFFFFF&}wears
+Dialogue: 0,0:04:05.97,0:04:06.06,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H00FFFFFF&}niece {\c&H0000E6FF&}wears
+Dialogue: 0,0:04:06.06,0:04:06.33,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}for {\c&H00FFFFFF&}tennis
+Dialogue: 0,0:04:06.33,0:04:06.66,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}for {\c&H00FFFFFF&}tennis
+Dialogue: 0,0:04:06.66,0:04:07.14,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}for {\c&H0000E6FF&}tennis
+Dialogue: 0,0:04:07.43,0:04:07.69,Cap,,0,0,0,,{\c&H0000E6FF&}she’s {\c&H00FFFFFF&}22
+Dialogue: 0,0:04:07.69,0:04:08.39,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H0000E6FF&}22
+Dialogue: 0,0:04:10.46,0:04:10.69,Cap,,0,0,0,,{\c&H0000E6FF&}i’ve {\c&H00FFFFFF&}worn {\c&H00FFFFFF&}mine
+Dialogue: 0,0:04:10.69,0:04:10.91,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ve {\c&H0000E6FF&}worn {\c&H00FFFFFF&}mine
+Dialogue: 0,0:04:10.91,0:04:11.23,Cap,,0,0,0,,{\c&H00FFFFFF&}i’ve {\c&H00FFFFFF&}worn {\c&H0000E6FF&}mine
+Dialogue: 0,0:04:11.23,0:04:11.35,Cap,,0,0,0,,{\c&H0000E6FF&}every {\c&H00FFFFFF&}day {\c&H00FFFFFF&}for
+Dialogue: 0,0:04:11.35,0:04:11.93,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H0000E6FF&}day {\c&H00FFFFFF&}for
+Dialogue: 0,0:04:11.93,0:04:12.19,Cap,,0,0,0,,{\c&H00FFFFFF&}every {\c&H00FFFFFF&}day {\c&H0000E6FF&}for
+Dialogue: 0,0:04:12.19,0:04:12.38,Cap,,0,0,0,,{\c&H0000E6FF&}six {\c&H00FFFFFF&}weeks
+Dialogue: 0,0:04:12.38,0:04:13.27,Cap,,0,0,0,,{\c&H00FFFFFF&}six {\c&H0000E6FF&}weeks
+Dialogue: 0,0:04:13.39,0:04:13.47,Cap,,0,0,0,,{\c&H0000E6FF&}under {\c&H00FFFFFF&}my {\c&H00FFFFFF&}clothes
+Dialogue: 0,0:04:13.47,0:04:13.75,Cap,,0,0,0,,{\c&H00FFFFFF&}under {\c&H0000E6FF&}my {\c&H00FFFFFF&}clothes
+Dialogue: 0,0:04:13.75,0:04:14.30,Cap,,0,0,0,,{\c&H00FFFFFF&}under {\c&H00FFFFFF&}my {\c&H0000E6FF&}clothes
+Dialogue: 0,0:04:14.63,0:04:14.71,Cap,,0,0,0,,{\c&H0000E6FF&}nobody {\c&H00FFFFFF&}knows {\c&H00FFFFFF&}it’s
+Dialogue: 0,0:04:14.71,0:04:15.25,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H0000E6FF&}knows {\c&H00FFFFFF&}it’s
+Dialogue: 0,0:04:15.25,0:04:15.51,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H00FFFFFF&}knows {\c&H0000E6FF&}it’s
+Dialogue: 0,0:04:15.51,0:04:16.11,Cap,,0,0,0,,{\c&H0000E6FF&}there
+Dialogue: 0,0:04:16.61,0:04:16.69,Cap,,0,0,0,,{\c&H0000E6FF&}no {\c&H00FFFFFF&}pills
+Dialogue: 0,0:04:16.69,0:04:17.41,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H0000E6FF&}pills
+Dialogue: 0,0:04:17.47,0:04:17.95,Cap,,0,0,0,,{\c&H0000E6FF&}no {\c&H00FFFFFF&}gel
+Dialogue: 0,0:04:17.95,0:04:18.39,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H0000E6FF&}gel
+Dialogue: 0,0:04:18.42,0:04:18.50,Cap,,0,0,0,,{\c&H0000E6FF&}no {\c&H00FFFFFF&}brace {\c&H00FFFFFF&}around
+Dialogue: 0,0:04:18.50,0:04:18.66,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H0000E6FF&}brace {\c&H00FFFFFF&}around
+Dialogue: 0,0:04:18.66,0:04:19.19,Cap,,0,0,0,,{\c&H00FFFFFF&}no {\c&H00FFFFFF&}brace {\c&H0000E6FF&}around
+Dialogue: 0,0:04:19.19,0:04:19.41,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}ankle {\c&H00FFFFFF&}by
+Dialogue: 0,0:04:19.41,0:04:19.69,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}ankle {\c&H00FFFFFF&}by
+Dialogue: 0,0:04:19.69,0:04:20.00,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}ankle {\c&H0000E6FF&}by
+Dialogue: 0,0:04:20.41,0:04:20.73,Cap,,0,0,0,,{\c&H0000E6FF&}lunchtime
+Dialogue: 0,0:04:21.13,0:04:21.45,Cap,,0,0,0,,{\c&H0000E6FF&}yesterday {\c&H00FFFFFF&}i {\c&H00FFFFFF&}walked
+Dialogue: 0,0:04:21.45,0:04:22.04,Cap,,0,0,0,,{\c&H00FFFFFF&}yesterday {\c&H0000E6FF&}i {\c&H00FFFFFF&}walked
+Dialogue: 0,0:04:22.04,0:04:22.28,Cap,,0,0,0,,{\c&H00FFFFFF&}yesterday {\c&H00FFFFFF&}i {\c&H0000E6FF&}walked
+Dialogue: 0,0:04:22.28,0:04:22.82,Cap,,0,0,0,,{\c&H0000E6FF&}into {\c&H00FFFFFF&}town
+Dialogue: 0,0:04:22.82,0:04:23.32,Cap,,0,0,0,,{\c&H00FFFFFF&}into {\c&H0000E6FF&}town
+Dialogue: 0,0:04:23.36,0:04:23.59,Cap,,0,0,0,,{\c&H0000E6FF&}two {\c&H00FFFFFF&}miles {\c&H00FFFFFF&}there
+Dialogue: 0,0:04:23.59,0:04:23.82,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H0000E6FF&}miles {\c&H00FFFFFF&}there
+Dialogue: 0,0:04:23.82,0:04:24.44,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H00FFFFFF&}miles {\c&H0000E6FF&}there
+Dialogue: 0,0:04:24.44,0:04:24.52,Cap,,0,0,0,,{\c&H0000E6FF&}two {\c&H00FFFFFF&}miles {\c&H00FFFFFF&}back
+Dialogue: 0,0:04:24.52,0:04:24.97,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H0000E6FF&}miles {\c&H00FFFFFF&}back
+Dialogue: 0,0:04:24.97,0:04:25.58,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H00FFFFFF&}miles {\c&H0000E6FF&}back
+Dialogue: 0,0:04:25.72,0:04:25.92,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}outwalked {\c&H00FFFFFF&}three
+Dialogue: 0,0:04:25.92,0:04:26.39,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}outwalked {\c&H00FFFFFF&}three
+Dialogue: 0,0:04:26.39,0:04:26.53,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}outwalked {\c&H0000E6FF&}three
+Dialogue: 0,0:04:26.53,0:04:27.16,Cap,,0,0,0,,{\c&H0000E6FF&}women {\c&H00FFFFFF&}half {\c&H00FFFFFF&}my
+Dialogue: 0,0:04:27.16,0:04:27.52,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H0000E6FF&}half {\c&H00FFFFFF&}my
+Dialogue: 0,0:04:27.52,0:04:27.66,Cap,,0,0,0,,{\c&H00FFFFFF&}women {\c&H00FFFFFF&}half {\c&H0000E6FF&}my
+Dialogue: 0,0:04:27.66,0:04:28.36,Cap,,0,0,0,,{\c&H0000E6FF&}age
+Dialogue: 0,0:04:29.19,0:04:29.27,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}stood {\c&H00FFFFFF&}in
+Dialogue: 0,0:04:29.27,0:04:29.46,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}stood {\c&H00FFFFFF&}in
+Dialogue: 0,0:04:29.46,0:04:29.74,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}stood {\c&H0000E6FF&}in
+Dialogue: 0,0:04:29.74,0:04:30.02,Cap,,0,0,0,,{\c&H0000E6FF&}line {\c&H00FFFFFF&}for {\c&H00FFFFFF&}ten
+Dialogue: 0,0:04:30.02,0:04:30.35,Cap,,0,0,0,,{\c&H00FFFFFF&}line {\c&H0000E6FF&}for {\c&H00FFFFFF&}ten
+Dialogue: 0,0:04:30.35,0:04:30.70,Cap,,0,0,0,,{\c&H00FFFFFF&}line {\c&H00FFFFFF&}for {\c&H0000E6FF&}ten
+Dialogue: 0,0:04:30.70,0:04:31.04,Cap,,0,0,0,,{\c&H0000E6FF&}minutes {\c&H00FFFFFF&}without {\c&H00FFFFFF&}shifting
+Dialogue: 0,0:04:31.04,0:04:31.23,Cap,,0,0,0,,{\c&H00FFFFFF&}minutes {\c&H0000E6FF&}without {\c&H00FFFFFF&}shifting
+Dialogue: 0,0:04:31.23,0:04:31.79,Cap,,0,0,0,,{\c&H00FFFFFF&}minutes {\c&H00FFFFFF&}without {\c&H0000E6FF&}shifting
+Dialogue: 0,0:04:31.79,0:04:32.32,Cap,,0,0,0,,{\c&H0000E6FF&}my
+Dialogue: 0,0:04:32.61,0:04:32.80,Cap,,0,0,0,,{\c&H0000E6FF&}weight
+Dialogue: 0,0:04:33.42,0:04:33.60,Cap,,0,0,0,,{\c&H0000E6FF&}you {\c&H00FFFFFF&}alright {\c&H00FFFFFF&}carrying
+Dialogue: 0,0:04:33.60,0:04:33.72,Cap,,0,0,0,,{\c&H00FFFFFF&}you {\c&H0000E6FF&}alright {\c&H00FFFFFF&}carrying
+Dialogue: 0,0:04:33.72,0:04:33.98,Cap,,0,0,0,,{\c&H00FFFFFF&}you {\c&H00FFFFFF&}alright {\c&H0000E6FF&}carrying
+Dialogue: 0,0:04:33.98,0:04:34.44,Cap,,0,0,0,,{\c&H0000E6FF&}those {\c&H00FFFFFF&}love
+Dialogue: 0,0:04:34.44,0:04:35.05,Cap,,0,0,0,,{\c&H00FFFFFF&}those {\c&H0000E6FF&}love
+Dialogue: 0,0:04:36.62,0:04:36.76,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}am {\c&H00FFFFFF&}actually
+Dialogue: 0,0:04:36.76,0:04:36.98,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}am {\c&H00FFFFFF&}actually
+Dialogue: 0,0:04:36.98,0:04:37.78,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}am {\c&H0000E6FF&}actually
+Dialogue: 0,0:04:38.73,0:04:39.00,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}carried {\c&H00FFFFFF&}two
+Dialogue: 0,0:04:39.00,0:04:39.26,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}carried {\c&H00FFFFFF&}two
+Dialogue: 0,0:04:39.26,0:04:39.41,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}carried {\c&H0000E6FF&}two
+Dialogue: 0,0:04:39.41,0:04:39.98,Cap,,0,0,0,,{\c&H0000E6FF&}bags {\c&H00FFFFFF&}home
+Dialogue: 0,0:04:39.98,0:04:40.76,Cap,,0,0,0,,{\c&H00FFFFFF&}bags {\c&H0000E6FF&}home
+Dialogue: 0,0:04:40.78,0:04:41.26,Cap,,0,0,0,,{\c&H0000E6FF&}nobody {\c&H00FFFFFF&}helped {\c&H00FFFFFF&}me
+Dialogue: 0,0:04:41.26,0:04:41.66,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H0000E6FF&}helped {\c&H00FFFFFF&}me
+Dialogue: 0,0:04:41.66,0:04:42.28,Cap,,0,0,0,,{\c&H00FFFFFF&}nobody {\c&H00FFFFFF&}helped {\c&H0000E6FF&}me
+Dialogue: 0,0:04:45.49,0:04:45.67,Cap,,0,0,0,,{\c&H0000E6FF&}you {\c&H00FFFFFF&}were {\c&H00FFFFFF&}gone
+Dialogue: 0,0:04:45.68,0:04:45.86,Cap,,0,0,0,,{\c&H00FFFFFF&}you {\c&H00FFFFFF&}were {\c&H0000E6FF&}gone
+Dialogue: 0,0:04:45.86,0:04:46.02,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}long {\c&H00FFFFFF&}time
+Dialogue: 0,0:04:46.02,0:04:46.14,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}long {\c&H00FFFFFF&}time
+Dialogue: 0,0:04:46.14,0:04:46.78,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H00FFFFFF&}long {\c&H0000E6FF&}time
+Dialogue: 0,0:04:47.97,0:04:48.06,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}know
+Dialogue: 0,0:04:48.06,0:04:48.67,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}know
+Dialogue: 0,0:04:49.83,0:04:50.01,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}was {\c&H00FFFFFF&}six
+Dialogue: 0,0:04:50.01,0:04:50.08,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}was {\c&H00FFFFFF&}six
+Dialogue: 0,0:04:50.08,0:04:50.50,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}was {\c&H0000E6FF&}six
+Dialogue: 0,0:04:50.50,0:04:50.88,Cap,,0,0,0,,{\c&H0000E6FF&}weeks {\c&H00FFFFFF&}of {\c&H00FFFFFF&}wearing
+Dialogue: 0,0:04:50.88,0:04:51.13,Cap,,0,0,0,,{\c&H00FFFFFF&}weeks {\c&H0000E6FF&}of {\c&H00FFFFFF&}wearing
+Dialogue: 0,0:04:51.13,0:04:51.38,Cap,,0,0,0,,{\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}of {\c&H0000E6FF&}wearing
+Dialogue: 0,0:04:51.38,0:04:51.58,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}strap
+Dialogue: 0,0:04:51.58,0:04:52.34,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}strap
+Dialogue: 0,0:04:52.49,0:04:52.57,Cap,,0,0,0,,{\c&H0000E6FF&}nothing {\c&H00FFFFFF&}else
+Dialogue: 0,0:04:52.57,0:04:53.46,Cap,,0,0,0,,{\c&H00FFFFFF&}nothing {\c&H0000E6FF&}else
+Dialogue: 0,0:04:53.95,0:04:54.17,Cap,,0,0,0,,{\c&H0000E6FF&}i’m {\c&H00FFFFFF&}not {\c&H00FFFFFF&}the
+Dialogue: 0,0:04:54.17,0:04:54.38,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H0000E6FF&}not {\c&H00FFFFFF&}the
+Dialogue: 0,0:04:54.38,0:04:54.60,Cap,,0,0,0,,{\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}not {\c&H0000E6FF&}the
+Dialogue: 0,0:04:54.60,0:04:54.82,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}everyone {\c&H00FFFFFF&}waits
+Dialogue: 0,0:04:54.82,0:04:55.04,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}everyone {\c&H00FFFFFF&}waits
+Dialogue: 0,0:04:55.04,0:04:55.40,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}everyone {\c&H0000E6FF&}waits
+Dialogue: 0,0:04:55.40,0:04:55.76,Cap,,0,0,0,,{\c&H0000E6FF&}for {\c&H00FFFFFF&}anymore
+Dialogue: 0,0:04:55.76,0:04:56.44,Cap,,0,0,0,,{\c&H00FFFFFF&}for {\c&H0000E6FF&}anymore
+Dialogue: 0,0:04:56.85,0:04:57.77,Cap,,0,0,0,,{\c&H0000E6FF&}right
+Dialogue: 0,0:04:57.78,0:04:58.10,Cap,,0,0,0,,{\c&H0000E6FF&}what’s {\c&H00FFFFFF&}changed
+Dialogue: 0,0:04:58.10,0:04:58.72,Cap,,0,0,0,,{\c&H00FFFFFF&}what’s {\c&H0000E6FF&}changed
+Dialogue: 0,0:04:58.72,0:04:58.82,Cap,,0,0,0,,{\c&H0000E6FF&}and {\c&H00FFFFFF&}don’t {\c&H00FFFFFF&}say
+Dialogue: 0,0:04:58.82,0:04:59.00,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H0000E6FF&}don’t {\c&H00FFFFFF&}say
+Dialogue: 0,0:04:59.00,0:04:59.22,Cap,,0,0,0,,{\c&H00FFFFFF&}and {\c&H00FFFFFF&}don’t {\c&H0000E6FF&}say
+Dialogue: 0,0:04:59.22,0:04:59.38,Cap,,0,0,0,,{\c&H0000E6FF&}a {\c&H00FFFFFF&}haircut
+Dialogue: 0,0:04:59.38,0:05:00.06,Cap,,0,0,0,,{\c&H00FFFFFF&}a {\c&H0000E6FF&}haircut
+Dialogue: 0,0:05:00.93,0:05:01.12,Cap,,0,0,0,,{\c&H0000E6FF&}three {\c&H00FFFFFF&}weeks {\c&H00FFFFFF&}ago
+Dialogue: 0,0:05:01.12,0:05:01.38,Cap,,0,0,0,,{\c&H00FFFFFF&}three {\c&H0000E6FF&}weeks {\c&H00FFFFFF&}ago
+Dialogue: 0,0:05:01.38,0:05:01.64,Cap,,0,0,0,,{\c&H00FFFFFF&}three {\c&H00FFFFFF&}weeks {\c&H0000E6FF&}ago
+Dialogue: 0,0:05:01.64,0:05:01.82,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}couldn’t {\c&H00FFFFFF&}have
+Dialogue: 0,0:05:01.82,0:05:02.02,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}couldn’t {\c&H00FFFFFF&}have
+Dialogue: 0,0:05:02.02,0:05:02.18,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}couldn’t {\c&H0000E6FF&}have
+Dialogue: 0,0:05:02.18,0:05:02.42,Cap,,0,0,0,,{\c&H0000E6FF&}crossed {\c&H00FFFFFF&}this {\c&H00FFFFFF&}room
+Dialogue: 0,0:05:02.42,0:05:02.56,Cap,,0,0,0,,{\c&H00FFFFFF&}crossed {\c&H0000E6FF&}this {\c&H00FFFFFF&}room
+Dialogue: 0,0:05:02.56,0:05:02.80,Cap,,0,0,0,,{\c&H00FFFFFF&}crossed {\c&H00FFFFFF&}this {\c&H0000E6FF&}room
+Dialogue: 0,0:05:02.80,0:05:03.09,Cap,,0,0,0,,{\c&H0000E6FF&}like {\c&H00FFFFFF&}that
+Dialogue: 0,0:05:03.09,0:05:03.55,Cap,,0,0,0,,{\c&H00FFFFFF&}like {\c&H0000E6FF&}that
+Dialogue: 0,0:05:04.63,0:05:04.76,Cap,,0,0,0,,{\c&H0000E6FF&}so {\c&H00FFFFFF&}what {\c&H00FFFFFF&}is
+Dialogue: 0,0:05:04.76,0:05:04.99,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H0000E6FF&}what {\c&H00FFFFFF&}is
+Dialogue: 0,0:05:04.99,0:05:05.20,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H00FFFFFF&}what {\c&H0000E6FF&}is
+Dialogue: 0,0:05:05.20,0:05:05.86,Cap,,0,0,0,,{\c&H0000E6FF&}it
+Dialogue: 0,0:05:07.38,0:05:07.58,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}a {\c&H00FFFFFF&}strap
+Dialogue: 0,0:05:07.58,0:05:07.80,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}a {\c&H00FFFFFF&}strap
+Dialogue: 0,0:05:07.80,0:05:08.48,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}a {\c&H0000E6FF&}strap
+Dialogue: 0,0:05:10.09,0:05:10.27,Cap,,0,0,0,,{\c&H0000E6FF&}that {\c&H00FFFFFF&}little {\c&H00FFFFFF&}thing
+Dialogue: 0,0:05:10.27,0:05:10.50,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H0000E6FF&}little {\c&H00FFFFFF&}thing
+Dialogue: 0,0:05:10.50,0:05:11.16,Cap,,0,0,0,,{\c&H00FFFFFF&}that {\c&H00FFFFFF&}little {\c&H0000E6FF&}thing
+Dialogue: 0,0:05:13.03,0:05:13.26,Cap,,0,0,0,,{\c&H0000E6FF&}that’s {\c&H00FFFFFF&}what {\c&H00FFFFFF&}i
+Dialogue: 0,0:05:13.26,0:05:13.38,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H0000E6FF&}what {\c&H00FFFFFF&}i
+Dialogue: 0,0:05:13.38,0:05:13.56,Cap,,0,0,0,,{\c&H00FFFFFF&}that’s {\c&H00FFFFFF&}what {\c&H0000E6FF&}i
+Dialogue: 0,0:05:13.56,0:05:14.08,Cap,,0,0,0,,{\c&H0000E6FF&}said
+Dialogue: 0,0:05:15.11,0:05:15.31,Cap,,0,0,0,,{\c&H0000E6FF&}so {\c&H00FFFFFF&}i’m {\c&H00FFFFFF&}just
+Dialogue: 0,0:05:15.31,0:05:15.52,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H0000E6FF&}i’m {\c&H00FFFFFF&}just
+Dialogue: 0,0:05:15.52,0:05:15.70,Cap,,0,0,0,,{\c&H00FFFFFF&}so {\c&H00FFFFFF&}i’m {\c&H0000E6FF&}just
+Dialogue: 0,0:05:15.70,0:05:15.80,Cap,,0,0,0,,{\c&H0000E6FF&}going {\c&H00FFFFFF&}to {\c&H00FFFFFF&}say
+Dialogue: 0,0:05:15.80,0:05:16.06,Cap,,0,0,0,,{\c&H00FFFFFF&}going {\c&H0000E6FF&}to {\c&H00FFFFFF&}say
+Dialogue: 0,0:05:16.06,0:05:16.33,Cap,,0,0,0,,{\c&H00FFFFFF&}going {\c&H00FFFFFF&}to {\c&H0000E6FF&}say
+Dialogue: 0,0:05:16.33,0:05:16.45,Cap,,0,0,0,,{\c&H0000E6FF&}it {\c&H00FFFFFF&}here
+Dialogue: 0,0:05:16.45,0:05:17.15,Cap,,0,0,0,,{\c&H00FFFFFF&}it {\c&H0000E6FF&}here
+Dialogue: 0,0:05:17.33,0:05:17.53,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}called {\c&H00FFFFFF&}stryde
+Dialogue: 0,0:05:17.53,0:05:17.61,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}called {\c&H00FFFFFF&}stryde
+Dialogue: 0,0:05:17.61,0:05:18.87,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}called {\c&H0000E6FF&}stryde
+Dialogue: 0,0:05:19.13,0:05:19.67,Cap,,0,0,0,,{\c&H0000E6FF&}patellar {\c&H00FFFFFF&}force {\c&H00FFFFFF&}redirection
+Dialogue: 0,0:05:19.67,0:05:19.97,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H0000E6FF&}force {\c&H00FFFFFF&}redirection
+Dialogue: 0,0:05:19.97,0:05:20.84,Cap,,0,0,0,,{\c&H00FFFFFF&}patellar {\c&H00FFFFFF&}force {\c&H0000E6FF&}redirection
+Dialogue: 0,0:05:21.40,0:05:21.83,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}been {\c&H00FFFFFF&}designed
+Dialogue: 0,0:05:21.83,0:05:22.09,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}been {\c&H00FFFFFF&}designed
+Dialogue: 0,0:05:22.09,0:05:22.35,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}been {\c&H0000E6FF&}designed
+Dialogue: 0,0:05:22.35,0:05:22.57,Cap,,0,0,0,,{\c&H0000E6FF&}for {\c&H00FFFFFF&}three {\c&H00FFFFFF&}years
+Dialogue: 0,0:05:22.57,0:05:22.89,Cap,,0,0,0,,{\c&H00FFFFFF&}for {\c&H0000E6FF&}three {\c&H00FFFFFF&}years
+Dialogue: 0,0:05:22.89,0:05:23.29,Cap,,0,0,0,,{\c&H00FFFFFF&}for {\c&H00FFFFFF&}three {\c&H0000E6FF&}years
+Dialogue: 0,0:05:23.29,0:05:23.47,Cap,,0,0,0,,{\c&H0000E6FF&}with {\c&H00FFFFFF&}orthopaedic {\c&H00FFFFFF&}surgeons
+Dialogue: 0,0:05:23.47,0:05:24.12,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H0000E6FF&}orthopaedic {\c&H00FFFFFF&}surgeons
+Dialogue: 0,0:05:24.12,0:05:24.99,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H00FFFFFF&}orthopaedic {\c&H0000E6FF&}surgeons
+Dialogue: 0,0:05:25.09,0:05:25.30,Cap,,0,0,0,,{\c&H0000E6FF&}it’s {\c&H00FFFFFF&}the {\c&H00FFFFFF&}real
+Dialogue: 0,0:05:25.30,0:05:25.50,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H0000E6FF&}the {\c&H00FFFFFF&}real
+Dialogue: 0,0:05:25.50,0:05:25.71,Cap,,0,0,0,,{\c&H00FFFFFF&}it’s {\c&H00FFFFFF&}the {\c&H0000E6FF&}real
+Dialogue: 0,0:05:25.71,0:05:25.88,Cap,,0,0,0,,{\c&H0000E6FF&}thing
+Dialogue: 0,0:05:25.88,0:05:26.58,Cap,,0,0,0,,{\c&H0000E6FF&}not {\c&H00FFFFFF&}the {\c&H00FFFFFF&}cheap
+Dialogue: 0,0:05:26.58,0:05:26.88,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H0000E6FF&}the {\c&H00FFFFFF&}cheap
+Dialogue: 0,0:05:26.88,0:05:27.17,Cap,,0,0,0,,{\c&H00FFFFFF&}not {\c&H00FFFFFF&}the {\c&H0000E6FF&}cheap
+Dialogue: 0,0:05:27.17,0:05:27.45,Cap,,0,0,0,,{\c&H0000E6FF&}knockoffs {\c&H00FFFFFF&}they {\c&H00FFFFFF&}sell
+Dialogue: 0,0:05:27.45,0:05:27.75,Cap,,0,0,0,,{\c&H00FFFFFF&}knockoffs {\c&H0000E6FF&}they {\c&H00FFFFFF&}sell
+Dialogue: 0,0:05:27.75,0:05:28.01,Cap,,0,0,0,,{\c&H00FFFFFF&}knockoffs {\c&H00FFFFFF&}they {\c&H0000E6FF&}sell
+Dialogue: 0,0:05:28.01,0:05:28.27,Cap,,0,0,0,,{\c&H0000E6FF&}on {\c&H00FFFFFF&}amazon {\c&H00FFFFFF&}and
+Dialogue: 0,0:05:28.27,0:05:28.67,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H0000E6FF&}amazon {\c&H00FFFFFF&}and
+Dialogue: 0,0:05:28.67,0:05:28.93,Cap,,0,0,0,,{\c&H00FFFFFF&}on {\c&H00FFFFFF&}amazon {\c&H0000E6FF&}and
+Dialogue: 0,0:05:28.93,0:05:29.24,Cap,,0,0,0,,{\c&H0000E6FF&}fake {\c&H00FFFFFF&}shopify {\c&H00FFFFFF&}sites
+Dialogue: 0,0:05:29.24,0:05:29.53,Cap,,0,0,0,,{\c&H00FFFFFF&}fake {\c&H0000E6FF&}shopify {\c&H00FFFFFF&}sites
+Dialogue: 0,0:05:29.53,0:05:30.63,Cap,,0,0,0,,{\c&H00FFFFFF&}fake {\c&H00FFFFFF&}shopify {\c&H0000E6FF&}sites
+Dialogue: 0,0:05:30.89,0:05:30.97,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}link’s {\c&H00FFFFFF&}below
+Dialogue: 0,0:05:30.97,0:05:31.34,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}link’s {\c&H00FFFFFF&}below
+Dialogue: 0,0:05:31.34,0:05:32.03,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}link’s {\c&H0000E6FF&}below
+Dialogue: 0,0:05:32.07,0:05:32.37,Cap,,0,0,0,,{\c&H0000E6FF&}two {\c&H00FFFFFF&}straps {\c&H00FFFFFF&}for
+Dialogue: 0,0:05:32.37,0:05:32.68,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H0000E6FF&}straps {\c&H00FFFFFF&}for
+Dialogue: 0,0:05:32.68,0:05:32.86,Cap,,0,0,0,,{\c&H00FFFFFF&}two {\c&H00FFFFFF&}straps {\c&H0000E6FF&}for
+Dialogue: 0,0:05:32.86,0:05:33.02,Cap,,0,0,0,,{\c&H0000E6FF&}the {\c&H00FFFFFF&}price {\c&H00FFFFFF&}of
+Dialogue: 0,0:05:33.02,0:05:33.10,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H0000E6FF&}price {\c&H00FFFFFF&}of
+Dialogue: 0,0:05:33.10,0:05:33.51,Cap,,0,0,0,,{\c&H00FFFFFF&}the {\c&H00FFFFFF&}price {\c&H0000E6FF&}of
+Dialogue: 0,0:05:33.51,0:05:33.69,Cap,,0,0,0,,{\c&H0000E6FF&}one {\c&H00FFFFFF&}right {\c&H00FFFFFF&}now
+Dialogue: 0,0:05:33.69,0:05:33.93,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H0000E6FF&}right {\c&H00FFFFFF&}now
+Dialogue: 0,0:05:33.93,0:05:34.57,Cap,,0,0,0,,{\c&H00FFFFFF&}one {\c&H00FFFFFF&}right {\c&H0000E6FF&}now
+Dialogue: 0,0:05:34.57,0:05:34.94,Cap,,0,0,0,,{\c&H0000E6FF&}60 {\c&H00FFFFFF&}days {\c&H00FFFFFF&}to
+Dialogue: 0,0:05:34.94,0:05:35.15,Cap,,0,0,0,,{\c&H00FFFFFF&}60 {\c&H0000E6FF&}days {\c&H00FFFFFF&}to
+Dialogue: 0,0:05:35.15,0:05:35.36,Cap,,0,0,0,,{\c&H00FFFFFF&}60 {\c&H00FFFFFF&}days {\c&H0000E6FF&}to
+Dialogue: 0,0:05:35.36,0:05:35.71,Cap,,0,0,0,,{\c&H0000E6FF&}send {\c&H00FFFFFF&}them {\c&H00FFFFFF&}back
+Dialogue: 0,0:05:35.71,0:05:35.85,Cap,,0,0,0,,{\c&H00FFFFFF&}send {\c&H0000E6FF&}them {\c&H00FFFFFF&}back
+Dialogue: 0,0:05:35.85,0:05:36.09,Cap,,0,0,0,,{\c&H00FFFFFF&}send {\c&H00FFFFFF&}them {\c&H0000E6FF&}back
+Dialogue: 0,0:05:36.09,0:05:36.27,Cap,,0,0,0,,{\c&H0000E6FF&}if {\c&H00FFFFFF&}they {\c&H00FFFFFF&}don’t
+Dialogue: 0,0:05:36.27,0:05:36.35,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H0000E6FF&}they {\c&H00FFFFFF&}don’t
+Dialogue: 0,0:05:36.35,0:05:36.60,Cap,,0,0,0,,{\c&H00FFFFFF&}if {\c&H00FFFFFF&}they {\c&H0000E6FF&}don’t
+Dialogue: 0,0:05:36.60,0:05:37.25,Cap,,0,0,0,,{\c&H0000E6FF&}work
+Dialogue: 0,0:05:37.63,0:05:38.07,Cap,,0,0,0,,{\c&H0000E6FF&}eleven {\c&H00FFFFFF&}years {\c&H00FFFFFF&}of
+Dialogue: 0,0:05:38.07,0:05:38.63,Cap,,0,0,0,,{\c&H00FFFFFF&}eleven {\c&H0000E6FF&}years {\c&H00FFFFFF&}of
+Dialogue: 0,0:05:38.63,0:05:38.88,Cap,,0,0,0,,{\c&H00FFFFFF&}eleven {\c&H00FFFFFF&}years {\c&H0000E6FF&}of
+Dialogue: 0,0:05:38.88,0:05:39.49,Cap,,0,0,0,,{\c&H0000E6FF&}knee
+Dialogue: 0,0:05:39.57,0:05:39.95,Cap,,0,0,0,,{\c&H0000E6FF&}pain
+Dialogue: 0,0:05:40.27,0:05:40.35,Cap,,0,0,0,,{\c&H0000E6FF&}gone {\c&H00FFFFFF&}the {\c&H00FFFFFF&}first
+Dialogue: 0,0:05:40.35,0:05:40.67,Cap,,0,0,0,,{\c&H00FFFFFF&}gone {\c&H0000E6FF&}the {\c&H00FFFFFF&}first
+Dialogue: 0,0:05:40.67,0:05:40.93,Cap,,0,0,0,,{\c&H00FFFFFF&}gone {\c&H00FFFFFF&}the {\c&H0000E6FF&}first
+Dialogue: 0,0:05:40.93,0:05:41.26,Cap,,0,0,0,,{\c&H0000E6FF&}step {\c&H00FFFFFF&}i {\c&H00FFFFFF&}took
+Dialogue: 0,0:05:41.26,0:05:41.45,Cap,,0,0,0,,{\c&H00FFFFFF&}step {\c&H0000E6FF&}i {\c&H00FFFFFF&}took
+Dialogue: 0,0:05:41.45,0:05:41.66,Cap,,0,0,0,,{\c&H00FFFFFF&}step {\c&H00FFFFFF&}i {\c&H0000E6FF&}took
+Dialogue: 0,0:05:41.66,0:05:41.83,Cap,,0,0,0,,{\c&H0000E6FF&}with {\c&H00FFFFFF&}it {\c&H00FFFFFF&}on
+Dialogue: 0,0:05:41.83,0:05:41.91,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H0000E6FF&}it {\c&H00FFFFFF&}on
+Dialogue: 0,0:05:41.91,0:05:42.57,Cap,,0,0,0,,{\c&H00FFFFFF&}with {\c&H00FFFFFF&}it {\c&H0000E6FF&}on
+Dialogue: 0,0:05:42.92,0:05:43.00,Cap,,0,0,0,,{\c&H0000E6FF&}i {\c&H00FFFFFF&}bought {\c&H00FFFFFF&}a
+Dialogue: 0,0:05:43.00,0:05:43.21,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H0000E6FF&}bought {\c&H00FFFFFF&}a
+Dialogue: 0,0:05:43.21,0:05:43.43,Cap,,0,0,0,,{\c&H00FFFFFF&}i {\c&H00FFFFFF&}bought {\c&H0000E6FF&}a
+Dialogue: 0,0:05:43.43,0:05:43.73,Cap,,0,0,0,,{\c&H0000E6FF&}second {\c&H00FFFFFF&}pair {\c&H00FFFFFF&}for
+Dialogue: 0,0:05:43.73,0:05:43.84,Cap,,0,0,0,,{\c&H00FFFFFF&}second {\c&H0000E6FF&}pair {\c&H00FFFFFF&}for
+Dialogue: 0,0:05:43.84,0:05:44.23,Cap,,0,0,0,,{\c&H00FFFFFF&}second {\c&H00FFFFFF&}pair {\c&H0000E6FF&}for
+Dialogue: 0,0:05:44.23,0:05:44.43,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}sister {\c&H00FFFFFF&}the
+Dialogue: 0,0:05:44.43,0:05:44.70,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}sister {\c&H00FFFFFF&}the
+Dialogue: 0,0:05:44.70,0:05:44.94,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}sister {\c&H0000E6FF&}the
+Dialogue: 0,0:05:44.94,0:05:45.19,Cap,,0,0,0,,{\c&H0000E6FF&}same {\c&H00FFFFFF&}week
+Dialogue: 0,0:05:45.19,0:05:45.93,Cap,,0,0,0,,{\c&H00FFFFFF&}same {\c&H0000E6FF&}week
+Dialogue: 0,0:05:46.00,0:05:46.23,Cap,,0,0,0,,{\c&H0000E6FF&}she’s {\c&H00FFFFFF&}coming {\c&H00FFFFFF&}sunday
+Dialogue: 0,0:05:46.23,0:05:46.31,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H0000E6FF&}coming {\c&H00FFFFFF&}sunday
+Dialogue: 0,0:05:46.31,0:05:47.29,Cap,,0,0,0,,{\c&H00FFFFFF&}she’s {\c&H00FFFFFF&}coming {\c&H0000E6FF&}sunday
+Dialogue: 0,0:05:47.56,0:05:47.69,Cap,,0,0,0,,{\c&H0000E6FF&}all {\c&H00FFFFFF&}the {\c&H00FFFFFF&}way
+Dialogue: 0,0:05:47.69,0:05:47.85,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H0000E6FF&}the {\c&H00FFFFFF&}way
+Dialogue: 0,0:05:47.85,0:05:48.01,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H00FFFFFF&}the {\c&H0000E6FF&}way
+Dialogue: 0,0:05:48.01,0:05:48.85,Cap,,0,0,0,,{\c&H0000E6FF&}up
+Dialogue: 0,0:05:49.81,0:05:49.97,Cap,,0,0,0,,{\c&H0000E6FF&}all {\c&H00FFFFFF&}the {\c&H00FFFFFF&}way
+Dialogue: 0,0:05:49.97,0:05:50.13,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H0000E6FF&}the {\c&H00FFFFFF&}way
+Dialogue: 0,0:05:50.13,0:05:50.31,Cap,,0,0,0,,{\c&H00FFFFFF&}all {\c&H00FFFFFF&}the {\c&H0000E6FF&}way
+Dialogue: 0,0:05:50.31,0:05:51.00,Cap,,0,0,0,,{\c&H0000E6FF&}up
+Dialogue: 0,0:05:52.54,0:05:52.91,Cap,,0,0,0,,{\c&H0000E6FF&}she’ll {\c&H00FFFFFF&}walk {\c&H00FFFFFF&}up
+Dialogue: 0,0:05:52.91,0:05:53.11,Cap,,0,0,0,,{\c&H00FFFFFF&}she’ll {\c&H0000E6FF&}walk {\c&H00FFFFFF&}up
+Dialogue: 0,0:05:53.11,0:05:53.29,Cap,,0,0,0,,{\c&H00FFFFFF&}she’ll {\c&H00FFFFFF&}walk {\c&H0000E6FF&}up
+Dialogue: 0,0:05:53.29,0:05:53.47,Cap,,0,0,0,,{\c&H0000E6FF&}my {\c&H00FFFFFF&}stairs {\c&H00FFFFFF&}on
+Dialogue: 0,0:05:53.47,0:05:53.63,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H0000E6FF&}stairs {\c&H00FFFFFF&}on
+Dialogue: 0,0:05:53.63,0:05:54.19,Cap,,0,0,0,,{\c&H00FFFFFF&}my {\c&H00FFFFFF&}stairs {\c&H0000E6FF&}on
+Dialogue: 0,0:05:54.19,0:05:54.35,Cap,,0,0,0,,{\c&H0000E6FF&}her {\c&H00FFFFFF&}own
+Dialogue: 0,0:05:54.35,0:05:55.07,Cap,,0,0,0,,{\c&H00FFFFFF&}her {\c&H0000E6FF&}own

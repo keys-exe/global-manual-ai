@@ -68,7 +68,7 @@ OFFSCREEN = [("L027", B / "voice" / "C4_voice_master_raw.m4a", 3.62, 9.55, "SC03
 # L009 is cut at its own pause around the commuter's reaction: "…the escalator is out of service." — "You're joking." —
 # "Please use the stairs." — "It's only stairs, love." (the announcement keeps running while he groans)
 HOOK_OFFSCREEN = {"HKC": [("L009#1", B / "voice" / "X1_voice_master_raw.mp4", 0.50, 4.30, "HKC-SH00", "pa", 0.0, 0.05),
-                          ("L009#2", B / "voice" / "X1_voice_master_raw.mp4", 4.40, 6.85, "HKC-SH01", "pa", None, 0.0)]}
+                          ("L009#2", B / "voice" / "X1_voice_master_raw.mp4", 4.40, 6.85, "HKC-SH00", "pa", 4.10, 0.0)]}
 FILTERS = {"phone": "highpass=f=320,lowpass=f=3300,acompressor=threshold=0.1:ratio=4,volume=1.6",
            "pa": "highpass=f=400,lowpass=f=3600,aecho=0.8:0.55:70|140:0.35|0.2,volume=1.4"}
 
