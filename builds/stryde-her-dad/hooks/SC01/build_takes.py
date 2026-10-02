@@ -84,6 +84,12 @@ SPOT = ("down on his right knee, upright from the hips, his left foot flat in fr
 SPOT_T2 = ("down on his right knee in the middle of a wide, shallow rain puddle of standing water on the tarmac, upright from the hips, his left foot flat in front of him, "
            "his right knee and his right hand flat in the water, small ripples spreading out from them, his reflection broken in the puddle; the second white bay line behind him "
            "runs under the water beneath his right knee")
+SPOT_T2B = ("down on his right knee on the wet, puddled tarmac in the BACKGROUND, behind Sue and the lad: further down the lane between the back of the silver hatchback "
+            "and the white van, near the garden centre's glass front, small in the frame, his right hand flat on the ground in the shallow rain water, his body turned toward the car, "
+            "the cracked pot beside him — exactly where the previous take left him")
+LAYOUT_T2 = ("the same view as the last shot of the previous take, from low behind the planter of dark shrubs at the near edge of the car park: the silver hatchback on the LEFT with its boot open, "
+             "Sue and the lad standing just right of the boot's rear corner in the middle ground, the white van right of centre with its back toward us, stopped, "
+             "the garden centre's glass front across the back of the frame")
 T1_END = ("the lad holding Sue by both upper arms beside the hatchback's rear wheel, both facing each other; the van stopped a metre short of the open boot; "
           "Tony " + SPOT + ", ten feet away, the cracked pot beside him")
 SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=2, note_owner=True,
@@ -124,12 +130,12 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=2, note_owner=True,
            {"risk": "the sheet clothes return (shorts, camel coat)", "prevented_by": "face crops + D1 outfit cards (HT26), shorts/coat negatives"},
            {"risk": "the shots restart the action", "prevented_by": "MULTI-FILM MOVE, start and end positions written"}]))
 
-T2_START = ("the lad holding Sue by both upper arms beside the hatchback's rear wheel, facing each other; Tony " + SPOT_T2 + ", ten feet away behind the lad")
+T2_START = ("the lad holding Sue by both upper arms beside the hatchback's rear wheel, facing each other; Tony " + SPOT_T2B + "")
 T2_END = ROWS["SC01-SH07"]["end_pos"]
-SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=3, note_owner=True,
-    fix_notes_all=["v1 (user): make the position of the man on the second white line of his back", "v2 (user): change  the  position of the man into the  rain puddles"],
-    user_go="board Fix 'change the position of the man into the rain puddles' + chat 'fix' (2026-10-02) — the user's go for SC01-T2 generation 3",
-    fix="board Fix (owner): change the position of the man into the rain puddles → v2 had him kneeling on dry tarmac with the puddles behind him; v3 kneels him in the middle of a wide, shallow puddle — knee and hand in the water, ripples, his broken reflection, the soaked trouser knee — the second white line still under him (both notes kept); earlier: make the position of the man on the second white line of his back → v1's wide had Tony on all fours by the hatchback's bumper; v2 places him up on his right knee right ON the second white bay line behind him (the same spot T1 now ends on), never on all fours", covers=["SC01-SH05", "SC01-SH06a", "SC01-SH06b", "SC01-SH07"], duration=13, line=" ".join([L002, L003, L004]),
+SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=4, note_owner=True,
+    fix_notes_all=["v1 (user): make the position of the man on the second white line of his back", "v2 (user): change  the  position of the man into the  rain puddles", "v3 (user): make the position of these man like on these SC01-T1 · Hook · SC01-T1 — the van backs at Sue; Tony shouts, his knee goes, the lad gets there (SH01–SH04)"],
+    user_go="board Fix 'make the position of these man like on these SC01-T1' + chat 'fix' (2026-10-02) — the user's go for SC01-T2 generation 4",
+    fix="board Fix (owner): make the position of these man like on these SC01-T1 → v3 put Tony close to the camera in an open lane by the trolley shelter, not where T1 (v3) leaves him; v4 starts from T1's last frame — Tony small in the background between the hatchback's back and the white van near the glass front, Sue and the lad in front by the boot — and SHOT 3 is the same wide view as T1's last shot, from behind the planter (the wet, puddled tarmac kept); earlier: change the position of the man into the rain puddles → v2 had him kneeling on dry tarmac with the puddles behind him; v3 kneels him in the middle of a wide, shallow puddle — knee and hand in the water, ripples, his broken reflection, the soaked trouser knee — the second white line still under him (both notes kept); earlier: make the position of the man on the second white line of his back → v1's wide had Tony on all fours by the hatchback's bumper; v2 places him up on his right knee right ON the second white bay line behind him (the same spot T1 now ends on), never on all fours", covers=["SC01-SH05", "SC01-SH06a", "SC01-SH06b", "SC01-SH07"], duration=13, line=" ".join([L002, L003, L004]),
     subject_motion="still", start_pos=T2_START, end_pos=T2_END, files=["C4", "C2-FACE", "C1-FACE", "L-CARPARK", "OUT-C2-D1", "OUT-C1-D1"], audios=["C4", "C2"],
     title="Hook · SC01-T2 — \"I’ve got you.\" · \"Is your dad alright?\" · \"He’s fine. Thanks, love.\" (SH05–SH07)",
     prompt=" ".join([
@@ -144,7 +150,7 @@ SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=3, note_owner=True,
         "THE EXCHANGE, word for word and in this order: " + L002 + " " + L003 + " " + L004 + " — the lad says the first two lines, Sue answers with the third; Tony says nothing. "
         "SHOT 1, [0s-3.5s]: MEDIUM CLOSE-UP over Sue's shoulder onto the lad, eye height, her shoulder soft in the near frame; Camera on a tripod, locked: breathless, holding her by both upper arms, he says gently: \"" + L002 + "\" "
         "SHOT 2, [3.5s-7s]: MEDIUM CLOSE-UP on the lad, three-quarter, eye height: still holding her arms, he glances past her toward Tony on the ground, kind and concerned, and asks her: \"" + L003 + "\" "
-        "SHOT 3, [7s-10s]: WIDE from high past the lad's shoulder, his shoulder soft in the near frame: ten feet away, Tony is " + SPOT_T2 + ", the cracked pot beside him at the puddle's edge, "
+        "SHOT 3, [7s-10s]: WIDE, " + LAYOUT_T2 + ": past Sue and the lad, Tony is " + SPOT_T2B + ", "
         "getting ready to push himself up; he is up on one knee, never on all fours; the lad's question finishes over this shot. "
         "SHOT 4, [10s-13s]: CLOSE-UP on Sue, front-on, eye height: shaken, she glances toward Tony, a beat, then back to the lad, and says quietly: \"" + L004 + "\" "
         "The lines land on each other in the rhythm this scene needs: cutting in close, a beat held on Tony, a beat before Sue answers. Each cut lands on a completed line, action or reaction. "
@@ -152,7 +158,7 @@ SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=3, note_owner=True,
         F2, PHYS,
         business("the lad", "both hands holding Sue's upper arms, steadying her, at one even grip through the line, letting go only on the last frame"),
         state("SUE", "shaken, in the outfit of her card, held by both arms beside the hatchback's rear wheel", "the lad lets go of her arms at the end"),
-        state("TONY", "in the outfit of his card, " + SPOT_T2 + ", his trouser knee dark and soaked, ten feet away, the cracked pot and spilled soil beside him", "nothing"),
+        state("TONY", "in the outfit of his card, " + SPOT_T2B + ", his trouser knee dark and soaked", "nothing"),
         focus("the nearest eye of whoever is speaking", "the car park behind falls to a soft, recognisable shape; in the wide past the lad, Tony on the ground is sharp"),
         dialogue("the lad", L002 + " … " + L003, VOICE_C4, "he has just pulled a stranger out of a van's way and is still breathing hard. Speaking to Sue, close, steadying her.",
                  "reassures Sue. Opens breathless and quick; turns on the exact word 'dad', where his voice softens with concern as he looks past her; exits gentle, waiting for her answer. Stress on 'dad'.",
@@ -164,7 +170,7 @@ SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=3, note_owner=True,
                  "she will not say 'husband' in front of the boy, which leaks only through a glance away from Tony before she speaks."),
         AUD,
         negs(NEG_EQUIP, NEG_MORPH, "no Tony speaking, no Tony standing up, no Sue saying 'husband', no lad saying Sue's line, no van moving, no shorts, no bare knees, no camel coat, "
-             "no logo on the uniform, no crowd gathering, no Tony on all fours, no Tony by the car's bumper, no Tony on dry tarmac, no dry ground under him", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+             "no logo on the uniform, no crowd gathering, no Tony on all fours, no Tony by the car's bumper, no Tony on dry tarmac, no Tony near the camera, no Tony in front of Sue and the lad, no Tony beside the trolley shelter, no new place for Tony", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the voices swap or Tony speaks", "prevented_by": "Audio1 the lad, Audio2 Sue, every line named with its speaker, Tony-speaking negative"},
            {"risk": "Tony gets up or moves in the wide", "prevented_by": "STILL head, state-carry: still on his right knee, 'getting ready to push himself up'"},
            {"risk": "the sheet clothes return", "prevented_by": "face crops + D1 outfit cards (HT26)"}]))
