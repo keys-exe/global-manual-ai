@@ -242,6 +242,14 @@ def run_image(c):
     if SURFACE.search(p):
         check("bare surfaces / a closed inventory (§6A rule 4)", bool(BARE.search(p)), f"'{SURFACE.search(p).group(0)}' named — say what is on it and close the list ('every other surface bare')")
     check("plain surfaces — no lettering or logos (§6A rule 5)", bool(PLAIN.search(p)), "e.g. 'clothing, packaging, walls and signs plain — no lettering, logos or labels except the product's own wordmark'")
+    # L41 (V7.90.4): a product shot's frame inventory counts the product — an uncounted product is drawn twice (PR-04a: two straps on one leg, twice)
+    inv = re.search(r"In (?:the )?frame:([^\n]*)", p)
+    NOTPROD = ("photo", "picture", "style", "woman", "man", "girl", "boy", "plate", "room", "frame", "doctor", "visitor")
+    pns = [m for m in re.findall(r"Image \d+ is the ([a-z]+)", p) if m not in NOTPROD] if c.get("product") else []
+    if inv and pns:
+        noun = pns[0]
+        counted = re.search(rf"\b(one|a single|exactly one)\s+(?:\w+\s+){{0,2}}{noun}", inv.group(1))
+        check("the product counted in the frame inventory (§6A rule 4, L41)", bool(counted), f"name it once with its count in the In frame list — 'exactly one {noun} on her right knee'" if not counted else "")
     # L28 (V7.88.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
     rest = re.sub(r'^\s*For the line "[^"]*":', "", p, count=1)
     sm = re.search(r'["“”]', rest) or re.search(r'[“”]', p)

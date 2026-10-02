@@ -1,0 +1,14 @@
+# The system is owned by keys-exe (user, 2026-10-02: "i dont want any collaborator to be able to change anything
+# on the repo, i just want this account only to be the one to update things" / "i still want them to be able to use them").
+# With the default-branch ruleset's "Require review from Code Owners" on, a pull request that touches any path below
+# merges only with keys-exe's approval. builds/ has no owner: build work saves and merges freely.
+
+/standards/        @keys-exe
+/.claude/          @keys-exe
+/dashboard/        @keys-exe
+/products/         @keys-exe
+/.github/          @keys-exe
+/CLAUDE.md         @keys-exe
+/AGENTS.md         @keys-exe
+/LESSONS.md        @keys-exe
+/.gitignore        @keys-exe

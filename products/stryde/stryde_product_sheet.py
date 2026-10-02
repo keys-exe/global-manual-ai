@@ -1390,7 +1390,11 @@ PRODUCT_PHOTOS = {
     "back.webp": ("rear view: the band doubled through the slides and running round the back, two "
                   "black moulded keeper loops side by side at the centre of the band's outer face, the "
                   "peaks rising behind. Its inside reads plain black -- SUPERSEDED V7.49.33 by "
-                  "inner_face.jpg for the inside only; everything else in it stands"),
+                  "inner_face.jpg for the inside only. 2026-10-02 (user: 'the shape of the black and gray "
+                  "is not the same as the back_ref_v2'; LESSONS L37): its shell outline (a bowtie with the "
+                  "bottom edge curving up) does not match the confirmed back, back_ref_v2.png -- never use "
+                  "back.webp for the shell's shape or the inside, never edit it to fix them; take both from "
+                  "back_ref_v2.png. It still stands for the band, slides and keepers"),
     "back_inner.jpg": ("V7.49.38, confirmed by the user: the studio reference of the inside, made from "
                        "inner_face.jpg (Kie nano-banana-pro, then one edit removing two loose band pieces). "
                        "Lying flat on seamless white, the grey grooved pad with its raised ridge in the black "
