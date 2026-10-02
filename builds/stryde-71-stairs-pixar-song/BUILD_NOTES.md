@@ -739,7 +739,7 @@ What moved to Old 2:
   - PR-05b's trouser hem is rolled above the knee, not falling over the strap.
 - PR-01a A is the second caption in this build (after R-06b A), with only the `For the line "…":` speech marks in the prompt. If it happens again, the proposed fix is the line without its speech marks in image prompts. Not changed yet.
 
-**System (V7.90.4, L40):** a product shot's `In frame` list counts the product. `preflight.py` fails a product shot whose inventory doesn't count it.
+**System (V7.90.4, L41):** a product shot's `In frame` list counts the product. `preflight.py` fails a product shot whose inventory doesn't count it.
 
 **Balances:** Higgsfield 6116.65 · Kling 38005.
 
