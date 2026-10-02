@@ -120,6 +120,28 @@ INSERTS = {
         risks=[("she goes up instead of down", "'comes DOWN… toward the camera', going-up negative"),
                ("the strap moves or grows", "knee card, 'never bends, slides or changes size'"),
                ("a hand on the rail (L56)", "'both hands out of frame and free', banister negative")]),
+    "HKC-SH00": dict(
+        base="hooks/HKC/HKC-SH01.call.json", take="HKC-SH01", vo="L009", dur=5,
+        scene=("THE SET, exactly as in the location reference: a busy city railway station concourse on a weekday morning "
+               "at the foot of a long climb to the street; tiled floor, steel columns, a steel-and-glass roof high above. "
+               "Every sign is a blank panel with no readable words. Light: cool morning daylight through the glass roof, about "
+               "6000K, falling from above and a little from the left. Other commuters stay small, soft and in the background."),
+        shot=("THE SHOT — THE SAME REVERSE ANGLE AS THE NEXT SHOT, WIDER: the camera stands at the foot of the stopped "
+              "escalator, behind its yellow folding barrier, looking back out across the concourse; the escalator and the "
+              "stairs are behind the camera and never appear in frame; the top rail of the yellow barrier runs soft along the "
+              "bottom edge of the frame. The commuter, a slim white man in his late twenties with a short dark beard and short "
+              "dark hair faded at the sides, in a mid-grey zip-up hoodie over a white T-shirt, black trousers and canvas "
+              "trainers, a black backpack on both shoulders, walks toward the camera across the concourse from the middle "
+              "distance at an ordinary hurried pace, his phone in his right hand at chest height, eyes on its screen; he "
+              "slows and stops just behind the barrier a couple of metres from the camera, still looking down at his phone, "
+              "a medium shot at eye height. His mouth stays closed; he says nothing. That is all that happens."),
+        state="tired and late, backpack on both shoulders, phone in his right hand",
+        state_except="he has walked up to the barrier and stopped, still looking at his phone",
+        focus="the commuter is held in focus as he walks in; the concourse behind him falls soft",
+        neg="no escalator in frame, no stairs in frame, no moving escalator, no readable signs, no phone screen visible, no talking, no open mouth, no running",
+        risks=[("the escalator comes into frame from the plate", "the reverse angle written out, escalator/stairs-in-frame negatives (the SH01 Fix)"),
+               ("he speaks or mouths the announcement", "'mouth stays closed; he says nothing', silent clip, no audio ref"),
+               ("he ends in a different place from SH01", "stops just behind the barrier, a couple of metres away, eye-height medium — SH01's opening")]),
     "INS-SC12": dict(
         base="body/SC11/SC12-T3.call.json", take="SC12-T3", vo="L068", dur=5,
         scene=("THE SCENE SO FAR, a weekday late morning a few weeks later, one continuous moment in the café: honeyed "
@@ -180,7 +202,7 @@ INSERTS = {
 
 def head(base):
     p = json.loads((B / base).read_text())["prompt"]
-    h = p[:p.index("THE SCENE SO FAR")]
+    h = p[:p.index("THE SCENE SO FAR")] if "THE SCENE SO FAR" in p else p[:p.index("THE SET")]
     h = h.replace("she is only ever soft in the background here", "in this shot she is seen from the waist down")
     return re.sub(r"@audio\d is .*?in this shot\. ", "", h)
 
@@ -197,7 +219,8 @@ def make(iid):
     d = INSERTS[iid]
     base = json.loads((B / d["base"]).read_text())
     rig, neg = body_parts()
-    who = "BARBARA" if iid in ("INS-SC04", "INS-SC05") else "THE FRIEND" if iid == "INS-SC12" else "HER"
+    who = ("BARBARA" if iid in ("INS-SC04", "INS-SC05") else "THE FRIEND" if iid == "INS-SC12"
+           else "THE COMMUTER" if iid == "HKC-SH00" else "HER")
     prompt = (head(d["base"]) + d["scene"] + " " + d["shot"] + " " + rig
               + f"{who} still carries exactly what this scene has done to them so far: {d['state']}. None of it resets: it "
               f"is the same as in the previous shot, except {d['state_except']}. It holds in every frame. FOCUS: {d['focus']}. "
@@ -207,7 +230,7 @@ def make(iid):
          "kind": "broll", "take": iid, "insert_into": d["take"], "duration": d["dur"], "resolution": "720p", "aspect_ratio": "9:16",
          "start_image": None, "ingredients_approved": True, "files": base["files"], "audios": [], "generate_audio": False,
          "dialogue": None, "script_line": None, "vo": d["vo"], "pace": "unhurried",
-         "subject_motion": "travels" if iid == "INS-SC07" else "in_place", "prefer_multi_shots": "false", "generation": 1,
+         "subject_motion": "travels" if iid in ("INS-SC07", "HKC-SH00") else "in_place", "prefer_multi_shots": "false", "generation": 1,
          "user_go": "the user 2026-10-02: \"you can add more videos if needed cause sometimes its noticable the slowdowns\"; "
                     "\"this feels like an image only\" (L049); \"automate them just give met the final one\"",
          "risks": [{"risk": r, "prevented_by": p} for r, p in d["risks"]], "scene": base.get("scene"),

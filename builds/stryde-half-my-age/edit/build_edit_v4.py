@@ -67,7 +67,7 @@ FOLLOW_ON = {"L039"}       # SC04-T2 marks its beats by time: L034 on its silent
 OFFSCREEN = [("L027", B / "voice" / "C4_voice_master_raw.m4a", 3.62, 9.55, "SC03-SH09", "phone", 0.0, 0.25)]
 # L009 is cut at its own pause around the commuter's reaction: "…the escalator is out of service." — "You're joking." —
 # "Please use the stairs." — "It's only stairs, love." (the announcement keeps running while he groans)
-HOOK_OFFSCREEN = {"HKC": [("L009#1", B / "voice" / "X1_voice_master_raw.mp4", 0.50, 4.30, "HKC-SH01", "pa", 0.0, 0.05),
+HOOK_OFFSCREEN = {"HKC": [("L009#1", B / "voice" / "X1_voice_master_raw.mp4", 0.50, 4.30, "HKC-SH00", "pa", 0.0, 0.05),
                           ("L009#2", B / "voice" / "X1_voice_master_raw.mp4", 4.40, 6.85, "HKC-SH01", "pa", None, 0.0)]}
 FILTERS = {"phone": "highpass=f=320,lowpass=f=3300,acompressor=threshold=0.1:ratio=4,volume=1.6",
            "pa": "highpass=f=400,lowpass=f=3600,aecho=0.8:0.55:70|140:0.35|0.2,volume=1.4"}
@@ -493,8 +493,13 @@ def build(order, name, fixed=None, offscreen=(), ending=True, dry=False):
     return out
 
 
+# Hook C opens on a new wide (user 2026-10-02: "add a clip before commuter talk so we dont have to slow him down"):
+# HKC-SH00, the commuter walking up to the barrier under the announcement; SH01 then plays at its own speed
+HOOK_OPENERS = {"HKC": [("HKC-SH00", 1)]}
+
+
 def hook_order(h):
-    return [(h, [(f"{h}-SH0{i + 1}", v) for i, v in enumerate(H.CONFIRMED[h])])]
+    return [(h, HOOK_OPENERS.get(h, []) + [(f"{h}-SH0{i + 1}", v) for i, v in enumerate(H.CONFIRMED[h])])]
 
 
 if __name__ == "__main__":
