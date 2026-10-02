@@ -356,6 +356,13 @@ def run_beat_video(c, p, check):
     sl = c.get("script_line")
     check("the spoken line is in the prompt (§35A)", bool(sl) and norm(sl) in norm(p), "script_line missing" if not sl else "")
     mp = c.get("motion_plan")
+    # L60 (V7.92.2, HT28): the limb wearing the product makes the move the line credits it with — never the bare limb beside it
+    mv = re.search(r"\b(?:steps?|climbs?|bends?|lifts?|kneels?)\b", mp or "", re.I)
+    if mv and not c.get("limb_ok") and re.search(r"\b(?:strap|brace|sleeve)\b", p, re.I):
+        subj = re.split(r"[:;—]", mp[:mv.start()])[-1]       # the mover: the words before the move, back to the last clause break
+        limb = re.search(r"\b(?:legs?|foot|feet|slippers?|shoes?|knees?|heels?)\b", subj, re.I)   # only a plan that picks a limb can pick the wrong one
+        check("PRODLIMB: the limb wearing the product makes the move (HT28, L60)", not limb or bool(re.search(r"\b(?:strap|brace|sleeve|strapped|braced)\b", subj, re.I)),
+              "the motion plan names the limb that wears the product as the one that moves, e.g. 'her right leg, the one with the strap, steps down…' (limb_ok: true only when the line gives the move to the other limb)")
     check("the confirmed motion plan is the prompt's action (§35A)", bool(mp) and norm(mp) in norm(p), "motion_plan missing" if not mp else "")
     check("House Taste read (§34A)", isinstance(c.get("taste"), list), "list the HT / FP rules applied on the call as \"taste\" (may be empty)")
     check("motion confirmed at the image (§22X)", c.get("motion_confirmed") is True, "the user's pick of the image with its 'Video will show' line")

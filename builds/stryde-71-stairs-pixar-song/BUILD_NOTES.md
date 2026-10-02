@@ -984,3 +984,17 @@ Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` /
 - Both pairs are on the Current board as To check. The clips follow your picks, then FINAL-HK1 v4.
 - `fix_patterns.py`: 0 notes from the owner (the boards are V7.79.1, which doesn't mark them), so no new rule.
 - Higgsfield balance 5667.65 → 5233.4. That is far more than 4 renders; the account is shared, so other work moved it. The cards carry 8 per render.
+
+### 2026-10-02 ~17:10–17:40 — "fix that and generate the video", then "both confirmed"
+- **M-06a** image Fix: "the product is distorted i need a new one thats why i said it should be straid leg". This is the second Fix in a row on the strap.
+  - Diagnosis: both earlier pairs were edits of a small, angled crop of her staircase frame. The shell wrapped round the thigh with the peaks upside down. Higgsfield also logs NB2 under the Pro name.
+  - New pair, v13 (A) / v14 (B): a fresh picture, not an edit, made with Kie AI nano-banana-pro (true Pro), 18 credits each. It is a front-on close-up at knee height with both legs straight and the shell flat to the lens, a third of the frame wide. Refs: Image 1 is front.webp, Image 2 is the R-07a frame (her stairs, denim skirt, tan slippers).
+  - Motion plan: her left slipper steps down one tread toward the lens while the strapped right leg stays straight.
+  - Moved to Old 3: v11 and v12.
+  - The user said "both confirmed". I read it as M-06a A plus the T-04a clip. A is used and v14 B went to Old 3.
+  - Clip v3 was made from v13 A on Kling (32 credits). The bare left foot stepped. The user said "the one who will step should be the one with the strap", so v3 went to Old 3.
+  - Clip v4 was made from the same frame v13 A (32 credits): her right leg, the one with the strap, steps down. Generation 4 on that note; preflight PASS. System change: V7.92.2 adds HT28, `preflight.py` PRODLIMB, L60 and FP25.
+- **T-04a**: clip v3 was made from the pick v7 A (40 credits). The user confirmed it (status `use`). The unused v8 went to Old 3.
+- **System (owner, keys-exe)**: V7.92.1. After a Fix calling a worn product distorted, the next render is fresh, never another edit. Changes: §6A rule 3, `preflight.py` PRODEDIT, LESSONS L59, FP24. Merged in keys-exe/global-manual-ai#453.
+- Kie balance 94441.6 → 94405.6. Kling balance 36493 after the M-06a clip.
+- FINAL-HK1 v4 is re-cut with T-04a v3 and M-06a v4.
