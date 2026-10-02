@@ -39,6 +39,7 @@
  "prefer_multi_shots": "false",
  "generation": 2,
  "user_go": "chat: \"confirm and proceed\" (2026-10-02) — voices confirmed, on to the hook; ingredient cards OUT-C1-D1 / OUT-C2-D1 wait for the user's Confirm",
+ "fix_notes_all": null,
  "fix_note": "board Fix (owner): make him look at his back before he react → v1 had Tony shout the moment the van moved, never seeing it behind him; v2 SHOT 2 has him turn and look back over his right shoulder at the van first, then whip round and shout (the shout after the look, negatives); he falls onto the second white bay line and stays up on one knee, so T2 starts where T1 ends",
  "noteOwner": true,
  "risks": [
