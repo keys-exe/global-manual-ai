@@ -665,3 +665,33 @@ The unpicked image of each pair is now on **Old 2**: its file was copied server-
 - Picks on the four anatomy pairs and on R-03b v4.
 - Confirm or Fix on the five new clips, plus the earlier R-03b v2, R-05a v2 and R-06b clips.
 - After the anatomy picks: their clips. M-02a, M-03a, M-05a and M-05b have no clip yet.
+
+### 2026-10-02 ~11:05–11:20 UTC — "use the new pixar anatomy for all the anatomy / lets re do all the anatomy" + "the t03a too"
+
+**Pixar anatomy (V7.90.2 Pixar S3, the team's locked no-muscle "normal anatomy")** is now on every anatomy beat. The look is written in words; `references/anatomy/S3_pixar_locked.jpg` is the bar each render was judged against and is never attached. The new pairs, all To check:
+- M-02a v5/v6: two knee models, a sleeve on the left and the strap on the right.
+- M-03a v5/v6: side profile, a warm glow on the tendon under the kneecap.
+- M-05a v5/v6: a sleeve outline, the glow under the kneecap, warm lines down the thigh.
+- M-05b v5/v6: the strap seated, warm fading to cool blue.
+- T-03a v5/v6: both knees bone on bone, a warm glow where the bones meet.
+
+What moved to Old 2:
+- The realistic S3 versions of the four Act 4 beats.
+- T-03a's confirmed S2 X-ray pick (v4). "Use this" brings it back.
+- T-03a's clip v1 stays on the card until a new pick gets its clip. The status is planned.
+
+**Kept off (L16, L36), on Old 2:** M-02a v5 A, M-05a v3 B and T-03a v5 A. The P-04a kitchen-table frame, attached "for the light only", drew its table, hands and brace around the models. Each slot was re-rendered once without the frame (M-02a v6, M-05a v4, T-03a v6). As a result, those three pairs mix two prompts that differ only by that frame.
+
+**M-06a "wrong person":** a new pair with N herself in frame, from her confirmed R-07a v8 A frame (HT27): pink cardigan, denim skirt, silver twist-out, the strap on her right knee (frame left). Both renders framed her full-length coming down the stairs, so the strap reads small. Her old pick (v2) is on Old 2, and clip v1 stays until a new pick gets its clip.
+
+**System (V7.90.3, L36):**
+- "Normal anatomy" is S3 in the build's own mode.
+- `ANAT-PIX` and the style line merge into one look paragraph so the beat fits §6A.
+- No scene frame as the style on an anatomy beat.
+- `pixar_anatomy: true` runs the Pixar checks on this pre-V7.90 build. `legacy_build` had switched them off.
+
+**Balances:** Higgsfield 6195.15 (this account's private workspace; the ODAQ B.V. rule is for the other account) · Kling 38245.
+
+**Waiting on:**
+- Picks on M-02a, M-03a, M-05a, M-05b, T-03a, M-06a and R-03b. After the picks come the clips.
+- Confirm or Fix on the clips To check.
