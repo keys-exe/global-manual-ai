@@ -48,7 +48,7 @@ def words_of(media, a=None, b=None):
     src = media
     if a is not None:
         src = OUT / "cap_tmp.wav"
-        subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", "-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", str(media),
+        subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", "-i", str(media), "-ss", f"{a:.3f}", "-to", f"{b:.3f}",
                         "-ac", "1", "-ar", "16000", str(src)], check=True)
     segs, _ = _M.transcribe(str(src), word_timestamps=True, language="en", vad_filter=False,
                             hotwords="Sunday Stryde Barbara Barbara's cortisone Physiotherapy kneecap")
@@ -59,7 +59,7 @@ def envelope(media, a=None, b=None):
     """The level in dBFS every 10 ms (of media, or its [a, b] part)."""
     import numpy as np
     cut = ["-ss", f"{a:.3f}", "-to", f"{b:.3f}"] if a is not None else []
-    raw = subprocess.run([FF, "-hide_banner", "-loglevel", "error", *cut, "-i", str(media), "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
+    raw = subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-i", str(media), *cut, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"],
                          capture_output=True, check=True).stdout
     x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768
     n = len(x) // 160
@@ -170,7 +170,7 @@ def caption_words(media, line_ids, cache, items=()):
         for x in onscreen:
             if "t0" in x:
                 x["src"] = "dlg"
-            elif old[id(x)][2] == "mix" and (old[id(x)][1] - old[id(x)][0]) < 0.8:   # the mix's time, only if it isn't smeared
+            elif old[id(x)][2] == "mix" and old[id(x)][0] is not None and (old[id(x)][1] - old[id(x)][0]) < 0.8:   # the mix's time, only if it isn't smeared
                 x["t0"], x["t1"], x["src"] = old[id(x)]
         # keep the order: a mix-timed word that lands out of order with its timed neighbours is dropped (refilled below)
         last = -1.0
@@ -311,10 +311,10 @@ def final(h):
         w["t0"] += hook_len; w["t1"] += hook_len
     ass = OUT / f"{h}_captions.ass"
     n = write_ass(hw + bw, ass, total)
-    fc.append(f"[0:v]subtitles=filename='{ass}':fontsdir='{FONTS}'[vc]")
+    fc.append(f"[0:v]subtitles=filename='{ass}':fontsdir='{FONTS}',format=yuv420p[vc]")   # 4:2:0 so every phone plays it
     out = FINAL / f"HalfMyAge_FINAL-{h}_v{VERSION}.mp4"
     subprocess.run([FF, "-y", "-hide_banner", "-loglevel", "error", *args, "-filter_complex", ";".join(fc), "-map", "[vc]", "-map", "[am]",
-                    "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-crf", "17", "-preset", "medium", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                     "-movflags", "+faststart", str(out)], check=True)
     print(h, "->", out.name, f"{H.info(out)[0]:.2f}s", f"product at body {pa:.2f}s", f"captions {n} groups",
           f"script words matched: hook {hm}/{hn}, body {bm}/{bn}")
