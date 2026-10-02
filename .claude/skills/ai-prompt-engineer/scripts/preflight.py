@@ -259,6 +259,12 @@ def run_image(c):
     if c.get("product"):
         check("fidelity clause on the product (§6A rule 1)", bool(FIDELITY.search(p)), "e.g. 'the product in Image 1 copied exactly — same shape, same parts, same markings, nothing redesigned'")
         check("frame fraction beside the size anchor (§6A rule 2)", bool(FRACTION.search(p)), "e.g. 'about a third of the frame wide' — the subject at least a quarter of the frame")
+    # L59 (V7.92.1): a worn product a Fix called distorted / wrong is made fresh, never edited again — edits of a small angled crop wrap it round the body
+    if c.get("product") and c.get("edit_of"):
+        fx = " ".join([str(c.get("fix_note") or "")] + [str(x) for x in (c.get("fix_notes_all") or [])])
+        bad = re.search(r"distort|wrong (?:product|strap|brace|one)|f?wrong product", fx, re.I)
+        check("PRODEDIT: a product a Fix called distorted is made fresh, never edited again (§6A rule 3, L59)", not bad,
+              f"Fix note {bad.group(0)!r} — drop edit_of/match: a fresh front-on picture, the body part straight, the product flat to the lens about a third of the frame wide, product photo as Image 1" if bad else "")
     match = (c.get("match") or "").strip().lower()
     if match:
         check(f"edit_of set for a {match}-matched shot (§6A rule 3)", bool(c.get("edit_of")), "the plate / confirmed frame being edited")
