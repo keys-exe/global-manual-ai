@@ -82,18 +82,19 @@ def take(beat, scene, covers, dur, title, files, imgs, body, motion, focus, st, 
                       subject_motion="travels" if "travels" in (motion or "") else "in_place"))
 
 take("SC09-T1", 9, ["SC09-SH01"], 8, "Scene 9 · T1 — the sports doctor fits the strap on a patient (SH01)",
-     ["X4-DOCTOR", "PROD-FRONT", "INFO-KNEE-C1"],
-     [("@image1", ONEOFF("the sports doctor")), ("@image2", "is " + STRAP + "."), ("@image3", STRAP_PLACE)],
+     ["X4-DOCTOR", "PROD-FRONT"],
+     [("@image1", ONEOFF("the sports doctor")), ("@image2", "is " + STRAP + ".")],
      "MEDIUM, eye level, three-quarter, Camera on a tripod, locked: a bright, modern sports-medicine clinic, a padded treatment couch, white walls, a window of soft daylight about 5600K. "
-     "The doctor of Image1 kneels beside a fit man of about sixty who sits on the couch edge in grey shorts, his right knee bare. In one smooth, practised move the doctor slides the small strap of Image2 up the man's shin "
-     "and seats it just under the kneecap exactly as Image3 shows the place, checks it with one light press of two fingers, takes his hands away and looks up with a small reassuring nod. "
-     "The strap about a quarter of the frame wide; both faces calm and professional.",
+     "The doctor of Image1 kneels beside a fit man of about sixty who sits on the couch edge in grey shorts, his right knee bare. The strap of Image2 is ALREADY ON as a closed loop round the man's lower shin, a hand's length below the knee, the black knit band snug all the way round the leg, the shell at the front. "
+     "The doctor puts one thumb and finger on each chrome slide and, in one smooth, practised move, slides the whole strap straight UP the shin until the shell seats just under the kneecap, the bottom of the kneecap in its centre notch; "
+     "he checks it with one light press of two fingers, takes his hands away and looks up with a small reassuring nod. He never opens, unwraps, stretches or wraps the band — it stays a closed loop round the leg the whole time. "
+     "THE STRAP IS SMALL: the shell is about 12 by 5 centimetres — clearly NARROWER than the man's knee, about two-thirds of the knee's width, no taller than two fingers, the knee and kneecap much bigger than it; it is about a fifth of the frame wide. Both faces calm and professional.",
      None, "FOCUS: the strap and the doctor's hands sharp, the faces a little soft. The blur is optical: soft and round, never smeared.",
      (P["9A_S"], P["9A_E"], ("THE PATIENT", "seated on the couch, the strap now on his right knee", "the strap is fitted")),
      [{"risk": "the wrong product or size (FP01, FP02)", "prevented_by": "the real front photo, 12 × 5 cm, a quarter of the frame"},
       {"risk": "the strap on the kneecap (FP03)", "prevented_by": "the place card, 'just under the kneecap'"},
       {"risk": "a brand or text appears in the clinic", "prevented_by": "no lettering negatives"}],
-     "no lettering or logos anywhere, no posters with text, no second strap, no strap on the kneecap or shin, no oversized strap, no brace, no talking, no mouth moving", vo="L050")
+     "no opening the band, no wrapping the band round the leg, no long loose band, no strap as wide as the knee, no oversized strap, no strap on the kneecap, no lettering or logos anywhere, no posters with text, no second strap, no brace, no talking, no mouth moving", vo="L050")
 
 take("SC09-T2", 9, ["SC09-SH02"], 5, "Scene 9 · T2 — Barbara's husband, 76, a full golf swing, the strap on his knee (SH02)",
      ["X5-HUSBAND", "PROD-FRONT", "INFO-KNEE-C1"],
@@ -194,8 +195,9 @@ take("SC10-T5", 10, ["SC10-SH07"], 5, "Scene 10 · T5 — up her street to the f
       {"risk": "a limp or slow walk", "prevented_by": "BRISK"}],
      "no third or fourth bag, no two bags in one hand, no dropping the bags, no limping, no running, no house numbers or lettering, no strap visible, no talking, no mouth moving", vo="L057")
 
-GEN2 = {"SC10-T4": 2, "SC10-T5": 2}
-FIX2 = {"SC10-T4": "agent's check of v1 (not put up, L16): the cashier spoke in SHOT 1 and Her answered still holding her basket, never lifting the bags → the cashier speaks only in SHOT 2; in SHOT 3 the basket is down and she lifts the two bags herself",
+GEN2 = {"SC09-T1": 2, "SC10-T4": 2, "SC10-T5": 2}
+FIX2 = {"SC09-T1": "the user (board Fix): wrong way of putting it and also its so big → the strap already a closed loop round the lower shin, the doctor slides it straight up by the two slides in one move (FP10), never opening or wrapping the band; the shell narrower than the knee, about two-thirds of its width, a fifth of the frame; the enlarged knee card dropped (FP02, FP05)",
+        "SC10-T4": "agent's check of v1 (not put up, L16): the cashier spoke in SHOT 1 and Her answered still holding her basket, never lifting the bags → the cashier speaks only in SHOT 2; in SHOT 3 the basket is down and she lifts the two bags herself",
         "SC10-T5": "agent's check of v1 (not put up, L16): she carried four bags, two in each hand — the line is two bags → exactly two bags, one in each hand"}
 FILES = {"X4-DOCTOR": "body/SC09/ingredients/X4-DOCTOR_v1.png", "X5-HUSBAND": "body/SC09/ingredients/X5-HUSBAND_v1.png", "X6-NIECE": "body/SC09/ingredients/X6-NIECE_v1.png",
          "X3-CASHIER": "body/SC09/ingredients/X3-CASHIER_v1.png", "OUT-N-A2": "body/SC09/ingredients/OUT-N-A2_v1.png", "INFO-HIGHST": "body/SC09/ingredients/INFO-HIGHST_v1.png",
