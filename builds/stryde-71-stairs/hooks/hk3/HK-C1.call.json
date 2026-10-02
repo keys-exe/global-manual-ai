@@ -1,0 +1,48 @@
+{
+ "beat": "HK-C1-SD",
+ "connector": "seedance",
+ "mode": 1,
+ "kind": "broll",
+ "prompt": "INGREDIENTS. @image1 is THE MOTHER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. @image2 is THE DAUGHTER: face, age, hair and build only, with the wardrobe as written below and never from this sheet. @image3 is the place: the underground metro station seen from inside the train \u2014 the carriage's double sliding doors with a steel grab pole in the middle, blue fabric seats at each side, the narrow concrete platform with its yellow edge strip, and directly opposite the doors the wide straight fixed concrete staircase with steel handrails coming down from the concourse between beige tiled walls (no escalator), exactly as shown. @image4 is an info card: THE MOTHER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. @image5 is an info card: THE DAUGHTER's outfit in this scene, exactly as shown and captioned; follow it exactly, and its caption never appears in the clip. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. SCENE SO FAR: a Sunday afternoon; the mother, in her teal quilted jacket, cream knit top, charcoal trousers and white trainers, carries two big shopping bags, one in each hand; the daughter, in her olive utility jacket, grey hoodie, black jeans and black trainers, carries two big shopping bags too; the daughter is a little taller than her mother. A phone propped at chest height inside the stopped metro carriage, a step back from the open doors, looking straight out through them across the platform to the staircase opposite, 24mm, 9:16, the whole flight of stairs framed by the open doorway, the steel grab pole at the right edge of the doorway; cool-white fluorescent light over the platform and stairs, the carriage lit by its own slightly warmer ceiling strips, faces lit from above and from the left of frame. Opening mid-descent: the mother is halfway down the staircase, hurrying, facing forwards, brisk quick light steps, one step per half-second, a bag in each hand, her hands never touching the handrail, head up, a small determined smile; she passes two women in their thirties who are walking down the same flight more slowly, one of them holding the rail. Three steps behind her the daughter comes down too, slower, a little out of breath. The mother reaches the bottom, crosses the platform in four quick steps and steps in through the open doors, passing the camera on its right and out of frame. Nobody speaks; every mouth stays closed. The doors stay open to the end; the train does not move. The phone is propped and still apart from the tiniest drift; it never moves, pans or follows anyone. One continuous shot, no cut. Mass and momentum in all movement: weight transfers first, hands arrive last, clothes and braids lag and settle; nothing melts, merges or changes shape; both women keep their faces, builds and clothes from the first frame to the last. Negative: never a smooth announcer voice, never RP newsreader neutral, never audiobook-warm, never a generic voiceover artist, never the same voice as any other character in the build, never younger than the character, never a mid-pitch evenly paced narrator with no wear and no habits, no studio polish, no generic intensity on emphatic lines, no voice that could read any script for any brand, nobody speaks, no one's lips move, no laugh, no giggle, no smile from the daughter, the daughter never looks at the camera, no posed or staged reaction, no exaggerated expression, no overacting, the mother never touches the handrail, no one running, no one falling or slipping on the stairs, no empty-handed mother, no second line, no narration, no subtitles, no text on screen, no cut to another shot, no escalator, no doors closing, no train moving, no readable signs or lettering, no camera travelling with anyone, no running, no one falling or stumbling, no knee strap visible, no third person close to camera, no morphing, no warping, no face swap, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "files": [
+  "../cast/N-NARR_v1.png",
+  "../cast/C2-DAUGHTER_v1.png",
+  "hk3/P9-METRO_v1.png",
+  "hk3/INFO-WARD-C-N_v1.png",
+  "hk3/INFO-WARD-C-C2_v1.png"
+ ],
+ "audios": [],
+ "dialogue": null,
+ "script_line": "I'm 71, and I take the stairs faster than women half my age.",
+ "pace": "brisk",
+ "subject_motion": "travels",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "someone slips or falls hurrying down the stairs",
+   "prevented_by": "brisk quick walk at one step per half-second, facing forwards, no 'running' + negatives"
+  },
+  {
+   "risk": "doors close or the train moves mid-shot",
+   "prevented_by": "'doors stay open; the train does not move' + negatives"
+  },
+  {
+   "risk": "someone mouths words in a silent shot",
+   "prevented_by": "'nobody speaks; every mouth stays closed' + generated silent"
+  }
+ ],
+ "ingredients_approved": false,
+ "generate_audio": false
+}
