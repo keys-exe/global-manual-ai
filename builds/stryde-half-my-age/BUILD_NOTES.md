@@ -252,3 +252,25 @@ On the user's go: steps 4–5 (property sheet + 16:9 plates, scene list + Scene 
   - **Kie balance:** 70,561.6.
 - **Hourly Fix-check routine:** `trig_01UEW1qUaoYzJv9wMFUSwpja` switched off (V7.92.3).
 - **System:** V7.94.1 §24L + L63.
+
+### 2026-10-02 — finished videos v5, the final changes (user: "this is the final changes")
+
+- **What the user asked for:**
+  - On the Scene 7 lines (L042–L045): "flip this cause the stairs should be on the left side not the right".
+  - On SC13 (the box cutaway): "dont add this broll stay with the zooming out".
+- **Edit v6** (`EDIT_V = 6`):
+  - **The stairs were mirrored.** In SC07-T, shots 2–4 were mirrored against the stairs plate and Scene 2: seen from below, the banister should be on the right and the photo wall on the left. Those shots are now flipped (`FLIP = {"SC07-T": 2.92}`). Shot 1, the strap close-up, is left as shot, because its wordmark reads.
+  - **Stair cutaway:** INS-SC07 was regenerated (v2, 315 cr) with the sides written out, and judged USE. v1 had the same mirror.
+  - **SC13:** the INS-SC13 cutaway is removed, so SC13-T1's zoom-out plays slowed, as before.
+- **Finals v5:**
+  - **Lengths:** HKA 354.2 s · HKB 352.2 s · HKC 356.3 s · HKE 351.3 s.
+  - **Loudness:** −13.9 to −14.3 LUFS.
+  - **Format:** 4:2:0.
+- **Boards:**
+  - **Final:** shows v5, `status: use`.
+  - **Old 4:** a new overflow board, **Old 4** (https://claude.ai/artifact/RZ5FLFNhoPixwUG7mJ9WgR), holds the v4 finals, INS-SC07 v1 and INS-SC13.
+  - **Current:** INS-SC07 is at v2. The INS-SC13 card is gone from Current; it lives on Old 4.
+  - **buildSpend:** 81,379 cr over 298 renders.
+  - **Kie balance:** 70,246.6.
+- **System:** V7.94.2, §22W Q5 (sets checked the right way round) and §24L (a slowed zoom or push keeps its slow-down), lesson L64.
+- **Disk:** local finals v1–v4 and the old edit renders were deleted to free disk; they remain on the boards.
