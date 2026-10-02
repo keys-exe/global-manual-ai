@@ -1089,7 +1089,7 @@
    "time": "afternoon",
    "arc": "the turn — warm window daylight",
    "kelvin": 5000,
-   "key_side": "L"
+   "key_side": "R"
   },
   "take_kind": "multi",
   "subject": "C3",
@@ -1097,36 +1097,35 @@
    "C3",
    "N"
   ],
-  "location": "L-VANITY-REV",
+  "location": "L-VANITY",
   "story_day": "D4",
   "height": "eye",
-  "side": "front",
+  "side": "profile",
   "scale": "WIDE",
-  "fg": "through",
+  "fg": "clean",
   "shot": [
    "SH-WIDE",
-   "SH-FGFOC"
+   "SH-PROFILE"
   ],
   "speaking": true,
   "face": true,
   "product_beat": false,
   "focus": {
-   "plane": "background",
+   "plane": "deep",
    "dof": "medium",
    "rack": null,
    "moving_subject": false
   },
-  "why": "from beside the dressing table toward the door: Beth comes in without knocking, garment bag over her shoulder (VN15)",
+  "why": "the plate's own view from the doorway: Beth walks in past the camera without knocking, garment bag over her shoulder, and stops in profile facing Susan (VN15)",
   "rig": "F2",
   "lines": "L010",
-  "action": "Beth walks in through the open bedroom door, garment bag over her shoulder, stops, looks at Susan, says it plainly",
+  "action": "Beth walks in from behind the camera, garment bag over her shoulder, stops in profile between the bed and the dressing table, looks at Susan and says it plainly",
   "pace": "three steps in, stops",
-  "start_pos": "Susan sitting on the end of the bed in her cardigan; the bedroom door open; Beth coming through it",
+  "start_pos": "Susan sitting on the end of the bed (frame left) in her sweatshirt, facing the room; the dressing table and mirror on the right under the window; Beth just behind the camera in the doorway",
   "cut": "on 'You're coming.'",
   "ingredients": [
    "C3",
    "N",
-   "L-VANITY-REV",
    "L-VANITY",
    "VOICE-C3"
   ],
@@ -1146,13 +1145,13 @@
    "time": "afternoon",
    "arc": "the turn — warm window daylight",
    "kelvin": 5000,
-   "key_side": "L"
+   "key_side": "R"
   },
   "subject": "N",
   "cast": [
    "N"
   ],
-  "location": "L-VANITY-REV",
+  "location": "L-VANITY",
   "story_day": "D4",
   "height": "high",
   "side": "three-quarter",
@@ -1182,7 +1181,7 @@
   "music": "MUS-EDU",
   "mirror_of": null,
   "ingredients": [
-   "L-VANITY-REV",
+   "L-VANITY",
    "N"
   ]
  },
@@ -1200,6 +1199,7 @@
    "kelvin": 5000,
    "key_side": "L"
   },
+  "split": "length",
   "take_kind": "multi",
   "subject": "C3",
   "cast": [

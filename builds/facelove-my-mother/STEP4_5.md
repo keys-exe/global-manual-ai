@@ -1,6 +1,6 @@
 # Steps 4–5 — facelove-my-mother (Mode 4 film, Manual)
 
-Built 2026-10-02 on the user's "go". The cast sheets are still **To check** on the board (nothing confirmed or fixed yet); the plates and the plan are built against them as they are. Flags from steps 1–3 run on my recommendations until you say otherwise (one hook so far — F3; claims voiced as written — F4–F9; the stick violet, unlabelled to the viewer until the hero — F10).
+Built 2026-10-02 on the user's "go". **Board state (user, 2026-10-02):** all 8 cast sheets and 7 plates **confirmed**; L-VANITY-REV **retired** on the user's Fix ("dont use this") — SC05-SH01/SH02 restaged on L-VANITY. Flags from steps 1–3 run on my recommendations until you say otherwise (one hook so far — F3; claims voiced as written — F4–F9; the stick violet, unlabelled to the viewer until the hero — F10).
 
 ## 4. Property and location maps (§30G, §30C)
 
@@ -25,14 +25,13 @@ Built 2026-10-02 on the user's "go". The cast sheets are still **To check** on t
 
 | ID | Tier | Shots | Owner | Anchors (restated in every shot) | Light profile | Plate |
 |---|---|---|---|---|---|---|
-| P-HOUSE (hall + kitchen) | PLATED (property plate) | SC04-SH01 (the invite on the island) | Susan | stairs up the left wall, white banister, photos up the wall, wide doorway to the kitchen, granite island | overcast morning through the kitchen window, 6500K | v1 To check |
-| L-VANITY | PLATED | SC04 (mirror), SC05, SC06 — 16 shots | Susan | white dressing table + large rectangular mirror under the right-hand window, upholstered stool, queen bed with the dusty-blue quilt, sheer curtains | window over the dressing table: cool morning 6500K (SC04) · soft warm afternoon 5000K (SC05–06) | v1 To check |
-| L-VANITY-REV | PLATED (reverse, L24) | SC05-SH01–02 | Susan | the open bedroom door in the far wall, the bed on the right, the dressing table's corner at near left | the same window behind the camera | v1 To check |
-| L-YARD | PLATED | SC01, SC02, SC07, SC08, SC09 — 24 shots | the hosts | the long white-clothed table down the lawn, the uncut white sheet cake mid-table, the bulb swags on posts, the deck steps + glass-paned back door, the drinks table left of the steps | sun low behind the house + 2700K bulbs; white balance 3800K (D1), 4300K (D5) | v1 To check |
-| L-YARD-REV | PLATED (reverse, L24) | SC09-SH02; reference for SC07-SH03 | the hosts | the table running away down the lawn, the drinks table at near right, the hedge and trees at the far end | backlit by the low sun in the trees | v1 To check |
-| L-PORCH-IN | PLATED | SC03 (2 shots) | the hosts | the white back door with its glass upper pane, the party glow through it, coat hooks and bench on the left | only the party glow through the glass, 8:1; white balance 4300K | v1 To check — **the view through the glass shows the back of a house, not the party yard (F17)** |
-| L-HOSTS-FRONT | PLATED | SC07-SH01–02 | the hosts | pale grey clapboard house, red door, white balloons on the mailbox, cars at the curb, the side gate | low sun behind the camera, 4300K | v1 To check |
-| L-GATHERING | PLATED | SC04-SH02 | the daughter | grey sectional under the big window, coffee table with the plain white birthday cake, pastel balloons, bookshelf left | big window, afternoon 5600K | v1 To check |
+| P-HOUSE (hall + kitchen) | PLATED (property plate) | SC04-SH01 (the invite on the island) | Susan | stairs up the left wall, white banister, photos up the wall, wide doorway to the kitchen, granite island | overcast morning through the kitchen window, 6500K | v1 confirmed |
+| L-VANITY | PLATED | SC04 (mirror), SC05, SC06 — 16 shots (SC05's entrance from the plate's own doorway view) | Susan | white dressing table + large rectangular mirror under the right-hand window, upholstered stool, queen bed with the dusty-blue quilt, sheer curtains | window over the dressing table: cool morning 6500K (SC04) · soft warm afternoon 5000K (SC05–06) | v1 confirmed |
+| L-YARD | PLATED | SC01, SC02, SC07, SC08, SC09 — 24 shots | the hosts | the long white-clothed table down the lawn, the uncut white sheet cake mid-table, the bulb swags on posts, the deck steps + glass-paned back door, the drinks table left of the steps | sun low behind the house + 2700K bulbs; white balance 3800K (D1), 4300K (D5) | v1 confirmed |
+| L-YARD-REV | PLATED (reverse, L24) | SC09-SH02; reference for SC07-SH03 | the hosts | the table running away down the lawn, the drinks table at near right, the hedge and trees at the far end | backlit by the low sun in the trees | v1 confirmed |
+| L-PORCH-IN | PLATED | SC03 (2 shots) | the hosts | the white back door with its glass upper pane, the party glow through it, coat hooks and bench on the left | only the party glow through the glass, 8:1; white balance 4300K | v1 confirmed |
+| L-HOSTS-FRONT | PLATED | SC07-SH01–02 | the hosts | pale grey clapboard house, red door, white balloons on the mailbox, cars at the curb, the side gate | low sun behind the camera, 4300K | v1 confirmed |
+| L-GATHERING | PLATED | SC04-SH02 | the daughter | grey sectional under the big window, coffee table with the plain white birthday cake, pastel balloons, bookshelf left | big window, afternoon 5600K | v1 confirmed |
 | PRODUCT | INCIDENTAL | SC09-SH03 | — | pale stone surface, soft window light | 5000K | hero card at SC09 |
 
 **Set checks:** S1 tiers above · S2 golden hour (D1, D5), dusk (SC03), morning (D2), afternoon (D3, D4) · S3 the yard's sun stays behind the house (frame left from the lawn, backlight from the deck) · S4 consecutive scenes change place except SC01→SC02 (one continuous moment) and SC05→SC06 (one continuous moment). **The set closes here.**
@@ -45,9 +44,9 @@ want — to stop being counted out · stakes — the group that saw the low poin
 
 ### Act map (E4) — 48 shots, 26 Seedance takes · ~3:51 at the planned shot lengths
 
-Full rows (setup, focus, light, cast, story day, ingredients, start/end positions): `step5/act_map.json` (built by `step5/act_map.py`). **Checks:** `angles.py` **PASS** (angles, shot library, focus, light) · `wardrobe.py` **PASS** · `visual_plan.py` **PASS** · `takes.py` 5 FAIL lines, all of one kind — see below.
+Full rows (setup, focus, light, cast, story day, ingredients, start/end positions): `step5/act_map.json` (built by `step5/act_map.py`). **Checks:** `angles.py` **PASS** (angles, shot library, focus, light) · `wardrobe.py` **PASS** · `visual_plan.py` **PASS** · `takes.py` 6 FAIL lines, all of one kind — see below.
 
-**`takes.py` SPLIT:** its "length" check counts shots only (≤ 4) and ignores seconds, while its own TAKE+ check holds every take to 15 s. The five flagged pairs would run **21, 22, 24, 17 and 18 s** as one take, over the 15 s limit, so each split stands. Noted for the owner (BUILD_NOTES); not changeable from this account.
+**`takes.py` SPLIT:** its "length" check counts shots only (≤ 4) and ignores seconds, while its own TAKE+ check holds every take to 15 s. The six flagged pairs would run **21, 22, 25, 24, 17 and 18 s** as one take, over the 15 s limit, so each split stands. Noted for the owner (BUILD_NOTES); not changeable from this account.
 
 | Beat | Take | Loc · day | Shot | Setup | Lines | Action | Rig | Music |
 |---|---|---|---|---|---|---|---|---|
@@ -71,9 +70,9 @@ Full rows (setup, focus, light, cast, story day, ingredients, start/end position
 | SC04-SH03 | SC04-T3 | L-VANITY · D2 | SH-EYE | eye/front/MCU | L009 | Susan at the dressing table dabs foundation from a plain unlabelled bottle onto her cheek with a sponge | F2 | MUS-EXPOSE |
 | SC04-SH04 | SC04-T3 | L-VANITY · D2 | SH-MACRO | eye/three-quarter/ECU | L009 | the beige foundation sits grey and dry in the crease beside her mouth, flaking at the edges as she smiles slightly | F2 | MUS-EXPOSE |
 | SC04-SH05 | SC04-T3 | L-VANITY · D2 | SH-CU+SH-34 | eye/three-quarter/CU | L009 | the sponge stops halfway to her face; she lowers it slowly and just looks | F2 | none (drops out on the mirror — VN14) |
-| SC05-SH01 | SC05-T1 | L-VANITY-REV · D4 | SH-WIDE+SH-FGFOC | eye/front/WIDE | L010 | Beth walks in through the open bedroom door, garment bag over her shoulder, stops, looks at Susan, says it plainly | F2 | MUS-EDU |
-| SC05-SH02 | SC05-T1 | L-VANITY-REV · D4 | SH-HIGH+SH-34 | high/three-quarter/MCU | L011 | Susan doesn't get up; she says it to her hands | F2 | MUS-EDU |
-| SC05-SH03 | SC05-T2 | L-VANITY · D4 | SH-MED+SH-34 | eye/three-quarter/MEDIUM | L012 | Beth lays the garment bag on the bed and talks while she does it | F2 | MUS-EDU |
+| SC05-SH01 | SC05-T1 | L-VANITY · D4 | SH-WIDE+SH-PROFILE | eye/profile/WIDE | L010 | Beth walks in from behind the camera, garment bag over her shoulder, stops in profile between the bed and the dressing table, looks at Susan and says it plainly | F2 | MUS-EDU |
+| SC05-SH02 | SC05-T1 | L-VANITY · D4 | SH-HIGH+SH-34 | high/three-quarter/MCU | L011 | Susan doesn't get up; she says it to her hands | F2 | MUS-EDU |
+| SC05-SH03 | SC05-T2 (length) | L-VANITY · D4 | SH-MED+SH-34 | eye/three-quarter/MEDIUM | L012 | Beth lays the garment bag on the bed and talks while she does it | F2 | MUS-EDU |
 | SC05-SH04 | SC05-T2 | L-VANITY · D4 | SH-MED+SH-PROFILE | eye/profile/MEDIUM | L013 | Beth pulls the dressing-table stool out with one hand and nods Susan to it; Susan gets up from the bed and sits | F2 | MUS-EDU |
 | SC05-SH05 | SC05-T3 (length) | L-VANITY · D4 | SH-34+SH-HIGH | high/three-quarter/MCU | L014 | Beth tilts Susan's chin to the window with two fingers, takes the closed violet stick from her pocket, her palm over the wordmark, and pulls the cap off the balm end | F2 | MUS-TURN |
 | SC05-SH06 | SC05-T4 (insert) | L-VANITY · D4 | SH-MACRO+SH-PROFILE | eye/profile/ECU | L014 | the balm's flat crest draws one white stripe up Susan's cheekbone | F2 | MUS-AFTER |
@@ -99,6 +98,7 @@ Full rows (setup, focus, light, cast, story day, ingredients, start/end position
 | SC09-SH02 | SC09-T2 | L-YARD-REV · D5 | SH-WIDE+SH-EYE | eye/front/WIDE | L027 | the long table full, people passing cake and talking under the bulbs | F2 | MUS-OFFER |
 | SC09-SH03 | SC09-T3 | PRODUCT · P | SH-CU+SH-HIGH | high/front/CU | L027 | two closed violet sticks standing upright beside the white primer tube on a pale stone surface; slow push-in | F1 | MUS-OFFER |
 | SC09-SH04 | SC09-T4 | L-YARD · D5 | SH-CU+SH-LOW | low/three-quarter/CU | L027 | Susan, laughing with someone off frame, glances down at the table and smiles to herself | F2 | MUS-OFFER |
+
 ### Takes (§24K part 5) — one Seedance call each
 
 | Take | Kind | Shots | Seconds | Location | Ingredients | Start → end |
@@ -112,7 +112,7 @@ Full rows (setup, focus, light, cast, story day, ingredients, start/end position
 | SC04-T1 | insert | SH01 | 5 | P-HOUSE | INVITE-CARD, N, P-HOUSE | a plain invite card face-up on the kitchen island, her hand coming in → invite face-down under the phone, her hand leaving |
 | SC04-T2 | single | SH02 | 4 | L-GATHERING | C4, L-GATHERING, N | the family on the grey sectional around the cake, the daughter in the middle; Susan standi → Susan one step further back, phone up |
 | SC04-T3 | multi | SH03, SH04, SH05 | 11 | L-VANITY | L-VANITY, N, OLD-FOUNDATION-CARD | Susan seated on the stool at the dressing table facing the mirror, a plain unlabelled foun → Susan at the dressing table, sponge lowered, still |
-| SC05-T1 | multi | SH01, SH02 | 11 | L-VANITY-REV | C3, L-VANITY, L-VANITY-REV, N, VOICE-C3 | Susan sitting on the end of the bed in her cardigan; the bedroom door open; Beth coming th → Susan on the end of the bed, Beth inside the door with the garment bag |
+| SC05-T1 | multi | SH01, SH02 | 11 | L-VANITY | C3, L-VANITY, N, VOICE-C3 | Susan sitting on the end of the bed (frame left) in her sweatshirt, facing the room; the d → Susan on the end of the bed, Beth inside the door with the garment bag |
 | SC05-T2 | multi | SH03, SH04 | 14 | L-VANITY | C3, L-VANITY, N | Beth standing by the bed with the garment bag; Susan on the end of the bed → Susan seated on the stool facing the mirror; Beth standing at her left |
 | SC05-T3 | multi | SH05 | 10 | L-VANITY | C3, L-VANITY, N, PROD-BALM, PROD-CLOSED, PROD-HAND-CARD | Susan seated facing the mirror, Beth at her left shoulder → the balm end uncapped in Beth's right hand at Susan's cheek |
 | SC05-T4 | insert | SH06 | 3 | L-VANITY | COLOUR-FRONT-CARD, N, PROD-BALM | the balm end at her cheekbone → a white stripe on her cheek, the stick lifting away |
@@ -225,7 +225,6 @@ One block per story day, in story order: the event, what makes it a day, each pe
 |---|---|---|
 | P-E1 | PRODUCT · NONE | SC09-SH03 |
 
-
 ### Music Register Map (§40A, Build Sheet 5c) — one family: sparse piano, low bowed strings, a soft slow pulse (~70 bpm), a three-note motif
 
 | Part | Shots | What the script is doing | Register | Cue in plain words | Entry / drop / hand-over |
@@ -290,9 +289,9 @@ The music goes in at the edit (§24M) — never in a clip. Generated with `music
 | # | Where | Finding | Recommendation |
 |---|---|---|---|
 | **F16** | geography | the party yard read as the hosts' house (she drives there; she goes inside to their back hall) | confirm, or say if it's Susan and Greg's own yard (then SC07's car shot becomes her own driveway) |
-| **F17** | L-PORCH-IN v1 | through the door glass the render shows the back of a house with a deck, not the party yard | it's on the board To check — Fix it with a note like "through the glass: the yard and the long table, not a house" if you agree |
+| F17 | L-PORCH-IN v1 | through the glass it shows a house, not the yard | **you confirmed v1** — kept. (A v2 I started before reading your Confirm is kept off the board.) |
 | F18 | runtime | the planned shot lengths add to ~3:51 (script ~2:50); the voice masters will set the real timing | film pace, no trimming (§24L) |
-| F19 | takes.py | five "length" splits flagged by a shots-only count; each pair is 17–24 s, over the 15 s take limit | splits kept; noted for the owner |
+| F19 | takes.py | six "length" splits flagged by a shots-only count; each pair is 17–24 s, over the 15 s take limit | splits kept; noted for the owner |
 
 ## Next
 

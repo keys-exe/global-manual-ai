@@ -9,7 +9,7 @@
 | SC04-T1 | insert | SH01 | 5 | P-HOUSE | INVITE-CARD, N, P-HOUSE | a plain invite card face-up on the kitchen island, her hand coming in → invite face-down under the phone, her hand leaving |
 | SC04-T2 | single | SH02 | 4 | L-GATHERING | C4, L-GATHERING, N | the family on the grey sectional around the cake, the daughter in the middle; Susan standi → Susan one step further back, phone up |
 | SC04-T3 | multi | SH03, SH04, SH05 | 11 | L-VANITY | L-VANITY, N, OLD-FOUNDATION-CARD | Susan seated on the stool at the dressing table facing the mirror, a plain unlabelled foun → Susan at the dressing table, sponge lowered, still |
-| SC05-T1 | multi | SH01, SH02 | 11 | L-VANITY-REV | C3, L-VANITY, L-VANITY-REV, N, VOICE-C3 | Susan sitting on the end of the bed in her cardigan; the bedroom door open; Beth coming th → Susan on the end of the bed, Beth inside the door with the garment bag |
+| SC05-T1 | multi | SH01, SH02 | 11 | L-VANITY | C3, L-VANITY, N, VOICE-C3 | Susan sitting on the end of the bed (frame left) in her sweatshirt, facing the room; the d → Susan on the end of the bed, Beth inside the door with the garment bag |
 | SC05-T2 | multi | SH03, SH04 | 14 | L-VANITY | C3, L-VANITY, N | Beth standing by the bed with the garment bag; Susan on the end of the bed → Susan seated on the stool facing the mirror; Beth standing at her left |
 | SC05-T3 | multi | SH05 | 10 | L-VANITY | C3, L-VANITY, N, PROD-BALM, PROD-CLOSED, PROD-HAND-CARD | Susan seated facing the mirror, Beth at her left shoulder → the balm end uncapped in Beth's right hand at Susan's cheek |
 | SC05-T4 | insert | SH06 | 3 | L-VANITY | COLOUR-FRONT-CARD, N, PROD-BALM | the balm end at her cheekbone → a white stripe on her cheek, the stick lifting away |
