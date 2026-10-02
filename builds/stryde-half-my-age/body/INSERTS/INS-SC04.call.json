@@ -1,0 +1,57 @@
+{
+ "beat": "INS-SC04",
+ "build": "stryde-half-my-age",
+ "connector": "seedance",
+ "model": "bytedance/seedance-2-5",
+ "mode": 4,
+ "kind": "broll",
+ "take": "INS-SC04",
+ "insert_into": "SC04-T2",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N-HER_face.png",
+  "cast/C3-HUSBAND_face.png",
+  "plates/L-WEDDING_v1.png",
+  "body/SC04/ingredients/OUT-N-B4_v2.png",
+  "body/SC04/ingredients/OUT-C3-B4_v1.png",
+  "body/SC04/ingredients/OUT-C1-B4_v2.png"
+ ],
+ "audios": [],
+ "generate_audio": false,
+ "dialogue": null,
+ "script_line": null,
+ "vo": "L034",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": "the user 2026-10-02: \"you can add more videos if needed cause sometimes its noticable the slowdowns\"; \"this feels like an image only\" (L049); \"automate them just give met the final one\"",
+ "risks": [
+  {
+   "risk": "Barbara's outfit changes",
+   "prevented_by": "her wedding outfit card"
+  },
+  {
+   "risk": "a strap or brace appears on her knees",
+   "prevented_by": "strap and brace negatives"
+  },
+  {
+   "risk": "Her steps into frame",
+   "prevented_by": "Her-in-frame negative, 'what Her is watching'"
+  }
+ ],
+ "scene": 4,
+ "title": "Insert · SC04-T2",
+ "taste": [
+  "HT02",
+  "HT17",
+  "HT18",
+  "HT22",
+  "HT23"
+ ],
+ "prompt": "INGREDIENTS. @image1 is Her: face and hair only, a close crop — her clothes come from the outfit card, never from this picture. @image2 is the husband: face and hair only, a close crop — his clothes come from the outfit card, never from this picture. @image3 is the place: the wedding reception room of a country hotel, seen from the edge of the dance floor — the parquet dance floor in the middle, the looped fairy lights and the chandelier overhead, round white-clothed tables with ivory chair covers and candle jars around it, the small stage with the DJ desk at the back right; their own table is the round table in the near left of this view, its walls, windows, furniture and light side exactly as shown. @image4 is an info card: Her's outfit on this day — the dusty-rose silk-chiffon midi dress, nude satin courts, pearl drops — no jacket; follow it exactly, and its caption strip and any text on it never appear in the clip. @image5 is an info card: the husband's outfit on this day — the navy suit, pale-blue shirt and burgundy tie; follow it exactly, and its caption strip and any text on it never appear in the clip. @image6 is an info card: Barbara's outfit on this day — the royal-blue lace midi dress — in this shot she is seen from the waist down; follow it exactly, and its caption strip and any text on it never appear in the clip. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — a window, a practical lamp, an overhead fixture — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the room layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, worn costumes and a lived-in set. Restrained, specific performances. THE LOOK OF THIS FILM: A British family drama shot like a prestige drama series — an ordinary semi-detached house, a railway station, a wedding and a high-street café, watched with warmth and restraint. Lived-in domestic colour: cool blue-grey dusk and night in the rooms of the Before, lit by warm tungsten lamps; muted sage, navy, oatmeal and brick; warming to honeyed daylight, soft greens and cream in the After. Highlights roll off softly with a faint warm halation around bulbs and bright windows; clean modern glass with a gentle fall-off toward the frame edges. Captured with natural, neutral colour and a gentle contrast, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look. The look exactly as set out here, from the first frame to the last: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. THE SCENE SO FAR, a June evening at her granddaughter's wedding reception, one continuous evening: the fairy lights and candle jars are lit, warm 2700K, the tall windows dark blue behind the curtains; the parquet floor is full of guests dancing, and Barbara, in the outfit of her card, dances in the middle of it. THE SHOT: what Her is watching, a low MEDIUM at knee height from the edge of the dance floor: Barbara from the waist down, in the outfit of her card, dancing on the parquet — the hem of the royal-blue lace midi dress swinging about her calves, her legs bending and straightening freely at the knee on every beat, her weight rocking from foot to foot, a little turn on the spot; other guests' legs move soft around her. Her face is out of frame. That is all that happens. Camera on a tripod, framed and locked, with no drift, no sway and no reframe. The only camera life is one small operator pan or tilt of a few degrees to keep the subject in frame as they shift. It arrives a beat late and corrects only part of the way. The subject and the room carry all the other movement. Everything in frame keeps the exact form, proportion and count it has from the first frame to the last — nothing melts, merges, splits, grows or becomes something else. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend. Mass and momentum in all movement: nothing at uniform speed, nothing stops instantly; weight transfers first and the hands arrive last; hair, coat hems and bag straps lag and settle after the body stops. BARBARA still carries exactly what this scene has done to them so far: dancing in the middle of the floor, in the outfit of her card. None of it resets: it is the same as in the previous shot, except the dance carries on. It holds in every frame. FOCUS: Barbara's knees and feet are sharp; the other dancers fall soft. The blur is optical: soft and round, never smeared. The clip carries no dialogue and no voice at all: nobody speaks. NEGATIVES: no brace, no strap visible, no face in frame, no Her in frame, no stumble, no microphone in frame, no boom pole, no film equipment, no crew in frame, no morphing, no warping, no melting, no merging, no splitting, no duplicate people, no background bending, no texture swimming, no flickering geometry, no sliding, no gliding, no drifting across the floor, no feet skating, no camera push, no zoom, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack."
+}

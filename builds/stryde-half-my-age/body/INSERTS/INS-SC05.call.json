@@ -1,0 +1,58 @@
+{
+ "beat": "INS-SC05",
+ "build": "stryde-half-my-age",
+ "connector": "seedance",
+ "model": "bytedance/seedance-2-5",
+ "mode": 4,
+ "kind": "broll",
+ "take": "INS-SC05",
+ "insert_into": "SC0506-T1",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "../../products/stryde/stryde_refs/front.webp",
+  "body/SC05/ingredients/INFO-KNEE-C1_v3.png",
+  "cast/C1-BARBARA_v1.png",
+  "cast/N-HER_face.png",
+  "plates/L-KITCHEN_v1.png",
+  "body/SC05/ingredients/OUT-N-B5_v2.png",
+  "body/SC05/ingredients/INFO-ROUTINE_v2.png"
+ ],
+ "audios": [],
+ "generate_audio": false,
+ "dialogue": null,
+ "script_line": null,
+ "vo": "L037 L039",
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": "the user 2026-10-02: \"you can add more videos if needed cause sometimes its noticable the slowdowns\"; \"this feels like an image only\" (L049); \"automate them just give met the final one\"",
+ "risks": [
+  {
+   "risk": "the strap grows or sits on the kneecap (FP placement)",
+   "prevented_by": "product photo + knee card, 'a third of the frame wide', size negatives"
+  },
+  {
+   "risk": "the shell bends under the finger",
+   "prevented_by": "'rigid… never bends', the finger only traces the top edge"
+  },
+  {
+   "risk": "the strap on the wrong knee",
+   "prevented_by": "'bare right knee', left-knee negative"
+  }
+ ],
+ "scene": 5,
+ "title": "Insert · SC0506-T1",
+ "taste": [
+  "HT02",
+  "HT17",
+  "HT18",
+  "HT22",
+  "HT23"
+ ],
+ "prompt": "INGREDIENTS. @image1 is the real product photo of the strap, copied exactly — the rigid matte-black moulded shell with two rounded peaks around a centre notch, the grey stryde wordmark on its face, a slim chrome slide at each end and the soft black knit band looping through them; nothing redesigned. It is small: the shell about 12 by 5 centimetres — it fits inside one palm. @image2 is Barbara's own right knee with the strap on it, seated: copy the strap's place exactly — the bottom of the kneecap sits in the shell's centre notch, the shell on the tendon just under it, the whole kneecap visible above; its caption strip never appears in the clip. @image3 is Barbara: face, age, hair and build only, with the wardrobe as written below (a cobalt-blue quilted gilet over a white long-sleeved top, navy shorts ending just above the knee and white trainers — her own outfit, as on her sheet) and never from this sheet. @image4 is Her: her face and hair only, a close crop — her clothes come from the outfit card, never from this picture. @image5 is the place: her kitchen at the back of the house, seen from the hall doorway — the scrubbed pine table with rush-seat ladder-back chairs along the left under the side window, the sage-green cupboards and the white butler sink under the back window, the cream range cooker on the right, warm morning sun coming in, its walls, windows, furniture and light side exactly as shown. @image6 is an info card: Her outfit on this day — the chambray-blue shirt dress with its tie belt, ending above the knee, white plimsolls; follow it exactly, and its caption strip and any text on it never appear in the clip. @image7 is the layout of her end of the pine table, seen from above: exactly five objects, spaced as shown — a soft beige pull-on knee sleeve folded once, a silver painkiller strip, a plain white gel tube with its cap on, a white mug of tea half drunk, a small glass of water; every shot of this table shows these five and nothing else, in these places, with no brand or writing, and its caption strip never appears in the clip. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — a window, a practical lamp, an overhead fixture — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the room layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, worn costumes and a lived-in set. Restrained, specific performances. THE LOOK OF THIS FILM: A British family drama shot like a prestige drama series — an ordinary semi-detached house, a railway station, a wedding and a high-street café, watched with warmth and restraint. Lived-in domestic colour: cool blue-grey dusk and night in the rooms of the Before, lit by warm tungsten lamps; muted sage, navy, oatmeal and brick; warming to honeyed daylight, soft greens and cream in the After. Highlights roll off softly with a faint warm halation around bulbs and bright windows; clean modern glass with a gentle fall-off toward the frame edges. Captured with natural, neutral colour and a gentle contrast, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look. The look exactly as set out here, from the first frame to the last: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. THE SCENE SO FAR, a bright morning the week after the wedding, one continuous moment in her kitchen: soft morning daylight about 5600K from the side window. Barbara, in her own gilet and navy shorts, sits at the pine table with the strap of the product photo, small and rigid — the matte-black moulded shell about 12 by 5 centimetres with two rounded peaks around a centre notch, the grey stryde wordmark toward us, a slim chrome slide at each end and the soft black knit band; it never bends, slides or changes size, on her bare right knee exactly as her knee card shows it. THE SHOT: an ECU low and front-on at knee height: Barbara's bare right knee filling the frame, the strap seated just below the kneecap, the bottom of the kneecap in the shell's centre notch, the shell about a third of the frame wide, the hem of her navy shorts at the top of frame. Her right index finger traces slowly along the top edge of the shell from one chrome slide to the other, then lifts away. The strap does not move. Her face is out of frame. That is all that happens. Camera on a tripod, framed and locked, with no drift, no sway and no reframe. The only camera life is one small operator pan or tilt of a few degrees to keep the subject in frame as they shift. It arrives a beat late and corrects only part of the way. The subject and the room carry all the other movement. Everything in frame keeps the exact form, proportion and count it has from the first frame to the last — nothing melts, merges, splits, grows or becomes something else. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend. Mass and momentum in all movement: nothing at uniform speed, nothing stops instantly; weight transfers first and the hands arrive last; hair, coat hems and bag straps lag and settle after the body stops. BARBARA still carries exactly what this scene has done to them so far: the strap on her bare right knee, seated just below the kneecap. None of it resets: it is the same as in the previous shot, except her finger has traced the shell once. It holds in every frame. FOCUS: the strap and kneecap are sharp; the table leg behind falls soft. The blur is optical: soft and round, never smeared. The clip carries no dialogue and no voice at all: nobody speaks. NEGATIVES: no strap over the kneecap, no oversized strap, no strap on the left knee, no box, no packaging, no face in frame, no microphone in frame, no boom pole, no film equipment, no crew in frame, no morphing, no warping, no melting, no merging, no splitting, no duplicate people, no background bending, no texture swimming, no flickering geometry, no sliding, no gliding, no drifting across the floor, no feet skating, no camera push, no zoom, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack."
+}

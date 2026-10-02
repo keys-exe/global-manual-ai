@@ -1,0 +1,27 @@
+[
+ {
+  "beat": "HKB-SH01",
+  "at": 0.0,
+  "out_dur": 4.06
+ },
+ {
+  "beat": "HKB-SH02",
+  "at": 4.06,
+  "out_dur": 4.04
+ },
+ {
+  "beat": "HKB-SH03",
+  "at": 8.1,
+  "out_dur": 4.06
+ },
+ {
+  "beat": "HKB-SH04",
+  "at": 12.16,
+  "out_dur": 4.04
+ },
+ {
+  "beat": "HKB-SH05",
+  "at": 16.2,
+  "out_dur": 7.04
+ }
+]
