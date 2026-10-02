@@ -626,3 +626,42 @@ The unpicked image of each pair is now on **Old 2**: its file was copied server-
 - Picks on R-04a, R-07a and all seven Act 4 pairs.
 - Confirm or Fix on the R-03b v2, R-05a v2 and R-06b clips, plus the user's go for a third R-03b clip.
 - After the R-07a pick, the 9 s one-take clip.
+
+### 2026-10-02 10:20–10:45 UTC — "fix those and proceed to the next act" + "about all the anatomy here we will use the normal anatomy / fix those"
+
+**The team's anatomy call:** every Act 4 anatomy beat is now the normal anatomy model. That is S3: natural tissue colours (red muscle, white tendons, ivory bone) on pale grey, with P-04a as the light frame only.
+- This covers M-02a, M-03a, M-05a and M-05b.
+- The earlier S1 Ghost, S2 X-ray and S7 versions are on Old 2. That includes M-05b v1, which the user had confirmed; "Use this" on Old 2 brings it back.
+- The new pairs are To check:
+  - M-02a v3/v4: two knee models, a sleeve on the left and the strap on the right.
+  - M-03a v3/v4: side profile, a red point on the tendon.
+  - M-05a v3/v4: the leg model with a sleeve outline and red pressure lines.
+  - M-05b v3/v4: the strap seated, red fading to blue.
+- **Kept off (L16), all on Old 2:**
+  - M-02a v2: the X-ray Fix for "fix the product and placement", superseded before it was shown.
+  - M-02a v3 pair: the worn-strap photo printed a real hairy leg and a room under the models. The worn photo is now dropped from anatomy beats (L34).
+  - M-05b first A: the strap alone on a table.
+- **System:** V7.89.3, §12A-1 rules 7–8, `angles.py` `anat.lock`, `preflight.py` (anatomy + worn photo fails). LESSONS L34.
+
+**R-03b image Fix** "make her look like she is showing the stryde strap like flexing it": an image edit of her confirmed v1 A frame. Her right leg (frame left) stretches toward the lens, both hands present the strap, and she grins. The v4 pair is To check.
+- **Kept off, all on Old 2:**
+  - v3 A: a different woman.
+  - v3 B: the strap on her left knee (FP18).
+  - v4 B: a different woman in a hinged brace. B was re-rendered once (B2) with the same prompt.
+- `preflight.py` could not pass an image edit that shows the product: product-first and edit-first conflicted. Now the edited picture is Image 1 and the product photo comes right after it (§6A, L35).
+- v1 A (the old pick) is on Old 2. Clip v2 stays as the card's video until a new pick gets its clip.
+
+**Clips from the picks (Kling 3.0, 1080p, silent), all To check:**
+- M-01a, 6 s: v1 opened her mouth as her head settled (HT25), so it was kept off and is on Old 2. v2 holds her still with a slow push down.
+- M-04a, 5 s: a slow push on the still heap.
+- M-06a, 4 s: the slipper lands. Her leg then turns side-on and the strap is seen from the side.
+- R-04a, 5 s: her fingertip taps the shell, with a slow push.
+- R-07a, 9 s: one take of the whole walk down, hands off the rail, mouth closed.
+- The unused images of each pair are on Old 2: M-01a v1, M-04a v2, M-06a v1, R-04a v6 and R-07a v5.
+
+**Balances:** Higgsfield 6316.15 · Kling 38245 · Kie 261969.8.
+
+**Waiting on:**
+- Picks on the four anatomy pairs and on R-03b v4.
+- Confirm or Fix on the five new clips, plus the earlier R-03b v2, R-05a v2 and R-06b clips.
+- After the anatomy picks: their clips. M-02a, M-03a, M-05a and M-05b have no clip yet.

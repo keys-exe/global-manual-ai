@@ -57,6 +57,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "taste": ["HT03", "FP02"],         # House Taste / product fix-pattern rules applied (§34A)
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "first_frame": false,              # Modes 2/3/5 (§24O): the build's first beat image — every later one attaches a confirmed frame as kind "style"
+    "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
@@ -205,8 +206,15 @@ def run_image(c):
         hit = re.search(r"location plate", p, re.I)
         check("no room block on a no-room shot (§6A)", not hit and "location" not in kinds, hit.group(0) if hit else ("location ref attached" if "location" in kinds else ""))
     if c.get("product"):
-        check("product photo attached first (§6A)", bool(kinds) and kinds[0] == "product", f"first ref: {kinds[0] if kinds else 'none'}")
+        # an image edit (§6A rule 3) takes the picture being edited as Image 1, so the product photo comes right after it
+        pi = 1 if (c.get("match") or "").strip() else 0
+        check("product photo attached first (§6A)" if not pi else "product photo attached right after the picture being edited (§6A rules 1, 3)",
+              len(kinds) > pi and kinds[pi] == "product", f"ref {pi + 1}: {kinds[pi] if len(kinds) > pi else 'none'}")
         check("true-size anchor for the product (§6A)", bool(SIZE_ANCHOR.search(p)), "e.g. '12 × 5 cm, the size of a matchbox'")
+    if c.get("anatomy"):
+        # §12A-1 rule 8 (V7.89.3, LESSONS L34): a worn photo shows a real leg — it printed one under the knee models
+        worn = [r.get("label", "") for r in refs if re.search(r"\bworn\b", r.get("label", ""), re.I)]
+        check("only the product photo on an anatomy beat (§12A-1 rule 8)", not worn, f"worn photo attached: {worn[0][:60]}" if worn else "")
     # §6A Part 2 — right on the first render (V7.74.0)
     if refs:
         missing = [i + 1 for i in range(len(refs)) if not re.search(rf"\b(?:Image|Photo|Picture)\s*{i + 1}\b", p, re.I)]
@@ -247,14 +255,16 @@ def run_image(c):
             miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
                                     ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
             check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
-        if mode in (2, 5):   # V7.90.0 (user: "lets make one"): Pixar anatomy — drawn by the film, never medical CGI
+        if mode in (2, 5) and not c.get("anat_lock") and not c.get("legacy_build"):
+            # V7.90.0 (user: "lets make one" / "create the pixar version of that"): Pixar anatomy — each realistic style drawn
+            # by the film. Steps aside for the team's look call (anat_lock, §12A-1 rule 7) and builds that existed at the cut.
             head = p[:400]
             check("Pixar anatomy: ANAT-PIX opens the prompt (§12A-1 V7.90.0)",
                   "drawn the way this film's own animators would draw it" in head,
                   "" if "drawn the way this film's own animators would draw it" in head else "start with the line, then ANAT-PIX (render line + the film's anatomy), then the style's ANAT-PIX-S<n> line")
             med = PIX_ANAT_BAN.findall(NEG_CLAUSE.sub("", p.split("NEGATIVES:")[0]))
             check("Pixar anatomy: no medical-CGI words (§12A-1 V7.90.0)", not med, ", ".join(sorted(set(m.lower() for m in med))))
-        if st and st != "S1" and mode not in (2, 5):
+        if st and st != "S1" and (mode not in (2, 5) or c.get("anat_lock") or c.get("legacy_build")):
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
         if st == "S5" and mode not in (2, 3, 5):

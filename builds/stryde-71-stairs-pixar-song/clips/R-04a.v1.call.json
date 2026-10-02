@@ -1,0 +1,59 @@
+{
+ "beat": "R-04a",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"right under her kneecap. Stryde.\": From this frame: one tap on the strap — one tap, about a second; camera R4 — a slow single-axis push in on a stabilised virtual rig. Her right fingertip taps the top of the shell once and rests on it; on her right knee the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides; her left knee stays bare; nobody speaks. Stylized 3D animation, exactly on model from the frame. The camera pushes in slowly on one straight axis, nothing more; no cut; the strap never bends.",
+ "duration": 5,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_100934_0f3bdf50-08d2-41f9-b1ef-0f98d04b445c.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "right under her kneecap. Stryde.",
+ "motion_plan": "From this frame: one tap on the strap — one tap, about a second; camera R4 — a slow single-axis push in on a stabilised virtual rig",
+ "motion_confirmed": true,
+ "pace": "one tap",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07",
+  "FP16",
+  "FP18"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel / one straight push"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause (HT25, L30)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image R-04a@v7A, job 0f3bdf50-08d2-41f9-b1ef-0f98d04b445c)"
+}
