@@ -13,7 +13,8 @@ CALL.json describes one paid video call exactly as it will be sent:
                                        # take = a §24K part 5 one-take (TAKE-FILM): one continuous action, one call;
                                        # multi = a MULTI-SHOT take (MULTI-FILM) — both V7.88.0
     "take": "SC07-T1",                 # film (Modes 4–5) on Seedance: the act map's take (takes.py) — connected shots are one call
-    "legacy_build": false,             # true only on a build started before V7.88.0: its shots stay as planned (no take required)
+    "legacy_build": false,             # true on a build started before V7.88.0 (set automatically for the PRE_TAKES builds,
+                                       # by "build" or the call's path): its shots stay as planned, no take required
     "covers": ["SC07-SH02", "SC07-SH03"],   # take / multi: the act-map rows this call generates (≤ 4)
     "start_pos": "...", "end_pos": "...",   # take / multi: where everyone is on frame 1 / the last frame, in the prompt word for word
                                        # voice_master = a §24I part 7 neutral film voice master (Seedance, 10s, the
@@ -113,6 +114,12 @@ STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
 BANNED = re.compile(r"\bcinematic\b", re.I)
+# Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
+# touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
+PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
+             "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-identity", "stryde-lost-moments",
+             "stryde-not-your-cartilage", "stryde-regrets", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad",
+             "stryde-what-changed", "demo-ad"}
 
 
 def words(t):
@@ -490,6 +497,11 @@ def main():
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     c = json.loads(Path(a.call).read_text())
+    def build_of(path):
+        parts = path.parts
+        return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
+    if c.get("build") in PRE_TAKES or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_TAKES:
+        c.setdefault("legacy_build", True)
     res = run(c)
     fails = [r for r in res if r["result"] == "FAIL"]
     if a.json:
