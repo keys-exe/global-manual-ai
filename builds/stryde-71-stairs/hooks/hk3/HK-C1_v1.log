@@ -1,1 +1,11 @@
 {"taskId": "01e328838964f9fbf75107b56a62f469", "created": true}
+{
+  "taskId": "01e328838964f9fbf75107b56a62f469",
+  "state": "success",
+  "credits": 315.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790933162632-xhljbpgnwgi.mp4"
+  ],
+  "saved": "hk3/HK-C1_v1.mp4"
+}
