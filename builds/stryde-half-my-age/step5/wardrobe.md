@@ -66,7 +66,7 @@ One block per story day, in story order: the event, what makes it a day, each pe
 
 | Who | Outfit |
 |---|---|
-| HER | sage-green button cardigan, white blouse, charcoal skirt above the knee |
+| HER | chambray-blue shirt dress with a tie belt, ending above the knee, white plimsolls (OUT-N-B5 v2) |
 | Barbara | cobalt gilet, white top, navy knee-length shorts (sheet) |
 
 | Event | Place | Beats |

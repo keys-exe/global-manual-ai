@@ -136,7 +136,7 @@ Re-laid on 2026-10-02 at the user's ask ("put this new in the half my age"): the
 
 | Who | Outfit |
 |---|---|
-| HER | sage-green button cardigan, white blouse, charcoal skirt above the knee |
+| HER | chambray-blue shirt dress with a tie belt, ending above the knee, white plimsolls (OUT-N-B5 v2) |
 | Barbara | cobalt gilet, white top, navy knee-length shorts (sheet) |
 
 | Event | Place | Beats |
