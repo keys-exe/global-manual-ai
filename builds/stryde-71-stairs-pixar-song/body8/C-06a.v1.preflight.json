@@ -1,0 +1,99 @@
+{
+ "beat": "C-06a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — The link's right down below. Two straps for the price of one right now. —: Her living room in the afternoon, tall 9:16, the greige walls and white doors of Image 3's house. Image 1 is the strap. Image 2 is the woman, in the outfit of Image 2. Image 3 is her house. Image 4 is the style.\nMedium close-up at eye level, front-on, sharp on the straps: she sits on a soft sage sofa facing the lens and holds up two straps, one in each hand at shoulder height, fronts to the lens — each the strap of Image 1 copied exactly — a black shell, two matching peaks close together at the middle of its top edge, a chrome slide at each end — 12 × 5 cm, a fifth of the frame wide, a short stub of band past each slide — eyes on the left one, a closed-mouth grin, four chunky fingers and a thumb on each hand. Scale true to the set: the sofa back level with her shoulders.\nIn frame: her, the sofa, exactly two straps, one in each hand; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon light from the front window. The strap alone in real materials, in the same light. No lettering, logos or labels but its wordmark.",
+ "script_line": "The link's right down below. Two straps for the price of one right now.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "N-NARR sheet v2 (confirmed) — the sheet outfit, worn today (N-D5: mustard top, denim skirt)",
+   "kind": "character"
+  },
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "people": true
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "medias": [
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "32b8bfc2-4538-4c28-b485-3fd28fc5d489",
+  "377f63fd-7b11-4db2-a663-052e8c0637e8",
+  "027d407e-ad54-4f9a-9594-32cb4c047765"
+ ],
+ "board_refs": [
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 1"
+  },
+  {
+   "label": "N-NARR sheet v2 (confirmed) — the sheet outfit, worn today (N-D5: mustard top, denim skirt)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__N-NARR",
+   "role": "Image 2"
+  },
+  {
+   "label": "P0-PROP-N plate (confirmed) — her hall and staircase",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P0-PROP-N",
+   "role": "Image 3"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__PR-04a",
+   "role": "Image 4"
+  }
+ ]
+}

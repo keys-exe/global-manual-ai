@@ -1,0 +1,81 @@
+{
+ "beat": "C-09c",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — She coming Sunday. She gon' walk up my stairs on her own. —: Keep this photo exactly as it is — the view down her staircase from the landing, the runner, rods, balusters, photo wall, door, light, and the silver hair and mustard shoulder in the near foreground — and replace only the young woman on the stairs with her sister. Image 1 is the photo. Image 2 is the style — its runner's render and proportions. Image 3 is the gift box.\nHer sister, a Black woman of 68, about 5.5 heads tall, a big round head, a soft round body, big eyes, short grey curls, in a navy Sunday dress to mid-calf and navy pumps, climbs toward the lens on the 5th step from the top, mid-step, the closed black box of Image 3 tied with a red ribbon under her left arm, her right hand swinging free off the rail, four chunky fingers and a thumb, a happy closed-mouth smile, eyes up at her sister. Scale true to the set: her head level with the 3rd picture frame.\nIn frame: two women, one boxed gift, the staircase; nobody else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun from the door. No lettering, logos or labels but its wordmark.",
+ "script_line": "She coming Sunday. She gon' walk up my stairs on her own.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "HK-03a frame v7 A (old version) — the view down her staircase from the landing, her mustard shoulder in the foreground (the picture this edit keeps)",
+   "kind": "frame"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "people": true
+  },
+  {
+   "label": "package_open.jpg — the box, open, two straps in the tray (product photo)",
+   "kind": "product"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "90555894-9918-4cd2-8548-df38ec0d7490",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": [
+  "the sister"
+ ],
+ "medias": [
+  "90555894-9918-4cd2-8548-df38ec0d7490",
+  "027d407e-ad54-4f9a-9594-32cb4c047765",
+  "33cf39f6-2945-410f-8ccf-d11e91538148"
+ ],
+ "board_refs": [
+  {
+   "label": "HK-03a frame v7 A (old version) — the view down her staircase from the landing, her mustard shoulder in the foreground (the picture this edit keeps)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__HK-03a",
+   "role": "Image 1"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__PR-04a",
+   "role": "Image 2"
+  },
+  {
+   "label": "package_open.jpg — the box, open, two straps in the tray (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/package_open.jpg",
+   "role": "Image 3"
+  }
+ ]
+}
