@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.90.4 — supersedes all prior versions.** *(V7.90.4: a product shot's frame inventory counts the product — `exactly one strap on her right knee` — and `preflight.py` fails it uncounted (L41). V7.90.3: in a Pixar build "normal anatomy" is the Pixar S3; `ANAT-PIX` and the style line merge into one look paragraph inside the §6A budget; no scene frame as the style on an anatomy beat; `pixar_anatomy: true` runs the Pixar checks on a build from before V7.90 — §12A-1, §24O, `preflight.py`, LESSONS L36. V7.90.2: the Pixar S3 "normal anatomy" is the team's no-muscle pick (`references/anatomy/S3_pixar_locked.jpg`): ivory bones, white tendons and ligaments in a see-through leg outline on grey; the muscle version is `S3-MUSCLE`, only when the line names a muscle — §12A-1. V7.90.0: Pixar anatomy, each realistic style's Pixar version one for one)*
+**Version 7.90.5 — supersedes all prior versions.** *(V7.90.5: learning from mistakes (§34B) runs only on the owner's account, `keys-exe`; on any other account a correction fixes that build's work and nothing else — no lesson, no rule change)*
 
 ---
 
@@ -6283,6 +6283,8 @@ When the user flags a problem with a specific shot:
 
 **The log is `LESSONS.md` at the repo root** — one numbered row per mistake, newest first, never deleted: what went wrong · how it was caught (the user's words, or the agent's own check) · the cause · **the rule from now on** · where the fix lives.
 
+**Only the owner's account runs it** *(V7.90.5 (user, 2026-10-02 — "specially the learn from your mistake i should be the only one who can do that, the others are just users only i can use that learn from your mistake"))*. Before anything below, the session checks the GitHub account it runs as (`get_me`). **Only on `keys-exe`** do corrections, repeats and the agent's own errors become lessons and rule changes. On every other account the people are users of the system: the session stops or undoes and redoes the build's work as asked, and that is all. No `LESSONS.md` row, no rule or check changed, no House Taste or fix-pattern rule, no note for the owner. Their corrections stay inside that build.
+
 **When:** the same turn the user corrects, stops or undoes something the agent did, says "I said…", repeats a request, or the agent finds its own error (a wrong claim, a check it skipped, something it shipped broken).
 
 **What, in order:**
@@ -9441,6 +9443,17 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Visual-check, not counted** — §22F, §30G, §24A, §24B, §24C, §24D, §24E, the two unverified Location Profiles (with the skin-under-overcast check), the §30B register gate, the §9A-P inner-face read, plus the visual checks recorded above (§12B, §27C, the ANAT-STRESS pair, the §30C scene hold, and §30E's subject-plate and axis reads). They sit here until someone generates one and looks — the count is whatever the list says, computed, never hand-maintained.
 
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
+
+---
+
+# CHANGELOG — V7.90.4 → V7.90.5 *(patch — the owner's call)*
+
+| § | Change |
+|---|---|
+| **34B** | "Only the owner's account runs it": the session checks its GitHub account (`get_me`). Only `keys-exe` turns corrections, repeats and the agent's own errors into lessons and rule changes. On any other account a correction is fixed in that build's work only: no `LESSONS.md` row, no rule or check, no House Taste or fix-pattern rule, no note for the owner |
+| Files | CLAUDE.md, AGENTS.md, both skills, the `LESSONS.md` header |
+
+**Origin:** user, 2026-10-02 — "specially the learn from your mistake i should be the only one who can do that, the others are just users only i can use that learn from your mistake".
 
 ---
 

@@ -2,7 +2,9 @@
 
 Standing instruction from the user (2026-10-01): **"you should always learn from your mistake to improve the things."** Procedure: standards §34B.
 
-Every time the user corrects, stops or undoes something the agent did, repeats a request, or the agent finds its own error, the same turn:
+**Only the owner's account (`keys-exe`) writes here** (user, 2026-10-02 — "only i can use that learn from your mistake"). A session on any other account fixes the build's work as asked and adds nothing to this file and no rule anywhere.
+
+On the owner's account, every time the user corrects, stops or undoes something the agent did, repeats a request, or the agent finds its own error, the same turn:
 1. Stop or undo it as asked.
 2. Find the cause: which rule, instruction or habit led there.
 3. Fix it **at the source**: rewrite the rule that caused it (standards, skills, CLAUDE.md), and where possible add a check to a script so it can't happen silently.
