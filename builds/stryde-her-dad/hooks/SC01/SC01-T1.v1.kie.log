@@ -1,0 +1,11 @@
+{"taskId": "eeced6e9ef49eeb5a254620893c2db60", "created": true}
+{
+  "taskId": "eeced6e9ef49eeb5a254620893c2db60",
+  "state": "success",
+  "credits": 630.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1790963221294-j5ssmj0nxr.mp4"
+  ],
+  "saved": "hooks/SC01/SC01-T1_v1.mp4"
+}

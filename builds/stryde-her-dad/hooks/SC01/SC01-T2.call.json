@@ -19,7 +19,7 @@
  "resolution": "720p",
  "aspect_ratio": "9:16",
  "start_image": null,
- "ingredients_approved": false,
+ "ingredients_approved": true,
  "files": [
   "cast/C4-LAD_v1.png",
   "voice/C2_face.jpg",
