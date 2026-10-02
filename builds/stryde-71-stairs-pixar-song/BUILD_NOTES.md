@@ -945,3 +945,15 @@ All 61 act-map beats are confirmed (`use`). Their clips on disk match the board'
 - **On the board:** FINAL-HK1 v2 is on the Final board as To check: 128 MB in 9 parts, 3:48. v1 was copied to Old 3 (FINAL-HK1 doc there) and its parts were deleted from Final.
 
 **Waiting on:** your Confirm or Fix on FINAL-HK1 v2.
+
+### 2026-10-02 ~16:20 UTC — "Pain pills. Cortisone shots. we need brolls for these 2"
+
+Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` / `t0` fields cut a row on its own first sung word; 63 rows, all 108 lines covered, `angles.py` PASS; `docs/actmap` re-synced on Plan and Current):
+- **P-04b** keeps "Physical therapy." (its card's `line` is updated; its confirmed image and clip are unchanged).
+- **P-04c — "Pain pills."** At her kitchen table (N-D1c), close at table height: her right hand tips an amber bottle and two pills fall into her open left palm, with a glass of water beside. The confirmed P-04a frame is Image 1 (her table, her hands and cardigan cuffs). Motion plan: the pills tip into her palm, one tip, about a second.
+- **P-04d — "Cortisone shots."** In the clinic (N-D1b), close from low at the side of the table: a doctor's gloved hands, one steadying her knee and one holding a syringe at the side of the knee, her hand on the paper sheet. The confirmed P-04b frame is Image 1. Motion plan: the thumb presses the plunger, one slow press. Flagged: in both renders she sits on the edge of the table rather than lying as in P-04b.
+- Both are A/B pairs on Higgsfield, nano_banana_pro requested and logged as nano_banana_2, as on every image of this build. Preflight PASS (`body9/build_split15.py`). On the Current board as To check.
+- **Timing:** sung, "Pain pills." runs 36.96–37.92 s and "Cortisone shots." runs 38.14–38.84 s. On the V7.91.4 clock, P-04b, P-04c and P-04d are each on screen about 0.8–1.2 s (under the 2.0 s floor; your call, the song sings them that fast). The finished video takes them in once their clips are confirmed.
+- Credits: Higgsfield 5699.65 → 5667.65 (32 for 4 renders, measured; written as 8 per render). Kling unchanged at 36613.
+
+**Waiting on:** Use A / Use B (or Fix) on P-04c and P-04d. Then their clips, then FINAL-HK1 v3 with the three line-15 pictures.

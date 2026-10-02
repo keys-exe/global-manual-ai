@@ -300,6 +300,66 @@
   }
  },
  {
+  "beat": "P-04c",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N hands",
+  "height": "eye",
+  "side": "profile",
+  "fg": "clean",
+  "scale": "CU",
+  "why": "eye at table height = the daily dose up close",
+  "mirror_of": null,
+  "mode": 2,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D1c",
+  "face": false,
+  "light": {
+   "source": "window over the sink, south wall",
+   "key_side": "L",
+   "time": "morning",
+   "arc": "problem: grey",
+   "kelvin": 5600
+  }
+ },
+ {
+  "beat": "P-04d",
+  "group": "Hook 1",
+  "type": "BR",
+  "subject": "N knee + one-off doctor (hands)",
+  "height": "low",
+  "side": "profile",
+  "fg": "clean",
+  "scale": "CU",
+  "why": "low = the needle looming over the knee, the fear of it",
+  "mirror_of": null,
+  "mode": 2,
+  "speaking": false,
+  "product_beat": false,
+  "focus": {
+   "plane": "hands",
+   "dof": "medium",
+   "rack": null,
+   "moving_subject": false
+  },
+  "story_day": "N-D1b",
+  "face": false,
+  "light": {
+   "source": "exam-room window, blind half open, west wall",
+   "key_side": "L",
+   "time": "afternoon",
+   "arc": "problem: clinical",
+   "kelvin": 5600
+  }
+ },
+ {
   "beat": "P-05a",
   "group": "Hook 1",
   "type": "BR",
