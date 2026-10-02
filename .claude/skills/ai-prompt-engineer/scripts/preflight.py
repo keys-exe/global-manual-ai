@@ -60,6 +60,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
     "pixar_anatomy": false,            # a build from before V7.90 whose team asked for the Pixar anatomy: the Pixar anatomy checks run despite legacy_build (V7.90.3)
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
+    "anat_scope": null | "macro" | "close" | "pair" | "walking" | "load" | "whole",   # what the picture holds, from the row (V7.91.0)
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
   }
@@ -118,6 +119,13 @@ PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|
 BANNED = re.compile(r"\bcinematic\b", re.I)
 # §12A-1 Pixar anatomy (V7.90.0): words that pull a Mode 2 / 5 anatomy frame back to medical CGI
 PIX_ANAT_BAN = re.compile(r"premium 3D anatomical visuali[sz]ation|medical education|broadcast-quality|photo-?real(?:istic)?|natural tissue colou?rs|fibrous|fibre detail|textbook|seamless (?:studio|background)|pale grey seamless", re.I)
+# §12A-1 (V7.91.0): what an anatomy picture holds, and the words that say it in the prompt
+ANAT_SCOPE = {"macro": r"fills? the frame|so close|macro", "close": r"\bclose\b", "pair": r"\bboth (?:knees|legs|wrists|ankles|elbows|shoulders|hips|hands|feet|joints|sides)\b|\btwo (?:knees|legs|wrists|ankles|elbows|shoulders|hips|joints)\b|side by side",
+              "walking": r"\bwalk|mid-stride|\bstride", "load": r"\bstair|\bsteps? (?:up|down)|stand(?:s|ing)? up|squat|\blift|kneel|\bclimb|\btread",
+              "whole": r"whole (?:body|figure)|full (?:body|figure)|head to toe"}
+ANAT_SCOPE_SAY = {"macro": "the site so close it fills the frame", "close": "one joint close (the right knee, close)",
+                  "pair": "both knees side by side", "walking": "both legs walking, mid-stride", "load": "the leg on the stairs, stepping up",
+                  "whole": "the whole figure, the joint lit inside it"}
 # Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
 # touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
 PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
@@ -145,7 +153,7 @@ SUNBURST = {"gpt_image_2_5", "gpt_image_2_5_sunburst", "gpt-image-2-5-sunburst-i
 # §6A Part 2 — right on the first render (V7.74.0)
 FRACTION = re.compile(r"\b(?:a |one |two |three |about a |about two |about three |roughly a |at least a |over a |nearly a )?(?:half|third|quarter|fifth|thirds|quarters|fifths|\d{2}\s?(?:%|percent))\s+(?:of\s+)?(?:the\s+)?frame(?:'s)?\b|\bfills?\s+(?:most of\s+)?the\s+frame\b|\bframe[- ]filling\b", re.I)
 FIDELITY = re.compile(r"\b(?:copied|reproduced|matched|exactly as|identical to|the same as)\b[^.]{0,80}\bexactly\b|\bexactly\b[^.]{0,40}\b(?:as|in|from)\s+Image\s*\d|\bcopied exactly\b|\bnothing redesigned\b", re.I)
-EDIT_OPEN = re.compile(r"^\s*(?:For the line \"[^\"]*\":\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
+EDIT_OPEN = re.compile(r"^\s*(?:For the line (?:\"[^\"]*\"|— .*? —):\s*)?(?:keep|edit|using|take|leave|start from|starting from)\b[^.]{0,120}\b(?:this photo|this picture|this image|this frame|the plate|image\s*1)\b", re.I)
 HANDS = re.compile(r"\b(?:hands?|palms?|fingers?|fingertips?|thumbs?|wrists?|arms? (?:at|by|folded|crossed))\b", re.I)
 GAZE = re.compile(r"\b(?:both eyes|eyes (?:on|to|toward|down|up|closed|fixed|level)|looking (?:at|down|up|ahead|away|into|toward|straight)|gaze|square to the lens|to the lens|into the lens|at the camera|to camera|face (?:to|turned|toward|square))\b", re.I)
 SURFACE = re.compile(r"\b(?:table|desk|counter|worktop|countertop|shelf|shelves|bench|dresser|sideboard|nightstand|floor)\b", re.I)
@@ -251,9 +259,9 @@ def run_image(c):
         counted = re.search(rf"\b(one|a single|exactly one)\s+(?:\w+\s+){{0,2}}{noun}", inv.group(1))
         check("the product counted in the frame inventory (§6A rule 4, L41)", bool(counted), f"name it once with its count in the In frame list — 'exactly one {noun} on her right knee'" if not counted else "")
     # L28 (V7.88.1): speech marks inside an image prompt are printed on the frame as a caption — the line goes in without them
-    rest = re.sub(r'^\s*For the line "[^"]*":', "", p, count=1)
-    sm = re.search(r'["“”]', rest) or re.search(r'[“”]', p)
-    check("no speech marks in the picture prompt (§6A rule 5, L28)", not sm, "a quoted line or word prints as a caption — write the line without its speech marks" if sm else "")
+    # V7.90.7 (L46): the opener's own marks print too — "For the line — … —:" on a picture prompt, never "For the line \"…\":"
+    sm = re.search(r'["“”]', p)
+    check("no speech marks in the picture prompt (§6A rule 5, L28)", not sm, "a quoted line or word prints as a caption — open with For the line — … —: and write the line without speech marks" if sm else "")
     dev = DEVICE.search(p)
     check("no device named as an object in the picture (§6A rule 7)", not dev, dev.group(0) if dev else "")
     oof = [m for m in OUT_OF_FRAME.finditer(p) if not re.search(rf"\b{BODY_PART}\b", p[max(0, m.start() - 40):m.end()], re.I)]
@@ -283,6 +291,13 @@ def run_image(c):
         if st and st != "S1" and (mode not in (2, 5) or c.get("anat_lock") or c.get("legacy_build")):
             s1 = re.search(r"Premium 3D anatomical visuali[sz]ation|near-black (field|background)|navy-black (field|background)|glass-like (body|outer|shell)|smoky see-through outline", p, re.I)
             check(f"no S1 Ghost world on an {st} beat (§12A-1)", not s1, s1.group(0) if s1 else "")
+        if not c.get("legacy_build"):
+            # V7.91.0 (user: "closeup on knee or two knees or both feet walking or with stairs"): the row's scope, said in the prompt
+            sc = c.get("anat_scope")
+            check("anatomy scope named (§12A-1 V7.91.0)", sc in ANAT_SCOPE, f"anat_scope {sc!r} — one of {' · '.join(ANAT_SCOPE)}")
+            if sc in ANAT_SCOPE:
+                check(f"anatomy scope {sc} said in the prompt (§12A-1 V7.91.0)", bool(re.search(ANAT_SCOPE[sc], p, re.I)),
+                      "" if re.search(ANAT_SCOPE[sc], p, re.I) else f"write what the picture holds — {ANAT_SCOPE_SAY[sc]}")
         if st == "S5" and mode not in (2, 3, 5):
             anatomy = False   # a physical model is a Mode 1 capture: routed like realistic work (stylised modes keep the stylised route, V7.90.0)
     check("A/B pair: two renders (§5)", len(pair) == 2, f"pair {pair}")

@@ -746,3 +746,70 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on M-06a and on all seven Act 5 pairs, then their clips.
 - Confirm or Fix on the R-03b, M-02a and M-03a clips.
+
+### 2026-10-02 ~12:20–12:45 UTC — "fix those and generate the next act"
+
+**Image Fixes, new pairs To check:**
+- **M-06a** "wrong locastion": an image edit of her own staircase. The base is a crop of the confirmed R-07a v8 A frame round her legs (`body4/M06_base_R07crop.png`, Higgsfield media 6279fb3c). The strap is corrected from the front photo.
+  - The first A drew pale legs on another staircase, so it was kept off (Old 2) and re-rendered once.
+  - The new A and B are both her runner and brass rods, her skin and her slippers.
+- **PR-03a** "fwrong product" and **PR-06a** "wrong product": the peaks had been drawn as horns at the shell's ends, and the band coiled. The shape line now puts two matching peaks close together at the middle, sloping down to a slide at each end (FP22, L47). PR-06a's strap lies flat with the band out straight.
+- **PR-05b** "product placemetn is too low": the notch now cups the bottom of the kneecap, on the tendon. The trouser hem is still rolled above the knee.
+
+**Clips, To check (Kling 3.0, 1080p, silent):**
+- **M-02a** v3, 6 s. Fix "you should show blue glow to show that the stryde is better". The glow under the strap cools from amber to blue while the left knee keeps its amber. Locked camera; the strap keeps its shape. This is the shot's third generation; the user's "fix those" was the go. Clip v2 is on Old 2.
+- **M-05a** v1, 5 s: pressure pulses down the thigh into the tendon spot.
+- **PR-01a** v1, 4 s: he seats the strap.
+- **PR-02a** v1, 5 s: she swings the strap to the lens and seats it on the model. The end frame was waived by the user's 2026-10-01 words. Flagged: the strap flattens mid-swing, and she grins open-mouthed once.
+- **PR-04a** v1, 5 s: three jogging strides, one strap.
+- **PR-05a** v1, 5 s: she seats the strap.
+- The unused images of the picked pairs are on Old 2.
+
+**Act 6 (L-01a…L-03a), the store-walk day N-D6, first pairs To check:**
+- N wears a coral windbreaker, white T-shirt, light-blue jeans, white sneakers and a canvas tote, and goes in by her face-and-hair crop.
+- Street and store shots are edits of P6-STREET and P4-STORE.
+- L-03a's living room takes its materials from P0. The husband is a one-off, written in words.
+- L-01b A's first job failed on Higgsfield and was resubmitted.
+- L-03a A printed the line as a title, so it was kept off and re-rendered in the new form (below).
+
+**System (V7.90.7, L46):**
+- A picture prompt opens `For the line — … —:`, never with speech marks. This was the third caption from the opener's marks (R-06b, PR-01a, L-03a).
+- `preflight.py` now fails any speech mark in an image prompt; clip prompts keep theirs.
+- L47 / FP22: the short shape line keeps where the peaks sit.
+
+**Balances:** Higgsfield 5995.65 · Kling 37765.
+
+**Waiting on:**
+- Picks on M-06a, PR-03a, PR-05b, PR-06a and the five Act 6 pairs.
+- Confirm or Fix on the six new clips.
+
+### 2026-10-02 ~13:00–13:40 UTC — "fix those and generate the next act" (Act 7)
+
+**Fixes:**
+- **M-05a clip v2** (Fix "should showcase the patellartendon is the one getting that animatuon"), 5 s: the glow now runs down the patellar tendon ribbon and pulses on it. The thigh lines stay still. Clip v1 is on Old 3.
+- **PR-05b image v3 pair** (Fix "should show productive broll not showing the product"):
+  - An edit of her R-07a v8 A staircase. She comes down facing the lens with a basket of folded towels, in a pale-yellow top and navy trousers, the strap hidden under them.
+  - Act map row changed to L-N-STAIRS, CONCEALED, one step toward the lens (pin waived per the user's 2026-10-01 words). Card motion plan updated to match.
+- **PR-06a image v3 pair** (Fix "should be the normal and not the long strap"): the normal strap lies by the mug with only a short stub of band past each slide. B shows her lap at the bottom edge, as the P-04a frame does. FP22 is amended and L48 written (below).
+
+**Clips on the picks** (Kling 3.0, 1080p, silent; To check):
+- L-01a, L-01b, L-02a, L-02b, L-03a.
+- M-06a v2: the clip on the new v9 frame. Clip v1, made from the old v2 frame, is on Old 3.
+- PR-03a. Flagged: mid-clip the golfer snaps back to address the ball and swings again, which reads as a jump.
+
+**Act 7 (C-01a, C-02a, C-02b, C-03b, C-04a, C-05a), first pairs To check:**
+- C-02a and C-02b are edits of P5. C-04a is an edit of P7. C-05a is an edit of P04A with the cheap copies.
+- C-03b is Pixar anatomy S3 (`pixar_anatomy: true`, the M-05b look as style).
+- C-02b v1 A and B each printed a film-style title ("Storybook in the Future", "PROUD STEPS"). Both were kept off (L16), copied to Old 3, and re-rendered once with the no-lettering clause. Flagged: the new C-02b A shows four watching ladies instead of three.
+
+**Old 3 board created:** Old 2 hit its 1 GB store. https://claude.ai/artifact/NzdjptHWkDLzvNkmMzn78k
+- `boards.old3` is set on the build doc on every board.
+- 13 replaced or unused files were moved to Old 3 (copies confirmed) and deleted from Current.
+
+**System (owner account):** FP22 is amended. A loose strap is written as "only a short stub of black band past each slide, not stretched long, never coiled", never "the band laid out straight" (L48).
+
+**Balances:** Higgsfield 5949.65 · Kling 37333.
+
+**Waiting on:**
+- Picks on PR-05b, PR-06a and the six Act 7 pairs.
+- Confirm or Fix on the eight new clips: M-05a, L-01a, L-01b, L-02a, L-02b, L-03a, M-06a, PR-03a.

@@ -1,0 +1,87 @@
+{
+ "beat": "C-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — They spent three years designing it with orthopedic surgeons. It's the real thing. —: Keep this photo exactly as it is — the exam room, the table, the light — a tall 9:16 crop of the table, and add two people. Image 1 is the room. Image 2 is the strap. Image 3 is the style.\nMedium shot over his right shoulder, sharp on the strap: a man of fifty in a grey tee and khaki shorts sits on the table's edge, his bare right knee forward; a friendly surgeon in navy scrubs, grey bun, crouches facing the lens, pressing the strap of Image 2 copied exactly — a black shell with two matching pointed peaks close together at the middle of its top edge, a notch between them, sloping down to a chrome slide at each end — 12 × 5 cm, a fifth of the frame wide, under his kneecap, both thumbs on it, four chunky fingers and a thumb on each hand, eyes on the knee, mouth closed; his hands on the table edge. Scale true to the set: the table at her chest.\nIn frame: two people, exactly one strap on his right knee, the table; surfaces plain.\nA final frame from a 3D animated feature film, stylized storybook render, soft clinic daylight. No lettering, logos or labels but its wordmark.",
+ "script_line": "They spent three years designing it with orthopedic surgeons. It's the real thing.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P7-CLINIC plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": "plate",
+ "edit_of": "593880dc-2b40-44b6-a884-a8277d888d3a",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP05",
+  "FP06",
+  "FP07",
+  "FP10",
+  "FP11",
+  "FP12"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pixar_anatomy": false,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": true,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "593880dc-2b40-44b6-a884-a8277d888d3a",
+  "7dcc7c34-651e-45ae-87af-ea18884ec474",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P7-CLINIC plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P7-CLINIC",
+   "role": "Image 1"
+  },
+  {
+   "label": "front.webp — the strap, front (product photo)",
+   "kind": "product",
+   "ref": "products/stryde/stryde_refs/front.webp",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ]
+}
