@@ -16,7 +16,8 @@ B = H.B
 OUT = B / "edit" / "body"
 H.OUT = OUT
 FF = H.FF
-VERSION = 2
+VERSION = 3
+NOMUSIC = OUT / "nomusic"  # unmusic.py (§24M, V7.92.0): each clip with only its music taken out — voice and effects kept
 VO_DIR = OUT / "vo"
 VO_IN, VO_GAP, CLEAR = 0.3, 0.3, 0.15
 OFF = {"L034": 10.0}  # SC04-T2 marks its beats by time, not SHOT n: L034 sits on the silent beat [10s-14s]
@@ -156,12 +157,16 @@ def build():
     fc.append("".join(f"[v{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0[vc]")
     fc.append(f"[vc]lut3d=file='{H.LUT}'[vg]")
     mix, j = [], n
-    for scene, _ in ORDER:  # each scene's gated dialogue, its takes placed at their timeline positions
-        for k in [k for k in takes if k["scene"] == scene and k.get("wav")]:
-            args += ["-i", str(k["wav"])]
-            ms = int(k["at"] * 1000)
-            fc.append(f"[{j}:a]atrim={k['wav_at']:.3f}:{k['wav_at'] + k['dur']:.3f},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms}[d{j}]")
-            mix.append(f"[d{j}]"); j += 1
+    for k in takes:  # v3 (user 2026-10-02: "use the new unmusic to remove only the music"): each take's own sound, music out
+        if not k["audio"]:
+            continue
+        src = NOMUSIC / f"{k['path'].stem}.nomusic.mp4"
+        if not src.exists():
+            sys.exit(f"no unmusic output for {k['path'].name} — run unmusic.py on it first")
+        args += ["-i", str(src)]
+        ms = int(k["at"] * 1000)
+        fc.append(f"[{j}:a]atrim=0:{k['dur']:.3f},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms}[d{j}]")
+        mix.append(f"[d{j}]"); j += 1
     for x in place:
         args += ["-i", str(VO_DIR / f"{x['line']}.mp4")]
         ms = int(x["at"] * 1000)
