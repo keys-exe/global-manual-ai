@@ -41,6 +41,8 @@ CAFE_SO_FAR = ("THE SCENE SO FAR, a weekday late morning a few weeks later, one 
                "Her two friends sit at the round window table: the copper-haired friend in the chair facing into the room, the friend in the mustard jacket beside the window; the third chair, facing the window, is empty for Her. "
                "Two cups of coffee and a third cup waiting. THE POSITIONS NEVER CHANGE once she sits. THE CLOTHES NEVER SWAP: the copper-haired friend wears the NAVY PEA COAT over the red-and-cream Breton top; the friend with the salt-and-pepper afro wears the MUSTARD CORDUROY JACKET over the black polo-neck; Her wears only her terracotta jumper, no coat.")
 GO = "chat (2026-10-02): \"fix those and generate the videos\" — the ingredients confirmed on the board (OUT-N-A3, OUT-N-A4, PROD-BOX; OUT-C3-A2 v2 for SC11)"
+GO3 = "board Fix note + chat \"fix those\" (2026-10-02) — the user's go for SC13-T2 gen 3"
+NOTES_ALL = {"SC13-T2": ["agent's check of v1 (L16): Her and her sister swapped places → Her inside, the sister outside until SHOT 3", "the user (board Fix): she should not hold the hand rail → hands free, nobody touches the banister"]}
 FIX = "first generation — every earlier note on this build kept: one strap only, small (12 × 5 cm), front side up, on the RIGHT knee, centred on the front of the knee; the box only in the offer (FP09, FP19); one take per place (L51); stairs foot by foot (FP16)"
 L058, L059 = "You were gone a long time.", "I know."
 L062 = "Right. What’s changed? And don’t say a haircut."
@@ -158,16 +160,16 @@ take("SC13-T2", 13, ["SC13-SH03", "SC13-SH04", "SC13-SH05"], 11, "Scene 13 · T2
      HOUSE + " THE SCENE SO FAR, the same Sunday afternoon, one continuous moment: the doorbell has just rung; cool daylight through the front-door glass. WHO IS WHERE: Her is INSIDE the house, in her own hall, the staircase behind her; her sister is OUTSIDE on the front doorstep in the daylight, and only comes in for SHOT 3. "
      f"SHOT 1, [0s-3.5s]: MEDIUM over Her's shoulder from inside the hall, Camera on a tripod, locked: Her, inside, opens the green front door toward the street; her sister, OUTSIDE on the doorstep with the street behind her, {SIS_ID}, in {SIS_W}, stands on the step, her eyes going straight past Her to the staircase, and asks, hopeful and nervous: " + L072 + " "
      f"SHOT 2, [3.5s-6.5s]: MCU, low three-quarter on Her, {HER_ID}, in {HER_A4}, standing INSIDE her hall holding the door open, the staircase behind her, Camera on a tripod, locked: she nods once and says, sure and warm: " + L073 + " "
-     "SHOT 3, [6.5s-11s]: FULL, high, from the landing at the top of the stairs looking down the flight as Image5 shows it, Camera on a tripod, locked: the sister puts her hand on the banister and takes the first step up toward the camera, then the second, Her one step below and behind her, close, smiling. " + STEPS + " "
+     "SHOT 3, [6.5s-11s]: FULL, high, from the landing at the top of the stairs looking down the flight as Image5 shows it, Camera on a tripod, locked: the sister, both hands free and down at her sides, never touching the banister, takes the first step up toward the camera, then the second, walking up on her own; Her one step below and behind her, close, smiling, her hands free too and never on the banister. " + STEPS + " "
      "The eyelines match. Nobody looks into the lens.",
      "MOVE: in SHOT 3 they travel up two steps toward the camera; the camera never moves.",
      "FOCUS: SHOT 1 the sister's eyes; SHOT 2 Her's nearest eye; SHOT 3 deep. The blur is optical: soft and round, never smeared.",
-     ("Her opening the green front door to her sister on the step", "the sister two steps up the stairs, hand on the banister, Her one step below her",
+     ("Her opening the green front door to her sister on the step", "the sister two steps up the stairs, hands free at her sides, Her one step below her",
       ("THE SISTER", "arrived in her lilac fleece", "she has started up the stairs")),
      [{"risk": "the voices swap", "prevented_by": "Audio1 sister, Audio2 Her, lines in order"},
       {"risk": "feet skip on the stairs (FP16)", "prevented_by": "STEPS, two steps only"},
       {"risk": "the hall flips (HT22)", "prevented_by": "HOUSE block, both plates"}],
-     "no sister inside the house before SHOT 3, no Her outside on the doorstep, no swapped places, no going down the stairs, no stepping backwards, no Her going first, no strap visible, no voices swapped, no word left out",
+     "no sister inside the house before SHOT 3, no Her outside on the doorstep, no swapped places, no going down the stairs, no stepping backwards, no Her going first, no hand on the banister, no hand on the rail, no gripping the rail, no strap visible, no voices swapped, no word left out",
      line=L072 + " " + L073, audios=["C4-REF", "N-STOOD"], vo="L074", kind="multi",
      dlg=["THE EXCHANGE, word for word and in this order: " + L072 + " " + L073 + " — the sister says the first line, Her answers with the second; nobody else speaks.",
           "Audio1 and Audio2 are only voices: their words are never spoken in this clip.",
@@ -190,7 +192,7 @@ if __name__ == "__main__":
                 "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16", "start_image": None,
                 "ingredients_approved": True, "files": [FILES[f] for f in s["files"]], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried",
-                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": {"SC12-T1": 2, "SC13-T2": 2}.get(s["beat"], 1), "user_go": GO, "fix_note": {"SC12-T1": "agent's check of v1 (not put up, L16): the two friends' jackets were swapped and Her came in a coat → the clothes named per person, never swapped, no coat on Her", "SC13-T2": "agent's check of v1 (not put up, L16): Her and her sister swapped places — the sister inside, Her outside → Her inside the hall, the sister outside on the step until SHOT 3"}.get(s["beat"], FIX),
+                "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": {"SC12-T1": 2, "SC13-T2": 3}.get(s["beat"], 1), "user_go": GO3 if s["beat"] == "SC13-T2" else GO, "fix_notes_all": NOTES_ALL.get(s["beat"], []), "fix_note": {"SC12-T1": "agent's check of v1 (not put up, L16): the two friends' jackets were swapped and Her came in a coat → the clothes named per person, never swapped, no coat on Her", "SC13-T2": "the user (board Fix): she should not hold the hand rail → both women climb with their hands free at their sides, nobody touches the banister (FP23)"}.get(s["beat"], FIX),
                 "risks": s["risks"], "vo": s.get("vo"), "scene": s["scene"], "title": s["title"],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "FP01", "FP02", "FP03", "FP05", "FP09", "FP11", "FP16", "FP18", "FP19", "FP22"]}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
