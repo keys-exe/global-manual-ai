@@ -1,0 +1,70 @@
+{
+ "beat": "SC09-T2",
+ "build": "stryde-half-my-age",
+ "connector": "seedance",
+ "model": "bytedance/seedance-2-5",
+ "mode": 4,
+ "kind": "take",
+ "prompt": "INGREDIENTS. @image1 is the one-off cast card for Barbara's husband, 76: copy the face, age, build and clothes exactly; its grey backdrop and caption strip never appear in the clip. @image2 is the real product photo of the strap, copied exactly — the rigid matte-black moulded shell with two rounded peaks around a centre notch, the grey stryde wordmark on its face, a slim chrome slide at each end and the soft black knit band looping through them; nothing redesigned. It is small: the shell about 12 by 5 centimetres. @image3 is an info card that shows only where the strap sits on a knee: the bottom of the kneecap in the shell's centre notch, the shell on the tendon just under it, the whole kneecap visible above; copy only the strap's place and size, never the leg, the clothes or the room; its caption strip never appears in the clip. These references set who, where and what things ARE; the prose below sets the shot and what HAPPENS, and nothing in them is a shot to cut to. The look of a high-end live-action drama series: shot on a large-format digital cinema camera with spherical prime lenses, 24 frames per second with natural motion blur. Motivated low-key light from real sources in the scene — a window, a practical lamp, an overhead fixture — with a shadow side on every face, deep shadows that still hold detail and highlights that roll off softly; never flat and never evenly lit. Shallow depth of field on close shots, the room layered in depth behind. Natural, rich, restrained colour straight from the camera, real skin texture, worn costumes and a lived-in set. Restrained, specific performances. THE LOOK OF THIS FILM: A British family drama shot like a prestige drama series — an ordinary semi-detached house, a railway station, a wedding and a high-street café, watched with warmth and restraint. Lived-in domestic colour: cool blue-grey dusk and night in the rooms of the Before, lit by warm tungsten lamps; muted sage, navy, oatmeal and brick; warming to honeyed daylight, soft greens and cream in the After. Highlights roll off softly with a faint warm halation around bulbs and bright windows; clean modern glass with a gentle fall-off toward the frame edges. Captured with natural, neutral colour and a gentle contrast, ungraded — the grade is added later in the edit. Every frame of this film shares exactly this look. The look exactly as set out here, from the first frame to the last: same lens, same depth of field, same colours, same light direction and same optical texture. Nothing about the look changes across the clip. 24 frames per second with a 180-degree shutter, so moving hands and objects carry natural motion blur. One continuous shot, never cut and never restarted, one camera. Frame 1: on a sunny fairway Barbara's husband stands addressed to the ball, club behind it, knees softly bent, the strap on his right knee. FULL, low and front-on from the edge of the fairway, Camera on a tripod, locked: a green fairway on a sunny morning, trees beyond. Barbara's husband of Image1, seventy-six, tall and lean, in his golf clothes, stands over the ball and takes one full, smooth, balanced golf swing — backswing, strike, follow-through — and holds the finish, watching the ball, a quiet satisfied look. The small strap of Image2 sits on his bare right knee just under the kneecap as Image3 shows, the knee facing the camera, the strap rigid through the whole swing. Last frame: he holds a full, balanced follow-through, club over his shoulder, watching the ball go, the strap still on his right knee. Camera on a tripod, framed and locked, with no drift, no sway and no reframe. The only camera life is one small operator pan or tilt of a few degrees to keep the subject in frame as they shift. It arrives a beat late and corrects only part of the way. The subject and the room carry all the other movement. Everything in frame keeps the exact form, proportion and count it has from the first frame to the last — nothing melts, merges, splits, grows or becomes something else. Same person every frame: same face, bone structure, age, hair and wardrobe. Five separate fingers on each hand throughout, never fusing and never passing through anything. Limbs stay attached, keep their length, and bend only the way real joints bend. Mass and momentum in all movement: nothing at uniform speed, nothing stops instantly; weight transfers first and the hands arrive last; hair, coat hems and bag straps lag and settle after the body stops. HIM still carries exactly what this scene has done to them so far: on the fairway, the strap on his right knee. None of it resets: it is the same as in the previous shot, except he has swung and holds the finish. It holds in every frame. FOCUS: deep — him and the strap sharp, the trees soft. The blur is optical: soft and round, never smeared. Nobody speaks in this clip: every mouth stays closed and every jaw still from the first frame to the last. The clip carries no dialogue and no voice at all: nobody speaks. NEGATIVES: no microphone in frame, no boom pole, no film equipment, no crew in frame, no morphing, no warping, no melting, no merging, no splitting, no duplicate people, no background bending, no texture swimming, no flickering geometry, no second swing, no falling, no club bending, no second strap, no strap on the left knee, no lettering or logos, no talking, no mouth moving, no phone camera look, no smartphone processing, no HDR tone-mapping, no flat lifted shadows, no over-sharpening halos, no selfie framing, no front-camera distortion, no handheld phone jitter, no digital video look, no CGI look, no plastic skin, no beauty retouch, no diffusion filter glow on skin, no soft-focus beauty lighting, no flat frontal key, no unmotivated light, no applied vignette oval, no letterbox bars, no generated film grain, no slow motion, no speed ramp, no stock footage look, no commercial gloss, no perfect symmetrical face, no actor looking into the lens, no light direction changing within the scene, no colour changing between shots, no graded look, no wardrobe changing within the scene, no prop moving between shots unless shown moving, no character changing position between shots, no camera crossing the action line, no eyeline pointing the wrong way, no time of day changing within the scene, no different room, no extra people, no missing people, no tears, redness or sweat appearing or vanishing between shots, no hair or clothing state resetting between shots, no prop jumping to the other hand, no theatrical acting, no mugging, no soap-opera reactions, no exaggerated crying, no streaming tears, no glycerin tears, no frozen listener, no blank face while being spoken to, no reaction arriving before the line that causes it, no emotion resetting between shots, no two characters speaking at once unless the script overlaps them, no speech directed at the camera, no performing to the lens, no expression held for effect, no nodding along while speaking, no constant half-smile, no eyebrows rising on every stressed word, no hand gesture on every phrase, no head tilt on every line, no voice steadier or brighter than the face, no voice resetting between lines, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "take": "SC09-T2",
+ "covers": [
+  "SC09-SH02"
+ ],
+ "start_pos": "on a sunny fairway Barbara's husband stands addressed to the ball, club behind it, knees softly bent, the strap on his right knee",
+ "end_pos": "he holds a full, balanced follow-through, club over his shoulder, watching the ball go, the strap still on his right knee",
+ "duration": 5,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "body/SC09/ingredients/X5-HUSBAND_v1.png",
+  "../../products/stryde/stryde_refs/front.webp",
+  "body/SC05/ingredients/INFO-KNEE-C1_v3.png"
+ ],
+ "audios": [],
+ "generate_audio": false,
+ "dialogue": null,
+ "script_line": null,
+ "pace": "unhurried",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": "chat: \"confirm\" (2026-10-02) — every SC09/SC10 ingredient confirmed; SC09 + SC10 as eight takes",
+ "fix_note": "first generation — every earlier note on this build kept: one strap only, small (12 × 5 cm), front side up, on the RIGHT knee; no box (FP19); hands off the banister; one take per place (L51)",
+ "risks": [
+  {
+   "risk": "the strap hidden or wrong (FP01, FP11)",
+   "prevented_by": "knee facing the camera, front photo, rigid through the swing"
+  },
+  {
+   "risk": "the swing breaks his body",
+   "prevented_by": "one swing, smooth and balanced, holds the finish"
+  },
+  {
+   "risk": "a ball or club glitches",
+   "prevented_by": "morph negatives"
+  }
+ ],
+ "vo": "L051",
+ "scene": 9,
+ "title": "Scene 9 · T2 — Barbara's husband, 76, a full golf swing, the strap on his knee (SH02)",
+ "taste": [
+  "HT02",
+  "HT17",
+  "HT18",
+  "HT22",
+  "HT23",
+  "HT26",
+  "FP01",
+  "FP02",
+  "FP03",
+  "FP10",
+  "FP11",
+  "FP12",
+  "FP15",
+  "FP17",
+  "FP18",
+  "FP19"
+ ]
+}
