@@ -1,0 +1,11 @@
+mcp__HIGGSFIELD__generate_image
+mcp__HIGGSFIELD__generate_video
+mcp__HIGGSFIELD__generate_audio
+mcp__HIGGSFIELD__create_voice
+mcp__HIGGSFIELD__list_workspaces
+mcp__HIGGSLESS__generate
+mcp__KLING__image_to_video
+mcp__KLING__text_to_image
+mcp__KLING__omni_ref_video
+mcp__github__get_me
+mcp__Claude_Docs__create
