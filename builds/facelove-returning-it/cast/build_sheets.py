@@ -25,8 +25,16 @@ AGE = ("fine crow's feet at the outer eyes, two faint horizontal lines across th
        "brownish-violet dark circles and fine crepe under the eyes, blotchy redness across both cheeks and around the nostrils, "
        "uneven patches of darker brown pigmentation high on the cheekbones and the forehead, a scatter of small flat brown post-acne marks along the jawline and the chin")
 
+# Fix round 1 (user's board Fix on N-BEFORE v1, 2026-10-02: "add wrikles"): the wrinkles named deep and counted, the before only
+AGE_V2 = ("deep crow's feet fanning in three or four creases from each outer eye, three deep horizontal lines across the forehead, "
+          "two vertical frown lines between the brows, deep folds from the nose to the mouth, fine lines running down from the mouth corners to the chin, "
+          "fine vertical lines on the upper lip, crepe and fine lines under the eyes with brownish-violet dark circles, two faint horizontal lines across the neck, "
+          "blotchy redness across both cheeks and around the nostrils, "
+          "uneven patches of darker brown pigmentation high on the cheekbones and the forehead, a scatter of small flat brown post-acne marks along the jawline and the chin")
+
 CAST = {
- "N-BEFORE": dict(title="The creator — bare skin, before the stick (talking head + application start)", after=False),
+ "N-BEFORE": dict(title="The creator — bare skin, before the stick (talking head + application start)", after=False, age=AGE_V2,
+                  wrinkles="Her face shows its forty-six years plainly: deep crow's feet, forehead lines, frown lines and deep folds from the nose to the mouth, visible in every panel and deepest in the close-up."),
  "N-AFTER": dict(title="The creator — after: the stick blended in, every line kept (talking head end + after beats)", after=True),
 }
 
@@ -48,14 +56,19 @@ def build(k, c):
                 "pores still visible on the nose and cheeks, the fine crow's feet, the forehead lines and the folds from the nose to the mouth still there and still visible, "
                 "the foundation lying evenly across the lines and not sitting in them; the neck the same tone as the face; no smoothing, no blur, no airbrushed finish.")
     else:
-        skin = "IN THE FACE CLOSE-UP: " + S("SKIN-T").replace("[AGE-FEATURES]", AGE)
+        skin = "IN THE FACE CLOSE-UP: " + S("SKIN-T").replace("[AGE-FEATURES]", c.get("age", AGE))
+        if c.get("wrinkles"):
+            sheet = sheet.replace("Bare face, no makeup, in every panel including the close-up.", "Bare face, no makeup, in every panel including the close-up. " + c["wrinkles"])
     assert "[" not in sheet, k
     neg = ", ".join([neg_sheet, S("NEG-GRID"), S("NEG-FILE")])
     return "\n\n".join([FACE_REF, S("CAM-LOCK"), sheet, skin, S("CAP-SHARP"), S("CAP-FILE"), "AVOID: " + neg + "."])
 
 if __name__ == "__main__":
     out = {}
+    import sys
+    only = sys.argv[1:] or list(CAST)
     for k, c in CAST.items():
+        if k not in only: continue
         p = build(k, c); out[k] = {"prompt": p, "title": c["title"]}
         (pathlib.Path(__file__).parent / f"{k}.prompt.txt").write_text(p)
         print(k, len(p))

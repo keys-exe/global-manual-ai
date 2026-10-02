@@ -14,7 +14,9 @@ Drive task folder `1PvwdhVU13RI6M1GQi9GKy-aEdx_4XZSa`
 ## Where it stands (2026-10-02)
 - Steps 1–3 delivered: Absorption Sheet, phrase inventory + Visual Instruction Ledger (VN00–VN05, scene labels only), claims pass, Mode & Model Lock → `BUILD_SHEET.md`; board docs `absorption`, `connectors` on Plan + Current.
 - 2 cast sheets (N-BEFORE bare skin, N-AFTER foundation on, lines kept) on Sunburst 2k via Higgsfield ODAQ B.V., `avatar.png` attached as Image 1 (F1); ~2.75 credits each (the shared ODAQ balance moved 4,801.34 → 4,548.14 meanwhile — other sessions spend on it too). On the Current board **To check**.
-- **Stopped at the avatar gate** — waiting for the user's Confirm/Fix on the sheets and the flags F1–F9.
+- **Avatar review (user: "confirm and fix", 2026-10-02):** N-AFTER v1 confirmed on the board. N-BEFORE Fix round 1 (owner-marked note "add wrikles"): the wrinkles named deep and counted in `cast/build_sheets.py` (AGE_V2 + a sentence in the sheet: deep crow's feet, three forehead lines, two frown lines, deep nose-to-mouth folds, mouth-corner and upper-lip lines, neck lines); v2 (job 8861a293, ~2.75 cr) on the Current board To check; v1 moved to the Old board (asset 494a8798…) and removed from Current.
+- Note for the user: N-AFTER was confirmed with v1's lighter lines; the after keeps "every line", so if v2's deeper wrinkles are confirmed, the after face may read less lined than the before — their call (a Fix on N-AFTER would match it).
+- Still waiting: N-BEFORE v2 Confirm/Fix, and the flags F1–F9.
 
 ## Decisions
 - Mode 1 + UGC Ad from the inspo (no MODE/FORMAT in the message) — F2. Hooks 3 by default — F3.
