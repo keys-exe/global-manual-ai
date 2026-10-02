@@ -221,6 +221,12 @@ def caption_words(media, line_ids, cache, items=()):
             script[i + m]["t0"] = lo + (hi - lo) * m / n
             script[i + m]["t1"] = lo + (hi - lo) * (m + 1) / n
         i = j
+    # no word holds longer than a spoken word does; a line's first word left far ahead of the rest joins them
+    for x in script:
+        x["t1"] = min(x["t1"], x["t0"] + 0.9)
+    for a, b in zip(script, script[1:]):
+        if a["line"] == b["line"] and b["t0"] - a["t1"] > 1.0 and (script.index(a) == 0 or script[script.index(a) - 1]["line"] != a["line"]):
+            a["t0"], a["t1"] = b["t0"] - 0.3, b["t0"]
     for s in script:
         s["env"] = env
     return script, total, matched
