@@ -1,0 +1,178 @@
+{
+  "master_s": 75.65,
+  "lead_s": 0.25,
+  "skip_s": 0.4,
+  "lengths": [
+    {
+      "beat": "B01",
+      "cut_s": 0.0,
+      "early_s": 0.0,
+      "line_starts_on": "And",
+      "key": "And",
+      "on_screen_s": 2.67,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B02",
+      "cut_s": 2.6667,
+      "early_s": 0.253,
+      "line_starts_on": "and",
+      "key": "and",
+      "on_screen_s": 2.29,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B03",
+      "cut_s": 4.9583,
+      "early_s": 0.242,
+      "line_starts_on": "and",
+      "key": "and",
+      "on_screen_s": 4.21,
+      "skip_s": 0.4,
+      "call_s": 6
+    },
+    {
+      "beat": "B05",
+      "cut_s": 9.1667,
+      "early_s": 0.253,
+      "line_starts_on": "told",
+      "key": "told",
+      "on_screen_s": 3.88,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B06",
+      "cut_s": 13.0417,
+      "early_s": 0.248,
+      "line_starts_on": "It",
+      "key": "It",
+      "on_screen_s": 2.54,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B07",
+      "cut_s": 15.5833,
+      "early_s": 0.237,
+      "line_starts_on": "the",
+      "key": "the",
+      "on_screen_s": 2.96,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B08",
+      "cut_s": 18.5417,
+      "early_s": 0.248,
+      "line_starts_on": "and",
+      "key": "and",
+      "on_screen_s": 2.17,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B08b",
+      "cut_s": 20.7083,
+      "early_s": 0.232,
+      "line_starts_on": "I",
+      "key": "I",
+      "on_screen_s": 2.92,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B09",
+      "cut_s": 23.625,
+      "early_s": 0.255,
+      "line_starts_on": "And",
+      "key": "And",
+      "on_screen_s": 3.38,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B10",
+      "cut_s": 27.0,
+      "early_s": 0.24,
+      "line_starts_on": "asked",
+      "key": "asked",
+      "on_screen_s": 3.38,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B11",
+      "cut_s": 34.5,
+      "early_s": 0.27,
+      "line_starts_on": "throw",
+      "key": "throw",
+      "on_screen_s": 2.46,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B12",
+      "cut_s": 36.9583,
+      "early_s": 0.232,
+      "line_starts_on": "and",
+      "key": "and",
+      "on_screen_s": 2.83,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B13",
+      "cut_s": 48.125,
+      "early_s": 0.245,
+      "line_starts_on": "Two",
+      "key": "Two",
+      "on_screen_s": 3.12,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B14",
+      "cut_s": 51.25,
+      "early_s": 0.26,
+      "line_starts_on": "plus",
+      "key": "plus",
+      "on_screen_s": 3.29,
+      "skip_s": 0.4,
+      "call_s": 5
+    },
+    {
+      "beat": "B14b",
+      "cut_s": 54.5417,
+      "early_s": 0.248,
+      "line_starts_on": "and",
+      "key": "and",
+      "on_screen_s": 2.71,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B15b",
+      "cut_s": 59.2917,
+      "early_s": 0.268,
+      "line_starts_on": "and",
+      "key": "and",
+      "on_screen_s": 2.38,
+      "skip_s": 0.4,
+      "call_s": 4
+    },
+    {
+      "beat": "B16",
+      "cut_s": 72.4167,
+      "early_s": 0.243,
+      "line_starts_on": "It",
+      "key": "It",
+      "on_screen_s": 3.21,
+      "skip_s": 0.4,
+      "call_s": 5
+    }
+  ],
+  "failures": []
+}

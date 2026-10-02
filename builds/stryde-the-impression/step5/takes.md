@@ -1,0 +1,58 @@
+### Takes
+
+Connected shots are generated in one take — one Seedance call (§24K part 5). 148 shots in 52 takes.
+
+| Take | Kind | Shots | Starts | Ends | Split |
+|---|---|---|---|---|---|
+| SC01-T1 | multi | SC01-SH01, SC01-SH02, SC01-SH03, SC01-SH04 | the table cleared after Sunday lunch: Hazel seated at the far end by the bay window, Roy on her left, Emma and Dan on the near side, Oscar sliding off his chair beside Emma | Oscar standing at the end of the room by the sideboard, everyone else seated; Hazel at the head of the table, hands flat on the cloth |  |
+| SC01-T2 | multi | SC01-SH05, SC01-SH06, SC01-SH07, SC01-SH08 | Oscar by the sideboard at the far end of the room, the family seated, silent | everyone seated; Oscar back on his chair beside Emma; Hazel looking at Dan | length |
+| SC01-T3 | multi | SC01-SH09, SC01-SH10, SC01-SH11 | everyone seated as before, Dan holding his water glass | everyone seated; Emma and Dan holding a look across the table | length |
+| SC01-T4 | multi | SC01-SH12, SC01-SH13, SC01-SH14, SC01-SH15 | everyone seated, Emma and Dan just breaking their look | everyone seated, eyes on Hazel | length |
+| SC01-T5 | single | SC01-SH16 | Hazel at the head of the table looking at Roy | Hazel at the head of the table, still looking at Roy | length |
+| SC02-T1 | multi | SC02-SH01, SC02-SH02, SC02-SH03, SC02-SH03b | night, the hall lit by the pendant; Hazel and Emma by the front door, Emma in her coat about to leave, Hazel holding out her phone | Hazel at the kitchen door at the far end of the hall; Emma by the front door with the phone up |  |
+| SC02-T2 | single | SC02-SH04 | Hazel at the open kitchen door at the far end of the hall, facing down the hall toward the camera at the front door | Hazel at the front door, a hand on the newel post | length |
+| SC02-T3 | multi | SC02-SH05, SC02-SH06, SC02-SH07, SC02-SH08 | Hazel by the front door holding the phone, Emma beside her | the two of them at the front door, Emma's hand on Hazel's arm | length |
+| SC02-T4 | multi | SC02-SH09, SC02-SH10 | the two of them at the front door, Emma's hand on Hazel's arm | Hazel by the front door looking down the hall | length |
+| SC03-T1 | multi | SC03-SH01, SC03-SH02, SC03-SH03 | Hazel at the hook rack on the left wall, the assistant behind the white counter | the two of them at the hook rack, the assistant nodding at the stick stand by the counter |  |
+| SC03-T2 | multi | SC03-SH04, SC03-SH05, SC03-SH06, SC03-SH07 | the two of them at the hook rack | Hazel holding the boxed beige sleeve, the assistant beside her | length |
+| SC03-T3 | multi | SC03-SH08, SC03-SH09 | Hazel at the counter putting the beige sleeve down, the assistant at the till | Hazel at the counter, paying | length |
+| SC04-T1 | multi | SC04-SH01, SC04-SH02, SC04-SH03, SC04-SH04 | Emma kneeling at the oak chest of drawers looking for something, Hazel coming in at the bedroom door | Emma kneeling at the open drawer with sleeves in her hands; Hazel in the doorway |  |
+| SC04-T2 | multi | SC04-SH05, SC04-SH06, SC04-SH07 | Emma kneeling at the open drawer, Hazel in the doorway | Hazel on the bed edge; Emma kneeling at the drawer | length |
+| SC04-T3 | multi | SC04-SH08, SC04-SH09 | Hazel on the bed edge with a sleeve in her hands; Emma kneeling at the open drawer | Hazel on the bed edge with a sleeve in her hands; Emma kneeling at the drawer | length |
+| SC05-T1 | multi | SC05-SH01, SC05-SH02, SC05-SH03, SC05-SH04 | Hazel on the pavement at the bottom of the hill by the stone wall, facing uphill, her back to the camera; the mum with a buggy at the top of the pavement coming down | Hazel walking back down the hill below the postbox |  |
+| SC06-T1 | multi | SC06-SH01, SC06-SH02, SC06-SH03, SC06-SH04 | Roy at the worktop by the sink making tea, Hazel sitting at the square pine table | Hazel at the table with the mug, Roy standing by her |  |
+| SC06-T2 | single | SC06-SH05 | Hazel at the table, Roy standing behind her chair | Roy's hand on the back of her chair | length |
+| SC07-T1 | multi | SC07-SH01, SC07-SH02 | Roy at the top of the stairs turning sideways to the banister; Hazel out of sight in the kitchen doorway at the end of the hall | Roy at the bottom of the stairs picking his glasses off the hall table; Hazel in the kitchen doorway |  |
+| SC08-T1 | multi | SC08-SH01, SC08-SH02 | Hazel in the passenger seat, Emma out of the car at the school gate, children coming out | Wendy at the crossing by the school gate with the two children |  |
+| SC08-T2 | multi | SC08-SH03, SC08-SH04, SC08-SH05, SC08-SH06 | Hazel at the open passenger window, the lollipop lady standing at the kerb beside the car with her sign lowered | the lollipop lady stepping back to her crossing | length |
+| SC09-T1 | multi | SC09-SH01, SC09-SH02, SC09-SH03, SC09-SH04 | Hazel opening the passenger door of the parked car; Wendy by the bench at the open green gate with the two children and the book bags | the two women face to face by the bench at the gate, the children on the bench |  |
+| SC09-T2 | multi | SC09-SH05, SC09-SH06, SC09-SH07 | the two women face to face by the bench at the gate | Wendy sitting on the bench, Hazel standing | length |
+| SC09-T3 | multi | SC09-SH08, SC09-SH09, SC09-SH10 | Wendy sitting on the bench, Hazel standing beside it | the two women side by side on the bench | length |
+| SC09-T4 | multi | SC09-SH11, SC09-SH12 | the two women side by side on the bench | the two women on the bench, Hazel looking at Wendy | length |
+| SC09-T5 | single | SC09-SH13 | Wendy sitting on the bench, her hand at the hem of her dress over her right knee | Wendy's hem lifted above the right knee, the strap just under the kneecap | insert |
+| SC09-T6 | multi | SC09-SH14, SC09-SH15, SC09-SH16 | the two women on the bench, Wendy's hem back down | the two women on the bench | insert |
+| SC09-T7 | multi | SC09-SH17, SC09-SH17b, SC09-SH18 | the two women on the bench | the two women on the bench, Wendy turning to her | length |
+| SC09-T8 | multi | SC09-SH19, SC09-SH20 | the two women on the bench | Hazel alone on the bench at the gate | length |
+| SC10-T1 | multi | SC10-SH01, SC10-SH02, SC10-SH03 | night: Hazel alone at the pine table with her phone; Roy out of sight in the hall | Hazel at the table with the phone, Roy in the doorway |  |
+| SC10-T2 | multi | SC10-SH04, SC10-SH05, SC10-SH06, SC10-SH07 | Roy in the doorway, Hazel at the table | the two of them across the table | length |
+| SC10-T3 | single | SC10-SH08 | the two of them across the table | the phone back in front of Hazel | length |
+| SC11-T1 | single | SC11-SH01 | Hazel sitting on the bed edge in her nightdress, the closed strap at mid-shin on her bare right leg | the strap seated just under her right kneecap | insert |
+| SC11-T2 | multi | SC11-SH02, SC11-SH03 | Hazel dressed, standing on the landing at the top of the fourteen steps, right hand on the banister | Hazel at the bottom of the stairs on the hall tiles, hands free |  |
+| SC11-T3 | multi | SC11-SH04, SC11-SH05, SC11-SH06 | Hazel on the landing at the top of the stairs, the strap off (taken off off-screen) | Hazel at the bottom of the stairs; Roy in the kitchen doorway | length |
+| SC12-T1 | multi | SC12-SH01, SC12-SH02, SC12-SH03, SC12-SH04 | Hazel on the pavement below the pillar box, walking up, hands free; the mum with the buggy coming down from above | the two of them stopped just above the pillar box |  |
+| SC12-T2 | multi | SC12-SH05, SC12-SH06, SC12-SH07 | the two of them just above the pillar box | Hazel walking on up the hill | length |
+| SC13-T1 | single | SC13-SH01 | Hazel at the open kitchen door at the far end of the hall, facing the camera at the front door | Hazel at the front door |  |
+| SC13-T2 | multi | SC13-SH02, SC13-SH03, SC13-SH04, SC13-SH05 | Emma at the front door holding the phone, Hazel arriving beside her | the two of them at the front door | length |
+| SC13-T3 | multi | SC13-SH06, SC13-SH07 | the two of them at the front door | Hazel by the front door looking down the hall | length |
+| SC14-T1 | multi | SC14-SH01, SC14-SH02, SC14-SH03, SC14-SH04 | Roy by the hall table with the car keys; Hazel at the kitchen door at the end of the hall | the two of them in the hall |  |
+| SC14-T2 | multi | SC14-SH05, SC14-SH06, SC14-SH07, SC14-SH08 | the two of them in the hall by the hall table | Roy looking at the front door | length |
+| SC14-T4 | multi | SC14-SH09, SC14-SH10, SC14-SH11 | the two of them in the hall | Hazel holding Roy's hand in the hall | length |
+| SC14-T5 | multi | SC14-SH12, SC14-SH13, SC14-SH14, SC14-SH15 | Hazel holding Roy's hand in the hall | Hazel looking at Roy | length |
+| SC15-T1 | one-take | SC15-SH01 | Hazel and Oscar hand in hand on the pavement below the pillar box, walking up; Emma's car behind them on the road | the two of them above the pillar box, still walking |  |
+| SC15-T2 | multi | SC15-SH02, SC15-SH03, SC15-SH04, SC15-SH05 | Hazel and Oscar at the school gate; Emma and Dan in the car parked behind | Oscar facing Hazel by the railings | length |
+| SC15-T3 | multi | SC15-SH06, SC15-SH07, SC15-SH08 | Hazel and Oscar facing each other at the gate | Hazel alone at the open gate, hands empty | length |
+| SC16-T1 | multi | SC16-SH01, SC16-SH02, SC16-SH03 | Hazel standing at the open green school gate, the playground behind her, facing the lens | Hazel at the gate, facing the lens |  |
+| SC16-T2 | multi | SC16-SH04, SC16-SH05, SC16-SH06 | Hazel standing at the open green school gate, the playground behind her, facing the lens | Hazel at the gate, facing the lens | length |
+| SC16-T3 | multi | SC16-SH07, SC16-SH08, SC16-SH09 | Hazel standing at the open green school gate, the playground behind her, facing the lens | Hazel at the gate, facing the lens | length |
+| SC16-T4 | multi | SC16-SH10, SC16-SH11, SC16-SH12 | Hazel standing at the open green school gate, the playground behind her, facing the lens | Hazel at the gate, facing the lens | length |
+| SC16-T5 | multi | SC16-SH13, SC16-SH14 | Hazel standing at the open green school gate, the playground behind her, facing the lens | Hazel at the gate, facing the lens | length |

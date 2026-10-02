@@ -1,0 +1,78 @@
+{
+ "beat": "T-04a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — I always figured hers wasn't as bad as mine. —: Keep this photo exactly as it is — the seated woman in burgundy, the table, the hall, the lights, the dancing guests — and change only the dancer in fuchsia in the middle of the floor. Image 1 is the photo. Image 2 is that dancer — the woman in fuchsia. Image 3 is her face and silver bob only.\nThe dancer in fuchsia is the woman of Image 2 and Image 3, copied exactly: her square face, warm brown skin, chin-length silver bob, her full build, about 5.5 heads tall, the same height as the seated woman, in the fuchsia satin dress and white slip-ons of Image 2; she dances in the same spot among the guests, facing the lens, both arms up, eyes on the lights above, a wide closed-mouth smile, four chunky fingers and a thumb on each hand. Scale true to the set: her head level with the guests' heads beside her.\nIn frame: the seated woman, the table, the guests, exactly one dancer in fuchsia; every other surface as in Image 1.\nA final frame from a 3D animated feature film, stylized storybook render, warm evening light. No lettering, logos or labels.",
+ "script_line": "I always figured hers wasn't as bad as mine.",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "T-04a frame v5 A (your pick) — the wedding, over her shoulder, the full dance floor (the picture this edit keeps)",
+   "kind": "frame"
+  },
+  {
+   "label": "T-02a frame v5 A (confirmed) — Loretta at this wedding in her fuchsia dress (the day's outfit, HT27)",
+   "kind": "character"
+  },
+  {
+   "label": "C1-LORETTA face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character"
+  }
+ ],
+ "match": "frame",
+ "edit_of": "f169c7e8-5d8d-4741-837d-1e9f4aec74a2",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"that is not loreta\" → an edit of the picked v5 A: only the dancer in fuchsia changes, into Loretta from her confirmed wedding frame (T-02a) with her face-and-hair crop",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": null,
+ "medias": [
+  "f169c7e8-5d8d-4741-837d-1e9f4aec74a2",
+  "366e9056-44ad-4e5a-b53f-8eb8596098c2",
+  "b686a638-9030-4e71-8602-a888c167587b"
+ ],
+ "board_refs": [
+  {
+   "label": "T-04a frame v5 A (your pick) — the wedding, over her shoulder, the full dance floor (the picture this edit keeps)",
+   "kind": "frame",
+   "ref": "stryde-71-stairs-pixar-song__T-04a",
+   "role": "Image 1"
+  },
+  {
+   "label": "T-02a frame v5 A (confirmed) — Loretta at this wedding in her fuchsia dress (the day's outfit, HT27)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__T-02a",
+   "role": "Image 2"
+  },
+  {
+   "label": "C1-LORETTA face-and-hair crop of the confirmed sheet v2 (HT26, no clothes)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__C1-LORETTA",
+   "role": "Image 3"
+  }
+ ]
+}
