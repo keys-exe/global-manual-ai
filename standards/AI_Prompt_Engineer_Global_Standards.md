@@ -1,6 +1,6 @@
 # AI Prompt Engineer — Global Standards for Realistic Ads, VSLs, B-roll, Talking Heads, and AI Video Workflows
 
-**Version 7.89.0 — supersedes all prior versions.** *(the wardrobe follows the day and its events, never the act: story days come from the script's events with their source, never one per act; talking heads are locked per recording day; the wardrobe map is written in story order, one block per day with its event, source, outfits and capture events, never grouped by act; `wardrobe.py` checks it — §14A, §19, §21, §30, V7.89.0)*
+**Version 7.89.1 — supersedes all prior versions.** *(V7.89.1: no speech marks in a clip prompt either — a quoted line invites a talking mouth (§35A rule 6, `preflight.py`); one continuous action across consecutive lines is one row and one clip (§27) — LESSONS L30. V7.89.0: the wardrobe follows the day and its events, never the act: story days come from the script's events with their source, never one per act; talking heads are locked per recording day; the wardrobe map is written in story order, one block per day with its event, source, outfits and capture events, never grouped by act; `wardrobe.py` checks it — §14A, §19, §21, §30, V7.89.0)*
 
 ---
 
@@ -4419,6 +4419,7 @@ Never create one generic B-roll per full script line. Break the line to the **sm
 **Phrases, never whole sentences** *(V7.84.0, user 2026-10-01 — "the B-roll picking: you have been picking long sentences instead of what we used back then")*. An act-map row is **one phrase**: about 2–3 s on screen, roughly 4–8 spoken words, cut at its shift (a comma, a new clause — "and", "but", "because", "so" — a new noun or a turn). Measured in the repo: the early builds' act maps ran a median of about 6 words a B-roll (stryde-identity, stryde-lost-moments); the later ones 8–10 (stryde-thirty-years, stryde-71-stairs-pixar-song), and stryde-cascade's phrases were widened from 7 to 9.5 words to whole sentences. **Two rules hold it, both checked by `assemble.py` on the final track before any B-roll call:**
 1. **LONG** — a B-roll on screen over **3.5 s** fails, and the report names the split at its next shift (`'A hinged brace stops your knee going sideways,' | 'and your knee was never going sideways.'`), the words it runs on over included. Exempt: a row with no shift inside it (`"whole": "<why>"`, the "no internal shift" case below), mechanism and anatomy rows (§12A — they fill their line), and `"span": "hold"`. A row that cannot be split without leaving a picture under 2.0 s passes as it is.
 2. **A phrase too short to hold a picture** (under 2.0 s, §30H rule 5 FLASH) is joined to the **neighbouring phrase** — the next phrase of the same sentence, or the previous row — never widened to the whole sentence or the next one.
+3. **One continuous action is one clip** *(V7.89.1, user 2026-10-02 — R-07c "should be part of the r07a so it should be one take only"; LESSONS L30)*: when consecutive lines continue one action in one place — a walk down the whole flight, one gesture carried over two lines — they are **one act-map row and one Kling clip** (up to 15 s; `"whole": "one continuous action"`), never split by the phrase rule into two clips that restart the move; the phrase rule splits pictures, not a movement. This is the §24K part 5 one-take, for Modes 1–3.
 
 A new B-roll beat is triggered by **any** of the following, even within the same phrase:
 
@@ -6327,7 +6328,7 @@ The log is generic — process lessons only. A product's lesson goes in its `fix
 3. **The camera in one clause:** Mode 1 `Handheld phone, a gentle breath sway, the camera stays where it is.`; a push-in only on a still subject.
 4. **Two or three facts that decide right or wrong for this shot** — from the House Taste (§34A) and the product's `fix_patterns.md` first — positive: `the same staircase, the same number of steps, every step whole`, `both hands stay clear of the banister`, `the strap stays rigid and in place just below the right kneecap` (§27G rule 6).
 5. **At most five "no …" items**, for faults this shot class keeps producing.
-6. **Nobody mouths the line** *(V7.83.3, user 2026-10-01 — "you should never talk the lyrics/script in broll")*: a B-roll is pictures under the voice — the VO or the song — so every beat video prompt states it in words (`mouth closed, she never speaks or sings` / `nobody speaks`), whether or not a face is in frame, and the model never gets the line as something to say. `preflight.py` fails a B-roll call without the clause. A talking head is the only clip that speaks (§36).
+6. **Nobody mouths the line** *(V7.83.3, user 2026-10-01 — "you should never talk the lyrics/script in broll")*: a B-roll is pictures under the voice — the VO or the song — so every beat video prompt states it in words (`mouth closed, she never speaks or sings` / `nobody speaks`), whether or not a face is in frame, and the model never gets the line as something to say. `preflight.py` fails a B-roll call without the clause. A talking head is the only clip that speaks (§36). **The line goes in without its speech marks** *(V7.89.1, LESSONS L30)*: a line that quotes speech (`she said, "Baby…"`) is written `For the line "After a minute she said, Baby, can I show you something?":` — a quote in a clip prompt invited a talking mouth on three of seven clips (stryde-71-stairs-pixar-song R-02a, R-03a, R-06a, 2026-10-02), as it printed a caption on a picture (§6A rule 5, L28); and on a face shot the clause reads `lips sealed and jaw still from the first frame to the last, the face holding the expression of the frame`. `preflight.py` fails speech marks inside the line.
 
 **Calls:** `prefer_multi_shots: false`, E6 length (3–15s), pinned shots first-and-last frame (§27G rule 10, E7). **Checks:** `preflight.py` (≤ 1,000 characters, the line and the confirmed `motion_plan` in the prompt, `motion_confirmed`, ≤ 5 negatives, none of the retired boilerplate, risky classes pinned and piloted, no fast words on stairs or travel). A video Fix (§22X) rewrites the prompt in this form — never adds a paragraph.
 
@@ -9394,6 +9395,14 @@ Standards-level only. Build- and product-level decisions live on their own sheet
 **Camera numbers and the LUT — measure on the first film build (2026-09-28).** (a) Same frame, same seed: T2.0 vs T5.6 and 35mm vs 85mm in `CAM-FILM` — does depth or perspective change, or only the scale wording? (b) The shutter wording on Seedance and Kling — any motion-blur difference? (c) `COLOUR-KEY` with and without `[KELVIN]` across a five-shot scene — `light_check.py colour` warmth spread. (d) CapCut desktop vs `lut.py apply` on the same clip with the same `LUT-[BUILD].cube` — identical within ±2 levels?
 
 ---
+
+# CHANGELOG — V7.89.0 → V7.89.1 *(cut authorised — §34B, the user's Fix notes and the agent's own look on stryde-71-stairs-pixar-song Act 3)*
+
+| § | Change |
+|---|---|
+| **35A** rule 6 | **No speech marks in a clip prompt**: a line that quotes speech goes in without its speech marks, and a face shot's clause reads `lips sealed and jaw still… the face holding the expression of the frame` (R-02a, R-03a, R-06a clips v1 mouthed words, 2026-10-02). `preflight.py` video check |
+| **27** rule 3 *(new)* | **One continuous action is one clip**: consecutive lines that continue one action in one place are one row and one clip (≤ 15 s, `whole`), never split into two clips (R-07a + R-07c, user 2026-10-02) |
+| Files | `preflight.py` (speech marks in a clip's line — run on the three failing prompts and on the known-good Act 2 calls, L19), both skills, CLAUDE.md, `LESSONS.md` L30 |
 
 # CHANGELOG — V7.88.1 → V7.89.0 *(cut authorised)*
 

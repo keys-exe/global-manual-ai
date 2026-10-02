@@ -1,0 +1,57 @@
+{
+ "beat": "R-03b",
+ "connector": "kling",
+ "mode": 2,
+ "kind": "broll",
+ "prompt": "For the line \"She pulled up her pant leg. She had on a little black strap,\": From this frame: one pull up past the knee — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels. Their lips stay closed and still from the first frame to the last — a silent clip, nobody speaks or sings. Loretta pulls the rolled khaki hem up a little higher above her right knee with both hands and lets go; on her bare knee the strap stays rigid and exactly as in the frame — black shell, two peaks, chrome slides; the chair and the kitchen stay exactly as in the frame. Stylized 3D animation, exactly on model from the frame. No camera travel; no cut; the strap never bends or slides.",
+ "duration": 4,
+ "resolution": "1080p",
+ "aspect_ratio": "9:16",
+ "start_image": "https://d8j0ntlcm91z4.cloudfront.net/user_3FfA2p8f93sSZ3B9iUyv7t5zrAL/hf_20261002_090311_179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f.png",
+ "start_approved": true,
+ "pinned": false,
+ "end_image": null,
+ "end_approved": false,
+ "script_line": "She pulled up her pant leg. She had on a little black strap,",
+ "motion_plan": "From this frame: one pull up past the knee — one pull, about two seconds; camera RV sway — the virtual camera breathes in place, never travels",
+ "motion_confirmed": true,
+ "pace": "one pull",
+ "subject_motion": "in_place",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "fix_note": null,
+ "fix_notes_all": null,
+ "risk_class": "none",
+ "pin_waived": null,
+ "pilot": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT09",
+  "HT12",
+  "HT22",
+  "HT25",
+  "FP05",
+  "FP07"
+ ],
+ "risks": [
+  {
+   "risk": "a second action or a loop",
+   "prevented_by": "one movement named, then rest"
+  },
+  {
+   "risk": "off model",
+   "prevented_by": "exactly on model from the frame"
+  },
+  {
+   "risk": "the camera travels",
+   "prevented_by": "no camera travel, RV sway only"
+  },
+  {
+   "risk": "a face mouths the lyric",
+   "prevented_by": "the silent clause first (HT25)"
+  }
+ ],
+ "note": "clip v1 of this beat (from the confirmed image R-03b@v1A, job 179dfe8a-7ef0-4b2e-8ebd-f8558f58a15f)"
+}

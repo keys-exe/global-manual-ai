@@ -538,3 +538,56 @@ Waiting on:
 - Picks or Fix notes on the nine Act 3 pairs and the two Act 3 singles.
 - The T-04a v5/v6 pick.
 - Confirm or Fix on the T-02a and T-02b clips.
+
+## 2026-10-02 — "fix those and generate the videos" (09:35–10:00 UTC)
+
+**Picks on the board.** The user picked frames for:
+- R-01a (v1), R-02a (v1), R-02b (v2), R-03a (v1), R-03b (v1), R-06a (v2)
+- T-04a (v5)
+
+The unpicked image of each pair is now on **Old 2**: its file was copied server-side, then archived and deleted on Current.
+
+**Clips on Kling 3.0** (silent, 1080p, from the picks; `clips/build_act3_clips.py`):
+- R-01a v1, R-02b v1, R-03b v1, T-04a v2: all To check.
+- R-02a, R-03a, R-06a: the v1 clips were kept off (L16, HT25) because their mouths moved as if speaking.
+  - Two of the three lines quote speech, and that quote had gone into the clip prompt.
+  - Clip v2 drops the speech marks and uses a "lips sealed and jaw still" clause.
+  - The v1 clips are on Old 2 with their 120 credits.
+- What I see in the v2 clips:
+  - R-03a v2 is clean.
+  - R-02a v2: the lips part slightly near the end.
+  - R-06a v2: in profile, her lips still part a little. A third generation waits for the user's go (§22X).
+- Flags written on the cards:
+  - R-01a: Loretta walks several steps, not one.
+  - R-03b: the hem goes down over the strap instead of up.
+- Clip credits: 9 × 40 + 48 + 32 = 440 Kling credits.
+
+**Image Fixes** (`body3/build_act3_fix3.py`, v5 prompts, plus v6 for R-07a). All are new A/B pairs on Higgsfield `nano_banana_pro`, To check:
+- **R-04a** "this should be loreta same clothes too": her confirmed R-03b frame is the reference (skin, rolled khaki trouser, teal blouse), per HT27. Pair v3/v4.
+- **R-05a** "product too small and wrong product": the product photos come first, with the shell's shape named and the strap half the frame wide. N comes from her R-06a frame. Pair v3/v4.
+  - Flag: in B the strap rests on her fingertips, not flat in her palm.
+- **R-06b** "wrong product and this is not the pixar anymore": the confirmed R-03b frame is the style (a stylized leg with the strap drawn right). N's skin and clothes come from her R-06a frame. Pair v3/v4.
+- **R-07a** "wrong stairs", together with **R-07c** "this should be part of the r07a so it should be one take only":
+  - R-07c is merged into R-07a as one take. The act map row now covers lines 44–49, 98.25 → 105.57 s, with a 9 s call, and the card has `covers: ["R-07a","R-07c"]`.
+  - The R-07c card is deleted from Current. Its render is on Old 2 (`mergedInto`).
+  - The image is an edit of the confirmed **P0-PROP-N plate** (her own staircase: runner, brass rods, square newel, photo wall), with N from her R-06a frame.
+  - Three renders were kept off and are on Old 2:
+    - the first A drew an open-kneecap sleeve;
+    - one B came back on another staircase with her hand on the rail;
+    - one Higgsfield job failed (no render).
+  - v6 adds the worn-strap photo, with one shell below the kneecap and the kneecap bare. The pair on the board is v2/v3.
+- The replaced pairs (R-04a, R-05a, R-06b) and the old R-07a single are on Old 2.
+
+**Act map.** R-07c is merged in `work/actmap.py` (61 rows). `angles.py` PASS. Synced to `STEP4_5.md` and `docs/actmap` v30 (Current and Plan).
+
+**System (V7.89.1, LESSONS L30)**, merged over the default branch's V7.89.0 and its L29:
+- §35A rule 6: a clip prompt's line goes in without its speech marks, and a face shot uses "lips sealed and jaw still… the face holding the expression of the frame". `preflight.py` now fails speech marks inside a clip's line. Tested: it fails the two v1 prompts and passes the good Act 2 and Act 3 calls.
+- §27 rule 3: one continuous action across consecutive lines is one row and one clip (≤ 15 s).
+
+**Balances:** Higgsfield 6467.15 · Kling 38693.
+
+**Waiting on:**
+- Picks or Fix notes on the R-04a, R-05a, R-06b and R-07a pairs.
+- Confirm or Fix on the R-01a, R-02a, R-02b, R-03a, R-03b, R-06a and T-04a clips.
+- The user's go before a third R-06a clip.
+- The R-07a clip, a 9 s single take, waits for its image pick.

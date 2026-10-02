@@ -874,41 +874,11 @@
   "group": "Act 3",
   "type": "BR",
   "subject": "N",
-  "height": "low",
-  "side": "front",
-  "fg": "clean",
-  "scale": "MEDIUM",
-  "why": "low from below on the flight = resolve, the strap large on the near knee",
-  "mirror_of": "P-01a",
-  "mode": 2,
-  "speaking": false,
-  "product_beat": true,
-  "focus": {
-   "plane": "product",
-   "dof": "deep",
-   "rack": null,
-   "moving_subject": false
-  },
-  "story_day": "N-D3",
-  "face": true,
-  "light": {
-   "source": "front-door sidelights, west wall",
-   "key_side": "L",
-   "time": "afternoon",
-   "arc": "after: sun through the sidelights",
-   "kelvin": 5600
-  }
- },
- {
-  "beat": "R-07c",
-  "group": "Act 3",
-  "type": "BR",
-  "subject": "N",
   "height": "eye",
   "side": "three-quarter",
-  "fg": "through",
-  "scale": "MEDIUM",
-  "why": "past Loretta's shoulder = her view, watching her do it",
+  "fg": "clean",
+  "scale": "FULL",
+  "why": "three-quarter from the hall = the whole descent, her own stairs, done on her own",
   "mirror_of": null,
   "mode": 2,
   "speaking": false,
@@ -925,7 +895,7 @@
    "source": "front-door sidelights, west wall",
    "key_side": "R",
    "time": "afternoon",
-   "arc": "after: sun",
+   "arc": "after: sun through the sidelights",
    "kelvin": 5600
   }
  },
