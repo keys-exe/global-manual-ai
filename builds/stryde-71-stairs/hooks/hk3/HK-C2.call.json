@@ -46,7 +46,7 @@
    "prevented_by": "'the mother never speaks' + negatives 'no station platform, no stairs, no doors opening'"
   }
  ],
- "ingredients_approved": false,
+ "ingredients_approved": true,
  "generate_audio": true,
  "taste": [
   "HT22",
