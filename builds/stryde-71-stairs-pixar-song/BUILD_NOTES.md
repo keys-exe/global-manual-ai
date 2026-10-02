@@ -715,3 +715,34 @@ What moved to Old 2:
 **Waiting on:**
 - Picks on M-03a, M-05a, M-06a and R-03b, then their clips.
 - Confirm or Fix on the new clips.
+
+### 2026-10-02 ~11:35–11:50 UTC — "R-03b video of this / and fix those and generate the next act"
+
+**Clips, To check (Kling 3.0, 1080p, silent):**
+- **R-03b** v3, 4 s, on the pick v3. This is the shot's third generation; the user's message was the go. She holds the pose with the strap to the lens, mouth closed, and tilts her head once with pride. Clip v2 and the unused image v4 are on Old 2.
+- **M-02a** v2, 6 s. Fix "dont change the shape of the product": in v1 the camera pushed in and Kling redrew the strap as it grew in frame. v2 locks the camera and says the strap is one rigid object with the same outline in every frame. Only the glow under it builds. Clip v1 is on Old 2.
+- **M-03a** v1, 5 s, on the pick v7: the glow on the tendon ribbon pulses once. The unused image v8 is on Old 2.
+
+**Fix, new pair To check:**
+- **M-06a** "wrong product and she should be going down the stairs not side ways": new pair v7/v8, shot from the foot of the stairs straight up the flight as she steps down toward the lens. The strap's shape is spelled out: the shell, two peaks round the notch, chrome slides, and the band round the back.
+  - A: her front foot wears an open-toe slide, not her closed slipper.
+  - B: closed slippers, three-quarter view.
+  - v5/v6 are on Old 2. The old clip waits for the new pick.
+
+**Act 5 (PR-01a…PR-06a), first pairs To check:**
+- Kept off and re-rendered once (L16), with the first renders on Old 2:
+  - PR-01a A printed the sung line as a caption.
+  - PR-06a A drew the band as a separate loop.
+  - PR-04a A drew two straps on one leg, and so did its re-render. The cause was the `In frame` list: it never counted the strap. The prompt now counts it (PR-04a v2, "exactly one strap on her right knee, her left leg bare"), and the A from it is clean.
+- For your eye:
+  - PR-05a's A and B both read closer to photographic than storybook.
+  - PR-05b's trouser hem is rolled above the knee, not falling over the strap.
+- PR-01a A is the second caption in this build (after R-06b A), with only the `For the line "…":` speech marks in the prompt. If it happens again, the proposed fix is the line without its speech marks in image prompts. Not changed yet.
+
+**System (V7.90.4, L41):** a product shot's `In frame` list counts the product. `preflight.py` fails a product shot whose inventory doesn't count it.
+
+**Balances:** Higgsfield 6116.65 · Kling 38005.
+
+**Waiting on:**
+- Picks on M-06a and on all seven Act 5 pairs, then their clips.
+- Confirm or Fix on the R-03b, M-02a and M-03a clips.
