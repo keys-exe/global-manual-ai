@@ -1,0 +1,44 @@
+### Visual plan
+
+The strongest picture for every line, picked from three (hooks from five). Scores out of 12: stop · line · feel · specific · fresh · makeable.
+
+### Act 1 — the fake-out: every 'it's not because' is the stick working on her real skin, then the counter woman who said it couldn't
+
+| Beat | Line | Picked | Route | Score | Also considered |
+|---|---|---|---|---|---|
+| B01 | And it is not because it goes on pure white | the balm's flat crest pressing onto her bare, red cheekbone and drawing one clean white stripe | PRODUCT | 11/12 | LITERAL: the uncapped stick held up white end to the lens (7) · DETAIL: a macro of the white balm crest alone, no skin (7) |
+| B02 ★ hero | and then turns into my exact shade | side-on macro: the brush circles through the white stripe and the white becomes her olive skin right behind the crown, still white ahead of it | PROOF | 11/12 | CONTRAST: two stills: white stripe, then blended cheek, cut together (8) · LITERAL: the brush end held up to the lens (6) |
+| B03 | and melts in like it was made for my skin. | two fingertips pat the finished cheek, then her eyes come to the lens, quietly pleased; her crow's feet still there | REACTION | 11/12 | PROOF: a slow look at the blended cheek in window light (8) · SYMBOL: the capped stick set down on the vanity (6) |
+| B04 | Even the woman at the makeup counter | over the saleswoman's shoulder: she holds a bottle up to the creator's red jaw and tilts her head — already doubtful | STAKES | 12/12 | WORLD: the whole beauty hall, the creator small at one counter (8) · LITERAL: an empty makeup counter (5) |
+| B05 | told me my redness was too tricky to match | three beige swatch stripes on her red jaw, none of them matching, the sponge hand lowering away | DETAIL | 12/12 | REACTION: the saleswoman shaking her head (7) · STAKES: the creator looking down at the counter, deflated (8) |
+
+### Act 2 — the reasons pile up: each problem named is covered on her face, then the world notices
+
+| Beat | Line | Picked | Route | Score | Also considered |
+|---|---|---|---|---|---|
+| B06 ★ hero | It is not because it covered the redness, | her cheek half done — even on one side, red on the other — the brush stopping right on the border | CONTRAST | 12/12 | PROOF: the whole cheek blended, red gone (8) · LITERAL: a close-up of red skin (6) |
+| B07 | the hyperpigmentation, the old post-acne marks, | from under the jaw: the balm crest glides over the small brown marks, a thin white line laid on them | DETAIL | 11/12 | CONTRAST: the marks, then the blended jaw (7) · LITERAL: a macro of the brown marks alone (7) |
+| B08 | and every tired line and dark circle | the brush pats under her eye: the dark circle evens out while the crow's feet stay exactly where they were | PROOF | 11/12 | STAKES: her tired eye in the mirror before (8) · LITERAL: a macro of the dark circle (7) |
+| B09 | And it is definitely not because three of my friends this week | over her shoulder at the café: three friends lean in at once, coffees in hand, eyes on her face | WORLD | 12/12 | REACTION: one friend's eyebrows going up (7) · LITERAL: three coffees on a table (6) |
+| B10 | asked what I am using, | the auburn friend touches her own cheek with two fingers and raises her brows, asking | REACTION | 12/12 | PRODUCT: the stick slid across the café table (7) · POV: the friend's face from the creator's seat, mouthing the question (7) |
+
+### Act 3 — the easy morning: one swipe at the hall mirror and out of the door
+
+| Beat | Line | Picked | Route | Score | Also considered |
+|---|---|---|---|---|---|
+| B11 | throw this one stick on before the grocery store, | keys on one finger, one swipe across her cheek in the round brass hall mirror, cap on | PRODUCT | 12/12 | WORLD: the grocery store aisle (7) · LITERAL: the stick in her tote bag (6) |
+| B12 ★ hero | and feel completely confident walking out the door. | from low on the path: she pulls the door shut and walks two steps toward us in the morning sun, chin up | WORLD | 12/12 | REACTION: her smile in the car mirror (8) · LITERAL: a front door opening (6) |
+
+### Act 4 — the twist: the deal laid out on her vanity, and the one stick going back
+
+| Beat | Line | Picked | Route | Score | Also considered |
+|---|---|---|---|---|---|
+| B13 ★ hero | Two full Foundation Sticks for almost the price of one, | from above the vanity: her hand sets a second stick upright beside the first, both wordmarks to the lens | PRODUCT | 12/12 | LITERAL: two sticks on a white background (7) · CONTRAST: one stick, then two (8) |
+| B14 | plus a free primer, a mystery gift, | level with the vanity: the primer and the small gift box set down beside the two sticks | PRODUCT | 11/12 | DETAIL: the gift box lid lifted a crack (7) · LITERAL: the primer tube alone (6) |
+| B15 | So I am sending back my one, | straight down: her hands slide the one stick back into its carton and push it into a grey return mailer | SYMBOL | 12/12 | LITERAL: a parcel on a doorstep (6) · REACTION: her shrug to the lens (6) |
+
+### Act 5 — the formula, not her skin: her finished face and the stick in one frame
+
+| Beat | Line | Picked | Route | Score | Also considered |
+|---|---|---|---|---|---|
+| B16 ★ hero | It was never your skin. It was the formula. | she lifts the stick beside her even cheek, wordmark to the lens, every line of her face still there | PROOF | 12/12 | PRODUCT: the stick alone standing on the vanity (7) · CONTRAST: her bare face cut to her finished face (9) |

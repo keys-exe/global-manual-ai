@@ -36,16 +36,33 @@ CAST = {
  "N-BEFORE": dict(title="The creator — bare skin, before the stick (talking head + application start)", after=False, age=AGE_V2,
                   wrinkles="Her face shows its forty-six years plainly: deep crow's feet, forehead lines, frown lines and deep folds from the nose to the mouth, visible in every panel and deepest in the close-up."),
  "N-AFTER": dict(title="The creator — after: the stick blended in, every line kept (talking head end + after beats)", after=True),
+
+ # step 4–5 cast (2026-10-02): the two people who appear in more than one beat; new faces, nothing attached (§19)
+ "C1-COUNTER": dict(title="The makeup-counter saleswoman (the flashback: \u201ctoo tricky to match\u201d)", after=False, ref=False, young=True,
+   side="right", wall="pale blue-grey", floor="light grey vinyl",
+   face="A heart-shaped face with a wide, smooth forehead and a narrow pointed chin, dark brown monolid eyes set wide apart under straight, thick black brows, a small low-bridged nose and a small mouth with a full lower lip. Her one marker: a small dark mole just above the right corner of her upper lip. The right eye sits a touch narrower than the left",
+   hair="Straight jet-black hair pulled back hard into a sleek low bun at the nape, centre-parted, not a strand loose, the same in every panel",
+   body="A Korean American woman with light, cool-toned skin. Petite and slim, narrow shoulders, upright posture, twenty-nine years old",
+   ward="A black fitted short-sleeved work tunic with a high round neck, slim black trousers and black flat shoes",
+   age="faint lines at the outer eyes, a few small pores across the nose, faint shadows under the eyes"),
+ "C2-FRIEND": dict(title="The friend at the caf\u00e9 who asks what she\u2019s using (this week)", after=False, ref=False,
+   side="left", wall="soft sage", floor="pale ash floorboards",
+   face="A square face with a strong jaw and broad cheekbones, light green eyes under fair, thin, straight brows, a long straight nose with a small bump on the bridge and a wide thin-lipped mouth. Her one marker: a thick scatter of freckles across the nose and both cheeks. The left side of her mouth sits a touch higher than the right",
+   hair="Copper-auburn hair cut in a blunt bob to the jaw with a straight fringe, the same tone and the same length in every panel",
+   body="A white American woman with fair, pink-toned skin. Tall and sturdy, broad shoulders, forty-four years old",
+   ward="An olive-green linen button-down shirt with the sleeves rolled to the elbow, light-wash straight jeans and tan leather sandals",
+   age="crow's feet when the face is still, two horizontal lines across the forehead, soft folds from the nose to the mouth, fine lines on the neck"),
 }
 
 def build(k, c):
+    face, hair, body, ward = c.get("face", FACE), c.get("hair", HAIR), c.get("body", BODY), c.get("ward", WARD)
     sheet = S("AVATAR-SHEET")
     first, rest = sheet.split(". ", 1)
     sheet = first + ". " + S("SHEET-GRID") + " " + rest
-    for a, b in [("[WOMAN/MAN]", "WOMAN"), ("[FACE — architecture in three or four plain sentences, the one marker, the asymmetries]", FACE),
-                 ("[HAIR — colour, roots, how worn, the same tone and the same height in every panel]", HAIR),
-                 ("[BODY — build, height impression]", BODY), ("[WARDROBE — BASE, LOWER, FOOT]", WARD),
-                 ("[SIDE]", "left"), ("[WALL COLOUR]", "pale warm grey"), ("[FLOOR]", "worn oak floorboards")]:
+    for a, b in [("[WOMAN/MAN]", "WOMAN"), ("[FACE — architecture in three or four plain sentences, the one marker, the asymmetries]", face),
+                 ("[HAIR — colour, roots, how worn, the same tone and the same height in every panel]", hair),
+                 ("[BODY — build, height impression]", body), ("[WARDROBE — BASE, LOWER, FOOT]", ward),
+                 ("[SIDE]", c.get("side", "left")), ("[WALL COLOUR]", c.get("wall", "pale warm grey")), ("[FLOOR]", c.get("floor", "worn oak floorboards"))]:
         sheet = sheet.replace(a, b)
     neg_sheet = S("NEG-SHEET").replace("no skin patches, ", "")   # the brown patches and redness are the script's problem — wanted
     if c["after"]:   # the after look IS the product on her face: an even, natural foundation finish, terrain unchanged (cover, not erase)
@@ -57,11 +74,14 @@ def build(k, c):
                 "the foundation lying evenly across the lines and not sitting in them; the neck the same tone as the face; no smoothing, no blur, no airbrushed finish.")
     else:
         skin = "IN THE FACE CLOSE-UP: " + S("SKIN-T").replace("[AGE-FEATURES]", c.get("age", AGE))
+        if c.get("young"):   # SKIN-T is written for mature skin; a woman under 35 keeps its texture without the deep creases
+            skin = skin.replace("three deep horizontal creases and a fine crosshatch of smaller ones", "two faint horizontal lines").replace("Neck looser and more creped than the face. ", "")
         if c.get("wrinkles"):
             sheet = sheet.replace("Bare face, no makeup, in every panel including the close-up.", "Bare face, no makeup, in every panel including the close-up. " + c["wrinkles"])
     assert "[" not in sheet, k
-    neg = ", ".join([neg_sheet, S("NEG-GRID"), S("NEG-FILE")])
-    return "\n\n".join([FACE_REF, S("CAM-LOCK"), sheet, skin, S("CAP-SHARP"), S("CAP-FILE"), "AVOID: " + neg + "."])
+    neg = ", ".join([neg_sheet, S("NEG-GRID"), S("NEG-FILE")] + ([] if c.get("ref", True) else [S("NEG-DEFAULT-FACE")]))
+    head = [FACE_REF] if c.get("ref", True) else []
+    return "\n\n".join(head + [S("CAM-LOCK"), sheet, skin, S("CAP-SHARP"), S("CAP-FILE"), "AVOID: " + neg + "."])
 
 if __name__ == "__main__":
     out = {}
