@@ -24,7 +24,8 @@ CUE.json — the scene's music cue, from its sound plan:
   match the script under 85% (missing words listed); --words-out saves the word timings for cuts.
   "bpm": 88 pins the tempo (and the cut grid).
 cuts:    music.py cuts CUE TRACK --rows rows.json [--words words.json] — §3C/§30H for a music video. Sung, with a
-         `phrase` per row: each row cuts on the beat at or before the first sung word of its line (never after it).
+         `phrase` per row: each row cuts 2 frames before the first sung word of its line, or on a beat at most 0.25s
+         before it — never a full beat early, never under the line before (EARLY) — V7.91.4.
          Instrumental: rows hold their `bars` from cuts on bar lines, section changes on the music's. Prints every
          row's cut, time on screen and call length (E6); FLASH under 2.0s, SPLIT over 15s, NOT SUNG, HOLE.
 render:  music.py render CUE TRACK --rows rows.json --out rough.mp4 — the rough cut: each clip from its 0.4s
@@ -225,7 +226,8 @@ def vocals(path):
 
 def transcribe(path):
     from faster_whisper import WhisperModel
-    m = WhisperModel("base.en", device="cpu", compute_type="int8")
+    # V7.91.4 (L56): the cut words are timed with medium.en, as assemble.py (V7.80.0) — base.en placed sung words up to 0.7 s off
+    m = WhisperModel("medium.en", device="cpu", compute_type="int8")
     segs, _ = m.transcribe(str(path), vad_filter=False, word_timestamps=True)
     return [{"w": w.word.strip(), "t": round(w.start, 3), "end": round(w.end, 3), "p": round(w.probability, 2)}
             for s in segs for w in (s.words or [])]
@@ -360,34 +362,55 @@ def snap(t, grid_times):
     return prev[-1] if prev else (grid_times[0] if grid_times else t)
 
 
-def phrase_onset(phrase, heard):
-    """Onset of the first word of `phrase` in the sung words (sequence match of its first three words)."""
+def phrase_onset(phrase, heard, full=False, after=-1.0):
+    """Onset of the first word of `phrase` in the sung words (sequence match of its first three words), searching
+    only after `after` seconds so a repeated phrase finds its own line, not an earlier one (V7.91.4).
+    full=True also returns the end of the sung word just before it (the previous line's last word)."""
     want = words_of(phrase)[:3]
     if not want:
-        return None
-    flat = [(w, x["t"]) for x in heard for w in words_of(x["w"])]
+        return (None, None) if full else None
+    flat = [(w, x["t"], x.get("end", x["t"])) for x in heard for w in words_of(x["w"])]
     for k in range(len(flat) - len(want) + 1):
-        if [f[0] for f in flat[k:k + len(want)]] == want:
-            return flat[k][1]
-    return None
+        if flat[k][1] > after and [f[0] for f in flat[k:k + len(want)]] == want:
+            return (flat[k][1], flat[k - 1][2] if k else None) if full else flat[k][1]
+    return (None, None) if full else None
+
+
+LEAD = 2 / 24      # the picture lands 2 frames before the line's first sung word (§30H)
+BEAT_PULL = 0.25   # a beat this close before the word takes the cut instead (on the beat, never early)
+TAIL = 0.15        # sung words run legato: the transcript ends a word where the next begins, so a cut up to
+                   # 0.15 s before that end is still clear of the line before; earlier than that is EARLY
 
 
 def lyric_cuts(rows, g, heard, skip=0.4, handle=0.5):
-    """§3C sung: each row cuts on the beat at or before the first sung word of its `phrase` — never after it —
-    and holds to the next row's cut; the first row starts at 0, the last ends with the track."""
+    """§3C sung (V7.91.4, L56): each row cuts on the first sung word of its `phrase`, 2 frames ahead of it, or on a
+    beat at most 0.25 s before that word — never a full beat early — and never while the previous line's last sung
+    word is still sounding (EARLY). It holds to the next row's cut; the first row starts at 0, the last ends with
+    the track. The old rule (the beat at or before the word) brought the picture in up to one beat early (0.8 s at
+    74 bpm), under the end of the line before."""
     import math
     beats = g["beats"]
-    cuts, fails = [], []
+    cuts, fails, last_on = [], [], -1.0
     for i, r in enumerate(rows):
         if i == 0:
             cuts.append(0.0)
+            if r.get("phrase"):
+                last_on = phrase_onset(r["phrase"], heard) or -1.0
             continue
-        on = phrase_onset(r.get("phrase", ""), heard) if r.get("phrase") else None
+        on, prev_end = phrase_onset(r.get("phrase", ""), heard, full=True, after=last_on + 0.01) if r.get("phrase") else (None, None)
+        if on is not None:
+            last_on = on
         if on is None:
             fails.append(f"NOT SUNG: {r['beat']} — its phrase {r.get('phrase')!r} is not heard in the track")
             cuts.append(cuts[-1] + 2.0)
             continue
-        cuts.append(float(snap(on - 0.02, beats)))
+        near = [b for b in beats if on - BEAT_PULL <= b <= on]
+        cut = float(near[-1]) if near else on - LEAD
+        if prev_end is not None and cut < prev_end - TAIL:
+            cut = max(cut, min(prev_end - TAIL, on - LEAD))
+        if prev_end is not None and cut < prev_end - TAIL:
+            fails.append(f"EARLY: {r['beat']} cuts at {cut:.2f}s while the line before is still sung (to {prev_end:.2f}s)")
+        cuts.append(round(cut, 3))
     out = []
     for i, r in enumerate(rows):
         end = cuts[i + 1] if i + 1 < len(rows) else g["length_s"]
@@ -395,7 +418,7 @@ def lyric_cuts(rows, g, heard, skip=0.4, handle=0.5):
         call = min(15, max(3, math.ceil(on + skip + handle - 1e-9)))
         out.append({"beat": r["beat"], "phrase": r.get("phrase", ""), "cut_s": round(cuts[i], 3), "end_s": round(end, 3),
                     "on_screen_s": on, "call_s": call})
-        if on < 2.0:
+        if on < 2.0 and not r.get("flash_ok"):
             fails.append(f"FLASH: {r['beat']} on screen {on}s < 2.0s — merge it with the next line's row")
         if on + skip + handle > 15:
             fails.append(f"SPLIT: {r['beat']} needs {on}s, over one 15s clip — split the row")

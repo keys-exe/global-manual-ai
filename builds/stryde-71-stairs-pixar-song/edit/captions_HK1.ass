@@ -3,159 +3,174 @@ ScriptType: v4.00+
 PlayResX: 1080
 PlayResY: 1920
 WrapStyle: 2
+ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Lyric,DejaVu Sans,58,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,2,80,80,470,1
-Style: Over0,DejaVu Sans,64,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,0,0,3,16,0,2,80,80,560,1
-Style: Over1,DejaVu Sans,56,&H00000000,&H00000000,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,3,14,0,2,80,80,440,1
+Style: Lyric,Poppins ExtraBold,82,&H003CC9FF,&H00FFFFFF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,6,4,2,70,70,520,1
+Style: Over0,Poppins Black,96,&H003CC9FF,&H003CC9FF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,7,4,2,70,70,640,1
+Style: Over1,Poppins ExtraBold,66,&H00FFFFFF,&H00FFFFFF,&H00101A2B,&H96000000,0,0,0,0,100,100,1,0,1,6,4,2,70,70,520,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:01.89,Lyric,,0,0,0,,I'm seventy-one,
-Dialogue: 0,0:00:01.89,0:00:04.38,Lyric,,0,0,0,,and I take\Nthe stairs
-Dialogue: 0,0:00:04.38,0:00:08.64,Lyric,,0,0,0,,faster than women\Nhalf my age.
-Dialogue: 0,0:00:08.64,0:00:09.59,Lyric,,0,0,0,,Last Sunday,
-Dialogue: 0,0:00:09.59,0:00:11.80,Lyric,,0,0,0,,my daughter\Nwalked behind me
-Dialogue: 0,0:00:11.80,0:00:13.20,Lyric,,0,0,0,,the whole way\Nup and said,
-Dialogue: 0,0:00:13.20,0:00:15.54,Lyric,,0,0,0,,"Mama, when did\Nthat happen?"
-Dialogue: 0,0:00:17.12,0:00:18.63,Lyric,,0,0,0,,Six weeks ago,\NI was going
-Dialogue: 0,0:00:18.63,0:00:20.08,Lyric,,0,0,0,,down my stairs\Nbackwards.
-Dialogue: 0,0:00:20.08,0:00:22.14,Lyric,,0,0,0,,One step\Nat a time.
-Dialogue: 0,0:00:22.14,0:00:23.12,Lyric,,0,0,0,,I ain't gonna lie,
-Dialogue: 0,0:00:23.12,0:00:24.24,Lyric,,0,0,0,,some days I wasn't
-Dialogue: 0,0:00:24.24,0:00:25.68,Lyric,,0,0,0,,going down\Nthem at all.
-Dialogue: 0,0:00:25.68,0:00:27.36,Lyric,,0,0,0,,I'd just stay\Nupstairs.
-Dialogue: 0,0:00:27.36,0:00:28.78,Lyric,,0,0,0,,That big knee\Nbrace I bought
-Dialogue: 0,0:00:28.78,0:00:30.48,Lyric,,0,0,0,,slid right\Ndown my leg.
-Dialogue: 0,0:00:30.48,0:00:31.13,Lyric,,0,0,0,,By evening,
-Dialogue: 0,0:00:31.13,0:00:32.48,Lyric,,0,0,0,,it was around\Nmy ankle.
-Dialogue: 0,0:00:33.28,0:00:35.36,Lyric,,0,0,0,,I done tried\Neverything.
-Dialogue: 0,0:00:35.36,0:00:36.66,Lyric,,0,0,0,,Physical therapy.
-Dialogue: 0,0:00:36.66,0:00:38.80,Lyric,,0,0,0,,Pain pills.\NCortisone shots.
-Dialogue: 0,0:00:38.80,0:00:40.60,Lyric,,0,0,0,,Every brace and\Nsleeve they make.
-Dialogue: 0,0:00:40.60,0:00:42.48,Lyric,,0,0,0,,Nothing worked.\NNothing lasted.
-Dialogue: 0,0:00:42.48,0:00:44.00,Lyric,,0,0,0,,Nothing gave me\Nmy life back.
-Dialogue: 0,0:00:44.00,0:00:45.04,Lyric,,0,0,0,,Then my grandbaby
-Dialogue: 0,0:00:45.04,0:00:46.26,Lyric,,0,0,0,,got married\Nin June.
-Dialogue: 0,0:00:46.26,0:00:48.00,Lyric,,0,0,0,,My cousin Loretta\Nwas there.
-Dialogue: 0,0:00:48.00,0:00:48.94,Lyric,,0,0,0,,She's\Nseventy-four,
-Dialogue: 0,0:00:48.94,0:00:50.60,Lyric,,0,0,0,,and she was\Nout on that
-Dialogue: 0,0:00:50.60,0:00:52.18,Lyric,,0,0,0,,dance floor\Nall night.
-Dialogue: 0,0:00:52.18,0:00:53.27,Lyric,,0,0,0,,Electric Slide,
-Dialogue: 0,0:00:53.27,0:00:55.08,Lyric,,0,0,0,,Cupid Shuffle,\Nall of it.
-Dialogue: 0,0:00:55.08,0:00:56.14,Lyric,,0,0,0,,Both her knees was
-Dialogue: 0,0:00:56.14,0:00:57.14,Lyric,,0,0,0,,bone on bone too.
-Dialogue: 0,0:00:57.14,0:00:58.65,Lyric,,0,0,0,,I always\Nfigured hers
-Dialogue: 0,0:00:58.65,0:01:00.24,Lyric,,0,0,0,,wasn't as\Nbad as mine.
-Dialogue: 0,0:01:01.02,0:01:02.48,Lyric,,0,0,0,,I always figured
-Dialogue: 0,0:01:02.48,0:01:04.40,Lyric,,0,0,0,,mine was\Npast fixing.
-Dialogue: 0,0:01:05.04,0:01:05.91,Lyric,,0,0,0,,Loretta came to
-Dialogue: 0,0:01:05.91,0:01:07.06,Lyric,,0,0,0,,stay the\Nweek after.
-Dialogue: 0,0:01:08.26,0:01:09.49,Lyric,,0,0,0,,She watched me at
-Dialogue: 0,0:01:09.49,0:01:10.80,Lyric,,0,0,0,,the kitchen table,
-Dialogue: 0,0:01:10.80,0:01:12.28,Lyric,,0,0,0,,going through my\Nmorning routine.
-Dialogue: 0,0:01:12.28,0:01:14.00,Lyric,,0,0,0,,Two\Nanti-inflammatories,
-Dialogue: 0,0:01:14.00,0:01:15.36,Lyric,,0,0,0,,the gel,\Nthe brace,
-Dialogue: 0,0:01:15.36,0:01:16.86,Lyric,,0,0,0,,an ice pack on\Nmy right knee.
-Dialogue: 0,0:01:16.86,0:01:18.22,Lyric,,0,0,0,,After a minute\Nshe said,
-Dialogue: 0,0:01:18.22,0:01:20.02,Lyric,,0,0,0,,"Baby, can I show\Nyou something?"
-Dialogue: 0,0:01:20.02,0:01:21.38,Lyric,,0,0,0,,She pulled up\Nher pant leg.
-Dialogue: 0,0:01:21.38,0:01:23.04,Lyric,,0,0,0,,She had on a\Nlittle black strap,
-Dialogue: 0,0:01:23.04,0:01:24.46,Lyric,,0,0,0,,right under\Nher kneecap.
-Dialogue: 0,0:01:24.50,0:01:26.28,Lyric,,0,0,0,,Stryde.
-Dialogue: 0,0:01:26.28,0:01:28.24,Lyric,,0,0,0,,She handed me one.
-Dialogue: 0,0:01:28.24,0:01:30.42,Lyric,,0,0,0,,It looked ridiculous.\NToo small.
-Dialogue: 0,0:01:30.42,0:01:31.47,Lyric,,0,0,0,,I said, "Loretta,
-Dialogue: 0,0:01:31.47,0:01:32.84,Lyric,,0,0,0,,you know\Ngood and well
-Dialogue: 0,0:01:32.84,0:01:33.96,Lyric,,0,0,0,,this ain't\Ngonna work
-Dialogue: 0,0:01:33.96,0:01:35.02,Lyric,,0,0,0,,on knees\Nlike mine."
-Dialogue: 0,0:01:35.02,0:01:37.28,Lyric,,0,0,0,,She said,\N"Just put it on
-Dialogue: 0,0:01:37.28,0:01:38.66,Lyric,,0,0,0,,and walk down\Nthem stairs."
-Dialogue: 0,0:01:38.66,0:01:39.30,Lyric,,0,0,0,,I did.
-Dialogue: 0,0:01:39.30,0:01:40.58,Lyric,,0,0,0,,Chile, the\Nfirst step,
-Dialogue: 0,0:01:40.58,0:01:41.56,Lyric,,0,0,0,,I didn't even have
-Dialogue: 0,0:01:41.56,0:01:42.48,Lyric,,0,0,0,,to hold the rail.
-Dialogue: 0,0:01:42.48,0:01:44.12,Lyric,,0,0,0,,Not the second.\NNot the third.
-Dialogue: 0,0:01:44.12,0:01:45.36,Lyric,,0,0,0,,All the way down.
-Dialogue: 0,0:01:45.36,0:01:46.56,Lyric,,0,0,0,,Both feet.\NForwards.
-Dialogue: 0,0:01:46.56,0:01:47.13,Lyric,,0,0,0,,She said,
-Dialogue: 0,0:01:47.13,0:01:48.78,Lyric,,0,0,0,,"Everything\Nelse you tried
-Dialogue: 0,0:01:48.78,0:01:51.18,Lyric,,0,0,0,,was made to keep\Nyou comfortable
-Dialogue: 0,0:01:51.18,0:01:53.00,Lyric,,0,0,0,,while your\Nknee got worse.
-Dialogue: 0,0:01:53.00,0:01:56.02,Lyric,,0,0,0,,This one fixes\Nwhy it hurts."
-Dialogue: 0,0:01:56.02,0:01:57.19,Lyric,,0,0,0,,She said,\N"There's one
-Dialogue: 0,0:01:57.19,0:01:58.36,Lyric,,0,0,0,,spot under\Nthe kneecap
-Dialogue: 0,0:01:58.36,0:01:59.78,Lyric,,0,0,0,,where every\Nstep lands.
-Dialogue: 0,0:01:59.78,0:02:00.76,Lyric,,0,0,0,,Every brace,\Nevery shot,
-Dialogue: 0,0:02:00.76,0:02:02.72,Lyric,,0,0,0,,every pill\Nyou ever tried
-Dialogue: 0,0:02:02.72,0:02:03.88,Lyric,,0,0,0,,treated the\Nwhole knee.
-Dialogue: 0,0:02:03.88,0:02:04.48,Lyric,,0,0,0,,Not that spot.
-Dialogue: 0,0:02:04.48,0:02:05.62,Lyric,,0,0,0,,That's why ain't\Nnothing worked.
-Dialogue: 0,0:02:05.62,0:02:07.10,Lyric,,0,0,0,,The pain is\Npressure.
-Dialogue: 0,0:02:07.10,0:02:08.30,Lyric,,0,0,0,,That's all it is.
-Dialogue: 0,0:02:08.30,0:02:09.98,Lyric,,0,0,0,,This strap sits\Nright on that spot
-Dialogue: 0,0:02:09.98,0:02:11.32,Lyric,,0,0,0,,and takes the\Nweight off."
-Dialogue: 0,0:02:11.32,0:02:13.18,Lyric,,0,0,0,,First step.\NPain gone.
-Dialogue: 0,0:02:13.18,0:02:14.22,Lyric,,0,0,0,,Just like that.
-Dialogue: 0,0:02:14.22,0:02:15.60,Lyric,,0,0,0,,Over two\Nhundred thousand
-Dialogue: 0,0:02:15.60,0:02:16.70,Lyric,,0,0,0,,people wear\None now.
-Dialogue: 0,0:02:16.70,0:02:18.56,Lyric,,0,0,0,,Sports doctors\Nrecommend it.
-Dialogue: 0,0:02:18.56,0:02:19.88,Lyric,,0,0,0,,Not the pharma\Ncompanies.
-Dialogue: 0,0:02:19.88,0:02:20.68,Lyric,,0,0,0,,Sports doctors.
-Dialogue: 0,0:02:20.68,0:02:22.30,Lyric,,0,0,0,,Loretta's husband\Nwears one.
-Dialogue: 0,0:02:22.30,0:02:23.37,Lyric,,0,0,0,,He's seventy-six,
-Dialogue: 0,0:02:23.37,0:02:25.32,Lyric,,0,0,0,,and he plays golf\Ntwice a week.
-Dialogue: 0,0:02:25.32,0:02:26.32,Lyric,,0,0,0,,Her niece\Nwears one
-Dialogue: 0,0:02:26.32,0:02:27.38,Lyric,,0,0,0,,when she\Nruns track.
-Dialogue: 0,0:02:27.38,0:02:28.28,Lyric,,0,0,0,,She's twenty-two.
-Dialogue: 0,0:02:28.28,0:02:29.96,Lyric,,0,0,0,,I've worn\Nmine every
-Dialogue: 0,0:02:29.96,0:02:31.48,Lyric,,0,0,0,,day for six weeks.
-Dialogue: 0,0:02:31.48,0:02:32.84,Lyric,,0,0,0,,Under my clothes.
-Dialogue: 0,0:02:32.84,0:02:33.82,Lyric,,0,0,0,,Don't nobody\Nknow it's there.
-Dialogue: 0,0:02:34.62,0:02:35.72,Lyric,,0,0,0,,No pills. No gel.
-Dialogue: 0,0:02:35.72,0:02:37.43,Lyric,,0,0,0,,No brace around my
-Dialogue: 0,0:02:37.43,0:02:39.24,Lyric,,0,0,0,,ankle by\Nlunchtime.
-Dialogue: 0,0:02:40.46,0:02:42.58,Lyric,,0,0,0,,Yesterday I walked\Nto the store.
-Dialogue: 0,0:02:42.58,0:02:44.90,Lyric,,0,0,0,,Two miles there.\NTwo miles back.
-Dialogue: 0,0:02:44.90,0:02:46.70,Lyric,,0,0,0,,Passed three\Nwomen half my age.
-Dialogue: 0,0:02:46.70,0:02:47.97,Lyric,,0,0,0,,Stood in\Nthat checkout
-Dialogue: 0,0:02:47.97,0:02:48.90,Lyric,,0,0,0,,line ten minutes
-Dialogue: 0,0:02:48.90,0:02:50.38,Lyric,,0,0,0,,without shifting\Nmy weight.
-Dialogue: 0,0:02:50.38,0:02:51.80,Lyric,,0,0,0,,Carried two\Nbags home.
-Dialogue: 0,0:02:51.80,0:02:53.40,Lyric,,0,0,0,,Didn't nobody\Nhelp me.
-Dialogue: 0,0:02:53.40,0:02:55.26,Lyric,,0,0,0,,When I got home,\Nmy husband said,
-Dialogue: 0,0:02:55.26,0:02:57.24,Lyric,,0,0,0,,"You was gone\Na long time."
-Dialogue: 0,0:02:57.24,0:02:58.06,Lyric,,0,0,0,,I said, "I know."
-Dialogue: 0,0:02:58.06,0:02:59.24,Lyric,,0,0,0,,That was six weeks
-Dialogue: 0,0:02:59.24,0:03:00.62,Lyric,,0,0,0,,of wearing\Nthe strap.
-Dialogue: 0,0:03:00.62,0:03:01.46,Lyric,,0,0,0,,Nothing else.
-Dialogue: 0,0:03:01.46,0:03:03.19,Lyric,,0,0,0,,Three ladies\Nfrom church
-Dialogue: 0,0:03:03.19,0:03:04.56,Lyric,,0,0,0,,already\Nordered one
-Dialogue: 0,0:03:04.56,0:03:05.78,Lyric,,0,0,0,,after they\Nwatched me come
-Dialogue: 0,0:03:05.78,0:03:06.82,Lyric,,0,0,0,,down the\Nchurch steps.
-Dialogue: 0,0:03:06.82,0:03:08.46,Lyric,,0,0,0,,So I'ma just say\Nit right here.
-Dialogue: 0,0:03:08.46,0:03:09.61,Lyric,,0,0,0,,It's called Stryde
-Dialogue: 0,0:03:09.61,0:03:11.34,Lyric,,0,0,0,,Patellar Force\NRedirection.
-Dialogue: 0,0:03:11.34,0:03:12.30,Lyric,,0,0,0,,They spent three
-Dialogue: 0,0:03:12.30,0:03:13.38,Lyric,,0,0,0,,years designing it
-Dialogue: 0,0:03:13.38,0:03:15.18,Lyric,,0,0,0,,with orthopedic\Nsurgeons.
-Dialogue: 0,0:03:15.18,0:03:16.28,Lyric,,0,0,0,,It's the\Nreal thing.
-Dialogue: 0,0:03:16.28,0:03:18.00,Lyric,,0,0,0,,Not them cheap\Nknock-offs
-Dialogue: 0,0:03:18.00,0:03:19.36,Lyric,,0,0,0,,they be selling\Non Amazon
-Dialogue: 0,0:03:19.36,0:03:20.92,Lyric,,0,0,0,,and them fake\Nwebsites.
-Dialogue: 0,0:03:20.92,0:03:22.54,Lyric,,0,0,0,,The link's right\Ndown below.
-Dialogue: 0,0:03:22.54,0:03:23.66,Lyric,,0,0,0,,Two straps for the
-Dialogue: 0,0:03:23.66,0:03:25.10,Lyric,,0,0,0,,price of one\Nright now.
-Dialogue: 0,0:03:25.10,0:03:26.92,Lyric,,0,0,0,,Sixty days to\Nsend them back
-Dialogue: 0,0:03:26.92,0:03:28.02,Lyric,,0,0,0,,if they\Ndon't work.
-Dialogue: 0,0:03:28.02,0:03:30.52,Lyric,,0,0,0,,Eleven years\Nof knee pain.
-Dialogue: 0,0:03:30.52,0:03:32.18,Lyric,,0,0,0,,Gone the\Nfirst step
-Dialogue: 0,0:03:32.18,0:03:33.76,Lyric,,0,0,0,,I took with it on.
-Dialogue: 0,0:03:34.80,0:03:36.54,Lyric,,0,0,0,,I bought\Nmy sister a
-Dialogue: 0,0:03:36.54,0:03:38.28,Lyric,,0,0,0,,pair that\Nsame week.
-Dialogue: 0,0:03:39.38,0:03:40.32,Lyric,,0,0,0,,She coming Sunday.
-Dialogue: 0,0:03:40.32,0:03:41.53,Lyric,,0,0,0,,She gon'\Nwalk up my
-Dialogue: 0,0:03:41.53,0:03:42.68,Lyric,,0,0,0,,stairs on her own.
-Dialogue: 0,0:03:42.93,0:03:48.02,Over0,,0,0,0,,Buy 1 Get 1 Free
-Dialogue: 0,0:03:43.43,0:03:48.02,Over1,,0,0,0,,60-day money-back guarantee
+Dialogue: 0,0:00:00.00,0:00:01.64,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf137}I'm {\kf25}seventy-one,
+Dialogue: 0,0:00:01.64,0:00:04.44,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf146}and {\kf18}I {\kf24}take\N{\kf18}the {\kf74}stairs
+Dialogue: 0,0:00:04.44,0:00:08.60,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf116}faster {\kf34}than {\kf84}women\N{\kf62}half {\kf48}my {\kf72}age.
+Dialogue: 0,0:00:08.60,0:00:09.56,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf56}Last {\kf40}Sunday,
+Dialogue: 0,0:00:09.56,0:00:11.76,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf26}my {\kf36}daughter\N{\kf62}walked {\kf52}behind {\kf44}me
+Dialogue: 0,0:00:11.76,0:00:13.30,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}the {\kf26}whole {\kf22}way\N{\kf22}up {\kf20}and {\kf28}said,
+Dialogue: 0,0:00:13.30,0:00:16.58,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf72}"Mama, {\kf28}when {\kf14}did\N{\kf22}that {\kf60}happen?"
+Dialogue: 0,0:00:17.02,0:00:18.68,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}Six {\kf28}weeks {\kf46}ago,\N{\kf26}I {\kf16}was {\kf25}going
+Dialogue: 0,0:00:18.68,0:00:20.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}down {\kf30}my {\kf32}stairs\N{\kf62}backwards.
+Dialogue: 0,0:00:20.72,0:00:22.06,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}One {\kf34}step\N{\kf22}at {\kf20}a {\kf26}time.
+Dialogue: 0,0:00:22.06,0:00:22.98,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}I {\kf20}ain't\N{\kf22}gonna {\kf28}lie,
+Dialogue: 0,0:00:22.98,0:00:24.12,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}some {\kf28}days\N{\kf28}I {\kf26}wasn't
+Dialogue: 0,0:00:24.12,0:00:25.94,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf26}going {\kf26}down\N{\kf18}them {\kf20}at {\kf60}all.
+Dialogue: 0,0:00:25.94,0:00:27.44,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}I'd {\kf22}just {\kf40}stay\N{\kf32}upstairs.
+Dialogue: 0,0:00:27.44,0:00:28.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf5}That {\kf16}big {\kf22}knee\N{\kf36}brace {\kf22}I {\kf30}bought
+Dialogue: 0,0:00:28.72,0:00:30.40,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf54}slid {\kf22}right\N{\kf24}down {\kf34}my {\kf34}leg.
+Dialogue: 0,0:00:30.40,0:00:31.00,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}By {\kf32}evening,
+Dialogue: 0,0:00:31.00,0:00:32.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}it {\kf16}was {\kf36}around\N{\kf36}my {\kf78}ankle.
+Dialogue: 0,0:00:32.84,0:00:35.66,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf94}I {\kf18}done {\kf56}tried\N{\kf86}everything.
+Dialogue: 0,0:00:35.66,0:00:36.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf50}Physical\N{\kf68}therapy.
+Dialogue: 0,0:00:36.84,0:00:38.80,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf48}Pain {\kf70}pills.\N{\kf38}Cortisone {\kf32}shots.
+Dialogue: 0,0:00:38.80,0:00:39.46,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}Every {\kf28}brace {\kf25}and
+Dialogue: 0,0:00:39.46,0:00:40.52,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}sleeve\N{\kf34}they {\kf40}make.
+Dialogue: 0,0:00:40.52,0:00:41.46,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}Nothing {\kf32}worked.
+Dialogue: 0,0:00:41.46,0:00:42.56,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf20}Nothing {\kf76}lasted.
+Dialogue: 0,0:00:42.56,0:00:43.92,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}Nothing {\kf26}gave {\kf16}me\N{\kf20}my {\kf22}life {\kf30}back.
+Dialogue: 0,0:00:43.92,0:00:44.88,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf38}Then {\kf18}my\N{\kf40}grandbaby
+Dialogue: 0,0:00:44.88,0:00:46.48,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf30}got {\kf44}married\N{\kf34}in {\kf30}June.
+Dialogue: 0,0:00:46.48,0:00:47.94,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}My {\kf24}cousin {\kf48}Loretta\N{\kf28}was {\kf28}there.
+Dialogue: 0,0:00:47.94,0:00:49.44,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf126}She's\N{\kf25}seventy-four,
+Dialogue: 0,0:00:49.44,0:00:50.40,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf12}and {\kf14}she {\kf16}was\N{\kf22}out {\kf16}on {\kf25}that
+Dialogue: 0,0:00:50.40,0:00:52.42,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}dance {\kf32}floor\N{\kf42}all {\kf30}night.
+Dialogue: 0,0:00:52.42,0:00:53.64,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf52}Electric {\kf52}Slide,
+Dialogue: 0,0:00:53.64,0:00:55.06,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}Cupid {\kf32}Shuffle,\N{\kf38}all {\kf14}of {\kf25}it.
+Dialogue: 0,0:00:55.06,0:00:56.08,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf49}Both {\kf13}her\N{\kf18}knees {\kf25}was
+Dialogue: 0,0:00:56.08,0:00:57.10,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}bone {\kf22}on\N{\kf20}bone {\kf36}too.
+Dialogue: 0,0:00:57.10,0:00:58.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}I {\kf20}always\N{\kf22}figured {\kf46}hers
+Dialogue: 0,0:00:58.34,0:01:00.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf42}wasn't {\kf26}as\N{\kf30}bad {\kf24}as {\kf128}mine.
+Dialogue: 0,0:01:00.84,0:01:01.88,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf38}I {\kf30}always {\kf36}figured
+Dialogue: 0,0:01:01.88,0:01:04.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf112}mine {\kf60}was\N{\kf30}past {\kf44}fixing.
+Dialogue: 0,0:01:04.34,0:01:05.74,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf82}Loretta {\kf42}came {\kf25}to
+Dialogue: 0,0:01:05.74,0:01:08.42,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}stay {\kf16}the\N{\kf22}week {\kf76}after.
+Dialogue: 0,0:01:08.42,0:01:09.70,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf52}She {\kf32}watched\N{\kf26}me {\kf25}at
+Dialogue: 0,0:01:09.70,0:01:10.76,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf14}the {\kf34}kitchen\N{\kf58}table,
+Dialogue: 0,0:01:10.76,0:01:11.48,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf34}going {\kf18}through {\kf25}my
+Dialogue: 0,0:01:11.48,0:01:12.22,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}morning {\kf56}routine.
+Dialogue: 0,0:01:12.22,0:01:14.24,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf131}Two\N{\kf25}anti-inflammatories,
+Dialogue: 0,0:01:14.24,0:01:15.40,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf30}the {\kf44}gel,\N{\kf16}the {\kf25}brace,
+Dialogue: 0,0:01:15.40,0:01:16.78,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}an {\kf14}ice {\kf16}pack {\kf16}on\N{\kf26}my {\kf20}right {\kf28}knee.
+Dialogue: 0,0:01:16.78,0:01:18.22,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf38}After {\kf28}a {\kf12}minute\N{\kf22}she {\kf38}said,
+Dialogue: 0,0:01:18.22,0:01:19.22,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}"Baby,\N{\kf22}can {\kf14}I {\kf25}show
+Dialogue: 0,0:01:19.22,0:01:20.06,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}you {\kf60}something?"
+Dialogue: 0,0:01:20.06,0:01:21.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}She {\kf26}pulled {\kf26}up\N{\kf10}her {\kf16}pant {\kf25}leg.
+Dialogue: 0,0:01:21.34,0:01:22.22,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}She {\kf36}had {\kf16}on {\kf25}a
+Dialogue: 0,0:01:22.22,0:01:22.96,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf20}little\N{\kf24}black {\kf30}strap,
+Dialogue: 0,0:01:22.96,0:01:25.48,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}right {\kf26}under\N{\kf32}her {\kf58}kneecap.
+Dialogue: 0,0:01:25.48,0:01:26.52,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf25}Stryde.
+Dialogue: 0,0:01:26.52,0:01:28.22,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf56}She {\kf34}handed\N{\kf40}me {\kf40}one.
+Dialogue: 0,0:01:28.22,0:01:29.56,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf72}It {\kf18}looked\N{\kf44}ridiculous.
+Dialogue: 0,0:01:29.56,0:01:30.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}Too {\kf42}small.
+Dialogue: 0,0:01:30.34,0:01:31.12,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}I {\kf16}said,\N{\kf40}"Loretta,
+Dialogue: 0,0:01:31.12,0:01:32.80,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf38}you {\kf14}know\N{\kf54}good {\kf22}and {\kf40}well
+Dialogue: 0,0:01:32.80,0:01:33.68,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf26}this {\kf22}ain't\N{\kf20}gonna {\kf25}work
+Dialogue: 0,0:01:33.68,0:01:34.98,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}on {\kf16}knees\N{\kf30}like {\kf56}mine."
+Dialogue: 0,0:01:34.98,0:01:37.28,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}She {\kf24}said,\N{\kf36}"Just {\kf56}put {\kf28}it {\kf46}on
+Dialogue: 0,0:01:37.28,0:01:38.64,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}and {\kf16}walk {\kf36}down\N{\kf28}them {\kf25}stairs."
+Dialogue: 0,0:01:38.64,0:01:39.49,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}I {\kf36}did.
+Dialogue: 0,0:01:39.49,0:01:40.50,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf21}Chile, {\kf18}the\N{\kf28}first {\kf34}step,
+Dialogue: 0,0:01:40.50,0:01:41.50,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf20}I {\kf30}didn't\N{\kf26}even {\kf25}have
+Dialogue: 0,0:01:41.50,0:01:42.42,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf16}to {\kf24}hold\N{\kf32}the {\kf25}rail.
+Dialogue: 0,0:01:42.42,0:01:44.04,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf46}Not {\kf16}the {\kf36}second.\N{\kf24}Not {\kf18}the {\kf25}third.
+Dialogue: 0,0:01:44.04,0:01:45.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf42}All {\kf14}the\N{\kf22}way {\kf52}down.
+Dialogue: 0,0:01:45.34,0:01:46.62,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}Both {\kf69}feet.\N{\kf25}Forwards.
+Dialogue: 0,0:01:46.62,0:01:47.04,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}She {\kf25}said,
+Dialogue: 0,0:01:47.04,0:01:48.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf42}"Everything\N{\kf38}else {\kf36}you {\kf52}tried
+Dialogue: 0,0:01:48.72,0:01:49.98,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}was {\kf46}made {\kf20}to {\kf28}keep
+Dialogue: 0,0:01:49.98,0:01:51.10,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}you {\kf76}comfortable
+Dialogue: 0,0:01:51.10,0:01:52.76,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}while {\kf38}your\N{\kf20}knee {\kf28}got {\kf40}worse.
+Dialogue: 0,0:01:52.76,0:01:56.08,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf30}This {\kf22}one {\kf40}fixes\N{\kf142}why {\kf56}it {\kf42}hurts."
+Dialogue: 0,0:01:56.08,0:01:56.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}She {\kf28}said,\N{\kf8}"There's {\kf25}one
+Dialogue: 0,0:01:56.84,0:01:58.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}spot {\kf26}under\N{\kf18}the {\kf70}kneecap
+Dialogue: 0,0:01:58.34,0:01:59.64,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf50}where {\kf20}every\N{\kf26}step {\kf34}lands.
+Dialogue: 0,0:01:59.64,0:02:00.68,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}Every {\kf28}brace,\N{\kf24}every {\kf30}shot,
+Dialogue: 0,0:02:00.68,0:02:02.64,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf30}every {\kf20}pill\N{\kf84}you {\kf24}ever {\kf38}tried
+Dialogue: 0,0:02:02.64,0:02:03.76,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}treated {\kf20}the\N{\kf20}whole {\kf28}knee.
+Dialogue: 0,0:02:03.76,0:02:04.46,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf20}Not {\kf16}that {\kf34}spot.
+Dialogue: 0,0:02:04.46,0:02:05.06,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}That's {\kf10}why {\kf28}ain't
+Dialogue: 0,0:02:05.06,0:02:05.54,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf35}nothing {\kf25}worked.
+Dialogue: 0,0:02:05.54,0:02:06.96,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf34}The {\kf32}pain {\kf36}is\N{\kf40}pressure.
+Dialogue: 0,0:02:06.96,0:02:08.26,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf56}That's\N{\kf22}all {\kf16}it {\kf36}is.
+Dialogue: 0,0:02:08.26,0:02:09.02,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf37}This {\kf19}strap {\kf25}sits
+Dialogue: 0,0:02:09.02,0:02:09.88,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}right {\kf18}on\N{\kf18}that {\kf28}spot
+Dialogue: 0,0:02:09.88,0:02:11.24,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf30}and {\kf30}takes {\kf26}the\N{\kf18}weight {\kf32}off."
+Dialogue: 0,0:02:11.24,0:02:13.14,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}First {\kf40}step.\N{\kf64}Pain {\kf42}gone.
+Dialogue: 0,0:02:13.14,0:02:14.12,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}Just {\kf28}like {\kf26}that.
+Dialogue: 0,0:02:14.12,0:02:15.18,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf46}Over {\kf20}two\N{\kf20}hundred {\kf25}thousand
+Dialogue: 0,0:02:15.18,0:02:16.62,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf26}people {\kf28}wear\N{\kf54}one {\kf36}now.
+Dialogue: 0,0:02:16.62,0:02:18.52,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf46}Sports {\kf79}doctors\N{\kf33}recommend {\kf25}it.
+Dialogue: 0,0:02:18.52,0:02:19.62,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf14}Not {\kf24}the {\kf55}pharma\N{\kf25}companies.
+Dialogue: 0,0:02:19.62,0:02:20.58,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}Sports {\kf52}doctors.
+Dialogue: 0,0:02:20.58,0:02:22.34,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf64}Loretta's {\kf36}husband\N{\kf32}wears {\kf36}one.
+Dialogue: 0,0:02:22.34,0:02:23.76,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf78}He's {\kf5}seventy-six,\N{\kf36}and {\kf28}he
+Dialogue: 0,0:02:23.76,0:02:25.14,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}plays {\kf36}golf\N{\kf30}twice {\kf28}a {\kf25}week.
+Dialogue: 0,0:02:25.14,0:02:26.24,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf34}Her {\kf18}niece\N{\kf34}wears {\kf25}one
+Dialogue: 0,0:02:26.24,0:02:27.32,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf16}when {\kf14}she\N{\kf34}runs {\kf44}track.
+Dialogue: 0,0:02:27.32,0:02:28.22,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf62}She's\N{\kf25}twenty-two.
+Dialogue: 0,0:02:28.22,0:02:29.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}I've {\kf28}worn\N{\kf60}mine {\kf34}every
+Dialogue: 0,0:02:29.72,0:02:31.44,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf34}day {\kf44}for\N{\kf42}six {\kf52}weeks.
+Dialogue: 0,0:02:31.44,0:02:32.88,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}Under {\kf28}my\N{\kf76}clothes.
+Dialogue: 0,0:02:32.88,0:02:34.62,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}Don't {\kf44}nobody\N{\kf38}know {\kf34}it's {\kf25}there.
+Dialogue: 0,0:02:34.62,0:02:35.64,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}No {\kf36}pills.\N{\kf18}No {\kf25}gel.
+Dialogue: 0,0:02:35.64,0:02:36.98,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf32}No {\kf20}brace\N{\kf42}around {\kf40}my
+Dialogue: 0,0:02:36.98,0:02:40.50,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf48}ankle {\kf60}by\N{\kf128}lunchtime.
+Dialogue: 0,0:02:40.50,0:02:41.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf68}Yesterday\N{\kf44}I {\kf25}walked
+Dialogue: 0,0:02:41.84,0:02:42.80,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}to {\kf12}the {\kf40}store.
+Dialogue: 0,0:02:42.80,0:02:43.74,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf16}Two {\kf38}miles {\kf40}there.
+Dialogue: 0,0:02:43.74,0:02:44.99,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}Two {\kf50}miles {\kf32}back.
+Dialogue: 0,0:02:44.99,0:02:45.42,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf15}Passed {\kf28}three
+Dialogue: 0,0:02:45.42,0:02:46.70,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}women {\kf24}half\N{\kf30}my {\kf46}age.
+Dialogue: 0,0:02:46.70,0:02:47.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}Stood {\kf16}in\N{\kf24}that {\kf34}checkout
+Dialogue: 0,0:02:47.72,0:02:48.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf42}line {\kf26}ten {\kf44}minutes
+Dialogue: 0,0:02:48.84,0:02:50.32,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}without {\kf48}shifting\N{\kf32}my {\kf25}weight.
+Dialogue: 0,0:02:50.32,0:02:51.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}Carried {\kf22}two\N{\kf56}bags {\kf34}home.
+Dialogue: 0,0:02:51.72,0:02:53.32,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf54}Didn't {\kf40}nobody\N{\kf40}help {\kf26}me.
+Dialogue: 0,0:02:53.32,0:02:54.12,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf18}When {\kf14}I {\kf20}got {\kf28}home,
+Dialogue: 0,0:02:54.12,0:02:55.26,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}my {\kf24}husband {\kf54}said,
+Dialogue: 0,0:02:55.26,0:02:57.20,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}"You {\kf24}was {\kf28}gone\N{\kf24}a {\kf20}long {\kf58}time."
+Dialogue: 0,0:02:57.20,0:02:58.08,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}I {\kf14}said,\N{\kf16}"I {\kf36}know."
+Dialogue: 0,0:02:58.08,0:02:59.44,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf58}That {\kf22}was\N{\kf22}six {\kf34}weeks
+Dialogue: 0,0:02:59.44,0:03:00.56,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}of {\kf38}wearing\N{\kf14}the {\kf32}strap.
+Dialogue: 0,0:03:00.56,0:03:01.36,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf38}Nothing {\kf42}else.
+Dialogue: 0,0:03:01.36,0:03:02.98,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf64}Three {\kf34}ladies\N{\kf26}from {\kf38}church
+Dialogue: 0,0:03:02.98,0:03:04.32,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf54}already\N{\kf42}ordered {\kf38}one
+Dialogue: 0,0:03:04.32,0:03:05.62,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}after {\kf24}they\N{\kf24}watched {\kf22}me {\kf25}come
+Dialogue: 0,0:03:05.62,0:03:06.74,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf38}down {\kf12}the\N{\kf30}church {\kf32}steps.
+Dialogue: 0,0:03:06.74,0:03:07.72,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf28}So {\kf22}I'ma {\kf20}just {\kf28}say
+Dialogue: 0,0:03:07.72,0:03:08.56,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf16}it {\kf14}right {\kf54}here.
+Dialogue: 0,0:03:08.56,0:03:09.81,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf34}It's {\kf61}called\N{\kf25}Stryde
+Dialogue: 0,0:03:09.81,0:03:11.24,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf31}Patellar {\kf34}Force\N{\kf78}Redirection.
+Dialogue: 0,0:03:11.24,0:03:12.14,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}They {\kf20}spent {\kf34}three
+Dialogue: 0,0:03:12.14,0:03:13.38,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf34}years\N{\kf56}designing {\kf34}it
+Dialogue: 0,0:03:13.38,0:03:15.16,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf22}with {\kf98}orthopedic\N{\kf58}surgeons.
+Dialogue: 0,0:03:15.16,0:03:16.24,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}It's {\kf16}the\N{\kf18}real {\kf34}thing.
+Dialogue: 0,0:03:16.24,0:03:18.14,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf46}Not {\kf30}them {\kf69}cheap\N{\kf25}knock-offs
+Dialogue: 0,0:03:18.14,0:03:19.38,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf10}they {\kf12}be {\kf24}selling\N{\kf38}on {\kf40}Amazon
+Dialogue: 0,0:03:19.38,0:03:21.26,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf40}and {\kf22}them {\kf30}fake\N{\kf68}websites.
+Dialogue: 0,0:03:21.26,0:03:22.46,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf16}The {\kf28}link's {\kf16}right\N{\kf22}down {\kf38}below.
+Dialogue: 0,0:03:22.46,0:03:23.84,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}Two {\kf64}straps\N{\kf24}for {\kf25}the
+Dialogue: 0,0:03:23.84,0:03:25.10,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}price {\kf20}of {\kf20}one\N{\kf26}right {\kf36}now.
+Dialogue: 0,0:03:25.10,0:03:26.80,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}Sixty {\kf30}days {\kf28}to\N{\kf24}send {\kf30}them {\kf25}back
+Dialogue: 0,0:03:26.80,0:03:28.06,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf26}if {\kf32}they\N{\kf30}don't {\kf38}work.
+Dialogue: 0,0:03:28.06,0:03:30.44,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf58}Eleven {\kf48}years\N{\kf26}of {\kf36}knee {\kf70}pain.
+Dialogue: 0,0:03:30.44,0:03:32.32,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf82}Gone {\kf54}the\N{\kf24}first {\kf28}step
+Dialogue: 0,0:03:32.32,0:03:34.10,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf24}I {\kf28}took\N{\kf22}with {\kf22}it {\kf82}on.
+Dialogue: 0,0:03:34.10,0:03:36.76,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf120}I {\kf28}bought\N{\kf32}my {\kf46}sister {\kf40}a
+Dialogue: 0,0:03:36.76,0:03:39.02,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf5}pair {\kf30}that\N{\kf68}same {\kf46}week.
+Dialogue: 0,0:03:39.02,0:03:40.54,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf44}She {\kf26}coming\N{\kf56}Sunday.
+Dialogue: 0,0:03:40.54,0:03:41.38,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf21}She {\kf11}gon'\N{\kf22}walk {\kf12}up {\kf25}my
+Dialogue: 0,0:03:41.38,0:03:42.88,Lyric,,0,0,0,,{\fad(60,140)\fscx82\fscy82\t(0,140,\fscx100\fscy100)}{\k12}{\kf36}stairs {\kf18}on\N{\kf22}her {\kf110}own.
+Dialogue: 0,0:03:42.88,0:03:48.02,Over0,,0,0,0,,{\fad(120,0)\fscx80\fscy80\t(0,180,\fscx100\fscy100)}Buy 1 Get 1 Free
+Dialogue: 0,0:03:43.38,0:03:48.02,Over1,,0,0,0,,{\fad(120,0)\fscx80\fscy80\t(0,180,\fscx100\fscy100)}60-day money-back guarantee
