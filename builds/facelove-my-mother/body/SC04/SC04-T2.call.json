@@ -31,6 +31,8 @@
  "subject_motion": "in_place",
  "prefer_multi_shots": "false",
  "generation": 1,
+ "fault": null,
+ "fix_note": null,
  "user_go": "chat: \"CONFIRMED ALL IMAGES. PROCEED\" (user, 2026-10-02) — Scene 4's cards confirmed on the board",
  "risks": [
   {

@@ -42,9 +42,11 @@ T["SC04-T1"] = dict(kind="take", covers=["SC04-SH01"], duration=5, motion="in_pl
     "the granite island in front of her. The only person here is Susan, and only her hand and the grey knit cuff of her cardigan sleeve are ever seen.",
     SILENT,
     "One continuous shot, never cut and never restarted, 5s, in one place with the same light, look and wardrobe throughout. Frame 1: " + st + ". "
-    "CLOSE-UP from a little above, looking down on the island: the invite card face up in the middle of the frame, exactly as @image3 lays it out. "
-    "[0s-2s]: Susan's right hand, the grey marl cuff of her cardigan at the wrist, comes in from the bottom of frame, picks up the invite by its edge and turns it over face down. "
-    "[2s-5s]: the same hand picks up the black phone lying beside it and lays it face down on top of the turned-over card, rests there for a moment, then slides out of frame the way it came. "
+    "CLOSE-UP at three-quarter from the side of the island, a little above the counter, as if from someone standing beside it: the edge of the granite running across the lower frame, "
+    "the invite card face up in the middle, the phone, mug and envelopes laid out exactly as @image3 shows. "
+    "[0s-2s]: Susan's right forearm, the grey marl cuff of her cardigan at the wrist, comes in from frame left at counter height, the way a woman standing at the island reaches; "
+    "her hand slowly picks up the invite by its edge and turns it over face down; her fingers rest flat on it for a beat. "
+    "[2s-5s]: the same hand slides the black phone lying beside it across onto the turned-over card, face down, rests on it a moment, then draws back out of frame left. "
     "Last frame: " + en + ".",
     S1.F2, S1.PHYS,
     "Exactly one invite card and exactly one phone the whole time: nothing appears, doubles or changes shape; the card stays blank on both sides.",
@@ -54,7 +56,10 @@ T["SC04-T1"] = dict(kind="take", covers=["SC04-SH01"], duration=5, motion="in_pl
             NEG_PARTY, S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)]),
   risks=[{"risk": "lettering appears on the invite", "prevented_by": "@image3 blank card, 'nothing printed', negatives"},
          {"risk": "the hand or sleeve reads as someone else / the party blouse", "prevented_by": "N-FACE + the D2 outfit card, the grey cuff named, NEG_PARTY"},
-         {"risk": "objects double or morph", "prevented_by": "counted objects, 'exactly one' clause, PHYS"}])
+         {"risk": "objects double or morph", "prevented_by": "counted objects, 'exactly one' clause, PHYS"},
+         {"risk": "the arm comes up out of the lens (v1, top-down)", "prevented_by": "three-quarter side angle a little above the counter, forearm in from frame left at counter height"}],
+  fix="CREAT NEW VERSION (user, chat, 2026-10-02 — no board note)",
+  fix_note="no fault named by the user; seen on v1: the straight top-down view brought her arm up out of the lens with an oversized sleeve, reading as a staged product shot → three-quarter angle from the side of the island a little above the counter, her forearm in from frame left at counter height, slower beats with a held rest after the turn; card, phone, outfit and narration unchanged")
 
 # T2 — the daughter's family room, D3 (SH02)
 st, en = R["SC04-SH02"]["start_pos"], R["SC04-SH02"]["end_pos"]
@@ -126,8 +131,8 @@ if __name__ == "__main__":
         call = {"beat": b, "build": "facelove-my-mother", "connector": "seedance", "model": "seedance_2_5", "mode": 4, "kind": s["kind"], "prompt": s["prompt"],
                 "take": b, "covers": s["covers"], "start_pos": s["start"], "end_pos": s["end"], "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16",
                 "start_image": None, "ingredients_approved": True, "files": [FILE[r] for r in s["refs"]], "audios": [], "generate_audio": False,
-                "dialogue": None, "script_line": None, "pace": "unhurried", "subject_motion": s["motion"], "prefer_multi_shots": "false", "generation": 1,
-                "user_go": "chat: \"CONFIRMED ALL IMAGES. PROCEED\" (user, 2026-10-02) — Scene 4's cards confirmed on the board",
+                "dialogue": None, "script_line": None, "pace": "unhurried", "subject_motion": s["motion"], "prefer_multi_shots": "false", "generation": 2 if s.get("fix") else 1, "fault": s.get("fix"), "fix_note": s.get("fix_note"),
+                "user_go": ("chat: " + s["fix"]) if s.get("fix") else "chat: \"CONFIRMED ALL IMAGES. PROCEED\" (user, 2026-10-02) — Scene 4's cards confirmed on the board",
                 "risks": s["risks"], "scene": 4, "title": s["title"], "taste": ["HT17", "HT18", "HT22", "HT23", "HT25", "HT26", "HT27"],
                 "jobs": [JOB[r] for r in s["refs"]], "vo": {"take": "VO-T1-L009", "pieces": VO[b]}}
         (H / f"{b}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
