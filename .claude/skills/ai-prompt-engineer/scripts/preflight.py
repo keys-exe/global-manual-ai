@@ -216,6 +216,10 @@ def run_image(c):
             if mode in (2, 5) and (c.get("one_offs") or (ONE_OFF_GROUP.search(NEG_CLAUSE.sub(" ", p)) and not c.get("legacy_build"))):
                 check("people with no sheet drawn to the Pixar proportion ladder (§24O rule 10)", bool(PIX_PROPORTION.search(p)),
                       "name their build in heads, e.g. 'each about 5.5 heads tall, big round heads, soft rounded bodies, large eyes' (§24A ladder)")
+                grp = ONE_OFF_GROUP.search(NEG_CLAUSE.sub(" ", p))
+                if grp and re.search(r"\beach (?:about|with|in)\b", p, re.I) and not re.search(r"\b(?:on the left|on the right|in the middle|the first|the second|the third|nearest|furthest)\b", p, re.I):
+                    check("each one-off in a group is her own person (§24O rule 10, L55)", False,
+                          "write each person in her own clause — face shape, skin tone, hair, build and where she stands — never one shared 'each…' description")
                 check("the style frame shows Pixar people full-body (§24O rule 10)", any(str(r.get("kind", "")).lower() == "style" and r.get("people") for r in refs),
                       "attach a confirmed frame with full-body characters as kind 'style' and set people: true on it — a hands or set frame gives the model no body to copy")
             no_hands = re.search(r"\b(?:no hands?|(?:both )?hands? (?:are )?(?:out of|outside the) frame)\b", p, re.I)

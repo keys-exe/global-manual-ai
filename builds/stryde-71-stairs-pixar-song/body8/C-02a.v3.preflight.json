@@ -1,0 +1,70 @@
+{
+ "beat": "C-02a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line — Three ladies from church already ordered one —: Keep this photo exactly as it is, a tall 9:16 crop at the foot of the steps; add three women. Image 1 is the church. Image 2 is the style — its runner's render and proportions.\nMedium close-up at eye level, sharp on them: three different Black church ladies of seventy, about 5.5 heads tall, big round heads, side by side at the foot of the steps facing the lens — on the left a short, plump lady with deep brown skin, round glasses and short white curls, in lilac; in the middle a tall, slim lady with light brown skin, high cheekbones, freckles and a grey bun, in coral, nudging the left one and nodding up the steps; on the right a broad lady with very dark skin, full cheeks and silver braids, in cream — matching wide hats, knowing closed-mouth smiles, eyes up the steps, a handbag in each near hand, four chunky fingers and a thumb on each. Scale true to the set: the bottom step at their ankles.\nIn frame: three women, the steps, the hedges; nobody else.\nA final frame from a 3D animated feature film, stylized storybook render, warm afternoon sun. No lettering, logos or labels but its wordmark.",
+ "script_line": "Three ladies from church already ordered one",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P5-CHURCH plate (confirmed) — the church and its steps",
+   "kind": "location"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "people": true
+  }
+ ],
+ "match": "plate",
+ "edit_of": "020f7d83-d6e2-4744-9595-bef39ecf8f9f",
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user image Fix \"make a new one the face looks the same\" → three different women, each with her own face, skin, hair and build (§24O rule 10, L55); earlier Fix in force: \"not a pixar\"",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "one_offs": [
+  "three church ladies"
+ ],
+ "medias": [
+  "020f7d83-d6e2-4744-9595-bef39ecf8f9f",
+  "027d407e-ad54-4f9a-9594-32cb4c047765"
+ ],
+ "board_refs": [
+  {
+   "label": "P5-CHURCH plate (confirmed) — the church and its steps",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P5-CHURCH",
+   "role": "Image 1"
+  },
+  {
+   "label": "PR-04a frame v2 B (confirmed) — a full-body Pixar character, the build's body proportions (§24O rule 10)",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__PR-04a",
+   "role": "Image 2"
+  }
+ ]
+}
