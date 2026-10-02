@@ -993,8 +993,9 @@ Line 15 is now three pictures, one per phrase (`work/actmap.py`: the new `sub` /
   - Moved to Old 3: v11 and v12.
   - The user said "both confirmed". I read it as M-06a A plus the T-04a clip. A is used and v14 B went to Old 3.
   - Clip v3 was made from v13 A on Kling (32 credits). The bare left foot stepped. The user said "the one who will step should be the one with the strap", so v3 went to Old 3.
-  - Clip v4 was made from the same frame v13 A (32 credits): her right leg, the one with the strap, steps down. Generation 4 on that note; preflight PASS. System change: V7.92.2 adds HT28, `preflight.py` PRODLIMB, L60 and FP25.
+  - Clip v4 was made from the same frame v13 A (32 credits): her right leg, the one with the strap, steps down. Generation 4 on that note; preflight PASS. The user confirmed it: "confirmed now for the final output" (status `use`). System change: V7.92.2 adds HT28, `preflight.py` PRODLIMB, L60 and FP25.
 - **T-04a**: clip v3 was made from the pick v7 A (40 credits). The user confirmed it (status `use`). The unused v8 went to Old 3.
 - **System (owner, keys-exe)**: V7.92.1. After a Fix calling a worn product distorted, the next render is fresh, never another edit. Changes: §6A rule 3, `preflight.py` PRODEDIT, LESSONS L59, FP24. Merged in keys-exe/global-manual-ai#453.
 - Kie balance 94441.6 → 94405.6. Kling balance 36493 after the M-06a clip.
 - FINAL-HK1 v4 is re-cut with T-04a v3 and M-06a v4.
+- Hourly Fix check, 17:20 UTC: no cards on `regenerate`, so nothing was done.
