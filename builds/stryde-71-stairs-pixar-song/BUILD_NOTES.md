@@ -591,3 +591,38 @@ The unpicked image of each pair is now on **Old 2**: its file was copied server-
 - Confirm or Fix on the R-01a, R-02a, R-02b, R-03a, R-03b, R-06a and T-04a clips.
 - The user's go before a third R-06a clip.
 - The R-07a clip, a 9 s single take, waits for its image pick.
+
+## 2026-10-02 — "fix those and proceed to the next act" (10:00–10:20 UTC): Act 3 Fixes and clips, Act 4 pairs
+
+**Act 3 Fixes**
+- **R-04a** "this should be the right knee": a new pair v5/v6 (`body3/R-04a.v7`). Both knees are front-on; the strap is on her RIGHT knee at frame left and her left knee is bare at frame right. The skin and clothes come from Loretta's R-03b frame. The R-04a v3/v4 pair is on Old 2.
+  - New product rule **FP18** (`products/stryde/fix_patterns.md`): name the strap's knee in picture terms.
+- **R-07a** "she should be at the 2nd floor": an edit of the v2 frame (her own staircase). She is near the top under the second-floor landing, and the full flight below her is empty.
+  - The v8 pair is on the board as v4/v5.
+  - The v7 tries were kept off: B came out mid-flight, and A failed on Higgsfield. The v2/v3 pair is on Old 2.
+- **R-03b clip** "she should be showing it not hiding": clip v2 pushes the hem up. It still slides down over the strap midway, and the strap shows again at the end. It is on the board with that note. A third generation waits for the user's go (§22X).
+
+**Act 3 clips from the user's picks**
+- **R-05a** (pick v4): clip v1 bent and curled the strap in her hand, so it was kept off (L16, rigid product) and is on Old 2.
+  - Clip v2 keeps the palm flat and the strap rigid. Her fingers curl up briefly near the 4-second mark.
+- **R-06b** (pick v4): clip v1 is clean.
+- The unused images of both pairs are on Old 2.
+
+**Act 4 (M-01a…M-06a)**: A/B pairs on Higgsfield `nano_banana_pro` (`body4/build_act4.py`), all To check.
+- M-01a: an overhead shot of N on the PT table (P7 plate, her P-04b clinic frame as reference).
+- M-04a: an edit of the confirmed P-04a frame, with her hands taken out and a syringe box added.
+- M-06a: a ground-level shot of her slipper on the runner, with the strap on her right knee.
+  - Pair v1A + C. The B render had a light-skinned leg, so it was kept off and is on Old 2.
+- **Anatomy styles (§12A-1, new beats):**
+  - M-02a: S2 X-ray card, with the T-03a X-ray as the style. Flag: B also draws a loose strap under the X-ray.
+  - M-03a: S1 Ghost, with `references/anatomy/S1_ghost.webp` attached as the style.
+  - M-05a: S7 cross-section.
+  - M-05b: S1 Ghost with the strap.
+  - The card records each style as `anatStyle`.
+
+**Balances:** Higgsfield 6389.65 · Kling 38525.
+
+**Waiting on:**
+- Picks on R-04a, R-07a and all seven Act 4 pairs.
+- Confirm or Fix on the R-03b v2, R-05a v2 and R-06b clips, plus the user's go for a third R-03b clip.
+- After the R-07a pick, the 9 s one-take clip.

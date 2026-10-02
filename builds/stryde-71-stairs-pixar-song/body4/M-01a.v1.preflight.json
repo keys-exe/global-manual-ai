@@ -1,0 +1,77 @@
+{
+ "beat": "M-01a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She said, Everything else you tried was made to keep you comfortable\": Treatment room of Image 1, tall 9:16. Image 2 is the woman — her face, silver twist-out and the clinic day's clothes exactly as in Image 2. Image 3 is the style.\nMedium shot from directly overhead, sharp on her face: the same woman as Image 2, seventy-one, lying back on the padded treatment table, head on a small pillow, eyes closed, mouth closed, facing up to the lens; a grey heat pad folded over her right knee, her two hands resting on her stomach, four chunky fingers and a thumb on each. Scale true to the set: the table is a little longer than she is tall.\nIn frame: her, the table, the heat pad; every other surface bare.\nA final frame from a 3D animated feature film, stylized storybook render, soft clinic daylight. Walls and table plain — no lettering, logos or labels.",
+ "script_line": "She said, Everything else you tried was made to keep you comfortable",
+ "face": true,
+ "room": true,
+ "body": true,
+ "refs": [
+  {
+   "label": "P7-CLINIC plate (confirmed)",
+   "kind": "location"
+  },
+  {
+   "label": "P-04b frame v3 (confirmed) — N on the PT table, the clinic day's clothes (HT27)",
+   "kind": "character"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT03",
+  "HT04",
+  "HT08",
+  "HT12",
+  "HT17",
+  "HT21",
+  "HT22",
+  "HT25",
+  "HT26",
+  "HT27",
+  "FP13",
+  "FP14",
+  "FP17"
+ ],
+ "anatomy": false,
+ "anat_style": null,
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "593880dc-2b40-44b6-a884-a8277d888d3a",
+  "d6e85763-5356-4351-8f90-f4fc5eec9aa8",
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P7-CLINIC plate (confirmed)",
+   "kind": "location",
+   "ref": "stryde-71-stairs-pixar-song__P7-CLINIC",
+   "role": "Image 1"
+  },
+  {
+   "label": "P-04b frame v3 (confirmed) — N on the PT table, the clinic day's clothes (HT27)",
+   "kind": "character",
+   "ref": "stryde-71-stairs-pixar-song__P-04b",
+   "role": "Image 2"
+  },
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 3"
+  }
+ ]
+}

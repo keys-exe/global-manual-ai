@@ -1,0 +1,47 @@
+{
+ "beat": "M-05a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.\": A clean 3D cross-section of the right knee, cut along one plane like a layered cake on a neutral grey field: the outer contour, soft tissue, the patellar tendon and the bones in order. Image 1 is the style — the same render and materials.\nMedium shot in true side profile, the whole leg from mid-thigh to mid-shin running up the frame, sharp on the tendon under the kneecap: a knee sleeve drawn as a faint outline round the whole joint; one small red point glowing on the tendon just under the kneecap, shining through the sleeve; three soft red pressure lines running down the thigh into that point. Scale: the knee about a third of the frame wide.\nIn frame: the cut leg, the sleeve outline, the red point and lines; every other area plain grey.\nA final frame from a 3D animated feature film, stylized storybook render. No lettering, labels or arrows.",
+ "script_line": "Not that spot. That's why ain't nothing worked. The pain is pressure. That's all it is.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S7",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": null,
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "medias": [
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 1"
+  }
+ ]
+}
