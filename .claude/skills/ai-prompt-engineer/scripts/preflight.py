@@ -58,6 +58,7 @@ Beat images (§6A, V7.70.0; first-render rules V7.74.0) — a B-roll or hook sta
     "anatomy": false,                  # an anatomy / mechanism beat (Nano Banana)
     "first_frame": false,              # Modes 2/3/5 (§24O): the build's first beat image — every later one attaches a confirmed frame as kind "style"
     "anat_lock": null | "the team's look call for the build's anatomy, in their words (§12A-1 rule 7)",
+    "pixar_anatomy": false,            # a build from before V7.90 whose team asked for the Pixar anatomy: the Pixar anatomy checks run despite legacy_build (V7.90.3)
     "anat_style": null | "S1".."S7",   # anatomy beats: the act-map row's style (§12A-1, V7.81.0); S5 (physical model) routes as realistic
     "pair": ["gpt_image_2_5", "gpt_image_2_5"]   # the A/B pair's models (§5): realistic = two Sunburst; anatomy / Modes 2, 3, 5 = two NB Pro
     "alt_reason": null | "why nano_banana_2 runs instead of Pro (the alternative, V7.72.1)"
@@ -183,8 +184,15 @@ def run_image(c):
         pos = NEG_CLAUSE.sub(" ", p)   # what the prompt asks for, negatives removed
         ph = STYLE_PHOTO.search(pos)
         check("no photograph words in a stylised render (§24O rule 1)", not ph, ph.group(0) if ph else "")
-        check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
-              "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
+        if mode in (2, 5) and c.get("anatomy") and not c.get("anat_lock") and (not c.get("legacy_build") or c.get("pixar_anatomy")):
+            # V7.90.3 (LESSONS L36): a scene frame as the style on a set-less Pixar anatomy shot paints its scene in (3 of 12 renders
+            # drew the kitchen table, hands and brace). The look travels in ANAT-PIX; only a confirmed anatomy frame may be the style.
+            scene = [r.get("label", "") for r in refs if str(r.get("kind", "")).lower() in ("style", "frame") and not re.search(r"anatom", r.get("label", ""), re.I)]
+            check("Pixar anatomy: no scene frame as the style (§24O rule 2, §12A-1 V7.90.3)", not scene,
+                  f"drop {scene[0][:60]!r} — attach only a confirmed anatomy frame (label it 'anatomy'), or none" if scene else "")
+        else:
+            check("a style reference attached (§24O rule 2)", c.get("first_frame") is True or any(k in ("style", "frame") for k in kinds),
+                  "attach one confirmed frame of this build as kind 'style' ('Image n is the style — same render, materials, light and proportions'); the build's first beat image sets first_frame: true")
         if c.get("body") or c.get("face"):
             check("scale against the set and each other (§24O rule 3)", bool(STYLE_SCALE.search(p)),
                   "e.g. 'her head level with the 6th baluster, the door handle at her hip; the daughter a head taller' — 'too big' is this mode's most repeated Fix")
@@ -255,7 +263,7 @@ def run_image(c):
             miss = [w for w, rx in (("smoky see-through outline", r"smoky see-through outline"), ("ivory-peach bones", r"ivory-peach"),
                                     ("navy-black field", r"navy-black")) if not re.search(rx, p, re.I)]
             check("S1 Ghost: the look in words (ANAT-BASE + ANAT-STYLE-S1)", not miss, ", ".join(miss))
-        if mode in (2, 5) and not c.get("anat_lock") and not c.get("legacy_build"):
+        if mode in (2, 5) and not c.get("anat_lock") and (not c.get("legacy_build") or c.get("pixar_anatomy")):
             # V7.90.0 (user: "lets make one" / "create the pixar version of that"): Pixar anatomy — each realistic style drawn
             # by the film. Steps aside for the team's look call (anat_lock, §12A-1 rule 7) and builds that existed at the cut.
             head = p[:400]

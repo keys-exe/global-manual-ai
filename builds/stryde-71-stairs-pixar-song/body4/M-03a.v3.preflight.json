@@ -1,0 +1,48 @@
+{
+ "beat": "M-03a",
+ "kind": "image",
+ "mode": 2,
+ "prompt": "For the line \"She said, There's one spot under the kneecap where every step lands.\": A final frame from a 3D animated feature film, stylized storybook render. The anatomy is drawn the way this film's own animators would draw it: simple, rounded, readable shapes. A clean model of the right knee on a soft plain pale grey backdrop, no muscle anywhere: smooth ivory bones with a soft inner glow, white ribbon tendons and ligaments, the kneecap, inside a soft see-through peach outline of the leg with a cool blue rim on one side; warm key, cool fill, rim.\nClose-up in true side profile from a little below the joint, the leg running up the frame, sharp on the tendon: the kneecap a quarter of the frame wide, the tendon ribbon below it to the shin bone, and on that ribbon a finger's width under the kneecap one small soft warm glow the size of a coin. Image 1 sets the light only.\nIn frame: the knee model and the glow; the rest plain grey. No lettering, labels or arrows.",
+ "script_line": "She said, There's one spot under the kneecap where every step lands.",
+ "face": false,
+ "room": false,
+ "body": false,
+ "refs": [
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style"
+  }
+ ],
+ "match": null,
+ "edit_of": null,
+ "taste": [
+  "HT11",
+  "HT18",
+  "HT21",
+  "FP03",
+  "FP13"
+ ],
+ "anatomy": true,
+ "anat_style": "S3",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "alt_reason": null,
+ "fix_note": "user 2026-10-02: \"use the new pixar anatomy for all the anatomy / lets re do all the anatomy\" → the Pixar S3 normal anatomy (no muscle, the team’s locked pick)",
+ "product": false,
+ "risk_class": null,
+ "first_frame": false,
+ "pixar_anatomy": true,
+ "medias": [
+  "e05783fd-e5e1-4e31-b247-3a8c950954b6"
+ ],
+ "board_refs": [
+  {
+   "label": "P-04a frame v3 (confirmed, hands on her table, no outfit in it) — the style",
+   "kind": "style",
+   "ref": "stryde-71-stairs-pixar-song__P-04a",
+   "role": "Image 1"
+  }
+ ]
+}
