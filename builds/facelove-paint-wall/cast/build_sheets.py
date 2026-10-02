@@ -26,9 +26,22 @@ AGE = ("deep crow's feet fanning in three or four creases from each outer eye, t
        "fine vertical lines on the upper lip, crepe and fine lines under the eyes with deep brownish-violet dark circles, "
        "dull, uneven, slightly sallow skin with a few faint brown sun spots on the cheekbones, two faint horizontal lines across the neck")
 
+# Fix round 1 (user's board Fix on N-BEFORE v1, 2026-10-02, owner-marked: "FIX THE IMAGE, MAKE MORE OLD LOOKING, MAKE THE DARK CIRCLE VISIBLE,
+# PUT SOME WRINGKLES AND DULL TIRED SKIN"). Cause: FACE_REF kept Image 1's age ("the same age… nothing made younger") and the avatar is a
+# glossy, made-up photo that reads younger, so v1 copied its youth; SKIN-T's greasy forehead added shine against "dull".
+FACE_REF_OLDER = ("Image 1 is this woman's face. Copy only its bone structure in every panel — the same face shape, eye shape and colour, brows, nose, "
+            "mouth, jaw, hairline and hair colour — so she is plainly the same woman. She is older and more tired than in Image 1: "
+            "fifty-seven, bare-faced, after years of poor sleep, her skin aged well past the photo. "
+            "Take nothing else from Image 1 — never its smooth skin, its glow, its makeup, lashes, lip gloss, light or background.")
+AGE_V2 = ("clearly visible deep brownish-purple dark circles under both eyes, dark enough to read from across the room, with puffy under-eye bags and hollows below them, "
+          "deep crow's feet fanning in four or five creases from each outer eye, four deep horizontal lines across the forehead, "
+          "two deep vertical frown lines between the brows, deep folds from the nose to the mouth, marionette lines running down from the mouth corners to the chin, "
+          "fine vertical lines on the upper lip and thinner lips, crepe and fine lines under the eyes, slightly hooded upper lids, a softening jawline with slight jowls, "
+          "a crepey neck with three horizontal lines, dull, flat, greyish-sallow skin with no glow anywhere, uneven tone and a few faint brown sun spots on the cheekbones")
+
 CAST = {
- "N-BEFORE": dict(title="The narrator — bare tired face, before (Scene 2 mirror look, the caking macros)", after=False, age=AGE,
-                  wrinkles="Her face shows its fifty-seven years plainly and looks tired: deep crow's feet, forehead lines, frown lines, deep folds from the nose to the mouth and deep dark circles, visible in every panel and deepest in the close-up."),
+ "N-BEFORE": dict(title="The narrator — bare tired face, before (Scene 2 mirror look, the caking macros)", after=False, age=AGE_V2, older=True,
+                  wrinkles="She looks every one of her fifty-seven years and exhausted: dark circles clearly visible under both eyes, deep crow's feet, forehead lines, frown lines, deep folds from the nose to the mouth and marionette lines, dull grey-sallow skin with no glow — visible even in the full-length panels and deepest in the close-up."),
  "N-AFTER": dict(title="The narrator — the stick blended in, every line kept (presenter scenes, after, CTA)", after=True),
 }
 
@@ -58,7 +71,10 @@ def build(k, c):
             sheet = sheet.replace("Bare face, no makeup, in every panel including the close-up.", "Bare face, no makeup, in every panel including the close-up. " + c["wrinkles"])
     assert "[" not in sheet, k
     neg = ", ".join([neg_sheet, S("NEG-GRID"), S("NEG-FILE")] + ([] if c.get("ref", True) else [S("NEG-DEFAULT-FACE")]))
-    head = [FACE_REF] if c.get("ref", True) else []
+    if c.get("older"):   # Fix round 1: dull, not oily — SKIN-T's greasy forehead sheen taken out
+        skin = skin.replace("greasy, and the light on it does not make one smooth sheen: the sebum highlight is broken into hundreds of separate pinpoint glints with dark pits between them", "dry and dull, matte with no sheen")
+    if c.get("older"): neg = neg.replace("no wet skin, ", "no wet skin, no glowing skin, no dewy skin, no smooth young skin, ")
+    head = ([FACE_REF_OLDER] if c.get("older") else [FACE_REF]) if c.get("ref", True) else []
     return "\n\n".join(head + [S("CAM-LOCK"), sheet, skin, S("CAP-SHARP"), S("CAP-FILE"), "AVOID: " + neg + "."])
 
 if __name__ == "__main__":
