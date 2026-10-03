@@ -14,6 +14,9 @@ SFX = {
  "SFX-BREATH-STRAIN": ("an old man's strained, careful breathing going slowly down stairs on painful knees, short held breaths and pained exhales, quiet, no words", 8.0),
  "TONE-CAR-INT": ("inside a parked car with the engine off and the windows closed, muffled supermarket car park outside, distant trolleys and cars, quiet cabin air, no music, no voices", 9.5),
  "SFX-BAGS-BOOT": ("paper and plastic shopping bags rustled and set down one by one into an open hatchback car boot, heard from inside the car, muffled, the car body dipping slightly", 4.5),
+ "SFX-STEP-NAT-A": ("one single slow, careful footstep: a heavy man in worn leather work boots lowering his foot down onto a carpeted stair, a soft, natural, muffled thud of the sole on carpet, no creak, no echo, close and dry", 0.7),
+ "SFX-STEP-NAT-B": ("one single heavy footstep: a man's work boot set down slowly onto thick stair carpet, a dull soft natural thump with a faint brush of the sole, no creak, no echo, close and dry", 0.7),
+ "SFX-STEP-NAT-C": ("one single cautious footstep: a stiff leg in a leather work boot placed down onto a carpeted step, a quiet natural muffled tap and settle of weight, no creak, no echo, close and dry", 0.7),
  "SFX-BOOT-SLAM": ("a hatchback car boot lid pulled down and slammed shut, a solid muffled thump heard from inside the car, the cabin rocking slightly", 1.5),
 }
 for k in sys.argv[1:] or SFX:
