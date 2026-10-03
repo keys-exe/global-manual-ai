@@ -86,6 +86,13 @@ SEAT = ("Susan's seat is exactly the one in @video1: on the long side of the tab
         "the garden, the trees and the low sun behind her, never the house and never the deck steps.")
 NEG_SEAT = "no Susan at the end of the table, no Susan at the head of the table, no house behind Susan, no deck steps behind Susan"
 T2_JOB = "162a3bf9-096e-4e71-83fc-4a574e3f6829"
+# Fix (owner board Fix on T2, 2026-10-03: "use deferent camera angle"): v1's close-up from across the table, cake in the foreground, is the framing
+# T1 SHOT 3 and T3 SHOT 3 end on — they copy it for Susan's seat — so the hook kept returning to one picture. New set-up: high over Greg's
+# shoulder looking down on her, his face never seen. v1 stays the seat reference, for her seat and the light only.
+SEATV2 = ("is where Susan sits and how the light falls: her chair on the LONG side of the table, halfway down, the garden and the low sun around her, Greg's "
+          "chair on her left; it sets her seat and the light only, never the camera angle, the framing, the words or the action — this shot is filmed from a "
+          "place @video1 never uses.")
+ST2 = "Susan seated in her chair, Greg standing over her on her left, the back of his shoulder soft in the near foreground"
 
 L001 = "Thirty years. Thirty. Somebody get this woman a medal for putting up with me, right?"
 L002 = "…thirty years. And I look at you lately and I just, I don't know."
@@ -127,31 +134,38 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", covers=["SC01-SH01", "SC01-SH02"
     fix_note="prompt fault: SHOT 2 never said who sits beside Greg, so Paula took Susan's chair; SHOT 3 'seated beside him' with no seat named put Susan next to Friend B → T2 attached as @video1 for her seat, SEAT clause, SHOT 2 names Susan in the chair beside him (frame left) and Paula across the table, SHOT 3 framed from Paula's side exactly as @video1 with Greg's sleeve at her side, NEG_SEAT + 'no Paula beside Greg'"))
 
 SHOTS.append(dict(beat="SC01-T2", kind="take", covers=["SC01-SH04"], duration=13, line=L002 + " " + L003, subject_motion="still",
-    files=["N", "L-YARD", "CAKE"], audios=["C1-L001"],
-    title="Hook 1 · T2 — 'You look like my mother': the push-in on Susan (SH04)", start_pos=R["SC01-SH04"]["start_pos"], end_pos=R["SC01-SH04"]["end_pos"],
+    files=["N", "C1", "L-YARD", "CAKE"], audios=["C1-L001"],
+    title="Hook 1 · T2 — 'You look like my mother': the push-in on Susan (SH04)", start_pos=ST2, end_pos=R["SC01-SH04"]["end_pos"],
     prompt=" ".join([
-        manifest([("@image1", SHEET("Susan", SUSAN_D1)), ("@image2", YARD), ("@image3", CAKE), ("@audio1", VOICE("Greg"))]),
-        SERIES, LOOK, INHERIT, GEO, NOSPK,
-        "Greg's words, heard and never seen, in this order: " + L002 + " " + L003 + " ",
-        "One continuous shot, never cut and never restarted, 13s, in one place with the same light, look and wardrobe throughout. Frame 1: " + R["SC01-SH04"]["start_pos"] + ". "
-        f"CLOSE-UP at eye level from across the table, three-quarter on Susan, {SUSAN_ID}, in {SUSAN_D1}, seated; the white cake soft and out of focus in the near foreground between the lens and her. "
-        "Greg stands just out of frame on her left and is never seen; only his voice is heard, close and quiet above her. "
+        manifest([("@image1", SHEET("Susan", SUSAN_D1)), ("@image2", "is Greg: only the back of his navy blazer shoulder and the back of his head, soft, are ever seen in this take — never his face."),
+                  ("@image3", YARD), ("@image4", CAKE), ("@video1", SEATV2), ("@audio1", VOICE("Greg"))]),
+        SERIES, LOOK, INHERIT, GEO, SEAT, NOSPK,
+        "Greg's words, heard and his face never seen, in this order: " + L002 + " " + L003 + " ",
+        "One continuous shot, never cut and never restarted, 13s, in one place with the same light, look and wardrobe throughout. Frame 1: " + ST2 + ". "
+        f"HIGH ANGLE OVER GREG'S SHOULDER, looking down on Susan from where he stands beside her chair on her left: the camera just behind and above his right shoulder at his standing eye height, tilted down. "
+        f"The back of his navy blazer shoulder and the back of his salt-and-pepper head are a soft dark shape in the foreground at frame left; his face is never seen. "
+        f"Susan, {SUSAN_ID}, in {SUSAN_D1}, sits below him in her seat on the long side of the table, seen from above and a little from the front, a MEDIUM CLOSE-UP from her hair to the table edge, "
+        "her plate, her glass and the edge of the white cake on the white cloth in front of her, the lawn and the low gold light around her; she looks small under him. "
         "[0s-7s]: his voice drops, almost to himself, puzzled, with the first line, then a small drunk laugh. [7s-13s]: quiet, a verdict not a rant, the second line. "
         "Susan does not look up at him. Her almost-smile goes; her eyes stay level, on nothing across the table; her lips stay sealed and her jaw still, the face holding the expression of the frame. "
         "On the last words her right hand moves slowly to the edge of the table and rests there. Last frame: " + R["SC01-SH04"]["end_pos"] + ". "
-        "The movement is continuous from the first frame to the last: nobody jumps position or appears somewhere new, and the yard behind her stays the same yard. The frame holds on her face while the camera creeps in.",
-        F1(40), PHYS,
+        "The movement is continuous from the first frame to the last: nobody jumps position or appears somewhere new, and the yard around her stays the same yard. The frame holds on her, over his shoulder, while the camera creeps in.",
+        F1(20), PHYS,
         "LISTENING: Susan takes each word as it lands — a slow blink after 'mother', a breath held — and does not answer; nothing on her face arrives before the word that causes it.",
         state("SUSAN", "seated in the dusty-blue blouse, the smile gone, very still", "her hand coming to rest on the table edge"),
-        "FOCUS: Susan's nearest eye sharp throughout; the cake in the foreground soft and round. The blur is optical: soft and round, never smeared.",
-        dialogue("Greg (heard, off screen)", L002 + " " + L003, VOICE_C1, "the toast curdles; he is looking down at his wife in front of thirty friends. Standing just behind her left shoulder, out of frame.",
+        "FOCUS: Susan's nearest eye sharp throughout; Greg's shoulder in the foreground soft and dark. The blur is optical: soft and round, never smeared.",
+        dialogue("Greg (heard, off screen)", L002 + " " + L003, VOICE_C1, "the toast curdles; he is looking down at his wife in front of thirty friends. Standing over her on her left, his face out of frame.",
                  "names what he sees, as if it only just occurred to him. Opens trailing off; turns on 'mother', quieter, puzzled; exits on the question, genuinely asking. Stress on 'mother'.",
                  "quiet, slowed by drink, flat where it was warm a moment ago, matching his last line's level.", "he means it, which leaks only through how calm he sounds."),
         AUD,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_CAKE, "no Greg in frame, no Susan speaking, no Susan crying, no tears", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
-    risks=[{"risk": "Greg appears in frame (the camera must live on Susan)", "prevented_by": "'never seen; only his voice is heard', 'no Greg in frame'"},
+        negs(NEG_EQUIP, NEG_MORPH, NEG_CAKE, "no Greg's face in frame, no Susan speaking, no Susan crying, no tears, no eye-level shot from across the table, no cake in the near foreground", NEG_SEAT, NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+    risks=[{"risk": "the angle repeats v1 (across the table, cake in front) — the owner's Fix", "prevented_by": "high over-the-shoulder set-up from Greg's side, SEATV2 'never the camera angle', 'no eye-level shot from across the table'"},
+           {"risk": "Greg's face appears (the camera must live on Susan)", "prevented_by": "Image2 limited to the back of his shoulder and head; 'no Greg's face in frame'"},
+           {"risk": "Susan moved to the end of the table", "prevented_by": "@video1 = v1 for her seat, SEAT clause, NEG_SEAT"},
            {"risk": "Susan mouths his words", "prevented_by": "lips sealed and jaw still clause, 'no Susan speaking'"},
-           {"risk": "the push-in becomes a zoom or drift", "prevented_by": "F1 at 40 cm, level, never stops; locked subject"}]))
+           {"risk": "the push-in becomes a zoom or drift", "prevented_by": "F1 at 20 cm, level, never stops; locked subject"}],
+    videos=["T2"], fix="use deferent camera angle", fix_date="2026-10-03",
+    fix_note="angle: v1 was a close-up from across the table with the cake in front — the framing T1 and T3 now end on (they copy it for her seat) → a set-up Scene 1 never uses: high over Greg's shoulder looking down on her, his face never seen; v1 attached as @video1 for her seat and the light only (SEATV2), SEAT, NEG_SEAT"))
 
 SHOTS.append(dict(beat="SC01-T3", kind="multi", covers=["SC01-SH05", "SC01-SH06", "SC01-SH07"], duration=15, line=L004 + " " + L005, subject_motion="still",
     files=["N", "C2", "C1", "L-YARD", "CAKE"], audios=["N-L004", "C1-L005"],
@@ -226,7 +240,7 @@ if __name__ == "__main__":
                 "take": s["beat"], "covers": s["covers"], "start_pos": s["start_pos"], "end_pos": s["end_pos"], "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16",
                 "start_image": None, "ingredients_approved": True, "files": [FILES[f] for f in s["files"]] + [VIDEOS[v] for v in s.get("videos", [])], "audios": [AUDIO[a] for a in s["audios"]],
                 "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None, "pace": "unhurried", "subject_motion": s["subject_motion"],
-                "prefer_multi_shots": "false", "generation": 2 if s.get("fix") else 1, "user_go": ("board Fix (user, 2026-10-02): " + s["fix"]) if s.get("fix") else GO, "risks": s["risks"], "scene": 1, "title": s["title"],
+                "prefer_multi_shots": "false", "generation": 2 if s.get("fix") else 1, "user_go": ("board Fix (user, " + s.get("fix_date", "2026-10-02") + "): " + s["fix"]) if s.get("fix") else GO, "risks": s["risks"], "scene": 1, "title": s["title"],
                 "taste": ["HT17", "HT18", "HT22", "HT23", "HT25"], "jobs": [JOBS[f] for f in s["files"]], "video_jobs": [T2_JOB for v in s.get("videos", [])],
                 "fault": s.get("fix"), "fix_note": s.get("fix_note")}
         (H / f"{s['beat']}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
