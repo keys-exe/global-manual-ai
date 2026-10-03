@@ -1,0 +1,10 @@
+{"build":"stryde-her-dad","mode":4,"draft":false,
+ "note":"Cap for the remaining work from 2026-10-03 (the build started before V7.95); spend counts from this point.",
+ "routes":{"image":"Kie AI","seedance":"Kie AI","music":"ElevenLabs","sfx":"ElevenLabs","tts":"ElevenLabs"},
+ "jobs":[
+  {"job":"seedance","seconds":347,"note":"SC04-SC10: 25 takes, 248 s on the act map, scaled x63/45 to this build's measured Kie rate (630 cr / 10 s)"},
+  {"job":"info_cards","n":14,"note":"day outfit cards D3-D9, two people"},
+  {"job":"sfx","n":66,"note":"SC03 re-score (12) + SC04-SC10 foley and room tone (~54)"},
+  {"job":"music","n":8,"note":"one cue per scene SC03 recompose + SC04-SC10"},
+  {"job":"tts","chars":1500,"takes":1,"note":"offer narrator + the labourer and neighbour lines"}
+ ]}

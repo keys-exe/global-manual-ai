@@ -1,0 +1,89 @@
+{
+ "budget": {
+  "build": "stryde-her-dad",
+  "draft": false,
+  "mode": 4,
+  "connectors": [
+   {
+    "conn": "ElevenLabs",
+    "base": 16100.0,
+    "allowance": 3220.0,
+    "estimate": 19350,
+    "cap": 19350,
+    "cap_source": "estimate"
+   },
+   {
+    "conn": "Kie AI",
+    "base": 15755.0,
+    "allowance": 4733.5,
+    "estimate": 20500,
+    "cap": 20500,
+    "cap_source": "estimate"
+   }
+  ],
+  "lines": [
+   {
+    "job": "seedance",
+    "conn": "Kie AI",
+    "model": null,
+    "qty": 347.0,
+    "unit": "per second",
+    "renders_each": 1,
+    "credits": 15615.0,
+    "price": 45,
+    "source": "measured: 720p median over 42 tasks (630 / 14 s)",
+    "note": "SC04-SC10: 25 takes, 248 s on the act map, scaled x63/45 to this build's measured Kie rate (630 cr / 10 s)"
+   },
+   {
+    "job": "music",
+    "conn": "ElevenLabs",
+    "model": null,
+    "qty": 8.0,
+    "unit": "per track",
+    "renders_each": 1,
+    "credits": 8000.0,
+    "price": 1000,
+    "source": "unverified",
+    "note": "one cue per scene SC03 recompose + SC04-SC10"
+   },
+   {
+    "job": "sfx",
+    "conn": "ElevenLabs",
+    "model": null,
+    "qty": 66.0,
+    "unit": "per sound",
+    "renders_each": 1,
+    "credits": 6600.0,
+    "price": 100,
+    "source": "unverified",
+    "note": "SC03 re-score (12) + SC04-SC10 foley and room tone (~54)"
+   },
+   {
+    "job": "tts",
+    "conn": "ElevenLabs",
+    "model": null,
+    "qty": 1500.0,
+    "unit": "per character",
+    "renders_each": 1,
+    "credits": 1500.0,
+    "price": 1,
+    "source": "unverified: eleven_v4 ~1 credit a character",
+    "note": "offer narrator + the labourer and neighbour lines"
+   },
+   {
+    "job": "info_cards",
+    "conn": "Kie AI",
+    "model": "gpt_image_2_5",
+    "qty": 14.0,
+    "unit": "per image",
+    "renders_each": 1,
+    "credits": 140.0,
+    "price": 10,
+    "source": "measured: 2K plate 10 credits",
+    "note": "day outfit cards D3-D9, two people"
+   }
+  ],
+  "warn_at": 0.8,
+  "at": 1791034966699
+ }
+}
