@@ -18,6 +18,8 @@ CALL.json describes one paid video call exactly as it will be sent:
                                        # by "build" or the call's path): its shots stay as planned, no take required
     "covers": ["SC07-SH02", "SC07-SH03"],   # take / multi: the act-map rows this call generates (≤ 4)
     "start_pos": "...", "end_pos": "...",   # take / multi: where everyone is on frame 1 / the last frame, in the prompt word for word
+    "marks": {"N": "on the landing, left of the banister"},   # take / multi (V7.96.0, §24P): frame-1 marks from the act map, word for word in the prompt
+    "motion": "...",                   # take / multi (V7.96.0): what moves from the first frame to the last, word for word in the prompt
                                        # voice_master = a §24I part 7 neutral film voice master (Seedance, 10s, the
                                        # face-only sheet crop as the one ingredient, no audio in): the film-shot strings
                                        # (rig, SERIES-LOOK, drama, state, business) do not apply — the §24I recipe does
@@ -129,6 +131,9 @@ ANAT_SCOPE = {"macro": r"fills? the frame|so close|macro", "close": r"\bclose\b"
 ANAT_SCOPE_SAY = {"macro": "the site so close it fills the frame", "close": "one joint close (the right knee, close)",
                   "pair": "both knees side by side", "walking": "both legs walking, mid-stride", "load": "the leg on the stairs, stepping up",
                   "whole": "the whole figure, the joint lit inside it"}
+# Builds that existed at V7.96.0 keep their film plans: no §24P marks or motion required on their calls (a system update never
+# touches existing builds). Recognised by the call's "build" field or its path, like PRE_TAKES.
+PRE_DRAMA = {"facelove-my-mother", "facelove-paint-wall", "facelove-returning-it", "identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs", "stryde-71-stairs-pixar-song", "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-her-dad", "stryde-identity", "stryde-lost-moments", "stryde-not-your-cartilage", "stryde-regrets", "stryde-the-impression", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad", "stryde-what-changed", "demo-ad"}
 # Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
 # touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
 PRE_TAKES = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs",
@@ -434,6 +439,14 @@ def film_shot(c, p, conn, mode, kind, film, check):
         for k in ("start_pos", "end_pos"):
             v = (c.get(k) or "").strip()
             check(f"{k} written into the prompt word for word", bool(v) and v in p, v or f"missing {k}")
+        if not c.get("legacy_build") and not c.get("pre_drama"):
+            # V7.96.0 (§24P, user: "improve the movie style a lot"): every take carries its set-map marks and its motion
+            mk = c.get("marks") or {}
+            check("marks named (§24P part 2 — where everyone stands, against the set's landmarks)", bool(mk), "" if mk else "no marks on the call")
+            miss = [f"{who}: {m}" for who, m in mk.items() if m.strip() not in p]
+            check("marks written into the prompt word for word (§24P part 2)", not miss, "; ".join(miss)[:200])
+            mo = (c.get("motion") or "").strip()
+            check("motion written into the prompt — nothing reads as a still (§24P part 4)", bool(mo) and mo in p, mo or "no motion on the call")
     if kind == "take":
         check("TAKE-FILM", SIG["TAKE-FILM"] in p)
         check("one-take covers ≤ 3 shots", len(c.get("covers") or []) - len(c.get("joins") or []) <= 3, str(len(c.get("covers") or [])))
@@ -612,6 +625,8 @@ def main():
         return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
     if c.get("build") in PRE_TAKES or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_TAKES:
         c.setdefault("legacy_build", True)
+    if c.get("build") in PRE_DRAMA or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_DRAMA:
+        c.setdefault("pre_drama", True)
     res = run(c)
     fails = [r for r in res if r["result"] == "FAIL"]
     if a.json:
