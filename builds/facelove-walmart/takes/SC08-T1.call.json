@@ -1,0 +1,65 @@
+{
+ "beat": "SC08-T1",
+ "take": "SC08-T1",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — Rosa, 67: face, hair and build only.\n@image3 — the patio: copy it — the round mosaic table in the middle, the lemon tree left, the magenta bougainvillea right, the sand garden wall behind.\n\nSHOT: A sunny animated family drama: on the patio Michelle and Rosa take photos together again, and Michelle stands taller; one take of 3 shots, 9:16, 13 s.\n\nTIMELINE\n[0–4s] Shot 1 · full shot, jib down: Frame 1: Michelle and Rosa seated at the round patio table in the morning sun, Michelle by the lemon tree, Rosa by the bougainvillea — she stands up and straightens, shoulders back; the jib comes down to her eye line.\n[4–8s] Shot 2 · medium close-up, handheld, breathing: the two lean in and laugh; the handheld breathes.\n[8–13s] Shot 3 · close-up, slow creep in: the laugh settles into a calm, level look; the camera creeps in. A beat of stillness first. Last frame: Michelle standing at the patio table, calm and sure, Rosa beside her.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the low morning sun over the garden wall, a shadow side on every face. Michelle: a soft lilac blouse, white cropped trousers, tan sandals; Rosa: a turquoise peasant blouse, a long white skirt, tan sandals.\n\nSOUND: No dialogue — nobody speaks. No music.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle and Rosa in the scene; text, logos and captions nowhere; five fingers on each hand; real weight and timing; eyes off the lens",
+ "duration": 13,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "cast/C3",
+  "plates/L-PATIO"
+ ],
+ "media": [
+  "7ee60be8-ae88-458d-8d13-d5ebfc2ff6a7",
+  "702ccb5a-64ac-4585-af45-b7b8443efba6",
+  "2555f8cb-3c99-4448-97d5-3eccb9044369"
+ ],
+ "audios": [],
+ "audio_media": [],
+ "generate_audio": false,
+ "pre_sound": true,
+ "covers": [
+  "SC08-SH01",
+  "SC08-SH02",
+  "SC08-SH03"
+ ],
+ "start_pos": "Michelle and Rosa seated at the round patio table in the morning sun, Michelle by the lemon tree, Rosa by the bougainvillea",
+ "end_pos": "Michelle standing at the patio table, calm and sure, Rosa beside her",
+ "marks": {
+  "N": "Michelle and Rosa seated at the round patio table in the morning sun, Michelle by the lemon tree, Rosa by the bougainvillea",
+  "C3": "Michelle and Rosa seated at the round patio table in the morning sun, Michelle by the lemon tree, Rosa by the bougainvillea"
+ },
+ "motion": "she stands up and straightens, shoulders back; the jib comes down to her eye line",
+ "subject_motion": "in_place",
+ "pace": "one rise",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ]
+}

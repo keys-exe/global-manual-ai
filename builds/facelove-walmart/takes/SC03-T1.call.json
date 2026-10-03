@@ -1,0 +1,71 @@
+{
+ "beat": "SC03-T1",
+ "take": "SC03-T1",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — the bedroom: copy it — the white vanity and oval mirror right of centre, the lilac stool, the curtained window on the right, the cream bed on the left.\n@audio1 — Michelle's voice.\n\nSHOT: A quiet animated drama: at night at her vanity Michelle stops recognising the woman in the mirror and buries her under layer after layer of foundation; one take of 6 shots, 9:16, 24 s.\n\nTIMELINE\n[0–4s] Shot 1 · medium, slow creep in: Frame 1: Michelle seated on the stool at the vanity, back to camera, her face in the oval mirror, the bulbs on above it — she leans an inch toward the mirror; the camera creeps in behind her.\n[4–8s] Shot 2 · close-up, slow push-in: her fingertip touches under her eye and drops; the camera pushes in. A beat of stillness first. Michelle says: \"When did I start looking like this? Tired. Worn out.\"\n[8–12s] Shot 3 · medium close-up, slow tilt: her hand drops from her face to the vanity; the camera tilts with it. Michelle says: \"Older than I am. No wonder he stopped looking at me.\"\n[12–16s] Shot 4 · insert, slow tilt: her hand turns the frame over and lays it flat; the camera tilts with it.\n[16–21s] Shot 5 · medium close-up, the camera orbits: her fingers press the foundation on three times; the camera orbits slowly round to her front.\n[21–24s] Shot 6 · medium, handheld, breathing: her eyes drop away from the mirror; the camera breathes. Last frame: Michelle on the stool at the vanity, face heavy with foundation, looking down away from the mirror.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the vanity bulbs over the oval mirror, a shadow side on every face. Michelle: a faded grey cotton bathrobe tied over a pale nightgown, grey felt slippers.\n\nSOUND: Dialogue in natural American English — Michelle's voice from @audio1; only the person written as speaking speaks, and on every other shot nobody speaks. No music. The actions' own sounds: jars and bottles touched down on the vanity, a sponge patting skin, her slow breath; a still bedroom under it.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle in the scene; text, logos and captions nowhere; five fingers on each hand; real weight and timing; eyes off the lens",
+ "duration": 24,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "plates/L-VANITY"
+ ],
+ "media": [
+  "e41bb60b-dd24-4808-8b8e-5956cbe2dda6",
+  "07f8970a-fd26-4dcd-8e73-83e1fcefd259"
+ ],
+ "audios": [
+  "voice/N_voice_master.mp3"
+ ],
+ "audio_media": [
+  "18b2c0a4-b1d2-40f0-8321-dbd8fba7c8f1"
+ ],
+ "generate_audio": true,
+ "pre_sound": true,
+ "covers": [
+  "SC03-SH01",
+  "SC03-SH02a",
+  "SC03-SH02b",
+  "SC03-SH03",
+  "SC03-SH04",
+  "SC03-SH05"
+ ],
+ "start_pos": "Michelle seated on the stool at the vanity, back to camera, her face in the oval mirror, the bulbs on above it",
+ "end_pos": "Michelle on the stool at the vanity, face heavy with foundation, looking down away from the mirror",
+ "marks": {
+  "N": "Michelle seated on the stool at the vanity, back to camera, her face in the oval mirror, the bulbs on above it"
+ },
+ "motion": "she leans an inch toward the mirror; the camera creeps in behind her",
+ "subject_motion": "in_place",
+ "pace": "one lean",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ],
+ "dialogue": "When did I start looking like this? Tired. Worn out.",
+ "script_line": "When did I start looking like this? Tired. Worn out."
+}

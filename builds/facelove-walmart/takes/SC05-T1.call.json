@@ -1,0 +1,77 @@
+{
+ "beat": "SC05-T1",
+ "take": "SC05-T1",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — Rosa, 67: face, hair and build only.\n@image3 — the entry hall: copy it — the white front door at the end, the round brass mirror over the console on the left wall, the archway on the right, the globe pendant in the middle.\n@audio1 — Rosa's voice.\n@audio2 — Michelle's voice.\n\nSHOT: A warm animated family drama: Rosa bangs on the front door with wine, Michelle opens it in an old sweatshirt, and in the hall her sister holds her face up to the light; one take of 7 shots, 9:16, 25 s.\n\nTIMELINE\n[0–4s] Shot 1 · wide, follows from behind: Frame 1: Michelle at the archway in an old grey sweatshirt walking toward the front door, back to camera; Rosa unseen outside the front door, calling through it — Michelle walks four steps to the door and pulls it open. Rosa says: \"Michelle, open the door. I brought wine and I am not leaving.\"\n[4–8s] Shot 2 · medium, pushes through: the wine comes up, then lowers as her face softens; the camera pushes through past Michelle's shoulder. Rosa says: \"...Oh, honey. Look at you. Come here.\"\n[8–11s] Shot 3 · medium close-up, slow pan: Rosa's hand lifts her chin; the pan follows the tilt up.\n[11–13s] Shot 4 · medium, slow creep in: her eyes slide away toward the mirror; the camera creeps in. Michelle says: \"I am fine, Rosa. I am.\"\n[13–17s] Shot 5 · medium close-up, slow tilt: her eyes slide to the mirror and her chin lowers; the camera tilts with it. Michelle says: \"I just... I do not know who that woman in the mirror is anymore.\"\n[17–22s] Shot 6 · medium, the camera arcs: she turns her head to the mirror; the camera arcs a little round her. Michelle says: \"He looked at me like a stranger the day he left, and lately so do I.\"\n[22–25s] Shot 7 · medium close-up, locked: one slow nod, the bottle set down on the console. Last frame: Michelle at the round mirror over the console, Rosa just behind her under the pendant, the wine on the console.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the globe pendant light in the hall, a shadow side on every face. Michelle: an old oversized faded-grey sweatshirt over charcoal pull-on trousers, grey felt slippers, hair limp; Rosa: the marigold-orange wrap blouse and long ink-blue skirt, tan sandals.\n\nSOUND: Dialogue in natural American English — Rosa's voice from @audio1, Michelle's voice from @audio2; only the person written as speaking speaks, and on every other shot nobody speaks. No music. The actions' own sounds: knocking on the front door, the latch and the door opening, the wine bottle set on the console; the quiet hall at night under it.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle and Rosa in the scene; text, logos and captions nowhere; five fingers on each hand; real weight and timing; eyes off the lens",
+ "duration": 25,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "cast/C3",
+  "plates/L-HALL"
+ ],
+ "media": [
+  "e41bb60b-dd24-4808-8b8e-5956cbe2dda6",
+  "702ccb5a-64ac-4585-af45-b7b8443efba6",
+  "95d48c48-199d-40c1-a0d7-b0c6f5422a28"
+ ],
+ "audios": [
+  "voice/C3_voice_ref_cut.mp3",
+  "voice/N_voice_master.mp3"
+ ],
+ "audio_media": [
+  "83341657-baea-4764-a0a8-ecd793cb5472",
+  "18b2c0a4-b1d2-40f0-8321-dbd8fba7c8f1"
+ ],
+ "generate_audio": true,
+ "pre_sound": true,
+ "covers": [
+  "SC05-SH01",
+  "SC05-SH02",
+  "SC05-SH03",
+  "SC05-SH04a",
+  "SC05-SH04b",
+  "SC05-SH05",
+  "SC05-SH06"
+ ],
+ "start_pos": "Michelle at the archway in an old grey sweatshirt walking toward the front door, back to camera; Rosa unseen outside the front door, calling through it",
+ "end_pos": "Michelle at the round mirror over the console, Rosa just behind her under the pendant, the wine on the console",
+ "marks": {
+  "N": "Michelle at the archway in an old grey sweatshirt walking toward the front door, back to camera; Rosa unseen outside the front door, calling through it",
+  "C3": "Michelle at the archway in an old grey sweatshirt walking toward the front door, back to camera; Rosa unseen outside the front door, calling through it"
+ },
+ "motion": "Michelle walks four steps to the door and pulls it open",
+ "subject_motion": "travels",
+ "pace": "four slow steps, one pull",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ],
+ "dialogue": "Michelle, open the door. I brought wine and I am not leaving.",
+ "script_line": "Michelle, open the door. I brought wine and I am not leaving."
+}

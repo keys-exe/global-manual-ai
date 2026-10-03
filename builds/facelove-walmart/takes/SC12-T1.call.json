@@ -1,0 +1,79 @@
+{
+ "beat": "SC12-T1",
+ "take": "SC12-T1",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — the patio: copy it — the round mosaic table in the middle, the lemon tree left, the magenta bougainvillea right, the sand garden wall behind.\n@image3 — the FACELOVE stick, closed: copy it exactly — the violet satin barrel with its one wordmark; it is a little longer than a hand is wide.\n@image4 — the stick's balm end, uncapped: the white balm, copied exactly.\n@image5 — the stick's brush end: copied exactly.\n@image6 — info card: the stick's true size in a hand. Copy only that size.\n@audio1 — Michelle's voice.\n\nSHOT: A warm animated close: on the patio in the late sun Michelle turns to us, holds up the violet stick and tells us it was never us; one take of 6 shots, 9:16, 22 s.\n\nTIMELINE\n[0–4s] Shot 1 · medium close-up, slow push-in: Frame 1: Michelle seated at the patio table by the lemon tree in the late sun, looking at the garden wall, her violet stick on the table — her head turns from the garden to the lens; the camera pushes in slowly. Michelle says: \"So if someone ever looked at you and made you feel like you had faded,\"\n[4–7s] Shot 2 · close-up, slow creep in: she leans an inch toward the lens and nods once; the camera creeps in. A beat of stillness first. Michelle says: \"please hear me. It was never you.\"\n[7–11s] Shot 3 · medium, slow pan: her hand lifts the stick up beside her cheek; the pan follows it. Michelle says: \"The thing she wanted to know, I will tell you instead.\"\n[11–14s] Shot 4 · medium close-up, slider moving sideways: she turns the stick so the wordmark faces the lens; the slider glides sideways. Michelle says: \"It is called FACELOVE, and I have linked it below.\"\n[14–18s] Shot 5 · close-up, slow creep in: the stick lowers, the smile widens, a breeze moves her hair; the camera creeps in.\n[18–22s] Shot 6 · full shot, leading her, backing away in front: she stands up and walks three steps to the bougainvillea; the camera leads her. Last frame: Michelle standing by the bougainvillea in the late sun, the stick in her hand.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the low late sun over the garden wall, a shadow side on every face. Michelle: a soft lilac linen shirt, cream wide-leg trousers, tan sandals, hair sleek.\n\nSOUND: Dialogue in natural American English — Michelle's voice from @audio1; only the person written as speaking speaks, and on every other shot nobody speaks. No music. The actions' own sounds: the chair pushed back, her sandals on the stone, the stick set down on the table; birdsong and a light breeze in the garden under it.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle in the scene; exactly one violet stick at its true size, its wordmark the only text; five fingers on each hand; real weight and timing",
+ "duration": 22,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "plates/L-PATIO",
+  "product/47b23ddf",
+  "product/ab69219d",
+  "product/aa71f71b",
+  "product/89f64a0f"
+ ],
+ "media": [
+  "7ee60be8-ae88-458d-8d13-d5ebfc2ff6a7",
+  "2555f8cb-3c99-4448-97d5-3eccb9044369",
+  "47b23ddf-c6c4-4ffa-89c2-77a4ddc312f1",
+  "ab69219d-f5c7-448d-92e5-056867ad5ad7",
+  "aa71f71b-7076-495c-a7d6-8c68af08fce9",
+  "89f64a0f-9603-4986-b15f-5369389f9f7f"
+ ],
+ "audios": [
+  "voice/N_voice_master.mp3"
+ ],
+ "audio_media": [
+  "18b2c0a4-b1d2-40f0-8321-dbd8fba7c8f1"
+ ],
+ "generate_audio": true,
+ "pre_sound": true,
+ "covers": [
+  "SC12-SH01a",
+  "SC12-SH01b",
+  "SC12-SH02a",
+  "SC12-SH02b",
+  "SC12-SH03a",
+  "SC12-SH03b"
+ ],
+ "start_pos": "Michelle seated at the patio table by the lemon tree in the late sun, looking at the garden wall, her violet stick on the table",
+ "end_pos": "Michelle standing by the bougainvillea in the late sun, the stick in her hand",
+ "marks": {
+  "N": "Michelle seated at the patio table by the lemon tree in the late sun, looking at the garden wall, her violet stick on the table"
+ },
+ "motion": "her head turns from the garden to the lens; the camera pushes in slowly",
+ "subject_motion": "travels",
+ "pace": "one turn, the line",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ],
+ "dialogue": "So if someone ever looked at you and made you feel like you had faded,",
+ "script_line": "So if someone ever looked at you and made you feel like you had faded,"
+}

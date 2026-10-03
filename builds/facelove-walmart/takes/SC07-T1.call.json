@@ -1,0 +1,71 @@
+{
+ "beat": "SC07-T1",
+ "take": "SC07-T1",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — the bedroom: copy it — the white vanity and oval mirror right of centre, the lilac stool, the curtained window on the right, the cream bed on the left.\n@image3 — the FACELOVE stick, closed: copy it exactly — the violet satin barrel with its one wordmark; it is a little longer than a hand is wide.\n@image4 — the stick's balm end, uncapped: the white balm, copied exactly.\n@image5 — the stick's brush end: copied exactly.\n@image6 — info card: the stick's true size in a hand. Copy only that size.\n\nSHOT: A warm animated drama: the first morning Michelle does it herself at her vanity, and for once she does not look away; one take of 4 shots, 9:16, 13 s.\n\nTIMELINE\n[0–4s] Shot 1 · full shot, follows from behind: Frame 1: Michelle at the bedroom door in a cream robe walking toward the vanity, back to camera, golden sun through the curtains — three steps to the vanity and she sits; the camera follows behind.\n[4–7s] Shot 2 · insert, slow creep in: her hand slides the balm once across her cheekbone.\n[7–10s] Shot 3 · medium close-up, slow push-in: her eyes rise to the mirror and hold; the smile comes; a slow push-in. A beat of stillness first.\n[10–13s] Shot 4 · medium, the camera arcs: she lowers the stick and smiles at the mirror; the camera arcs a little. Last frame: Michelle on the stool at the vanity, smiling at her reflection, the stick in her hand.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from golden morning sun through the sheer curtains, a shadow side on every face. Michelle: a soft cream cotton robe over a lilac nightdress, hair brushed.\n\nSOUND: No dialogue — nobody speaks. No music.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle in the scene; exactly one violet stick at its true size, its wordmark the only text; five fingers on each hand; real weight and timing; eyes off the lens",
+ "duration": 13,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "plates/L-VANITY",
+  "product/47b23ddf",
+  "product/ab69219d",
+  "product/aa71f71b",
+  "product/89f64a0f"
+ ],
+ "media": [
+  "7ee60be8-ae88-458d-8d13-d5ebfc2ff6a7",
+  "07f8970a-fd26-4dcd-8e73-83e1fcefd259",
+  "47b23ddf-c6c4-4ffa-89c2-77a4ddc312f1",
+  "ab69219d-f5c7-448d-92e5-056867ad5ad7",
+  "aa71f71b-7076-495c-a7d6-8c68af08fce9",
+  "89f64a0f-9603-4986-b15f-5369389f9f7f"
+ ],
+ "audios": [],
+ "audio_media": [],
+ "generate_audio": false,
+ "pre_sound": true,
+ "covers": [
+  "SC07-SH01",
+  "SC07-SH02",
+  "SC07-SH03a",
+  "SC07-SH03b"
+ ],
+ "start_pos": "Michelle at the bedroom door in a cream robe walking toward the vanity, back to camera, golden sun through the curtains",
+ "end_pos": "Michelle on the stool at the vanity, smiling at her reflection, the stick in her hand",
+ "marks": {
+  "N": "Michelle at the bedroom door in a cream robe walking toward the vanity, back to camera, golden sun through the curtains"
+ },
+ "motion": "three steps to the vanity and she sits; the camera follows behind",
+ "subject_motion": "travels",
+ "pace": "three steps, one sit",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ]
+}

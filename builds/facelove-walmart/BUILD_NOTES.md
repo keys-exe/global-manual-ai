@@ -62,3 +62,18 @@ Drive task folder `1Xvl_PR2jCEe3WJk177Vn5T-1efS1gt80`
   - Heard: every line of L002 and L003, word for word.
   - Flagged for the user's check: Michelle's close-up sits on a plain grey background, not the aisle; the hit reads soft; Peter's close-ups look near the lens.
   - Next: the user's Confirm or Fix on SC01-T1, then SC02-T1 onward (each take its own call, SD-PROMPT, sound on).
+
+## The film takes (user: "confirm and proceed", 2026-10-03)
+- The user confirmed SC01-T1 (Hook 1) on the board.
+- **SC02–SC12: 14 Seedance 2.5 takes, all on Current as `review`.**
+  - Built by `takes/build_takes.py`: SD-PROMPT, preflight PASS on each, 234 s in all.
+  - Sent in two batches; landed by `takes/land.py`, board docs by `takes/board_docs.py`.
+- **Sound.** This build is in `PRE_SOUND` (it existed at V7.101.0), so the no-dialogue takes are generated silent: SC07, SC08, SC10, SC11. The dialogue takes have sound on.
+- **Voice refs.**
+  - Rosa's ref is cut to 10.8 s (`voice/C3_voice_ref_cut.mp3`) so Rosa + Michelle fit the 30 s audio cap.
+  - The woman's master is uploaded as audio a9360508….
+- **Music.** SC05-T2, SC06-T3 and SC09-T1 came back with music. Each was cleaned with unmusic.py; the cleaned v2 is on Current and the v1 with music is on Old. The other takes were clean.
+- **SC06-T2, the colour-change oner, is now 16 s, not 12.** Rosa's 30-word line needs 16 s under §28H (word budget = 2·d − 2).
+- **The barrel colour.** The take prompts say "violet satin barrel"; the product photos are the reference, and the stick came out pale lilac in the clips I looked at (SC06-T1, SC07-T1).
+- **SC12-T2, the pinned stick turn.** The start-frame A/B pair (nano_banana_pro) is on the card. The user picks A or B; the end frame is then made as an edit of the pick, then the 5 s Kling video.
+- **Credits.** Higgsfield spent 1,732 on the 14 takes and 2 frames (~7.3 cr/s). The private workspace has 1,674.35 left.
