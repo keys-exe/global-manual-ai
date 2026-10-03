@@ -109,15 +109,21 @@ RIGS = {  # rig signature → F-rig (F6–F10: the Seedance move library, §24N)
     "F4": "Camera on a slider", "F5": "Camera on a stabiliser",
     "F6": "Camera pulling back on a dolly", "F7": "Camera arcing", "F8": "Camera on a crane",
     "F9": "Camera tracking alongside", "F10": "Camera performing a slow dolly zoom",
+    # V7.100.0 (§24N part 2): F11–F24
+    "F11": "Camera on a fluid head, panning", "F12": "Camera on a fluid head, tilting", "F13": "Camera backing away on a stabiliser",
+    "F14": "Camera following behind the subject", "F15": "Camera orbiting the subject", "F16": "Camera on a jib, descending",
+    "F17": "Camera pushing through", "F18": "Camera creeping in", "F19": "Camera snapping into a fast zoom",
+    "F20": "Camera pulling out from an extreme close-up", "F21": "Camera travelling straight overhead",
+    "F22": "Camera counter-moving", "F23": "Camera held in the hands, breathing", "F24": "Camera on a vehicle mount",
 }
-TRAVEL_RIGS = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10"}   # the camera moves through space
-NOT_IN_PLACE = {"F1", "F4", "F5", "F6", "F7", "F9", "F10"}         # subject sits, stands, turns, reaches (§24K/§24N)
-NOT_TRAVELS = {"F1", "F3", "F4", "F6", "F7", "F8", "F10"}          # subject walks: only F2, F5, F9
+TRAVEL_RIGS = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F13", "F14", "F15", "F16", "F17", "F18", "F20", "F21", "F22", "F24"}   # the camera moves through space
+NOT_IN_PLACE = {"F1", "F4", "F5", "F6", "F7", "F9", "F10", "F13", "F14", "F15", "F17", "F19", "F20", "F21", "F24"}   # subject sits, stands, turns, reaches (§24K/§24N)
+NOT_TRAVELS = {"F1", "F3", "F4", "F6", "F7", "F8", "F10", "F15", "F16", "F17", "F18", "F19", "F20"}   # subject walks: F2, F5, F9, F11–F14, F21–F24
 MUSIC = re.compile(r"\b(?:music(?:al)?|score|soundtrack|bgm|background music|song|melody|instrumental|orchestra(?:l)?|underscore|theme tune)\b", re.I)
 NEG_CLAUSE = re.compile(r"\b(?:no|never|without)\b[^,.;:\n]*", re.I)   # negative clauses may name music ("no music, no score")
 RAIL_HOLD = re.compile(r"(?<![-\w])(?<!left )(?<!right )(?:hands?|grips?|gripping|holds?|holding|clutch(?:es|ing)?|leans? on|leaning on)\b[^.;,]{0,30}\b(?:banister|bannister|hand ?rail|stair ?rail|railing)\b", re.I)
 MUSIC_FILE = re.compile(r"(?:music|bgm|score|soundtrack|MUS-SC)", re.I)
-SEEDANCE_ONLY = {"F6", "F7", "F8", "F9", "F10"}
+SEEDANCE_ONLY = {"F6", "F7", "F8", "F9", "F10"} | {f"F{i}" for i in range(13, 25)}
 STREAMERS = re.compile(r"\b(netflix|hbo|max original|prime video|amazon original|apple tv|disney\+?|hulu|paramount\+?|peacock)\b", re.I)
 WALK = re.compile(r"\b(walks?|walking|steps? (?:toward|into|across|down|up)|crosses|climbs?|stairs|runs?|running)\b", re.I)
 PLACEHOLDER = re.compile(r"\[(?:[A-Z][A-Z0-9 ,:/'’\-]{2,}|NAME|WHO|WORD|STATE|PACE|SIDE|FOCAL)[^\]]*\]")
@@ -406,7 +412,77 @@ COMPACT_MAX = 3500
 SECTIONS = ["REFERENCES", "SHOT:", "TIMELINE", "LOOK:", "SOUND:", "KEEP:"]
 TC = re.compile(r"\[(\d+(?:\.\d+)?)\s*[–-]\s*(\d+(?:\.\d+)?)\s*s\]")
 SIZE_W = re.compile(r"\b(?:extreme wide|wide|full|medium(?: wide| close-up)?|MCU|MS|CU|ECU|WS|close-up|two-shot|over-the-shoulder|OTS|insert|establishing)\b", re.I)
-MOVE_W = re.compile(r"\b(?:locked|tripod|static|push-in|push in|pulls? back|pull-back|arc(?:s|ing)?|crane|pedestal|slider|shoulder|handheld|follows?|stabiliser|tracks?|tracking|dolly(?: zoom)?|pan|tilt)\b", re.I)
+MOVE_W = re.compile(r"\b(?:locked|tripod|static|push-in|push in|pulls? back|pull-back|arc(?:s|ing)?|crane|pedestal|slider|shoulder|handheld|follows?|stabiliser|tracks?|tracking|dolly(?: zoom)?|pan|tilt"
+                    r"|pans|panning|tilts|tilting|leads?|leading|backing away|walk-and-talk|orbit(?:s|ing)?|jib|push(?:es|ing)?[- ]through|creep(?:s|ing)?"
+                    r"|crash zoom|snap zoom|pull(?:s|ing)?[- ]out|overhead track|top-down track|counter-move|counter move|vehicle mount|car mount)\b", re.I)
+
+# V7.100.0 (user 2026-10-03 — "camera movements are lacking"): the film move library F1–F24 (§24N part 2). Each timeline
+# shot's camera clause is read for its move(s); specific moves are matched before the generic ones they contain.
+MOVE_ID = [
+    ("F10", r"dolly zoom|vertigo"), ("F19", r"crash[- ]zoom|snap[- ]zoom"),
+    ("F20", r"pull(?:s|ing)?[- ]out from (?:an? )?(?:extreme close|macro|ECU)|pull-out from (?:the )?macro"),
+    ("F17", r"push(?:es|ing)?[- ]through"), ("F18", r"(?:slow )?creep(?:s|ing)?(?: in)?"),
+    ("F15", r"orbit(?:s|ing)?"), ("F7", r"arc(?:s|ing)?"),
+    ("F16", r"crane[- ]down|jib(?: down| reveal)?|descend(?:s|ing) on a jib"), ("F8", r"crane|pedestal"),
+    ("F21", r"overhead track(?:ing)?|top-down track(?:ing)?|travel(?:s|ling)? (?:straight )?overhead"),
+    ("F13", r"lead(?:s|ing)? (?:her|him|them|the \w+)|walk-and-talk|back(?:s|ing) away (?:ahead|in front)"),
+    ("F14", r"follow(?:s|ing)? (?:from )?behind"), ("F22", r"counter[- ]?mov(?:e|es|ing)"),
+    ("F24", r"(?:vehicle|car|side|train) mount"), ("F23", r"handheld|hand-held"),
+    ("F5", r"follow(?:s|ing)?|stabiliser"), ("F9", r"track(?:s|ing)?(?: alongside| beside)?|lateral track"),
+    ("F3", r"shoulder|float(?:s|ing)?"), ("F6", r"pull(?:s|ing)?[- ]?back|dolly out"),
+    ("F1", r"push(?:es|ing)?[- ]?in|push|dolly in"), ("F4", r"slider|slid(?:e|es|ing)"),
+    ("F11", r"pan(?:s|ning)?"), ("F12", r"tilt(?:s|ing)?"), ("F2", r"locked|tripod|static|holds? still"),
+]
+MOVE_RX = [(m, re.compile(r"\b(?:" + rx + r")\b", re.I)) for m, rx in MOVE_ID]
+TRAVELLING = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F13", "F14", "F15", "F16", "F17", "F18", "F20", "F21", "F22", "F24"}
+WITH_WALK = {"F2", "F5", "F9", "F11", "F12", "F13", "F14", "F21", "F22", "F23", "F24"}   # a walking subject: the camera holds, turns, or travels with it
+ON_STAIRS = {"F2", "F11", "F12"}                                                          # a body on the stairs: the camera never travels
+COMPOUND_OK = [{"F8", "F12"}, {"F16", "F12"}, {"F1", "F11"}, {"F4", "F11"}, {"F9", "F11"}, {"F13", "F11"}, {"F14", "F11"},
+               {"F7", "F1"}, {"F15", "F1"}, {"F7", "F18"}, {"F15", "F18"}, {"F2", "F11"}, {"F2", "F12"}]
+WALK_ACT = re.compile(r"\b(?:walks?|walking|strides?|striding|crosses|crossing|climbs?|climbing|descends?|descending|runs?|running|steps? (?:toward|into|across|down|up|out))\b", re.I)
+STAIRS_W = re.compile(r"\b(?:stairs?|staircase|steps? (?:up|down)|flight)\b", re.I)
+
+
+def _moves(line):
+    """The move ids a timeline shot names in its camera clause (between the timecode and the first colon)."""
+    head = TC.sub("", line, count=1)
+    head = head.split(":", 1)[0] if ":" in head else head
+    got, rest = [], head
+    for m, rx in MOVE_RX:
+        if rx.search(rest):
+            got.append(m)
+            rest = rx.sub(" ", rest)
+    return got
+
+
+def move_checks(lines, check):
+    """V7.100.0 — the camera moves like a feature film: a range of moves, never stuck on one, never two travelling at once."""
+    mv = [_moves(ln) for ln in lines]
+    prim = [m[0] if m else None for m in mv]
+    unk = [TC.search(ln).group(0) for ln, m in zip(lines, mv) if not m]
+    check("every shot's move is one of the film moves F1–F24 (V7.100.0, §24N part 2)", not unk, ", ".join(unk))
+    bad_combo = [TC.search(ln).group(0) + " " + "+".join(m) for ln, m in zip(lines, mv)
+                 if len(m) > 2 or (len(m) == 2 and set(m) not in COMPOUND_OK)]
+    check("one move, or one of the classic pairs: crane + tilt, dolly or track + pan, arc + push (V7.100.0)", not bad_combo, ", ".join(bad_combo))
+    run3 = [TC.search(lines[i]).group(0) for i in range(len(prim) - 2) if prim[i] and prim[i] == prim[i + 1] == prim[i + 2]]
+    check("never the same camera move three shots in a row (V7.100.0)", not run3, ", ".join(run3))
+    win = [TC.search(lines[i]).group(0) for i in range(len(prim) - 4) if len({x for x in prim[i:i + 5] if x}) < 3]
+    check("≥ 3 different moves in any five shots (V7.100.0)", not win, ", ".join(win))
+    if len(lines) >= 3:
+        locked = sum(1 for x in prim if x == "F2")
+        check("locked shots on no more than a third of the take (V7.100.0)", locked * 3 <= len(lines), f"{locked}/{len(lines)} locked")
+        check("at least one shot where the camera travels (V7.100.0)", any(set(m) & TRAVELLING for m in mv), ", ".join(x or "?" for x in prim))
+    zooms = [TC.search(ln).group(0) for ln, m in zip(lines, mv) if "F19" in m]
+    check("a crash zoom at most once in a take (V7.100.0)", len(zooms) <= 1, ", ".join(zooms))
+    both = []
+    for ln, m in zip(lines, mv):
+        act = ln.split(":", 1)[1] if ":" in TC.sub("", ln, count=1) else ln
+        if WALK_ACT.search(act):
+            allowed = ON_STAIRS if STAIRS_W.search(ln) else WITH_WALK
+            if set(m) - allowed:
+                both.append(TC.search(ln).group(0) + " " + "+".join(m) + (" on the stairs" if STAIRS_W.search(ln) else ""))
+    check("camera and body travel together only on F5/F9/F13/F14/F21/F22/F24 on flat ground; on the stairs the camera holds, pans or tilts (§27G, V7.100.0)",
+          not both, ", ".join(both))
 
 
 SHOT_MAX = 5   # V7.99.0: feature-drama coverage — no shot inside a take runs past 5 s (unless the user asked for a oner)
@@ -461,6 +537,7 @@ def compact_checks(c, p, conn, d, check):
         need = 1 if len(lines) < 3 else (2 if len(lines) < 5 else 3)
         check(f"coverage: ≥ {need} shot sizes in {len(lines)} shots — wide, medium, close (V7.99.0, §24P part 3)",
               len({x for x in sizes if x}) >= need, ", ".join(x or "?" for x in sizes))
+        move_checks(lines, check)
     nosize = [TC.search(ln).group(0) for ln in lines if not SIZE_W.search(ln)]
     nomove = [TC.search(ln).group(0) for ln in lines if not MOVE_W.search(ln)]
     check("every shot names its size (V7.97.0)", not nosize, ", ".join(nosize))
@@ -492,18 +569,18 @@ def film_shot(c, p, conn, mode, kind, film, check):
     if (film or series) and not compact:
         check("one F-rig", len(rigs) == 1, ",".join(rigs) or "none found")
         bad = [r for r in rigs if (sm == "in_place" and r in NOT_IN_PLACE) or (sm == "travels" and r in NOT_TRAVELS)]
-        check("camera or subject moves, never both — except F5/F9 on a walk (§24K, §24N)", not bad, f"subject {sm}, rig {','.join(rigs)}")
+        check("camera or subject moves, never both — except F5/F9/F13/F14/F21/F22/F24 on a walk (§24K, §24N)", not bad, f"subject {sm}, rig {','.join(rigs)}")
         if "F5" in rigs:
             check("F5 framed waist-up", "waist" in p.lower())
         if "F9" in rigs:
             check("F9: a walk in profile", sm == "travels" and "profile" in p.lower(), f"subject {sm}")
         if set(rigs) & SEEDANCE_ONLY:
-            check("F6–F10 on Seedance only (§24N)", conn == "seedance", conn)
+            check("F6–F10, F13–F24 on Seedance only (§24N)", conn == "seedance", conn)
     if series and not compact:
         check("SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] in p)
     if not film:
         check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
-        check("ads stay phone style: no F6–F10 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
+        check("ads stay phone style: no F6–F10, F13–F24 (§24N)", not any(sig in p for r, sig in RIGS.items() if r in SEEDANCE_ONLY))
     # 5a. One take for connected action (§24K part 5, V7.88.0)
     if conn == "seedance" and kind != "voice_master" and not c.get("legacy_build"):
         # legacy_build: true — a build started before V7.88.0 keeps its shot-by-shot plan (never re-cut into takes without its team's ask)

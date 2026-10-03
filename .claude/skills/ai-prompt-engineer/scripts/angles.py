@@ -52,6 +52,10 @@ Checks (any FAIL → exit 1):
            a scene of 5+ shots with fewer than 3 library shots, a wide-angle or fisheye close-up on a face, a
            lip-synced line on a rear/silhouette/aerial/overhead-fisheye shot, a distorting shot on a product beat,
            a Dutch/prism/magnifier/macro shot on a travelling rig (`inspo_ok: true` exempts a shot the inspo uses)
+  MOVE     (§24N part 2, V7.100.0, Modes 4–5, new builds) every film row names its camera move `rig` (F1–F24, a classic
+           pair in `rig2`: crane + tilt, dolly/track + pan, arc + push); per scene never one move three in a row, ≥ 3 moves
+           in any five, locked (F2) on at most a third, at least one travelling move in 3+ shots, ≤ 1 crash zoom (≤ 2 a
+           film); a walking subject only under F2/F5/F9/F11–F14/F21–F24, a body on the stairs only under F2/F11/F12
   LIGHT    (§30K) missing light; missing or implausible kelvin (1800–10000K); two white balances for one
            source inside one scene or act group; a flat frontal key on a face; a backlit face with no `why` (never while speaking in
            Mode 1); no light state for the act; time going backwards inside a story day
@@ -113,6 +117,23 @@ PRE_SCOPE = {"identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "str
              "stryde-what-changed", "demo-ad"}
 
 
+# Builds that existed at V7.100.0 keep their camera plans: no MOVE range is required of them (a system update never touches
+# existing builds). Recognised by the act map's path.
+PRE_MOVES = {"facelove-my-mother", "facelove-paint-wall", "facelove-returning-it", "identity-callout-v2", "intake-1", "sha0071",
+             "six-weeks-ago", "stryde-71-stairs", "stryde-71-stairs-pixar-song", "stryde-cascade", "stryde-failed-alternatives",
+             "stryde-half-my-age", "stryde-her-dad", "stryde-identity", "stryde-lost-moments", "stryde-not-your-cartilage",
+             "stryde-regrets", "stryde-the-impression", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad",
+             "stryde-what-changed", "demo-ad"}
+FILM_MOVES = {f"F{i}" for i in range(1, 25)}
+TRAVELLING = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F13", "F14", "F15", "F16", "F17", "F18", "F20", "F21", "F22", "F24"}
+WITH_WALK = {"F2", "F5", "F9", "F11", "F12", "F13", "F14", "F21", "F22", "F23", "F24"}
+ON_STAIRS = {"F2", "F11", "F12"}
+COMPOUND_OK = [{"F8", "F12"}, {"F16", "F12"}, {"F1", "F11"}, {"F4", "F11"}, {"F9", "F11"}, {"F13", "F11"}, {"F14", "F11"},
+               {"F7", "F1"}, {"F15", "F1"}, {"F7", "F18"}, {"F15", "F18"}, {"F2", "F11"}, {"F2", "F12"}]
+WALK_ACT = re.compile(r"\b(?:walks?|walking|strides?|striding|crosses|crossing|climbs?|climbing|descends?|descending|runs?|running|steps? (?:toward|into|across|down|up|out))\b", re.I)
+STAIRS_W = re.compile(r"\b(?:stairs?|staircase|steps? (?:up|down)|flight)\b", re.I)
+
+
 def build_of(path):
     parts = path.parts
     return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
@@ -153,7 +174,7 @@ def main():
             if len({setup(x) for x in w}) < 3:
                 fail("WINDOW", [x["beat"] for x in w], f"{len({setup(x) for x in w})} setups in five shots")
 
-    TRAVEL_RIGS = {"F1", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "R1-W", "R1-FAST"}
+    TRAVEL_RIGS = TRAVELLING | {"R1-W", "R1-FAST"}
     for r in rows:
         f = r.get("focus")
         if not f:
@@ -223,6 +244,46 @@ def main():
         kinds = {sid for r in rs for sid in shots(r)}
         if len(rs) >= 5 and len(kinds) < 3:
             fail("SHOT", [g], f"{len(kinds)} library shots in {len(rs)} shots")
+
+    # MOVE (V7.100.0, user 2026-10-03 — "camera movements are lacking"): the film move library F1–F24 (§24N part 2), a range of
+    # moves per scene like the angles. Builds that existed at V7.100.0 keep their plans (PRE_MOVES, by the act map's path).
+    if build_of(Path(a.rows).resolve()) not in PRE_MOVES:
+        mv = lambda r: [m for m in (r.get("rig"), r.get("rig2")) if m]
+        for r in film:
+            ms = mv(r)
+            if not ms:
+                fail("MOVE", [r.get("beat")], "film row has no camera move (rig F1–F24, §24N part 2)")
+                continue
+            unk = [m for m in ms if m not in FILM_MOVES]
+            if unk:
+                fail("MOVE", [r["beat"]], f"unknown move {unk} — F1–F24")
+            if len(ms) == 2 and set(ms) not in COMPOUND_OK:
+                fail("MOVE", [r["beat"]], f"{'+'.join(ms)} — one move, or a classic pair: crane + tilt, dolly or track + pan, arc + push")
+            act = f"{r.get('action', '')} {r.get('staging', '')}"
+            walks = r.get("subject_motion") == "travels" or bool(WALK_ACT.search(act))
+            stairs = bool(STAIRS_W.search(act)) or r.get("staging") == "stairs"
+            if walks and set(ms) - (ON_STAIRS if stairs else WITH_WALK):
+                fail("MOVE", [r["beat"]], f"{'+'.join(ms)} on a {'body on the stairs — hold, pan or tilt' if stairs else 'walk — F2, F5, F9, F11–F14, F21–F24 only'} (§27G)")
+        for g, rs in fg.items():
+            pr = [mv(r)[0] if mv(r) else None for r in rs]
+            for i in range(len(pr) - 2):
+                if pr[i] and pr[i] == pr[i + 1] == pr[i + 2]:
+                    fail("MOVE", [x["beat"] for x in rs[i:i + 3]], f"{pr[i]} three shots in a row")
+            for i in range(len(pr) - 4):
+                if len({x for x in pr[i:i + 5] if x}) < 3:
+                    fail("MOVE", [x["beat"] for x in rs[i:i + 5]], "fewer than 3 different moves in five shots")
+            if len(rs) >= 3:
+                lk = sum(1 for x in pr if x == "F2")
+                if lk * 3 > len(rs):
+                    fail("MOVE", [g], f"locked (F2) on {lk}/{len(rs)} shots — at most a third")
+                if not any(set(mv(r)) & TRAVELLING for r in rs):
+                    fail("MOVE", [g], "no shot where the camera travels — give the scene one push, pull, arc, track, crane or lead")
+            cz = sum(1 for r in rs if "F19" in mv(r))
+            if cz > 1:
+                fail("MOVE", [g], f"{cz} crash zooms in one scene — at most one")
+        cz = [r["beat"] for r in film if "F19" in mv(r)]
+        if len(cz) > 2:
+            fail("MOVE", cz, f"{len(cz)} crash zooms — at most two in a film")
 
     ORDER = ["morning", "midday", "afternoon", "evening", "night"]
     last_time = {}
@@ -415,7 +476,7 @@ def main():
         for f in out:
             print(f"FAIL  {f['check']:8} {', '.join(map(str, f['beats']))}  — {f['detail']}")
         print("setups: " + ", ".join(f"{k} ×{v}" for k, v in sorted(dist.items(), key=lambda x: -x[1])))
-        print("ANGLES, SHOTS, FOCUS, LIGHT, ANATOMY & MUSIC-VIDEO CAMERA PASS" if not out else f"ANGLES, SHOTS, FOCUS, LIGHT, ANATOMY & MUSIC-VIDEO CAMERA FAIL ({len(out)})")
+        print("ANGLES, SHOTS, MOVES, FOCUS, LIGHT, ANATOMY & MUSIC-VIDEO CAMERA PASS" if not out else f"ANGLES, SHOTS, MOVES, FOCUS, LIGHT, ANATOMY & MUSIC-VIDEO CAMERA FAIL ({len(out)})")
     sys.exit(1 if out else 0)
 
 
