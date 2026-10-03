@@ -1,0 +1,44 @@
+{
+ "beat": "SC12-SH04-START",
+ "build": "facelove-walmart",
+ "kind": "image",
+ "mode": 5,
+ "connector": "higgsfield",
+ "model": "nano_banana_pro",
+ "prompt": "For the line — Go be too busy glowing to look backward. —: a final frame from a 3D animated feature film, stylised storybook render. Image 1 is the product: the FACELOVE stick, closed — copied exactly, the same slim soft pale lilac satin barrel, the same cap, the same one letterspaced wordmark; nothing redesigned, kept in its own colour. Image 2 is the patio from this film: copy its mosaic table top, the lemon tree soft behind on the left, the magenta bougainvillea soft on the right. Image 3 is the style — same render, materials, light and proportions, and the stick's true size against a hand. A close shot at eye level: exactly one stick stands upright on the round mosaic table top, filling the middle third of the frame from base to cap, sharp; on the table top only the stick, every other surface bare; the patio soft behind. The stick is turned a quarter away from the lens, its wordmark at the right edge of the barrel. Late golden sun from the left, one soft highlight down the barrel, a short contact shadow at its base, the stick lit by the sun alone. NEGATIVES: no hand, no person, no second stick, no lettering but the wordmark, no deep purple or chrome.",
+ "script_line": "Go be too busy glowing to look backward.",
+ "aspect_ratio": "9:16",
+ "pair": [
+  "nano_banana_pro",
+  "nano_banana_pro"
+ ],
+ "taste": [],
+ "first_frame": false,
+ "refs": [
+  {
+   "n": 1,
+   "kind": "product",
+   "file": "PROD-CLOSED"
+  },
+  {
+   "n": 2,
+   "kind": "location",
+   "file": "L-PATIO"
+  },
+  {
+   "n": 3,
+   "kind": "style",
+   "file": "PROD-HAND-CARD v3"
+  }
+ ],
+ "files": [
+  "product/PROD-CLOSED",
+  "plates/L-PATIO",
+  "cards/PROD-HAND-CARD_v3.png"
+ ],
+ "media": [
+  "47b23ddf-c6c4-4ffa-89c2-77a4ddc312f1",
+  "2555f8cb-3c99-4448-97d5-3eccb9044369",
+  "89f64a0f-9603-4986-b15f-5369389f9f7f"
+ ]
+}

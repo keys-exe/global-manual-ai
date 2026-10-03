@@ -1,0 +1,134 @@
+{
+ "SC06-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_4b232a9f-9e3b-427a-8508-121f1131051e.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC06-T1_v1.mp4",
+  "dur": 17.06,
+  "size": 2940015,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC06-T1_v1.mp4  \u2014 music -58.2 dB against the whole mix, -43.3 dB at its loudest",
+  "clean": null
+ },
+ "SC02-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_b2c89328-5080-4872-a368-711b8bd060e5.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC02-T1_v1.mp4",
+  "dur": 24.06,
+  "size": 4151547,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC02-T1_v1.mp4  \u2014 music -54.8 dB against the whole mix, -39.8 dB at its loudest",
+  "clean": null
+ },
+ "SC03-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_3d4cda37-55bb-46c3-a894-c03a674f53df.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC03-T1_v1.mp4",
+  "dur": 24.06,
+  "size": 4285645,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC03-T1_v1.mp4  \u2014 music -54.9 dB against the whole mix, -41.9 dB at its loudest",
+  "clean": null
+ },
+ "SC04-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_f71d2b3f-d435-4179-9cb5-bf6446781816.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC04-T1_v1.mp4",
+  "dur": 15.07,
+  "size": 2994376,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC04-T1_v1.mp4  \u2014 music -57.4 dB against the whole mix, -49.6 dB at its loudest",
+  "clean": null
+ },
+ "SC05-T2": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_a6d270d4-8e3a-481f-9008-14348e0cfc83.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC05-T2_v1.mp4",
+  "dur": 21.06,
+  "size": 3863370,
+  "audio": true,
+  "music": "MUSIC  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC05-T2_v1.mp4  \u2014 music -29.5 dB against the whole mix, -0.5 dB at its loudest",
+  "clean": "/home/user/global-manual-ai/builds/facelove-walmart/takes/clean/SC05-T2_v1.nomusic.mp4",
+  "clean_check": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/clean/SC05-T2_v1.nomusic.mp4  \u2014 music -51.7 dB against the whole mix, -41.7 dB at its loudest",
+  "clean_size": 4015420
+ },
+ "SC06-T3": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182406_12399b29-836d-4ab3-86c0-e9e6d47275eb.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC06-T3_v1.mp4",
+  "dur": 7.07,
+  "size": 1301493,
+  "audio": true,
+  "music": "MUSIC  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC06-T3_v1.mp4  \u2014 music -13.7 dB against the whole mix, -0.2 dB at its loudest",
+  "clean": "/home/user/global-manual-ai/builds/facelove-walmart/takes/clean/SC06-T3_v1.nomusic.mp4",
+  "clean_check": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/clean/SC06-T3_v1.nomusic.mp4  \u2014 music -56.9 dB against the whole mix, -45.9 dB at its loudest",
+  "clean_size": 1333247
+ },
+ "SC07-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182408_9192debc-6c23-4269-bd53-af4b3d258143.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC07-T1_v1.mp4",
+  "dur": 13.04,
+  "size": 2418956,
+  "audio": false,
+  "music": null,
+  "clean": null
+ },
+ "SC08-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182406_a432c03f-a1f3-48ae-a0af-174b11042ee1.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC08-T1_v1.mp4",
+  "dur": 13.04,
+  "size": 2056854,
+  "audio": false,
+  "music": null,
+  "clean": null
+ },
+ "SC09-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182406_db231c12-98c3-415a-8d36-9807b3fcc80c.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC09-T1_v1.mp4",
+  "dur": 20.06,
+  "size": 4305303,
+  "audio": true,
+  "music": "MUSIC  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC09-T1_v1.mp4  \u2014 music -14.0 dB against the whole mix, -0.0 dB at its loudest",
+  "clean": "/home/user/global-manual-ai/builds/facelove-walmart/takes/clean/SC09-T1_v1.nomusic.mp4",
+  "clean_check": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/clean/SC09-T1_v1.nomusic.mp4  \u2014 music -55.5 dB against the whole mix, -29.3 dB at its loudest",
+  "clean_size": 4418432
+ },
+ "SC05-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_91b8386b-7e37-44c1-88ad-7ff2767e21c8.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC05-T1_v1.mp4",
+  "dur": 25.04,
+  "size": 4852558,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC05-T1_v1.mp4  \u2014 music -60.8 dB against the whole mix, -41.7 dB at its loudest",
+  "clean": null
+ },
+ "SC06-T2": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182258_70bfa959-3a59-478c-bedd-3e4374155afc.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC06-T2_v1.mp4",
+  "dur": 16.04,
+  "size": 1692023,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC06-T2_v1.mp4  \u2014 music -62.8 dB against the whole mix, -49.1 dB at its loudest",
+  "clean": null
+ },
+ "SC10-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182406_97b405f4-79db-4981-86cf-55aaa7ec6f2e.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC10-T1_v1.mp4",
+  "dur": 6.04,
+  "size": 1199901,
+  "audio": false,
+  "music": null,
+  "clean": null
+ },
+ "SC11-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182406_03fa5095-ab98-4f29-93cc-64f5f30c186f.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC11-T1_v1.mp4",
+  "dur": 11.04,
+  "size": 2551860,
+  "audio": false,
+  "music": null,
+  "clean": null
+ },
+ "SC12-T1": {
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_182406_a5ea64b3-73e5-44d4-93f5-1e7104bc1ff9.mp4",
+  "raw": "/home/user/global-manual-ai/builds/facelove-walmart/takes/SC12-T1_v1.mp4",
+  "dur": 22.08,
+  "size": 4764071,
+  "audio": true,
+  "music": "CLEAN  /home/user/global-manual-ai/builds/facelove-walmart/takes/SC12-T1_v1.mp4  \u2014 music -60.4 dB against the whole mix, -39.6 dB at its loudest",
+  "clean": null
+ }
+}
