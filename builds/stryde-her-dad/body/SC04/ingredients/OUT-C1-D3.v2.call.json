@@ -1,0 +1,15 @@
+{
+ "beat": "OUT-C1-D3",
+ "build": "stryde-her-dad",
+ "kind": "image",
+ "connector": "kie",
+ "model": "gpt-image-2-5-sunburst-image-to-image",
+ "aspect_ratio": "9:16",
+ "refs": [
+  "voice/C1_face.jpg",
+  "body/SC03/ingredients/OUT-C1-D2_v1.png"
+ ],
+ "prompt": "Photographed as a single frame from a US feature film, shot on an ARRI Alexa Mini LF in large format with an ARRI Signature Prime at 50mm and T4, the camera on a locked tripod at standing eye height, composed natively for a vertical 9:16 frame with no letterbox bars. An outfit reference card for one story day: Image 1 is the man's face and hair only, and Image 2 is the same man on another day, for his face and his build only — his clothes in Image 2 are never worn here — copy his face, age, thick salt-and-pepper hair with its left parting, the crooked nose and the short white scar through his left eyebrow exactly; he is a broad, heavy-shouldered builder of sixty-four with a thick chest, a solid middle and a slight stoop, exactly as heavy and broad as in Image 2. He stands full length, dead centre, facing the camera, arms relaxed at his sides, against a plain seamless mid-grey studio backdrop in soft even daylight from the left, the whole figure from hair to shoes inside the frame and filling about two-thirds of its height. He wears, and only these, his going-out clothes for a doctor's appointment: a plain navy zip-up fleece jacket with a stand collar, worn zipped halfway over a plain grey crew-neck T-shirt, dark-blue straight-leg jeans that reach his shoes so both knees are covered, a worn brown leather belt, and polished brown leather lace-up shoes. Nothing else is worn or carried. Across the bottom of the card, on a plain white strip below the figure, one caption line in small black sans-serif text: \"TONY · Day D3 (the GP appointment): navy zip fleece, grey T-shirt, dark jeans, brown leather shoes\". Negatives: no shorts, no bare knees, no work boots, no sweatshirt, no work trousers, no knee support, no hat, no watch showing, no other people, no props, no set, no logos or lettering on the clothing, no text other than the caption.",
+ "fix_note": "create another one",
+ "noteOwner": true
+}

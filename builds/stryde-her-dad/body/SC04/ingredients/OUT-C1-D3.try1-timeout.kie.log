@@ -1,0 +1,7 @@
+{"taskId": "9a598b7c0a162303fb5938ad074c9a7d", "created": true}
+{
+  "taskId": "9a598b7c0a162303fb5938ad074c9a7d",
+  "state": "fail",
+  "credits": 0.0,
+  "failMsg": "The upstream API service timed out and no results were returned, please try again."
+}
