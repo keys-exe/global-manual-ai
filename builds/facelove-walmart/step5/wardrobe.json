@@ -1,0 +1,229 @@
+{
+ "days": [
+  {
+   "day": "F1",
+   "event": "the evening Peter left — the envelope on the coffee table",
+   "source": "stated: 'After thirty one years… I need something different.' (four years earlier, L005)",
+   "outfits": {
+    "N": "the dusty-mauve knit cardigan over a grey T-shirt and charcoal pull-on trousers, grey felt slippers (her before sheet)",
+    "C1": "a tan zip-up car coat over his navy quarter-zip, tan chinos, brown boat shoes — dressed to leave"
+   },
+   "events": [
+    {
+     "id": "F1-E1",
+     "location": "L-LIVING",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC02-SH01",
+      "SC02-SH02",
+      "SC02-SH03a",
+      "SC02-SH03b",
+      "SC02-SH04",
+      "SC02-SH05",
+      "SC02-SH06"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "F2",
+   "event": "a night in the months after — the mirror, the photos, the layers of makeup",
+   "source": "stated: 'I stopped looking in mirrors… I stopped being in photos' (L008)",
+   "outfits": {
+    "N": "a faded grey cotton bathrobe tied over a pale nightgown, grey felt slippers"
+   },
+   "events": [
+    {
+     "id": "F2-E1",
+     "location": "L-VANITY",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC03-SH01",
+      "SC03-SH02a",
+      "SC03-SH02b",
+      "SC03-SH03",
+      "SC03-SH04",
+      "SC03-SH05"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "F3",
+   "event": "another morning — every cream, every serum, every foundation on the shelf",
+   "source": "contrast: 'I decided this was just what sixty looked like' (L010)",
+   "outfits": {
+    "N": "the dusty-mauve knit cardigan over a grey T-shirt and charcoal pull-on trousers (her before sheet)"
+   },
+   "events": [
+    {
+     "id": "F3-E1",
+     "location": "L-VANITY",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC04-SH01",
+      "SC04-SH02",
+      "SC04-SH03a",
+      "SC04-SH03b"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "F4",
+   "event": "the night Rosa came — the door, the wine, the stick",
+   "source": "stated: 'what my sister handed me a few weeks ago' (L004)",
+   "outfits": {
+    "N": "an old oversized faded-grey sweatshirt over charcoal pull-on trousers, grey felt slippers, hair limp",
+    "C3": "the marigold-orange wrap blouse and long ink-blue skirt, tan sandals (her sheet), her big woven shoulder bag"
+   },
+   "events": [
+    {
+     "id": "F4-E1",
+     "location": "L-HALL",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC05-SH01",
+      "SC05-SH02",
+      "SC05-SH03",
+      "SC05-SH04a",
+      "SC05-SH04b",
+      "SC05-SH05",
+      "SC05-SH06",
+      "SC05-SH07a",
+      "SC05-SH07b",
+      "SC05-SH08",
+      "SC05-SH09a",
+      "SC05-SH09b",
+      "SC05-SH10",
+      "SC06-SH01",
+      "SC06-SH02",
+      "SC06-SH03",
+      "SC06-SH04a",
+      "SC06-SH04b",
+      "SC06-SH05",
+      "SC06-SH06",
+      "SC06-SH07"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A1",
+   "event": "the first morning she tried it",
+   "source": "stated: 'the first morning I tried it' (L016)",
+   "outfits": {
+    "N": "a soft cream cotton robe over a lilac nightdress, hair brushed"
+   },
+   "events": [
+    {
+     "id": "A1-E1",
+     "location": "L-VANITY",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC07-SH01",
+      "SC07-SH02",
+      "SC07-SH03a",
+      "SC07-SH03b"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "A2",
+   "event": "the weeks after — back in the photos with Rosa on the patio",
+   "source": "stated: 'I got back in the photos. I stopped hiding.' (L017)",
+   "outfits": {
+    "N": "a soft lilac blouse, white cropped trousers, tan sandals",
+    "C3": "a turquoise peasant blouse, a long white skirt, tan sandals"
+   },
+   "events": [
+    {
+     "id": "A2-E1",
+     "location": "L-PATIO",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC08-SH01",
+      "SC08-SH02",
+      "SC08-SH03"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "P1",
+   "event": "the Walmart day — the carts hit, the payoff, out through the doors",
+   "source": "stated: 'At sixty three, I ran into my ex-husband in Walmart' (L001)",
+   "outfits": {
+    "N": "the soft cream boat-neck fine-knit sweater, high-waisted camel wide-leg trousers, tan leather loafers (her after sheet)",
+    "C1": "the navy quarter-zip over a white collared shirt, tan chinos, brown boat shoes (his sheet)",
+    "C2": "the camel cropped blazer over a white ribbed tank, black flared leggings, white platform trainers (her sheet)"
+   },
+   "events": [
+    {
+     "id": "P1-E1",
+     "location": "L-AISLE",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC01-SH01",
+      "SC01-SH02",
+      "SC01-SH03",
+      "SC01-SH04a",
+      "SC01-SH04b",
+      "SC01-SH05",
+      "SC01-SH06",
+      "SC01-SH07",
+      "SC09-SH01",
+      "SC09-SH02a",
+      "SC09-SH02b",
+      "SC09-SH03",
+      "SC09-SH04",
+      "SC09-SH05"
+     ]
+    },
+    {
+     "id": "P1-E2",
+     "location": "L-STORE-DOORS",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC10-SH01",
+      "SC10-SH02"
+     ]
+    }
+   ]
+  },
+  {
+   "day": "P2",
+   "event": "two weeks later — Peter's text on the patio, then the close",
+   "source": "stated: 'Two weeks later, Peter texted me.' (L020)",
+   "outfits": {
+    "N": "a soft lilac linen shirt, cream wide-leg trousers, tan sandals, hair sleek"
+   },
+   "events": [
+    {
+     "id": "P2-E1",
+     "location": "L-PATIO",
+     "visibility": "VISIBLE",
+     "beats": [
+      "SC11-SH01",
+      "SC11-SH02",
+      "SC11-SH03",
+      "SC12-SH01a",
+      "SC12-SH01b",
+      "SC12-SH02a",
+      "SC12-SH02b",
+      "SC12-SH03a",
+      "SC12-SH03b"
+     ]
+    }
+   ]
+  }
+ ],
+ "talking_heads": [],
+ "names": {
+  "N": "Michelle",
+  "C1": "Peter",
+  "C2": "the woman, 41",
+  "C3": "Rosa"
+ }
+}

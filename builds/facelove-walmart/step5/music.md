@@ -1,0 +1,16 @@
+### Music Register Map (§40A) — one music family for the film; music only in the edit (never in a Seedance clip)
+
+**Product's first frame:** SC06-SH01 (Rosa draws the violet stick from her bag) — `product_at` = the start of SC06. Everything before it is **investigation** (suspense, curiosity — never sad, `NEG-SAD`); the music **changes on that frame** (±0.25 s, `MUS-TURN` starts there).
+
+| Part | Scenes | Lines | Register | What it sounds like |
+|---|---|---|---|---|
+| Hook — cold open | SC01 (the carts, the stare, "It is just me.") | L001–L004 | **MUS-OPEN** | a low pulsing drone and a soft ticking pulse under the crash; one muted piano note on the stare; unresolved, curious — the investigation starts here |
+| Flashback — the wound | SC02 (the envelope, the door) | L005–L006 | **MUS-OPEN** (darker colour of it) | the same drone thinned to a single low string held under the room tone; silence on "Thirty one years." — tense, never mournful |
+| The undoing, nothing worked | SC03, SC04 | L007–L010 | **MUS-EXPOSE** (inside the MUS-OPEN family) | the pulse returns slower, a sparse modal piano figure, questions not answers; no lament, no weeping strings |
+| The sister | SC05 | L011–L013 | **MUS-EDU** | lighter, inquisitive: pizzicato over the drone, a little warmth when Rosa says "It was the foundation." — still unresolved |
+| **The reveal (product's first frame)** | SC06 (from SH01) | L014–L015 | **MUS-TURN** | the change lands on the stick's first frame: the drone drops out, a warm sustained chord opens; under the colour-change oner one rising, resolving phrase |
+| The change, back in the photos | SC07, SC08 | L016–L017 | **MUS-AFTER** | warm and hopeful — acoustic guitar and soft piano, light pulse, never cute or bouncy |
+| The payoff, the doors, the text | SC09, SC10, SC11 | L018–L020 | **MUS-AFTER** (a quiet, knowing turn of it) | the payoff smile in near silence, the theme returning as she glides away; open and golden through the doors; a gentle resolve as the phone goes face down |
+| CTA | SC12 | L021 | **MUS-OFFER** | confident, resolved, warm — the theme stated whole under the offer; a clean end on "look backward." |
+
+**Banned everywhere it educates, warns or exposes (SC01–SC06):** generic cute, cheerful, upbeat, corporate or stock-advert music (`NEG-MUSIC`). **Supplied music:** none in the Drive folder → generated at step 8 (`music.py plan --register …` → `compose` → `check`, listened to by me, both run modes).

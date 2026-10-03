@@ -1,0 +1,106 @@
+{
+ "L-AISLE": {
+  "view": "down the household-goods aisle toward the walkway (plate L-AISLE); the reverse from the walkway back into it (L-AISLE-REV)",
+  "landmarks": {
+   "end-cap": "the tall end-cap of plain blue boxes at the aisle's far corner — frame right from inside the aisle, frame left from the walkway",
+   "paper shelves": "the shelves of paper towels and toilet paper — frame left from inside the aisle",
+   "detergent shelves": "the shelves of orange, blue and green detergent bottles — frame right from inside the aisle",
+   "walkway": "the wide main walkway crossing the aisle's far end"
+  },
+  "levels": [
+   "store floor"
+  ],
+  "props": {
+   "cart": "a full-size store shopping cart, waist-high",
+   "Michelle's cart": "a full-size store shopping cart, waist-high, holding a few household things"
+  },
+  "still": []
+ },
+ "L-LIVING": {
+  "view": "from the window wall across the living room toward the archway (plate L-LIVING)",
+  "landmarks": {
+   "armchair": "the dusty-rose wingback armchair, front left by the lamp",
+   "lamp": "the pleated table lamp on the side table beside the armchair",
+   "coffee table": "the low walnut coffee table, middle of the room",
+   "sofa": "the oatmeal three-seat sofa along the right wall",
+   "archway": "the rounded archway to the hall, back centre"
+  },
+  "levels": [
+   "ground floor"
+  ],
+  "props": {
+   "envelope": "a plain manila envelope, a little larger than a sheet of paper"
+  },
+  "still": []
+ },
+ "L-VANITY": {
+  "view": "from just inside the bedroom door toward the vanity (plate L-VANITY)",
+  "landmarks": {
+   "vanity": "the white vanity table with the oval mirror on its stand, against the far wall right of centre",
+   "stool": "the small lilac stool in front of the vanity",
+   "window": "the window with sheer white curtains, frame right beside the vanity",
+   "bed": "the cream bed, frame left",
+   "door": "the bedroom door, back wall left of centre"
+  },
+  "levels": [
+   "ground floor"
+  ],
+  "props": {
+   "stick": "the FACELOVE stick, a little longer than her hand is wide",
+   "photo frame": "a small framed photograph, the size of a paperback"
+  },
+  "still": []
+ },
+ "L-HALL": {
+  "view": "from the middle of the entry hall toward the front door (plate P-HOUSE)",
+  "landmarks": {
+   "front door": "the white front door at the end of the hall, the frosted sidelight on its left",
+   "mirror": "the round brass-framed mirror over the console, left wall",
+   "console": "the narrow dark-wood console table on the left wall",
+   "archway": "the rounded archway to the living room, right wall",
+   "pendant": "the globe pendant light hanging in the middle of the hall"
+  },
+  "levels": [
+   "ground floor"
+  ],
+  "props": {
+   "stick": "the FACELOVE stick, a little longer than her hand is wide",
+   "wine": "a bottle of red wine, held by its neck",
+   "bag": "Rosa's big woven shoulder bag"
+  },
+  "still": []
+ },
+ "L-STORE-DOORS": {
+  "view": "from inside the store's front toward the open sliding doors (plate L-STORE-DOORS)",
+  "landmarks": {
+   "sliding doors": "the open automatic sliding doors, straight ahead",
+   "carts": "the row of nested carts along the right wall",
+   "mat": "the blue mat between the doors",
+   "parking lot": "the golden parking lot and palms beyond the doors"
+  },
+  "levels": [
+   "store floor"
+  ],
+  "props": {
+   "Michelle's cart": "a full-size store shopping cart, waist-high, holding a few household things"
+  },
+  "still": []
+ },
+ "L-PATIO": {
+  "view": "from under the patio cover across the patio (plate L-PATIO)",
+  "landmarks": {
+   "table": "the round wrought-iron mosaic table, middle",
+   "bougainvillea": "the magenta bougainvillea on the right of the garden wall",
+   "lemon tree": "the potted lemon tree and agave, frame left",
+   "garden wall": "the sand stucco garden wall at the back"
+  },
+  "levels": [
+   "patio"
+  ],
+  "props": {
+   "phone": "her phone, a little smaller than her hand",
+   "stick": "the FACELOVE stick, a little longer than her hand is wide"
+  },
+  "still": []
+ }
+}
