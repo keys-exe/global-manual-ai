@@ -1,0 +1,113 @@
+{
+ "budget": {
+  "build": "facelove-walmart",
+  "draft": true,
+  "mode": 5,
+  "connectors": [
+   {
+    "conn": "Higgsfield",
+    "base": 12666.0,
+    "allowance": 3803.1,
+    "estimate": 16500,
+    "cap": 16500,
+    "cap_source": "estimate"
+   },
+   {
+    "conn": "ElevenLabs",
+    "base": 11800.0,
+    "allowance": 2360.0,
+    "estimate": 14200,
+    "cap": 14200,
+    "cap_source": "estimate"
+   }
+  ],
+  "lines": [
+   {
+    "job": "music",
+    "conn": "ElevenLabs",
+    "model": null,
+    "qty": 11.0,
+    "unit": "per track",
+    "renders_each": 1,
+    "credits": 11000.0,
+    "price": 1000,
+    "source": "unverified",
+    "note": ""
+   },
+   {
+    "job": "seedance",
+    "conn": "Higgsfield",
+    "model": null,
+    "qty": 220.0,
+    "unit": "per second",
+    "renders_each": 1,
+    "credits": 9900.0,
+    "price": 45,
+    "source": "unverified: Kie rate assumed",
+    "note": "one take per scene (\u00a724K part 5)"
+   },
+   {
+    "job": "seedance",
+    "conn": "Higgsfield",
+    "model": null,
+    "qty": 60.0,
+    "unit": "per second",
+    "renders_each": 1,
+    "credits": 2700.0,
+    "price": 45,
+    "source": "unverified: Kie rate assumed",
+    "note": "voice masters (\u00a724I)"
+   },
+   {
+    "job": "sfx",
+    "conn": "ElevenLabs",
+    "model": null,
+    "qty": 8.0,
+    "unit": "per sound",
+    "renders_each": 1,
+    "credits": 800.0,
+    "price": 100,
+    "source": "unverified",
+    "note": ""
+   },
+   {
+    "job": "info_cards",
+    "conn": "Higgsfield",
+    "model": "nano_banana_pro",
+    "qty": 22.0,
+    "unit": "per image",
+    "renders_each": 1,
+    "credits": 44.0,
+    "price": 2,
+    "source": "measured: 2k image",
+    "note": ""
+   },
+   {
+    "job": "plates",
+    "conn": "Higgsfield",
+    "model": "nano_banana_pro",
+    "qty": 6.0,
+    "unit": "per image",
+    "renders_each": 1,
+    "credits": 12.0,
+    "price": 2,
+    "source": "measured: 2k image",
+    "note": ""
+   },
+   {
+    "job": "cast",
+    "conn": "Higgsfield",
+    "model": "nano_banana_pro",
+    "qty": 5.0,
+    "unit": "per image",
+    "renders_each": 1,
+    "credits": 10.0,
+    "price": 2,
+    "source": "measured: 2k image",
+    "note": ""
+   }
+  ],
+  "warn_at": 0.8,
+  "at": 1791043542693
+ }
+}

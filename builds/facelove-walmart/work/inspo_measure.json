@@ -1,0 +1,942 @@
+[
+  {
+    "link": "builds/facelove-walmart/intake/INSPO VIDEO.mp4",
+    "role": "primary",
+    "status": "OK",
+    "file": "builds/facelove-walmart/intake/INSPO VIDEO.mp4",
+    "duration_s": 337.3,
+    "resolution": "360x640",
+    "aspect": "9:16",
+    "fps": 23.98,
+    "has_audio": true,
+    "shot_count": 92,
+    "mean_shot_s": 3.67,
+    "cut_times_s": [
+      3.88,
+      6.88,
+      10.89,
+      14.81,
+      16.52,
+      20.52,
+      24.52,
+      28.32,
+      30.78,
+      34.41,
+      37.0,
+      41.0,
+      45.0,
+      46.55,
+      50.55,
+      54.55,
+      58.56,
+      62.56,
+      67.57,
+      71.57,
+      75.58,
+      79.58,
+      84.58,
+      89.59,
+      93.59,
+      97.6,
+      102.6,
+      104.73,
+      108.73,
+      112.74,
+      116.74,
+      118.99,
+      124.0,
+      128.84,
+      134.84,
+      138.85,
+      141.39,
+      150.4,
+      155.95,
+      155.99,
+      158.83,
+      163.83,
+      167.83,
+      171.84,
+      175.84,
+      178.43,
+      182.43,
+      187.94,
+      190.94,
+      196.95,
+      200.95,
+      205.0,
+      210.0,
+      213.8,
+      217.59,
+      219.68,
+      222.64,
+      226.64,
+      230.65,
+      232.19,
+      235.65,
+      239.66,
+      241.28,
+      246.33,
+      249.08,
+      250.33,
+      252.25,
+      255.67,
+      258.17,
+      260.59,
+      262.97,
+      265.6,
+      269.44,
+      271.73,
+      275.23,
+      280.2,
+      284.2,
+      286.66,
+      288.46,
+      290.67,
+      292.46,
+      294.67,
+      296.67,
+      300.68,
+      305.26,
+      307.6,
+      311.73,
+      316.73,
+      321.24,
+      326.24,
+      331.25
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [
+      [
+        15.57,
+        15.98
+      ]
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 3.88,
+        "len_s": 3.88,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S01_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 3.88,
+        "t_out": 6.88,
+        "len_s": 3.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S02_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 6.88,
+        "t_out": 10.89,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S03_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 10.89,
+        "t_out": 14.81,
+        "len_s": 3.92,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S04_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 14.81,
+        "t_out": 16.52,
+        "len_s": 1.71,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S05_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 16.52,
+        "t_out": 20.52,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S06_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S06_mid.jpg"
+      },
+      {
+        "shot": "S07",
+        "t_in": 20.52,
+        "t_out": 24.52,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S07_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S07_mid.jpg"
+      },
+      {
+        "shot": "S08",
+        "t_in": 24.52,
+        "t_out": 28.32,
+        "len_s": 3.8,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S08_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S08_mid.jpg"
+      },
+      {
+        "shot": "S09",
+        "t_in": 28.32,
+        "t_out": 30.78,
+        "len_s": 2.46,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S09_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S09_mid.jpg"
+      },
+      {
+        "shot": "S10",
+        "t_in": 30.78,
+        "t_out": 34.41,
+        "len_s": 3.63,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S10_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S10_mid.jpg"
+      },
+      {
+        "shot": "S11",
+        "t_in": 34.41,
+        "t_out": 37.0,
+        "len_s": 2.59,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S11_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S11_mid.jpg"
+      },
+      {
+        "shot": "S12",
+        "t_in": 37.0,
+        "t_out": 41.0,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S12_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S12_mid.jpg"
+      },
+      {
+        "shot": "S13",
+        "t_in": 41.0,
+        "t_out": 45.0,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S13_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S13_mid.jpg"
+      },
+      {
+        "shot": "S14",
+        "t_in": 45.0,
+        "t_out": 46.55,
+        "len_s": 1.55,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S14_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S14_mid.jpg"
+      },
+      {
+        "shot": "S15",
+        "t_in": 46.55,
+        "t_out": 50.55,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S15_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S15_mid.jpg"
+      },
+      {
+        "shot": "S16",
+        "t_in": 50.55,
+        "t_out": 54.55,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S16_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S16_mid.jpg"
+      },
+      {
+        "shot": "S17",
+        "t_in": 54.55,
+        "t_out": 58.56,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S17_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S17_mid.jpg"
+      },
+      {
+        "shot": "S18",
+        "t_in": 58.56,
+        "t_out": 62.56,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S18_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S18_mid.jpg"
+      },
+      {
+        "shot": "S19",
+        "t_in": 62.56,
+        "t_out": 67.57,
+        "len_s": 5.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S19_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S19_mid.jpg"
+      },
+      {
+        "shot": "S20",
+        "t_in": 67.57,
+        "t_out": 71.57,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S20_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S20_mid.jpg"
+      },
+      {
+        "shot": "S21",
+        "t_in": 71.57,
+        "t_out": 75.58,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S21_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S21_mid.jpg"
+      },
+      {
+        "shot": "S22",
+        "t_in": 75.58,
+        "t_out": 79.58,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S22_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S22_mid.jpg"
+      },
+      {
+        "shot": "S23",
+        "t_in": 79.58,
+        "t_out": 84.58,
+        "len_s": 5.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S23_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S23_mid.jpg"
+      },
+      {
+        "shot": "S24",
+        "t_in": 84.58,
+        "t_out": 89.59,
+        "len_s": 5.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S24_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S24_mid.jpg"
+      },
+      {
+        "shot": "S25",
+        "t_in": 89.59,
+        "t_out": 93.59,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S25_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S25_mid.jpg"
+      },
+      {
+        "shot": "S26",
+        "t_in": 93.59,
+        "t_out": 97.6,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S26_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S26_mid.jpg"
+      },
+      {
+        "shot": "S27",
+        "t_in": 97.6,
+        "t_out": 102.6,
+        "len_s": 5.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S27_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S27_mid.jpg"
+      },
+      {
+        "shot": "S28",
+        "t_in": 102.6,
+        "t_out": 104.73,
+        "len_s": 2.13,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S28_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S28_mid.jpg"
+      },
+      {
+        "shot": "S29",
+        "t_in": 104.73,
+        "t_out": 108.73,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S29_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S29_mid.jpg"
+      },
+      {
+        "shot": "S30",
+        "t_in": 108.73,
+        "t_out": 112.74,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S30_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S30_mid.jpg"
+      },
+      {
+        "shot": "S31",
+        "t_in": 112.74,
+        "t_out": 116.74,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S31_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S31_mid.jpg"
+      },
+      {
+        "shot": "S32",
+        "t_in": 116.74,
+        "t_out": 118.99,
+        "len_s": 2.25,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S32_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S32_mid.jpg"
+      },
+      {
+        "shot": "S33",
+        "t_in": 118.99,
+        "t_out": 124.0,
+        "len_s": 5.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S33_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S33_mid.jpg"
+      },
+      {
+        "shot": "S34",
+        "t_in": 124.0,
+        "t_out": 128.84,
+        "len_s": 4.84,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S34_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S34_mid.jpg"
+      },
+      {
+        "shot": "S35",
+        "t_in": 128.84,
+        "t_out": 134.84,
+        "len_s": 6.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S35_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S35_mid.jpg"
+      },
+      {
+        "shot": "S36",
+        "t_in": 134.84,
+        "t_out": 138.85,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S36_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S36_mid.jpg"
+      },
+      {
+        "shot": "S37",
+        "t_in": 138.85,
+        "t_out": 141.39,
+        "len_s": 2.54,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S37_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S37_mid.jpg"
+      },
+      {
+        "shot": "S38",
+        "t_in": 141.39,
+        "t_out": 150.4,
+        "len_s": 9.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S38_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S38_mid.jpg"
+      },
+      {
+        "shot": "S39",
+        "t_in": 150.4,
+        "t_out": 155.95,
+        "len_s": 5.55,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S39_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S39_mid.jpg"
+      },
+      {
+        "shot": "S40",
+        "t_in": 155.95,
+        "t_out": 155.99,
+        "len_s": 0.04,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S40_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S40_mid.jpg"
+      },
+      {
+        "shot": "S41",
+        "t_in": 155.99,
+        "t_out": 158.83,
+        "len_s": 2.84,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S41_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S41_mid.jpg"
+      },
+      {
+        "shot": "S42",
+        "t_in": 158.83,
+        "t_out": 163.83,
+        "len_s": 5.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S42_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S42_mid.jpg"
+      },
+      {
+        "shot": "S43",
+        "t_in": 163.83,
+        "t_out": 167.83,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S43_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S43_mid.jpg"
+      },
+      {
+        "shot": "S44",
+        "t_in": 167.83,
+        "t_out": 171.84,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S44_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S44_mid.jpg"
+      },
+      {
+        "shot": "S45",
+        "t_in": 171.84,
+        "t_out": 175.84,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S45_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S45_mid.jpg"
+      },
+      {
+        "shot": "S46",
+        "t_in": 175.84,
+        "t_out": 178.43,
+        "len_s": 2.59,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S46_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S46_mid.jpg"
+      },
+      {
+        "shot": "S47",
+        "t_in": 178.43,
+        "t_out": 182.43,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S47_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S47_mid.jpg"
+      },
+      {
+        "shot": "S48",
+        "t_in": 182.43,
+        "t_out": 187.94,
+        "len_s": 5.51,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S48_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S48_mid.jpg"
+      },
+      {
+        "shot": "S49",
+        "t_in": 187.94,
+        "t_out": 190.94,
+        "len_s": 3.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S49_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S49_mid.jpg"
+      },
+      {
+        "shot": "S50",
+        "t_in": 190.94,
+        "t_out": 196.95,
+        "len_s": 6.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S50_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S50_mid.jpg"
+      },
+      {
+        "shot": "S51",
+        "t_in": 196.95,
+        "t_out": 200.95,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S51_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S51_mid.jpg"
+      },
+      {
+        "shot": "S52",
+        "t_in": 200.95,
+        "t_out": 205.0,
+        "len_s": 4.05,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S52_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S52_mid.jpg"
+      },
+      {
+        "shot": "S53",
+        "t_in": 205.0,
+        "t_out": 210.0,
+        "len_s": 5.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S53_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S53_mid.jpg"
+      },
+      {
+        "shot": "S54",
+        "t_in": 210.0,
+        "t_out": 213.8,
+        "len_s": 3.8,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S54_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S54_mid.jpg"
+      },
+      {
+        "shot": "S55",
+        "t_in": 213.8,
+        "t_out": 217.59,
+        "len_s": 3.79,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S55_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S55_mid.jpg"
+      },
+      {
+        "shot": "S56",
+        "t_in": 217.59,
+        "t_out": 219.68,
+        "len_s": 2.09,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S56_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S56_mid.jpg"
+      },
+      {
+        "shot": "S57",
+        "t_in": 219.68,
+        "t_out": 222.64,
+        "len_s": 2.96,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S57_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S57_mid.jpg"
+      },
+      {
+        "shot": "S58",
+        "t_in": 222.64,
+        "t_out": 226.64,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S58_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S58_mid.jpg"
+      },
+      {
+        "shot": "S59",
+        "t_in": 226.64,
+        "t_out": 230.65,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S59_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S59_mid.jpg"
+      },
+      {
+        "shot": "S60",
+        "t_in": 230.65,
+        "t_out": 232.19,
+        "len_s": 1.54,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S60_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S60_mid.jpg"
+      },
+      {
+        "shot": "S61",
+        "t_in": 232.19,
+        "t_out": 235.65,
+        "len_s": 3.46,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S61_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S61_mid.jpg"
+      },
+      {
+        "shot": "S62",
+        "t_in": 235.65,
+        "t_out": 239.66,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S62_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S62_mid.jpg"
+      },
+      {
+        "shot": "S63",
+        "t_in": 239.66,
+        "t_out": 241.28,
+        "len_s": 1.62,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S63_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S63_mid.jpg"
+      },
+      {
+        "shot": "S64",
+        "t_in": 241.28,
+        "t_out": 246.33,
+        "len_s": 5.05,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S64_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S64_mid.jpg"
+      },
+      {
+        "shot": "S65",
+        "t_in": 246.33,
+        "t_out": 249.08,
+        "len_s": 2.75,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S65_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S65_mid.jpg"
+      },
+      {
+        "shot": "S66",
+        "t_in": 249.08,
+        "t_out": 250.33,
+        "len_s": 1.25,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S66_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S66_mid.jpg"
+      },
+      {
+        "shot": "S67",
+        "t_in": 250.33,
+        "t_out": 252.25,
+        "len_s": 1.92,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S67_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S67_mid.jpg"
+      },
+      {
+        "shot": "S68",
+        "t_in": 252.25,
+        "t_out": 255.67,
+        "len_s": 3.42,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S68_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S68_mid.jpg"
+      },
+      {
+        "shot": "S69",
+        "t_in": 255.67,
+        "t_out": 258.17,
+        "len_s": 2.5,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S69_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S69_mid.jpg"
+      },
+      {
+        "shot": "S70",
+        "t_in": 258.17,
+        "t_out": 260.59,
+        "len_s": 2.42,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S70_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S70_mid.jpg"
+      },
+      {
+        "shot": "S71",
+        "t_in": 260.59,
+        "t_out": 262.97,
+        "len_s": 2.38,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S71_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S71_mid.jpg"
+      },
+      {
+        "shot": "S72",
+        "t_in": 262.97,
+        "t_out": 265.6,
+        "len_s": 2.63,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S72_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S72_mid.jpg"
+      },
+      {
+        "shot": "S73",
+        "t_in": 265.6,
+        "t_out": 269.44,
+        "len_s": 3.84,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S73_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S73_mid.jpg"
+      },
+      {
+        "shot": "S74",
+        "t_in": 269.44,
+        "t_out": 271.73,
+        "len_s": 2.29,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S74_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S74_mid.jpg"
+      },
+      {
+        "shot": "S75",
+        "t_in": 271.73,
+        "t_out": 275.23,
+        "len_s": 3.5,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S75_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S75_mid.jpg"
+      },
+      {
+        "shot": "S76",
+        "t_in": 275.23,
+        "t_out": 280.2,
+        "len_s": 4.97,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S76_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S76_mid.jpg"
+      },
+      {
+        "shot": "S77",
+        "t_in": 280.2,
+        "t_out": 284.2,
+        "len_s": 4.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S77_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S77_mid.jpg"
+      },
+      {
+        "shot": "S78",
+        "t_in": 284.2,
+        "t_out": 286.66,
+        "len_s": 2.46,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S78_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S78_mid.jpg"
+      },
+      {
+        "shot": "S79",
+        "t_in": 286.66,
+        "t_out": 288.46,
+        "len_s": 1.8,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S79_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S79_mid.jpg"
+      },
+      {
+        "shot": "S80",
+        "t_in": 288.46,
+        "t_out": 290.67,
+        "len_s": 2.21,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S80_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S80_mid.jpg"
+      },
+      {
+        "shot": "S81",
+        "t_in": 290.67,
+        "t_out": 292.46,
+        "len_s": 1.79,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S81_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S81_mid.jpg"
+      },
+      {
+        "shot": "S82",
+        "t_in": 292.46,
+        "t_out": 294.67,
+        "len_s": 2.21,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S82_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S82_mid.jpg"
+      },
+      {
+        "shot": "S83",
+        "t_in": 294.67,
+        "t_out": 296.67,
+        "len_s": 2.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S83_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S83_mid.jpg"
+      },
+      {
+        "shot": "S84",
+        "t_in": 296.67,
+        "t_out": 300.68,
+        "len_s": 4.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S84_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S84_mid.jpg"
+      },
+      {
+        "shot": "S85",
+        "t_in": 300.68,
+        "t_out": 305.26,
+        "len_s": 4.58,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S85_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S85_mid.jpg"
+      },
+      {
+        "shot": "S86",
+        "t_in": 305.26,
+        "t_out": 307.6,
+        "len_s": 2.34,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S86_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S86_mid.jpg"
+      },
+      {
+        "shot": "S87",
+        "t_in": 307.6,
+        "t_out": 311.73,
+        "len_s": 4.13,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S87_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S87_mid.jpg"
+      },
+      {
+        "shot": "S88",
+        "t_in": 311.73,
+        "t_out": 316.73,
+        "len_s": 5.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S88_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S88_mid.jpg"
+      },
+      {
+        "shot": "S89",
+        "t_in": 316.73,
+        "t_out": 321.24,
+        "len_s": 4.51,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S89_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S89_mid.jpg"
+      },
+      {
+        "shot": "S90",
+        "t_in": 321.24,
+        "t_out": 326.24,
+        "len_s": 5.0,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S90_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S90_mid.jpg"
+      },
+      {
+        "shot": "S91",
+        "t_in": 326.24,
+        "t_out": 331.25,
+        "len_s": 5.01,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S91_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S91_mid.jpg"
+      },
+      {
+        "shot": "S92",
+        "t_in": 331.25,
+        "t_out": 337.3,
+        "len_s": 6.05,
+        "frame_in": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S92_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/INSPO VIDEO/S92_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_01.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_02.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_03.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_04.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_05.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_06.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_07.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_08.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_09.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_10.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_11.jpg",
+      "builds/facelove-walmart/intake/frames/INSPO VIDEO/sheet_12.jpg"
+    ]
+  },
+  {
+    "link": "builds/facelove-walmart/intake/VISIUAL VIDEO HOOK.mp4",
+    "role": "secondary",
+    "status": "OK",
+    "file": "builds/facelove-walmart/intake/VISIUAL VIDEO HOOK.mp4",
+    "duration_s": 27.35,
+    "resolution": "720x1280",
+    "aspect": "9:16",
+    "fps": 30.0,
+    "has_audio": true,
+    "shot_count": 6,
+    "mean_shot_s": 4.56,
+    "cut_times_s": [
+      2.83,
+      4.27,
+      16.2,
+      20.23,
+      27.0
+    ],
+    "silences_-40dB": [],
+    "silences_-30dB": [],
+    "shots": [
+      {
+        "shot": "S01",
+        "t_in": 0.0,
+        "t_out": 2.83,
+        "len_s": 2.83,
+        "frame_in": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S01_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S01_mid.jpg"
+      },
+      {
+        "shot": "S02",
+        "t_in": 2.83,
+        "t_out": 4.27,
+        "len_s": 1.44,
+        "frame_in": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S02_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S02_mid.jpg"
+      },
+      {
+        "shot": "S03",
+        "t_in": 4.27,
+        "t_out": 16.2,
+        "len_s": 11.93,
+        "frame_in": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S03_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S03_mid.jpg"
+      },
+      {
+        "shot": "S04",
+        "t_in": 16.2,
+        "t_out": 20.23,
+        "len_s": 4.03,
+        "frame_in": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S04_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S04_mid.jpg"
+      },
+      {
+        "shot": "S05",
+        "t_in": 20.23,
+        "t_out": 27.0,
+        "len_s": 6.77,
+        "frame_in": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S05_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S05_mid.jpg"
+      },
+      {
+        "shot": "S06",
+        "t_in": 27.0,
+        "t_out": 27.35,
+        "len_s": 0.35,
+        "frame_in": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S06_in.jpg",
+        "frame_mid": "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/S06_mid.jpg"
+      }
+    ],
+    "second_sheets": [
+      "builds/facelove-walmart/intake/frames/VISIUAL VIDEO HOOK/sheet_01.jpg"
+    ]
+  }
+]

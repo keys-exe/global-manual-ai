@@ -1,0 +1,8 @@
+mcp__HIGGSFIELD__generate_image
+mcp__HIGGSFIELD__generate_video
+mcp__HIGGSFIELD__generate_audio
+mcp__HEYGEN__create_video_from_avatar
+mcp__HEYGEN__create_speech
+mcp__HEYGEN__clone_voice
+mcp__github__get_me
+mcp__Claude_Docs__batch
