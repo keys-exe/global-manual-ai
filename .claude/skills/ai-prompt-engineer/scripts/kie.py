@@ -16,6 +16,7 @@ Needs KIE_API_KEY in the environment (an environment secret; never pasted in cha
         connector; used for the Kling fallback on `stryde-three-regrets` (2026-09-28).
   kie.py seedance --prompt-file P --ref-image URL ... [--ref-audio URL ...] [--ref-video URL ...]
         [--duration 10] [--no-audio] [--out FILE]
+        --no-audio: builds before V7.101.0 only — every new Seedance clip is generated with sound (§24M).
   kie.py kling --prompt-file P --image URL [--end-image URL] [--duration 5] [--out FILE]
         Kling 3.0 (`kling-3.0/video`) — the Kling fallback when the Kling account is short of the
         batch or over its cap (§5, V7.65.0): pro mode (1080x1920), 9:16, sound off, single shot.
