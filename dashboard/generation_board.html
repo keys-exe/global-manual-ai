@@ -752,33 +752,45 @@ button.ing .im{cursor:zoom-in}
 .ag-tog{border:1px solid var(--line);background:var(--surface);border-radius:7px;width:28px;height:28px;display:grid;place-items:center;color:var(--muted);padding:0}
 .ag-tog svg{transition:transform .15s}
 .ag-tog[aria-expanded="true"] svg{transform:rotate(90deg)}
-.brows{display:flex;flex-direction:column;gap:10px}
-.bcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(138px,1fr));gap:12px}
-.bcards .brow{max-width:300px}
-.brow{display:grid;grid-template-columns:minmax(170px,250px) minmax(0,1fr);gap:16px;background:var(--sunk);border:1px solid var(--line);border-radius:12px;padding:12px;scroll-margin-top:120px;min-width:0}
-.brow.one{grid-template-columns:minmax(0,1fr);gap:10px;align-content:start}
+.brows{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;align-items:start}
+@media (min-width:761px){.brow.seed{grid-column:span 2}}
+.bcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.brow{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;background:var(--sunk);border:1px solid var(--line);border-radius:12px;padding:10px;scroll-margin-top:120px;min-width:0}
+.brow.one{align-content:start}
 .brow.one .br-info{order:2}
-.br-info{display:flex;flex-direction:column;gap:6px;min-width:0}
+.br-info{display:flex;flex-direction:column;gap:4px;min-width:0}
 .br-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .br-beat{font-family:var(--mono);font-size:13px;font-weight:700}
-.br-title{font-size:13.5px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
-.br-line{font-size:12.5px;color:var(--muted);line-height:1.45;overflow-wrap:anywhere}
-.br-plan{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--muted);line-height:1.4}
-.br-foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto}
+.br-title{font-size:13px;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
+.br-line{font-size:12px;color:var(--muted);line-height:1.4;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.br-plan{display:none}
+.br-foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .br-meta{font-family:var(--mono);font-size:11px;color:var(--faint)}
-.br-panes{display:grid;grid-template-columns:repeat(var(--panes,2),minmax(0,200px));gap:12px;align-items:start;min-width:0}
-.brow.one .br-panes{grid-template-columns:minmax(0,1fr)}
-.pane{gap:8px;padding:8px}
+.br-panes{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;min-width:0}
+.brow.one .br-panes{display:block}
+.pane{gap:6px;padding:6px;width:128px;flex:none}
+.brow:not(.seed):not(.one) .pane{flex:1 1 0;width:auto;min-width:0;max-width:170px}
+.brow.one .pane{width:auto}
+.brow.wide169 .pane{width:200px}
+.pane-sep{align-self:center;color:var(--faint);font-size:18px;padding:0 2px}
+.ingp .media img{object-fit:contain}
+.ingp .media .aud{display:flex;flex-direction:column;align-items:center;gap:4px}
+.ing-cap{display:flex;flex-direction:column;gap:1px;font-size:11px;line-height:1.3;min-width:0}
+.ing-cap b{font-weight:600;overflow-wrap:anywhere}
+.ing-cap span{color:var(--muted)}
+.ing-cap .ing-note{font-style:italic}
+.pane .lbl{font-size:9.5px}
+.pane .pill{font-size:9.5px;padding:1px 5px}
 .pane-h{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap}
-.pane .media{max-height:400px}
+.pane .media{max-height:240px}
 .brow.wide169 .pane .media{aspect-ratio:16/9}
-.pane .mc-verdict{grid-template-columns:repeat(auto-fit,minmax(84px,1fr))}
-.pane .mc-verdict .btn{padding:6px 8px;min-width:0;white-space:normal}
+.pane .mc-verdict{grid-template-columns:1fr 1fr;gap:4px}
+.pane .mc-verdict .btn{padding:3px 4px;min-width:0;min-height:26px;font-size:11.5px;white-space:nowrap;justify-content:center}
+.pane .mc-verdict .btn .ico16{width:13px;height:13px}
 .pane .mc-verdict.pair .wide{grid-column:1/-1}
 .brow.one .br-top .pill{display:none}
 .pane .linkbtn{display:inline-flex;align-items:center;gap:5px;align-self:flex-start}
-.ing-pane .ing-grid{grid-template-columns:repeat(auto-fill,minmax(64px,1fr))}
-@media (max-width:760px){.brow{grid-template-columns:minmax(0,1fr)}.br-panes{grid-template-columns:repeat(var(--panes,2),minmax(0,1fr))}#boardView>#pipe{position:static}}
+@media (max-width:760px){.brow{grid-template-columns:minmax(0,1fr)}.pane{width:calc(50% - 4px)}.pane-sep{display:none}#boardView>#pipe{position:static}}
 </style>
 
 <div class="wrap">
@@ -1512,8 +1524,8 @@ function paneOf(g,k){
       locked?`${cov?`<img class="ghost" ${srcFrom(cov.asset,cov.parts,cov.type)} alt="">`:""}<span class="lockmsg">🔒 ${seed?"Ingredients":"Image"} first</span>`:
       `<span>${g[d.prompt]?"Waiting for render":"Not made yet"}</span>`}${busy?`<span class="busy">Uploading…</span>`:""}</div>`;
   const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&!old&&!locked&&!pend;
-  const acts=fixing?fixFormFor(g,k):!canAct?"":pr?`<div class="mc-verdict pair">${pr.map((x,i)=>`<button class="btn small ok" type="button" data-pick="${esc(g.id)}" data-v="${x.v}">${I.ok} Use ${"AB"[i]}</button>`).join("")}<button class="btn small bad wide" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">${I.fix} Both wrong · Fix</button></div>`:
-    asset?`<div class="mc-verdict"><button class="btn small ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${I.ok} ${s==="ok"?"Confirmed":"Confirm"}</button><button class="btn small bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">${I.fix} Fix</button></div>`:"";
+  const acts=fixing?fixFormFor(g,k):!canAct?"":pr?`<div class="mc-verdict pair">${pr.map((x,i)=>`<button class="btn small ok" type="button" data-pick="${esc(g.id)}" data-v="${x.v}">Use ${"AB"[i]}</button>`).join("")}<button class="btn small bad wide" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">Both wrong · Fix</button></div>`:
+    asset?`<div class="mc-verdict"><button class="btn small ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(g.id)}" data-step="${k}">${s==="ok"?"Done":"Confirm"}</button><button class="btn small bad" type="button" data-verdict="bad" data-id="${esc(g.id)}" data-step="${k}">Fix</button></div>`:"";
   return `<div class="mc pane${s==="ok"?" ok":s==="review"&&!locked?" now":s==="bad"||s==="gen"?" bad":locked?" locked":""}" id="mc-${esc(g.id)}-${k}">
     <div class="pane-h"><span class="lbl">${nm}${nv>1?`<span class="vbadge" title="${nv} versions">v${currentV(g,k)}</span>`:""}</span>${chip}</div>
     ${media}
@@ -1521,21 +1533,33 @@ function paneOf(g,k){
     ${acts}
     ${asset?`<button class="linkbtn" type="button" data-dl="${esc(g.id)}" data-step="${k}">${I.dl} Download</button>`:""}</div>`;
 }
-function ingPane(g){
-  const l=ingOf(g), done=l.filter(x=>x.st==="ok").length, ready=ingReady(g);
-  const chip=ready?`<span class="pill s-use">All confirmed</span>`:l.length?`<span class="pill s-review">${done} of ${l.length} confirmed</span>`:`<span class="pill s-planned">None listed</span>`;
-  return `<div class="mc pane ing-pane${ready?" ok":""}" id="mc-${esc(g.id)}-ingredients">
-    <div class="pane-h"><span class="lbl">Ingredients</span>${chip}</div>
-    ${l.length?`<div class="ing-grid">${l.map(x=>ingTile(g,x,"box","video")).join("")}</div>`:`<div class="media"><span>Not listed yet</span></div>`}
-    <p class="note" style="margin:0">Each ingredient is confirmed on its own card; the clip unlocks when all are.</p></div>`;
+// each Seedance ingredient is its own card, in the same style as an image (V7.94.3, user 2026-10-03 — "the ingredients style too i want it like this so we don't get confused"):
+// its picture, its status, and Confirm / Fix acting on the card it comes from (cast sheet, plate, info card)
+function ingPanes(g){
+  const l=ingOf(g); if(!l.length) return [`<div class="mc pane ingp"><div class="pane-h"><span class="lbl">Ingredients</span><span class="pill s-planned">None listed</span></div><div class="media"><span>Not listed yet</span></div></div>`];
+  return l.map(x=>{
+    const r=x.ref, k=x.rk, s=x.st, pend=r&&pending(r,k), old=BOARD_ROLE==="old";
+    const media=pend?genPanel(r,k):x.audio&&x.asset?`<span class="aud">${ICONS.audio}<small>Voice clip</small></span>`:x.asset?`<img ${srcFrom(x.asset,x.parts,x.type)} alt="" loading="lazy">`:`<span>${r?"Not made yet":"Missing"}</span>`;
+    const open=r?`data-viewm="${esc(r.id)}" data-step="${k}"`:x.asset?`data-ving="${esc(g.id)}:${x.i}:video"`:"";
+    const chip=r?(stepChip(r,k,s)||`<span class="pill s-planned">Waiting</span>`):x.asset?`<span class="pill s-use">File</span>`:`<span class="pill s-planned">Missing</span>`;
+    const fixing=r&&state.faultOpen===r.id+":"+k, canAct=r&&!state.readOnly&&!old&&!pend&&r[STEP[k].asset]&&!(k==="image"&&pairOf(r));
+    const acts=fixing?fixFormFor(r,k):canAct?`<div class="mc-verdict"><button class="btn small ok${s==="ok"?" solid":""}" type="button" data-verdict="ok" data-id="${esc(r.id)}" data-step="${k}">${s==="ok"?"Done":"Confirm"}</button><button class="btn small bad" type="button" data-verdict="bad" data-id="${esc(r.id)}" data-step="${k}">Fix</button></div>`:
+      r&&k==="image"&&pairOf(r)?`<button class="linkbtn" type="button" data-viewm="${esc(r.id)}" data-step="image">Pick A or B on ${esc(r.beat)}</button>`:"";
+    return `<div class="mc pane ingp${s==="ok"?" ok":s==="review"?" now":s==="bad"||s==="gen"?" bad":""}">
+      <div class="pane-h"><span class="lbl">Ingredient ${x.i+1}${x.role?` · ${esc(x.role)}`:""}</span>${chip}</div>
+      <div class="media${x.asset&&!pend?" filled":""}" ${open?open+' role="button" tabindex="0"':""} aria-label="View ${esc(x.label)}">${media}</div>
+      <div class="ing-cap"><b>${esc(x.label)}</b>${ING_KIND[x.kind]?`<span>${esc(ING_KIND[x.kind])}${r&&r.beat?" · "+esc(r.beat):""}</span>`:r&&r.beat?`<span>${esc(r.beat)}</span>`:""}${x.note?`<span class="ing-note">${esc(x.note)}</span>`:""}</div>
+      ${acts}</div>`;
+  });
 }
 function beatRow(g){
   const fl=flow(g), panes=[];
-  if(fl.includes("video")&&isSeed(g)) panes.push(ingPane(g));
+  const seed=fl.includes("video")&&isSeed(g);
+  if(seed) panes.push(...ingPanes(g),`<div class="pane-sep" aria-hidden="true">→</div>`);
   for(const k of fl) panes.push(paneOf(g,k));
-  const t=BOARD_ROLE==="old"?{t:"Not used",c:"s-regenerate"}:todoLabel(g), one=panes.length===1;
+  const t=BOARD_ROLE==="old"?{t:"Not used",c:"s-regenerate"}:todoLabel(g), one=panes.length===1&&!seed;
   const meta=[g.duration?g.duration+"s":"",g.model?shortModel(g.model):g.imageModel?shortModel(g.imageModel):""].filter(Boolean);
-  return `<article class="brow${one?" one":""}${g.stage==="locations"?" wide169":""}" id="b-${esc(g.id)}" style="--panes:${panes.length}">
+  return `<article class="brow${one?" one":""}${seed?" seed":""}${g.stage==="locations"?" wide169":""}" id="b-${esc(g.id)}">
     <div class="br-info">
       <div class="br-top"><span class="br-beat">${esc(g.beat||"—")}</span><span class="pill ${t.c}">${esc(t.t)}</span></div>
       <div class="br-title">${esc(g.title||"Untitled")}</div>
