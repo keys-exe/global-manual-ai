@@ -1,7 +1,11 @@
-{"taskId": "880beecbdc600a4045f28835a96fbb49", "created": true}
+{"taskId": "461d36d813ef9da4f81e6bf4e2a03661", "created": true}
 {
-  "taskId": "880beecbdc600a4045f28835a96fbb49",
-  "state": "fail",
-  "credits": 0.0,
-  "failMsg": "The parameter `content[1].image_url.url` specified in the request is not valid: invalid url."
+  "taskId": "461d36d813ef9da4f81e6bf4e2a03661",
+  "state": "success",
+  "credits": 798.0,
+  "failMsg": null,
+  "urls": [
+    "https://tempfile.aiquickdraw.com/seedance/1791049023970-egdxvpzvrrl.mp4"
+  ],
+  "saved": "hooks/SC01/SC01-T3_v2.mp4"
 }
