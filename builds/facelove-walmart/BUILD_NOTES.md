@@ -47,3 +47,18 @@ Drive task folder `1Xvl_PR2jCEe3WJk177Vn5T-1efS1gt80`
 - **Fix round 2 (user: "fix", 2026-10-03):** COLOUR-FRONT-CARD v2 confirmed. PROD-HAND-CARD v2 — "reduce the size of product": still longer than her whole hand, the barrel nearly two fingers wide. v3 is an image edit of v2 (§24O rule 7; job 89f64a0f): the stick about three quarters of the hand's length, the barrel a little thicker than one finger, fingers wrapped right round it, nothing else changed. To check; v2 on the Old board (4386041e…) and removed from Current. 2 cr.
 - **Fix round 3 (user: "fix", 2026-10-03):** PROD-HAND-CARD v3 — "mske it small": the edit of v2 kept the stick at v2's size (in a hand close-up the only size cue is the big stylised hand). v4 is a fresh frame (job 4f65914c): Rosa from the waist up holding the stick beside her cheek, the size said against her face (about as long as chin-to-eyebrows, the barrel a little thicker than one finger). To check; v3 on the Old board (f26092ad…) and removed from Current. 2 cr.
 - **Fix round 4 (user: "fix", 2026-10-03 — board note "i want to use v3"):** no render. PROD-HAND-CARD v3 restored from the Old board to Current (asset 85a0fc94…) and **confirmed**; v4 moved to Old (350bd4e2…) and removed from Current. Every step-4 card is now confirmed.
+
+## Voices locked, Hook 1 started (user: "confirm and proceed", 2026-10-03)
+- VOICE-N, C1, C2 and C3 were already confirmed on the board. VO picks: T1 for L001, L004, L008, L010, L020 and L021B; T2 for L016 and L017 (the T1 takes misheard "tired" and "got"). The unchosen T2-L004, T1-L016 and T1-L017 are on the Old board, and their files are deleted from Current. Build doc: every voice `locked`, `voLocked: true`.
+- L004 runs fast (~228 wpm) in both takes. If it reads rushed in the edit, a slower re-take is the fix.
+- **SC01-T1 (Hook 1, the carts hit).** One Seedance 2.5 take: 8 shots, 27 s, SD-PROMPT, sound on, preflight PASS (`takes/build_sc01.py`, `takes/SC01-T1.call.json`).
+  - Refs: the after/Peter/woman sheets, L-AISLE and L-AISLE-REV.
+  - Voice refs: the N and C1 voice masters (Higgsfield audio media 18b2c0a4…, 57c4e338…).
+  - Peter's whole L002 runs on one 5 s close-up (preflight keeps one dialogue line contiguous); SH04b is his silent lean.
+  - Narration L001 and L004 go in the edit.
+  - Higgsfield job 2f11b8ed-aba6-4529-b710-6042683aa1ee, private workspace.
+- Hooks: the build doc says 1 hook (F3). HK2/HK3 are written only if the user asks.
+- **SC01-T1 landed** (189 credits, 27.07 s, 720×1280). `unmusic.py --check`: MUSIC at -21 dB. Cleaned to -54 dB → v2 on Current, `review`. The v1 with music is on Old. Higgsfield balance is 3,406.35.
+  - Heard: every line of L002 and L003, word for word.
+  - Flagged for the user's check: Michelle's close-up sits on a plain grey background, not the aisle; the hit reads soft; Peter's close-ups look near the lens.
+  - Next: the user's Confirm or Fix on SC01-T1, then SC02-T1 onward (each take its own call, SD-PROMPT, sound on).
