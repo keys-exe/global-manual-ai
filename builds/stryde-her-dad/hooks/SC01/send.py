@@ -5,7 +5,11 @@ K = "../../.claude/skills/ai-prompt-engineer/scripts/kie.py"
 v = sys.argv[1]
 for t in sys.argv[2:]:
     c = json.load(open(f"hooks/SC01/{t}.call.json"))
-    a = ["python3", K, "seedance", "--prompt-file", f"hooks/SC01/{t}.prompt.txt", "--ref-image", *c["files"]]
+    imgs = [f for f in c["files"] if not f.endswith(".mp4")]
+    vids = [f for f in c["files"] if f.endswith(".mp4")]
+    a = ["python3", K, "seedance", "--prompt-file", f"hooks/SC01/{t}.prompt.txt", "--ref-image", *imgs]
+    if vids:
+        a += ["--ref-video", *vids]
     if c["audios"]:
         a += ["--ref-audio", *c["audios"]]
     a += ["--duration", str(c["duration"])]
