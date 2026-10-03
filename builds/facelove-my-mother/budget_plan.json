@@ -1,0 +1,3 @@
+{"build":"facelove-my-mother","mode":4,"draft":false,"note":"Running build: cap for the remaining work only (V7.95.0, set at resume 2026-10-03). Seedance runs on Higgsfield at this build's measured 8.23 credits/s (credit_prices.json has no Higgsfield Seedance rate, so the cap line carries it).",
+ "routes":{"image":"Higgsfield","seedance":"Higgsfield","tts":"ElevenLabs","music":"ElevenLabs","sfx":"ElevenLabs"},
+ "jobs":[{"job":"seedance","seconds":13,"note":"SC05-T2 Fix (user's board note)"},{"job":"seedance","seconds":77,"note":"SC06-SC09, 10 takes from the act map"},{"job":"info_cards","n":10,"note":"SC06-SC09 outfit/prop cards, estimate"}]}
