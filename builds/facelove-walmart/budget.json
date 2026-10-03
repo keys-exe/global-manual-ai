@@ -6,10 +6,10 @@
   "connectors": [
    {
     "conn": "Higgsfield",
-    "base": 12666.0,
-    "allowance": 3803.1,
-    "estimate": 16500,
-    "cap": 16500,
+    "base": 14558.0,
+    "allowance": 4370.8,
+    "estimate": 18950,
+    "cap": 18950,
     "cap_source": "estimate"
    },
    {
@@ -23,6 +23,18 @@
   ],
   "lines": [
    {
+    "job": "seedance",
+    "conn": "Higgsfield",
+    "model": null,
+    "qty": 262.0,
+    "unit": "per second",
+    "renders_each": 1,
+    "credits": 11790.0,
+    "price": 45,
+    "source": "unverified: Kie rate assumed",
+    "note": "16 takes from the step-5 act map (one take per scene up to 30 s)"
+   },
+   {
     "job": "music",
     "conn": "ElevenLabs",
     "model": null,
@@ -33,18 +45,6 @@
     "price": 1000,
     "source": "unverified",
     "note": ""
-   },
-   {
-    "job": "seedance",
-    "conn": "Higgsfield",
-    "model": null,
-    "qty": 220.0,
-    "unit": "per second",
-    "renders_each": 1,
-    "credits": 9900.0,
-    "price": 45,
-    "source": "unverified: Kie rate assumed",
-    "note": "one take per scene (\u00a724K part 5)"
    },
    {
     "job": "seedance",
@@ -86,10 +86,10 @@
     "job": "plates",
     "conn": "Higgsfield",
     "model": "nano_banana_pro",
-    "qty": 6.0,
+    "qty": 7.0,
     "unit": "per image",
     "renders_each": 1,
-    "credits": 12.0,
+    "credits": 14.0,
     "price": 2,
     "source": "measured: 2k image",
     "note": ""
@@ -108,6 +108,6 @@
    }
   ],
   "warn_at": 0.8,
-  "at": 1791043542693
+  "at": 1791045298218
  }
 }

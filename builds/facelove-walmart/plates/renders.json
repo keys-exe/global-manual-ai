@@ -1,0 +1,24 @@
+{
+ "urls": {
+  "P-HOUSE": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162114_95d48c48-199d-40c1-a0d7-b0c6f5422a28.png",
+  "L-AISLE": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162114_61b35cd5-43a2-4e4d-a243-be5ace889248.png",
+  "L-LIVING": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162419_fa121b5f-769e-4246-8b2d-98784c2a4e93.png",
+  "L-VANITY": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162419_07f8970a-fd26-4dcd-8e73-83e1fcefd259.png",
+  "L-PATIO": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162421_2555f8cb-3c99-4448-97d5-3eccb9044369.png",
+  "L-AISLE-REV": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162419_12d24c80-9b60-4ead-a892-c373e9c984fd.png",
+  "L-STORE-DOORS": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162419_d1621fb9-266e-4c1a-bf04-c731988564aa.png",
+  "PROD-HAND-CARD": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162419_c72a3424-e543-40cd-bdbd-9a362467bc99.png",
+  "COLOUR-FRONT-CARD": "https://d8j0ntlcm91z4.cloudfront.net/user_3AViUeU5dIz6pgsjYszQ9iux9YN/hf_20261003_162419_ab55a418-e50e-40e0-8df3-0db4fa4b9e1a.png"
+ },
+ "jobs": {
+  "P-HOUSE": "95d48c48-199d-40c1-a0d7-b0c6f5422a28",
+  "L-AISLE": "61b35cd5-43a2-4e4d-a243-be5ace889248",
+  "L-LIVING": "fa121b5f-769e-4246-8b2d-98784c2a4e93",
+  "L-VANITY": "07f8970a-fd26-4dcd-8e73-83e1fcefd259",
+  "L-PATIO": "2555f8cb-3c99-4448-97d5-3eccb9044369",
+  "L-AISLE-REV": "12d24c80-9b60-4ead-a892-c373e9c984fd",
+  "L-STORE-DOORS": "d1621fb9-266e-4c1a-bf04-c731988564aa",
+  "PROD-HAND-CARD": "c72a3424-e543-40cd-bdbd-9a362467bc99",
+  "COLOUR-FRONT-CARD": "ab55a418-e50e-40e0-8df3-0db4fa4b9e1a"
+ }
+}

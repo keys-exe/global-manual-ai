@@ -1,0 +1,3297 @@
+{
+ "build": "facelove-walmart",
+ "hooks": [
+  {
+   "hook": 1,
+   "line": "At sixty three, I ran into my ex-husband in Walmart.",
+   "concepts": [
+    {
+     "id": "A",
+     "frame1": "her cart rolling fast up a bright aisle as his swings round the end-cap — the two carts slam nose to nose",
+     "stakes": "who is the man, and why does she look so calm after the crash?",
+     "where": "a huge bright big-box store aisle at midday",
+     "turn": "the stare: he looks up annoyed, then his face changes",
+     "score": {
+      "stop": 2,
+      "line": 2,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 1
+     }
+    },
+    {
+     "id": "B",
+     "frame1": "Peter's face mid-double-take, mouth open, eyes travelling head to toe",
+     "stakes": "what is he seeing?",
+     "where": "the end of the same aisle",
+     "turn": "the reverse reveals her, calm",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 1,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "C",
+     "frame1": "Michelle gliding away down the walkway, unbothered, two people frozen behind her",
+     "stakes": "what just happened back there?",
+     "where": "the store's main walkway",
+     "turn": "rewind to the hit",
+     "score": {
+      "stop": 1,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "D",
+     "frame1": "the younger woman's hand tightening on Peter's arm as she stiffens",
+     "stakes": "a rival sizing someone up",
+     "where": "beside the end-cap",
+     "turn": "cut to what she's looking at",
+     "score": {
+      "stop": 1,
+      "line": 1,
+      "feel": 2,
+      "specific": 2,
+      "fresh": 1,
+      "makeable": 2
+     }
+    },
+    {
+     "id": "E",
+     "frame1": "a low shot of two cart wheels skidding toward each other on the shiny floor",
+     "stakes": "a collision about to happen",
+     "where": "the store floor at the end-cap corner",
+     "turn": "the impact and the faces above it",
+     "score": {
+      "stop": 2,
+      "line": 1,
+      "feel": 1,
+      "specific": 2,
+      "fresh": 2,
+      "makeable": 1
+     }
+    }
+   ],
+   "pick": "A"
+  }
+ ],
+ "groups": [
+  {
+   "group": "SC01",
+   "role": "scene",
+   "idea": "the carts hit — the man who left her stares at a woman he can't place, and she glides away",
+   "rows": [
+    {
+     "beat": "SC01-SH01",
+     "line": "At sixty three, I ran into my ex-husband in Walmart.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle pushes her cart briskly up the aisle toward the walkway, the camera backing away in front of her; Peter's cart swings round the end-cap into her path",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'At sixty three, I ran into my ex-husband'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH02",
+     "line": "He was with her.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "the two carts collide nose to nose with a jolt, both carts rocking back; both pairs of hands lurch on the handles",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'He was with her.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH03",
+     "line": "The woman he left me for. She is forty one.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Peter looks up annoyed, then his face changes completely — eyes widening, scanning her head to toe; behind him the woman stiffens",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'The woman he left me for. She is forty o'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH04a",
+     "line": "Michelle? Is that you? My God, what happened,",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Peter, staring, says it in one breath, his hand loose on the cart handle",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'Michelle? Is that you? My God, what happ'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH04b",
+     "line": "did you get work done? You look so much more beautiful.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Peter, staring, says it in one breath, his hand loose on the cart handle",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'did you get work done? You look so much '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH05",
+     "line": "It is just me.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle holds his look for a beat, calm, cool, unbothered, and says it with one corner of her mouth lifting",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'It is just me.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC01-SH06",
+     "line": "The only reason I did not fall apart standing there",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle steers her cart around his and walks off along the walkway, unhurried, the camera following behind her",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'The only reason I did not fall apart sta'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC01-SH07",
+     "line": "is because of what my sister handed me a few weeks ago.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Peter stands frozen staring after her; the woman beside him turns from Michelle to Peter, stiffening",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'is because of what my sister handed me a'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC02",
+   "role": "problem",
+   "idea": "thirty-one years end with an envelope on a coffee table; the house goes dark around her",
+   "rows": [
+    {
+     "beat": "SC02-SH01",
+     "line": "Peter, in his coat, stands by the coffee table and sets a plain manila envelope (a little larger than a sheet of paper) on it; Michelle sits in the armchair, very still",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Peter, in his coat, stands by the coffee table and sets a plain manila envelope (a little larger than a sheet of paper) on it; Michelle sits in the armchair, very still",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-LIVING",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'Peter, in his coat, stands by the coffee'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH02",
+     "line": "the plain manila envelope (a little larger than a sheet of paper) lies on the coffee table; Peter's fingers slide off it",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "the plain manila envelope (a little larger than a sheet of paper) lies on the coffee table; Peter's fingers slide off it",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-LIVING",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'the plain manila envelope (a little larg'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH03a",
+     "line": "I am sorry, Michelle. After thirty one years.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Peter says it to the floor, never meeting her eyes, then half turns toward the archway",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-LIVING",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'I am sorry, Michelle. After thirty one y'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH03b",
+     "line": "I just... I need something different.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Peter says it to the floor, never meeting her eyes, then half turns toward the archway",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-LIVING",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'I just... I need something different.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH04",
+     "line": "Thirty one years.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "Michelle, very still in the armchair, eyes on the envelope, whispers it barely aloud",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'Thirty one years.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'Thirty one years.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC02-SH05",
+     "line": "over Michelle's shoulder, Peter walks away through the archway and out of sight; the front door closes beyond",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "over Michelle's shoulder, Peter walks away through the archway and out of sight; the front door closes beyond",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-LIVING",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'over Michelle's shoulder, Peter walks aw'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC02-SH06",
+     "line": "Michelle alone in the armchair as the light dies, the envelope on the table in front of her",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle alone in the armchair as the light dies, the envelope on the table in front of her",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-LIVING",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-LIVING that carries 'Michelle alone in the armchair as the li'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC03",
+   "role": "problem",
+   "idea": "she stops recognising the woman in the mirror and buries her under makeup",
+   "rows": [
+    {
+     "beat": "SC03-SH01",
+     "line": "Michelle sits on the stool at the vanity in her robe, looking at her reflection in the oval mirror",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle sits on the stool at the vanity in her robe, looking at her reflection in the oval mirror",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'Michelle sits on the stool at the vanity'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC03-SH02a",
+     "line": "When did I start looking like this? Tired. Worn out.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "Michelle, hollow, says it to her reflection, touching the shadow under one eye with a fingertip",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'When did I start looking like this? Tire'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'When did I start looking like this? Tire'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC03-SH02b",
+     "line": "Older than I am. No wonder he stopped looking at me.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Michelle, hollow, says it to her reflection, touching the shadow under one eye with a fingertip",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'Older than I am. No wonder he stopped lo'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC03-SH03",
+     "line": "I stopped looking in mirrors. I stopped being in photos.",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "her hand lays a small framed photograph (the size of a paperback) face down on the vanity",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'I stopped looking in mirrors. I stopped '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC03-SH04",
+     "line": "And I buried my face under more and more makeup that only made it worse.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "in profile, Michelle pats thick beige foundation from an unlabelled bottle over her cheeks with her fingers, layer on layer",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'And I buried my face under more and more'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC03-SH05",
+     "line": "over her shoulder, the mirror shows her face caked and grey; she looks away from it",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "over her shoulder, the mirror shows her face caked and grey; she looks away from it",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'over her shoulder, the mirror shows her '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC04",
+   "role": "agitate",
+   "idea": "every product on the shelf, and every one made her look older",
+   "rows": [
+    {
+     "beat": "SC04-SH01",
+     "line": "Every cream. Every serum. Every foundation on the shelf.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "her hand moves across the crowded vanity top, touching one bottle after another",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'Every cream. Every serum. Every foundati'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC04-SH02",
+     "line": "The Estée Lauder, the L'Oréal. And I look older in all of them.",
+     "candidates": [
+      {
+       "route": "STAKES",
+       "picture": "Michelle, defeated, says it to the mirror, a jar in her hand",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'The Estée Lauder, the L'Oréal. And I loo'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'The Estée Lauder, the L'Oréal. And I loo'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC04-SH03a",
+     "line": "I decided this was just what sixty looked like,",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "Michelle sweeps the bottles into the vanity drawer, shuts it, and sits back on the stool, small in the cool room",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'I decided this was just what sixty looke'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC04-SH03b",
+     "line": "and I made my peace with disappearing.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "Michelle sweeps the bottles into the vanity drawer, shuts it, and sits back on the stool, small in the cool room",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'and I made my peace with disappearing.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC05",
+   "role": "scene",
+   "idea": "her sister at the door with wine, holding her face up to the light: it was never your age",
+   "rows": [
+    {
+     "beat": "SC05-SH01",
+     "line": "Michelle, open the door. I brought wine and I am not leaving.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle shuffles down the hall to the front door as Rosa's voice calls through it; she opens the door",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Michelle, open the door. I brought wine '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH02",
+     "line": "...Oh, honey. Look at you. Come here.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa in the doorway holds up the bottle of red wine (held by its neck), sees Michelle's face, and her grin softens",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries '...Oh, honey. Look at you. Come here.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH03",
+     "line": "Rosa steps in and takes Michelle's chin in her hand, tilting her tired face up to the hall light",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa steps in and takes Michelle's chin in her hand, tilting her tired face up to the hall light",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Rosa steps in and takes Michelle's chin '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH04a",
+     "line": "I am fine, Rosa. I am.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle says it, eyes sliding away from Rosa's, toward the round mirror on the wall",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'I am fine, Rosa. I am.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH04b",
+     "line": "I just... I do not know who that woman in the mirror is anymore.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle says it, eyes sliding away from Rosa's, toward the round mirror on the wall",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'I just... I do not know who that woman i'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH05",
+     "line": "He looked at me like a stranger the day he left, and lately so do I.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Michelle turns to the round mirror over the console and looks at herself as she says it; Rosa behind her",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'He looked at me like a stranger the day '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH06",
+     "line": "Rosa listens, her eyes wet, nodding once, and sets the wine on the console",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Rosa listens, her eyes wet, nodding once, and sets the wine on the console",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Rosa listens, her eyes wet, nodding once'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH07a",
+     "line": "Can I tell you something?",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa turns Michelle gently by the shoulders to face her and speaks low",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Can I tell you something?'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH07b",
+     "line": "Two years ago, I felt exactly like that. Same mirror, same thoughts.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa turns Michelle gently by the shoulders to face her and speaks low",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Two years ago, I felt exactly like that.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH08",
+     "line": "Michelle listens, her eyes lifting to Rosa's",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle listens, her eyes lifting to Rosa's",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Michelle listens, her eyes lifting to Ro'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH09a",
+     "line": "And I will tell you what I had to learn the hard way.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa says it slowly, certain, holding Michelle's eyes",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'And I will tell you what I had to learn '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC05-SH09b",
+     "line": "It was never your age, Michelle. It was the foundation.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Rosa says it slowly, certain, holding Michelle's eyes",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'It was never your age, Michelle. It was '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC05-SH10",
+     "line": "Made for young skin, so on ours it just sits on top and ages us.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Rosa taps her own cheek with two fingers as she says it; Michelle touches her own",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Made for young skin, so on ours it just '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC06",
+   "role": "solution",
+   "idea": "the violet stick, the white stripe, the colour turning into her own shade on her own face",
+   "rows": [
+    {
+     "beat": "SC06-SH01",
+     "line": "This is the one that changed it for me.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Rosa reaches into her big woven shoulder bag and draws out the FACELOVE stick (a little longer than her hand is wide)",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'This is the one that changed it for me.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH02",
+     "line": "Here, let me just show you.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa's hand holds the closed violet FACELOVE stick (a little longer than her hand is wide) upright in the warm light, wordmark to the lens",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Here, let me just show you.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH03",
+     "line": "It comes out pure white.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Rosa uncaps the balm end and draws one short stripe of white balm across Michelle's cheekbone",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'It comes out pure white.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH04a",
+     "line": "Then it reads the warmth of your own skin",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa turns the stick to its brush end as she speaks, her eyes crinkling at the corners",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Then it reads the warmth of your own ski'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH04b",
+     "line": "and turns into your exact shade, and it melts right in.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "Rosa turns the stick to its brush end as she speaks, her eyes crinkling at the corners",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'and turns into your exact shade, and it '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH05",
+     "line": "It has jojoba, shea, vitamin E, so it feels like nothing and never cakes. It covers the lines, the tired, the circles, and it still looks like your own skin.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "the brush end works the white stripe on Michelle's cheekbone in small circles; behind the brush the white warms into her own olive shade, ahead of it still white; every line stays",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'It has jojoba, shea, vitamin E, so it fe'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH06",
+     "line": "Not a mask. You.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Rosa steps aside; Michelle turns to the round mirror and sees her even, warm face, every line still there",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'Not a mask. You.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC06-SH07",
+     "line": "in the mirror Michelle's eyes fill and the corners of her mouth lift a little at herself",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "in the mirror Michelle's eyes fill and the corners of her mouth lift a little at herself",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-HALL",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-HALL that carries 'in the mirror Michelle's eyes fill and t'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC07",
+   "role": "proof",
+   "idea": "the first morning she does it herself — and doesn't look away",
+   "rows": [
+    {
+     "beat": "SC07-SH01",
+     "line": "I ordered my own before Rosa even left. And the first morning I tried it,",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle walks to the vanity in her robe and sits on the stool, her own violet stick (a little longer than her hand is wide) on the vanity",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'I ordered my own before Rosa even left. '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH02",
+     "line": "the tired just lifted.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "her hand draws the stick (a little longer than her hand is wide) across her cheek, white going on",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'the tired just lifted.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC07-SH03a",
+     "line": "For the first time in years,",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "in the mirror Michelle meets her own eyes and holds them, her chin lifting a little",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'For the first time in years,'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC07-SH03b",
+     "line": "I did not look away from my own reflection.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "in the mirror Michelle meets her own eyes and holds them, her chin lifting a little",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-VANITY",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-VANITY that carries 'I did not look away from my own reflecti'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC08",
+   "role": "after",
+   "idea": "back in the photos, standing taller beside her sister",
+   "rows": [
+    {
+     "beat": "SC08-SH01",
+     "line": "And it was more than my face. I stood taller.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle rises from the patio table and straightens, shoulders back; Rosa beside her laughing",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'And it was more than my face. I stood ta'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC08-SH02",
+     "line": "I got back in the photos. I stopped hiding.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Rosa holds her phone (a little smaller than her hand) up at arm's length; the sisters press cheek to cheek and laugh for the picture",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'I got back in the photos. I stopped hidi'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC08-SH03",
+     "line": "So by the time that cart hit mine in Walmart, I was not afraid of anyone.",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "Michelle lowers her face from the laugh, calm and sure, looking off past the lens",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'So by the time that cart hit mine in Wal'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC09",
+   "role": "after",
+   "idea": "back in the aisle: the younger woman runs after her, and she just smiles",
+   "rows": [
+    {
+     "beat": "SC09-SH01",
+     "line": "Wait. That is your ex-wife?",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "the woman, unsettled, turns to Peter and asks; Peter still staring after Michelle",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'Wait. That is your ex-wife?'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH02a",
+     "line": "I am sorry, I just have to ask.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the woman hurries along the walkway after Michelle, catching up to her cart, the camera backing away in front of her",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'I am sorry, I just have to ask.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH02b",
+     "line": "What do you use on your skin? You look amazing.",
+     "candidates": [
+      {
+       "route": "CONTRAST",
+       "picture": "the woman hurries along the walkway after Michelle, catching up to her cart, the camera backing away in front of her",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'What do you use on your skin? You look a'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH03",
+     "line": "Michelle turns her head to the woman, her lips closed, the corners of her mouth curving up warm and serene, saying nothing",
+     "candidates": [
+      {
+       "route": "PROOF",
+       "picture": "Michelle turns her head to the woman, her lips closed, the corners of her mouth curving up warm and serene, saying nothing",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'Michelle turns her head to the woman, he'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC09-SH04",
+     "line": "Michelle turns her cart and walks away down the walkway, unhurried; the woman stops, left behind",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle turns her cart and walks away down the walkway, unhurried; the woman stops, left behind",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'Michelle turns her cart and walks away d'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC09-SH05",
+     "line": "Peter stands alone at the end-cap behind his cart, small in the bright aisle, his hand slipping off the handle",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Peter stands alone at the end-cap behind his cart, small in the bright aisle, his hand slipping off the handle",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-AISLE",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-AISLE that carries 'Peter stands alone at the end-cap behind'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC10",
+   "role": "scene",
+   "idea": "out through the doors into the light, never looking back",
+   "rows": [
+    {
+     "beat": "SC10-SH01",
+     "line": "I did not need to say a thing.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle walks her cart (a full-size store shopping cart, waist-high, holding a few household things) out through the open sliding doors into golden light",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-STORE-DOORS",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-STORE-DOORS that carries 'I did not need to say a thing.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC10-SH02",
+     "line": "I did not look back either.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "Michelle passes through the outer doors into the sunlit parking lot without looking back",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-STORE-DOORS",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'I did not look back either.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  },
+  {
+   "group": "SC11",
+   "role": "scene",
+   "idea": "his text arrives; she smiles and turns the phone face down",
+   "rows": [
+    {
+     "beat": "SC11-SH01",
+     "line": "Two weeks later, Peter texted me. First time in four years.",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle sits at the patio table with a cup of coffee; her phone (a little smaller than her hand) lights up on the table",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'Two weeks later, Peter texted me. First '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC11-SH02",
+     "line": "I read it, I smiled,",
+     "candidates": [
+      {
+       "route": "DETAIL",
+       "picture": "the phone (a little smaller than her hand) on the mosaic table lights up with a message; her hand picks it up",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'I read it, I smiled,'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC11-SH03",
+     "line": "and I put my phone away.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle's mouth curves up at one corner as she sets the phone (a little smaller than her hand) face down on the table, then lifts her coffee",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'and I put my phone away.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    }
+   ]
+  },
+  {
+   "group": "SC12",
+   "role": "offer",
+   "idea": "to us: it was never you — the stick, the offer, the close",
+   "rows": [
+    {
+     "beat": "SC12-SH01a",
+     "line": "So if someone ever looked at you and made you feel like you had faded,",
+     "candidates": [
+      {
+       "route": "WORLD",
+       "picture": "Michelle, at the patio table in the late sun, turns from the garden to the lens and speaks to it, warm and direct",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'So if someone ever looked at you and mad'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC12-SH01b",
+     "line": "please hear me. It was never you.",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle, at the patio table in the late sun, turns from the garden to the lens and speaks to it, warm and direct",
+       "score": {
+        "stop": 2,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'please hear me. It was never you.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": true
+    },
+    {
+     "beat": "SC12-SH02a",
+     "line": "The thing she wanted to know, I will tell you instead.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Michelle picks up the violet stick (a little longer than her hand is wide) and holds it up beside her face, wordmark to the lens",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'The thing she wanted to know, I will tel'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC12-SH02b",
+     "line": "It is called FACELOVE, and I have linked it below.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "Michelle picks up the violet stick (a little longer than her hand is wide) and holds it up beside her face, wordmark to the lens",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'It is called FACELOVE, and I have linked'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC12-SH03a",
+     "line": "Right now you get two Foundation Sticks for almost the price of one, plus a free primer, a mystery gift,",
+     "candidates": [
+      {
+       "route": "REACTION",
+       "picture": "Michelle lowers the stick and looks out at the garden, her face easy and open, the late sun on her cheek",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'Right now you get two Foundation Sticks '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC12-SH03b",
+     "line": "and free shipping and a full thirty day money back guarantee.",
+     "candidates": [
+      {
+       "route": "SYMBOL",
+       "picture": "Michelle lowers the stick and looks out at the garden, her face easy and open, the late sun on her cheek",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "DETAIL",
+       "picture": "an extreme close detail of hands or eyes for 'and free shipping and a full thirty day '",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    },
+    {
+     "beat": "SC12-SH04",
+     "line": "Go be too busy glowing to look backward.",
+     "candidates": [
+      {
+       "route": "PRODUCT",
+       "picture": "the FACELOVE stick (a little longer than her hand is wide) stands upright on the mosaic table in the late sun and turns slowly a quarter turn to bring the wordmark to the lens",
+       "score": {
+        "stop": 1,
+        "line": 2,
+        "feel": 2,
+        "specific": 2,
+        "fresh": 1,
+        "makeable": 2
+       }
+      },
+      {
+       "route": "STAKES",
+       "picture": "what this moment costs her, shown on the nearest object in L-PATIO",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      },
+      {
+       "route": "SYMBOL",
+       "picture": "one object in L-PATIO that carries 'Go be too busy glowing to look backward.'",
+       "score": {
+        "stop": 1,
+        "line": 1,
+        "feel": 1,
+        "specific": 1,
+        "fresh": 1,
+        "makeable": 1
+       }
+      }
+     ],
+     "pick": 0,
+     "hero": false
+    }
+   ]
+  }
+ ]
+}

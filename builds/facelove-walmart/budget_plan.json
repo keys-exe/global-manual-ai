@@ -21,7 +21,7 @@
   },
   {
    "job": "plates",
-   "n": 6
+   "n": 7
   },
   {
    "job": "info_cards",
@@ -29,8 +29,8 @@
   },
   {
    "job": "seedance",
-   "seconds": 220,
-   "note": "one take per scene (\u00a724K part 5)"
+   "seconds": 262,
+   "note": "16 takes from the step-5 act map (one take per scene up to 30 s)"
   },
   {
    "job": "seedance",

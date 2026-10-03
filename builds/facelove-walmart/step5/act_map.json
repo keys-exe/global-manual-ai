@@ -1,0 +1,4227 @@
+{
+ "build": "facelove-walmart",
+ "rows": [
+  {
+   "beat": "SC01-SH01",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N",
+    "C1",
+    "C2"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F13",
+   "why": "the aisle and both carts in one frame: we see the corner before she does",
+   "axis": "the line between Michelle (frame left) and Peter with the woman (frame right) across the two carts",
+   "axis_side": "A",
+   "dir": "away",
+   "vo": "At sixty three, I ran into my ex-husband in Walmart.",
+   "hold_s": 0,
+   "duration": 3,
+   "action": "Michelle pushes her cart briskly up the aisle toward the walkway, the camera backing away in front of her; Peter's cart swings round the end-cap into her path",
+   "motion": "her cart rolls forward three strides, his cart noses round the end-cap",
+   "pace": "three brisk strides, one swing",
+   "marks": {
+    "N": "mid-aisle, beside the paper shelves, pushing Michelle's cart (a full-size store shopping cart, waist-high, holding a few household things)",
+    "C1": "at the end-cap, rounding it from the walkway",
+    "C2": "at the end-cap, half a step behind Peter"
+   },
+   "start_pos": "Michelle mid-aisle by the paper shelves pushing her cart toward the walkway, facing camera; Peter and the woman unseen beyond the end-cap on the walkway, about to turn in",
+   "music": "MUS-OPEN",
+   "lines": "L001",
+   "ingredients": [
+    "C1",
+    "C2",
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC01-SH02",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "carts",
+   "cast": [
+    "N",
+    "C1"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "low",
+   "side": "profile",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-MED",
+    "SH-LOW"
+   ],
+   "focus": {
+    "plane": "foreground",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F19",
+   "why": "low on the two carts as they hit: the impact is the hook — fast, physical (brief VN02)",
+   "axis_side": "neutral",
+   "vo": "He was with her.",
+   "duration": 2,
+   "action": "the two carts collide nose to nose with a jolt, both carts rocking back; both pairs of hands lurch on the handles",
+   "motion": "the two carts slam together and rock back a hand's width; both pairs of hands jerk on the handles",
+   "pace": "one hit",
+   "marks": {
+    "N": "mid-aisle at the end-cap corner, hands on Michelle's cart",
+    "C1": "at the end-cap, hands on his cart"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L001",
+   "ingredients": [
+    "C1",
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC01-SH03",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1",
+    "C2"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": {
+     "from": "Peter",
+     "to": "the woman",
+     "cue": "the woman, 41",
+     "kind": "pull"
+    },
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F12",
+   "why": "Peter looks up annoyed — then his face changes: the stare is the story",
+   "axis_side": "A",
+   "vo": "The woman he left me for. She is forty one.",
+   "duration": 4,
+   "action": "Peter looks up annoyed, then his face changes completely — eyes widening, scanning her head to toe; behind him the woman stiffens",
+   "motion": "his brows drop then lift, his eyes travel down and up; the woman's shoulders rise",
+   "pace": "one look down, one look up",
+   "marks": {
+    "C1": "at the end-cap, behind his cart",
+    "C2": "at the end-cap, at Peter's shoulder"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L001",
+   "ingredients": [
+    "C1",
+    "C2",
+    "L-AISLE"
+   ]
+  },
+  {
+   "beat": "SC01-SH04a",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F1",
+   "why": "low close on Peter: the man who left her, now the one looking up",
+   "axis_side": "A",
+   "dialogue": "Michelle? Is that you? My God, what happened,",
+   "duration": 3,
+   "action": "Peter, staring, says it in one breath, his hand loose on the cart handle",
+   "motion": "the slow push-in closes on his face as his mouth falls open between questions",
+   "pace": "the line in one breath",
+   "marks": {
+    "C1": "at the end-cap, behind his cart"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L002",
+   "ingredients": [
+    "C1",
+    "L-AISLE"
+   ]
+  },
+  {
+   "beat": "SC01-SH04b",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34",
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F11",
+   "why": "Peter's double-take, wider: the woman's shoulder at the edge of frame",
+   "axis_side": "A",
+   "dialogue": "did you get work done? You look so much more beautiful.",
+   "duration": 3,
+   "action": "Peter, staring, says it in one breath, his hand loose on the cart handle",
+   "motion": "he leans over the cart, his hand lifting off the handle; the pan follows",
+   "pace": "the line in one breath",
+   "marks": {
+    "C1": "at the end-cap, behind his cart"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L002",
+   "ingredients": [
+    "C1",
+    "L-AISLE"
+   ]
+  },
+  {
+   "beat": "SC01-SH05",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F2",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "the turn: she is calm — a beat, then three words",
+   "axis_side": "A",
+   "dialogue": "It is just me.",
+   "duration": 3,
+   "action": "Michelle holds his look for a beat, calm, cool, unbothered, and says it with one corner of her mouth lifting",
+   "motion": "a beat of stillness, then her lips move and the smile settles; her eyes stay on him",
+   "pace": "a beat, then four words",
+   "marks": {
+    "N": "mid-aisle at the end-cap corner, hands on Michelle's cart"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L003",
+   "ingredients": [
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC01-SH06",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C1",
+    "C2"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "FULL",
+   "shot": [
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": true
+   },
+   "coverage": "master",
+   "rig": "F14",
+   "why": "following her as she steers round him and glides off down the walkway: she leaves, he stays",
+   "axis_side": "A",
+   "dir": "L>R",
+   "vo": "The only reason I did not fall apart standing there",
+   "duration": 4,
+   "action": "Michelle steers her cart around his and walks off along the walkway, unhurried, the camera following behind her",
+   "motion": "her cart swings round his and she walks five easy strides away",
+   "pace": "five unhurried strides",
+   "marks": {
+    "N": "at the end-cap, steering out onto the walkway",
+    "C1": "at the end-cap, behind his cart",
+    "C2": "at the end-cap, at Peter's shoulder"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L004",
+   "ingredients": [
+    "C1",
+    "C2",
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC01-SH07",
+   "group": "SC01",
+   "scene": "SC01",
+   "take": "SC01-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1",
+    "C2"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "high",
+   "side": "front",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-HIGH",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F6",
+   "why": "high, pulling back: Peter frozen and smaller, the woman watching him watch her",
+   "axis_side": "A",
+   "vo": "is because of what my sister handed me a few weeks ago.",
+   "duration": 5,
+   "action": "Peter stands frozen staring after her; the woman beside him turns from Michelle to Peter, stiffening",
+   "motion": "the camera pulls back and rises a little; the woman's head turns slowly from her to him",
+   "pace": "one slow turn of the head",
+   "marks": {
+    "C1": "at the end-cap, behind his cart",
+    "C2": "at the end-cap, at Peter's shoulder"
+   },
+   "end_marks": {
+    "C1": "at the end-cap, behind his cart",
+    "C2": "at the end-cap, at Peter's shoulder",
+    "N": "walking away along the walkway, out of frame"
+   },
+   "end_pos": "Peter frozen at the end-cap behind his cart, staring frame right; the woman at his shoulder looking at him; Michelle gone along the walkway",
+   "music": "MUS-OPEN",
+   "lines": "L004",
+   "transition": "the image cools and dissolves back four years (VN05)",
+   "ingredients": [
+    "C1",
+    "C2",
+    "L-AISLE"
+   ]
+  },
+  {
+   "beat": "SC02-SH01",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N",
+    "C1"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F18",
+   "why": "the room of thirty years: lamp-lit, her in the armchair, him standing",
+   "axis": "the line between Michelle in the armchair (frame left) and Peter by the coffee table (frame right)",
+   "axis_side": "A",
+   "duration": 4,
+   "hold_s": 4,
+   "action": "Peter, in his coat, stands by the coffee table and sets a plain manila envelope (a little larger than a sheet of paper) on it; Michelle sits in the armchair, very still",
+   "motion": "his hand lowers the envelope to the table and withdraws; the slow creep moves in a few centimetres",
+   "pace": "one slow placing",
+   "marks": {
+    "N": "in the armchair, by the lamp",
+    "C1": "beside the coffee table, the archway behind him"
+   },
+   "start_pos": "Michelle sitting very still in the dusty-rose armchair by the lamp, facing the coffee table; Peter standing beside the coffee table in his coat, the envelope in his hand, the archway behind him",
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "C1",
+    "L-LIVING",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC02-SH02",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "envelope",
+   "cast": [
+    "C1"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "high",
+   "side": "front",
+   "scale": "CU",
+   "shot": [
+    "SH-HICU"
+   ],
+   "focus": {
+    "plane": "hands",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F12",
+   "why": "high on the envelope on the walnut: the end of thirty-one years, in paper",
+   "axis_side": "neutral",
+   "duration": 2,
+   "hold_s": 2,
+   "action": "the plain manila envelope (a little larger than a sheet of paper) lies on the coffee table; Peter's fingers slide off it",
+   "motion": "his fingers slide off the envelope; the camera tilts down onto it",
+   "pace": "one slide",
+   "marks": {
+    "C1": "beside the coffee table"
+   },
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "C1",
+    "L-LIVING"
+   ]
+  },
+  {
+   "beat": "SC02-SH03a",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F11",
+   "why": "Peter will not meet her eyes: his gaze on the floor, the pan follows his turn away",
+   "axis_side": "A",
+   "dialogue": "I am sorry, Michelle. After thirty one years.",
+   "duration": 3,
+   "action": "Peter says it to the floor, never meeting her eyes, then half turns toward the archway",
+   "motion": "his eyes stay down; he half turns away and the camera pans with him",
+   "pace": "the line, then one half turn",
+   "marks": {
+    "C1": "beside the coffee table"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L005",
+   "ingredients": [
+    "C1",
+    "L-LIVING"
+   ]
+  },
+  {
+   "beat": "SC02-SH03b",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "eye",
+   "side": "profile",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-PROFILE",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F22",
+   "why": "in profile as he turns from her: the counter-move holds him in frame as he leaves her",
+   "axis_side": "A",
+   "dialogue": "I just... I need something different.",
+   "duration": 3,
+   "action": "Peter says it to the floor, never meeting her eyes, then half turns toward the archway",
+   "motion": "he turns away toward the archway, one step; the camera moves against him",
+   "pace": "the line, then one half turn",
+   "marks": {
+    "C1": "beside the coffee table"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L005",
+   "ingredients": [
+    "C1",
+    "L-LIVING"
+   ]
+  },
+  {
+   "beat": "SC02-SH04",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F1",
+   "turn": true,
+   "beat_before": 1.5,
+   "why": "the turn: the floor falls out from under her — a whisper",
+   "axis_side": "A",
+   "dialogue": "Thirty one years.",
+   "duration": 4,
+   "action": "Michelle, very still in the armchair, eyes on the envelope, whispers it barely aloud",
+   "motion": "a long held breath, then her lips barely move; the camera pushes in slowly",
+   "pace": "a held beat, then three words",
+   "marks": {
+    "N": "in the armchair, by the lamp"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L006",
+   "ingredients": [
+    "L-LIVING",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC02-SH05",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "R"
+   },
+   "fg": "through",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "N",
+    "C1"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "eye",
+   "side": "ots",
+   "scale": "FULL",
+   "shot": [
+    "SH-OTS"
+   ],
+   "focus": {
+    "plane": "background",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "ots",
+   "rig": "F2",
+   "why": "over her shoulder: he walks out through the archway and the house swallows him",
+   "axis_side": "A",
+   "dir": "away",
+   "duration": 4,
+   "hold_s": 4,
+   "action": "over Michelle's shoulder, Peter walks away through the archway and out of sight; the front door closes beyond",
+   "motion": "Peter walks four steps through the archway and is gone; the door's light flickers shut",
+   "pace": "four steps",
+   "marks": {
+    "N": "in the armchair, by the lamp",
+    "C1": "walking from the coffee table out through the archway"
+   },
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "C1",
+    "L-LIVING",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC02-SH06",
+   "group": "SC02",
+   "scene": "SC02",
+   "take": "SC02-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the pleated table lamp beside the armchair, dusk through the window",
+    "time": "evening",
+    "arc": "the wound — amber dying to blue",
+    "kelvin": 2700,
+    "key_side": "L",
+    "why": "the light dies — the lamp's pool holds while the window goes dark"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-LIVING",
+   "story_day": "F1",
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-HIGH"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F16",
+   "why": "high and wide: the house suddenly enormous and silent, the lamp's pool shrinking around her",
+   "axis_side": "A",
+   "duration": 4,
+   "hold_s": 4,
+   "action": "Michelle alone in the armchair as the light dies, the envelope on the table in front of her",
+   "motion": "her shoulders drop with one long breath out as the window behind goes from blue to dark",
+   "pace": "one slow descent",
+   "marks": {
+    "N": "in the armchair, by the lamp"
+   },
+   "end_marks": {
+    "N": "in the armchair, by the lamp"
+   },
+   "end_pos": "Michelle alone, small in the armchair by the lamp, the envelope on the coffee table, the room dark around her",
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "L-LIVING",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC03-SH01",
+   "group": "SC03",
+   "scene": "SC03",
+   "take": "SC03-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the vanity bulbs over the oval mirror",
+    "time": "night",
+    "arc": "the undoing — flat, unflattering",
+    "kelvin": 3500,
+    "key_side": "R"
+   },
+   "fg": "reflection",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F2",
+   "height": "eye",
+   "side": "behind",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-REAR",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "background",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F18",
+   "why": "behind her at the vanity, her face only in the mirror: she is talking to a stranger",
+   "duration": 4,
+   "hold_s": 4,
+   "action": "Michelle sits on the stool at the vanity in her robe, looking at her reflection in the oval mirror",
+   "motion": "she leans an inch toward the mirror; the camera creeps in behind her",
+   "pace": "one lean",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "start_pos": "Michelle seated on the stool at the vanity, back to camera, her face in the oval mirror, the bulbs on above it",
+   "music": "MUS-OPEN",
+   "lines": "L007",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC03-SH02a",
+   "group": "SC03",
+   "scene": "SC03",
+   "take": "SC03-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the vanity bulbs over the oval mirror",
+    "time": "night",
+    "arc": "the undoing — flat, unflattering",
+    "kelvin": 3500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F2",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F1",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "close on her own face as she asks it: the question she has avoided",
+   "dialogue": "When did I start looking like this? Tired. Worn out.",
+   "duration": 4,
+   "action": "Michelle, hollow, says it to her reflection, touching the shadow under one eye with a fingertip",
+   "motion": "her fingertip touches under her eye and drops; the camera pushes in",
+   "pace": "the line, one touch",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L007",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC03-SH02b",
+   "group": "SC03",
+   "scene": "SC03",
+   "take": "SC03-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the vanity bulbs over the oval mirror",
+    "time": "night",
+    "arc": "the undoing — flat, unflattering",
+    "kelvin": 3500,
+    "key_side": "R"
+   },
+   "fg": "reflection",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F2",
+   "height": "eye",
+   "side": "front",
+   "scale": "MCU",
+   "shot": [
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F12",
+   "why": "the mirror's face straight on: the stranger she sees",
+   "dialogue": "Older than I am. No wonder he stopped looking at me.",
+   "duration": 4,
+   "action": "Michelle, hollow, says it to her reflection, touching the shadow under one eye with a fingertip",
+   "motion": "her hand drops from her face to the vanity; the camera tilts with it",
+   "pace": "the line, one touch",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L007",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC03-SH03",
+   "group": "SC03",
+   "scene": "SC03",
+   "take": "SC03-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the vanity bulbs over the oval mirror",
+    "time": "night",
+    "arc": "the undoing — flat, unflattering",
+    "kelvin": 3500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "photo",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F2",
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-HICU"
+   ],
+   "focus": {
+    "plane": "hands",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F12",
+   "why": "her hand turns a photograph of herself face down: she stops being in photos",
+   "vo": "I stopped looking in mirrors. I stopped being in photos.",
+   "duration": 4,
+   "action": "her hand lays a small framed photograph (the size of a paperback) face down on the vanity",
+   "motion": "her hand turns the frame over and lays it flat; the camera tilts with it",
+   "pace": "one tip",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L008",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC03-SH04",
+   "group": "SC03",
+   "scene": "SC03",
+   "take": "SC03-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the vanity bulbs over the oval mirror",
+    "time": "night",
+    "arc": "the undoing — flat, unflattering",
+    "kelvin": 3500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F2",
+   "height": "low",
+   "side": "profile",
+   "scale": "MCU",
+   "shot": [
+    "SH-PROFILE",
+    "SH-LOW"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F15",
+   "why": "the slow orbit as she works heavy foundation into her face — burying it",
+   "vo": "And I buried my face under more and more makeup that only made it worse.",
+   "duration": 5,
+   "action": "in profile, Michelle pats thick beige foundation from an unlabelled bottle over her cheeks with her fingers, layer on layer",
+   "motion": "her fingers press the foundation on three times; the camera orbits slowly round to her front",
+   "pace": "three pats",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L008",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC03-SH05",
+   "group": "SC03",
+   "scene": "SC03",
+   "take": "SC03-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the vanity bulbs over the oval mirror",
+    "time": "night",
+    "arc": "the undoing — flat, unflattering",
+    "kelvin": 3500,
+    "key_side": "R"
+   },
+   "fg": "through",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F2",
+   "height": "eye",
+   "side": "ots",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-OTS"
+   ],
+   "focus": {
+    "plane": "background",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "cutaway",
+   "rig": "F23",
+   "why": "over her shoulder into the mirror: the caked mask looking back",
+   "duration": 3,
+   "hold_s": 3,
+   "action": "over her shoulder, the mirror shows her face caked and grey; she looks away from it",
+   "motion": "her eyes drop away from the mirror; the camera breathes",
+   "pace": "one look away",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "end_marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "end_pos": "Michelle on the stool at the vanity, face heavy with foundation, looking down away from the mirror",
+   "music": "MUS-OPEN",
+   "lines": "L008",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC04-SH01",
+   "group": "SC04",
+   "scene": "SC04",
+   "take": "SC04-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "cool morning daylight through the sheer curtains",
+    "time": "morning",
+    "arc": "nothing worked — cool, flat",
+    "kelvin": 6000,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "bottles",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F3",
+   "height": "overhead",
+   "side": "front",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-OVER"
+   ],
+   "focus": {
+    "plane": "hands",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F21",
+   "why": "from above: the vanity crowded with a dozen unlabelled creams, serums and foundations — the failed fixes in one look",
+   "dialogue": "Every cream. Every serum. Every foundation on the shelf.",
+   "duration": 4,
+   "hold_s": 0,
+   "action": "her hand moves across the crowded vanity top, touching one bottle after another",
+   "motion": "her hand moves across the bottles, touching three; the camera tracks overhead with it",
+   "pace": "three touches",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "start_pos": "Michelle on the stool at the vanity in the morning, her hand over a crowd of a dozen unlabelled bottles and jars",
+   "music": "MUS-OPEN",
+   "lines": "L009",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC04-SH02",
+   "group": "SC04",
+   "scene": "SC04",
+   "take": "SC04-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "cool morning daylight through the sheer curtains",
+    "time": "morning",
+    "arc": "nothing worked — cool, flat",
+    "kelvin": 6000,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F3",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F1",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "defeated, to the mirror: the brands she trusted",
+   "dialogue": "The Estée Lauder, the L'Oréal. And I look older in all of them.",
+   "duration": 5,
+   "action": "Michelle, defeated, says it to the mirror, a jar in her hand",
+   "motion": "she lowers the jar to the vanity as she speaks; the camera pushes in",
+   "pace": "the line, one lowering",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L009",
+   "note": "the Every cream… line opens over SH01 off-screen, the brands on screen here (F8: no brand on any bottle)",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC04-SH03a",
+   "group": "SC04",
+   "scene": "SC04",
+   "take": "SC04-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "cool morning daylight through the sheer curtains",
+    "time": "morning",
+    "arc": "nothing worked — cool, flat",
+    "kelvin": 6000,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F3",
+   "height": "high",
+   "side": "three-quarter-back",
+   "scale": "FULL",
+   "shot": [
+    "SH-HIGH",
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "cutaway",
+   "rig": "F6",
+   "why": "high and pulling away: she sweeps the bottles into a drawer and makes her peace with disappearing",
+   "vo": "I decided this was just what sixty looked like,",
+   "duration": 3,
+   "action": "Michelle sweeps the bottles into the vanity drawer, shuts it, and sits back on the stool, small in the cool room",
+   "motion": "one sweep of the arm, the drawer slides shut; the camera pulls back and up",
+   "pace": "one sweep, one push of the drawer",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L010",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC04-SH03b",
+   "group": "SC04",
+   "scene": "SC04",
+   "take": "SC04-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "cool morning daylight through the sheer curtains",
+    "time": "morning",
+    "arc": "nothing worked — cool, flat",
+    "kelvin": 6000,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "F3",
+   "height": "high",
+   "side": "three-quarter-back",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-HIGH"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "cutaway",
+   "rig": "F8",
+   "why": "the crane rises away: small in the cool room",
+   "vo": "and I made my peace with disappearing.",
+   "duration": 3,
+   "action": "Michelle sweeps the bottles into the vanity drawer, shuts it, and sits back on the stool, small in the cool room",
+   "motion": "she sits back on the stool and lowers her head; the crane rises",
+   "pace": "one sweep, one push of the drawer",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "end_marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "end_pos": "Michelle sitting back on the stool, the vanity bare, the drawer shut, the room cool and quiet",
+   "music": "MUS-OPEN",
+   "lines": "L010",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH01",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "C3",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F14",
+   "why": "following Michelle down the dark hall toward the knocking door",
+   "axis": "the line between Rosa (frame left, by the front door) and Michelle (frame right, by the archway)",
+   "axis_side": "A",
+   "dir": "away",
+   "dialogue": "Michelle, open the door. I brought wine and I am not leaving.",
+   "duration": 4,
+   "action": "Michelle shuffles down the hall to the front door as Rosa's voice calls through it; she opens the door",
+   "motion": "Michelle walks four steps to the door and pulls it open",
+   "pace": "four slow steps, one pull",
+   "marks": {
+    "N": "walking from the archway to the front door",
+    "C3": "outside the front door"
+   },
+   "start_pos": "Michelle at the archway in an old grey sweatshirt walking toward the front door, back to camera; Rosa unseen outside the front door, calling through it",
+   "music": "MUS-OPEN",
+   "lines": "L011",
+   "note": "Rosa heard through the door (off), then on screen",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH02",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "through",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3",
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "ots",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-OTS",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "ots",
+   "rig": "F17",
+   "why": "past Michelle's shoulder onto Rosa in the doorway: wine up, then the look",
+   "axis_side": "A",
+   "dialogue": "...Oh, honey. Look at you. Come here.",
+   "duration": 4,
+   "action": "Rosa in the doorway holds up the bottle of red wine (held by its neck), sees Michelle's face, and her grin softens",
+   "motion": "the wine comes up, then lowers as her face softens; the camera pushes through past Michelle's shoulder",
+   "pace": "one lift, one lowering",
+   "marks": {
+    "N": "at the front door, holding it open",
+    "C3": "in the front door, on the mat"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L011",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH03",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F11",
+   "why": "Rosa's hand takes Michelle's chin and tilts her tired face up to the pendant's light",
+   "axis_side": "A",
+   "duration": 3,
+   "hold_s": 3,
+   "action": "Rosa steps in and takes Michelle's chin in her hand, tilting her tired face up to the hall light",
+   "motion": "Rosa's hand lifts her chin; the pan follows the tilt up",
+   "pace": "one tilt",
+   "marks": {
+    "N": "under the pendant",
+    "C3": "under the pendant, facing Michelle"
+   },
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH04a",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F18",
+   "why": "close on Michelle: the brave words, then the truth",
+   "axis_side": "A",
+   "dialogue": "I am fine, Rosa. I am.",
+   "duration": 2,
+   "action": "Michelle says it, eyes sliding away from Rosa's, toward the round mirror on the wall",
+   "motion": "her eyes slide away toward the mirror; the camera creeps in",
+   "pace": "the line, one glance",
+   "marks": {
+    "N": "under the pendant"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L012",
+   "ingredients": [
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH04b",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "profile",
+   "scale": "MCU",
+   "shot": [
+    "SH-PROFILE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F12",
+   "why": "in profile, her eyes going to the mirror on the wall",
+   "axis_side": "A",
+   "dialogue": "I just... I do not know who that woman in the mirror is anymore.",
+   "duration": 4,
+   "action": "Michelle says it, eyes sliding away from Rosa's, toward the round mirror on the wall",
+   "motion": "her eyes slide to the mirror and her chin lowers; the camera tilts with it",
+   "pace": "the line, one glance",
+   "marks": {
+    "N": "under the pendant"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L012",
+   "ingredients": [
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH05",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "reflection",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "profile",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-PROFILE",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "foreground",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F7",
+   "why": "her and her reflection in the round mirror: the stranger she means",
+   "axis_side": "A",
+   "dialogue": "He looked at me like a stranger the day he left, and lately so do I.",
+   "duration": 5,
+   "action": "Michelle turns to the round mirror over the console and looks at herself as she says it; Rosa behind her",
+   "motion": "she turns her head to the mirror; the camera arcs a little round her",
+   "pace": "one turn",
+   "marks": {
+    "N": "by the mirror, at the console",
+    "C3": "under the pendant, behind Michelle"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L012",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH06",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F2",
+   "why": "Rosa listening: she has been here herself",
+   "axis_side": "A",
+   "duration": 3,
+   "hold_s": 3,
+   "action": "Rosa listens, her eyes wet, nodding once, and sets the wine on the console",
+   "motion": "one slow nod, the bottle set down on the console",
+   "pace": "one nod",
+   "marks": {
+    "C3": "under the pendant, behind Michelle"
+   },
+   "end_marks": {
+    "N": "by the mirror, at the console",
+    "C3": "under the pendant, behind Michelle"
+   },
+   "end_pos": "Michelle at the round mirror over the console, Rosa just behind her under the pendant, the wine on the console",
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "C3",
+    "L-HALL"
+   ]
+  },
+  {
+   "beat": "SC05-SH07a",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T2",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "through",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "split": "length",
+   "take_kind": "multi",
+   "subject": "C3",
+   "cast": [
+    "C3",
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "ots",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-OTS",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "ots",
+   "rig": "F2",
+   "why": "past Michelle onto Rosa: the secret she learned the hard way",
+   "axis_side": "A",
+   "dialogue": "Can I tell you something?",
+   "duration": 2,
+   "action": "Rosa turns Michelle gently by the shoulders to face her and speaks low",
+   "motion": "Rosa's hands turn Michelle round by the shoulders",
+   "pace": "one turn",
+   "marks": {
+    "N": "by the mirror, at the console",
+    "C3": "under the pendant, behind Michelle"
+   },
+   "start_pos": "Michelle at the round mirror over the console, Rosa just behind her under the pendant, the wine on the console",
+   "music": "MUS-OPEN",
+   "lines": "L013",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH07b",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T2",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3",
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F11",
+   "why": "Rosa, closer: her own two years ago",
+   "axis_side": "A",
+   "dialogue": "Two years ago, I felt exactly like that. Same mirror, same thoughts.",
+   "duration": 4,
+   "action": "Rosa turns Michelle gently by the shoulders to face her and speaks low",
+   "motion": "Rosa's hand lifts to her own cheek and lowers; the pan follows",
+   "pace": "one turn",
+   "marks": {
+    "N": "by the mirror, at the console",
+    "C3": "under the pendant, behind Michelle"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L013",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH08",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T2",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-HICU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F18",
+   "why": "from a little above: Michelle's face taking it in, small and listening",
+   "axis_side": "A",
+   "duration": 3,
+   "hold_s": 3,
+   "action": "Michelle listens, her eyes lifting to Rosa's",
+   "motion": "her eyes rise from the floor to Rosa's face; the camera creeps in",
+   "pace": "one look up",
+   "marks": {
+    "N": "by the mirror, at the console"
+   },
+   "music": "MUS-OPEN",
+   "lines": "—",
+   "ingredients": [
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC05-SH09a",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T2",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34",
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F18",
+   "why": "Rosa leaning in to the secret",
+   "axis_side": "A",
+   "dialogue": "And I will tell you what I had to learn the hard way.",
+   "duration": 3,
+   "action": "Rosa says it slowly, certain, holding Michelle's eyes",
+   "motion": "Rosa leans in one step closer; the camera creeps in",
+   "pace": "the line, one lift of the brows",
+   "marks": {
+    "C3": "under the pendant, facing Michelle"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L013",
+   "ingredients": [
+    "C3",
+    "L-HALL"
+   ]
+  },
+  {
+   "beat": "SC05-SH09b",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T2",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F1",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "low on Rosa for the reframe: it was never your age",
+   "axis_side": "A",
+   "dialogue": "It was never your age, Michelle. It was the foundation.",
+   "duration": 4,
+   "action": "Rosa says it slowly, certain, holding Michelle's eyes",
+   "motion": "her brows lift on 'never'; the camera pushes in",
+   "pace": "the line, one lift of the brows",
+   "marks": {
+    "C3": "under the pendant, facing Michelle"
+   },
+   "music": "MUS-OPEN",
+   "lines": "L013",
+   "ingredients": [
+    "C3",
+    "L-HALL"
+   ]
+  },
+  {
+   "beat": "SC05-SH10",
+   "group": "SC05",
+   "scene": "SC05",
+   "take": "SC05-T2",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3",
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "profile",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-PROFILE",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "master",
+   "rig": "F9",
+   "why": "the two sisters in profile under the light: the old foundation sits on top and ages us",
+   "axis_side": "A",
+   "dialogue": "Made for young skin, so on ours it just sits on top and ages us.",
+   "duration": 5,
+   "action": "Rosa taps her own cheek with two fingers as she says it; Michelle touches her own",
+   "motion": "two taps on Rosa's cheek, Michelle's hand rises to hers; the camera tracks a little sideways",
+   "pace": "two taps",
+   "marks": {
+    "C3": "under the pendant, facing Michelle",
+    "N": "under the pendant, facing Rosa"
+   },
+   "end_marks": {
+    "C3": "under the pendant, facing Michelle",
+    "N": "under the pendant, facing Rosa"
+   },
+   "end_pos": "Rosa and Michelle face to face under the pendant in profile, Rosa's bag on her shoulder",
+   "music": "MUS-OPEN",
+   "lines": "L013",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC06-SH01",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": true,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "C3",
+   "cast": [
+    "C3",
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-MED",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "master",
+   "rig": "F4",
+   "why": "Rosa goes into her bag: the turn of the film is an object",
+   "axis": "the line between Rosa (frame left, by the front door) and Michelle (frame right, by the archway)",
+   "axis_side": "A",
+   "dialogue": "This is the one that changed it for me.",
+   "duration": 4,
+   "action": "Rosa reaches into her big woven shoulder bag and draws out the FACELOVE stick (a little longer than her hand is wide)",
+   "motion": "her hand goes into the bag and comes out with the stick; the slider moves a little sideways",
+   "pace": "one reach",
+   "marks": {
+    "C3": "under the pendant, facing Michelle",
+    "N": "under the pendant, facing Rosa"
+   },
+   "start_pos": "Rosa and Michelle face to face under the pendant, Rosa's bag on her shoulder",
+   "music": "MUS-TURN",
+   "lines": "L014",
+   "product_at": 0.0,
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC06-SH02",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": true,
+   "mirror_of": null,
+   "subject": "product",
+   "cast": [
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "front",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F20",
+   "why": "the hero insert: the violet stick in Rosa's hand, the wordmark clear (VN12)",
+   "axis_side": "neutral",
+   "dialogue": "Here, let me just show you.",
+   "duration": 3,
+   "action": "Rosa's hand holds the closed violet FACELOVE stick (a little longer than her hand is wide) upright in the warm light, wordmark to the lens",
+   "motion": "the camera pulls out from the wordmark to the whole stick in her hand; the light slides down the barrel",
+   "pace": "one pull-out",
+   "marks": {
+    "C3": "under the pendant, facing Michelle"
+   },
+   "music": "MUS-TURN",
+   "lines": "L014",
+   "ingredients": [
+    "C3",
+    "L-HALL"
+   ]
+  },
+  {
+   "beat": "SC06-SH03",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "R"
+   },
+   "fg": "through",
+   "speaking": true,
+   "face": true,
+   "product_beat": true,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "ots",
+   "scale": "MCU",
+   "shot": [
+    "SH-OTS"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "ots",
+   "rig": "F18",
+   "why": "past Rosa onto Michelle as the white stripe goes on her cheek",
+   "axis_side": "A",
+   "dialogue": "It comes out pure white.",
+   "duration": 4,
+   "action": "Rosa uncaps the balm end and draws one short stripe of white balm across Michelle's cheekbone",
+   "motion": "one stroke of the balm across the cheek; Michelle's eyes flick to it",
+   "pace": "one stroke",
+   "marks": {
+    "N": "under the pendant, facing Rosa",
+    "C3": "under the pendant, facing Michelle"
+   },
+   "music": "MUS-TURN",
+   "lines": "L014",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC06-SH04a",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F11",
+   "why": "Rosa, smiling, explaining as she turns the stick to its brush end",
+   "axis_side": "A",
+   "dialogue": "Then it reads the warmth of your own skin",
+   "duration": 3,
+   "action": "Rosa turns the stick to its brush end as she speaks, her eyes crinkling at the corners",
+   "motion": "the stick turns in her fingers; the pan follows it up to her face",
+   "pace": "one turn of the stick",
+   "marks": {
+    "C3": "under the pendant, facing Michelle"
+   },
+   "music": "MUS-TURN",
+   "lines": "L014",
+   "ingredients": [
+    "C3",
+    "L-HALL"
+   ]
+  },
+  {
+   "beat": "SC06-SH04b",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "through",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C3",
+   "cast": [
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "ots",
+   "scale": "CU",
+   "shot": [
+    "SH-OTS",
+    "SH-CU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "ots",
+   "rig": "F18",
+   "why": "past Rosa's shoulder onto the white stripe on Michelle's cheek",
+   "axis_side": "A",
+   "dialogue": "and turns into your exact shade, and it melts right in.",
+   "duration": 3,
+   "action": "Rosa turns the stick to its brush end as she speaks, her eyes crinkling at the corners",
+   "motion": "Rosa lifts the brush end toward the stripe; the camera creeps in",
+   "pace": "one turn of the stick",
+   "marks": {
+    "C3": "under the pendant, facing Michelle"
+   },
+   "end_marks": {
+    "C3": "under the pendant, facing Michelle",
+    "N": "under the pendant, facing Rosa"
+   },
+   "end_pos": "Rosa and Michelle face to face under the pendant, the white stripe on Michelle's cheek, the brush end of the stick in Rosa's hand",
+   "music": "MUS-TURN",
+   "lines": "L014",
+   "ingredients": [
+    "C3",
+    "L-HALL"
+   ]
+  },
+  {
+   "beat": "SC06-SH05",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T2",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": true,
+   "mirror_of": null,
+   "split": "user",
+   "take_kind": "one-take",
+   "oner": true,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "profile",
+   "scale": "ECU",
+   "shot": [
+    "SH-MACRO"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F2",
+   "why": "THE REVEAL hero macro — one continuous unbroken shot, no cut during the colour change (brief, non-negotiable): white warming into her shade behind the brush",
+   "dialogue": "It has jojoba, shea, vitamin E, so it feels like nothing and never cakes. It covers the lines, the tired, the circles, and it still looks like your own skin.",
+   "duration": 12,
+   "action": "the brush end works the white stripe on Michelle's cheekbone in small circles; behind the brush the white warms into her own olive shade, ahead of it still white; every line stays",
+   "motion": "the brush moves in slow circles across the cheek and the colour front travels behind it, white to her shade in real time",
+   "pace": "small slow circles, left to right",
+   "marks": {
+    "N": "under the pendant, facing Rosa",
+    "C3": "under the pendant, facing Michelle"
+   },
+   "start_pos": "extreme close on Michelle's cheekbone in profile, a short stripe of white balm on it, the brush end of the stick just touching its left end",
+   "end_marks": {
+    "N": "under the pendant, facing Rosa",
+    "C3": "under the pendant, facing Michelle"
+   },
+   "end_pos": "the stripe blended into her own shade, the brush lifting away, every line of her face still there",
+   "music": "MUS-TURN",
+   "lines": "L015",
+   "note": "Rosa heard off; oner by the brief (VN13)",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC06-SH06",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T3",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "L"
+   },
+   "fg": "reflection",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "split": "user",
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "foreground",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F15",
+   "why": "Michelle sees herself in the round mirror — the orbit lands on her reflection",
+   "axis_side": "A",
+   "dialogue": "Not a mask. You.",
+   "duration": 4,
+   "action": "Rosa steps aside; Michelle turns to the round mirror and sees her even, warm face, every line still there",
+   "motion": "Michelle turns to the mirror and her lips part; the camera orbits round to her reflection",
+   "pace": "one turn",
+   "marks": {
+    "N": "under the pendant, facing Rosa",
+    "C3": "under the pendant, facing Michelle"
+   },
+   "start_pos": "Michelle turning from Rosa to the round mirror over the console, Rosa stepping back under the pendant",
+   "music": "MUS-TURN",
+   "lines": "L015",
+   "ingredients": [
+    "C3",
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC06-SH07",
+   "group": "SC06",
+   "scene": "SC06",
+   "take": "SC06-T3",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the globe pendant light in the hall",
+    "time": "night",
+    "arc": "the turn — warm light in the dark house",
+    "kelvin": 2900,
+    "key_side": "R"
+   },
+   "fg": "reflection",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-HALL",
+   "story_day": "F4",
+   "height": "low",
+   "side": "front",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F1",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "her reflection, close: for the first time she does not look away",
+   "axis_side": "A",
+   "duration": 3,
+   "hold_s": 3,
+   "action": "in the mirror Michelle's eyes fill and the corners of her mouth lift a little at herself",
+   "motion": "her eyes fill, the corner of her mouth lifts; a slow push",
+   "pace": "one breath",
+   "marks": {
+    "N": "by the mirror, at the console"
+   },
+   "end_marks": {
+    "N": "by the mirror, at the console",
+    "C3": "under the pendant, behind Michelle"
+   },
+   "end_pos": "Michelle at the round mirror, almost smiling at herself; Rosa behind her under the pendant",
+   "music": "MUS-TURN",
+   "lines": "—",
+   "ingredients": [
+    "L-HALL",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC07-SH01",
+   "group": "SC07",
+   "scene": "SC07",
+   "take": "SC07-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "golden morning sun through the sheer curtains",
+    "time": "morning",
+    "arc": "the change — warm, new",
+    "kelvin": 4300,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "A1",
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "FULL",
+   "shot": [
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F14",
+   "why": "following her to the vanity in the golden morning: the same mirror, a new day",
+   "dir": "away",
+   "vo": "I ordered my own before Rosa even left. And the first morning I tried it,",
+   "duration": 4,
+   "action": "Michelle walks to the vanity in her robe and sits on the stool, her own violet stick (a little longer than her hand is wide) on the vanity",
+   "motion": "three steps to the vanity and she sits; the camera follows behind",
+   "pace": "three steps, one sit",
+   "marks": {
+    "N": "walking from the door to the vanity"
+   },
+   "start_pos": "Michelle at the bedroom door in a cream robe walking toward the vanity, back to camera, golden sun through the curtains",
+   "music": "MUS-AFTER",
+   "lines": "L016",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC07-SH02",
+   "group": "SC07",
+   "scene": "SC07",
+   "take": "SC07-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "golden morning sun through the sheer curtains",
+    "time": "morning",
+    "arc": "the change — warm, new",
+    "kelvin": 4300,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": true,
+   "mirror_of": null,
+   "subject": "product",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "A1",
+   "height": "high",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-HICU"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F18",
+   "why": "her own hand, her own stick: the swipe she does herself",
+   "vo": "the tired just lifted.",
+   "duration": 3,
+   "action": "her hand draws the stick (a little longer than her hand is wide) across her cheek, white going on",
+   "motion": "her hand slides the balm once across her cheekbone",
+   "pace": "one swipe",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-AFTER",
+   "lines": "L016",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC07-SH03a",
+   "group": "SC07",
+   "scene": "SC07",
+   "take": "SC07-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "golden morning sun through the sheer curtains",
+    "time": "morning",
+    "arc": "the change — warm, new",
+    "kelvin": 4300,
+    "key_side": "R"
+   },
+   "fg": "reflection",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "A1",
+   "height": "eye",
+   "side": "front",
+   "scale": "MCU",
+   "shot": [
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F1",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "the mirror's face, straight on: she does not look away",
+   "vo": "For the first time in years,",
+   "duration": 3,
+   "action": "in the mirror Michelle meets her own eyes and holds them, her chin lifting a little",
+   "motion": "her eyes rise to the mirror and hold; the smile comes; a slow push-in",
+   "pace": "one long held look",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "music": "MUS-AFTER",
+   "lines": "L016",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC07-SH03b",
+   "group": "SC07",
+   "scene": "SC07",
+   "take": "SC07-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "golden morning sun through the sheer curtains",
+    "time": "morning",
+    "arc": "the change — warm, new",
+    "kelvin": 4300,
+    "key_side": "R"
+   },
+   "fg": "through",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-VANITY",
+   "story_day": "A1",
+   "height": "eye",
+   "side": "ots",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-OTS",
+    "SH-MED"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F7",
+   "why": "over her shoulder: her and the mirror, eye to eye",
+   "vo": "I did not look away from my own reflection.",
+   "duration": 3,
+   "action": "in the mirror Michelle meets her own eyes and holds them, her chin lifting a little",
+   "motion": "she lowers the stick and smiles at the mirror; the camera arcs a little",
+   "pace": "one long held look",
+   "marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "end_marks": {
+    "N": "on the stool, at the vanity"
+   },
+   "end_pos": "Michelle on the stool at the vanity, smiling at her reflection, the stick in her hand",
+   "music": "MUS-AFTER",
+   "lines": "L016",
+   "ingredients": [
+    "L-VANITY",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC08-SH01",
+   "group": "SC08",
+   "scene": "SC08",
+   "take": "SC08-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low morning sun over the garden wall",
+    "time": "morning",
+    "arc": "the after — open, golden",
+    "kelvin": 4300,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-PATIO",
+   "story_day": "A2",
+   "height": "low",
+   "side": "front",
+   "scale": "FULL",
+   "shot": [
+    "SH-LOW"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F16",
+   "why": "low as she stands up from the table: she stood taller",
+   "axis": "the line between Michelle (frame left) and Rosa (frame right) at the table",
+   "axis_side": "A",
+   "vo": "And it was more than my face. I stood taller.",
+   "duration": 4,
+   "action": "Michelle rises from the patio table and straightens, shoulders back; Rosa beside her laughing",
+   "motion": "she stands up and straightens, shoulders back; the jib comes down to her eye line",
+   "pace": "one rise",
+   "marks": {
+    "N": "at the table, by the lemon tree",
+    "C3": "at the table, by the bougainvillea"
+   },
+   "start_pos": "Michelle and Rosa seated at the round patio table in the morning sun, Michelle by the lemon tree, Rosa by the bougainvillea",
+   "music": "MUS-AFTER",
+   "lines": "L017",
+   "ingredients": [
+    "C3",
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC08-SH02",
+   "group": "SC08",
+   "scene": "SC08",
+   "take": "SC08-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low morning sun over the garden wall",
+    "time": "morning",
+    "arc": "the after — open, golden",
+    "kelvin": 4300,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C3"
+   ],
+   "location": "L-PATIO",
+   "story_day": "A2",
+   "height": "high",
+   "side": "front",
+   "scale": "MCU",
+   "shot": [
+    "SH-SELFIE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F23",
+   "why": "the sisters' selfie — she is back in the photos (the one signature shot of the scene)",
+   "axis_side": "A",
+   "vo": "I got back in the photos. I stopped hiding.",
+   "duration": 4,
+   "action": "Rosa holds her phone (a little smaller than her hand) up at arm's length; the sisters press cheek to cheek and laugh for the picture",
+   "motion": "the two lean in and laugh; the handheld breathes",
+   "pace": "one lean, one laugh",
+   "marks": {
+    "N": "at the table, by the lemon tree",
+    "C3": "at the table, by the bougainvillea"
+   },
+   "music": "MUS-AFTER",
+   "lines": "L017",
+   "ingredients": [
+    "C3",
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC08-SH03",
+   "group": "SC08",
+   "scene": "SC08",
+   "take": "SC08-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low morning sun over the garden wall",
+    "time": "morning",
+    "arc": "the after — open, golden",
+    "kelvin": 4300,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "A2",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F18",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "close on her, sure of herself: not afraid of anyone",
+   "vo": "So by the time that cart hit mine in Walmart, I was not afraid of anyone.",
+   "duration": 5,
+   "action": "Michelle lowers her face from the laugh, calm and sure, looking off past the lens",
+   "motion": "the laugh settles into a calm, level look; the camera creeps in",
+   "pace": "one settling",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "end_marks": {
+    "N": "at the table, by the lemon tree",
+    "C3": "at the table, by the bougainvillea"
+   },
+   "end_pos": "Michelle standing at the patio table, calm and sure, Rosa beside her",
+   "music": "MUS-AFTER",
+   "lines": "L017",
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC09-SH01",
+   "group": "SC09",
+   "scene": "SC09",
+   "take": "SC09-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "C2",
+   "cast": [
+    "C1",
+    "C2"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "profile",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-MED",
+    "SH-PROFILE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "master",
+   "rig": "F11",
+   "why": "back to the same aisle, the same frozen man: the woman turns on him",
+   "axis": "the line between Michelle (frame left) and Peter with the woman (frame right) across the carts",
+   "axis_side": "A",
+   "time_cut": false,
+   "dialogue": "Wait. That is your ex-wife?",
+   "duration": 3,
+   "action": "the woman, unsettled, turns to Peter and asks; Peter still staring after Michelle",
+   "motion": "the woman's head snaps round to Peter; the pan settles on the two of them",
+   "pace": "one snap of the head",
+   "marks": {
+    "C1": "at the end-cap, behind his cart",
+    "C2": "at the end-cap, at Peter's shoulder"
+   },
+   "start_pos": "Peter frozen at the end-cap behind his cart staring frame right; the woman at his shoulder looking at him; Michelle beyond them on the walkway, walking away",
+   "music": "MUS-AFTER",
+   "lines": "L018",
+   "ingredients": [
+    "C1",
+    "C2",
+    "L-AISLE"
+   ]
+  },
+  {
+   "beat": "SC09-SH02a",
+   "group": "SC09",
+   "scene": "SC09",
+   "take": "SC09-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C2",
+   "cast": [
+    "C2",
+    "N"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "FULL",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": true
+   },
+   "coverage": "single",
+   "rig": "F13",
+   "why": "leading her as she hurries after Michelle, all guardedness gone",
+   "axis_side": "A",
+   "dir": "L>R",
+   "dialogue": "I am sorry, I just have to ask.",
+   "duration": 3,
+   "action": "the woman hurries along the walkway after Michelle, catching up to her cart, the camera backing away in front of her",
+   "motion": "the woman strides five quick steps and draws level with Michelle's cart",
+   "pace": "five quick strides",
+   "marks": {
+    "C2": "walking from the end-cap along the walkway",
+    "N": "on the walkway beyond the end-cap"
+   },
+   "music": "MUS-AFTER",
+   "lines": "L019",
+   "ingredients": [
+    "C2",
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC09-SH02b",
+   "group": "SC09",
+   "scene": "SC09",
+   "take": "SC09-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "through",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C2",
+   "cast": [
+    "C2",
+    "N"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "ots",
+   "scale": "MCU",
+   "shot": [
+    "SH-OTS"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": true
+   },
+   "coverage": "ots",
+   "rig": "F2",
+   "why": "past Michelle's shoulder onto the woman, eager, close",
+   "axis_side": "A",
+   "dir": "L>R",
+   "dialogue": "What do you use on your skin? You look amazing.",
+   "duration": 3,
+   "action": "the woman hurries along the walkway after Michelle, catching up to her cart, the camera backing away in front of her",
+   "motion": "the woman leans toward Michelle, hand out; Michelle's shoulder turns in the foreground",
+   "pace": "five quick strides",
+   "marks": {
+    "C2": "walking from the end-cap along the walkway",
+    "N": "on the walkway beyond the end-cap"
+   },
+   "music": "MUS-AFTER",
+   "lines": "L019",
+   "ingredients": [
+    "C2",
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC09-SH03",
+   "group": "SC09",
+   "scene": "SC09",
+   "take": "SC09-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F2",
+   "turn": true,
+   "beat_before": 1.5,
+   "why": "the turn: she says nothing — a warm, serene smile (VN17)",
+   "axis_side": "A",
+   "duration": 4,
+   "hold_s": 4,
+   "action": "Michelle turns her head to the woman, her lips closed, the corners of her mouth curving up warm and serene, saying nothing",
+   "motion": "her head turns, the smile grows slowly; she does not speak",
+   "pace": "one turn, one slow smile",
+   "marks": {
+    "N": "on the walkway beyond the end-cap"
+   },
+   "music": "MUS-AFTER",
+   "lines": "—",
+   "ingredients": [
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC09-SH04",
+   "group": "SC09",
+   "scene": "SC09",
+   "take": "SC09-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N",
+    "C2"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "FULL",
+   "shot": [
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": true
+   },
+   "coverage": "master",
+   "rig": "F14",
+   "why": "following as she turns her cart and glides away, the woman left standing",
+   "axis_side": "A",
+   "dir": "L>R",
+   "duration": 4,
+   "hold_s": 4,
+   "action": "Michelle turns her cart and walks away down the walkway, unhurried; the woman stops, left behind",
+   "motion": "the cart turns and she walks five easy strides away; the camera follows behind",
+   "pace": "five unhurried strides",
+   "marks": {
+    "N": "walking away along the walkway",
+    "C2": "on the walkway beyond the end-cap"
+   },
+   "music": "MUS-AFTER",
+   "lines": "—",
+   "ingredients": [
+    "C2",
+    "L-AISLE",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC09-SH05",
+   "group": "SC09",
+   "scene": "SC09",
+   "take": "SC09-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the long rows of overhead store light panels",
+    "time": "midday",
+    "arc": "the present — bright, clean, unbothered",
+    "kelvin": 4500,
+    "key_side": "R"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "C1",
+   "cast": [
+    "C1"
+   ],
+   "location": "L-AISLE",
+   "story_day": "P1",
+   "height": "high",
+   "side": "front",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-HIGH"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "reaction",
+   "rig": "F6",
+   "why": "high and pulling back: Peter small and forgotten at the end-cap",
+   "axis_side": "A",
+   "duration": 3,
+   "hold_s": 3,
+   "action": "Peter stands alone at the end-cap behind his cart, small in the bright aisle, his hand slipping off the handle",
+   "motion": "his hand slips off the handle; the camera pulls back and up",
+   "pace": "one slip of the hand",
+   "marks": {
+    "C1": "at the end-cap, behind his cart"
+   },
+   "end_marks": {
+    "C1": "at the end-cap, behind his cart"
+   },
+   "end_pos": "Peter alone at the end-cap behind his cart, small; Michelle gone",
+   "music": "MUS-AFTER",
+   "lines": "—",
+   "ingredients": [
+    "C1",
+    "L-AISLE"
+   ]
+  },
+  {
+   "beat": "SC10-SH01",
+   "group": "SC10",
+   "scene": "SC10",
+   "take": "SC10-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low golden sun through the open sliding doors",
+    "time": "afternoon",
+    "arc": "the after — walking into the light",
+    "kelvin": 3800,
+    "key_side": "back",
+    "why": "she walks into the sun — a silhouette edged in gold, by design"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-STORE-DOORS",
+   "story_day": "P1",
+   "height": "eye",
+   "side": "behind",
+   "scale": "WIDE",
+   "shot": [
+    "SH-WIDE",
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "deep",
+    "dof": "deep",
+    "rack": null,
+    "moving_subject": true
+   },
+   "coverage": "establish",
+   "rig": "F2",
+   "why": "behind her as she pushes her cart out through the open sliding doors into the golden light",
+   "dir": "away",
+   "vo": "I did not need to say a thing.",
+   "duration": 3,
+   "action": "Michelle walks her cart (a full-size store shopping cart, waist-high, holding a few household things) out through the open sliding doors into golden light",
+   "motion": "she walks four strides away through the doors into the sun",
+   "pace": "four easy strides",
+   "marks": {
+    "N": "on the mat, walking to the sliding doors"
+   },
+   "start_pos": "Michelle on the blue mat pushing her cart toward the open sliding doors, back to camera, the golden parking lot beyond",
+   "music": "MUS-AFTER",
+   "lines": "L020",
+   "ingredients": [
+    "L-STORE-DOORS",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC10-SH02",
+   "group": "SC10",
+   "scene": "SC10",
+   "take": "SC10-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low golden sun through the open sliding doors",
+    "time": "afternoon",
+    "arc": "the after — walking into the light",
+    "kelvin": 3800,
+    "key_side": "back",
+    "why": "backlit through the doors — the after in gold"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-STORE-DOORS",
+   "story_day": "P1",
+   "height": "low",
+   "side": "three-quarter-back",
+   "scale": "FULL",
+   "shot": [
+    "SH-LOW",
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "background",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": true
+   },
+   "coverage": "cutaway",
+   "rig": "F12",
+   "why": "low, tilting up as she passes into the sun: she does not look back",
+   "vo": "I did not look back either.",
+   "duration": 3,
+   "action": "Michelle passes through the outer doors into the sunlit parking lot without looking back",
+   "motion": "she walks out of the doors; the camera tilts up into the sun",
+   "pace": "three strides",
+   "marks": {
+    "N": "at the sliding doors, walking out"
+   },
+   "end_marks": {
+    "N": "out in the parking lot"
+   },
+   "end_pos": "Michelle out in the golden parking lot, small, walking away",
+   "music": "MUS-AFTER",
+   "lines": "L020",
+   "ingredients": [
+    "L-STORE-DOORS",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC11-SH01",
+   "group": "SC11",
+   "scene": "SC11",
+   "take": "SC11-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-MED",
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F7",
+   "why": "her patio, her peace: the arc finds her at the table as the phone lights up",
+   "vo": "Two weeks later, Peter texted me. First time in four years.",
+   "duration": 4,
+   "action": "Michelle sits at the patio table with a cup of coffee; her phone (a little smaller than her hand) lights up on the table",
+   "motion": "the phone's screen glows; she glances down; the camera arcs a little round the table",
+   "pace": "one glance",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "start_pos": "Michelle seated at the round patio table by the lemon tree in a lilac shirt, coffee cup in hand, her phone face up on the table",
+   "music": "MUS-AFTER",
+   "lines": "L020",
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC11-SH02",
+   "group": "SC11",
+   "scene": "SC11",
+   "take": "SC11-T1",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "phone",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "overhead",
+   "side": "front",
+   "scale": "CU",
+   "shot": [
+    "SH-OVER"
+   ],
+   "focus": {
+    "plane": "hands",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F12",
+   "why": "overhead on the phone: the text arrives (the words set in post, F11)",
+   "vo": "I read it, I smiled,",
+   "duration": 3,
+   "action": "the phone (a little smaller than her hand) on the mosaic table lights up with a message; her hand picks it up",
+   "motion": "the screen lights, her hand lifts the phone; the camera tilts with it",
+   "pace": "one lift",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "music": "MUS-AFTER",
+   "lines": "L020",
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC11-SH03",
+   "group": "SC11",
+   "scene": "SC11",
+   "take": "SC11-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F18",
+   "turn": true,
+   "beat_before": 1.0,
+   "why": "close as she smiles and sets it face down: at peace",
+   "vo": "and I put my phone away.",
+   "duration": 4,
+   "action": "Michelle's mouth curves up at one corner as she sets the phone (a little smaller than her hand) face down on the table, then lifts her coffee",
+   "motion": "the smile, the phone turned face down, the cup raised; the camera creeps in",
+   "pace": "one smile, one turn of the phone",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "end_marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "end_pos": "Michelle at the patio table, the phone face down, coffee raised, at peace",
+   "music": "MUS-AFTER",
+   "lines": "L020",
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH01a",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "take_kind": "multi",
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "eye",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "establish",
+   "rig": "F1",
+   "why": "she turns to us — the one look into the lens in the film (the narrator, §24J)",
+   "time_cut": true,
+   "dialogue": "So if someone ever looked at you and made you feel like you had faded,",
+   "duration": 4,
+   "action": "Michelle, at the patio table in the late sun, turns from the garden to the lens and speaks to it, warm and direct",
+   "motion": "her head turns from the garden to the lens; the camera pushes in slowly",
+   "pace": "one turn, the line",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "start_pos": "Michelle seated at the patio table by the lemon tree in the late sun, looking at the garden wall, her violet stick on the table",
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "to_lens": true,
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH01b",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "eye",
+   "side": "front",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F18",
+   "why": "straight into the lens, close: to the viewer",
+   "dialogue": "please hear me. It was never you.",
+   "duration": 3,
+   "action": "Michelle, at the patio table in the late sun, turns from the garden to the lens and speaks to it, warm and direct",
+   "motion": "she leans an inch toward the lens and nods once; the camera creeps in",
+   "pace": "one turn, the line",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "to_lens": true,
+   "turn": true,
+   "beat_before": 1.0,
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH02a",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": true,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "low",
+   "side": "front",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-MED",
+    "SH-LOW"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F11",
+   "why": "she lifts the stick into the light as she names it",
+   "dialogue": "The thing she wanted to know, I will tell you instead.",
+   "duration": 4,
+   "action": "Michelle picks up the violet stick (a little longer than her hand is wide) and holds it up beside her face, wordmark to the lens",
+   "motion": "her hand lifts the stick up beside her cheek; the pan follows it",
+   "pace": "one lift",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "to_lens": true,
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH02b",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": true,
+   "face": true,
+   "product_beat": true,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "MCU",
+   "shot": [
+    "SH-34"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "medium",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "single",
+   "rig": "F4",
+   "why": "the stick beside her face, the slider gliding across",
+   "dialogue": "It is called FACELOVE, and I have linked it below.",
+   "duration": 3,
+   "action": "Michelle picks up the violet stick (a little longer than her hand is wide) and holds it up beside her face, wordmark to the lens",
+   "motion": "she turns the stick so the wordmark faces the lens; the slider glides sideways",
+   "pace": "one lift",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "to_lens": true,
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH03a",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "low",
+   "side": "three-quarter",
+   "scale": "CU",
+   "shot": [
+    "SH-LOCU"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "close",
+   "rig": "F18",
+   "why": "close, warm, whole: the face the film was about, every line still there",
+   "turn": false,
+   "vo": "Right now you get two Foundation Sticks for almost the price of one, plus a free primer, a mystery gift,",
+   "duration": 4,
+   "action": "Michelle lowers the stick and looks out at the garden, her face easy and open, the late sun on her cheek",
+   "motion": "the stick lowers, the smile widens, a breeze moves her hair; the camera creeps in",
+   "pace": "one breath",
+   "marks": {
+    "N": "at the table, by the lemon tree"
+   },
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH03b",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T1",
+   "type": "SHOT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": true,
+   "product_beat": false,
+   "mirror_of": null,
+   "subject": "N",
+   "cast": [
+    "N"
+   ],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "eye",
+   "side": "three-quarter-back",
+   "scale": "MEDIUM",
+   "shot": [
+    "SH-MED",
+    "SH-REAR"
+   ],
+   "focus": {
+    "plane": "eyes",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "cutaway",
+   "rig": "F13",
+   "why": "she rises and walks to the bougainvillea in the late sun: whole",
+   "turn": false,
+   "vo": "and free shipping and a full thirty day money back guarantee.",
+   "duration": 4,
+   "action": "Michelle lowers the stick and looks out at the garden, her face easy and open, the late sun on her cheek",
+   "motion": "she stands up and walks three steps to the bougainvillea; the camera leads her",
+   "pace": "one breath",
+   "marks": {
+    "N": "walking from the table to the bougainvillea"
+   },
+   "end_marks": {
+    "N": "by the bougainvillea"
+   },
+   "end_pos": "Michelle standing by the bougainvillea in the late sun, the stick in her hand",
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "ingredients": [
+    "L-PATIO",
+    "N"
+   ]
+  },
+  {
+   "beat": "SC12-SH04",
+   "group": "SC12",
+   "scene": "SC12",
+   "take": "SC12-T2",
+   "type": "INSERT",
+   "mode": 5,
+   "light": {
+    "source": "the low late sun over the garden wall",
+    "time": "afternoon",
+    "arc": "the after — at peace",
+    "kelvin": 3800,
+    "key_side": "L"
+   },
+   "fg": "clean",
+   "speaking": false,
+   "face": false,
+   "product_beat": true,
+   "mirror_of": null,
+   "split": "pinned",
+   "pinned": true,
+   "take_kind": "one-take",
+   "subject": "product",
+   "cast": [],
+   "location": "L-PATIO",
+   "story_day": "P2",
+   "height": "eye",
+   "side": "front",
+   "scale": "CU",
+   "shot": [
+    "SH-CU",
+    "SH-EYE"
+   ],
+   "focus": {
+    "plane": "product",
+    "dof": "shallow",
+    "rack": null,
+    "moving_subject": false
+   },
+   "coverage": "insert",
+   "rig": "F2",
+   "why": "the clean hero: the violet stick turning slowly on the mosaic table, no badge (VN19) — pinned both ends",
+   "vo": "Go be too busy glowing to look backward.",
+   "duration": 5,
+   "action": "the FACELOVE stick (a little longer than her hand is wide) stands upright on the mosaic table in the late sun and turns slowly a quarter turn to bring the wordmark to the lens",
+   "motion": "the stick turns a slow quarter turn on its base",
+   "pace": "one quarter turn over the shot",
+   "start_pos": "the stick upright on the mosaic table, wordmark turned a quarter away from the lens",
+   "end_pos": "the stick upright, wordmark square to the lens",
+   "marks": {},
+   "music": "MUS-OFFER",
+   "lines": "L021",
+   "ingredients": [
+    "L-PATIO"
+   ]
+  }
+ ]
+}
