@@ -398,13 +398,72 @@ def master_fit(line, pace="unhurried"):
     return d + 1 if d >= 4 and word_budget(4, pace) < words(line) else max(4, d)
 
 
+
+# V7.97.0 (user 2026-10-03 — "upgrade the prompts for seedance 2.5 and wan 3.0"): the vendors' own format — references with
+# a role each, a one-line brief, a timeline of continuous timecodes, a short look, the sound, a short KEEP list. Replaces the
+# pasted string stack (9,000+ characters, ~100 "no" items) on new builds' Seedance and Wan calls.
+COMPACT_MAX = 3500
+SECTIONS = ["REFERENCES", "SHOT:", "TIMELINE", "LOOK:", "SOUND:", "KEEP:"]
+TC = re.compile(r"\[(\d+(?:\.\d+)?)\s*[–-]\s*(\d+(?:\.\d+)?)\s*s\]")
+SIZE_W = re.compile(r"\b(?:extreme wide|wide|full|medium(?: wide| close-up)?|MCU|MS|CU|ECU|WS|close-up|two-shot|over-the-shoulder|OTS|insert|establishing)\b", re.I)
+MOVE_W = re.compile(r"\b(?:locked|tripod|static|push-in|push in|pulls? back|pull-back|arc(?:s|ing)?|crane|pedestal|slider|shoulder|handheld|follows?|stabiliser|tracks?|tracking|dolly(?: zoom)?|pan|tilt)\b", re.I)
+
+
+def is_compact(c):
+    """Seedance and Wan calls of builds started from V7.97.0 (not PRE_DRAMA, not legacy) use the short vendor format."""
+    return str(c.get("connector", "")).lower() in ("seedance", "wan") and not c.get("legacy_build") and not c.get("pre_drama") \
+        and str(c.get("kind", "")).lower() not in ("voice_master", "image")
+
+
+def compact_checks(c, p, conn, d, check):
+    check(f"≤ {COMPACT_MAX:,} characters — the shortest prompt that fully specifies the shot (V7.97.0)", len(p) <= COMPACT_MAX, f"{len(p)} chars")
+    pos = [p.find(s_) for s_ in SECTIONS]
+    check("sections in order: REFERENCES · SHOT · TIMELINE · LOOK · SOUND · KEEP (V7.97.0)", all(x >= 0 for x in pos) and pos == sorted(pos),
+          ", ".join(s_ for s_, x in zip(SECTIONS, pos) if x < 0) or "out of order")
+    refs = p[p.find("REFERENCES"):p.find("SHOT:")] if "REFERENCES" in p and "SHOT:" in p else ""
+    imgs = [f for f in c.get("files", []) if not MUSIC_FILE.search(str(f))]
+    hi, ha = ("@image{}", "@audio{}") if conn == "seedance" else ("Image {}", "Audio {}")
+    miss = [hi.format(i) for i in range(1, len(imgs) + 1) if hi.format(i) not in refs] + \
+           [ha.format(i) for i in range(1, len(c.get("audios") or []) + 1) if ha.format(i) not in refs]
+    check("every reference named in REFERENCES with its role (V7.97.0)", not miss, ", ".join(miss))
+    tl = p[p.find("TIMELINE"):p.find("LOOK:")] if "TIMELINE" in p and "LOOK:" in p else ""
+    tcs = [(float(a), float(b)) for a, b in TC.findall(tl)]
+    cont = bool(tcs) and tcs[0][0] == 0 and all(abs(x[1] - y[0]) < 1e-6 for x, y in zip(tcs, tcs[1:]))
+    check("timeline: continuous timecodes from 0 to the duration (V7.97.0)", cont and isinstance(d, (int, float)) and abs(tcs[-1][1] - d) < 1e-6,
+          f"{tcs} for {d}s" if tcs else "no [0–Xs] timecodes")
+    short = [f"{a:g}–{b:g}" for a, b in tcs if b - a < 2]
+    check("every shot ≥ 2 s (V7.97.0)", not short, ", ".join(short))
+    check("≤ 4 shots in a take (V7.97.0, §24K part 5)", 1 <= len(tcs) <= 4, f"{len(tcs)} shots")
+    lines = [ln for ln in tl.split("\n") if TC.search(ln)]
+    nosize = [TC.search(ln).group(0) for ln in lines if not SIZE_W.search(ln)]
+    nomove = [TC.search(ln).group(0) for ln in lines if not MOVE_W.search(ln)]
+    check("every shot names its size (V7.97.0)", not nosize, ", ".join(nosize))
+    check("every shot names its camera move (V7.97.0)", not nomove, ", ".join(nomove))
+    look = p[p.find("LOOK:"):p.find("SOUND:")] if "LOOK:" in p and "SOUND:" in p else ""
+    check("LOOK ≤ 600 characters (V7.97.0)", len(look) <= 600, f"{len(look)} chars")
+    snd = p[p.find("SOUND:"):p.find("KEEP:")] if "SOUND:" in p and "KEEP:" in p else ""
+    check("SOUND says no music (V7.97.0, §24M)", bool(re.search(r"\bno (?:music|BGM)\b", snd, re.I)), snd[:120])
+    if not c.get("dialogue"):
+        check("SOUND says no dialogue when nobody speaks (V7.97.0)", bool(re.search(r"\bno dialogue\b|nobody speaks", snd, re.I)), snd[:120])
+    else:
+        check("dialogue written NAME says: \"…\" (V7.97.0)", bool(re.search(r"\bsays?: [\"“']", tl)), "")
+    keep = p[p.find("KEEP:"):] if "KEEP:" in p else ""
+    items = [x for x in re.split(r"[;\n]", keep.replace("KEEP:", "")) if x.strip()]
+    check("KEEP ≤ 8 items — only the risks this shot has (V7.97.0)", len(items) <= 8, f"{len(items)} items")
+    nos = len(re.findall(r"\b(?:no|never|without)\b", p, re.I))
+    check("≤ 10 no / never / without in the whole prompt — say what is there instead (V7.97.0)", nos <= 10, f"{nos}")
+
+
 def film_shot(c, p, conn, mode, kind, film, check):
     """§24K/§30J/§24H film-shot checks (sections 5–6), skipped on a §24I voice master."""
     # 5. Motion (§27G / §24K)
     rigs = [r for r, s in RIGS.items() if s in p]
     sm = c.get("subject_motion") or ("travels" if WALK.search(p) else "still")
     series = film and mode == 4 and conn == "seedance"   # ads stay phone style (§24N, V7.69.1)
-    if film or series:
+    compact = is_compact(c)   # V7.97.0: the short vendor format — the pasted strings are not checked for, the format is
+    if compact:
+        compact_checks(c, p, conn, c.get("duration"), check)
+    if (film or series) and not compact:
         check("one F-rig", len(rigs) == 1, ",".join(rigs) or "none found")
         bad = [r for r in rigs if (sm == "in_place" and r in NOT_IN_PLACE) or (sm == "travels" and r in NOT_TRAVELS)]
         check("camera or subject moves, never both — except F5/F9 on a walk (§24K, §24N)", not bad, f"subject {sm}, rig {','.join(rigs)}")
@@ -414,7 +473,7 @@ def film_shot(c, p, conn, mode, kind, film, check):
             check("F9: a walk in profile", sm == "travels" and "profile" in p.lower(), f"subject {sm}")
         if set(rigs) & SEEDANCE_ONLY:
             check("F6–F10 on Seedance only (§24N)", conn == "seedance", conn)
-    if series:
+    if series and not compact:
         check("SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] in p)
     if not film:
         check("ads stay phone style: no SERIES-LOOK (§24N)", SIG["SERIES-LOOK"] not in p)
@@ -448,9 +507,10 @@ def film_shot(c, p, conn, mode, kind, film, check):
             mo = (c.get("motion") or "").strip()
             check("motion written into the prompt — nothing reads as a still (§24P part 4)", bool(mo) and mo in p, mo or "no motion on the call")
     if kind == "take":
-        check("TAKE-FILM", SIG["TAKE-FILM"] in p)
+        if not compact:
+            check("TAKE-FILM", SIG["TAKE-FILM"] in p)
         check("one-take covers ≤ 3 shots", len(c.get("covers") or []) - len(c.get("joins") or []) <= 3, str(len(c.get("covers") or [])))
-    if kind == "multi" and sm != "still":
+    if kind == "multi" and sm != "still" and not compact:
         check("moving MULTI-SHOT carries the action across the cut (MULTI-FILM MOVE)", SIG["MULTI-MOVE"] in p, f"subject {sm}")
 
     # 5b. Focus (§30J)
@@ -458,17 +518,17 @@ def film_shot(c, p, conn, mode, kind, film, check):
     if rk:
         check("rack: cue named", bool(rk.get("cue")))
         check("rack: subject still", sm == "still", f"subject {sm}")
-        if film:
+        if film and not compact:
             check("rack: no travelling rig", not (set(rigs) & TRAVEL_RIGS), ",".join(rigs))
             check("rack: pull written", "focus pulls" in p or "pulls focus" in p)
         else:
             check("rack: Mode 1 tap-to-focus", "tap" in p.lower(), "phones tap to focus — never a clean pull (§30J)")
         check("rack: one focus change", len(re.findall(r"focus (?:pulls|shifts|jumps)", p)) <= 1)
-    if film:
+    if film and not compact:
         check("FOCUS-LINE", "FOCUS:" in p, "the shot names what is sharp (§30J)")
 
-    # 6. Film strings
-    if film:
+    # 6. Film strings (the long pasted strings — builds from before V7.97.0, and Kling film shots)
+    if film and not compact:
         check("INHERIT string", SIG["INHERIT-FILM" if mode == 4 else "INHERIT-ANIM"] in p)
         check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
         check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
@@ -554,7 +614,8 @@ def run(c):
 
     # 3a. No BGM in any Seedance (or Wan) generation — music is laid in the edit (§24M, V7.73.3)
     if conn in ("seedance", "wan"):
-        check("NEG-SOUND (no BGM on Seedance, §24M)", SIG["NEG-SOUND"] in p)
+        if not is_compact(c):
+            check("NEG-SOUND (no BGM on Seedance, §24M)", SIG["NEG-SOUND"] in p)
         pos = NEG_CLAUSE.sub("", p)
         mus = sorted(set(m.group(0).lower() for m in MUSIC.finditer(pos)))
         check("no music asked for in the prompt (§24M)", not mus, ",".join(mus))
