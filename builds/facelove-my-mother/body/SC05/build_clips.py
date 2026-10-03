@@ -71,8 +71,8 @@ MULTI = lambda n, st: (f"One scene covered in {n} shots within a single take, al
                        f"Frame 1: {st}. Everyone stays where the last shot left them. Each shot picks up the movement exactly where the last one left it, "
                        "and the action carries straight across every cut. ")
 BASE_NEG = lambda *x: S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, *x, NEG_PARTY, S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)
-VIDFILE = {"SC05-T1": "body/SC05/SC05-T1_v1.mp4"}
-VIDJOB = {"SC05-T1": "c6e783ab-6035-4f95-92cc-b05753e73ea0"}
+VIDFILE = {"SC05-T1": "body/SC05/SC05-T1_v1.mp4", "SC05-T5": "body/SC05/SC05-T5_v1.mp4"}
+VIDJOB = {"SC05-T1": "c6e783ab-6035-4f95-92cc-b05753e73ea0", "SC05-T5": "0fca19f8-5967-456d-baac-ce9de7ee48db"}
 T = {}
 
 # T1 — SH01 + SH02: Beth walks in; Susan on the bed
@@ -259,34 +259,47 @@ T["SC05-T5"] = dict(kind="take", covers=["SC05-SH06"], duration=4, motion="in_pl
          {"risk": "the wordmark shows (F10)", "prevented_by": "lettered side to her cheek, 'no lettering on the stick'"}])
 
 # T6 — SH07 insert: the brush; white to her shade behind it
+# Fix 1 (user's board Fix, 2026-10-03, owner note: "follow the face position and the hair based on these scene — Scene 5 · T5"): v1 had no picture of
+# T5 and its own framing words ("CLOSE-UP straight on ... cheek and eye") differed from T5's, so the model reframed: her head turned to show the ear, the
+# hair scraped flat, golden backlight, the stripe moved, and the wordmark turned to the lens. Fixed at the source: confirmed-to-check T5 attached as
+# @video1 for her face position, framing, hair, light and where the stripe sits; the framing written as T5 frames it; head held still; lettering away.
+T5V = ("is the shot just before this one: Susan's face position, the framing, her hair, the light and where the white stripe sits on her cheek are exactly as in "
+       "this clip's last frame, and stay so the whole clip; it sets those only, never the words or the action.")
 st, en = R["SC05-SH07"]["start_pos"], R["SC05-SH07"]["end_pos"]
 T["SC05-T6"] = dict(kind="take", covers=["SC05-SH07"], duration=13, motion="in_place", refs=["PROD-BRUSH", "COLOUR", "N-FACE", "N-AFTER-FACE"], audios=["L015"], line=L["L015"],
-  start=st, end=en, product=True,
+  videos=["SC05-T5"], start=st, end=en, product=True, generation=2,
+  fault="follow the face position and the hair based on these scene Scene 5 · T5 — Insert: the balm draws a white stripe up her cheekbone — 'Goes on white, don't panic.' (SH06)",
+  fix_note=("prompt fault: no picture of T5 and different framing words, so v1 reframed (head turned, ear in, hair scraped flat, golden backlight, stripe moved, "
+            "wordmark to the lens) → T5 attached as @video1 for face position, framing, hair, light and the stripe; T5's framing written out; head still; lettering away"),
   title="Scene 5 · T6 — Insert: the brush works the stripe; white turns to her skin behind it (SH07)",
   prompt=" ".join([
-    S1.manifest([("@image1", PROD("brush")), ("@image2", COLOURV), ("@image3", FACE_N), ("@image4", FACE_NA), ("@audio1", VOICE("Beth"))]),
+    S1.manifest([("@image1", PROD("brush")), ("@image2", COLOURV), ("@image3", FACE_N), ("@image4", FACE_NA), ("@video1", T5V), ("@audio1", VOICE("Beth"))]),
     SERIES, S1.LOOK, S1.INHERIT,
-    "THE SCENE SO FAR: Susan seated at her dressing table in the warm afternoon window light from the right, a white stripe of balm up her cheekbone; Beth beside her, out of frame except her hand.",
+    "THE SCENE SO FAR: Susan seated at her dressing table, a white stripe of balm up her cheekbone, exactly as @video1 ends; Beth beside her, out of frame except her hand.",
     f"Beth's words, heard from just out of frame: {L['L015']} Only Beth speaks; Susan's mouth stays closed.",
-    "One continuous shot, never cut and never restarted, 13s, in one place with the same light, look and wardrobe throughout. Frame 1: " + st + ". "
-    "CLOSE-UP straight on at eye level on Susan's cheek and eye, her face as @image3 at the start. "
-    "[0s-10s]: Beth's hand holds exactly one violet stick by its lower barrel, brush end working; the side of the white brush crown works the stripe in slow, small circles from its lower end upward. "
+    "One continuous shot, never cut and never restarted, 13s, in one place with the same light, look and wardrobe throughout. Frame 1: " + st + ", framed exactly as @video1's last frame. "
+    "EXTREME CLOSE-UP at eye level, the same framing as @video1: Susan's right eye in the upper left of frame, the side of her nose at the left edge, the corner of her mouth at the bottom, "
+    "the white stripe on her cheekbone below and right of the eye, her hair falling at the right edge of frame exactly as in @video1; the same soft window light as @video1, no backlight. "
+    "Her head holds still the whole clip: no turn, no tilt, her ear never comes into frame. "
+    "[0s-10s]: Beth's hand comes in from frame right holding exactly one violet stick by its lower barrel, brush end working; the side of the white brush crown works the stripe in slow, small circles from its lower end upward. "
     "Behind the brush the white thins and turns to Susan's own skin tone; ahead of the brush the stripe stays opaque white; the change happens only where the brush has been. "
-    "[10s-13s]: the brush lifts away; the cheek is evened, as @image4 shows, every line and pore still there. Susan blinks once. " + SIZE + " Last frame: " + en + ".",
+    "[10s-13s]: the brush lifts away out of frame right; the cheek is evened, as @image4 shows, every line and pore still there. Susan blinks once. " + SIZE + " Last frame: " + en + ".",
     F, S1.PHYS,
     PS.fill(PS.CONTACT_LOCK_C, "brush"), PS.TERRAIN_LOCK,
     "The barrel's lettered side faces her cheek, away from the lens: no lettering is seen. Exactly one stick in frame.",
     "LISTENING: Susan's eyes shift toward Beth's voice on 'your exact shade'; nothing arrives before the words.",
-    S1.state("SUSAN", "seated at the mirror, hair scraped back, the stripe on her cheek, still", "the stripe turning to her own tone"),
+    S1.state("SUSAN", "seated at the mirror, the stripe on her cheek, still, framed and lit exactly as in @video1", "the stripe turning to her own tone"),
     "FOCUS: the brush crown and the colour edge sharp; her eye a little soft. The blur is optical: soft and round, never smeared.",
     S1.dialogue("Beth (heard, just out of frame)", L["L015"], VOICE_C3, "she is putting it on her friend's face. Standing at her shoulder, working the brush.",
                 "talks her through it, practical. Opens on 'It reads your skin', plain; turns on 'takes the red down'; exits on 'cracking on top', satisfied. Stress on 'exact'.",
                 "close, quiet, unhurried, matching the work in this shot.", "she wants Susan to see it work, which leaks only through how slowly she goes."),
     S1.AUD,
-    S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, PS.NEG_CONTACT, PS.NEG_LOOK, "no lettering on the stick, no second stick, no Susan speaking", S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)]),
-  risks=[{"risk": "colour appears ahead of the brush / the whole cheek at once", "prevented_by": "COLOUR card, 'only where the brush has been', NEG_CONTACT"},
+    S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, PS.NEG_CONTACT, PS.NEG_LOOK, "no lettering on the stick, no wordmark, no second stick, no Susan speaking",
+            "no head turn, no ear in frame, no hair scraped flat, no golden backlight, no reframing", S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)]),
+  risks=[{"risk": "face position, hair or light drift from T5 (v1 fault)", "prevented_by": "@video1 = T5, T5's framing written out, head still, 'no head turn, no ear, no backlight'"},
+         {"risk": "colour appears ahead of the brush / the whole cheek at once", "prevented_by": "COLOUR card, 'only where the brush has been', NEG_CONTACT"},
          {"risk": "lines erased (cover, not erase)", "prevented_by": "TERRAIN_LOCK, NEG_CONTACT, NEG_LOOK"},
-         {"risk": "Susan mouths Beth's line", "prevented_by": "Beth out of frame, 'Susan's mouth stays closed'"}])
+         {"risk": "the wordmark shows (F10, seen in v1)", "prevented_by": "lettered side to her cheek, 'no lettering, no wordmark'"}])
 
 # T7 — SH08 + SH09: cover, not erase; Susan in the mirror
 st, en = R["SC05-SH08"]["start_pos"], "Susan seated at the mirror, leaning an inch toward it, looking at her cheek; Beth one step behind her left shoulder"
