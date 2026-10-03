@@ -24,7 +24,7 @@ V7.99.0 (user 2026-10-03 — "also dont use little shots in side that scene caus
 not the holywood style"; LESSONS L67): the scene stays one clip, but inside it the camera covers it like a feature scene —
 every row is its own shot, a new shot every 2–5 s (SHOT_MAX), the size changing (never three in a row at one size; 3+ shots
 use 2+ sizes, 5+ shots 3+). `joins` and the four-shot cap are retired for new builds: a take holds as many shots as its
-length needs (a 30 s scene ≈ 6–12). A one-take (one uncut shot) only up to 5 s, or a oner the user asked for (`oner: true`).
+scene needs — no count limit, the full 30 s when needed (V7.99.1: Seedance 2.5 holds 30 s without distortion, user-confirmed). A one-take (one uncut shot) only up to 5 s, or a oner the user asked for (`oner: true`).
 
 Usage:
   takes.py ACT_MAP.json [--suggest] [--write OUT.json] [--md takes.md] [--json] [--max-shots 4] [--max-seconds 30] [--legacy]
