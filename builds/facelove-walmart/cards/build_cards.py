@@ -55,6 +55,20 @@ CARDS_V2 = {
   + STYL(PS.TERRAIN_LOCK) + " " + S("PIX-SPLIT") + " NEGATIVES: no deep purple barrel, no glossy or chrome barrel or collar, no flared brush, no different product, " + STYL(PS.NEG_CONTACT) + ", " + PS.NEG_SURFACE_FAILURES + ", " + PS.NEG_LOOK + ", no lettering anywhere but the stick's wordmark.")),
 }
 
+
+# ---- Fix round 2 (user's board Fix on PROD-HAND-CARD v2: "reduce the size of product") ----
+# v2 still drew the stick longer than her whole hand, the barrel nearly two fingers wide. Real: about three quarters of the hand's
+# length, the barrel a little thicker than one finger (sheet §4: 4½–5 barrel widths tall). The rest of v2 is right → v3 is an image
+# edit of v2 (§24O rule 7, §6A Part 2 rule 3), the product photo second, size said against her fingers and palm only.
+HAND_V3 = (
+  "Keep this picture exactly as it is — the same hand, the same orange sleeve, the same hallway, the same light, the same angle — and change only the size of the stick. "
+  "Image 1 is the picture to keep. Image 2 is the product, the closed FACELOVE stick, copied exactly. "
+  "Make the stick SMALLER: the whole closed stick only about three quarters as long as her hand, from the heel of her palm to the tip of her middle finger, "
+  "and its barrel only a little thicker than one of her fingers — four and a half to five times as tall as it is wide, a slim lipstick-sized wand. "
+  "Her four chunky fingers now wrap right round the slimmer barrel, her fingertips touching the base of her thumb, with the top third of the stick and the wordmark standing clear above her fingers. "
+  "Exactly one stick, the same pale lilac satin barrel, the one FACELOVE wordmark running up it, both caps on, nothing else changed. "
+  "NEGATIVES: no stick as long as her hand or longer, no barrel as wide as two fingers, no thick tube, no change to the hand, sleeve, hallway or light, no second stick, no lettering anywhere but the stick's own wordmark.")
+
 if __name__ == "__main__":
     out = {}
     for k, c in CARDS.items():
@@ -66,3 +80,4 @@ if __name__ == "__main__":
         (H / f"{k}.v2.prompt.txt").write_text(c["prompt"]); out2[k] = {"prompt": c["prompt"], "refs": c["refs"], "media": [MEDIA[r[0]] for r in c["refs"]]}
         print(k, "v2", len(c["prompt"]))
     json.dump(out2, open(H / "cards.v2.json", "w"), indent=1, ensure_ascii=False)
+    (H / "PROD-HAND-CARD.v3.prompt.txt").write_text(HAND_V3); print("PROD-HAND-CARD v3", len(HAND_V3))
