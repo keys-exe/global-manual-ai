@@ -1,0 +1,49 @@
+{
+ "build": "facelove-walmart",
+ "mode": 5,
+ "draft": true,
+ "words": 564,
+ "hooks": 3,
+ "routes": {
+  "image": "Higgsfield",
+  "kling": "Higgsfield",
+  "seedance": "Higgsfield",
+  "talking": "HeyGen",
+  "tts": "ElevenLabs",
+  "music": "ElevenLabs",
+  "sfx": "ElevenLabs",
+  "images": "Higgsfield"
+ },
+ "jobs": [
+  {
+   "job": "cast",
+   "n": 5
+  },
+  {
+   "job": "plates",
+   "n": 6
+  },
+  {
+   "job": "info_cards",
+   "n": 22
+  },
+  {
+   "job": "seedance",
+   "seconds": 220,
+   "note": "one take per scene (\u00a724K part 5)"
+  },
+  {
+   "job": "seedance",
+   "seconds": 60,
+   "note": "voice masters (\u00a724I)"
+  },
+  {
+   "job": "music",
+   "n": 11
+  },
+  {
+   "job": "sfx",
+   "n": 8
+  }
+ ]
+}
