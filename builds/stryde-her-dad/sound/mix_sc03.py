@@ -10,7 +10,7 @@ SR = 48000
 H = Path(__file__).parent / "sc03"
 src, out = Path(sys.argv[1]), Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
 RND = sys.argv[sys.argv.index("--round") + 1] if "--round" in sys.argv else "1"
-ROUND2 = RND in ("2", "3", "4", "5")
+ROUND2 = RND in ("2", "3", "4", "5", "6")
 
 def load(f):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -95,6 +95,18 @@ if RND == "5":
     # one plain deep breath in, unstretched and quieter, on his chest rising again at 7.35 s. The cabin very low under it.
     TAKES = {"T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -46, "mus": None, "lufs": -24, "ver": 7, "hits": [
         ("SFX-BREATH-DISAPPOINTED", 0.35, -24, 1.0), ("SFX-BREATH-IN-DEEP", 7.35, -31, 1.0)]}}
+if RND == "6":
+    # Round 6 (2026-10-03, board Fix on T3): "make the sound like a normal deep breath and make sure it match it when he breath".
+    # His breaths re-measured with the camera taken out properly: ~150 points tracked on his face (Lucas-Kanade, checked back and
+    # forth), each frame registered to the head by scale + shift (the push-in doubles the size over the clip), the chest points measured
+    # in head coordinates, the perspective drift fitted out. Chest rises 1.3-1.8 s, falls 1.9-3.1 s (a light breath), still 3.7-5.0 s,
+    # rises 5.1-6.2 s (deep breath in), falls 6.3-7.8 s (out), rises 8.0-8.8 s (in). v7's sigh (1.95-4.15 s) sat where the chest barely moves.
+    # Natural sounds, never stretched; the disappointed breath split at its pause so its breath in and its sigh each land on their movement.
+    TAKES = {"T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -46, "mus": None, "lufs": -24, "ver": 8, "hits": [
+        ("SFX-BREATH-SOFT", 1.30, -36, 1.0),
+        ("SFX-BREATH-DISAPPOINTED", 5.10, -30, ("seg", 0.0, 1.05)),
+        ("SFX-BREATH-DISAPPOINTED", 6.30, -24, ("seg", 1.55, 3.15)),
+        ("SFX-BREATH-IN-DEEP", 8.00, -31, 1.0)]}}
 for take, p in TAKES.items():
     clip = src / p.get("clip", f"{take}_v2.mp4")
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout)
@@ -104,7 +116,8 @@ for take, p in TAKES.items():
         a, b = p["mus"]; m = MUS[int(a * SR):int(a * SR) + n]; m = np.pad(m, (0, n - len(m)))
         mix += fade(at(m, -34), 0.05, 0.4)
     for k, t, g, r in p["hits"]:
-        src_x = stretch(S[k], r[1]) if isinstance(r, tuple) else (rate(S[k], r) if r != 1.0 else S[k].copy())
+        src_x = (S[k][int(r[1] * SR):int(r[2] * SR)].copy() if r[0] == "seg" else stretch(S[k], r[1])) if isinstance(r, tuple) \
+            else (rate(S[k], r) if r != 1.0 else S[k].copy())
         x = fade(at(src_x, g)); i = max(0, int(t * SR)); x = x[:max(0, n - i)]
         if len(x) > int(0.3 * SR): x = fade(x, 0.0, 0.25)
         mix[i:i + len(x)] += x
