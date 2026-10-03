@@ -1,0 +1,12 @@
+{
+ "beat": "OUT-C2-D2",
+ "build": "stryde-her-dad",
+ "kind": "image",
+ "connector": "kie",
+ "model": "gpt-image-2-5-sunburst-image-to-image",
+ "aspect_ratio": "9:16",
+ "refs": [
+  "voice/C2_face.jpg"
+ ],
+ "prompt": "Photographed as a single frame from a US feature film, shot on an ARRI Alexa Mini LF in large format with an ARRI Signature Prime at 50mm and T4, the camera on a locked tripod at standing eye height, composed natively for a vertical 9:16 frame with no letterbox bars. An outfit reference card for one story day: Image 1 is the woman's face and hair only — copy her face, age, honey-blonde jaw-length bob with its long side-swept fringe, light-blue eyes and the small pale scar on her chin exactly; she is a tall, lean, upright woman of fifty-two. She stands full length, dead centre, facing the camera, arms relaxed at her sides, against a plain seamless mid-grey studio backdrop in soft even daylight from the left, the whole figure from hair to shoes inside the frame and filling about two-thirds of its height. She wears, and only these, her weekday clothes: a burgundy hip-length rain jacket with a hood down and a front zip, worn zipped halfway, a plain grey T-shirt under it, black slim jeans, and plain grey trainers. Nothing else is worn or carried. Across the bottom of the card, on a plain white strip below the figure, one caption line in small black sans-serif text: \"SUE · Day D2 (a weekday): burgundy rain jacket, black jeans, grey trainers\". Negatives: no camel coat, no navy quilted jacket, no light jeans, no white trainers, no handbag, no scarf, no sunglasses, no other people, no props, no set, no logos or lettering on the clothing, no text other than the caption."
+}
