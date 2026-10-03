@@ -194,31 +194,37 @@ SHOTS.append(dict(beat="SC01-T2", kind="multi", gen=7, note_owner=True,
            {"risk": "Tony gets up or moves in the wide", "prevented_by": "STILL head, state-carry: still on his right knee, 'getting ready to push himself up'"},
            {"risk": "the sheet clothes return", "prevented_by": "face crops + D1 outfit cards (HT26)"}]))
 
-T3_START = ROWS["SC01-SH08"]["start_pos"]
-T3_END = "Tony still down on his right knee on the tarmac, the cracked pot beside his left hand, looking toward Sue and the lad by the hatchback, framed closer"
-SHOTS.append(dict(beat="SC01-T3", kind="take", covers=["SC01-SH08"], duration=8, line="", vo="L005", subject_motion="still",
-    start_pos=T3_START, end_pos=T3_END, files=["C1-FACE", "L-CARPARK", "OUT-C1-D1"], audios=[],
+T3_START = ("Tony down on the wet tarmac exactly where the previous take (SC01-T2, confirmed) leaves him: between the lad and the white van, by the van's back wheel, his right hand flat on the ground, the cracked pot beside him; the white van parked right behind the silver hatchback; Sue at the hatchback's rear corner by its open boot and the lad an arm's length in front of her, both a few steps from Tony; he looks toward them")
+T3_END = "Tony still down by the white van's back wheel on the wet tarmac, the cracked pot beside him, looking toward Sue and the lad by the hatchback's open boot a few steps away, framed closer"
+SHOTS.append(dict(beat="SC01-T3", kind="take", covers=["SC01-SH08"], duration=8, gen=2, note_owner=True,
+    fix_notes_all=["v1 (user): change the position of these man based on these scene Hook · SC01-T2 — \"I’ve got you.\" · \"Is your dad alright?\" · \"He’s fine. Thanks, love.\" (SH05–SH07)"],
+    user_go="board Fix 'change the position of these man based on these scene … SC01-T2' + chat 'fix' (2026-10-03) — the user's go for SC01-T3 generation 2, with SC01-T2 as the reference",
+    fix="board Fix (owner): change the position of these man based on these scene SC01-T2 → v1 had Tony alone in an open lane, no white van, Sue and the lad not in the frame and him looking into the lens; v2 attaches the confirmed SC01-T2 clip as @video1, a reference for places only, and writes its end layout out: Tony down by the white van's back wheel, the van right behind the silver hatchback, Sue and the lad at its open boot a few steps from him, in the background of his close-up; he looks at them, never the lens", line="", vo="L005", subject_motion="still",
+    start_pos=T3_START, end_pos=T3_END, files=["C1-FACE", "L-CARPARK", "OUT-C1-D1", "T2-REF"], audios=[],
     title="Hook · SC01-T3 — Tony on one knee, watching them (SH08; his inner voice L005 laid in the edit)",
     prompt=" ".join([
         manifest([("@image1", FACE("Tony", "his")), ("@image2", PLACE),
-                  ("@image3", CARD("Tony", "the charcoal sweatshirt, navy work trousers to the boots, tan work boots"))]),
+                  ("@image3", CARD("Tony", "the charcoal sweatshirt, navy work trousers to the boots, tan work boots")),
+                  ("@video1", "is the previous take, SC01-T2, confirmed — the reference for WHERE everyone is: copy only the places at its END — the silver hatchback with its boot open, the white van parked right behind it, Sue at the car's rear corner, the lad in front of her, Tony down on the wet tarmac between the lad and the white van by the van's back wheel; "
+                   "this take is the same moment, seen closer, and keeps exactly that layout; it is never a shot to cut to or replay, and its sound is never used.")]),
         SERIES, LOOK, INHERIT, DAY.replace("Nobody else is near them until the lad arrives.",
-            "A moment ago a white van reversed toward Sue and a young garden-centre worker pulled her clear; Tony went down on his right knee on the tarmac ten feet away, his dropped pot cracked beside him."),
+            "A moment ago a white van reversed toward Sue and stopped right behind the open boot of the silver hatchback, where it still stands; a young garden-centre worker pulled her clear. Tony went down on the wet tarmac between the lad and the van, by the van's back wheel, his dropped pot cracked beside him."),
         S("TAKE-FILM").split(" Frame 1:")[0].replace("[N]s", "8s") + f" Frame 1: {T3_START}. "
         f"Tony is {TONY_ID}, in {TONY_D1}. "
-        "[0s-8s]: a CLOSE-UP from low, at the height of his knee, three-quarter on his face: he stays down on his right knee on the wet tarmac and watches them — Sue and the young man in green, soft and small "
-        "by the silver hatchback in the background. His mouth stays closed. His face holds it: his jaw sets, his eyes stay on them, one slow breath; he does not get up. "
+        "THE PLACE, exactly as Video1 ends: the white van right behind Tony, its back wheel and white side filling the frame behind his shoulder; Sue and the young man in green standing a few steps from him by the silver hatchback's open boot, to one side of the frame, soft but clearly there in every frame. "
+        "[0s-8s]: a CLOSE-UP from low, at the height of his knee, three-quarter on his face, the camera a little in front of him: he stays down on the wet tarmac by the van's back wheel and watches them — Sue and the lad by the open boot, his eyes on them and never on the lens. His mouth stays closed. His face holds it: his jaw sets, his eyes stay on them, one slow breath; he does not get up. "
         f"Last frame: {T3_END}. The movement is continuous from the first frame to the last: nobody jumps position or appears somewhere new, and the car park behind him stays the same place.",
         F1(30), PHYS,
         state("TONY", "humiliated, in the outfit of his card, down on his right knee on the wet tarmac, his right hand on the ground, the cracked pot and spilled soil by his left hand", "nothing"),
-        focus("the nearest eye of Tony", "Sue and the lad behind fall to a soft, recognisable shape"),
+        focus("the nearest eye of Tony", "Sue and the lad by the hatchback's boot and the white van behind him fall to soft, recognisable shapes"),
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, "no talking, no mouth moving, no tears, no standing up, no one coming to help him, no shorts, no bare knees, no knee support", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+        negs(NEG_EQUIP, NEG_MORPH, "no talking, no mouth moving, no tears, no standing up, no one coming to help him, no shorts, no bare knees, no knee support, no missing white van, no Tony alone in an open lane, no Tony away from the van, no Sue or lad missing, no Sue and lad far away, no looking into the lens, no new place for Tony", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "Tony speaks or mouths the VO", "prevented_by": "silent call, mouth closed, talking negatives — the VO is laid in the edit"},
+           {"risk": "Tony is put somewhere new, the van and the two missing", "prevented_by": "SC01-T2 attached as @video1 for places only, its end layout written out, place negatives"},
            {"risk": "the push-in turns into a travel", "prevented_by": "F1 at 30 cm, the subject still"},
            {"risk": "theatrical grief", "prevented_by": "jaw sets, one slow breath, NEG-DRAMA, no tears"}]))
 
-FILES = {"T1-REF": "hooks/SC01/SC01-T1_v4.mp4", "C1-FACE": "voice/C1_face.jpg", "C2-FACE": "voice/C2_face.jpg", "C4": "cast/C4-LAD_v1.png", "L-CARPARK": "plates/L-CARPARK_v1.png",
+FILES = {"T1-REF": "hooks/SC01/SC01-T1_v4.mp4", "T2-REF": "hooks/SC01/SC01-T2_v7.mp4", "C1-FACE": "voice/C1_face.jpg", "C2-FACE": "voice/C2_face.jpg", "C4": "cast/C4-LAD_v1.png", "L-CARPARK": "plates/L-CARPARK_v1.png",
          "OUT-C1-D1": "hooks/SC01/ingredients/OUT-C1-D1_v1.png", "OUT-C2-D1": "hooks/SC01/ingredients/OUT-C2-D1_v1.png"}
 AUDIO = {"C1": "voice/C1_voice_master.mp3", "C2": "voice/C2_voice_master.mp3", "C4": "voice/C4_voice_master.mp3"}
 
