@@ -69,6 +69,21 @@ HAND_V3 = (
   "Exactly one stick, the same pale lilac satin barrel, the one FACELOVE wordmark running up it, both caps on, nothing else changed. "
   "NEGATIVES: no stick as long as her hand or longer, no barrel as wide as two fingers, no thick tube, no change to the hand, sleeve, hallway or light, no second stick, no lettering anywhere but the stick's own wordmark.")
 
+
+# ---- Fix round 3 (user's board Fix on v3: "mske it small") ----
+# v3, an edit of the v2 close-up, kept the stick at v2's size: in a hand close-up the only size cue is a big stylised hand.
+# v4 is a fresh waist-up frame of Rosa holding it up beside her cheek — the size reads against her FACE (closed, the stick is about as long
+# as her chin-to-eyebrow height, sheet §4 ratios), never a frame fraction, and the hand stays small in frame.
+HAND_V4 = (
+  "Image 1 is the product: the FACELOVE Changing Foundation Stick, closed — copied exactly, same shape, same parts, same wordmark, nothing redesigned. "
+  "Image 2 is Rosa from this film: her face, hair, build and marigold blouse. " + RENDER +
+  " A reference card of how big the stick is: Rosa from the waist up in a lamplit hallway, facing the lens at a slight three-quarter angle, holding exactly one stick upright in her right hand beside her right cheek, "
+  "just below her face, the wordmark turned to the lens, her eyes on the stick and a warm half-smile. "
+  "TRUE SIZE AGAINST HER FACE: the whole closed stick is SMALL — only about as long as from the bottom of her chin to her eyebrows, its barrel much narrower than her nose is long and a little thicker than one of her fingers; "
+  "her fingers close all the way round it with the top third of the stick and the wordmark showing above them. It is a small, slim, lipstick-sized wand, never a tube, never as long as her forearm or her face. "
+  + LOOKS + " " + PS.REF_PROD + " here closed at both ends, both caps on. " + S("PIX-SPLIT") +
+  " Warm lamplight from the left. NEGATIVES: no stick longer than her face, no barrel as wide as her nose is long, no thick tube, no oversized product, no second stick, no lettering anywhere but the stick's own wordmark, no looking into the lens.")
+
 if __name__ == "__main__":
     out = {}
     for k, c in CARDS.items():
@@ -81,3 +96,4 @@ if __name__ == "__main__":
         print(k, "v2", len(c["prompt"]))
     json.dump(out2, open(H / "cards.v2.json", "w"), indent=1, ensure_ascii=False)
     (H / "PROD-HAND-CARD.v3.prompt.txt").write_text(HAND_V3); print("PROD-HAND-CARD v3", len(HAND_V3))
+    (H / "PROD-HAND-CARD.v4.prompt.txt").write_text(HAND_V4); print("PROD-HAND-CARD v4", len(HAND_V4))
