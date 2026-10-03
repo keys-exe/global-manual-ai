@@ -1,12 +1,15 @@
 """§24M SC03 re-score mix (2026-10-03 Fix). Per take: room tone under everything, each sound on its frame (times read off
 the clip frame by frame), MUS-SC03 v1 as a quiet bed under the sounds (its own 0-5 / 5-13 / 13-22 s sections), -16 LUFS.
 Picture stream-copied from the take's current version — never re-encoded, never trimmed (§24L).
-usage: mix_sc03.py <dir with T1_v2.mp4 T2_v2.mp4 T3_v2.mp4 MUS_v1.mp4> <out dir>"""
+usage: mix_sc03.py <dir with T1_v2.mp4 T2_v2.mp4 T3_v2.mp4 MUS_v1.mp4> <out dir> [--round 2]
+Round 2 (2026-10-03, board Fixes): T1 "remove the last sound" → the exhale out, the rest kept; T2 "remove all the sound make it like his natural
+foot sound" → footsteps only (three natural carpet-step sounds, varied), no tone, rail, breath or music, at a natural -22 LUFS."""
 import subprocess, sys, numpy as np
 from pathlib import Path
 SR = 48000
 H = Path(__file__).parent / "sc03"
 src, out = Path(sys.argv[1]), Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
+ROUND2 = "--round" in sys.argv and sys.argv[sys.argv.index("--round") + 1] == "2"
 
 def load(f):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -26,7 +29,7 @@ def loop(x, n):
     return np.tile(x, n // len(x) + 1)[:n]
 
 S = {k: load(H / f"{k}_v1.mp3") for k in ["TONE-BEDROOM", "SFX-SLEEVES-RUMMAGE", "SFX-DRAWER-SHUT", "SFX-EXHALE-TONY", "TONE-HALL",
-     "SFX-STAIR-STEP", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
+     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
 MUS = load(src / "MUS_v1.mp4")
 
 # (sound, start s, level dB RMS, rate)  — levels: tone -42, bed -34, sounds -18 to -28
@@ -45,15 +48,25 @@ TAKES = {
      ("SFX-BAGS-BOOT",       0.00, -27, 1.0),
      ("SFX-BOOT-SLAM",       6.35, -19, 1.0)]},
 }
+if ROUND2:
+    TAKES = {
+     "T1": {"tone": "TONE-BEDROOM", "mus": (0.0, 5.04), "lufs": -16, "ver": 4, "hits": [h for h in TAKES["T1"]["hits"] if h[0] != "SFX-EXHALE-TONY"]},
+     "T2": {"tone": None, "mus": None, "lufs": -22, "ver": 4, "hits": [  # (B's thud is 0.15 s into its file)
+         (k, t - (0.15 if k.endswith("B") else 0.0), g, r) for k, t, g, r in [
+         ("SFX-STEP-NAT-A", 0.80, -25, 1.0), ("SFX-STEP-NAT-C", 1.90, -26, 1.0), ("SFX-STEP-NAT-B", 2.80, -25, 1.0),
+         ("SFX-STEP-NAT-A", 3.85, -23, 0.97), ("SFX-STEP-NAT-C", 4.35, -24, 1.02), ("SFX-STEP-NAT-B", 5.00, -23, 0.98),
+         ("SFX-STEP-NAT-A", 5.80, -24, 1.03), ("SFX-STEP-NAT-C", 6.50, -23, 0.97), ("SFX-STEP-NAT-B", 7.30, -24, 1.0)]]},
+    }
 for take, p in TAKES.items():
     clip = src / f"{take}_v2.mp4"
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout)
     n = int(dur * SR); mix = np.zeros(n, np.float32)
-    mix += fade(at(loop(S[p["tone"]], n), -42), 0.3, 0.3)
-    a, b = p["mus"]; m = MUS[int(a * SR):int(a * SR) + n]; m = np.pad(m, (0, n - len(m)))
-    mix += fade(at(m, -34), 0.05, 0.4)
+    if p.get("tone"): mix += fade(at(loop(S[p["tone"]], n), -42), 0.3, 0.3)
+    if p.get("mus"):
+        a, b = p["mus"]; m = MUS[int(a * SR):int(a * SR) + n]; m = np.pad(m, (0, n - len(m)))
+        mix += fade(at(m, -34), 0.05, 0.4)
     for k, t, g, r in p["hits"]:
-        x = fade(at(rate(S[k], r) if r != 1.0 else S[k].copy(), g)); i = int(t * SR); x = x[:max(0, n - i)]
+        x = fade(at(rate(S[k], r) if r != 1.0 else S[k].copy(), g)); i = max(0, int(t * SR)); x = x[:max(0, n - i)]
         if len(x) > int(0.3 * SR): x = fade(x, 0.0, 0.25)
         mix[i:i + len(x)] += x
     wav = out / f"SC03-{take}.mix.wav"
@@ -67,14 +80,14 @@ for take, p in TAKES.items():
         return np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-af",
             f"volume={g:.2f}dB,alimiter=limit=0.84:attack=2:release=60:level=disabled", "-f", "f32le", "-"],
             input=x.tobytes(), capture_output=True, check=True).stdout, np.float32)
-    g = -16 - lufs(mix)
+    T = p.get("lufs", -16); g = T - lufs(mix)
     for _ in range(6):
-        y = limit(mix, g); d = -16 - lufs(y)
+        y = limit(mix, g); d = T - lufs(y)
         if abs(d) < 0.3: break
         g += d
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-ac", "2", str(wav)],
                    input=y.tobytes(), check=True)
-    mp4 = out / f"SC03-{take}_v3.mp4"
+    mp4 = out / f"SC03-{take}_v{p.get('ver', 3)}.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(clip), "-i", str(wav), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(mp4)], check=True)
     print(take, f"{dur:.2f}s ->", mp4.name)

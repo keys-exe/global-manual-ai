@@ -74,26 +74,34 @@ SHOTS.append(dict(beat="SC03-T2", kind="multi", gen=2, rail_ok=True,
              "no steps changing count, no feet sliding, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)])))
 
 r = ROWS["SC03-SH04"]
-SHOTS.append(dict(beat="SC03-T3", kind="take", covers=["SC03-SH04"], duration=9, subject_motion="still", start_pos=r["start_pos"], end_pos=r["end_pos"],
-    files=["C1-FACE", "C2-FACE", "L-CAR", "OUT-C1-D2", "OUT-C2-D2"], vo="L017",
-    title="Scene 3 · T3 — he waits in the car while she loads the boot (SH04; VO L017)",
+# v2 (2026-10-03, board Fix, owner): "remove all the sound and remove also the women and the car" — v1 had Sue loading the boot
+# behind him and a white car parked outside. v2: Tony alone in the passenger seat, nobody else and no other car anywhere in view;
+# Sue's face crop and outfit card are no longer ingredients so she cannot be drawn; silent (no audio track at all).
+T3_END = "Tony still in the passenger seat, alone, facing ahead"
+SHOTS.append(dict(beat="SC03-T3", kind="take", gen=2, covers=["SC03-SH04"], duration=9, subject_motion="still", start_pos="Tony alone in the passenger seat facing ahead", end_pos=T3_END,
+    fix="board Fix (owner): remove all the sound and remove also the women and the car → v1 showed Sue at the open boot behind him and a white car parked outside; "
+        "v2 has Tony alone in the parked car, no woman, no other people and no other car in view (Sue's face and outfit card dropped from the ingredients), silent",
+    files=["C1-FACE", "L-CAR", "OUT-C1-D2"], vo="L017",
+    title="Scene 3 · T3 — he waits alone in the car (SH04; VO L017)",
     prompt=" ".join([
-        manifest([("@image1", FACE("Tony", "his")), ("@image2", FACE("Sue", "her")),
-                  ("@image3", "is the car: their silver right-hand-drive hatchback — the charcoal cloth front seats, the steering wheel on the RIGHT, the dashboard; its seats and windows exactly as shown."),
-                  ("@image4", CARD_T), ("@image5", CARD_S)]),
+        manifest([("@image1", FACE("Tony", "his")),
+                  ("@image2", "is the car: their silver right-hand-drive hatchback — the charcoal cloth front seats, the steering wheel on the RIGHT, the dashboard; its seats and windows exactly as shown. "
+                              "The cars seen through its windows in this picture are NOT in the clip: outside, the car park is empty."),
+                  ("@image3", CARD_T)]),
         SERIES, LOOK, INHERIT,
-        "THE DAY, a grey weekday, story day D2: flat overcast daylight, about 6500K, a supermarket car park outside. The car is parked; its boot is open behind. "
-        "Tony sits in the PASSENGER seat on the LEFT; the driver's seat on the right is empty; Sue is outside at the open boot behind the car.",
-        ONE(9) + f" Frame 1: {r['start_pos']}. Tony is {TONY_ID}, in {TONY_D2}. Sue is {SUE_ID}, in {SUE_D2}. "
-        "[0s-9s]: a MEDIUM CLOSE-UP of Tony in clean profile, eye height, from the empty driver's seat: he sits looking straight ahead through the windscreen, still, his jaw set, his mouth closed. "
-        "Behind him, small and soft through the rear window, Sue lifts two heavy shopping bags into the open boot on her own, one after the other, then reaches up and pulls the boot lid down; it shuts with a jolt that rocks the car slightly. "
-        "Tony does not turn round. "
-        f"Last frame: {r['end_pos']}. " + CONT.replace("every step lands on the step after the last, ", ""),
+        "THE DAY, a grey weekday, story day D2: flat overcast daylight, about 6500K. The car is parked in an empty corner of a wet supermarket car park. "
+        "Tony sits ALONE in the PASSENGER seat on the LEFT; the driver's seat on the right is empty. He is the only person anywhere in the clip. "
+        "Through every window the car park is empty: wet grey tarmac, faded white bay lines, bare trees and a low grey building far off — no other cars, no people.",
+        ONE(9) + f" Frame 1: Tony alone in the passenger seat facing ahead. Tony is {TONY_ID}, in {TONY_D2}. "
+        "[0s-9s]: a MEDIUM CLOSE-UP of Tony in clean profile, eye height, from the empty driver's seat: he sits looking straight ahead through the windscreen, still, his jaw set, his mouth closed, "
+        "his hands in his lap. He breathes once, slowly, and his eyes drop for a moment to his knee, then lift back to the windscreen. Nothing else happens; nobody comes. "
+        f"Last frame: {T3_END}. " + CONT.replace("every step lands on the step after the last, ", ""),
         F1(20), PHYS,
-        state("TONY", "ashamed, in the outfit of his card, in the passenger seat facing ahead, hands in his lap", "nothing — the boot has shut behind him"),
-        focus("the nearest eye of Tony", "Sue at the boot behind falls to a soft, recognisable shape"),
+        state("TONY", "ashamed, in the outfit of his card, alone in the passenger seat facing ahead, hands in his lap", "nothing — he is still waiting"),
+        focus("the nearest eye of Tony", "the empty car park behind falls to a soft shape"),
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_T, "no Tony turning round, no Tony getting out, no Sue in the car, no left-hand-drive car, no talking, no mouth moving, no burgundy on Tony", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)])))
+        negs(NEG_EQUIP, NEG_MORPH, NEG_T, "no woman, no Sue, no other people, no person outside, no other cars, no parked cars, no moving cars, no open boot, no shopping bags, "
+             "no Tony turning round, no Tony getting out, no left-hand-drive car, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)])))
 
 FMAP = {"C1-FACE": "voice/C1_face.jpg", "C2-FACE": "voice/C2_face.jpg", "L-BEDROOM": "plates/L-BEDROOM_v1.png", "L-STAIRS": "plates/L-STAIRS_v5.png", "L-CAR": "plates/L-CAR_v1.png",
         "OUT-C1-D2": "body/SC03/ingredients/OUT-C1-D2_v1.png", "OUT-C2-D2": "body/SC03/ingredients/OUT-C2-D2_v1.png"}
