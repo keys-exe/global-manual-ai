@@ -27,7 +27,24 @@ def prompt_v2(c):
         "he is a broad, heavy-shouldered builder of sixty-four with a slight stoop",
         "he is a broad, heavy-shouldered builder of sixty-four with a thick chest, a solid middle and a slight stoop, exactly as heavy and broad as in Image 2")
 
-if __name__ == "__main__" and "--v2" in __import__("sys").argv:
+# v3 (2026-10-03, board Fix again, owner: "create another one"): v1 and v2 were near the same picture — the outfit itself was the
+# thing asked to change. v3 a clearly different appointment outfit (the wardrobe map's D3 updated with it): a stone quilted gilet
+# over a blue-and-grey checked flannel shirt, beige chinos, brown leather shoes. Image 2 stays his D2 card for face and build only.
+V3 = dict(CARDS["OUT-C1-D3"],
+   wear=("his tidy clothes for a doctor's appointment: a stone-coloured quilted gilet, zipped halfway, over a blue-and-grey checked brushed-cotton flannel shirt "
+         "buttoned to the second button with the cuffs buttoned, beige cotton chinos that reach his shoes so both knees are covered, a worn brown leather belt, "
+         "and polished brown leather lace-up shoes"),
+   nots="no shorts, no bare knees, no work boots, no sweatshirt, no fleece, no navy jacket, no jeans, no knee support, no hat, no watch showing",
+   cap="TONY · Day D3 (the GP appointment): stone quilted gilet, checked flannel shirt, beige chinos, brown leather shoes")
+
+if __name__ == "__main__" and "--v3" in __import__("sys").argv:
+    p = prompt_v2(V3)
+    (H / "OUT-C1-D3.v3.prompt.txt").write_text(p)
+    (H / "OUT-C1-D3.v3.call.json").write_text(json.dumps({"beat": "OUT-C1-D3", "build": "stryde-her-dad", "kind": "image", "connector": "kie",
+        "model": "gpt-image-2-5-sunburst-image-to-image", "aspect_ratio": "9:16", "refs": [V3["face"], D2_CARD], "prompt": p,
+        "fix_note": "create another one (2nd)", "noteOwner": True}, indent=1, ensure_ascii=False))
+    print("OUT-C1-D3 v3", len(p))
+elif __name__ == "__main__" and "--v2" in __import__("sys").argv:
     for k, c in CARDS.items():
         p = prompt_v2(c)
         (H / f"{k}.v2.prompt.txt").write_text(p)
