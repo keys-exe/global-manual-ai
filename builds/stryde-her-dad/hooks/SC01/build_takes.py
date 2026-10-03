@@ -77,8 +77,8 @@ def dialogue(who, line, voice, moment, playing, now, under):
 GO = "chat: \"confirm and proceed\" (2026-10-02) — voices confirmed, on to the hook; ingredient cards OUT-C1-D1 / OUT-C2-D1 wait for the user's Confirm"
 SHOTS = []
 
-T1_START = ("Sue at the open boot of the silver hatchback, back to the van, lifting a potted plant in; Tony ten feet behind her on the tarmac, facing her, "
-            "a potted plant held in both hands at his waist, his back to the white van, which stands further back behind him across the lane, its back doors toward him")
+T1_START = ("Sue at the open boot of the silver hatchback, back to the lane, lifting a potted plant in; Tony further down the lane between the hatchback and the white van, near the garden centre's glass front, "
+            "walking toward her across the wet tarmac with a potted plant held in both hands at his waist, his back to the white van, which stands across the lane behind him, its back doors toward him")
 SPOT = ("down on his right knee, upright from the hips, his left foot flat in front of him, his right hand flat on the tarmac, kneeling right ON the second white bay line "
         "behind him — counting back from the hatchback, past the first white line, the second line runs under his right knee")
 SPOT_T2 = ("down on his right knee in the middle of a wide, shallow rain puddle of standing water on the tarmac, upright from the hips, his left foot flat in front of him, "
@@ -91,9 +91,11 @@ LAYOUT_T2 = ("the same view as the last shot of the previous take, from low behi
              "Sue and the lad standing just right of the boot's rear corner in the middle ground, the white van right of centre with its back toward us, stopped, "
              "the garden centre's glass front across the back of the frame")
 T1_END = ("the lad holding Sue by both upper arms beside the hatchback's rear wheel, both facing each other; the van stopped a metre short of the open boot; "
-          "Tony " + SPOT + ", ten feet away, the cracked pot beside him")
-SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=2, note_owner=True,
-    fix="board Fix (owner): make him look at his back before he react → v1 had Tony shout the moment the van moved, never seeing it behind him; v2 SHOT 2 has him turn and look back over his right shoulder at the van first, then whip round and shout (the shout after the look, negatives); he falls onto the second white bay line and stays up on one knee, so T2 starts where T1 ends", covers=["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], duration=10, line=L001, subject_motion="in_place",
+          "Tony " + SPOT_T2B)
+SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=3, note_owner=True,
+    fix_notes_all=["v1 (user): make him look at his back before he react", "v2/v3 (user): make the man walking toward the women"],
+    user_go="board Fix 'make the man walking toward the women' + chat 'fix' (2026-10-03) — the user's go for SC01-T1 generation 3",
+    fix="board Fix (owner): make the man walking toward the women → v3 had Tony standing still behind Sue with the plant; v4 SHOT 1 has him walking toward her across the tarmac from further down the lane, then he slows and stops as he hears the van, looks back, shouts and falls where he stood — the spot SC01-T2 v4 starts from (SPOT_T2B); earlier: make him look at his back before he react → v1 had Tony shout the moment the van moved, never seeing it behind him; v2 SHOT 2 has him turn and look back over his right shoulder at the van first, then whip round and shout (the shout after the look, negatives); he falls onto the second white bay line and stays up on one knee, so T2 starts where T1 ends", covers=["SC01-SH01", "SC01-SH02", "SC01-SH03", "SC01-SH04"], duration=10, line=L001, subject_motion="travels",
     start_pos=T1_START, end_pos=T1_END, files=["C2-FACE", "C1-FACE", "C4", "L-CARPARK", "OUT-C2-D1", "OUT-C1-D1"], audios=["C1"],
     title="Hook · SC01-T1 — the van backs at Sue; Tony shouts, his knee goes, the lad gets there (SH01–SH04)",
     prompt=" ".join([
@@ -105,11 +107,11 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=2, note_owner=True,
         f"Sue is {SUE_ID}, in {SUE_D1}. Tony is {TONY_ID}, in {TONY_D1}. The lad is {LAD_ID}, in {LAD_D1}.",
         MULTI_HEAD(4, T1_START, False),
         f"SHOT 1, [0s-2.5s]: WIDE from high above the car park, three-quarter on, the whole lane in frame; Camera on a tripod, locked: Sue lifts {POT} into the open boot of the silver hatchback, her back to the lane; "
-        f"Tony stands about ten feet behind her on the wet tarmac, facing her, {POT} held in both hands at his waist; across the lane {VAN} — its reversing lights come on and it starts to roll back toward her at walking pace. "
-        "SHOT 2, [2.5s-5s]: MEDIUM CLOSE-UP on Tony at eye height, three-quarter, the plant still in his hands: hearing the engine behind him, he first turns his head and looks back over his right shoulder at the van rolling back behind him, "
+        f"Tony walks toward her across the wet tarmac from further down the lane, an ordinary unhurried walk, {POT} held in both hands at his waist, his eyes on her; behind him, across the lane, {VAN} — its reversing lights come on and it starts to roll back toward her at walking pace. "
+        "SHOT 2, [2.5s-5s]: MEDIUM CLOSE-UP on Tony at eye height, three-quarter, the plant still in his hands: still walking toward her, he hears the engine behind him, slows and stops, first turns his head and looks back over his right shoulder at the van rolling back behind him, "
         "sees it is heading for Sue, and only then whips his head round to her and shouts her name, sudden and raw: \"" + L001 + "\" The shout comes after the look, never before it. "
         "SHOT 3, [5s-7.5s]: FULL, low at knee height in clean profile: carrying straight on, he lets the pot fall — it cracks on the tarmac — and lunges one step toward her with his right foot; "
-        "on that step his right knee gives and he goes down onto that knee on the wet tarmac, right on the second white bay line behind him, his right hand flat to the ground; he stays up on one knee, never on all fours. "
+        "on that step his right knee gives and he goes down onto that knee on the wet, puddled tarmac where he stood, still between the hatchback and the van near the glass front, his right hand flat to the ground; he stays up on one knee, never on all fours. "
         "SHOT 4, [7.5s-10s]: FULL at eye height, front-on to the boot: the lad runs in past Tony from behind him, four strides, takes Sue by both upper arms and pulls her two steps clear "
         "to the side of the hatchback's rear wheel as the van stops short with a jolt a metre from the open boot, its brake lights flaring. "
         "Each cut lands on a completed action. Nobody looks into the lens. Last frame: " + T1_END + ".",
@@ -124,7 +126,7 @@ SHOTS.append(dict(beat="SC01-T1", kind="multi", gen=2, note_owner=True,
                  "he knows before he moves that he will not get there, which leaks only through how his hands tighten on the pot."),
         AUD,
         negs(NEG_EQUIP, NEG_MORPH, "no collision, no one hit by the van, no van touching the car, no blood, no slow motion, no shorts, no bare knees, no camel coat, no writing on the van, "
-             "no logo on the uniform, no second van, no driver visible, no one else speaking, no lad's lines in this clip, no hand on any rail, no shout before he has looked back at the van, no Tony on all fours", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
+             "no logo on the uniform, no second van, no driver visible, no one else speaking, no lad's lines in this clip, no hand on any rail, no shout before he has looked back at the van, no Tony on all fours, no Tony standing still at the start, no Tony running before the shout", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)]),
     risks=[{"risk": "the van hits her or the car (the near miss reads as a crash)", "prevented_by": "it stops short a metre from the boot, collision negatives"},
            {"risk": "Tony's knee drop reads as a stumble or a dive", "prevented_by": "one step with the right foot, the right knee gives, down onto that knee, hand flat — SHOT 3 low profile"},
            {"risk": "the sheet clothes return (shorts, camel coat)", "prevented_by": "face crops + D1 outfit cards (HT26), shorts/coat negatives"},
