@@ -107,7 +107,8 @@ SHOTS.append(dict(beat="SC04-T2", kind="multi", covers=["SC04-SH04", "SC04-SH05"
            {"risk": "the sheet clothes return on Tony", "prevented_by": "face crop + D3 outfit card, clothing negatives (HT26)"}]))
 
 FILES = {"C5": "cast/C5-GP_v1.png", "C1-FACE": "voice/C1_face.jpg", "L-GP": "plates/L-GP_v1.png", "OUT-C1-D3": "body/SC04/ingredients/OUT-C1-D3_v2.png"}
-AUDIO = {"C1": "voice/C1_voice_master.mp3", "C5": "voice/C5_voice_master.mp3"}
+# Kie caps reference audio at 30 s in total: the GP master (16.1 s) is cut at its 13.44 s pause (voice/C5_voice_ref13.mp3, 13.5 s) so both fit (28.6 s).
+AUDIO = {"C1": "voice/C1_voice_master.mp3", "C5": "voice/C5_voice_ref13.mp3"}
 
 if __name__ == "__main__":
     approved = "--approved" in sys.argv

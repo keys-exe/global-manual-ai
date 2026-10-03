@@ -18,7 +18,7 @@
  "resolution": "720p",
  "aspect_ratio": "9:16",
  "start_image": null,
- "ingredients_approved": false,
+ "ingredients_approved": true,
  "files": [
   "cast/C5-GP_v1.png",
   "voice/C1_face.jpg",
@@ -26,7 +26,7 @@
   "body/SC04/ingredients/OUT-C1-D3_v2.png"
  ],
  "audios": [
-  "voice/C5_voice_master.mp3",
+  "voice/C5_voice_ref13.mp3",
   "voice/C1_voice_master.mp3"
  ],
  "generate_audio": true,
