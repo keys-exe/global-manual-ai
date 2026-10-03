@@ -20,6 +20,12 @@ longer a split reason: a close-up is a shot inside the take. A scene splits only
 another place (`intercut`), a Kling pinned shot (`pinned`) or the user's ask (`user`). --legacy keeps the pre-V7.98 rules
 (15 s action takes, `insert`) for builds that planned under them.
 
+V7.99.0 (user 2026-10-03 — "also dont use little shots in side that scene cause staying in one shot is boring and that is
+not the holywood style"; LESSONS L67): the scene stays one clip, but inside it the camera covers it like a feature scene —
+every row is its own shot, a new shot every 2–5 s (SHOT_MAX), the size changing (never three in a row at one size; 3+ shots
+use 2+ sizes, 5+ shots 3+). `joins` and the four-shot cap are retired for new builds: a take holds as many shots as its
+length needs (a 30 s scene ≈ 6–12). A one-take (one uncut shot) only up to 5 s, or a oner the user asked for (`oner: true`).
+
 Usage:
   takes.py ACT_MAP.json [--suggest] [--write OUT.json] [--md takes.md] [--json] [--max-shots 4] [--max-seconds 30] [--legacy]
            [--max-talk-seconds 30] [--vo MASTER.mp3 [--script LINES.txt] | --vo-words WORDS.json] [--model medium.en]
@@ -84,6 +90,13 @@ REASONS = {
 }
 LEGACY_REASONS = {"insert": "a product or label close-up the take's camera cannot reach crisply (retired V7.98.0: a shot inside the take)"}
 AUTO = ("scene", "location", "story day")
+# Builds that planned their takes before V7.98.0 / V7.99.0 keep their rules (never re-cut without their team's ask):
+# an act map under builds/<one of these>/ runs as --legacy by itself.
+PRE_V799 = {"facelove-my-mother", "facelove-paint-wall", "facelove-returning-it", "identity-callout-v2", "intake-1", "sha0071",
+            "six-weeks-ago", "stryde-71-stairs-pixar-song", "stryde-71-stairs", "stryde-cascade", "stryde-failed-alternatives",
+            "stryde-half-my-age", "stryde-her-dad", "stryde-identity", "stryde-lost-moments", "stryde-not-your-cartilage",
+            "stryde-regrets", "stryde-the-impression", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad",
+            "stryde-what-changed"}
 
 
 def scene(r):
@@ -113,6 +126,21 @@ def is_talk(rs):
 
 def ceiling(rs, max_seconds, max_talk):
     return max_talk if is_talk(rs) else max_seconds
+
+
+SHOT_MAX = 5.0     # V7.99.0: no shot inside a take runs past 5 s — feature-drama coverage
+SIZES = {"SH-WIDE": "wide", "SH-AERIAL": "wide", "SH-SIL": "wide", "SH-MED": "medium", "SH-OTS": "medium", "SH-34": "medium",
+         "SH-PROFILE": "medium", "SH-REAR": "medium", "SH-CU": "close", "SH-HICU": "close", "SH-LOCU": "close",
+         "SH-WACU": "close", "SH-MACRO": "extreme close", "SH-MAGNIFY": "extreme close"}
+
+
+def size_of(r):
+    """A row's shot size (wide · medium · close · extreme close) from its `size` or its §24K part 7 `shot`, or None."""
+    v = str(r.get("size") or "").lower().strip()
+    if v:
+        return "extreme close" if "extreme close" in v or v in ("ecu", "insert", "macro") else \
+               "close" if "close" in v or v in ("cu", "mcu") else "wide" if "wide" in v or v in ("ws", "full") else "medium"
+    return SIZES.get(str(r.get("shot") or "").upper())
 
 
 def shots(rs):
@@ -146,7 +174,8 @@ def dur(r):
     return float(r.get("duration") or 0)
 
 
-def suggest(rows, max_shots, max_seconds=30, max_talk=30):
+def suggest(rows, max_shots, max_seconds=30, max_talk=30, legacy=False):
+    max_shots = max_shots or (4 if legacy else 999)
     takes = []
     for run in runs(rows):
         cap = ceiling(run, max_seconds, max_talk)
@@ -172,7 +201,7 @@ def suggest(rows, max_shots, max_seconds=30, max_talk=30):
         count[sc] = count.get(sc, 0) + 1
         tid = f"{sc}-T{count[sc]}"
         subjects = {tuple(sorted(r.get("cast") or [r.get("subject")])) for r in t}
-        kind = "one-take" if shots(t) <= 3 and len(subjects) == 1 and len(next(iter(subjects))) == 1 else "multi"
+        kind = ("one-take" if shots(t) <= 3 and len(subjects) == 1 and len(next(iter(subjects))) == 1 else "multi") if legacy else "multi"
         for j, r in enumerate(t):
             r["take"] = tid
             if j == 0:
@@ -188,6 +217,7 @@ def suggest(rows, max_shots, max_seconds=30, max_talk=30):
 
 
 def check(rows, max_shots, max_seconds=30, max_talk=30, legacy=False):
+    max_shots = max_shots or (4 if legacy else 999)
     out = []
 
     def fail(kind, beats, detail):
@@ -211,6 +241,30 @@ def check(rows, max_shots, max_seconds=30, max_talk=30, legacy=False):
             why = connected(a, b)
             if why:
                 fail("TAKE+", [a.get("beat"), b.get("beat")], f"take {t} crosses a {why} change — a take is one moment in one place")
+        if not legacy:  # V7.99.0: the scene covered — a new shot every 2–5 s, the size changing (L67)
+            oner = any(r.get("oner") for r in rs)
+            jn = [r.get("beat") for r in rs if r.get("joins")]
+            if jn:
+                fail("COVER", jn, "joins is retired (V7.99.0): every row is its own shot — a cut to a new size or angle, "
+                                  "never played inside the shot before")
+            if not oner:
+                lg = [f"{r.get('beat')} {float(r['duration']):g}s" for r in rs if r.get("duration") and float(r["duration"]) > SHOT_MAX + 1e-6]
+                if lg:
+                    fail("COVER", [x.split()[0] for x in lg], f"a shot over {SHOT_MAX:g}s ({', '.join(lg)}) — split the row into "
+                                                               f"2+ shots at a phrase or on the action, a new size or angle each")
+                td = float(rs[0].get("take_duration") or sum(float(r.get("duration") or 0) for r in rs))
+                if td and shots(rs) < math.ceil(td / SHOT_MAX - 1e-6):
+                    fail("COVER", beats, f"take {t} runs {td:g}s in {shots(rs)} shot(s) — a scene held that long in few shots "
+                                         f"reads as boring; cover it in {math.ceil(td / SHOT_MAX - 1e-6)}+ shots")
+                sz = [size_of(r) for r in rs]
+                for i in range(len(sz) - 2):
+                    if sz[i] and sz[i] == sz[i + 1] == sz[i + 2]:
+                        fail("COVER", beats[i:i + 3], f"three shots in a row at {sz[i]} — change the size at the cut")
+                        break
+                need = 1 if len(rs) < 3 else (2 if len(rs) < 5 else 3)
+                if all(sz) and len(set(sz)) < need:
+                    fail("COVER", beats, f"take {t}: {len(set(sz))} size(s) in {len(rs)} shots — cover it wide, medium and close "
+                                         f"(≥ {need})")
         if shots(rs) > max_shots:
             fail("TAKE+", beats, f"take {t} has {shots(rs)} shots (> {max_shots}) — join the follow-on rows to the shot before "
                                  f"(joins: true: a reaction or a next step played inside it); the row count never splits a take")
@@ -225,6 +279,9 @@ def check(rows, max_shots, max_seconds=30, max_talk=30, legacy=False):
             k = rs[0].get("take_kind")
             if k not in ("one-take", "multi"):
                 fail("KIND", beats[:1], f"take {t}: take_kind must be one-take or multi")
+            elif k == "one-take" and not legacy and not any(r.get("oner") for r in rs):
+                fail("KIND", beats, f"take {t}: a one-take holds the scene in one uncut shot — only up to {SHOT_MAX:g}s or a oner "
+                                    "the user asked for (oner: true); cover it as multi, a new shot every 2–5 s (V7.99.0)")
             elif k == "one-take" and shots(rs) > 3:
                 fail("KIND", beats, f"take {t}: a one-take of {shots(rs)} shots — one continuous action covers at most 3; use multi")
         if not str(rs[0].get("start_pos") or "").strip("? "):
@@ -357,7 +414,7 @@ def main():
     ap.add_argument("--write")
     ap.add_argument("--md")
     ap.add_argument("--json", action="store_true")
-    ap.add_argument("--max-shots", type=int, default=4)
+    ap.add_argument("--max-shots", type=int, default=None, help="--legacy only (4): new builds have no cap — a shot every 2–5 s (V7.99.0)")
     ap.add_argument("--max-seconds", type=float, default=None, help="a take's ceiling: 30 s (V7.98.0, every scene); --legacy 15")
     ap.add_argument("--legacy", action="store_true", help="a build planned before V7.98.0: 15 s action takes, split \"insert\" accepted")
     ap.add_argument("--max-talk-seconds", type=float, default=30, help="a conversation take's ceiling (V7.93.0): Seedance's longest call")
@@ -366,6 +423,9 @@ def main():
     ap.add_argument("--script", help="with --vo: the verbatim script lines (script_lines.py), aligned onto the transcript")
     ap.add_argument("--model", default="medium.en")
     a = ap.parse_args()
+    parts = Path(a.plan).resolve().parts
+    if "builds" in parts[:-1] and parts[parts.index("builds") + 1] in PRE_V799:
+        a.legacy = True
     if a.max_seconds is None:
         a.max_seconds = 15.0 if a.legacy else 30.0
     data = json.loads(Path(a.plan).read_text())
@@ -385,7 +445,7 @@ def main():
             for r in rows:
                 r.pop("take", None); r.pop("take_duration", None)
     if a.suggest:
-        takes = suggest(rows, a.max_shots, a.max_seconds, a.max_talk_seconds)
+        takes = suggest(rows, a.max_shots, a.max_seconds, a.max_talk_seconds, a.legacy)
         print(f"{len(rows)} rows -> {len(takes)} takes (Seedance calls)")
         for t in takes:
             print(f"  {t[0]['take']:10} {t[0].get('take_kind', 'single'):8} {', '.join(r.get('beat') + ('+' if r.get('joins') else '') for r in t)}"
@@ -402,8 +462,8 @@ def main():
     out, takes = check(rows, a.max_shots, a.max_seconds, a.max_talk_seconds, a.legacy)
     out = vo_fails + out
     if a.md:
-        md = ["### Takes", "", "One scene in one place is one take — one Seedance call up to 30 s (§24K part 5, V7.98.0); "
-              "a row marked + plays inside the shot before. "
+        md = ["### Takes", "", "One scene in one place is one take — one Seedance call up to 30 s (§24K part 5, V7.98.0), "
+              "covered inside it in a new shot every 2–5 s (V7.99.0). "
               f"{len(rows)} rows in {len(takes)} takes.", "",
               "| Take | Kind | Rows | Length | Starts | Ends | Split |", "|---|---|---|---|---|---|---|"]
         for t, rs in takes.items():
