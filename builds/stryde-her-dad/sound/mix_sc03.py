@@ -10,7 +10,7 @@ SR = 48000
 H = Path(__file__).parent / "sc03"
 src, out = Path(sys.argv[1]), Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
 RND = sys.argv[sys.argv.index("--round") + 1] if "--round" in sys.argv else "1"
-ROUND2 = RND in ("2", "3")
+ROUND2 = RND in ("2", "3", "4")
 
 def load(f):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -26,11 +26,14 @@ def fade(x, i=0.02, o=0.15):
     return x
 def rate(x, r):                    # small speed change so repeated steps don't sound identical
     idx = np.arange(0, len(x) - 1, r); return np.interp(idx, np.arange(len(x)), x).astype(np.float32)
+def stretch(x, r):                 # slower without a pitch change (ffmpeg atempo), r < 1 = longer
+    return np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-af", f"atempo={r}",
+                         "-f", "f32le", "-"], input=x.tobytes(), capture_output=True, check=True).stdout, np.float32).copy()
 def loop(x, n):
     return np.tile(x, n // len(x) + 1)[:n]
 
 S = {k: load(H / f"{k}_v1.mp3") for k in ["TONE-BEDROOM", "SFX-SLEEVES-RUMMAGE", "SFX-DRAWER-SHUT", "SFX-EXHALE-TONY", "TONE-HALL",
-     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-STRAIN-TONY", "SFX-SHUFFLE-STAIR", "TONE-CAR-QUIET", "SFX-SEAT-SETTLE", "SFX-SIGH-NOSE-TONY", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
+     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-STRAIN-TONY", "SFX-SHUFFLE-STAIR", "TONE-CAR-QUIET", "SFX-SEAT-SETTLE", "SFX-SIGH-NOSE-TONY", "SFX-BREATH-IN-DEEP", "SFX-BREATH-OUT-LONG", "SFX-BREATH-SOFT", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
 MUS = load(src / "MUS_v1.mp4")
 
 # (sound, start s, level dB RMS, rate)  — levels: tone -42, bed -34, sounds -18 to -28
@@ -76,6 +79,15 @@ if RND == "3":
      "T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -38, "mus": None, "lufs": -24, "ver": 5, "hits": [
          ("SFX-SEAT-SETTLE", 0.85, -32, 1.0), ("SFX-SIGH-NOSE-TONY", 3.25, -28, 1.0)]},
     }
+if RND == "4":
+    # Round 4 (2026-10-03, board Fix on T3): "change the sound make it like his deep breath and make sure it match the sound".
+    # His breathing read off the picture: the chest band tracked frame to frame (sub-pixel), the head subtracted, the push-in's
+    # drift detrended — chest rises 0.25-1.65 s (deep breath in), falls slowly 1.8-5.0 s (long breath out, through his eyes dropping),
+    # a small shallow breath 5.0-7.0 s, rises again 7.2-8.8 s (deep breath in). Each breath stretched (atempo, pitch kept) to its window.
+    # The sigh and seat creak of v5 out; the quiet cabin kept very low under the breaths.
+    TAKES = {"T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -46, "mus": None, "lufs": -26, "ver": 6, "hits": [
+        ("SFX-BREATH-IN-DEEP", 0.28, -26, ("st", 0.85)), ("SFX-BREATH-OUT-LONG", 1.80, -28, ("st", 0.80)),
+        ("SFX-BREATH-SOFT", 5.10, -33, ("st", 0.80)), ("SFX-BREATH-IN-DEEP", 7.25, -25, ("st", 0.70))]}}
 for take, p in TAKES.items():
     clip = src / p.get("clip", f"{take}_v2.mp4")
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout)
@@ -85,7 +97,8 @@ for take, p in TAKES.items():
         a, b = p["mus"]; m = MUS[int(a * SR):int(a * SR) + n]; m = np.pad(m, (0, n - len(m)))
         mix += fade(at(m, -34), 0.05, 0.4)
     for k, t, g, r in p["hits"]:
-        x = fade(at(rate(S[k], r) if r != 1.0 else S[k].copy(), g)); i = max(0, int(t * SR)); x = x[:max(0, n - i)]
+        src_x = stretch(S[k], r[1]) if isinstance(r, tuple) else (rate(S[k], r) if r != 1.0 else S[k].copy())
+        x = fade(at(src_x, g)); i = max(0, int(t * SR)); x = x[:max(0, n - i)]
         if len(x) > int(0.3 * SR): x = fade(x, 0.0, 0.25)
         mix[i:i + len(x)] += x
     wav = out / f"SC03-{take}.mix.wav"
