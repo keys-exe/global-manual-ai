@@ -1,0 +1,70 @@
+{
+ "beat": "SC06-T3",
+ "take": "SC06-T3",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — Rosa, 67: face, hair and build only.\n@image3 — the entry hall: copy it — the white front door at the end, the round brass mirror over the console on the left wall, the archway on the right, the globe pendant in the middle.\n@audio1 — Rosa's voice.\n\nSHOT: A warm animated family drama: Michelle turns from her sister to the hall mirror and almost smiles at herself; one take of 2 shots, 9:16, 7 s.\n\nTIMELINE\n[0–4s] Shot 1 · medium close-up, the camera orbits: Frame 1: Michelle turning from Rosa to the round mirror over the console, Rosa stepping back under the pendant — Michelle turns to the mirror and her lips part; the camera orbits round to her reflection. Rosa says: \"Not a mask. You.\"\n[4–7s] Shot 2 · close-up, slow push-in: her eyes fill, the corner of her mouth lifts; a slow push. A beat of stillness first. Last frame: Michelle at the round mirror, almost smiling at herself; Rosa behind her under the pendant.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the globe pendant light in the hall, a shadow side on every face. Michelle: an old oversized faded-grey sweatshirt over charcoal pull-on trousers, grey felt slippers, hair limp; Rosa: the marigold-orange wrap blouse and long ink-blue skirt, tan sandals.\n\nSOUND: Dialogue in natural American English — Rosa's voice from @audio1; only the person written as speaking speaks, and on every other shot nobody speaks. No music. The actions' own sounds: her slippers turning on the hall floor, a breath; the quiet hall at night under it.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle and Rosa in the scene; text, logos and captions nowhere; five fingers on each hand; real weight and timing; eyes off the lens; every line of her skin stays exactly as deep; only the colour evens out",
+ "duration": 7,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "cast/C3",
+  "plates/L-HALL"
+ ],
+ "media": [
+  "e41bb60b-dd24-4808-8b8e-5956cbe2dda6",
+  "702ccb5a-64ac-4585-af45-b7b8443efba6",
+  "95d48c48-199d-40c1-a0d7-b0c6f5422a28"
+ ],
+ "audios": [
+  "voice/C3_voice_ref_cut.mp3"
+ ],
+ "audio_media": [
+  "83341657-baea-4764-a0a8-ecd793cb5472"
+ ],
+ "generate_audio": true,
+ "pre_sound": true,
+ "covers": [
+  "SC06-SH06",
+  "SC06-SH07"
+ ],
+ "start_pos": "Michelle turning from Rosa to the round mirror over the console, Rosa stepping back under the pendant",
+ "end_pos": "Michelle at the round mirror, almost smiling at herself; Rosa behind her under the pendant",
+ "marks": {
+  "N": "Michelle turning from Rosa to the round mirror over the console, Rosa stepping back under the pendant",
+  "C3": "Michelle turning from Rosa to the round mirror over the console, Rosa stepping back under the pendant"
+ },
+ "motion": "Michelle turns to the mirror and her lips part; the camera orbits round to her reflection",
+ "subject_motion": "in_place",
+ "pace": "one turn",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ],
+ "dialogue": "Not a mask. You.",
+ "script_line": "Not a mask. You."
+}

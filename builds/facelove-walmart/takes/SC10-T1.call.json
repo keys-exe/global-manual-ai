@@ -1,0 +1,61 @@
+{
+ "beat": "SC10-T1",
+ "take": "SC10-T1",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "multi",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — the store front: copy it — the open sliding doors ahead, nested carts on the right, the blue mat, the golden parking lot and palms beyond.\n\nSHOT: A bright animated payoff: Michelle pushes her cart out through the sliding doors into the golden light, never looking back; one take of 2 shots, 9:16, 6 s.\n\nTIMELINE\n[0–3s] Shot 1 · wide, locked: Frame 1: Michelle on the blue mat pushing her cart toward the open sliding doors, back to camera, the golden parking lot beyond — she walks four strides away through the doors into the sun.\n[3–6s] Shot 2 · full shot, slow tilt: she walks out of the doors; the camera tilts up into the sun. Last frame: Michelle out in the golden parking lot, small, walking away.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the low golden sun through the open sliding doors, a shadow side on every face. Michelle: the soft cream boat-neck fine-knit sweater, high-waisted camel wide-leg trousers, tan leather loafers.\n\nSOUND: No dialogue — nobody speaks. No music.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle in the scene; text, logos and captions nowhere; five fingers on each hand; real weight and timing; eyes off the lens",
+ "duration": 6,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "plates/L-STORE-DOORS"
+ ],
+ "media": [
+  "7ee60be8-ae88-458d-8d13-d5ebfc2ff6a7",
+  "d1621fb9-266e-4c1a-bf04-c731988564aa"
+ ],
+ "audios": [],
+ "audio_media": [],
+ "generate_audio": false,
+ "pre_sound": true,
+ "covers": [
+  "SC10-SH01",
+  "SC10-SH02"
+ ],
+ "start_pos": "Michelle on the blue mat pushing her cart toward the open sliding doors, back to camera, the golden parking lot beyond",
+ "end_pos": "Michelle out in the golden parking lot, small, walking away",
+ "marks": {
+  "N": "Michelle on the blue mat pushing her cart toward the open sliding doors, back to camera, the golden parking lot beyond"
+ },
+ "motion": "she walks four strides away through the doors into the sun",
+ "subject_motion": "in_place",
+ "pace": "four easy strides",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ]
+}

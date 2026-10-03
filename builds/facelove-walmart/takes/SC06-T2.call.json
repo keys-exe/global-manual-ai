@@ -1,0 +1,80 @@
+{
+ "beat": "SC06-T2",
+ "take": "SC06-T2",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "take",
+ "prompt": "REFERENCES\n@image1 — Michelle, 63: face, hair and build only.\n@image2 — Rosa, 67: face, hair and build only.\n@image3 — the entry hall: copy it — the white front door at the end, the round brass mirror over the console on the left wall, the archway on the right, the globe pendant in the middle.\n@image4 — the FACELOVE stick, closed: copy it exactly — the violet satin barrel with its one wordmark; it is a little longer than a hand is wide.\n@image5 — the stick's balm end, uncapped: the white balm, copied exactly.\n@image6 — the stick's brush end: copied exactly.\n@image7 — info card: the stick's true size in a hand. Copy only that size.\n@image8 — info card: the colour front — white ahead of the brush, her own shade behind, every line of the skin kept. Copy only that; its caption never appears.\n@audio1 — Rosa's voice.\n\nSHOT: A warm animated drama in one unbroken close shot: the brush works the white stripe on Michelle's cheek and the white turns into her own shade as it goes; one continuous shot, 9:16, 16 s.\n\nTIMELINE\n[0–16s] Shot 1 · insert, locked: Frame 1: extreme close on Michelle's cheekbone in profile, a short stripe of white balm on it, the brush end of the stick just touching its left end — the brush moves in slow circles across the cheek and the colour front travels behind it, white to her shade in real time. Rosa says: \"It has jojoba, shea, vitamin E, so it feels like nothing and never cakes. It covers the lines, the tired, the circles, and it still looks like your own skin.\" Last frame: the stripe blended into her own shade, the brush lifting away, every line of her face still there.\n\nLOOK: A theatrical 3D animated feature, stylised adults with large expressive eyes, soft skin, sculpted hair, fabric with weight; natural, ungraded colour; light from the globe pendant light in the hall, a shadow side on every face. Michelle: an old oversized faded-grey sweatshirt over charcoal pull-on trousers, grey felt slippers, hair limp; Rosa: the marigold-orange wrap blouse and long ink-blue skirt, tan sandals.\n\nSOUND: Dialogue in natural American English — Rosa's voice from @audio1; only the person written as speaking speaks, and on every other shot nobody speaks. No music. The actions' own sounds: the soft brush on skin, a breath; the quiet hall at night under it.\n\nKEEP: same faces, hair and clothes in every frame; just Michelle and Rosa in the scene; exactly one violet stick at its true size, its wordmark the only text; five fingers on each hand; real weight and timing; eyes off the lens; every line of her skin stays exactly as deep; only the colour evens out",
+ "duration": 16,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "ingredients_approved": true,
+ "files": [
+  "cast/N",
+  "cast/C3",
+  "plates/L-HALL",
+  "product/47b23ddf",
+  "product/ab69219d",
+  "product/aa71f71b",
+  "product/89f64a0f",
+  "cards/COLOUR-FRONT-CARD"
+ ],
+ "media": [
+  "e41bb60b-dd24-4808-8b8e-5956cbe2dda6",
+  "702ccb5a-64ac-4585-af45-b7b8443efba6",
+  "95d48c48-199d-40c1-a0d7-b0c6f5422a28",
+  "47b23ddf-c6c4-4ffa-89c2-77a4ddc312f1",
+  "ab69219d-f5c7-448d-92e5-056867ad5ad7",
+  "aa71f71b-7076-495c-a7d6-8c68af08fce9",
+  "89f64a0f-9603-4986-b15f-5369389f9f7f",
+  "cddd3282-90c4-40d2-bdcd-def14ab1e0d2"
+ ],
+ "audios": [
+  "voice/C3_voice_ref_cut.mp3"
+ ],
+ "audio_media": [
+  "83341657-baea-4764-a0a8-ecd793cb5472"
+ ],
+ "generate_audio": true,
+ "pre_sound": true,
+ "covers": [
+  "SC06-SH05"
+ ],
+ "start_pos": "extreme close on Michelle's cheekbone in profile, a short stripe of white balm on it, the brush end of the stick just touching its left end",
+ "end_pos": "the stripe blended into her own shade, the brush lifting away, every line of her face still there",
+ "marks": {
+  "N": "extreme close on Michelle's cheekbone in profile, a short stripe of white balm on it, the brush end of the stick just touching its left end",
+  "C3": "extreme close on Michelle's cheekbone in profile, a short stripe of white balm on it, the brush end of the stick just touching its left end"
+ },
+ "motion": "the brush moves in slow circles across the cheek and the colour front travels behind it, white to her shade in real time",
+ "subject_motion": "in_place",
+ "pace": "small slow circles, left to right",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "faces or clothes drift between shots",
+   "prevented_by": "faces from the confirmed sheets, the day's outfit written in LOOK, KEEP holds them"
+  },
+  {
+   "risk": "the room changes or flips between shots",
+   "prevented_by": "the plate as a reference with its landmarks and sides written out; start and end positions word for word"
+  },
+  {
+   "risk": "music or a wrong voice in the clip",
+   "prevented_by": "SOUND says no music and names whose voice comes from which audio ref; unmusic.py on landing"
+  }
+ ],
+ "taste": [
+  "no real brand or logo in frame",
+  "faces from sheets, clothes in words"
+ ],
+ "dialogue": "It has jojoba, shea, vitamin E, so it feels like nothing and never cakes. It covers the lines, the tired, the circles, and it still looks like your own skin.",
+ "script_line": "It has jojoba, shea, vitamin E, so it feels like nothing and never cakes. It covers the lines, the tired, the circles, and it still looks like your own skin.",
+ "oner": true
+}
