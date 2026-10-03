@@ -1,0 +1,13 @@
+{
+ "beat": "OUT-C3-D4",
+ "build": "stryde-her-dad",
+ "kind": "image",
+ "connector": "kie",
+ "model": "gpt-image-2-5-sunburst-image-to-image",
+ "aspect_ratio": "9:16",
+ "refs": [
+  "voice/C3_face.jpg",
+  "../../products/stryde/stryde_refs/worn_front.jpg"
+ ],
+ "prompt": "Photographed as a single frame from a US feature film, shot on an ARRI Alexa Mini LF in large format with an ARRI Signature Prime at 50mm and T4, the camera on a locked tripod at standing eye height, composed natively for a vertical 9:16 frame with no letterbox bars. An outfit reference card for one story day: Image 1 is the man's face and hair only, and Image 2 is the knee strap and where it sits, for the strap only — the leg and shorts in Image 2 are never copied — copy his long lean face, strong hooked nose, sharp cheekbones, small bright pale-blue eyes under bushy white brows, thin mouth, short neat white beard, shaved tanned bald head and the small notch missing from the top rim of his right ear exactly; he is a tall, lean, wiry man of seventy, straight-backed, with long ropey arms and weathered skin over the knees. He stands full length, dead centre, facing the camera, arms relaxed at his sides, against a plain seamless mid-grey studio backdrop in soft even daylight from the left, the whole figure from hair to shoes inside the frame and filling about two-thirds of its height. He wears, and only these, his work clothes for the yard: a sand-coloured canvas work jacket worn open over a faded black crew-neck T-shirt, navy canvas work shorts ending just above the knee so both knees are bare, rolled grey socks and scuffed brown rigger boots; and on his bare RIGHT knee only, the knee strap exactly as in Image 2 — the black moulded shell across the front of the knee with its two rounded peaks and the concave notch between them, the bottom of his kneecap seated into the notch with no gap, the kneecap's face uncovered, the black woven band round the back of the leg, the small chrome slide at each end. Nothing else is worn or carried. Across the bottom of the card, on a plain white strip below the figure, one caption line in small black sans-serif text: \"GARY · Day D4 (the builders' yard): sand canvas jacket, black T-shirt, navy work shorts, the strap on his right knee\". Negatives: no buffalo-check overshirt, no flannel shirt, no long trousers, no strap on the left knee, no strap above or over the kneecap, no extra brace or sleeve, no hat, no watch showing, no other people, no props, no set, no logos or lettering on the clothing, no text other than the caption."
+}
