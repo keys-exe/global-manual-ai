@@ -49,7 +49,8 @@ SHOTS.append(dict(beat="SC03-T1", kind="take", covers=["SC03-SH01"], duration=5,
         negs(NEG_EQUIP, NEG_MORPH, NEG_T, "no brand or writing on the sleeves, no talking, no mouth moving, no drawer from another chest", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)])))
 
 a, b = ROWS["SC03-SH02"], ROWS["SC03-SH03"]
-SHOTS.append(dict(beat="SC03-T2", kind="multi", covers=["SC03-SH02", "SC03-SH03"], duration=8, subject_motion="travels", start_pos=a["start_pos"], end_pos=b["end_pos"],
+SHOTS.append(dict(beat="SC03-T2", kind="multi", gen=2, rail_ok=True,
+    fix="board Fix (owner): make him handling on the hand rails and slowly going down stairs → v1 had his arms loose at his sides (the L56 default); v2 puts both his hands on the oak handrail, sliding down it and taking his weight, very slowly, a pause on every step, still sideways (the user's ask sets rail_ok)", covers=["SC03-SH02", "SC03-SH03"], duration=8, subject_motion="travels", start_pos=a["start_pos"], end_pos=b["end_pos"],
     files=["C1-FACE", "L-STAIRS", "OUT-C1-D2"], vo="L016",
     title="Scene 3 · T2 — down his own stairs sideways (SH02–SH03; VO L016)",
     prompt=" ".join([
@@ -58,18 +59,18 @@ SHOTS.append(dict(beat="SC03-T2", kind="multi", covers=["SC03-SH02", "SC03-SH03"
                    "its stairs, rail, walls and light side exactly as shown."), ("@image3", CARD_T)]),
         SERIES, LOOK, INHERIT, DAY.replace("he is alone with his knee.", "he is alone with his knee. The hall is lit by grey daylight through the front-door glass."),
         f"Tony is {TONY_ID}, in {TONY_D2}. He goes down his own stairs SIDEWAYS, the way a man does when one knee will not bend: his body side-on to the flight, facing the LEFT side of the stairs, "
-        "his arms hanging loose at his sides — he does not touch the rail or the wall at any moment. Each step: his left foot goes down first, then he lowers the stiff right leg down beside it onto the same step, "
-        "one step at a time, slowly.",
+        "both his hands on the oak handrail in front of him, sliding them down it as he goes and taking his weight on them. Each step: his left foot goes down first, then he lowers the stiff right leg down beside it onto the same step, "
+        "one step at a time, very slowly, a pause on every step.",
         f"One scene covered in 2 shots within a single take, all on the same side of the action line, with the same light, look and wardrobe throughout. Frame 1: {a['start_pos']}. " + MOVE + " "
-        "SHOT 1, [0s-4s]: FULL, from high on the landing BEHIND him, looking down the flight exactly as in Image2: Tony, side-on, takes the first three steps down sideways, left foot first, the right leg brought down stiffly after it each time. "
-        "SHOT 2, [4s-8s]: FULL, low from the hall at the foot of the stairs, looking up the flight: carrying straight on, halfway down, still side-on with his arms loose at his sides, "
-        "he lowers the stiff right leg onto the next step; his face is tight with it. His mouth stays closed. "
+        "SHOT 1, [0s-4s]: FULL, from high on the landing BEHIND him, looking down the flight exactly as in Image2: Tony, side-on, both hands on the handrail, takes the first two steps down sideways, slowly, left foot first, the right leg brought down stiffly after it each time. "
+        "SHOT 2, [4s-8s]: FULL, low from the hall at the foot of the stairs, looking up the flight: carrying straight on, halfway down, still side-on, both hands sliding down the handrail, "
+        "he slowly lowers the stiff right leg onto the next step; his face is tight with it. His mouth stays closed. "
         f"Each cut lands on a completed step. Nobody looks into the lens. Last frame: {b['end_pos']}.",
         F2, PHYS,
-        state("TONY", "in the outfit of his card, going down sideways, arms loose at his sides", "he is halfway down the flight"),
+        state("TONY", "in the outfit of his card, going down sideways, both hands on the handrail", "he is halfway down the flight"),
         focus("Tony", "everything from near to far stays sharp"),
         SILENT,
-        negs(NEG_EQUIP, NEG_MORPH, NEG_T, "no hand on the rail, no hand on the banister, no hand on the wall, no walking forwards down the stairs, no falling, no stumbling, no stairs bending, "
+        negs(NEG_EQUIP, NEG_MORPH, NEG_T, "no walking forwards down the stairs, no hurrying, no falling, no stumbling, no stairs bending, "
              "no steps changing count, no feet sliding, no talking, no mouth moving", NEG_FILM, NEG_SCENECUT, NEG_DRAMA, NEG_SOUND)])))
 
 r = ROWS["SC03-SH04"]
@@ -104,8 +105,8 @@ if __name__ == "__main__":
         call = {"beat": s["beat"], "build": "stryde-her-dad", "connector": "seedance", "model": "bytedance/seedance-2-5", "mode": 4, "kind": s["kind"], "prompt": s["prompt"],
                 "take": s["beat"], "covers": s["covers"], "start_pos": s["start_pos"], "end_pos": s["end_pos"], "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16",
                 "start_image": None, "ingredients_approved": approved, "files": [FMAP[f] for f in s["files"]], "audios": [], "generate_audio": False, "dialogue": None, "script_line": None,
-                "pace": "unhurried", "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": 1, "user_go": GO, "vo": s["vo"], "scene": 3, "title": s["title"],
-                "risks": [{"risk": "his hand goes to the rail (L56)", "prevented_by": "arms loose at his sides, rail negatives"},
+                "pace": "unhurried", "subject_motion": s["subject_motion"], "prefer_multi_shots": "false", "generation": s.get("gen", 1), "user_go": GO, "fix_note": s.get("fix"), "rail_ok": s.get("rail_ok", False), "noteOwner": True if s.get("fix") else None, "vo": s["vo"], "scene": 3, "title": s["title"],
+                "risks": [{"risk": "his hand goes to the rail (L56) — except SC03-T2 v2, where the user asked for it", "prevented_by": "arms loose at his sides, rail negatives; rail_ok on the user's ask"},
                           {"risk": "the cast-sheet shorts return", "prevented_by": "face crop + D2 outfit card, shorts/bare-knee negatives (HT26)"},
                           {"risk": "Tony speaks or mouths the VO", "prevented_by": "silent call, mouth closed"}],
                 "taste": ["HT02", "HT17", "HT18", "HT22", "HT23", "HT26", "HT27", "FP23"]}

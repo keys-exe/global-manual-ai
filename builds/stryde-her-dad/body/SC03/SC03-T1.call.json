@@ -31,13 +31,16 @@
  "prefer_multi_shots": "false",
  "generation": 1,
  "user_go": "chat: \"confirm and proceed\" (2026-10-03) — SC02 confirmed, on to SC03; the D2 outfit cards wait for the user's Confirm",
+ "fix_note": null,
+ "rail_ok": false,
+ "noteOwner": null,
  "vo": "L016",
  "scene": 3,
  "title": "Scene 3 · T1 — the drawer full of knee sleeves that won't shut (SH01; VO L016)",
  "risks": [
   {
-   "risk": "his hand goes to the rail (L56)",
-   "prevented_by": "arms loose at his sides, rail negatives"
+   "risk": "his hand goes to the rail (L56) — except SC03-T2 v2, where the user asked for it",
+   "prevented_by": "arms loose at his sides, rail negatives; rail_ok on the user's ask"
   },
   {
    "risk": "the cast-sheet shorts return",

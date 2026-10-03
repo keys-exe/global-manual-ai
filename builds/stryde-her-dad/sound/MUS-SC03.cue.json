@@ -1,0 +1,63 @@
+{
+ "scene": "MUS-SC03",
+ "length_s": 22.0,
+ "register": "MUS-EXPOSE",
+ "tempo": "slow",
+ "theme": [
+  "dark investigative tension",
+  "low sustained piano",
+  "bowed double bass drone",
+  "soft muted ticking pulse",
+  "a four-note low piano figure, unresolved",
+  "minor",
+  "intimate British drama score",
+  "continuous, no gaps"
+ ],
+ "avoid": [
+  "vocals",
+  "drums",
+  "synthesizers",
+  "strings swell",
+  "sad",
+  "melancholic"
+ ],
+ "sections": [
+  {
+   "name": "The drawer",
+   "start": 0,
+   "end": 5.0,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "begins softly from near silence with a slow fade-in, no sudden first note",
+    "sparse low piano notes",
+    "faint ticking pulse"
+   ]
+  },
+  {
+   "name": "The stairs",
+   "start": 5.0,
+   "end": 13.0,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "bowed double bass drone enters under the piano and keeps sounding",
+    "the pulse steadies"
+   ]
+  },
+  {
+   "name": "The car",
+   "start": 13.0,
+   "end": 22.0,
+   "energy": "low",
+   "register": "MUS-EXPOSE",
+   "styles": [
+    "the four-note figure repeats low",
+    "the bass drone continues without a break",
+    "the pulse stays present to the end",
+    "unresolved, still sounding at the end \u2014 no stop, no silence"
+   ]
+  }
+ ],
+ "fix_note": "check v1: CLICK 22.5 dB at the start, DROPOUT 1.7 s in 'The car', ENERGY car not above stairs \u2192 a soft fade-in start, a drone that never stops, the car section level with the stairs"
+}
