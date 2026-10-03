@@ -10,7 +10,7 @@ SR = 48000
 H = Path(__file__).parent / "sc03"
 src, out = Path(sys.argv[1]), Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
 RND = sys.argv[sys.argv.index("--round") + 1] if "--round" in sys.argv else "1"
-ROUND2 = RND in ("2", "3", "4")
+ROUND2 = RND in ("2", "3", "4", "5")
 
 def load(f):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -33,7 +33,7 @@ def loop(x, n):
     return np.tile(x, n // len(x) + 1)[:n]
 
 S = {k: load(H / f"{k}_v1.mp3") for k in ["TONE-BEDROOM", "SFX-SLEEVES-RUMMAGE", "SFX-DRAWER-SHUT", "SFX-EXHALE-TONY", "TONE-HALL",
-     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-STRAIN-TONY", "SFX-SHUFFLE-STAIR", "TONE-CAR-QUIET", "SFX-SEAT-SETTLE", "SFX-SIGH-NOSE-TONY", "SFX-BREATH-IN-DEEP", "SFX-BREATH-OUT-LONG", "SFX-BREATH-SOFT", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
+     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-STRAIN-TONY", "SFX-SHUFFLE-STAIR", "TONE-CAR-QUIET", "SFX-SEAT-SETTLE", "SFX-SIGH-NOSE-TONY", "SFX-BREATH-IN-DEEP", "SFX-BREATH-OUT-LONG", "SFX-BREATH-SOFT", "SFX-BREATH-DISAPPOINTED", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
 MUS = load(src / "MUS_v1.mp4")
 
 # (sound, start s, level dB RMS, rate)  — levels: tone -42, bed -34, sounds -18 to -28
@@ -88,6 +88,13 @@ if RND == "4":
     TAKES = {"T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -46, "mus": None, "lufs": -26, "ver": 6, "hits": [
         ("SFX-BREATH-IN-DEEP", 0.28, -26, ("st", 0.85)), ("SFX-BREATH-OUT-LONG", 1.80, -28, ("st", 0.80)),
         ("SFX-BREATH-SOFT", 5.10, -33, ("st", 0.80)), ("SFX-BREATH-IN-DEEP", 7.25, -25, ("st", 0.70))]}}
+if RND == "5":
+    # Round 5 (2026-10-03, board Fix on T3): "change the sound make it like a normal deep breath like his disappointed".
+    # One natural disappointed breath, never stretched: its breath in (0-1.0 s of the sound) on his chest rising from 0.35 s,
+    # the heavy sigh out (1.6-3.8 s of the sound) at 1.95-4.15 s, as his chest falls and his eyes drop (3.25 s);
+    # one plain deep breath in, unstretched and quieter, on his chest rising again at 7.35 s. The cabin very low under it.
+    TAKES = {"T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -46, "mus": None, "lufs": -24, "ver": 7, "hits": [
+        ("SFX-BREATH-DISAPPOINTED", 0.35, -24, 1.0), ("SFX-BREATH-IN-DEEP", 7.35, -31, 1.0)]}}
 for take, p in TAKES.items():
     clip = src / p.get("clip", f"{take}_v2.mp4")
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout)
