@@ -43,7 +43,8 @@ Drive task folder `1M1DbzCv_DwDnXnhwkztLtgEB69yjBUiZ` · cast pictures `1__Tfn0-
 - v2 job `4547b65c-8fb4-4ad7-a8d4-4735d02fafa7` (Higgsfield, ODAQ B.V., 13 s, ≈107 credits). v1 copied to the Old board (`e0e885d8…`).
 - Credit cap (§5B): `budget.json` / `budget.md` — Higgsfield 1010 for the remaining work (this Fix + SC06–SC09, ≈8.23 credits/s measured).
 - **v2 landed** (`f4f903da…` on Current, `review`): Susan sits on the end of the bed throughout, new low angle; Beth's line verbatim (0–11 s); music check CLEAN. v1 moved to Old (entry archived, file removed from Current).
-- A third generation of SC05-T2 waits for the user's go (§22X).
+- **Fix 2** (owner note "use deferent camera angle"; user's chat "fix" = the §22X go for generation 3): v2's angle words described T1's second set-up (Susan three-quarter at frame left, Beth behind her at frame right, window behind), so it repeated it. v3: a set-up T1 never used — HIGH ANGLE over Beth's shoulder looking down on Susan's face from the front, bed and wall behind her; `@video1` for the seat only; `fix_notes_all` carries both notes. Preflight PASS; budget check OK (214 of 1,010). Job `9d107e81-3a82-4e30-867e-4d5a88031790`. v2 copied to Old (`cf916274…`).
+- **v3 landed** (`b7c88346…` on Current, `review`): high over-the-shoulder angle from Beth's side, Susan seen from the front on the bed; Beth's line verbatim (0–9 s); music CLEAN. A curtained window still shows behind Susan (asked out in the negatives). v2 moved to Old. Higgsfield spend since the cap: ≈214 of 1,010.
 
 ## Board review (2026-10-02)
 - **Confirmed by the user:** all 8 cast sheets; plates P-HOUSE, L-YARD, L-YARD-REV, L-GATHERING, L-VANITY, L-PORCH-IN (v1, as is), L-HOSTS-FRONT.
