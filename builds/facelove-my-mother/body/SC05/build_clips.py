@@ -71,6 +71,8 @@ MULTI = lambda n, st: (f"One scene covered in {n} shots within a single take, al
                        f"Frame 1: {st}. Everyone stays where the last shot left them. Each shot picks up the movement exactly where the last one left it, "
                        "and the action carries straight across every cut. ")
 BASE_NEG = lambda *x: S1.negs(S1.NEG_EQUIP, S1.NEG_MORPH, *x, NEG_PARTY, S1.NEG_FILM, S1.NEG_SCENECUT, S1.NEG_DRAMA, S1.NEG_SOUND)
+VIDFILE = {"SC05-T1": "body/SC05/SC05-T1_v1.mp4"}
+VIDJOB = {"SC05-T1": "c6e783ab-6035-4f95-92cc-b05753e73ea0"}
 T = {}
 
 # T1 — SH01 + SH02: Beth walks in; Susan on the bed
@@ -113,29 +115,45 @@ L014A, L014B = L["L014"].split(" Goes on white")[0], "Goes on white" + L["L014"]
 L016A, L016B = L["L016"].split(" It just")[0], "It just" + L["L016"].split(" It just")[1]
 
 # T2 — SH03: Paula's Botox, the garment bag laid down
-st, en = R["SC05-SH03"]["start_pos"], "Beth beside the bed, the garment bag laid flat across the quilt; Susan on the end of the bed looking up at her"
+# Fix 1 (user's board Fix, 2026-10-03, owner note: "susan should be seating on the bed use this scene as reference but in the defferent camera angle
+# Scene 5 · T1"): v1 sat Susan low BESIDE the bed, the mattress at her shoulder — the prompt put her "on the end of the bed at the edge of frame" of a
+# MEDIUM three-quarter on Beth, so only her head and shoulders were placed and the model dropped her below the bed. Fixed at the source: confirmed T1 as
+# @video1 for Susan's seat and the room, a SEAT clause (on the quilt at the bed's end, as in @video1), both women framed in full by a new angle (low
+# three-quarter from the doorway corner at her seated eye height — neither of T1's two set-ups), the bag laid across the quilt BEHIND her, seat negatives.
+SEATV2 = ("is where Susan sits and how the room lies: Susan on the end of the bed, on the quilt, as in this clip; it sets her seat, the bed, the door and the "
+          "dressing table, never the framing, the words or the action.")
+SEAT2 = ("Susan's seat is exactly the one in @video1: she sits ON the end of the bed, on the dusty-blue quilt, her hips on the mattress, her knees bent over "
+         "its edge and her feet in grey socks flat on the carpet, facing into the room toward the dressing table; she stays sitting there the whole clip.")
+NEG_SEAT2 = "no Susan sitting on the floor, no Susan below the mattress, no Susan beside the bed, no Susan standing"
+st, en = R["SC05-SH03"]["start_pos"], "Beth beside the bed, the garment bag laid flat across the quilt behind Susan; Susan on the end of the bed looking up at her"
 T["SC05-T2"] = dict(kind="take", covers=["SC05-SH03"], duration=13, motion="in_place", refs=["C3-FACE", "OUT-C3", "N-FACE", "OUT-N", "L-VANITY"],
-  audios=["L012"], line=L["L012"], start=st, end=en, product=False,
+  videos=["SC05-T1"], audios=["L012"], line=L["L012"], start=st, end=en, product=False, generation=2,
+  fault="susan should be seating on the bed use this scene as reference but in the defferent camera angle Scene 5 · T1",
+  fix_note=("prompt fault: Susan was placed only as 'on the end of the bed at the edge of frame' of a MEDIUM on Beth, so v1 sat her low beside the bed → "
+            "confirmed T1 attached as @video1 for her seat, SEAT clause (on the quilt at the bed's end, feet on the carpet), a new low three-quarter angle from the doorway corner "
+            "at her seated eye height that frames both women in full, the bag laid behind her on the quilt, NEG_SEAT2"),
   title="Scene 5 · T2 — Beth on Paula's Botox, laying the garment bag down (SH03)",
   prompt=" ".join([
-    S1.manifest([("@image1", FACE_C3), ("@image2", OUT_C3), ("@image3", FACE_N), ("@image4", OUT_N), ("@image5", ROOM), ("@audio1", VOICE("Beth"))]),
-    SERIES, S1.LOOK, S1.INHERIT, GEO, NOSPK,
-    "One continuous shot, never cut and never restarted, 13s, in one place with the same light, look and wardrobe throughout. Frame 1: " + st + ". "
-    f"MEDIUM at eye level, three-quarter on Beth, {BETH_ID}, in {BETH_D4}, standing by the bed; Susan, {SUSAN_ID}, in {SUSAN_D4}, on the end of the bed at the edge of frame. "
-    f"[0s-9s]: Beth lays the black garment bag flat across the dusty-blue quilt while she talks, easy and honest, and smooths it once with one hand: {L['L012']} "
-    "[9s-13s]: she straightens up and looks at Susan; Susan looks up at her. Last frame: " + en + ".",
+    S1.manifest([("@image1", FACE_C3), ("@image2", OUT_C3), ("@image3", FACE_N), ("@image4", OUT_N), ("@image5", ROOM), ("@video1", SEATV2), ("@audio1", VOICE("Beth"))]),
+    SERIES, S1.LOOK, S1.INHERIT, GEO, SEAT2, NOSPK,
+    "One continuous shot, never cut and never restarted, 13s, in one place with the same light, look and wardrobe throughout. Frame 1: " + st + ", sitting on it exactly as in @video1. "
+    f"MEDIUM WIDE from low, at Susan's seated eye height, from the corner by the doorway, lower and closer than @video1's wide, three-quarter front on Susan, {SUSAN_ID}, in {SUSAN_D4}, sitting on the end of the bed at frame left, the whole of her in frame from her ponytail to her socks on the carpet; "
+    f"Beth, {BETH_ID}, in {BETH_D4}, stands beside the bed just behind her at frame right, the whole bed end and the quilt between them. "
+    f"[0s-9s]: Beth lays the black garment bag flat across the dusty-blue quilt behind Susan while she talks, easy and honest, and smooths it once with one hand: {L['L012']} "
+    "[9s-13s]: she straightens up and looks down at Susan; Susan, still sitting on the bed, turns her head and looks up at her. Last frame: " + en + ".",
     F, S1.PHYS,
+    "While Beth speaks Susan keeps doing one thing with her hands: her fingers loosely laced in her lap, as in @video1, at one steady hold through the line.",
     "LISTENING: Susan looks up at Beth on 'Botox'; nothing on her face arrives before the word that causes it.",
     S1.state("SUSAN", "sitting on the end of the bed in the sweatshirt, hair scraped back, her face bare, guarded", "her eyes coming up to Beth"),
-    "FOCUS: Beth's eyes sharp, Susan a little soft. The blur is optical: soft and round, never smeared.",
+    "FOCUS: deep enough that both women read; Beth's eyes sharpest. The blur is optical: soft and round, never smeared.",
     S1.dialogue("Beth", L["L012"], VOICE_C3, "her friend thinks she just looks old next to Paula. Standing by the bed, laying the bag down.",
                 "levels with her. Opens matter-of-fact on 'Botox'; turns on 'needles', a small shrug; exits on 'twelve weeks', plain. Stress on 'needles'.",
                 "easy, honest, a little lower than before, matching the face in this shot.", "she is on Susan's side, which leaks only through how ordinary she makes it sound."),
     S1.AUD,
-    BASE_NEG("no Susan speaking, no garment bag unzipped, no third person, no stick or product in this take")]),
-  risks=[{"risk": "Susan speaks Beth's words", "prevented_by": "one voice ref, Beth's own words; NOSPK; 'no Susan speaking'"},
-         {"risk": "party clothes or Susan's hair loose", "prevented_by": "face crops + D4 outfit cards, ponytail named, NEG_PARTY"},
-         {"risk": "the garment bag opens or changes", "prevented_by": "'no garment bag unzipped', PHYS"}])
+    BASE_NEG("no Susan speaking, no garment bag unzipped, no third person, no stick or product in this take", NEG_SEAT2)]),
+  risks=[{"risk": "Susan below or beside the bed again (v1 fault)", "prevented_by": "@video1 = confirmed T1 for her seat, SEAT2 clause, framed head to socks, NEG_SEAT2"},
+         {"risk": "Susan speaks Beth's words", "prevented_by": "one voice ref, Beth's own words; NOSPK; 'no Susan speaking'"},
+         {"risk": "party clothes or Susan's hair loose", "prevented_by": "face crops + D4 outfit cards, ponytail named, NEG_PARTY"}])
 
 # T3 — SH04: 'Come sit. Watch this.'
 st, en = "Beth beside the bed by the laid-down garment bag; Susan on the end of the bed looking up at her", R["SC05-SH04"]["end_pos"]
@@ -318,12 +336,14 @@ if __name__ == "__main__":
     for b, s in T.items():
         call = {"beat": b, "build": "facelove-my-mother", "connector": "seedance", "model": "seedance_2_5", "mode": 4, "kind": s["kind"], "prompt": s["prompt"],
                 "take": b, "covers": s["covers"], "start_pos": s["start"], "end_pos": s["end"], "duration": s["duration"], "resolution": "720p", "aspect_ratio": "9:16",
-                "start_image": None, "ingredients_approved": True, "files": [FILE[r] for r in s["refs"]] + [AUDIO[a][0] for a in s["audios"]],
+                "start_image": None, "ingredients_approved": True, "files": [FILE[r] for r in s["refs"]] + [VIDFILE[v] for v in s.get("videos", [])] + [AUDIO[a][0] for a in s["audios"]],
                 "audios": [AUDIO[a][0] for a in s["audios"]], "generate_audio": bool(s["line"]), "dialogue": s["line"] or None, "script_line": s["line"] or None,
-                "pace": "brisk", "subject_motion": s["motion"], "prefer_multi_shots": "false", "generation": 1, "product": s["product"],
+                "pace": "brisk", "subject_motion": s["motion"], "prefer_multi_shots": "false", "generation": s.get("generation", 1), "product": s["product"],
                 "user_go": "chat: \"CONFIRMED ALL IMAGE. PROCEED\" (user, 2026-10-02) — Scene 5's ingredient cards confirmed",
                 "risks": s["risks"], "scene": 5, "title": s["title"], "taste": ["HT17", "HT18", "HT22", "HT23", "HT25", "HT26", "HT27"],
-                "media": [MEDIA[r] for r in s["refs"]], "audio_media": [AUDIO[a][1] for a in s["audios"]]}
+                "media": [MEDIA[r] for r in s["refs"]], "audio_media": [AUDIO[a][1] for a in s["audios"]],
+                "video_jobs": [VIDJOB[v] for v in s.get("videos", [])]}
+        if s.get("fix_note"): call.update(fault=s["fault"], fix_note=s["fix_note"], user_go="board Fix (owner, 2026-10-03): " + s["fault"])
         (H / f"{b}.call.json").write_text(json.dumps(call, indent=1, ensure_ascii=False))
         (H / f"{b}.prompt.txt").write_text(s["prompt"])
         print(b, s["duration"], "s", len(s["prompt"]), "chars")

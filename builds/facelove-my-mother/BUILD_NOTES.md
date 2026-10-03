@@ -36,6 +36,15 @@ Drive task folder `1M1DbzCv_DwDnXnhwkztLtgEB69yjBUiZ` · cast pictures `1__Tfn0-
 - Board state read after the template update: Scenes 1–3 and SC05-T1/T2 confirmed; all cast, plates, cards and voices confirmed. **To check:** SC04-T1/T2/T3, SC05-T3…T8, VO-T1-L008/L009/L021/L026/L027. No Fix notes waiting, no restore requests on the Old board.
 - Next: the user's Confirm / Fix on the cards above; then Scene 6 onward (act map SC06+).
 
+## Fix round (2026-10-03, session on `Chicknben`)
+- One Fix note on the board: **SC05-T2** — "susan should be seating on the bed use this scene as reference but in the defferent camera angle".
+- Cause: v1's prompt placed Susan only as "on the end of the bed at the edge of frame" of a MEDIUM on Beth, so the model sat her beside the bed.
+- Fix at the source (`body/SC05/build_clips.py`, generation 2, §22X): the confirmed T1 clip attached as `@video1` for her seat and the room; an explicit seat clause (hips on the mattress, knees over the edge, feet on the carpet, the whole clip); a new angle — MEDIUM WIDE from low at her seated eye height, from the doorway corner, both women whole in frame; seat negatives. Preflight PASS.
+- v2 job `4547b65c-8fb4-4ad7-a8d4-4735d02fafa7` (Higgsfield, ODAQ B.V., 13 s, ≈107 credits). v1 copied to the Old board (`e0e885d8…`).
+- Credit cap (§5B): `budget.json` / `budget.md` — Higgsfield 1010 for the remaining work (this Fix + SC06–SC09, ≈8.23 credits/s measured).
+- **v2 landed** (`f4f903da…` on Current, `review`): Susan sits on the end of the bed throughout, new low angle; Beth's line verbatim (0–11 s); music check CLEAN. v1 moved to Old (entry archived, file removed from Current).
+- A third generation of SC05-T2 waits for the user's go (§22X).
+
 ## Board review (2026-10-02)
 - **Confirmed by the user:** all 8 cast sheets; plates P-HOUSE, L-YARD, L-YARD-REV, L-GATHERING, L-VANITY, L-PORCH-IN (v1, as is), L-HOSTS-FRONT.
 - **L-VANITY-REV retired** on the user's Fix "dont use this": copied to the Old board, removed from Current; SC05-SH01/SH02 restaged on L-VANITY (Beth enters from the doorway behind the camera). Checks rerun: angles / wardrobe / visual plan PASS; takes.py now 6 false SPLIT lines (pairs 17–25 s).

@@ -1,0 +1,57 @@
+{
+ "budget": {
+  "build": "facelove-my-mother",
+  "draft": false,
+  "mode": 4,
+  "connectors": [
+   {
+    "conn": "Higgsfield",
+    "base": 4081.0,
+    "allowance": 1225.85,
+    "estimate": 5350,
+    "cap": 1010.0,
+    "cap_source": "CAP line"
+   }
+  ],
+  "lines": [
+   {
+    "job": "seedance",
+    "conn": "Higgsfield",
+    "model": null,
+    "qty": 77.0,
+    "unit": "per second",
+    "renders_each": 1,
+    "credits": 3465.0,
+    "price": 45,
+    "source": "unverified: Kie rate assumed",
+    "note": "SC06-SC09, 10 takes from the act map"
+   },
+   {
+    "job": "seedance",
+    "conn": "Higgsfield",
+    "model": null,
+    "qty": 13.0,
+    "unit": "per second",
+    "renders_each": 1,
+    "credits": 585.0,
+    "price": 45,
+    "source": "unverified: Kie rate assumed",
+    "note": "SC05-T2 Fix (user's board note)"
+   },
+   {
+    "job": "info_cards",
+    "conn": "Higgsfield",
+    "model": "gpt_image_2_5",
+    "qty": 10.0,
+    "unit": "per image",
+    "renders_each": 1,
+    "credits": 31.0,
+    "price": 3.1,
+    "source": "measured: 8 plates 24.92 credits",
+    "note": "SC06-SC09 outfit/prop cards, estimate"
+   }
+  ],
+  "warn_at": 0.8,
+  "at": 1791034010199
+ }
+}
