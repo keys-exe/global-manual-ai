@@ -17,6 +17,11 @@ SFX = {
  "SFX-STEP-NAT-A": ("one single slow, careful footstep: a heavy man in worn leather work boots lowering his foot down onto a carpeted stair, a soft, natural, muffled thud of the sole on carpet, no creak, no echo, close and dry", 0.7),
  "SFX-STEP-NAT-B": ("one single heavy footstep: a man's work boot set down slowly onto thick stair carpet, a dull soft natural thump with a faint brush of the sole, no creak, no echo, close and dry", 0.7),
  "SFX-STEP-NAT-C": ("one single cautious footstep: a stiff leg in a leather work boot placed down onto a carpeted step, a quiet natural muffled tap and settle of weight, no creak, no echo, close and dry", 0.7),
+ "SFX-STRAIN-TONY": ("an old man's short closed-mouth grunt of effort and pain through the nose while pushing hard, a tight strained 'mmh', lips sealed, close-mic, quiet room, no words", 1.0),
+ "SFX-SHUFFLE-STAIR": ("a work boot shifting its weight on a carpeted stair without lifting, a faint soft scuff of sole on carpet, close and dry, no creak", 0.6),
+ "TONE-CAR-QUIET": ("inside a parked car with the engine off and the windows closed, a still quiet cabin, a faint low wind outside, no traffic, no cars, no voices, no music", 9.5),
+ "SFX-SEAT-SETTLE": ("a heavy man shifting slightly in a cloth car seat, a soft fabric rustle and a faint seat creak, close inside a quiet car", 0.6),
+ "SFX-SIGH-NOSE-TONY": ("an old man's single slow, quiet, resigned breath out through the nose, mouth closed, close-mic in a quiet car, no words, no groan", 1.6),
  "SFX-BOOT-SLAM": ("a hatchback car boot lid pulled down and slammed shut, a solid muffled thump heard from inside the car, the cabin rocking slightly", 1.5),
 }
 for k in sys.argv[1:] or SFX:
