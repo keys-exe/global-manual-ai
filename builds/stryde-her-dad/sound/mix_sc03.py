@@ -10,7 +10,7 @@ SR = 48000
 H = Path(__file__).parent / "sc03"
 src, out = Path(sys.argv[1]), Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
 RND = sys.argv[sys.argv.index("--round") + 1] if "--round" in sys.argv else "1"
-ROUND2 = RND in ("2", "3", "4", "5", "6")
+ROUND2 = RND in ("2", "3", "4", "5", "6", "7")
 
 def load(f):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -95,7 +95,7 @@ if RND == "5":
     # one plain deep breath in, unstretched and quieter, on his chest rising again at 7.35 s. The cabin very low under it.
     TAKES = {"T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -46, "mus": None, "lufs": -24, "ver": 7, "hits": [
         ("SFX-BREATH-DISAPPOINTED", 0.35, -24, 1.0), ("SFX-BREATH-IN-DEEP", 7.35, -31, 1.0)]}}
-if RND == "6":
+if RND in ("6", "7"):
     # Round 6 (2026-10-03, board Fix on T3): "make the sound like a normal deep breath and make sure it match it when he breath".
     # His breaths re-measured with the camera taken out properly: ~150 points tracked on his face (Lucas-Kanade, checked back and
     # forth), each frame registered to the head by scale + shift (the push-in doubles the size over the clip), the chest points measured
@@ -107,6 +107,10 @@ if RND == "6":
         ("SFX-BREATH-DISAPPOINTED", 5.10, -30, ("seg", 0.0, 1.05)),
         ("SFX-BREATH-DISAPPOINTED", 6.30, -24, ("seg", 1.55, 3.15)),
         ("SFX-BREATH-IN-DEEP", 8.00, -31, 1.0)]}}
+if RND == "7":
+    # Round 7 (2026-10-03, board Fix on T3): "remove the last sound" -> round 6 without its last breath in (8.0 s).
+    TAKES = {"T3": {**TAKES["T3"], "ver": 9, "hits": [h for h in TAKES["T3"]["hits"] if not (h[0] == "SFX-BREATH-IN-DEEP" and h[1] == 8.00)]}} \
+        if "T3" in TAKES and TAKES["T3"].get("ver") == 8 else TAKES
 for take, p in TAKES.items():
     clip = src / p.get("clip", f"{take}_v2.mp4")
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout)
