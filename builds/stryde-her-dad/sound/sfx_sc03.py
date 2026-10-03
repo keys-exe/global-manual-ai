@@ -25,6 +25,7 @@ SFX = {
  "SFX-BREATH-IN-DEEP": ("an old man's single slow deep breath in through the nose, mouth closed, the chest filling, close-mic in a quiet parked car, no words, no voice", 1.6),
  "SFX-BREATH-OUT-LONG": ("an old man's single long, slow, heavy breath out through the nose, mouth closed, tired and resigned, steady to the end, close-mic in a quiet parked car, no words, no groan", 3.4),
  "SFX-BREATH-SOFT": ("an old man's soft, shallow, quiet breath in and then out through the nose, mouth closed, close-mic in a quiet parked car, no words", 2.0),
+ "SFX-BREATH-DISAPPOINTED": ("a disappointed old man's one natural deep breath: a slow deep breath in through the nose, then a long, heavy, disappointed sigh out through the nose, mouth closed, real and unforced, close-mic in a quiet parked car, no words, no groan, no voice", 4.5),
  "SFX-BOOT-SLAM": ("a hatchback car boot lid pulled down and slammed shut, a solid muffled thump heard from inside the car, the cabin rocking slightly", 1.5),
 }
 for k in sys.argv[1:] or SFX:
