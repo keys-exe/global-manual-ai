@@ -1,0 +1,45 @@
+{
+ "beat": "VOICE-C3",
+ "build": "facelove-walmart",
+ "connector": "seedance",
+ "model": "seedance_2_5",
+ "mode": 5,
+ "kind": "voice_master",
+ "prompt": "INGREDIENTS. @image1 is Rosa: face, age and hair only. These references set what things ARE; the prose below sets what HAPPENS, and nothing in them is a shot to cut to. A single frame from a finished 3D animated feature film: a plain medium close-up of Rosa, a woman of sixty-seven, standing against a plain warm terracotta-beige wall, soft daylight from the left, the camera locked, nothing else in frame. Rosa looks just off the lens at someone beside the camera and, starting straight away, says these sentences one after another, clearly and completely, with only an ordinary breath between them: \"Michelle, open the door. I brought wine and I am not leaving. This is the one that changed it for me. It has jojoba, shea, vitamin E.\" She keeps speaking from the first second to the last; no long silences; the mouth moves with every word. Delivery: A Latina American woman of sixty-seven, a warm, husky voice with a laugh close under it and a light Spanish lilt on the vowels, unhurried and certain. Statements fall at the end; never salesy, never theatrical. Level, even and unhurried; conversational volume; no emotion coloured into the words; a person reading a sentence aloud to themselves. Audio is a clean studio voice performance recorded for animation: close, clear and fully acted, with breath, texture and small human sounds in it, never flat and never read out. No room echo, no phone quality, and no music or sound effects anywhere in the clip — dialogue only. Dialogue only: no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack. One speaker only. NEGATIVES: no other people, no second voice, no looking into the lens, no text, no captions, no long pauses, no silent beats, no music, no score, no sound effects, no foley, no background ambience events, no singing, no humming, no background music, no soundtrack.",
+ "duration": 16,
+ "resolution": "720p",
+ "aspect_ratio": "9:16",
+ "start_image": null,
+ "start_approved": true,
+ "ingredients_approved": true,
+ "files": [
+  "voice/C3_face.jpg"
+ ],
+ "media": [
+  "c8a22d1e-6a5b-49f6-9a95-e7d79f4c78c3"
+ ],
+ "audios": [],
+ "generate_audio": true,
+ "dialogue": "Michelle, open the door. I brought wine and I am not leaving. This is the one that changed it for me. It has jojoba, shea, vitamin E.",
+ "script_line": "Michelle, open the door. I brought wine and I am not leaving. This is the one that changed it for me. It has jojoba, shea, vitamin E.",
+ "pace": "unhurried",
+ "subject_motion": "still",
+ "prefer_multi_shots": "false",
+ "generation": 1,
+ "user_go": null,
+ "rack": null,
+ "risks": [
+  {
+   "risk": "long silences — paid dead space",
+   "prevented_by": "duration fitted to the words (master_fit), 'keeps speaking from the first second to the last', no-long-pauses negatives"
+  },
+  {
+   "risk": "emotional colour in the master",
+   "prevented_by": "neutral, informational script sentences only; the neutral delivery clause after VOICE-[CHAR]"
+  },
+  {
+   "risk": "music or a second voice",
+   "prevented_by": "NEG-SOUND twice, one speaker only, no other people"
+  }
+ ]
+}
