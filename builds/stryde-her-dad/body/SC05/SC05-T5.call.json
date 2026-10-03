@@ -19,7 +19,7 @@
  "resolution": "720p",
  "aspect_ratio": "9:16",
  "start_image": null,
- "ingredients_approved": false,
+ "ingredients_approved": true,
  "files": [
   "voice/C3_face.jpg",
   "body/SC05/ingredients/OUT-C3-D4_v1.png",
