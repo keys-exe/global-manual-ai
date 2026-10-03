@@ -18,7 +18,7 @@
   "plates/L-LIVING"
  ],
  "media": [
-  "ea13db15-40ad-48ac-8914-fe585dd3767d",
+  "e41bb60b-dd24-4808-8b8e-5956cbe2dda6",
   "cd1173f1-ffef-4258-90f0-4c5143ea351b",
   "fa121b5f-769e-4246-8b2d-98784c2a4e93"
  ],
@@ -51,7 +51,7 @@
  "subject_motion": "in_place",
  "pace": "one slow placing",
  "prefer_multi_shots": "false",
- "generation": 2,
+ "generation": 1,
  "user_go": null,
  "rack": null,
  "risks": [
@@ -73,9 +73,5 @@
   "faces from sheets, clothes in words"
  ],
  "dialogue": "I am sorry, Michelle. After thirty one years.",
- "script_line": "I am sorry, Michelle. After thirty one years.",
- "fix_note": "Fix 'regenerate use the new reference for michelle' → @image1 is now the confirmed older before sheet (N-MICHELLE v2, job ea13db15); prompt otherwise unchanged",
- "fix_notes_all": [
-  "Fix 'regenerate use the new reference for michelle' → @image1 is now the confirmed older before sheet (N-MICHELLE v2, job ea13db15); prompt otherwise unchanged"
- ]
+ "script_line": "I am sorry, Michelle. After thirty one years."
 }
