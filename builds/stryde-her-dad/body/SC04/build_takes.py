@@ -19,7 +19,7 @@ L = {x["id"]: x["line"] for x in json.load(open(B / "work/lines.json")) if str(x
 
 GP_ID = "a British Indian family doctor of forty-eight, slim and composed, black hair with a few grey threads in a neat low bun, a small dark mole on her left jaw"
 GP_D3 = "a navy fine-knit cardigan over a pale-blue blouse buttoned to the collar, charcoal trousers and black flat shoes — exactly her sheet"
-TONY_D3 = ("a stone-coloured quilted gilet zipped halfway over a blue-and-grey checked flannel shirt, beige chinos down to his shoes so both knees are covered, "
+TONY_D3 = ("a plain navy zip fleece worn zipped halfway over a grey T-shirt, dark jeans down to his shoes so both knees are covered, "
            "and brown leather shoes — exactly his outfit card")
 SHEET_GP = ("is the GP: face, age, hair, build and her work clothes exactly as on this sheet; the sheet's grey backdrop and panels never appear in the clip.")
 PLACE = ("is the place: her consulting room at the surgery — the desk against the wall on the LEFT with her computer screen and keyboard, her office chair at it, "
@@ -32,7 +32,7 @@ START = ROWS["SC04-SH01"]["start_pos"]
 T1_END = START
 T2_END = "Tony in the patient chair at the desk's corner looking down at his right knee, the GP at her desk turned to her screen, typing"
 GO = "chat: \"confirm and proceed\" (2026-10-03) — SC03 confirmed, on to SC04; Tony's D3 outfit card OUT-C1-D3 waits for the user's Confirm"
-NEG_T = ("no work boots, no sweatshirt, no fleece, no jeans, no work trousers, no shorts, no bare knees, no knee support, no olive or charcoal top, no stethoscope, no lanyard, no badge, "
+NEG_T = ("no work boots, no sweatshirt, no work trousers, no shorts, no bare knees, no knee support, no olive or charcoal top, no stethoscope, no lanyard, no badge, "
          "no white coat, no third person, no patient on the couch, no nurse")
 SHOTS = []
 
@@ -41,7 +41,7 @@ SHOTS.append(dict(beat="SC04-T1", kind="multi", covers=["SC04-SH01", "SC04-SH02"
     title="Scene 4 · T1 — \"For 64 you’re in decent nick.\" · \"I walk like I’m 85.\" · \"It’s very normal.\" (SH01–SH03)",
     prompt=" ".join([
         manifest([("@image1", SHEET_GP), ("@image2", FACE("Tony", "his")), ("@image3", PLACE),
-                  ("@image4", CARD("Tony", "the stone quilted gilet over a checked flannel shirt, beige chinos, brown leather shoes")),
+                  ("@image4", CARD("Tony", "the navy zip fleece over a grey T-shirt, dark jeans, brown leather shoes")),
                   ("@audio1", VOICE("the GP")), ("@audio2", VOICE("Tony"))]),
         SERIES, LOOK, INHERIT, DAY,
         f"The GP is {GP_ID}, in {GP_D3}. Tony is {TONY_ID}, in {TONY_D3}.",
@@ -76,7 +76,7 @@ SHOTS.append(dict(beat="SC04-T2", kind="multi", covers=["SC04-SH04", "SC04-SH05"
     title="Scene 4 · T2 — \"It’s not normal.\" · \"Keep moving… paracetamol.\" · Tony looks at his knee (SH04–SH06)",
     prompt=" ".join([
         manifest([("@image1", SHEET_GP), ("@image2", FACE("Tony", "his")), ("@image3", PLACE),
-                  ("@image4", CARD("Tony", "the stone quilted gilet over a checked flannel shirt, beige chinos, brown leather shoes")),
+                  ("@image4", CARD("Tony", "the navy zip fleece over a grey T-shirt, dark jeans, brown leather shoes")),
                   ("@audio1", VOICE("the GP")), ("@audio2", VOICE("Tony"))]),
         SERIES, LOOK, INHERIT, DAY.replace("Tony has come in about his knee.", f"Tony has come in about his knee; the GP has just told him: \"{L['L020']}\""),
         f"The GP is {GP_ID}, in {GP_D3}. Tony is {TONY_ID}, in {TONY_D3}.",
@@ -106,7 +106,7 @@ SHOTS.append(dict(beat="SC04-T2", kind="multi", covers=["SC04-SH04", "SC04-SH05"
            {"risk": "someone speaks in the silent wide", "prevented_by": "'nobody speaks' in SHOT 3, no-talking-in-the-wide negative"},
            {"risk": "the sheet clothes return on Tony", "prevented_by": "face crop + D3 outfit card, clothing negatives (HT26)"}]))
 
-FILES = {"C5": "cast/C5-GP_v1.png", "C1-FACE": "voice/C1_face.jpg", "L-GP": "plates/L-GP_v1.png", "OUT-C1-D3": "body/SC04/ingredients/OUT-C1-D3_v3.png"}
+FILES = {"C5": "cast/C5-GP_v1.png", "C1-FACE": "voice/C1_face.jpg", "L-GP": "plates/L-GP_v1.png", "OUT-C1-D3": "body/SC04/ingredients/OUT-C1-D3_v2.png"}
 AUDIO = {"C1": "voice/C1_voice_master.mp3", "C5": "voice/C5_voice_master.mp3"}
 
 if __name__ == "__main__":

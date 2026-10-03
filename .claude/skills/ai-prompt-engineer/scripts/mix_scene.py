@@ -7,15 +7,21 @@ Usage:
 SCENE.json:
   {"scene": "SC-03",
    "picture": "SC-03.cut.mp4",            # the scene's picture-locked cut (whole shots, §24L)
-   "dialogue": "SC-03.dialogue.wav",      # the scene's dialogue, isolated (Voice Isolator), aligned to the cut
+   "dialogue": "SC-03.dialogue.wav",      # the scene's dialogue or narration / VO, aligned to the cut (optional from V7.101.0:
+                                           #   a film whose dialogue is in the clips' own sound leaves it out)
+   "clip_sound": true,                     # V7.101.0: keep the picture's own sound — the Seedance clips' effects, room and
+                                           #   on-screen dialogue (music taken out by unmusic.py) — at clip_sound_db
    "room_tone": "LOC-KITCHEN.tone.mp3",   # the location's looping room tone (§24M) — looped under the whole scene
    "music": "SC-03.music.mp3",            # the scene's one cue, generated at the scene's length (or null)
    "music_in": 0.0,                        # where the cue starts in the scene (s)
    "sfx": [{"id": "SFX-CUP-DOWN", "file": "sfx/SFX-CUP-DOWN.mp3", "at": 3.42, "gain_db": -6}],
-   "levels": {"room_tone_db": -30, "music_db": -18, "duck_db": 8}}
+   "levels": {"room_tone_db": -30, "music_db": -18, "duck_db": 8, "clip_sound_db": 0}}
+                                           # clip_sound_db: 0 when the clip carries the dialogue; about -12 under a VO /
+                                           #   narration in "dialogue" (unverified — set on the first build)
 
 Renders the scene with:
   - dialogue at 0 dB;
+  - the clips' own sound at clip_sound_db when clip_sound is true (§24M part 1, V7.101.0 — every Seedance clip has sound);
   - the room tone looped under the full scene at room_tone_db — never restarting at a cut;
   - the music at music_db, ducked by about duck_db whenever dialogue plays (sidechain), faded in/out 0.5s;
   - every SFX at its time and gain;
@@ -45,16 +51,30 @@ def main():
     root = Path(a.scene).parent
     sc = json.loads(Path(a.scene).read_text())
     R = lambda p: str((root / p) if not Path(p).is_absolute() else p)
-    lv = {"room_tone_db": -30, "music_db": -18, "duck_db": 8, **sc.get("levels", {})}
+    lv = {"room_tone_db": -30, "music_db": -18, "duck_db": 8, "clip_sound_db": 0, **sc.get("levels", {})}
     pic = R(sc["picture"])
     T = duration(pic)
     out = a.out or str(root / f"{sc['scene']}.mix.mp4")
 
-    inputs = ["-i", pic, "-i", R(sc["dialogue"]), "-stream_loop", "-1", "-i", R(sc["room_tone"])]
-    n = 3
-    filt = [f"[1:a]aresample=48000,apad,atrim=0:{T},asplit=2[dlg][key]",
-            f"[2:a]aresample=48000,atrim=0:{T},volume={lv['room_tone_db']}dB[tone]"]
-    mix = ["[dlg]", "[tone]"]
+    if not sc.get("dialogue") and not sc.get("clip_sound"):
+        print(json.dumps({"status": "FAIL", "error": "no voice source: give dialogue, clip_sound, or both"}, indent=2)); sys.exit(2)
+    inputs, filt, mix, n = ["-i", pic], [], [], 1
+    keys = []
+    if sc.get("dialogue"):
+        inputs += ["-i", R(sc["dialogue"])]
+        filt.append(f"[{n}:a]aresample=48000,apad,atrim=0:{T},asplit=2[dlg][kd]")
+        mix.append("[dlg]"); keys.append("[kd]"); n += 1
+    if sc.get("clip_sound"):
+        # the picture's own sound: the Seedance clips' effects, room and on-screen dialogue (V7.101.0)
+        filt.append(f"[0:a]aresample=48000,apad,atrim=0:{T},volume={lv['clip_sound_db']}dB,asplit=2[clip][kc]")
+        mix.append("[clip]")
+        if sc.get("dialogue"): filt.append("[kc]anullsink")
+        else: keys.append("[kc]")
+    inputs += ["-stream_loop", "-1", "-i", R(sc["room_tone"])] if sc.get("room_tone") else []
+    if sc.get("room_tone"):
+        filt.append(f"[{n}:a]aresample=48000,atrim=0:{T},volume={lv['room_tone_db']}dB[tone]")
+        mix.append("[tone]"); n += 1
+    filt.append(f"{keys[0]}acopy[key]")
     if sc.get("music"):
         inputs += ["-i", R(sc["music"])]
         mi = sc.get("music_in", 0.0)

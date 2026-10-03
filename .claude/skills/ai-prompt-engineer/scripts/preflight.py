@@ -31,7 +31,8 @@ CALL.json describes one paid video call exactly as it will be sent:
     "pinned": false, "end_image": null, "end_approved": false,
     "files": ["..."],                  # Seedance ingredients (images + videos + audios), each named in the manifest
     "audios": ["..."],                 # voice masters (dialogue) — voice only, never a music track (§24M)
-    "generate_audio": true,            # Seedance: false on every clip with no dialogue — no BGM (§24M, V7.73.3)
+    "generate_audio": true,            # Seedance / Wan: true on every clip, dialogue or not — its sound effects are kept (§24M, V7.101.0);
+                                       # builds that existed before V7.101.0 (PRE_SOUND, or "pre_sound": true) keep false on clips with no dialogue
     "dialogue": "the spoken words, verbatim from the script",
     "script_line": "the same line as script_lines.py extracted it",
     "pace": "unhurried" | "brisk",
@@ -100,7 +101,7 @@ SIG = {
     "MULTI-FILM": "within a single take",
     "MULTI-MOVE": "picks up the movement exactly where the last one left it",
     "TAKE-FILM": "One continuous shot, never cut and never restarted",
-    "NEG-SOUND": "no music, no score, no sound effects",
+    "NEG-SOUND": "no music, no score",   # V7.101.0 dropped "no sound effects…"; older prompts still match
     "SERIES-LOOK": "The look of a high-end live-action drama series",
 }
 MIC_WORDS = re.compile(r"\b(?:boom|windshield|dead[- ]cat|(?<!phone-)(?<!phone )microphones?|mics?)\b", re.I)
@@ -139,6 +140,9 @@ ANAT_SCOPE_SAY = {"macro": "the site so close it fills the frame", "close": "one
                   "whole": "the whole figure, the joint lit inside it"}
 # Builds that existed at V7.96.0 keep their film plans: no §24P marks or motion required on their calls (a system update never
 # touches existing builds). Recognised by the call's "build" field or its path, like PRE_TAKES.
+# builds that existed at V7.101.0 (every Seedance clip with sound): they keep silent no-dialogue clips unless their team asks
+PRE_SOUND = {"facelove-my-mother", "facelove-paint-wall", "facelove-returning-it", "facelove-walmart", "identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs", "stryde-71-stairs-pixar-song", "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-her-dad", "stryde-identity", "stryde-lost-moments", "stryde-not-your-cartilage", "stryde-regrets", "stryde-the-impression", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad", "stryde-what-changed", "demo-ad"}
+NO_SFX = re.compile(r"\bno (?:sound effects|foley|ambien(?:ce|t)(?: sound| events)?|action sounds)\b|\bdialogue only\b|\bcompletely silent\b", re.I)
 PRE_DRAMA = {"facelove-my-mother", "facelove-paint-wall", "facelove-returning-it", "identity-callout-v2", "intake-1", "sha0071", "six-weeks-ago", "stryde-71-stairs", "stryde-71-stairs-pixar-song", "stryde-cascade", "stryde-failed-alternatives", "stryde-half-my-age", "stryde-her-dad", "stryde-identity", "stryde-lost-moments", "stryde-not-your-cartilage", "stryde-regrets", "stryde-the-impression", "stryde-thirty-years", "stryde-three-regrets", "stryde-too-bad", "stryde-what-changed", "demo-ad"}
 # Builds started before V7.88.0 keep their shot-by-shot plan: no take is required on their calls (a system update never
 # touches existing builds; re-cutting one into takes is its team's call). Recognised by the call's "build" field or its path.
@@ -546,6 +550,9 @@ def compact_checks(c, p, conn, d, check):
     check("LOOK ≤ 600 characters (V7.97.0)", len(look) <= 600, f"{len(look)} chars")
     snd = p[p.find("SOUND:"):p.find("KEEP:")] if "SOUND:" in p and "KEEP:" in p else ""
     check("SOUND says no music (V7.97.0, §24M)", bool(re.search(r"\bno (?:music|BGM)\b", snd, re.I)), snd[:120])
+    if not (c.get("pre_sound") or c.get("legacy_build")):
+        check("SOUND names the on-screen sounds and the room (V7.101.0, §24M)",
+              bool(re.search(r"\bsounds?\b[^.\n]{0,20}:\s*\S|\bsounds? of\b", snd.replace("SOUND:", "", 1), re.I)), snd[:120])
     if not c.get("dialogue"):
         check("SOUND says no dialogue when nobody speaks (V7.97.0)", bool(re.search(r"\bno dialogue\b|nobody speaks", snd, re.I)), snd[:120])
     else:
@@ -641,7 +648,7 @@ def film_shot(c, p, conn, mode, kind, film, check):
         check("INHERIT string", SIG["INHERIT-FILM" if mode == 4 else "INHERIT-ANIM"] in p)
         check("NEG-SCENECUT", SIG["NEG-SCENECUT"] in p)
         check("NEG-FILM / NEG-ANIMFILM", SIG["NEG-FILM" if mode == 4 else "NEG-ANIMFILM"] in p)
-        check("NEG-SOUND (clips carry dialogue only, §24M)", SIG["NEG-SOUND"] in p)
+        check("NEG-SOUND (no music in the clip, §24M)", SIG["NEG-SOUND"] in p)
         if kind in ("dialogue", "listener", "multi", "take", "broll") and kind != "insert":
             check("STATE-CARRY", SIG["STATE-CARRY"] in p)
             check("NEG-DRAMA", SIG["NEG-DRAMA"] in p)
@@ -729,8 +736,15 @@ def run(c):
         mus = sorted(set(m.group(0).lower() for m in MUSIC.finditer(pos)))
         check("no music asked for in the prompt (§24M)", not mus, ",".join(mus))
         talk = bool(c.get("dialogue") or c.get("audios"))
-        check("no dialogue → generate_audio false (§24M)", talk or c.get("generate_audio") is False,
-              "a clip with no dialogue is generated silent (kie.py seedance --no-audio)")
+        if c.get("pre_sound") or c.get("legacy_build"):
+            check("no dialogue → generate_audio false (§24M, builds before V7.101.0)", talk or c.get("generate_audio") is False,
+                  "a clip with no dialogue is generated silent (kie.py seedance --no-audio)")
+        elif kind not in ("voice_master", "image"):
+            # V7.101.0, user 2026-10-03: "All the seedance should have sound even if its a VO cause that sound effects is needed"
+            check("generate_audio true — every Seedance clip has its sound, VO builds too (§24M, V7.101.0)", c.get("generate_audio") is True,
+                  "never --no-audio; the clip's sound effects are kept in the edit")
+            nosfx = sorted(set(m.group(0).lower() for m in NO_SFX.finditer(p)))
+            check("the prompt never asks for no sound effects / dialogue only (§24M, V7.101.0)", not nosfx, ",".join(nosfx))
         bad = [a for a in (c.get("audios") or []) if MUSIC_FILE.search(str(a))]
         check("audio references are voice only, never music (§24M)", not bad, ",".join(map(str, bad)))
 
@@ -795,6 +809,8 @@ def main():
         return parts[parts.index("builds") + 1] if "builds" in parts[:-1] else None
     if c.get("build") in PRE_TAKES or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_TAKES:
         c.setdefault("legacy_build", True)
+    if c.get("build") in PRE_SOUND or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_SOUND:
+        c.setdefault("pre_sound", True)
     if c.get("build") in PRE_DRAMA or {build_of(Path(a.call).resolve()), build_of(Path.cwd())} & PRE_DRAMA:
         c.setdefault("pre_drama", True)
     res = run(c)
