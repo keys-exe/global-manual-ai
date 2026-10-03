@@ -9,7 +9,8 @@ from pathlib import Path
 SR = 48000
 H = Path(__file__).parent / "sc03"
 src, out = Path(sys.argv[1]), Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
-ROUND2 = "--round" in sys.argv and sys.argv[sys.argv.index("--round") + 1] == "2"
+RND = sys.argv[sys.argv.index("--round") + 1] if "--round" in sys.argv else "1"
+ROUND2 = RND in ("2", "3")
 
 def load(f):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(f), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
@@ -29,7 +30,7 @@ def loop(x, n):
     return np.tile(x, n // len(x) + 1)[:n]
 
 S = {k: load(H / f"{k}_v1.mp3") for k in ["TONE-BEDROOM", "SFX-SLEEVES-RUMMAGE", "SFX-DRAWER-SHUT", "SFX-EXHALE-TONY", "TONE-HALL",
-     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
+     "SFX-STAIR-STEP", "SFX-STEP-NAT-A", "SFX-STEP-NAT-B", "SFX-STEP-NAT-C", "SFX-STRAIN-TONY", "SFX-SHUFFLE-STAIR", "TONE-CAR-QUIET", "SFX-SEAT-SETTLE", "SFX-SIGH-NOSE-TONY", "SFX-HANDRAIL-GRIP", "SFX-BREATH-STRAIN", "TONE-CAR-INT", "SFX-BAGS-BOOT", "SFX-BOOT-SLAM"]}
 MUS = load(src / "MUS_v1.mp4")
 
 # (sound, start s, level dB RMS, rate)  — levels: tone -42, bed -34, sounds -18 to -28
@@ -57,11 +58,29 @@ if ROUND2:
          ("SFX-STEP-NAT-A", 3.85, -23, 0.97), ("SFX-STEP-NAT-C", 4.35, -24, 1.02), ("SFX-STEP-NAT-B", 5.00, -23, 0.98),
          ("SFX-STEP-NAT-A", 5.80, -24, 1.03), ("SFX-STEP-NAT-C", 6.50, -23, 0.97), ("SFX-STEP-NAT-B", 7.30, -24, 1.0)]]},
     }
+if RND == "3":
+    # Round 3 (2026-10-03, board Fixes): every sound timed off the picture by measurement, not by eye at 2 fps.
+    # T1 "add a sound based on his face and make sure it match": his face strains from 3.1 s (brow knotted, eyes squeezed), hardest
+    #   3.4-3.6 s, lips closed -> a closed-mouth grunt of effort through the nose over the strain, ending before the drawer's thud at 3.75 s.
+    # T2 "the sound did not match and make it match of his foot": boot landings from frame-difference motion in the boot area
+    #   (shot 1 stabilised against the stairs): 0.29, 1.42 s; a weight shift without a lift at 2.05 s; cut at 3.54 s; 4.52, 5.52 (the back foot),
+    #   6.76 s; nothing moves after 7.0 s.
+    # T3 "add a sound" (v4 picture, alone in the car): a quiet cabin, a seat creak on his settle at 0.85 s, one slow breath out through the
+    #   nose as his eyes drop at 3.25 s (back up by 4.75 s).
+    TAKES = {
+     "T1": {"tone": "TONE-BEDROOM", "mus": (0.0, 5.04), "lufs": -16, "ver": 5, "hits": TAKES["T1"]["hits"] + [("SFX-STRAIN-TONY", 3.12, -24, 0.9)]},
+     "T2": {"tone": None, "mus": None, "lufs": -22, "ver": 5, "hits": [
+         (k, t - (0.15 if k.endswith("B") else 0.05 if k == "SFX-SHUFFLE-STAIR" else 0.0), g, r) for k, t, g, r in [
+         ("SFX-STEP-NAT-A", 0.29, -24, 1.0), ("SFX-STEP-NAT-C", 1.42, -24, 1.0), ("SFX-SHUFFLE-STAIR", 2.05, -30, 1.0),
+         ("SFX-STEP-NAT-A", 4.52, -23, 1.03), ("SFX-STEP-NAT-C", 5.52, -27, 1.03), ("SFX-STEP-NAT-A", 6.76, -23, 0.97)]]},
+     "T3": {"clip": "T3_v4.mp4", "tone": "TONE-CAR-QUIET", "tone_db": -38, "mus": None, "lufs": -24, "ver": 5, "hits": [
+         ("SFX-SEAT-SETTLE", 0.85, -32, 1.0), ("SFX-SIGH-NOSE-TONY", 3.25, -28, 1.0)]},
+    }
 for take, p in TAKES.items():
-    clip = src / f"{take}_v2.mp4"
+    clip = src / p.get("clip", f"{take}_v2.mp4")
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(clip)], capture_output=True, text=True).stdout)
     n = int(dur * SR); mix = np.zeros(n, np.float32)
-    if p.get("tone"): mix += fade(at(loop(S[p["tone"]], n), -42), 0.3, 0.3)
+    if p.get("tone"): mix += fade(at(loop(S[p["tone"]], n), p.get("tone_db", -42)), 0.3, 0.3)
     if p.get("mus"):
         a, b = p["mus"]; m = MUS[int(a * SR):int(a * SR) + n]; m = np.pad(m, (0, n - len(m)))
         mix += fade(at(m, -34), 0.05, 0.4)
