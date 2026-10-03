@@ -22,6 +22,9 @@ SFX = {
  "TONE-CAR-QUIET": ("inside a parked car with the engine off and the windows closed, a still quiet cabin, a faint low wind outside, no traffic, no cars, no voices, no music", 9.5),
  "SFX-SEAT-SETTLE": ("a heavy man shifting slightly in a cloth car seat, a soft fabric rustle and a faint seat creak, close inside a quiet car", 0.6),
  "SFX-SIGH-NOSE-TONY": ("an old man's single slow, quiet, resigned breath out through the nose, mouth closed, close-mic in a quiet car, no words, no groan", 1.6),
+ "SFX-BREATH-IN-DEEP": ("an old man's single slow deep breath in through the nose, mouth closed, the chest filling, close-mic in a quiet parked car, no words, no voice", 1.6),
+ "SFX-BREATH-OUT-LONG": ("an old man's single long, slow, heavy breath out through the nose, mouth closed, tired and resigned, steady to the end, close-mic in a quiet parked car, no words, no groan", 3.4),
+ "SFX-BREATH-SOFT": ("an old man's soft, shallow, quiet breath in and then out through the nose, mouth closed, close-mic in a quiet parked car, no words", 2.0),
  "SFX-BOOT-SLAM": ("a hatchback car boot lid pulled down and slammed shut, a solid muffled thump heard from inside the car, the cabin rocking slightly", 1.5),
 }
 for k in sys.argv[1:] or SFX:
