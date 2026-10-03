@@ -485,13 +485,13 @@ def film_shot(c, p, conn, mode, kind, film, check):
     if kind in ("take", "multi"):
         cov = c.get("covers") or []
         # V7.93.0: rows past four shots join the shot before (`joins` = the rows played inside the shot before them),
-        # so a take counts SHOTS, never rows; a conversation take holds up to 30 s (Seedance's longest call)
+        # so a take counts SHOTS, never rows; a take holds up to 30 s (Seedance's longest call, V7.98.0)
         nshots = len(cov) - len(c.get("joins") or [])
         check("take ≤ 4 shots — rows past four join the shot before (§24K part 5, V7.93.0)", 1 <= nshots <= 4, f"{nshots} shots, {len(cov)} rows")
         check("take on Seedance", conn == "seedance", conn)
         d = c.get("duration")
-        cap = 30 if c.get("conversation") else 15
-        check(f"take ≤ {cap}s (§24K part 5{', a conversation' if cap == 30 else ''})", isinstance(d, (int, float)) and d <= cap, str(d))
+        # V7.98.0 (L66): every scene is one take up to 30 s — Seedance's longest call — action and conversation alike
+        check("take ≤ 30s — one scene, one clip (§24K part 5, V7.98.0)", isinstance(d, (int, float)) and d <= 30, str(d))
         if c.get("vo_seconds") is not None:  # V7.93.0: a narrated film's take is as long as the VO it carries (takes.py --vo)
             check("take as long as its VO + holds (takes.py --vo, §24K part 5A)", isinstance(d, (int, float)) and d + 1e-6 >= float(c["vo_seconds"]),
                   f"duration {d} < VO {c['vo_seconds']}")

@@ -13,8 +13,15 @@ count never splits it (rows past four shots join the shot before: `joins: true`)
 --max-talk-seconds (30, Seedance's longest call) so the people never move between calls; `length` is time only. With a
 narration master (--vo / --vo-words) every take's duration is measured from the VO it carries, never a default.
 
+V7.98.0 (user 2026-10-03 — "i dont want clips that is bit by bit, i want it all in one go if that is just one scene cause
+the position of them if one clip only it can be consistent… specially the location"; LESSONS L66): every scene — action
+or conversation — is ONE take up to 30 s (Seedance's longest call); the 15 s action ceiling is retired. `insert` is no
+longer a split reason: a close-up is a shot inside the take. A scene splits only past 30 s (`length`), for a cutaway to
+another place (`intercut`), a Kling pinned shot (`pinned`) or the user's ask (`user`). --legacy keeps the pre-V7.98 rules
+(15 s action takes, `insert`) for builds that planned under them.
+
 Usage:
-  takes.py ACT_MAP.json [--suggest] [--write OUT.json] [--md takes.md] [--json] [--max-shots 4] [--max-seconds 15]
+  takes.py ACT_MAP.json [--suggest] [--write OUT.json] [--md takes.md] [--json] [--max-shots 4] [--max-seconds 30] [--legacy]
            [--max-talk-seconds 30] [--vo MASTER.mp3 [--script LINES.txt] | --vo-words WORDS.json] [--model medium.en]
 
 ACT_MAP.json: the step-5 act map — a list of rows, or {"rows": [...]}. Film rows (type SHOT / INSERT, Modes 4
@@ -28,7 +35,7 @@ and 5) carry, on top of their usual fields:
                                      in the same place starts from it
   "split": "<reason>"                first row of a take that follows a connected row (same scene, same place,
                                      same story day): why it is not in the previous take — one of
-                                     length · pinned · insert · intercut · user  (location, a scene change and
+                                     length · pinned · intercut · user  (location, a scene change and
                                      a story-day change split by themselves)
   "pinned": true                     a pinned shot (product turn, exact end frame) — Kling first-and-last frame,
                                      always its own take
@@ -47,7 +54,7 @@ Checks (any FAIL -> exit 1):
   TAKE   every film row names its take
   JOIN   a connected row starts a new take with no split reason — merge it into the take before
   SPLIT  the reason is unknown, or does not hold: `length` only when the two takes' running time together is over
-         the ceiling (15 s; a conversation 30 s) — never for the row count (V7.93.0, L51/L61); `length` needs
+         the ceiling (30 s, V7.98.0) — never for the row count (V7.93.0, L51/L61, L66); `length` needs
          durations; pinned on a row that is not pinned
   TAKE+  a take's rows are consecutive, in one scene, one place and one story day; at most --max-shots SHOTS
          (rows without joins) and, where rows carry `duration`, at most --max-seconds (a conversation take
@@ -70,12 +77,12 @@ from pathlib import Path
 
 FILM_TYPES = {"SHOT", "INSERT"}
 REASONS = {
-    "length": "the connected run's running time is over one take's ceiling (15 s; a conversation 30 s) — never the row count",
-    "pinned": "a pinned shot — Kling first-and-last frame (§24K part 1)",
-    "insert": "a product or label close-up the take's camera cannot reach crisply — its own info card",
+    "length": "the scene's running time is over one take's ceiling (30 s, Seedance's longest call) — never the row count",
+    "pinned": "a pinned shot — Kling first-and-last frame (§24K part 1), never a Seedance row",
     "intercut": "the scene cuts away to another place and back (a phone call, a memory)",
     "user": "the user asked for this shot on its own",
 }
+LEGACY_REASONS = {"insert": "a product or label close-up the take's camera cannot reach crisply (retired V7.98.0: a shot inside the take)"}
 AUTO = ("scene", "location", "story day")
 
 
@@ -139,7 +146,7 @@ def dur(r):
     return float(r.get("duration") or 0)
 
 
-def suggest(rows, max_shots, max_seconds=15, max_talk=30):
+def suggest(rows, max_shots, max_seconds=30, max_talk=30):
     takes = []
     for run in runs(rows):
         cap = ceiling(run, max_seconds, max_talk)
@@ -180,7 +187,7 @@ def suggest(rows, max_shots, max_seconds=15, max_talk=30):
     return takes
 
 
-def check(rows, max_shots, max_seconds=15, max_talk=30):
+def check(rows, max_shots, max_seconds=30, max_talk=30, legacy=False):
     out = []
 
     def fail(kind, beats, detail):
@@ -235,7 +242,10 @@ def check(rows, max_shots, max_seconds=15, max_talk=30):
                 fail("JOIN", [a.get("beat"), b.get("beat")],
                      f"{b.get('beat')} carries straight on from {a.get('beat')} (same scene, place and day) but starts a new take — "
                      f"put it in take {a['take']}, or name the split reason ({' · '.join(REASONS)})")
-            elif sp not in REASONS:
+            elif sp == "insert" and not legacy:
+                fail("SPLIT", [b.get("beat")], "split \"insert\" is retired (V7.98.0, L66): a close-up is a shot inside the scene's "
+                                               "take, its info card one of the take's ingredients — merge it")
+            elif sp not in REASONS and not (legacy and sp in LEGACY_REASONS):
                 fail("SPLIT", [b.get("beat")], f"split {sp!r} is not a reason — one of {' · '.join(REASONS)}")
             elif sp == "length":
                 both = takes[a["take"]] + takes[b["take"]]
@@ -348,13 +358,16 @@ def main():
     ap.add_argument("--md")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--max-shots", type=int, default=4)
-    ap.add_argument("--max-seconds", type=float, default=15)
+    ap.add_argument("--max-seconds", type=float, default=None, help="a take's ceiling: 30 s (V7.98.0, every scene); --legacy 15")
+    ap.add_argument("--legacy", action="store_true", help="a build planned before V7.98.0: 15 s action takes, split \"insert\" accepted")
     ap.add_argument("--max-talk-seconds", type=float, default=30, help="a conversation take's ceiling (V7.93.0): Seedance's longest call")
     ap.add_argument("--vo", help="the narration master — each take's duration is measured from the VO it carries (V7.93.0)")
     ap.add_argument("--vo-words", help="word timings JSON instead of --vo: [[start, end, word], ...]")
     ap.add_argument("--script", help="with --vo: the verbatim script lines (script_lines.py), aligned onto the transcript")
     ap.add_argument("--model", default="medium.en")
     a = ap.parse_args()
+    if a.max_seconds is None:
+        a.max_seconds = 15.0 if a.legacy else 30.0
     data = json.loads(Path(a.plan).read_text())
     rows_all = data if isinstance(data, list) else data.get("rows", [])
     rows = film_rows(rows_all)
@@ -386,10 +399,10 @@ def main():
             print(f"  {x['take']:10} {x['duration']:>3}s  (VO {x['vo_s']}s + holds {x['hold_s']}s){'  conversation' if x['conversation'] else ''}")
     if a.write:
         Path(a.write).write_text(json.dumps(data, indent=1, ensure_ascii=False))
-    out, takes = check(rows, a.max_shots, a.max_seconds, a.max_talk_seconds)
+    out, takes = check(rows, a.max_shots, a.max_seconds, a.max_talk_seconds, a.legacy)
     out = vo_fails + out
     if a.md:
-        md = ["### Takes", "", "One scene in one place is one take — one Seedance call (§24K part 5, V7.93.0); "
+        md = ["### Takes", "", "One scene in one place is one take — one Seedance call up to 30 s (§24K part 5, V7.98.0); "
               "a row marked + plays inside the shot before. "
               f"{len(rows)} rows in {len(takes)} takes.", "",
               "| Take | Kind | Rows | Length | Starts | Ends | Split |", "|---|---|---|---|---|---|---|"]
