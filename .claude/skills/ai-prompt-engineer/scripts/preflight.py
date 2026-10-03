@@ -409,6 +409,21 @@ SIZE_W = re.compile(r"\b(?:extreme wide|wide|full|medium(?: wide| close-up)?|MCU
 MOVE_W = re.compile(r"\b(?:locked|tripod|static|push-in|push in|pulls? back|pull-back|arc(?:s|ing)?|crane|pedestal|slider|shoulder|handheld|follows?|stabiliser|tracks?|tracking|dolly(?: zoom)?|pan|tilt)\b", re.I)
 
 
+SHOT_MAX = 5   # V7.99.0: feature-drama coverage — no shot inside a take runs past 5 s (unless the user asked for a oner)
+SIZE_GROUP = [("wide", r"extreme wide|wide|WS|establishing|full"), ("medium", r"medium wide|medium(?! close)|MS|two-shot|over-the-shoulder|OTS"),
+              ("close", r"medium close-up|MCU|close-up|CU"), ("extreme close", r"ECU|extreme close-up|insert|macro")]
+
+
+def _size(line):
+    """The size group a timeline line names first (wide · medium · close · extreme close), or None."""
+    best = None
+    for name, rx in SIZE_GROUP:
+        m = re.search(r"\b(?:" + rx + r")\b", line, re.I)
+        if m and (best is None or m.start() < best[0]):
+            best = (m.start(), name)
+    return best[1] if best else None
+
+
 def is_compact(c):
     """Seedance and Wan calls of builds started from V7.97.0 (not PRE_DRAMA, not legacy) use the short vendor format."""
     return str(c.get("connector", "")).lower() in ("seedance", "wan") and not c.get("legacy_build") and not c.get("pre_drama") \
@@ -433,8 +448,19 @@ def compact_checks(c, p, conn, d, check):
           f"{tcs} for {d}s" if tcs else "no [0–Xs] timecodes")
     short = [f"{a:g}–{b:g}" for a, b in tcs if b - a < 2]
     check("every shot ≥ 2 s (V7.97.0)", not short, ", ".join(short))
-    check("≤ 4 shots in a take (V7.97.0, §24K part 5)", 1 <= len(tcs) <= 4, f"{len(tcs)} shots")
+    # V7.99.0 (user 2026-10-03 — "dont use little shots in side that scene cause staying in one shot is boring and that is not
+    # the holywood style"; L67): the scene is one clip, covered like a feature scene — a new shot every 2–5 s, the size changing
     lines = [ln for ln in tl.split("\n") if TC.search(ln)]
+    if not c.get("oner"):  # oner: the user asked for this scene held in one uncut shot
+        long_ = [f"{a:g}–{b:g}" for a, b in tcs if b - a > SHOT_MAX + 1e-6]
+        check(f"a new shot every 2–{SHOT_MAX} s — the scene covered, never held in one shot (§24K part 5, V7.99.0)", not long_,
+              (", ".join(long_) + " — cut it into more shots: a new size or angle on the action or the look") if long_ else "")
+        sizes = [_size(ln) for ln in lines]
+        run3 = [lines[i][:12] for i in range(len(sizes) - 2) if sizes[i] and sizes[i] == sizes[i + 1] == sizes[i + 2]]
+        check("never three shots in a row at one size (V7.99.0)", not run3, ", ".join(run3))
+        need = 1 if len(lines) < 3 else (2 if len(lines) < 5 else 3)
+        check(f"coverage: ≥ {need} shot sizes in {len(lines)} shots — wide, medium, close (V7.99.0, §24P part 3)",
+              len({x for x in sizes if x}) >= need, ", ".join(x or "?" for x in sizes))
     nosize = [TC.search(ln).group(0) for ln in lines if not SIZE_W.search(ln)]
     nomove = [TC.search(ln).group(0) for ln in lines if not MOVE_W.search(ln)]
     check("every shot names its size (V7.97.0)", not nosize, ", ".join(nosize))
@@ -487,7 +513,8 @@ def film_shot(c, p, conn, mode, kind, film, check):
         # V7.93.0: rows past four shots join the shot before (`joins` = the rows played inside the shot before them),
         # so a take counts SHOTS, never rows; a take holds up to 30 s (Seedance's longest call, V7.98.0)
         nshots = len(cov) - len(c.get("joins") or [])
-        check("take ≤ 4 shots — rows past four join the shot before (§24K part 5, V7.93.0)", 1 <= nshots <= 4, f"{nshots} shots, {len(cov)} rows")
+        if not is_compact(c):  # V7.99.0: new builds cover the scene in a shot every 2–5 s (compact_checks), no four-shot cap
+            check("take ≤ 4 shots — rows past four join the shot before (§24K part 5, V7.93.0)", 1 <= nshots <= 4, f"{nshots} shots, {len(cov)} rows")
         check("take on Seedance", conn == "seedance", conn)
         d = c.get("duration")
         # V7.98.0 (L66): every scene is one take up to 30 s — Seedance's longest call — action and conversation alike
@@ -509,7 +536,12 @@ def film_shot(c, p, conn, mode, kind, film, check):
     if kind == "take":
         if not compact:
             check("TAKE-FILM", SIG["TAKE-FILM"] in p)
-        check("one-take covers ≤ 3 shots", len(c.get("covers") or []) - len(c.get("joins") or []) <= 3, str(len(c.get("covers") or [])))
+        if compact:  # V7.99.0: one uncut shot only up to 5 s, or a oner the user asked for
+            d_ = c.get("duration")
+            check(f"one-take ≤ {SHOT_MAX} s unless the user asked for a oner (V7.99.0)", bool(c.get("oner")) or (isinstance(d_, (int, float)) and d_ <= SHOT_MAX),
+                  f"{d_}s — cover it as a multi take, a new shot every 2–{SHOT_MAX} s")
+        else:
+            check("one-take covers ≤ 3 shots", len(c.get("covers") or []) - len(c.get("joins") or []) <= 3, str(len(c.get("covers") or [])))
     if kind == "multi" and sm != "still" and not compact:
         check("moving MULTI-SHOT carries the action across the cut (MULTI-FILM MOVE)", SIG["MULTI-MOVE"] in p, f"subject {sm}")
 
