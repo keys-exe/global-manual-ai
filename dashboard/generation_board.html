@@ -1220,15 +1220,20 @@ function joinParts(ids,type,onProgress){
   }
   return joined[key];
 }
-// Card videos play muted while on screen; the viewer plays with sound by default (V7.90.8) — muted only when the
-// browser refuses sound (then a Sound on button shows) or the viewer muted it themselves (remembered on this device).
+// Card videos never play (V7.100.1): on screen they load and hold one still frame as a thumbnail; only the viewer
+// plays, with sound by default (V7.90.8) — muted only when the browser refuses sound (then a Sound on button shows)
+// or the viewer muted it themselves (remembered on this device).
 const vis=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{
-  const v=e.target; if(e.isIntersecting){loadVideo(v)} else if(!v.paused) v.pause();
+  const v=e.target; if(e.isIntersecting){loadVideo(v);vis.unobserve(v)} else if(!v.paused) v.pause();
 }),{rootMargin:"200px"}):null;
+function thumbFrame(v){if(!v.paused) v.pause();
+  const seek=()=>{if(v.dataset.thumb) return;v.dataset.thumb="1";const d=v.duration;try{v.currentTime=isFinite(d)&&d>0?Math.min(0.5,d/2):0.5}catch(e){}};
+  if(v.readyState>=1) seek(); else v.addEventListener("loadedmetadata",seek,{once:true})}
+const inViewer=v=>!!v.closest(".viewer");
 state.viewerMuted=lsGet("gb.viewerMuted")==="1";
 function soundButton(v){const w=v.parentElement;if(!w||w.querySelector(".v-sound")) return;
   const b=document.createElement("button");b.className="btn small v-sound";b.type="button";b.dataset.sound="1";b.textContent="🔊 Sound on";v.after(b)}
-function tryPlay(v){if(v.dataset.noauto) return;const want=!!v.dataset.sound&&!state.viewerMuted;v.muted=!want;
+function tryPlay(v){if(v.dataset.noauto) return;if(!inViewer(v)){thumbFrame(v);return}const want=!!v.dataset.sound&&!state.viewerMuted;v.muted=!want;
   const p=v.play();if(p&&p.catch) p.catch(err=>{
     // the browser blocks sound without a fresh tap: play muted and offer Sound on
     if(want&&err&&err.name==="NotAllowedError"){v.dataset.autoMute="1";v.muted=true;soundButton(v);const p2=v.play();if(p2&&p2.catch) p2.catch(()=>{})}})}
@@ -1256,7 +1261,7 @@ function hydrate(root){
       // a single-file video that fails from memory (seen in Chrome once the sound is on) falls back to the file's own link and keeps playing
       const ids=(v.dataset.parts||"").split(",").filter(Boolean);
       if(ids.length===1&&!v.dataset.direct){diag("videoError","joined");v.dataset.direct="1";const t=v.currentTime||0,snd=!v.muted;
-        v.removeAttribute("data-parts");v.src="/_blob/"+ids[0];v.addEventListener("loadedmetadata",()=>{try{v.currentTime=t}catch(e){}v.muted=!snd;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{})},{once:true});return}
+        v.removeAttribute("data-parts");v.src="/_blob/"+ids[0];v.addEventListener("loadedmetadata",()=>{try{v.currentTime=t}catch(e){}v.muted=!snd;if(!inViewer(v)) return;const pp=v.play();if(pp&&pp.catch) pp.catch(()=>{})},{once:true});return}
       const w=v.parentElement;if(w&&!w.querySelector(".vload")){const n=document.createElement("span");n.className="vload";n.textContent="This video can't play here. Use Download.";w.appendChild(n)}diag("videoError",v.dataset.direct?"direct-fallback":v.dataset.parts?"joined":"direct")});
     v.addEventListener("playing",()=>diag("videoPlaying",v.dataset.parts?"joined":"direct"),{once:true});
     // the viewer's own mute / unmute is remembered for the next video; a mute forced by the browser is not
@@ -1520,7 +1525,7 @@ function paneOf(g,k){
   const cov=locked&&coverOf(g);
   const media=pr?`<div class="media filled pair" role="group" aria-label="Two options for ${esc(g.beat)}">${pr.map((x,i)=>`<button type="button" class="pair-opt" data-vpair="${esc(g.id)}" data-v="${x.v}" aria-label="View option ${"AB"[i]}"><img ${srcFrom(x.asset,x.parts,x.type)} alt="" loading="lazy"><span class="pl">${"AB"[i]}</span></button>`).join("")}</div>`:
     `<div class="media${asset&&!pend?" filled":""}" ${ro||locked||old?"":`data-drop="${esc(g.id)}" data-step="${k}"`} ${asset&&!pend?`data-viewm="${esc(g.id)}" data-step="${k}" role="button" tabindex="0" aria-label="View the ${nm.toLowerCase()} of ${esc(g.beat)}"`:""}>${
-      pend?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:`<img ${srcAttr(g,k)} alt="" loading="lazy">`):
+      pend?genPanel(g,k):asset?(isVid?`<video ${srcAttr(g,k)} muted playsinline preload="metadata"></video><span class="play" aria-hidden="true">⤢</span>`:`<img ${srcAttr(g,k)} alt="" loading="lazy">`):
       locked?`${cov?`<img class="ghost" ${srcFrom(cov.asset,cov.parts,cov.type)} alt="">`:""}<span class="lockmsg">🔒 ${seed?"Ingredients":"Image"} first</span>`:
       `<span>${g[d.prompt]?"Waiting for render":"Not made yet"}</span>`}${busy?`<span class="busy">Uploading…</span>`:""}</div>`;
   const fixing=state.faultOpen===g.id+":"+k, canAct=!state.readOnly&&!old&&!locked&&!pend;
