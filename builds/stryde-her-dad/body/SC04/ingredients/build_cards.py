@@ -16,7 +16,26 @@ CARDS = {
    cap="TONY · Day D3 (the GP appointment): navy zip fleece, grey T-shirt, dark jeans, brown leather shoes"),
 }
 
-if __name__ == "__main__":
+# v2 (2026-10-03, board Fix, owner: "create another one"): a new render of the same D3 outfit. Read off v1 beside the confirmed D2 card:
+# v1 drew him leaner and narrower in the shoulders than the D2 card's broad, heavy builder. v2 adds the confirmed D2 card as Image 2 —
+# his face and build only, its clothes never worn — so he is the same man as on the other days.
+D2_CARD = "body/SC03/ingredients/OUT-C1-D2_v1.png"
+def prompt_v2(c):
+    p = C1.prompt(c)
+    return p.replace("Image 1 is the man's face and hair only — ",
+        "Image 1 is the man's face and hair only, and Image 2 is the same man on another day, for his face and his build only — his clothes in Image 2 are never worn here — ").replace(
+        "he is a broad, heavy-shouldered builder of sixty-four with a slight stoop",
+        "he is a broad, heavy-shouldered builder of sixty-four with a thick chest, a solid middle and a slight stoop, exactly as heavy and broad as in Image 2")
+
+if __name__ == "__main__" and "--v2" in __import__("sys").argv:
+    for k, c in CARDS.items():
+        p = prompt_v2(c)
+        (H / f"{k}.v2.prompt.txt").write_text(p)
+        (H / f"{k}.v2.call.json").write_text(json.dumps({"beat": k, "build": "stryde-her-dad", "kind": "image", "connector": "kie",
+            "model": "gpt-image-2-5-sunburst-image-to-image", "aspect_ratio": "9:16", "refs": [c["face"], D2_CARD], "prompt": p,
+            "fix_note": "create another one", "noteOwner": True}, indent=1, ensure_ascii=False))
+        print(k, "v2", len(p))
+elif __name__ == "__main__":
     for k, c in CARDS.items():
         p = C1.prompt(c)
         (H / f"{k}.prompt.txt").write_text(p)
