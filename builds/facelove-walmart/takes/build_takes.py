@@ -12,7 +12,7 @@ NAME = {"N": "Michelle", "C1": "Peter", "C2": "the woman", "C3": "Rosa"}
 SPK = {"MICHELLE": "N", "PETER": "C1", "YOUNGER WOMAN": "C2", "ROSA": "C3"}
 AGE = {"N": "63", "C1": "65", "C2": "41", "C3": "67"}
 SHEET = {"C1": "cd1173f1-ffef-4258-90f0-4c5143ea351b", "C2": "260a0f37-7ab1-4b16-b87a-ccc9c4bba621", "C3": "702ccb5a-64ac-4585-af45-b7b8443efba6"}
-SHEET_N = {"before": "e41bb60b-dd24-4808-8b8e-5956cbe2dda6", "after": "7ee60be8-ae88-458d-8d13-d5ebfc2ff6a7"}
+SHEET_N = {"before": "ea13db15-40ad-48ac-8914-fe585dd3767d", "after": "7ee60be8-ae88-458d-8d13-d5ebfc2ff6a7"}
 AUDIO = {"N": ("voice/N_voice_master.mp3", "18b2c0a4-b1d2-40f0-8321-dbd8fba7c8f1", 16.8), "C1": ("voice/C1_voice_master.mp3", "57c4e338-a41d-4931-a5ac-9ecbd7e26975", 13.1),
          "C2": ("voice/C2_voice_master.mp3", "a9360508-157a-46c4-b14b-ba13c1b3221f", 8.7), "C3": ("voice/C3_voice_ref_cut.mp3", "83341657-baea-4764-a0a8-ecd793cb5472", 10.8)}
 PLATE = {"L-AISLE": ("61b35cd5-43a2-4e4d-a243-be5ace889248", "the store aisle: copy it — paper shelves left, detergent shelves right, the blue end-cap at the far right corner, the walkway across the far end"),

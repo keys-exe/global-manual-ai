@@ -85,3 +85,12 @@ Drive task folder `1Xvl_PR2jCEe3WJk177Vn5T-1efS1gt80`
   - Fix: v2 is an edit of v1 (`cast/N-MICHELLE.v2.prompt.txt`, Higgsfield job ea13db15). Identity, grid, outfit and light are kept; the age is spelled out first (grey hair, forehead and brow lines, nose-to-mouth folds, crow's feet, under-eye shadows, softer jaw, stoop). v2 is `review`; v1 is on Old.
 - **Knock-on.** The "before" scenes were all made from the v1 sheet: SC02, SC03 and SC04 (confirmed) and SC05-T1, SC05-T2, SC06-T1, SC06-T2 and SC06-T3 (review). Once v2 is confirmed, they are re-made with it only on the user's call.
 - SC12-T2 still waits on the user's A/B pick of the start frame.
+
+## Fix round 6 (user: "fix", 2026-10-03)
+- The user confirmed the older N-MICHELLE v2 sheet.
+- **SC02-T1, Fix "regenerate use the new reference for michelle" (owner's note).**
+  - Generation 2: @image1 is now the v2 before sheet (job ea13db15); the prompt is otherwise unchanged.
+  - Preflight PASS; Higgsfield job 46b48c02, 168 credits, no music.
+  - v2 is on Current for review; v1 is on Old.
+- **`takes/build_takes.py`** now uses the v2 sheet for every "before" take. SC03, SC04, SC05-T1, SC05-T2, SC06-T1, SC06-T2 and SC06-T3 still show the younger Michelle; each is re-made only on its own Fix.
+- **Private workspace.** Other spends appeared alongside this build: 3× Genjutsu Motion Transfer at 75 each and a Kling v3.0 at 7. They are not this build's. The balance is 1,272.35.
