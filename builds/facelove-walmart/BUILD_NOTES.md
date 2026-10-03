@@ -77,3 +77,11 @@ Drive task folder `1Xvl_PR2jCEe3WJk177Vn5T-1efS1gt80`
 - **The barrel colour.** The take prompts say "violet satin barrel"; the product photos are the reference, and the stick came out pale lilac in the clips I looked at (SC06-T1, SC07-T1).
 - **SC12-T2, the pinned stick turn.** The start-frame A/B pair (nano_banana_pro) is on the card. The user picks A or B; the end frame is then made as an edit of the pick, then the 5 s Kling video.
 - **Credits.** Higgsfield spent 1,732 on the 14 takes and 2 frames (~7.3 cr/s). The private workspace has 1,674.35 left.
+
+## Fix round 5 (user: "fix", 2026-10-03)
+- The user confirmed SC02-T1, SC03-T1 and SC04-T1. The other takes are still `review`.
+- **N-MICHELLE (the before sheet), Fix "make this older" (owner's note).**
+  - Cause: v1 read about 45. The age lines sat deep in a long prompt, and the render smoothed them away.
+  - Fix: v2 is an edit of v1 (`cast/N-MICHELLE.v2.prompt.txt`, Higgsfield job ea13db15). Identity, grid, outfit and light are kept; the age is spelled out first (grey hair, forehead and brow lines, nose-to-mouth folds, crow's feet, under-eye shadows, softer jaw, stoop). v2 is `review`; v1 is on Old.
+- **Knock-on.** The "before" scenes were all made from the v1 sheet: SC02, SC03 and SC04 (confirmed) and SC05-T1, SC05-T2, SC06-T1, SC06-T2 and SC06-T3 (review). Once v2 is confirmed, they are re-made with it only on the user's call.
+- SC12-T2 still waits on the user's A/B pick of the start frame.
