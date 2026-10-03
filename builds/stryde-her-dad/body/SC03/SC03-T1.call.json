@@ -16,7 +16,7 @@
  "resolution": "720p",
  "aspect_ratio": "9:16",
  "start_image": null,
- "ingredients_approved": false,
+ "ingredients_approved": true,
  "files": [
   "voice/C1_face.jpg",
   "plates/L-BEDROOM_v1.png",
