@@ -1,0 +1,47 @@
+{
+  "_about": "§5B credit cap (V7.95.0) — what one unit of each job costs, per connector, in that connector's own credits. 'measured' = read off a production balance or a task's own cost; 'unverified' = a starting figure the first build on that route checks. Update a price here the turn a balance shows it is wrong (and say so in BUILD_NOTES). Never product- or account-specific.",
+  "fix_allowance": {
+    "_about": "Headroom for the user's Fix notes, on top of the planned work. Starting figures, unverified — compare with build_spend at the end of each build and adjust.",
+    "image": 0.35,
+    "video": 0.30,
+    "audio": 0.20
+  },
+  "warn_at": 0.8,
+  "prices": {
+    "image": {
+      "Higgsfield": {"gpt_image_2_5": [3.1, "per image", "measured: 8 plates 24.92 credits"],
+                     "nano_banana_pro": [2, "per image", "measured: 2k image"],
+                     "nano_banana_2": [2, "per image", "unverified"]},
+      "Kie AI": {"gpt_image_2_5": [10, "per image", "measured: 2K plate 10 credits"],
+                 "nano_banana_pro": [18, "per image", "measured"],
+                 "nano_banana_2": [12, "per image", "measured"]},
+      "_default": [18, "per image", "unverified: unknown route, Kie Pro price"]
+    },
+    "kling": {
+      "Kling": [8, "per second", "measured: omni 5 s = 40 credits"],
+      "Kie AI": [18, "per second", "measured: kling-3.0 pro silent, ~69-72 per 4 s clip"],
+      "Kie AI+sound": [27, "per second", "measured: kling-3.0 pro sound on, 10 s = 270"],
+      "_default": [18, "per second", "unverified"]
+    },
+    "seedance": {
+      "Kie AI": [45, "per second", "measured: 720p median over 42 tasks (630 / 14 s)"],
+      "_default": [45, "per second", "unverified: Kie rate assumed"]
+    },
+    "talking": {
+      "HeyGen": [75, "per render", "measured once: 3,823 -> 3,748"],
+      "_default": [75, "per render", "unverified"]
+    },
+    "tts": {
+      "ElevenLabs": [1, "per character", "unverified: eleven_v4 ~1 credit a character"],
+      "_default": [1, "per character", "unverified"]
+    },
+    "music": {
+      "ElevenLabs": [1000, "per track", "unverified"],
+      "_default": [1000, "per track", "unverified"]
+    },
+    "sfx": {
+      "ElevenLabs": [100, "per sound", "unverified"],
+      "_default": [100, "per sound", "unverified"]
+    }
+  }
+}
