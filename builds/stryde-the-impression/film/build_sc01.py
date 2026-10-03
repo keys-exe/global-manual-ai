@@ -33,7 +33,7 @@ WALK = ("Oscar does an impression of his nana's walk, earnest, not mocking: on e
 def mf(ids):
     return [("@image" + str(i + 1), x) for i, x in enumerate(ids)]
 
-CARD = "film/cards/INFO-TABLE-SC01_v2.png"
+CARD = "film/cards/INFO-TABLE-SC01_v3.png"  # v3: each place set square in front of its chair (owner Fix on v2)
 # gen 3 dropped the v1 card (near end empty); gen 4 attaches the v2 card, drawn from the confirmed T1: eight chairs, the five places set where T1 seats them
 USE_CARD = True
 def files_for(cast):
